@@ -1,0 +1,285 @@
+domain: 'BPOD procure to payment: P2P_Invoice Processing_Mexico Meritor and Continental
+  Exception Invoices_2022_v1.0.doc'
+document_outline: Describes how IBM Delivery Centre will Process the Client Invoices
+  in PeopleSoft by identifying Single Invoice from multiple Invoices with the Same
+  ASN number.
+seed_examples:
+- context: "# Control Points\n\n+----------+--------------------------+----------------------------------------------------+--------------------------------------------------------------------+-----------------------------------------------------------------------------+--------------------------------------------------------------------+------------------------------------------------------------------+--------------+\n\
+    | ***\\#*** | **Sub process Activity** | **Sub process Activity Description**\
+    \               | **Control Objective(s)**                                   \
+    \        | **Control Activity**                                              \
+    \          | **Risk Assertions**                                             \
+    \   | **Frequency (i.e., Event, Daily, Monthly, Quarterly, Annually)** | **Evidence**\
+    \ |\n+==========+==========================+====================================================+====================================================================+=============================================================================+====================================================================+==================================================================+==============+\n\
+    |          | Client                   | Client Meritor and Continental Exception\
+    \ Invoices. | Process the Invoices in PeopleSoft with the reference of Receipts.\
+    \ | Identifying the Single Invoice from multiple Invoices with same ASN number.\
+    \ | Continental Invoices: Identifying Correct Invoice with ASN number. | As Needed.\
+    \                                                       | PeopleSoft   |\n|  \
+    \        |                          |                                        \
+    \            |                                                               \
+    \     |                                                                      \
+    \       |                                                                    |\
+    \                                                                  |         \
+    \     |\n|          |                          |                             \
+    \                       |                                                    \
+    \                |                                                           \
+    \                  | Meritor Invoice: Finding the correct vendor for Receipts.\
+    \          |                                                                 \
+    \ |              |\n+----------+--------------------------+----------------------------------------------------+--------------------------------------------------------------------+-----------------------------------------------------------------------------+--------------------------------------------------------------------+------------------------------------------------------------------+--------------+\n\
+    \n## Process Measurement Reports \n\n> This activity is Performed according to\
+    \ its need.\n\n# Roles & Responsibilities\n\n## Description\n\n  **Role**    \
+    \               **Responsibility**\n  -------------------------- -----------------------------------------------------------\n\
+    \  Invoice Processing Team.   Identifying the Invoice and Processing in the PeopleSoft."
+  questions_and_answers:
+  - question: What is the Control Activity associated with subprocess Client Meritor
+      and Continental Exception Invoices.?
+    answer: The control activity with Client Meritor and Continental Exception Invoices
+      is Identifying the Single Invoice from multiple Invoices with same ASN number.
+  - question: What is the risk assertion for Continental Invoices?
+    answer: The risk assertion with Continental Invoices is Identifying Correct Invoice
+      with ASN number.
+  - question: What is the risk assertion for Meritor Invoices?
+    answer: The risk assertion with Meritor Invoices is Finding the correct vendor
+      for Receipts.
+- context: "# Overview\n\n## Objective(s)\n\nThe ASN from the supplier covers multiple\
+    \ invoices, which creates problems with identifying which parts/amounts of the\
+    \ receipt belong with each invoice.\n\nInternal process for Meritor and Continental\
+    \ invoices that do not include Client parts numbers.\n\n### Frequency: \n\n> As\
+    \ Needed.\n\n### Source: \n\n> Client Portal.\n\n**2.1.4** **Access:**\n\n-  \
+    \ Portal is accessed by sending a request to the Client IT: Ana Ocampo, Jose Nava,\
+    \ Daniel Solis, Gabriel Duarte Merlos, Elizabeth Tobon, and the user.\n\n-   PeopleSoft-\
+    \ via EUR.\n\n## Inputs & Outputs\n\n+------------------+---------------------------------------------------+\n\
+    | Input            | From                                              |\n+------------------+---------------------------------------------------+\n\
+    | > Client Portal. | > Supplier Update the Invoices in Mexican Portal. |\n+------------------+---------------------------------------------------+\n\
+    \n+--------------+-----------------------------------------+\n| Output       |\
+    \ To                                      |\n+--------------+-----------------------------------------+\n\
+    | > PeopleSoft | > Invoices are Processed in PeopleSoft. |\n+--------------+-----------------------------------------+"
+  questions_and_answers:
+  - question: What is the objective of the Client Meritor and Continental Exception
+      Invoices?
+    answer: 'The ASN from the supplier covers multiple invoices, which creates problems
+      with identifying which parts/amounts of the receipt belong with each invoice.
+
+      Internal process for Meritor and Continental invoices that do not include Client
+      parts numbers.'
+  - question: What system access is needed to process Meritor and Continental invoices?
+    answer: "Following system accesses are needed:\n- Portal is accessed by sending\
+      \ a request to the Client IT: Ana Ocampo, Jose Nava, Daniel Solis, Gabriel Duarte\
+      \ Merlos, Elizabeth Tobon, and the user. \n- PeopleSoft- via EUR."
+  - question: What is the input for Meritor and Continental invoices ?
+    answer: The input is the Client Portal from the Supplier who Updates the Invoices
+      in Mexican Portal.
+- context: "25. If there any Difference found, Go to Distribution Lines and Verify\
+    \ Item number and Unit price. If there any difference in Unit Price, then change\
+    \ it Accordingly to the Invoice. (Also Verify the Tax amount whether it is according\
+    \ to Invoice).\n\n(In this case the Unit Price according to Invoice are 233.36\
+    \ and 302.92 but in People soft it is 236.90 and 307.55, So change the amount\
+    \ according to the Invoice).\n\n26. After changing the Amount according to Invoice,\
+    \ Now click on Calculate the Difference Amount should be Zero (0) then Click on\
+    \ Save.\n\n27. Go back to the Mexican Portal and Copy the Factura.\n\n28. Paste\
+    \ in the Image Reference ID column of Peoplesoft and Click on Save.\n\n**Scenario\
+    \ if the Vendor ID is mentioned wrong and processed:**\n\nFOR EXAMPLE,\n\n29.\
+    \ If Vendor Id (06112) is mentioned and Processed the Invoice an Error message\
+    \ will Populate.\n\n30. Enter the total amount from the Invoice and then Click\
+    \ on Calculate.\n\n31. Enter the Extended amount from the Invoice.\n\n32. Enter\
+    \ the GL Unit, Operating unit, and Account number.\n\n33. Enter PO Unit and Select\
+    \ PO Receipt from the dropdown menu of Worksheet Copy Option.\n\n34. Copy Worksheet\
+    \ Page will populate, Enter the Receipt Number from and Click on Search.\n\n35.\
+    \ An Error box will Populate showing the Invalid value.\n\n**[Translation Notes:]{.ul}**\n\
+    \n**Spanish Translation in English**\n\n**Menu de aplicaciones - Applications\
+    \ Menu**\n\n**Recepcion fe - Reception File**\n\n**Facturas Recibidas - Invoices\
+    \ Received**\n\n**Recepcion Facturas CPP -- Receipt of CPP Invoices**\n\n**Location\
+    \ -- Localidad.**\n\n## Definitions\n\nThe following are definitions of acronyms\
+    \ used in this document:\n\n  Term   Definition\n  ------ -------------------------\n\
+    \  MX     Client\n  ASN    Advance Shipment Number"
+  questions_and_answers:
+  - question: What to do if there is any Difference found in the Invoice Information
+      page?
+    answer: If there any Difference found, Go to Distribution Lines and Verify Item
+      number and Unit price. If there any difference in Unit Price, then change it
+      Accordingly to the Invoice. (Also Verify the Tax amount whether it is according
+      to Invoice).
+  - question: What to do for the Scenario if the Vendor ID is mentioned wrong and
+      processed
+    answer: '1. If Vendor Id is mentioned and Processed the Invoice an Error message
+      will Populate.
+
+      2. Enter the total amount from the Invoice and then Click on Calculate.
+
+      3. Enter the Extended amount from the Invoice.
+
+      4. Enter the GL Unit, Operating unit, and Account number.
+
+      5. Enter PO Unit and Select PO Receipt from the dropdown menu of Worksheet Copy
+      Option.
+
+      6. Copy Worksheet Page will populate, Enter the Receipt Number from and Click
+      on Search.
+
+      7. An Error box will Populate showing the Invalid value.'
+  - question: What is the full form of acronym ASN?
+    answer: ASN stands for Advance Shipment Number
+- context: "5.3.2 Meritor Invoices:\nMeritor has two (2) vendor IDs, it sends invoices\
+    \ for one vendor and does the receipts using the other vendor ID.\nIf a Part number\
+    \ is starting with 44 on the Invoice, then the Receipt will be available under\
+    \ the Vendor number 24865.\nThe Invoices for Meritor always comes with the Vendor\
+    \ number 06112. If the Invoice is from 06112 Vendor, then the Receipt will be\
+    \ under 24865 Vendor number.\n1.\tCopy the ID from the Client Report Excel sheet.\n\
+    2.\tPaste the ID in the Mexican Portal. \n3.\tSelect the Filtar on the Top menu.\n\
+    4.\tClick on Vista de Trabajo, the Invoice information will populate.\n5.\tDouble\
+    \ Click on the Pdf to open the Invoice Copy.\n6.\tA Dialogue box will Populate.\
+    \ Click on Open.\n7.\tThe Invoice will Populate.\n8.\tGo to PeopleSoft Receipts\
+    \ Page.\n9.\tEnter Business Unit.\n10.\tSelect the Dropdown and change begins\
+    \ with to Contains for ASN Column.\n11.\tEnter ASN number from the Invoice.\n\
+    12.\tEnter Vendor Code from the portal then Click on Search.\n(Then it will show\
+    \ No matching values were found)\n13.\tThen Change the Vendor ID and Enter the\
+    \ New Vendor ID then Click on Search.\n14.\tThe Line Items will populate. Click\
+    \ on receipt number.\n15.\tThe Receipts information will populate.\n16.\tCompare\
+    \ and Match the Receipts Lines with the Invoice. (In this Invoice Quantity billed\
+    \ every time, According to Receipts the total Quantity is 14 it is matching with\
+    \ Invoice Quantity).\n17.\tGo to PeopleSoft Regular Entry page.\n18.\tEnter Business\
+    \ Unit and Vendor ID. Short Vendor Name, Address Sequence number and Vendor Location\
+    \ will Auto-Populate.\n19.\tVendor Location will populate as 'AX' change\
+    \ it to 'EX'. Enter the Invoice Number, Invoice Date and Click on Add.\n\
+    20.\tInvoice Information page will populate.\nEnter the Total Amount and Tax Amount\
+    \ from the Invoice."
+  questions_and_answers:
+  - question: What are the vendor IDs in Meritor Invoices?
+    answer: 'Meritor has two (2) vendor IDs, it sends invoices for one vendor and
+      does the receipts using the other vendor ID.
+
+      If a Part number is starting with 44 on the Invoice, then the Receipt will be
+      available under the Vendor number 24865.
+
+      The Invoices for Meritor always comes with the Vendor number 06112. If the Invoice
+      is from 06112 Vendor, then the Receipt will be under 24865 Vendor number.'
+  - question: What are the steps to open Invoice Information page in Meritor Invoices?
+    answer: "1. Go to PeopleSoft Regular Entry page.\n2. Enter Business Unit and Vendor\
+      \ ID. Short Vendor Name, Address Sequence number and Vendor Location will Auto-Populate.\n\
+      3. Vendor Location will populate as 'AX' change it to 'EX'\
+      . Enter the Invoice Number, Invoice Date and Click on Add.\n4. Invoice Information\
+      \ page will populate.\nEnter the Total Amount and Tax Amount from the Invoice."
+  - question: What is the vendor number for the Part number starting with 44 on the
+      Meritor Invoices?
+    answer: If a Part number is starting with 44 on the Invoice, then the Receipt
+      will be available under the Vendor number 24865.
+- context: 'Please Note that MERITOR and CONTINENTAL are now including the CLIENT
+    part on each invoice. MERITOR is still creating more than one invoice related
+    to the same ASN though.
+
+
+    -   To process the Invoices,
+
+    A report will run in POR Achievar for Line 1 and Line 2 Locations and report will
+    be pulled for Indirect and Direct Client Invoices and Save in the Excel Sheet.
+
+
+    -   Review the Shipment ID / Packing ID and organize invoices by ASN number
+
+
+    **5.3.1 Continental Invoices:**
+
+
+    In Continental 2 (Two) Invoices have 1 (One) ASN number.
+
+
+    When the invoices share the same Packing ID, then there will be multiple invoices
+    associated with only one receipt.
+
+
+    1.  Open Client Report Excel.
+
+
+    2.  Open the Mexican portal and Login to the Mexican Portal:
+
+
+    Click on the dropdown menu beside Menu de aplicaciones.\>Recepcion fe\> Facturas
+    Recibidas\> Recepcion Facturas CPP.
+
+
+    3.  After Selecting Recepcion Facturas CPP, a new tab will be opened.
+
+
+    4.  Open the Client Excel Sheet and Copy the Portal ID and Paste in the Factura
+    and Click on Filtar, Invoice Information will Populate.
+
+
+    5.  Select PDF a dialogue box will populate then Click on Open then an Invoice
+    will Open.
+
+
+    6.  Open PeopleSoft and Go to Receipts. (Main Menu\>Purchasing\>Receipts\>Review
+    Receipt Information\>Receipts).
+
+
+    The following Page will Populate.
+
+
+    7.  Enter the Business Unit.
+
+
+    8.  Select the Dropdown and change begins with to **Contains** for ASN.
+
+
+    9.  Enter ASN number (Last 5 digits) from the Invoice.
+
+
+    10. Enter Vendor ID from the Invoice and Click on Search.
+
+
+    11. Select the Receipt number from Search Results.
+
+
+    12. Receipts of the Invoice will populate, Select the Line Item according to the
+    Invoice.
+
+
+    13. Go to PeopleSoft Regular Entry Page.
+
+
+    Enter Business Unit and Vendor ID, the Short Vendor Name, Address Sequence number
+    and Vendor Location will Auto-Populate.
+
+
+    14. Vendor Location will populate as ''AX'', change it to ''EX''. Enter the Invoice
+    Number, Invoice Date and Click on Add.
+
+
+    15. Invoice Information page will populate.
+
+
+    Enter the Total Amount and Tax Amount (Extended Amount) from the Invoice.
+
+
+    16. Enter the GL Unit, Operating Unit and Account Number in the respected fields.
+
+
+    17. Enter the PO Unit and Select PO Receipt from the dropdown of Worksheet Copy
+    Option.
+
+
+    18. Copy Worksheet Page will populate. Enter Receipt Unit and Receipt number from
+    Receipts Page and Click on Search.
+
+
+    19. Select Receiver Lines Data will populate then Click on View All to see all
+    Receipt Lines.
+
+
+    20. Match and Select the Line Item according to the Invoice and Click on Copy
+    Selected Lines.'
+  questions_and_answers:
+  - question: How many invoices are there in Continental?
+    answer: In Continental 2 (Two) Invoices have 1 (One) ASN number.
+  - question: How to go to Receipts in Continental Invoices?
+    answer: Open PeopleSoft and Go to Receipts. (Main Menu>Purchasing>Receipts>Review
+      Receipt Information>Receipts).
+  - question: How to process the Mexico Meritor and Continental Exception Invoices?
+    answer: 'MERITOR and CONTINENTAL are now including the CLIENT part on each invoice.
+      MERITOR is still creating more than one invoice related to the same ASN though.
+
+      To process the Invoices, a report will run in POR Achievar for Line 1 and Line
+      2 Locations and report will be pulled for Indirect and Direct Client Invoices
+      and Save in the Excel Sheet. Review the Shipment ID / Packing ID and organize
+      invoices by ASN number.'

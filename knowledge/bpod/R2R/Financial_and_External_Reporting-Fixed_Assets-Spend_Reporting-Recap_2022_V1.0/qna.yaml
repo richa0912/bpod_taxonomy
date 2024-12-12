@@ -1,0 +1,184 @@
+domain: 'BPOD Record to Analyze: Financial & External Reporting-Fixed Assets -Spend Reporting-Recap
+  2022 V1.0'
+document_outline: Describes how IBM Delivery Centre will perform the Spend Reporting
+  Recap process.
+seed_examples:
+- context: "# Control Points\n\n  ***\\#***   **Sub process Activity**   **Sub process\
+    \ Activity Description**                                                     \
+    \       **Control Objective(s)**                 **Control Activity**        \
+    \      **Risk Assertions**                        **Frequency (i.e., Event, Daily,\
+    \ Monthly, Quarterly, Annually)**   **Evidence**\n  ---------- --------------------------\
+    \ -----------------------------------------------------------------------------------------------\
+    \ ---------------------------------------- --------------------------------- ------------------------------------------\
+    \ ------------------------------------------------------------------ ------------------------------------------------------\n\
+    \  1          Spend Reporting Recap      To prepare the Spend Reporting Recap\
+    \ file with the projects having more than \\$1M CIP Balance   To report the Spend\
+    \ by Project \\>\\$1MN   Spend report sent to Management   Management Might not\
+    \ have the visibility   Monthly                                              \
+    \              Spend Reporting Recap file sent to Client Management\n\n## Process\
+    \ Measurement Reports \n\n> To prepare the Spend Reporting Recap file with the\
+    \ projects over \\$1M CIP Balance."
+  questions_and_answers:
+  - question: Which projects are considered in the Preparation of Spend Reporting
+      Recap file?
+    answer: All the Projects having more than $1M CIP Balance are considered in the
+      Preparation of   Spend Reporting Recap file.
+  - question: What is the risk assertion associated with the Spend Reporting Recap
+      process?
+    answer: The risk assertion is that Management might not have the visibility of
+      the spend by project if the Spend Reporting Recap file is not prepared and sent
+      to Management.
+  - question: How often is the Spend Reporting Recap process performed?
+    answer: The Spend Reporting Recap process is performed monthly, and the Spend
+      Reporting Recap file is sent to Client Management.
+- context: "# Overview\n\n## Objective(s)\n\n> To provide senior management a list\
+    \ of projects with CIP balances over \\$1MN Spend.\n\n### Frequency: \n\n> Monthly,\
+    \ an updated Recap is also requested during the last week of the month.\n>\n>\
+    \ Due date: WD8 -- WD10\n\n### Source: \n\n> CIP Reconciliations\n\n### System\
+    \ Accesses:\n\n> \u2022 M Drive\n\n## Inputs & Outputs\n\n+-----------------------+----------------------------+\n\
+    | Input                 | From                       |\n+-----------------------+----------------------------+\n\
+    | > CIP Reconciliations | > Share drive              |\n+-----------------------+----------------------------+\n\
+    | Output                | To                         |\n+-----------------------+----------------------------+\n\
+    | > CIP Recap Report    | > Client senior Management |\n+-----------------------+----------------------------+"
+  questions_and_answers:
+  - question: Which 3 locations perform CIP Review and reconciliation by themselves
+      in Financial & External Reporting-Fixed Assets Spend Reporting Recap process?
+    answer: "There are 3 locations that perform CIP Review and reconciliation by themselves.It\
+      \ just provides CIP Balances project wise to update the CIP Recap report.\n\
+      a.\tSan Antonio\nb.\tMexico\nc.\tIPD"
+  - question: What are the Objectives of Financial & External Reporting-Fixed Assets
+      Spend Reporting Recap process?
+    answer: The Objectives of Financial & External Reporting-Fixed Assets Spend Reporting
+      Recap process is to provide senior management a list of projects with CIP balances
+      over \$1MN Spend monthly.
+  - question: Who receives the CIP Recap report?
+    answer: The CIP Recap report is sent to Client senior Management.
+- context: '## Process Description
+    > All the Projects having more than \$1M CIP Balance has to be considered in the
+    Preparation of Spend Reporting Recap file.
+    > Below is the procedure to prepare the Report.
+    1.  Roll forward the previous month file to current month. Below is the shared
+    drive path for Spend Report M>FA>CIP>Supplemental>FY22
+    2.  To update the CIP Recap file, all CIP reconciliation files are required.
+    > Navigate to below path M>FA>AM BU (Open each CIP review file in respective BU
+    folders to update the data).
+    3.  Business units that must be included in CIP Review are highlighted below.
+    4.  Below is the example for 09900. Navigate to shared drive path
+    5.  Navigate to below path and open the respective CIP recon Files.
+    6.  Open the recon file, to check the criteria for the CIP recap file.
+    > 6.1. If CIP Balance is below \$1M, it is not considered for Spend Reporting
+    Recap. Below is the
+    > example of 40100-10 (In this case, the balance is \$18571- hence it will not
+    include in CIP recap
+    > file).
+    6.2.Open another recon file to check the criteria for the CIP recap file.
+    > If CIP Balance is over \$1M, only those project details must be updated in Spend
+    Reporting Recap file. (In this case, the balance is \$25M above- hence it will
+    be included in CIP recap file).
+    7.  Ensure Trial Balance amounts (total of respective GL accounts) matches with
+    the Recon total.
+    8.  Next, click on ''**Aging''** Tab and consider the projects above \$1M balance
+    to Current month Spend Reporting Recap file.
+    9.  Copy the amount of respective project from CIP Reconciliation file to CIP
+    Recap file.
+    > **CIP Reconciliation file:**
+    > **CIP Recap file:** '
+  questions_and_answers:
+  - question: Where can the previous month's Spend Reporting Recap file be found?
+    answer: The previous month's Spend Reporting Recap file can be found in the shared
+      drive path M>FA>CIP>Supplemental>FY22.
+  - question: What is the purpose of opening the CIP reconciliation files?
+    answer: The purpose of opening the CIP reconciliation files is to check the criteria
+      for the CIP recap file and to update the data in the Spend Reporting Recap file.
+  - question: What should be done after copying the amount of the respective project
+      from the CIP Reconciliation file to the CIP Recap file?
+    answer: ' After copying the amount, you should ensure that the Trial Balance amounts
+      (total of respective GL accounts) matches with the Recon total.'
+- context: '10. If it is a New Project, it won''t be available in the roll forwarded
+    CIP Recap file, insert a new line, and add the project details.
+    -   Segment must be updated based on Operating unit.
+    > Operating unit 10 refers to Parts
+    > Operating unit 30 refers to Truck
+    > Operating unit 40 refers to Engine
+    -   Location -- To determine the location, refer below list. Update Location according
+    to the BU.
+    -   Business unit -- respective BU
+    -   Project number- copy it from CIP Recon file
+    -   Description and start date-- To get the details of description and start date
+    of the Project, login to PeopleSoft and follow the below steps:
+    -   Login to PeopleSoft using credentials.
+    -   Navigate to below Path: Main Menu Project Costing Project Definitions General
+    Information
+    -   Update Business unit, Project and click on ''Search''.
+    -   Below screen appears with all the required details - consider Description,
+    Start Date
+    -   Estimated In-Service Date: Refer the respective CIP Review file to get the
+    details of In-Service Date.
+    -   Below is the Sharedrive path for CIP Review files. Open the respective file
+    -   Refer the respective Project In service Date and update it in CIP Recap file.
+    Below is the example for 09900 CIP Review file.
+    > Note: Maintain the history of Inservice dates, add the latest Inservice Date
+    on the top, do not delete the old date.
+    -   Project Status will always be active -- as projects are picked from CIP Reconciliation,
+    if the Project is in CIP, it means that it is active.'
+  questions_and_answers:
+  - question: How do you determine the segment for a new project in Spend Reporting
+      Recap report?
+    answer: 'The segment should be updated based on the Operating unit, as described
+      below:
+      *   Operating unit 10 refers to Parts
+      *   Operating unit 30 refers to Truck
+      *   Operating unit 40 refers to Engine'
+  - question: How do you determine the location for a new project in Spend Reporting
+      Recap report?
+    answer: In Spend Reporting Recap report, the location should be updated according
+      to the Business unit (BU), by referring to the list provided.
+  - question: When creating Spend Reporting Recap report, how do you determine if
+      the project is active.
+    answer: When creating Spend Reporting Recap report, as projects are picked from
+      CIP Reconciliation, they are always active projects.
+- context: "11. Sort the 'Estimated In service Date' column in order wise. It should\
+    \ be sorted month and year wise. Below is the example.\n\n12. Update 'Comments'\
+    \ column, if there are any comments on the respective project.\n\n> Note: If a\
+    \ project has credit CIP Balance, it is not included in CIP Recap file.\n\n13.\
+    \ If Inservice date is already reached, and the project is not yet into service,\
+    \ refer the respective CIP review file to get the details of Inservice Date and\
+    \ Project Manager. If it is not available, email Project Manager to get the updated\
+    \ Inservice Date.\n\n> If Inservice date is already reached and there is yet to\
+    \ receive information from the Project Manager about the next Inservice Date,\
+    \ update it as next month. For example, if Inservice date is May, and in the month\
+    \ of May, there is no update from the porject Manager, update the Inservice date\
+    \ as June.\n\n14. There are 3 locations that perform CIP Review and reconciliation\
+    \ by themselves.It just provides CIP Balances project wise to update the CIP Recap\
+    \ report.\n\n    a.  San Antonio\n\n    b.  Mexico\n\n    c.  IPD\n\n15. Emails\
+    \ received by these locations has to be saved in the below Sharedrive path month\
+    \ wise in the respective folder.\n\n> M>FA>CIP>Supplemental>FY22 (differs year to\
+    \ year)\n\n16. Example of San Antonio folder is shown in the below screen.\n\n\
+    17. Open the Email of the respective month. Below is the example of San Antonio's\
+    \ email for the month of May.\n\n18. Open the attachment provided in the email\
+    \ to get the details such as Inservice Date, CIP Balance.\n\n> Copy the details\
+    \ according to respective project for the respective month and paste it in CIP\
+    \ Recap file.\n>\n> Note: If there are any Projects from Previous month and it\
+    \ went to service already, it has to be removed from CIP Recap file.\n>\n> If\
+    \ there are any Projects from Previous month and as per the current month, CIP\
+    \ is less than a million, it has to be removed from CIP Recap file.\n\n19. Once\
+    \ the preparation of report is done, send an email to Melanie Wilson [xxx\\\
+    @Client.com](mailto:xxx@Navistar.com) (Client Senior Manager)with the\
+    \ report attached. Below is the example of email:"
+  questions_and_answers:
+  - question: After completing the report preparation in the Financial & External
+      Reporting-Fixed Assets Spend Reporting Recap process, what follows as the subsequent
+      step?
+    answer: Once the preparation of report is done, send an email to Melanie Wilson
+      xxx@Client.com (Client Senior Manager)with the report attached.
+  - question: In Fixed Assets Spend Reporting Recap, what should you do if the Inservice
+      date has already been reached, but the project is not yet in service?
+    answer: In Fixed Assets Spend Reporting Recap, If the Inservice date has already
+      been reached, but the project is not yet in service, you should refer to the
+      respective CIP review file to get the details of the Inservice Date and Project
+      Manager. If the information is not available, you should email the Project Manager
+      to get the updated Inservice Date.
+  - question: In Fixed Assets Spend Reporting Recap, what should you do if a project
+      has a credit CIP Balance?
+    answer: In Fixed Assets Spend Reporting Recap, ff a project has a credit CIP Balance,
+      it should not be included in the CIP Recap file.

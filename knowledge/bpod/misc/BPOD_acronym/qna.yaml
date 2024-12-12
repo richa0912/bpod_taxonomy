@@ -1,0 +1,101 @@
+document_outline: The document has acronym list and details
+domain: BPOD  acronym
+seed_examples:
+- context: "1.\tP2P: Purchase to Pay - This is a comprehensive process that covers\
+    \ the entire procurement cycle, from identifying a need for a product or service\
+    \ to paying the supplier.\n2.\tPO: Purchase Order - A legally binding document\
+    \ issued by a buyer to a supplier, specifying the details of products or services\
+    \ to be purchased.\n3.\tRFQ: Request for Quotation - A document used to solicit\
+    \ price quotations from suppliers for specific goods or services.\n4.\tRFI: Request\
+    \ for Information - A document used to gather information about potential suppliers,\
+    \ products, or services, often used in the vendor selection process."
+  questions_and_answers:
+  - answer: |-
+      P2P is Purchase to Pay - This is a comprehensive process that covers the entire procurement cycle, from identifying a need for a product or service to paying the supplier.
+    question: what is p2p?
+  - answer: |-
+      RFI is Request for Information - A document used to gather information about potential suppliers, products, or services, often used in the vendor selection process.
+    question: what is RFI
+  - answer: |-
+      RFQ is Request for Quotation - A document used to solicit price quotations from suppliers for specific goods or services
+    question: what is RFQ
+- context: "EIPP | Electronic Invoicing Presentment and Payment | With an EIPP, companies\
+    \ can automate the process of emailing invoices and account statements in bulk\
+    \ to their customers when it's time for them to pay their bill. (That's the Electronic\
+    \ Invoicing Presentment part of EIPP.) EIPP software also includes an online payment\
+    \ portal that enables companies to accept payments on those invoices from their\
+    \ customers (hence, the Payment part of EIPP). | +------------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\
+    \ | PD | Past Due | This is the receivables open on the customer's account that\
+    \ is open beyond due date | +------------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\
+    \ | DSO | Day Sales Outstanding | Days sales outstanding (DSO) is a measure of\
+    \ the average number of days that it takes a company to collect payment for a\
+    \ sale. DSO is often determined on a monthly, quarterly, or annual basis.\\ |\
+    \ | | | To compute DSO, divide the average accounts receivable during a given\
+    \ period by the total value of credit sales during the same period, and then multiply\
+    \ the result by the number of days in the period being measured. "
+  questions_and_answers:
+  - answer: |-
+      it is Electronic Invoicing Presentment and Payment. With an EIPP, companies can automate the process of emailing invoices and account statements in bulk to their customers when it's time for them to pay their bill. (That's the Electronic Invoicing Presentment part of EIPP.) EIPP software also includes an online payment portal that enables companies to accept payments on those invoices from their customers (hence, the Payment part of EIPP)
+    question: what is EIPP?
+  - answer: |-
+      PD is Past Due. This is the receivables open on the customer's account that is open beyond due date
+    question: what is PD
+  - answer: |2-
+       DSO is Day Sales Outstanding. Days sales outstanding (DSO) is a measure of the average number of days that it takes a company to collect payment for a sale. DSO is often determined on a monthly, quarterly, or annual basis. To compute DSO, divide the average accounts receivable during a given period by the total value of credit sales during the same period, and then multiply the result by the number of days in the period being measured.
+    question: what is DSO?
+- context: |
+    Invoicing and Accounting:
+    What is an Invoice, and what information does it typically include?
+    An invoice is a document detailing products or services, their cost, and payment terms.
+    What is a Credit Note used for in accounting?
+    A Credit Note is issued to correct overcharges or discrepancies in an invoice.
+    Explain the term "Accrual" in accounting.
+    Accrual recognizes revenue or expenses before actual cash transactions occur.
+    What is the purpose of a Journal Entry (JE) in accounting?
+    JE records financial transactions by debiting and crediting specific accounts.
+  questions_and_answers:
+  - answer: |-
+      An invoice is a document detailing products or services, their cost, and payment terms.
+    question: What is an Invoice, and what information does it typically include?
+  - answer: |-
+      Accrual recognizes revenue or expenses before actual cash transactions occur.
+    question: Explain the term "Accrual" in accounting.
+  - answer: |-
+      JE records financial transactions by debiting and crediting specific accounts.
+    question: What is the purpose of a Journal Entry (JE) in accounting?
+- context: "| EBITDA\t| Earnings Before Interest, Taxes, Depreciation, and Amortization\
+    \ | A financial measure that shows a company's profitability before certain non-cash\
+    \ expenses are deducted. |\n| EDI | Electronic Data Interchange | The electronic\
+    \ exchange of business documents between companies. |\n| EFT | Electronic Funds\
+    \ Transfer | The electronic transfer of funds between bank accounts. |\n| EOM\
+    \ | End of Month | Refers to financial closing activities performed at the end\
+    \ of each accounting period.|\n| ERP| Enterprise Resource Planning | A software\
+    \ system that integrates all of a company's core business processes, including\
+    \ finance, accounting, manufacturing, and sales.|"
+  questions_and_answers:
+  - answer: "EBITDA is Earnings Before Interest, Taxes, Depreciation, and Amortization.\
+      \ A financial measure that shows a company's profitability before certain non-cash\
+      \ expenses are deducted. "
+    question: what is EBITDA?
+  - answer: "EFT is Electronic Funds Transfer. The electronic transfer of funds between\
+      \ bank accounts. "
+    question: what is EFT
+  - answer: |-
+      ERP is Enterprise Resource Planning. It is a software system that integrates all of a company's core business processes, including finance, accounting, manufacturing, and sales.
+    question: what is ERP
+- context: "| GL | General Ledger | The central accounting record that tracks all\
+    \ of a company's financial transactions. | +------------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\
+    \ | GPO | Global Process Owner | An individual or team responsible for overseeing\
+    \ and optimizing a specific global business process, such as R2R. | +------------+--------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\
+    \ | IBAN | International Bank Account Number | A standard format for bank account\
+    \ numbers that is used in international payments. | "
+  questions_and_answers:
+  - answer: |-
+      GL is General Ledger. It is the central accounting record that tracks all of a company's financial transactions.
+    question: what is GL?
+  - answer: |-
+      GPO is Global Process Owner.GPO is an individual or team responsible for overseeing and optimizing a specific global business process, such as R2R
+    question: what is GPO?
+  - answer: "IBAN is  International Bank Account Number. It is a standard format for\
+      \ bank account numbers that is used in international payments. "
+    question: what is IBAN

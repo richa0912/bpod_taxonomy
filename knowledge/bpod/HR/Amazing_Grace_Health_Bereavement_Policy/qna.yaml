@@ -1,0 +1,110 @@
+domain: 'BPOD Human Resource: Amazing Grace Health_Bereavement Policy'
+document_outline: The document outlines Amazing Grace Healtha bereavement leave policy
+  for ministry caregivers, which provides paid time off in the event of the death
+  of an immediate family member. The policy defines immediate family members and sets
+  the amount of paid time off available. It also outlines the procedures for requesting
+  bereavement leave, including who to submit requests to, the typical time frame for
+  taking leave, and the pay rate. The policy also notes that bereavement pay is coded
+  in the timekeeping system and that caregivers may be requested to provide documentation
+  regarding the need for bereavement leave. The policy also includes a statement that
+  it is not a contract or covenant of employment and is subject to change at the sole
+  discretion of the ministry
+seed_examples:
+- context: "**Amazing Grace Health (\\\"ministry\\\")**\n\n**\\\nDepartment:**\_Human\
+    \ Resources\\\n**Approved by:\_**Chief Human Resources Officer\\\n**Date Last\
+    \ Reviewed:**\_5/1/2022\\\n**Date Last Revised:**\_5/1/2022\\\n**Date Adopted:\_\
+    **12/16/2019\n\n**Policy Name:**\_Bereavement\n\n**Scope:\_**All ministry caregivers\n\
+    \n**Purpose:\_**To establish the ministry's policy, expectations and guidelines\
+    \ for paid time off in the event of the death of an immediate family member when\
+    \ caregivers are eligible for bereavement leave.\n\n**Terms:**\n\n*Immediate family\
+    \ member\_*is defined as the caregiver's:\n\n-   current spouse or domestic partner\n\
+    \n-   child\n\n-   parent\n\n-   sibling\n\n-   stepparent, stepchild, step-sibling\n\
+    \n-   grandparent or grandchild\n\n-   a person who stood in loco parentis (legal\
+    \ responsibility of a person to take on the functions and responsibilities of\
+    \ a parent)\n\n-   or current in-law relationships through marriage or partnership\
+    \ of the above"
+  questions_and_answers:
+  - question: Who is considered an immediate family member under the bereavement leave
+      policy for Amazing Grace Health?
+    answer: An immediate family member is defined as the caregiver's current spouse
+      or domestic partner, child, parent, sibling, stepparent, stepchild, step-sibling,
+      grandparent or grandchild, a person who stood in loco parentis, or current in-law
+      relationships through marriage or partnership of the above.
+  - question: what was the purpose of the Amazing Grace Health Bereavement leave policy
+      ?
+    answer: The purpose of the Amazing Grace Health Bereavement leave policy  is to
+      establish the ministry's policy, expectations, and guidelines for paid, and
+      guidelines for paid time off in the event of the death of an immediate family
+      member when caregivers are eligible for bereavement leave.
+  - question: Who is the  Amazing Grace Health Bereavement policy applicable to?
+    answer: The  Amazing Grace Health bereavement leave policy is applicable to all
+      ministry caregivers.
+- context: '**Policy:**
+
+
+    In keeping with our mission and values, the ministry provides all benefits-eligible
+    caregivers time off without loss of pay in the event of the death of an immediate
+    family member (as defined above). Caregivers may receive up to 24 hours with pay
+    in the event of the death of an immediate family member or up to 40 hours with
+    pay in the event of the death of the caregiver''s spouse, domestic partner or
+    child. Additional paid time off (PTO) (in accordance with the ministry''s PTO
+    policy) or unpaid time (in the event the caregiver has insufficient PTO) may be
+    authorized by your core leader on a case-by-case basis, based upon operational
+    needs. If leave is needed due to the death of a person who does not qualify as
+    an immediate family member, PTO or unpaid time off may similarly be authorized
+    by your core leader. The ministry will comply with applicable state or local laws
+    that provide additional bereavement benefits. Caregivers should consult with HR
+    to determine if an additional bereavement benefit is available.
+
+
+    Caregivers in a manager level position or above who do not accrue PTO may take
+    leader time off (LTO) for bereavement in accordance with the ministry''s LTO policy,
+    upon authorization by your core leader based on operational needs.'
+  questions_and_answers:
+  - question: How much paid time off can a caregiver receive in the event of the death
+      of an immediate family member as per Amazing Grace Health Bereavement leave
+      policy ?
+    answer: As per Amazing Grace Health Bereavement leave policy, Caregivers may receive
+      up to 24 hours with pay in the event of the death of an immediate family member.
+  - question: What if a caregiver needs more paid time off than what is provided by
+      the Amazing Grace Health Bereavement leave policy?
+    answer: If a caregiver needs more paid time off than what is provided by the Amazing
+      Grace Health Bereavement leave policy, additional paid time off (PTO) or unpaid
+      time may be authorized by the core leader on a case-by-case basis, based upon
+      operational needs.
+  - question: What if a caregiver needs time off due to the death of a person who
+      does not qualify as an immediate family member as per Amazing Grance Health
+      Bereavement leave policy?
+    answer: If a caregiver needs time off due to the death of a person who does not
+      qualify as an immediate family member, PTO or unpaid time off may similarly
+      be authorized by the core leader. The ministry will comply with applicable state
+      or local laws that provide additional bereavement benefits. Caregivers should
+      consult with HR to determine if an additional bereavement benefit is available.
+- context: "**Procedures:**\n\n1.  Requests for paid bereavement leave must be submitted\
+    \ to your core leader. Time will typically be taken within two (2) weeks of notification\
+    \ of the death; however, exceptions will be considered as appropriate (e.g., memorial\
+    \ or funeral has been postponed, travel required out of the country, cultural/religious\
+    \ practices which may require services long after death).\_\n\n2.  Paid bereavement\
+    \ leave is paid at the caregiver's base rate of pay, including shift differential,\
+    \ if applicable.\n\n3.  Paid bereavement leave is not available to caregivers\
+    \ who are on leaves of absence.\n\n4.  Bereavement pay is coded in the timekeeping\
+    \ system.\n\n5.  Caregivers may be requested to provide documentation regarding\
+    \ the need for bereavement leave.\n\n**Help:**\_For questions about this policy,\
+    \ or assistance with understanding your obligations under this policy, please\
+    \ contact human resources.\n\nThe statements of this policy document are not to\
+    \ be construed as a contract or covenant of employment. They are not promises\
+    \ of specific treatment in specific situations and are subject to change at the\
+    \ sole discretion of the ministry."
+  questions_and_answers:
+  - question: Who should caregivers submit their requests for paid bereavement leave
+      to under Amazing Grance Health Bereavement leave policy?
+    answer: Caregivers should submit their requests for paid bereavement leave to
+      their core leader under Amazing Grance Health Bereavement leave policy.
+  - question: How long after notification of the death is paid bereavement leave typically
+      taken under Amazing Grance Health Bereavement leave policy?
+    answer: Paid bereavement leave is typically taken within two (2) weeks of notification
+      of the death. However, exceptions may be considered as appropriate.
+  - question: May caregivers be requested to provide documentation regarding the need
+      for bereavement leave under Amazing Grance Health Bereavement leave policy?
+    answer: Yes, caregivers may be requested to provide documentation regarding the
+      need for bereavement leave.

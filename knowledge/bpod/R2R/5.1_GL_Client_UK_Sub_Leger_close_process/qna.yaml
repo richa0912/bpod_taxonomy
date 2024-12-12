@@ -1,0 +1,305 @@
+domain: 'BPOD record to analyze: 5.1 GL Client UK Sub Leger close process'
+document_outline: Describes the procedure of how to restrict AP and AR team to park
+  and post any transaction in Group Module for Ledger, VAT, Bank & Fixed assets in
+  ERP.
+seed_examples:
+- context: "# Control Points\n\n  **Control Point \\#**   **Control Point / Activity**\
+    \                                                                            **Control\
+    \ Objective**                                                                \
+    \                                         **Control Risk**                   \
+    \                                   **Test Attributes**\n  ----------------------\
+    \ -------------------------------------------------------------------------------------------------------\
+    \ -----------------------------------------------------------------------------------------------------------------------------\
+    \ --------------------------------------------------------------------- ---------------------\n\
+    \  Email Confirmation     R2R staff should reach out to P2P/O2C to confirm that\
+    \ they have finished making postings in the books   To ensure Sub ledger are closed\
+    \ and the accounting team can pull out the actuals for calculating the accruals\
+    \ for the month   If not closed timely can lead to inaccurate booking of the accruals\
+    \   \n\n##  {#section .list-paragraph}\n\n## Process Measurements"
+  questions_and_answers:
+  - question: What is the purpose of the Email Confirmation control point in GL Client
+      UK Subledger Close Process?
+    answer: The purpose of the Email Confirmation control point in GL Client UK Subledger
+      Close Process is to ensure that the sub-ledger is closed and that the accounting
+      team can pull out the actuals for calculating the accruals for the month.
+  - question: In GL Client UK Subledger Close Process, what is the control objective
+      of the Email Confirmation control point?
+    answer: In GL Client UK Subledger Close Process, the control objective of the
+      Email Confirmation control point is to confirm that the P2P/O2C team has finished
+      making postings in the books.
+  - question: What is the control risk associated with the Email Confirmation control
+      point in GL Client UK Subledger Close Process?
+    answer: The control risk associated with the Email Confirmation control point
+      in GL Client UK Subledger Close Proces is that if the sub-ledger is not closed
+      timely, it can lead to inaccurate booking of the accruals.
+- context: "# Document Information\n\n## About this Document\n\nThis document describes\
+    \ the procedure of how to restrict AP and AR team to park and post any transaction\
+    \ in Group Module for Ledger, VAT, Bank & Fixed assets in ERP. This activity is\
+    \ generally performed should be by 10am in the morning of WD2. As per timetable\
+    \ AP and AR must have finished posting. The process needs to be performed for\
+    \ the below legal entities:\n\n-   GBGD- Donvand Limited (AU)\n\n-   GBGE- GTA\
+    \ Retails Limited\n\n-   GBGF- Octopus Travel Group Limited\n\n-   GBGB- GTA (Sourcing)\
+    \ Limited\n\n-   GBGC-GTA HOLDCO Ltd\n\n-   GBGH-Client Holdings PLC\n\nNote-\
+    \ Refer entity level matrix also.\n\n## Who should use this Document\n\nIBM R2R\
+    \ Accountant, CLIENT, IBM Reviewer will refer this document.\n\n## Revision/Approval\
+    \ History\n\n  -------------------- -------------------- ------------------------\
+    \ ------------- ------------------ --------------------- ------------------\n\
+    \  **Version number**   **Effective Date**   **Summary of Changes**   **Author**\
+    \    **IBM Reviewer**   **Client Reviewer**   **GPO Approver**\n  1.0        \
+    \          04-07-2016           DTP Creation             N P   R K\
+    \          A K          A F\n  -------------------- --------------------\
+    \ ------------------------ ------------- ------------------ ---------------------\
+    \ ------------------\n\n## References\n\n**Session Name**- Monitor And Closure\
+    \ of Sub Ledgers\n\n**Trainer Name**- A K\n\n**Blue Work Live Link- [https://example.com\\\
+    #bpmn]{.ul}**\n\n"
+  questions_and_answers:
+  - question: What are the legal entities for which GL Client UK Subledger Close process
+      needs to be performed?
+    answer: 'The legal entities for which GL Client UK Subledger Close process needs
+      to be performed are as follows.
+
+
+      *   GBGD- Donvand Limited (AU)
+
+      *   GBGE- GTA Retails Limited
+
+      *   GBGF- Octopus Travel Group Limited
+
+      *   GBGB- GTA (Sourcing) Limited
+
+      *   GBGC-GTA HOLDCO Ltd
+
+      *   GBGH-Client Holdings PLC'
+  - question: What is the deadline for completing GL Client UK Subledger Close process?
+    answer: The deadline for completing GL Client UK Subledger Close process is 10am
+      in the morning of WD2 (workday 2) EU time, as per the timetable, after AP and
+      AR have finished posting.
+  - question: Who is the intended audience for GL Client UK Subledger Close process
+      document?
+    answer: The intended audience for GL Client UK Subledger Close process document
+      are IBM R2R Accountant, CLIENT, and IBM Reviewer.
+- context: '# Overview
+
+    ## Objectives of the Process
+
+    Objective of this activity is to restrict the access for AP and AR team to park
+    and post any journal in the group module of ledger, VAT, Bank and Fixed assets
+    in ERP. Please see email
+
+    ## Inputs & Outputs
+
+    +-------------------------+--------+------------------------------------+
+
+    | Input                   | From   | On                                 |
+
+    +-------------------------+--------+------------------------------------+
+
+    | -   Required Parameters | -   AX | -   WD 1 EOD or WD 2 Morning 10 AM |
+
+    +-------------------------+--------+------------------------------------+
+
+    +----------------------------------------------------+------------------------+------------------------+
+
+    | Output                                             | To                     |
+    On                     |
+
+    +----------------------------------------------------+------------------------+------------------------+
+
+    | -   Restrict AP & AR team to book anything in ERP. | -   IBM R2R Accountant
+    | -   WD 2 Morning 10 AM |
+
+    +----------------------------------------------------+------------------------+------------------------+'
+  questions_and_answers:
+  - question: What is the Objective of GL Client UK Subledger Close Process?
+    answer: 'Objective of GL Client UK Subledger Close Process is to restrict the
+      access for AP and AR team to park and post any journal in the group module of
+      ledger, VAT, Bank and Fixed assets in ERP. '
+  - question: What is the input required for GL Client UK Subledger Close Process?
+    answer: The input required for GL Client UK Subledger Close Process are the Required
+      Parameters from AX, which are available on workday 1 (WD 1) End of Day (EOD)
+      or WD 2 Morning by 10 AM.
+  - question: What is the output of GL Client UK Subledger Close Process?
+    answer: The output of GL Client UK Subledger Close Process is to restrict AP &
+      AR team to book anything in ERP, which is sent to the IBM R2R Accountant.
+- context: '## Step Description
+
+    +------+---------------------------------------------------------------------------------+
+
+    | Step | Description                                                                     |
+
+    +======+=================================================================================+
+
+    | 1\.  | Login to ERP-MS AX Dynamics with Login Credentials                              |
+
+    |      |                                                                                 |
+
+    |      | Who: IBM R2R Accountant                                                         |
+
+    |      |                                                                                 |
+
+    |      | When: Every Month WD 2                                                          |
+
+    |      |                                                                                 |
+
+    |      | Why: To Restrict AP & AR Team to book anything in ERP for the particular
+    period |
+
+    |      |                                                                                 |
+
+    |      | How: By restricting Group GL modules in ERP                                     |
+
+    +------+---------------------------------------------------------------------------------+
+
+    **[Note-:]{.ul}** Deadline to close AP and AR periods is WD2 10 AM AU time. After
+    that only GL team can perform this activity
+
+
+    Login MS AX with your credentials, click and open Microsoft Dynamics AX as per
+    highlighted below-
+
+    Below screen will come-up, then navigate to required company (in this example
+    it is GBGD), go to "General Ledger Area" under "General Ledger" Section as shown
+    below
+
+    After that click on "Periods"
+
+    +------+--------------------------------------------------------------------+
+
+    | Step | Description                                                        |
+
+    +======+====================================================================+
+
+    | 2\.  | Run Non Posted Journal Report                                      |
+
+    |      |                                                                    |
+
+    |      | Who: IBM R2R Accountant                                            |
+
+    |      |                                                                    |
+
+    |      | When: Every Month WD 2                                             |
+
+    |      |                                                                    |
+
+    |      | Why: To check if there is any AP/AR journal nees to be post of not |
+
+    |      |                                                                    |
+
+    |      | How: By extracting report from AX                                  |
+
+    +------+--------------------------------------------------------------------+
+
+    Before restricting ensure all AP and AR journals are posted (if not relevant team
+    member needs to be chased to delete or post).
+
+    Any GL team journals are OK, apart from that GL AP and GL AR journals should be
+    clear.
+
+    For checking the journal status whether there is anything which needs to pending
+    to post or not, click on "General Journal"
+
+    Below screen will come - Any GL team journals are OK, apart from that GL AP and
+    GL AR journals should be clear, if any outstanding for the period then follow
+    up with relevant parties and chase to post or delete.
+
+    **Note-:** You can identify USER ID of the person who has created this journal
+    by veiwing "Reported as ready by" option as shown in above screen shot. Its shows
+    the user id of the preparer of the journal. Also once you put mouse cursor over
+    the user id it will reflect you the name of the person who has created the journal.
+    For example AUHPE is Hilary Pearman.
+
+    Also for AP related un-posted journal need to reach out to Hearl Cox and for AR
+    related un-posted journal need to reach out to Lee Miller to get those un-posted
+    journal posted or removed.'
+  questions_and_answers:
+  - question: How can we identify USER ID of the person who has created the journal
+      in MS AX Dynamics?
+    answer: 'We can identify USER ID of the person who has created this journal by
+      veiwing ''Reported as ready by'' option. It shows the user id of the preparer
+      of the journal. Also once you put mouse cursor over the user id it will reflect
+      you the name of the person who has created the journal. '
+  - question: In MS AX Dynamics, what is the next step after navigating to General
+      Ledger Area under General Ledger Section ?
+    answer: In MS AX Dynamics, the next step after navigating to General Ledger Area
+      under General Ledger Section is to click on 'Periods'.
+  - question: In MS AX Dynamics, how do you check the status of journals to ensure
+      that all AP and AR journals are posted?
+    answer: In MS AX Dynamics, to check the status of journals to ensure that all
+      AP and AR journals are posted, you need to click on 'General Journal' and then
+      check if there are any outstanding journals for the period. If there are any
+      outstanding journals, you need to follow up with the relevant parties and chase
+      to post or delete.
+- context: '+------+---------------------------------------------------------------------------------+
+
+    | Step | Description                                                                     |
+
+    +======+=================================================================================+
+
+    | 3\.  | Restrict GL modules for AR & AP Team in ERP.                                    |
+
+    |      |                                                                                 |
+
+    |      | Who: IBM R2R Accountant                                                         |
+
+    |      |                                                                                 |
+
+    |      | When: Every Month WD 2                                                          |
+
+    |      |                                                                                 |
+
+    |      | Why: To Restrict AP & AR Team to book anything in ERP for the particular
+    period |
+
+    |      |                                                                                 |
+
+    |      | How: By restricting group GL modules in ERP                                     |
+
+    +------+---------------------------------------------------------------------------------+
+
+
+    Click on "Periods", Below screen will come up- Refer Step 1
+
+    Here we can see that period for June''16 is open for all, so need to restrict
+    acess for AP and AR team in processing anything in the GL for the current month.
+
+    **[Note-:]{.ul}** Here only restricting AP and AR team, not closing the period.
+
+    Now click on button "Module Status" as shown below-
+
+    Search the entity for which this activity needs to be performed like here doing
+    for GBGD, so search GBGD from the drop down section-
+
+    Copy and paste the entity name for User group Ledger, User group VAT, User group
+    Bank, User group Customer, User group Vendor and User group Fixed Assets as highlighed
+    below in the screen shot-
+
+    Click on "**Save**" Button to restrict AP and AR team for posting any transactions
+    into GL.
+
+    **[Note-:]{.ul}** The same procedure is to be followed for other legal entities
+    as listed above based on the close calls and approval from local financial controller.'
+  questions_and_answers:
+  - question: What is the purpose of Step 3 in GL Client UK Subledger Close process?
+    answer: The purpose of Step 3 in GL Client UK Subledger Close process is to restrict
+      GL modules for AR & AP Team in ERP, in order to prevent them from booking anything
+      in ERP for the particular period.
+  - question: In GL Client UK Subledger Close process, how do you restrict access
+      for AP and AR teams in the GL for the current month?
+    answer: In GL Client UK Subledger Close process, click on the 'Save' button to
+      restrict AP and AR teams from posting any transactions into the GL.
+  - question: Describe the steps to restrict GL modules for AR & AP Team in ERP  in
+      GL Client UK Subledger Close process?
+    answer: 'The steps to restrict GL modules for AR & AP Team in ERP  in GL Client
+      UK Subledger Close process are listed below.
+
+      1. Click on ''Periods'' in MS AX Dynamics. Another screen will open which shows
+      that the selected period is open for all.
+
+      2. Now click on button ''Module Status''.
+
+      3. Search the entity for which this activity needs to be performed (e.g. GBGD).
+
+      4. Copy and paste the entity name for User group Ledger, User group VAT, User
+      group Bank, User group Customer, User group Vendor and User group Fixed Assets.
+
+      5. Click ''Save''.'

@@ -1,0 +1,137 @@
+domain: 'BPOD Human Resource: Hope Medical Center_Time Away for Medical Residents
+  Policy'
+document_outline: The Hope Medical Center's Time Away for Medical Residents Policy
+  outlines eligibility, annual time allocation, recording, scheduling, usage, separation,
+  balances, and reinstatement/rehire procedures. It emphasizes the importance of communication,
+  planning, and adherence to federal, state, and municipal sick leave laws.
+seed_examples:
+- context: '1. Time Away. Eligible medical residents with a full-time equivalent (FTE)
+    of 0.5 or greater are eligible for time away. 200 time away hours will be front-loaded
+    each year on July 1. The time granted will be prorated based on FTE status (if
+    less than 1.0 FTE) and date of eligibility. Up to 40 hours of time away can be
+    carried over to the next year. The rollover of 40 hours is based on FTE (e.g.,
+    a .5 FTE will have up to 20 hours rolled over from one year to the next; if the
+    provider only has 15 hours, all 15 hours will roll over).
+
+    2. Recording Time Off. Time away may be taken in hourly increments. Exempt medical
+    residents should only record time away when taken in full day increments.
+
+    3. Time Away Scheduling and Usage
+
+    A. Medical residents are encouraged to use time away for planned and unplanned
+    time off. Time away requests should be made as much in advance as possible and
+    approved in accordance with departmental procedures. Requests for time away may
+    be approved or denied based on department needs and work requirements. If the
+    reason for the time away request falls under a federal, state and municipal sick
+    leave law, notice/approval requirements may vary. Medical residents are encouraged
+    to appropriately plan the use of their time away to ensure sufficient paid time
+    is available for absences due to incidental illness and observed holidays.
+
+    B. When two or more medical residents request time away at the same time for the
+    same period, and both requests cannot be granted, the requests will be subject
+    to their core leader''s determination unless the reason for the time away request
+    falls under a federal, state or municipal sick leave law which may require that
+    the provider be allowed time away regardless of staffing needs.'
+  questions_and_answers:
+  - question: What happens when two or more medical residents request time away at
+      the same time for the same period in Hope Medical Center's Time Away for Medical
+      Residents Policy?
+    answer: If both requests cannot be granted, the requests will be subject to the
+      core leader's determination unless the reason for the time away request falls
+      under a federal, state, or municipal sick leave law, which may require that
+      the provider be allowed time away regardless of staffing needs under Hope Medical
+      Center's Time Away for Medical Residents Policy.
+  - question: How should medical residents use their time away under Hope Medical
+      Center's Time Away for Medical Residents Policy?
+    answer: Medical residents are encouraged to use time away for planned and unplanned
+      time off under Hope Medical Center's Time Away for Medical Residents Policy.
+      Requests should be made as early as possible and approved according to departmental
+      procedures. Medical residents should plan their time away usage to ensure sufficient
+      paid time is available for absences due to incidental illness and observed holidays.
+  - question: How much time away can be carried over to the next year in Hope Medical
+      Center's Time Away for Medical Residents Policy?
+    answer: Up to 40 hours of time away can be carried over to the next year in Hope
+      Medical Center's Time Away for Medical Residents Policy. The rollover amount
+      is based on FTE, e.g., a .5 FTE can roll over up to 20 hours
+- context: '4. Separation. Time away is not a vested benefit and, as a result, has
+    no cash value. Therefore, unused time away balances will not be cashed out upon
+    separation of employment.
+
+    5. Time Away Balances. Time away balances will appear on pay statements. It is
+    the responsibility of each medical resident to identify any potential discrepancy
+    in the amount that appears on the pay statement and bring this to the attention
+    of human resources as soon as possible.
+
+    6. Short-Term Disability and Workers'' Compensation. Time away can be used to
+    cover the waiting periods for both short-term disability and workers'' compensation
+    leaves. Time away can also be used to supplement short-term disability or workers''
+    compensation benefits to 100% of base pay for the life of the claim or until time
+    away is exhausted.
+
+    7. Reinstatement/Rehire. Medical residents rehired or reinstated will have the
+    time away days frontloaded into their time away bank, prorated based on FTE and
+    date of reinstatement/rehire.'
+  questions_and_answers:
+  - question: What happens to unused time away balances upon separation of employment
+      in Hope Medical Center's Time Away for Medical Residents Policy?
+    answer: Unused time away balances do not have a cash value and are not cashed
+      out upon separation of employment in Hope Medical Center's Time Away for Medical
+      Residents Policy.
+  - question: How can time away be used in conjunction with short-term disability
+      and workers' compensation leaves under Hope Medical Center's Time Away for Medical
+      Residents Policy?
+    answer: Time away can be used to cover the waiting periods for both short-term
+      disability and workers' compensation leaves under Hope Medical Center's Time
+      Away for Medical Residents Policy. Additionally, time away can be used to supplement
+      short-term disability or workers' compensation benefits up to 100% of base pay
+      for the life of the claim or until time away is exhausted.
+  - question: What happens to time away balances when a medical resident is rehired
+      or reinstated under Hope Medical Center's Time Away for Medical Residents Policy?
+    answer: When a medical resident is rehired or reinstated, their time away days
+      will be frontloaded into their time away bank, prorated based on FTE and the
+      date of reinstatement/rehire under Hope Medical Center's Time Away for Medical
+      Residents Policy.
+- context: 'Hope Medical Center ("facility")
+
+    Department: Human Resources
+
+    Approved by: Chief Human Resources Officer
+
+    Date Last Reviewed: 6/19/2022
+
+    Date Last Revised: 6/19/2022
+
+    Date Adopted: 6/23/2019
+
+    Policy Name: Time Away for Medical Residents
+
+    Scope: All time away-eligible medical residents of the facility
+
+    Purpose: To establish the facility policy and expectations for medical residents
+    who accrue time away for planned and unplanned absences.
+
+    Policy:
+
+    In keeping with our mission and values, the facility provides eligible medical
+    residents time away subject to the limits and conditions described below. Time
+    away allows medical residents to maintain appropriate worklife balance by offering
+    time off for vacation, holidays, personal days and/or sick time or any other reason
+    required by law. This policy does not replace the need for the medical resident
+    to communicate the need for time off. This policy does not preclude or preempt
+    any federal, state or municipal sick leave law requirements.'
+  questions_and_answers:
+  - question: Does the Hope Medical Center's Time Away for Medical Residents Policy
+      replace any federal, state, or municipal sick leave law requirements?
+    answer: No, the Hope Medical Center's Time Away for Medical Residents Policy does
+      not replace or preempt any federal, state, or municipal sick leave law requirements.
+  - question: What types of time away does the Hope Medical Center's Time Away for
+      Medical Residents Policy cover?
+    answer: The Hope Medical Center's Time Away for Medical Residents Policy covers
+      time away for vacation, holidays, personal days, sick time, and any other reason
+      required by law
+  - question: What is the purpose of the Hope Medical Center's Time Away for Medical
+      Residents policy?
+    answer: The purpose of the Hope Medical Center's Time Away for Medical Residents
+      Policy is to establish the facility's policy and expectations for medical residents
+      who accrue time away for planned and unplanned absences, helping them maintain
+      a healthy work-life balance.

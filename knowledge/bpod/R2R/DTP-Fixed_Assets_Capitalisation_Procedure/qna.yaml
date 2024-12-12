@@ -1,0 +1,245 @@
+domain: 'BPOD record to analyze: DTP-Fixed Assets Capitalisation Procedure'
+document_outline: ' Describes all the steps and activities that need to be performed
+  in order to review WIP and submit Capitalisations.'
+seed_examples:
+- context: "# 4 Timelines \n\nFrequency -- Monthly\n\nPerformed on -- One view reports\
+    \ available from WD+2 -- IBM Month report available from WD+6 Final deadline --\
+    \ Capitalisations are to be submitted by WD-8 (or WD-7 for DACH) [Processes which\
+    \ are dependent on this process:]{.ul}\n\n-   Fixed Assets Depreciation\n\n- \
+    \  Process Period Close FA\n\n[This process depends on the following processes:]{.ul}\n\
+    \n-   Fixed Assets Depreciation"
+  questions_and_answers:
+  - question: What is the frequency of the Fixed Assets capitalization process?
+    answer: The fixed assets capitalization process is performed on a monthly basis.
+  - question: When is the final deadline for submitting fixed asset capitalizations?
+    answer: The final deadline for submitting fixed asset capitalizations is WD-8
+      (or WD-7 for DACH).
+  - question: Which process does the fixed asset capitalization process depend on?
+    answer: The fixed asset capitalization process depends on the Fixed Assets Depreciation
+      process.
+- context: "## *7.1.1 Extracting WIP review from One View* \n\nOn WD+2 MET team can\
+    \ access one view and download the WIP reports for the factories within their\
+    \ geography.\n\nOnce downloaded the reports should be distributed to each of the\
+    \ responsible people at each site for\n\nThe following steps describe how to extract\
+    \ the data from Oneview.\n\n1.  Access the Oneview portal by selecting the below\
+    \ link:\n\n2.  The Home Page window will open. Unfold **Applications** side bar\
+    \ menu.\n\n3.  Go to the **Operation Reports** option and click on the folder.\n\
+    \n4.  Go to the first factory within your Geography and select the file named\
+    \ capex.\n\n5.  Now download the file.\n\n**Note: If you export these reports\
+    \ into any other format it is important that all mandatory fields are included\
+    \ in the file, this is to ensure zero audit deficiencies**\n\nMandatory fields\
+    \ for WIP review are as follows;\n\n-   CPX Number\n\n-   CPX Name\n\n-   Start\
+    \ Date\n\n-   End Date\n\n-   Authorised budget\n\n-   Actual cost\n\n-   Overspend/underspend\n\
+    \n-   AUC Balance\n\n-   Budget Utilisation\n\n-   WIP Aging\n\n-   Overdue indicator\n\
+    \n6.  Attach the file to an email using outlook and send to the relevant factory\
+    \ advising of the action to be taken and the date to return the review\n\n***Note:\
+    \ It is best practice to request that all line items in the WIP review are reviewed\
+    \ on a monthly basis***\n\n7.  Repeat these steps for each of the factories within\
+    \ your remit."
+  questions_and_answers:
+  - question: In Fixed Asssts Capitalization Procedure, what are the mandatory fields
+      that must be included in the WIP review file?
+    answer: 'In Fixed Asssts Capitalization Procedure, the mandatory fields that must
+      be included in the WIP review file are:
+      *   CPX Number
+
+      *   CPX Name
+
+      *   Start Date
+
+      *   End Date
+
+      *   Authorised budget
+
+      *   Actual cost
+
+      *   Overspend/underspend
+
+      *   AUC Balance
+
+      *   Budget Utilisation
+
+      *   WIP Aging
+
+      *   Overdue indicator'
+  - question: Describe the steps for extracting WIP review from One View for Fixed
+      Assets Capitalization Procedure?
+    answer: "Follow the below steps for extracting WIP review from One View for Fixed\
+      \ Assets Capitalization Procedure.\n\n1.  Access the Oneview portal. The Home\
+      \ Page window will open. \n2. Unfold 'Applications' side bar menu.\n3.  Go to\
+      \ the 'Operation Reports' option and click on the folder.\n4.  Go to the first\
+      \ factory within your Geography and select the file named capex.\n5.  Now download\
+      \ the file. Fill the mandatory fields in the file.\n6.  Attach the file to an\
+      \ email using outlook and send to the relevant factory advising of the action\
+      \ to be taken and the date to return the review\n7.  Repeat these steps for\
+      \ each of the factories within your remit."
+  - question: When should MET team access One View to download the WIP reports for
+      Fixed Assets Capitalization Procedure?
+    answer: MET team should access One View to download the WIP reports for Fixed
+      A.ssets Capitalization Procedure on WD+2
+- context: "### Send RTR C2.12 Wip report to the Sourcing Unit for review (MET) \n\
+    \nWhen the report is received by MET, they should do a sense check and forward\
+    \ it to the relevant people (usually local finance, engineering) in the Sourcing\
+    \ Unit.\n\nWhen preparing the file for the SU it is advised to **highlight** the\
+    \ projects where they should put more focus, or which projects will be overdue\
+    \ in the next report, so they can make preventive actions on those *(if you see\
+    \ some projects with end date in current month, you know that those will become\
+    \ overdue soon, so it can be good to already ask for end date extension if the\
+    \ SU confirms it will not be finalized before the current deadline).*\n\nThe **Sourcing\
+    \ Unit** is then responsible for the **review** of the relevant projects and for\
+    \ making **comments** and providing the necessary information for the possible\
+    \ IO End date extensions. This information should be:\n\n-   Reason for the delay\n\
+    \n-   New project end date (if end date extension is required)\n\nBy rule, the\
+    \ projects with status \"**Overdue**\" should always be commented, but to comment\
+    \ the projects with status \"Not overdue\" is optional (exception is region of\
+    \ DACH where comments in all lines are required to capture also projects that\
+    \ have to be capitalized before end date). Of course if a 'Not overdue' project\
+    \ is delayed then it can be extended at any time, you don't need to wait until\
+    \ it becomes 'Overdue'."
+  questions_and_answers:
+  - question: What should MET do when they receive the RTR C2.12 WIP report?
+    answer: MET should do a sense check and then forward the report to the relevant
+      people (usually local finance, engineering) in the Sourcing Unit.
+  - question: What is the purpose of highlighting certain projects in the WIP report
+      sent to sourcing unit for review?
+    answer: The purpose of highlighting certain projects in the WIP report sent to
+      sourcing unit for review is to draw attention to projects that require more
+      focus or that will be overdue in the next report, so that preventive actions
+      can be taken.
+  - question: What information should the Sourcing Unit provide when reviewing the
+      WIP report?
+    answer: 'When reviewing the WIP report, the Sourcing Unit should provide:
+      *   Reason for the delay
+
+      *   New project end date (if end date extension is required)'
+- context: 'At the start of each month (by WD +6) IBM sends a report to all Sourcing
+    Units and the relevant MET with the actual **open WIP balance** for each company
+    codes (snapshot is taken at the end of the previous month from SAP).
+    **RTR C2.12** **Control**- To ensure that all capital expenditure projects due
+    for capitalization, are capitalized before period close, periodic reporting of
+    all open capital expenditure projects is produced, showing for all projects their
+    start and end date along with their percentage of completion (with respect to
+    budget utilization). For all Capex projects / IOs, start and end dates are mandatory
+    to be filled out at the time of creating projects / IOs. All projects / IOs that
+    are 100% complete with respect to budget utilization or crossed their end date,
+    are investigated and potentially capitalized.
+    In this report every SU can see the current open WIP balance on **Company code**
+    and **CPX** level. If there are multiple company codes for a SU, you can see multiple
+    sheets in the file:
+    -   **Instruction**: what is the objective of this report and what actions are
+    required
+    -   **UBF03/ICFE/HPC/NATMAN:** actual data for the different categories / company
+    codes
+    -   **AUC Details**: detailed snapshot of open AUC balance, including Internal
+    Order numbers (all company codes)
+    The main data can be found on the sheets named by the Categories (HPC, UBF03,
+    ICFE etc.), these tabs have to be reviewed and filled with the relevant comments.
+    -   **Company code:** relevant company code
+    -   **CPX number:** Marlin capex ID
+    -   **CPX name:** Marlin capex description
+    -   **Plant**: relevant plant code
+    -   **IO number:** (not available for all company codes). If IO number is not
+    filled here, you can check the relevant Internal Orders for a specific CPX on
+    sheet "**AUC Details"**
+    -   **AUC number:** (not available for all company codes)
+    -   **Start date:** IO start date, taken from SAP
+    -   **End date:** IO end date, taken from SAP
+    -   **Authorized budget:** current budget, taken from SAP (if budget has been
+    changed after the initial submission, this column should reflect the modified
+    budget)
+    -   **Actual cost:** actual spend on the relevant IO
+    -   **Overspend/Underspend:** =(authorized budget -- actual cost)
+    -   **AUC balance:** current open AUC balance
+    -   **Currency:** local currency
+    -   **% budget utilized:** =(actual cost divided by authorized budget). If above
+    100%, comment is required.
+    -   **WIP ageing:** =(current date -- IO start date) showing how old the CPX is
+    -   **Overdue ageing:** =(current date -- IO end date). Positive value if IO is
+    overdue, negative if not overdue'
+  questions_and_answers:
+  - question: What is the purpose of the RTR C2.12 control?
+    answer: The purpose of the RTR C2.12 control is to ensure that all capital expenditure
+      projects due for capitalization are capitalized before period close, by producing
+      periodic reports of all open capital expenditure projects.
+  - question: What information is included in the open WIP balance report?
+    answer: 'Following information is included in the open WIP balance report.
+
+      *   Company code and CPX level
+
+      *   Start and end dates of projects
+
+      *   Percentage of completion with respect to budget utilization
+
+      *   Actual data for different categories and company codes
+
+      *   AUC Details, including Internal Order numbers and AUC balance'
+  - question: How is % budget utilized calculated in open WIP Balance report.
+    answer: In Open WIP Balance report, % budget utilization is calculated by dividing
+      actual cost by authorized budget. A comment needs to be filled in if it is greater
+      than 100%.
+- context: '| > **Role**                                | > **Description**                                                                                                                                                                                                                                                                                          |
+    **Responsibility**                                                                                                                                                                          |
+
+    +===========================================+============================================================================================================================================================================================================================================================================================================+=============================================================================================================================================================================================+
+
+    | > SU                                      | > SU is obliged to review WIP each
+    month when request                                                                                                                                                                                                                                                      |
+    \- Inform MET team with regards to capitalisations which need to take place, providing
+    a breakdown of new assets if required, indicating new asset/sub assets to be created.                |
+
+    +-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+    | > Requestor (MET team FA                  | > The requestor is obliged to initiate
+    the WIP review process each month, by accessing and downloading the WIP reports
+    for each factory in their Geography, reviewing the responses from each factory
+    and submit Capitalisations inline with Client accounting rules using the Xpandion
+    request templates. | -   Review capitalization requests, ensuring new asset/sub
+    asset creations meet minimum GBV threshold for local geography. If capitalizing
+    to existing assets ensure asset is still active. |
+
+    | >                                         | >                                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                             |
+
+    | > specialist)                             | > The information provided in the
+    template must cover the details necessary to process the FA master data capitalization
+    and Date Extensions in SAP. The Requestor is responsible for initiating the process
+    according to local and specific business requirements.                                        |
+    -   Submit Capitalisation Requests                                                                                                                                                          |
+
+    +-------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+    | > Operating Centre approver               | > The OC approver is responsible
+    for the review of the requests submitted via Xpandion workflow tool and for the
+    verification from business perspective, to ensure that the request data meet all
+    Client business requirements.                                                                            |
+    -   Review FA Capitalisation Request                                                                                                                                                        |
+
+    |                                           | >                                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                             |
+
+    |                                           | > The request is received and approved
+    or rejected through Xpandion Workflow which allows document history tracking and
+    automatic notification of the relevant process parties.                                                                                                                            |
+    -   Provide support to Requestor                                                                                                                                                            |
+
+    |                                           | >                                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                             |
+
+    |                                           | > OC Approver is also responsible
+    for providing accounting support for Requestor if needed.                                                                                                                                                                                                                |                                                                                                                                                                                             |'
+  questions_and_answers:
+  - question: What is the role of the SU in the Fixed Assets Capitalization Process?
+    answer: The SU reviews WIP each month when requested and informs the MET team
+      regarding capitalizations which need to take place, providing a breakdown of
+      new assets if required, indicating new asset/sub assets to be created.
+  - question: What is the responsibility of the Requestor (MET team FA specialist)
+      in Fixed Assets capitalization process?
+    answer: 'In Fixed Assets Capitalization process, the Requestor is responsible
+      for:
+      *   Initiating the WIP review process each month
+      *   Reviewing capitalization requests to ensure new asset/sub asset creations
+      meet minimum GBV threshold for local geography
+      *   Submitting Capitalisation Requests'
+  - question: What is the purpose of the Xpandion workflow tool in the fixed assets
+      capitalization request process?
+    answer: In fixed assets capitalization request process, the Xpandion workflow
+      tool is used for submitting and approving capitalization requests, and allows
+      for document history tracking and automatic notification of the relevant process
+      parties.

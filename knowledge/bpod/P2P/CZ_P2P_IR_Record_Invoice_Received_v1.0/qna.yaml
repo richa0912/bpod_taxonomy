@@ -1,0 +1,442 @@
+domain: 'BPOD procure to pay: CZ_P2P_IR_Record Invoice Received_v1.0'
+document_outline: Describes how the IBM Delivery Centers perform and document operational
+  tasks associated with receiving invoices for Client.
+seed_examples:
+- context: '## Step Description
+
+
+    ### Define methods of delivering AP documents
+
+
+    +------------------------------------+
+
+    | Description                        |
+
+    +====================================+
+
+    | Who: Supplier                      |
+
+    |                                    |
+
+    | When: Before sending invoice to AP |
+
+    |                                    |
+
+    | Why: N/A -- on supplier side       |
+
+    |                                    |
+
+    | How: N/A -- on supplier side       |
+
+    +------------------------------------+
+
+
+    There are 2 ways for suppliers to send invoices:
+
+
+    Hard copy (paper invoice) submission -- go to step 3.
+
+
+    PDF submission -- refer to step 7.
+
+
+    ### Send AP document for scanning to defined PO Box
+
+
+    +-------------------------------------+
+
+    | Description                         |
+
+    +=====================================+
+
+    | Who: Supplier                       |
+
+    |                                     |
+
+    | When: Once paper invoice was issued |
+
+    |                                     |
+
+    | Why: N/A -- on supplier side        |
+
+    |                                     |
+
+    | How: N/A -- on supplier side        |
+
+    +-------------------------------------+
+
+
+    ### Receive paper document
+
+
+    +-----------------------------------------+
+
+    | Description                             |
+
+    +=========================================+
+
+    | Who: Client Scanning Team               |
+
+    |                                         |
+
+    | When: Once Supplier sends paper invoice |
+
+    |                                         |
+
+    | Why: N/A -- on client side              |
+
+    |                                         |
+
+    | How: N/A -- on client side              |
+
+    +-----------------------------------------+
+
+
+    ### Open envelop and pre-sort document
+
+
+    +-----------------------------------+
+
+    | Description                       |
+
+    +===================================+
+
+    | Who: Client Scanning Team         |
+
+    |                                   |
+
+    | When: Once paper invoice received |
+
+    |                                   |
+
+    | Why: N/A -- on client side        |
+
+    |                                   |
+
+    | How: N/A -- on client side        |
+
+    +-----------------------------------+'
+  questions_and_answers:
+  - question: How many ways can suppliers send invoices?
+    answer: 'The supplier can deliver AP documents in two ways: hard copy (paper invoice)
+      submission or PDF submission'
+  - question: What should the Client Scanning Team do once they receive the paper
+      invoice?
+    answer: Client Scanning Team should open the envelope and pre-sort the document.
+  - question: When should the methods of delivering AP documents be defined?
+    answer: The supplier is responsible for defining the methods of delivering AP
+      documents before sending invoice to AP
+- context: '### Complete data and trigger workflow
+
+
+    +------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+    | Description                                                                                                                                                      |
+
+    +==================================================================================================================================================================+
+
+    | Who: IBM AP INVOICE PROCESSING TEAM                                                                                                                              |
+
+    |                                                                                                                                                                  |
+
+    | When: Once correction is required                                                                                                                                |
+
+    |                                                                                                                                                                  |
+
+    | Why: To ensure all invoices received from supplier are completely validated.
+    Validation exceptions identified are investigated & resolved through to completion.
+    |
+
+    |                                                                                                                                                                  |
+
+    | How: see description below                                                                                                                                       |
+
+    +------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+    If any of the data was not captured by the OCR or was recognized incorrectly,
+    please perform proper corrections, as described below:
+
+
+    **Recipient number (*Kod Spolecnosti*)** -- this is the address of CLIENT company,
+    for which the invoice was issued. Please check if the address on the invoice is
+    valid and compare it to the data captured by OCR tool. In case of mismatch, please
+    check if correct address is visible in the dropdown list. If not, please compare
+    the company name and address data with the attached file **"Cheat-sheet"** to
+    determine the proper company code. If there''s a mismatch between company name
+    and address (example: name for Client Czech and address for Client Sand or similar)
+    -- always choose company code based on legal name of the entity. If you are not
+    able to find the proper recipient number, please put "1" in total value field
+    and delete tax amount to forward this invoice for manual verification.
+
+
+    **Sender number (*Cislo dodavatele*)** -- the data in this field should exactly
+    match the invoice image. In case of mismatch, please check the dropdown list if
+    there is a correct sender available. If yes, please select the correct sender
+    from the dropdown list.'
+  questions_and_answers:
+  - question: Who is responsible for ensuring all invoices received from suppliers
+      are completely validated?
+    answer: The IBM AP Invoice Processing Team is responsible for ensuring all invoices
+      received from suppliers are completely validated.
+  - question: What is Recipient number (Kod Spolecnosti) field in an invoice?
+    answer: The Recipient number (Kod Spolecnosti) field is the address of the CLIENT
+      company for which the invoice was issued. If the address on the invoice is valid,
+      it should match the data captured by the OCR tool. If there is a mismatch, the
+      correct address should be determined using the attached "Cheat-sheet" file.
+      If the correct recipient number cannot be found, "1" should be put in the total
+      value field and the tax amount should be deleted to forward the invoice for
+      manual verification.
+  - question: What should be done if the data in the Sender number field does not
+      match the invoice image?
+    answer: If the data in the Sender number (*Cislo dodavatele*) field does not match
+      the invoice image, the dropdown list should be checked for the correct sender.
+      If available, the correct sender should be selected from the dropdown list.
+- context: '**VAT Rate (*Sazba DPH*)** -- based on the tax code or percentage on the
+    invoice.
+
+
+    **Note:** If there are multiple VAT rates mentioned on the invoice, please remove
+    the value from VAT rate field. This will block the invoice from being processed
+    automatically and allow the accountants to process it manually.
+
+
+    If you are unsure which tax code to use, please remove the total amount as well
+    and put "1" instead to move the invoice for manual processing.
+
+
+    **Currency (*Mena*) --** it should always be clearly mentioned on the invoice:
+
+
+    **Note:** If the invoice is issued by vendor from Czech Republic, but currency
+    is different than Czech Crowns (CZK), except just putting 1 in the amount, you
+    should also put a tax details (tax code, tax rate) but without putting the tax
+    amount in -- see screenshot below:
+
+
+    **Tax code --** each VAT rate has its respective tax code. To determine the correct
+    tax code, please refer to attached file **"Cheat-sheet".**
+
+
+    **Note:** If the tax amount is zero but there is no text provided on the invoice
+    as mentioned in the Tax Decision Tree (*dan'' uvede zakaznik* or *neni platce
+    dane*). And the vendor is from Czech Republic, you can put a zero in tax amount
+    and in percentage amount and in Tax code put N0 -- see screenshot below:
+
+
+    **Note:** for non-PO invoices, the there is only the VAT Rate field, tax code
+    does not exist:
+
+
+    **Purchase order number (*Cislo objednavky*) (for PO invoices only)** -- it should
+    be read automatically; if it was not read and it''s not to be easily found on
+    the invoice, this field can be left blank.
+
+
+    PO numbers may have various formats. We can use PO numbers starting with **450...,
+    451..., 55..., 1000...**
+
+
+    We **cannot** use PO numbers starting with **51..., 460..., 458..., 2000...**
+
+
+    In case you see a PO starting with above mentioned numbers, please follow the
+    same logic as for any other errors or missing data to ensure the invoice will
+    be forwarded for manual check.
+
+
+    Next, you should check the PO number in SAP.
+
+
+    **Exception:** You don''t have to do this for PO number starting with 1000....'
+  questions_and_answers:
+  - question: What is the significance of the VAT Rate field in the invoice processing?
+    answer: The VAT Rate field is based on the tax code or percentage on the invoice.
+      If there are multiple VAT rates mentioned on the invoice, the value should be
+      removed from this field to block the invoice from being processed automatically
+      and allow the accountants to process it manually.
+  - question: What should be done if the tax amount is zero and there is no text provided
+      on the invoice?
+    answer: If the tax amount is zero but there is no text provided on the invoice
+      as mentioned in the Tax Decision Tree and the vendor is from Czech Republic,
+      a zero can be put in tax amount and in percentage amount and Tax code should
+      be N0.
+  - question: What are acceptable PO formats in the Record Invoice Received process?
+    answer: PO numbers starting with 450..., 451..., 55... and 1000... are the acceptable
+      PO formats.
+- context: 'In case some important information is missing, please put "1" as total
+    amount and delete tax amount, to ensure the invoice will be forwarded to accountants
+    for manual verification and not processed automatically.
+
+
+    For instance, there should be always one invoice scanned in one PDF. If during
+    validation in the displayed original you found that two or more invoices are scanned
+    in one PDF file, please proceed as follows:
+
+
+    Login to SAP (procedure described in step [5.2.17 Complete data and trigger workflow](#complete-data-and-trigger-workflow)).
+    Go to transaction "/OTX/PF03_WP -- Business Center Workplace", select the desired
+    file by registration number and save the displayed document with multiple invoices
+    as a PDF to your PC.
+
+
+    Sends this document by email to **\"xxx\@Client.com\"** with the note
+    to "unlink and rescan".
+
+
+    Returns to validation tool and deletes the displayed document with multiple invoices
+    from the system. (See step [5.2.16 Reject the document from the system)](#reject-the-document-from-the-system)
+
+
+    First, check if the received document is a valid invoice or any other document
+    that should not be processed in SAP Workflow. If you recognize a document which
+    is not an invoice (reminder, advertisement etc.) or the invoice is illegible,
+    please move to step 5.2.16.
+
+
+    If it''s a valid invoice, please check if all following fields were read correctly
+    by the OCR system:
+
+    1.  **Recipient number** *-- Kod Spolecnosti*
+
+    2.  **Sender number** -- *Cislo dodavatele*
+
+    3.  **Bank details** *-- Kod Banky dodavatele/Cislo bankovniho uctu dodavatele/dodavatel
+    -- cislo IBAN*
+
+    4.  **Total amount** *-- Castka celkem*
+
+    5.  **Tax amount** *-- Castka DPH*
+
+    6.  **Reference number + VAT** *-- Referencni cislo + VAT*
+
+    7.  **Reference number** *- Referencni cislo*
+
+    8.  **Document date** *-- Datum dokumentu*
+
+    9.  **Date of taxable supply** *-- Datum DUZP*
+
+    10. **VAT Rate** *-- Sazba DPH*
+
+    11. **Currency** *- Mena*
+
+    12. **Tax code (for PO invoices only)**
+
+    13. **Purchase order number (for PO invoices only)**'
+  questions_and_answers:
+  - question: What should be done if there are two or more invoices in one PDF file?
+    answer: 'If during validation in the displayed original you found that two or
+      more invoices are scanned in one PDF file, please proceed as follows:
+
+
+      1. Login to SAP. Go to transaction "/OTX/PF03_WP -- Business Center Workplace".
+      Select the desired file by registration number. Save the displayed document
+      with multiple invoices as a PDF to PC.
+
+      2. Send this document by email to "xxx@Client.com" with the note to
+      "unlink and rescan".
+
+      3. Return to validation tool and delete the displayed document with multiple
+      invoices from the system.'
+  - question: What fields should be checked if the received document is a valid invoice?
+    answer: 'If the received document is a valid invoice, the following fields should
+      be checked if read correctly by the OCR system: Recipient number, Sender number,
+      Bank details, Total amount, Tax amount, Reference number + VAT, Reference number,
+      Document date, Date of taxable supply, VAT Rate, Currency, Tax code (for PO
+      invoices only), and Purchase order number (for PO invoices only).'
+  - question: What should be done if important information is missing in an invoice?
+    answer: If important information is missing in an invoice, put "1" as the total
+      amount and delete the tax amount to ensure that the invoice is forwarded to
+      accountants for manual verification and not processed automatically.
+- context: 'Once a week you should check and correct the interface errors and rejections.
+    To do it, please login to SAP (described in step [5.2.17 Complete data and trigger
+    workflow](#complete-data-and-trigger-workflow)) and follow the below steps.
+
+
+    1.  **Error verification:**
+
+
+    Open transaction **/n/OTX/PF03_WP** -- it shows all documents that were scanned
+    and are prepared for validation:
+
+
+    Choose option "Error" in the left-hand menu.
+
+
+    **Note:** You will see errors for all company codes and countries, so you need
+    to sort the records by country based on document type:
+
+
+    Select all the lines for Czech Republic by highlighting them:
+
+
+    Click on "choose Bulk Action":
+
+
+    Use "change status" option:
+
+
+    Change it for 71 by double clicking on the line:
+
+
+    After selecting the new status, a confirmation will be shown:\
+
+    This action wil trigger a request to the sender to resubmit the errorous items
+    once again for scanning/OCR.
+
+
+    **NOTE!** After sixth attempt to restart the document in the system it must be
+    rejected and scanned one more time -- in this case please send an e-mail to xxx@Client.com
+    mentioning the Reg ID.
+
+
+    **NOTE!** If you find a document in status **75** (not error but document is frozen
+    in the system) -- see "Status" column - you can change the status to 74 istead
+    of 71.
+
+
+    2.  **Rejections**
+
+
+    In transaction **/n/OTX/PF03_WP** switch to "Rejected":
+
+
+    Filter Czech items only, by clicking on funnel button and selecting two following
+    criteria from the Column Set: (Document type and Date of Registration).
+
+
+    Next, click on "Define Values":
+
+
+    Put the "**\*CZ\***" as document type and date range between current date and
+    date of previous verification (excluding that date) to avoid overlapping the date
+    ranges. For example: if previous check was done for date range 03.04.2023-10.04.2023,
+    the next time you should pick 11.04.2023 as starting date.
+
+
+    Confirm with tick button:
+
+
+    Sort the generated list of documents by document type:
+
+
+    For each line, you need to check the description in the Detail Pane: (In case
+    you don''t see the item details, please use the button "show detail pane" in the
+    upper menu.)
+
+
+    If the status is "**78**" and description is "**Rejected by administrator**" you
+    should not process these items further and move on to the next document.
+
+    '
+  questions_and_answers:
+  - question: What transaction should be opened to view all documents prepared for
+      validation?
+    answer: Transaction /n/OTX/PF03\_WP should be opened to view all documents prepared
+      for validation.
+  - question: What should be done if there are more than six attempts to restart the
+      document in the system?
+    answer: The document must be rejected and scanned one more time, and an email
+      should be sent to xxx@Client.com mentioning the Reg ID.
+  - question: What document type should be put to filter Czech rejections?tor"?
+    answer: CZ should be put as the document type to filter Czech rejections

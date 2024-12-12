@@ -1,0 +1,183 @@
+domain: 'BPOD Record to Analyze: WI_AV_R2R_NA_Acct Recon_Trade Receivable_AR Gain
+  Loss_KR.docx'
+document_outline: Describes how IBM Delivery Centre will understand the objective
+  of AR gain/loss reconciliation
+seed_examples:
+- context: 'ACTIVITIES:
+
+    1.To prepare the reconciliation for GL 11025 & GL 31816 for both USD & CAD
+
+    This reconciliation is prepared to identify and variances in the AR Gain or Loss
+    for both Canadian currency and for the group currency. Hence, a query run is done
+    every month for document, local and group currency. This reconciliation is prepared
+    every month after the close and before Day +19 of the month.
+
+    Go to Black Line and select number of accounts and then select any CAD reconciliation
+    to get the 10 decimal CAD rate for matching the reconciliation with BL.
+
+    2. Open Bex Analyzer (BW query) with your SAP login credentials and select "Add
+    ins" from the menu bar to open the workbook
+
+    3.Then go to omgfinance(\CORPSHARE)(P:)IBM\Reconciliations\FYXX Recon and open
+    the folder 11025_31816 to run the query.
+
+    For instance, for the FY 2020, go to the above stated path and select FY20 to
+    select the reconciliation workbook.
+
+    4.Next open 11025_31816 Global workbook
+
+    5. Go to "GL Balance" tab and select "Change Variables Values" icon.
+
+    "GL Balance tab" is the balance query that give the balance in local currency.
+
+    6.Update the following parameters for the variables:
+
+    {=html}
+
+    <!-- -->
+
+    (i) Period/Fiscal Year: Reporting period and Fiscal year. For instance, for February
+    2020, period/fiscal year will be 008/2020-008/2020
+
+    (ii) General Ledger ID: G1
+
+    (iii) GL Account: 11025_31816
+
+    (iv) Currency type: 10 and
+
+    (v) Select "Check" and "Ok".
+
+    Below is the resultant screen shot for February 2020
+
+    7."Currency Bal" tab is also a balance currency that gives balances in all three
+    currencies. This tab gets auto updated along with GL Balance tab. The three different
+    currencies are --
+
+    {=html}
+
+    <!-- -->
+
+    (i) 00 -- Document currency
+
+    (ii) 10 -- Local currency
+
+    (iii) 30 - Group currency
+
+    {=html}
+
+    <!-- -->
+
+    8. GL Line items tab pertains to the activity that happened during the fiscal
+    month. This also gets auto-updated along with other balance tabs at the time of
+    query run. Please check if the data has been updated in the tab correctly.
+
+    9.Go to "GL Line Items tab and copy the data excluding the result line.
+
+    10. Go to the "GL Line Item" tab (tab highlighted in green) and paste the data.
+    This tab is updated for the activities that had happened during the fiscal year.
+    Hence, for the month of February, paste the data copied after the last line of
+    January
+
+    11. Go to Pivot tab and click any cell on the pivot and thenselect "Analyze" from
+    the Pivot Table tools to update the pivot.
+
+    12.Select "Change Data Source"
+
+    13.Provide the data range in the "Change Pivot Data Source" and select ok
+
+    14.Right click on any cell in pivot table and select "Refresh"
+
+    15. Update cell A1 for the period and Fiscal year in the pivot table tab
+
+    16.Copy the Black line CAD rate and type in the same in "Row 1 Column B" of the
+    pivot tab
+
+    17 column C of the pivot represents the sum of local currency amount. To convert
+    the value in group currency, go to column E (outside pivot) and multiply the value
+    in CAD for GL 11025 with the conversion rate provided in B1. For instance, for
+    company code CA10, the value of 154,544.01 (in C5) of CAD dollars is converted
+    to USD 116,531.45 in column E by the formula "Round(C5*B1,2)
+
+    18. For CC US10, since the amount in local currency is in USD, provide the same
+    value as provided in the C6 in E6 as well.
+
+    19. For GL 31816, update the values in Column E in the same manner as completed
+    for GL 11025.
+
+    20. Check and update the total column for Blackline column in E12.
+
+    21.Select all the tabs and do a copy of the tabs to a new workbook
+
+    22.Now select "break links"
+
+    23. ename the file for the reporting period and save.
+
+    24. Next go to BL to complete and submit the reconciliations. The process to prepare
+    and submit the reconciliations in BL is covered separately in BL Master DTP.'
+  questions_and_answers:
+  - question: What is the system used to submit Reconciliation?
+    answer: Blackline is used to complete and submit the reconciliation
+  - question: How many steps involved in the process of the  Reconciliation of AR
+      gain/loss?
+    answer: Ther are 24 steps involved to complete and submit the reconciliation.
+  - question: Which DTP to refer to prepare and submit the reconciliation in BL?
+    answer: The process to prepare and submit the reconciliations in BL is covered
+      separately in BL Master DTP.
+- context: 'REFERENCE:
+
+
+    List of company codes in scope:
+
+    Entity Name Company Code name Account Group & Description GL Account number System
+
+    Avnet Inc US10 N1_1060100_11025_31816 11025 BW, BL Avnet Inc US10 N1_1060100_11025_31816
+    31816 BW, BL Avnet Inc CA10 N1_1060100_11025_31816 11025 BW, BL Avnet Inc CA10
+    N1_1060100_11025_31816 31816 BW, BL
+
+
+    Work list input:'
+  questions_and_answers:
+  - question: What is the list of country code in scope for Reconiliation of AR gain/loss?
+    answer: Refer List of company codes in scope:Entity Name Company Code name Account
+      Group & Description GL Account number System
+  - question: Which GL account number is to consider for Reconciliation of AR Gain/loss?
+    answer: This WI is prepared to reconcile for AR Gain or Loss for GL 11025 and
+      31816
+  - question: What  Account group and descripion used to those GL for AR Gain/loss?
+    answer: This WI is prepared to reconcile for AR Gain or Loss in GL 11025 and 31816
+      of the Account group N1_1060100_11025_31816.
+- context: 'TOOLS: Microsoft Excel, Blackline, Bex Analyzer (BW Query)'
+  questions_and_answers:
+  - question: How many tools are used for Reconciliation of AR gain/loss
+    answer: There are 3 tools used for teconciliation of AR Gain/Loss
+  - question: What tools are used for Reconciliation of AR gain/loss
+    answer: Microsoft Excel, Blackline, Bex Analyzer (BW Query)
+  - question: What query to execute using BEx Analyzer to analyze data in ERP?
+    answer: BW query is to execute using BEx Analyzer to analyze data in ERP
+- context: "WHAT: This WI is prepared to reconcile for AR Gain or Loss in GL 11025\
+    \ and 31816 of the Account group N1_1060100_11025_31816.\nWHY: This reconciliation\
+    \ is prepared to identify any unreconciled differences on the AR Gain Loss for\
+    \ both local and document currency. Any unreconciled reconciliation is to be identified,\
+    \ examined and reported.   \nWHO: This document should be used by IBM R2R Accountant,\
+    \ Avnet R2R Accountant and Avnet Manager only"
+  questions_and_answers:
+  - question: What is the objective of Reconciliation of AR gain & Loss?
+    answer: This reconciliation is prepared to identify any unreconciled differences
+      on the AR Gain Loss for both local and document currency.
+  - question: What is the approach for addressing discrepancies in this reconciliations.
+    answer: Any unreconciled reconciliation is to be identified, examined and reported.
+  - question: Who will be using this reconciliation document?
+    answer: This document is useful for Ibm and client R2R accountant and client manager
+      for decision making
+- context: 'WHEN: Monthly WD+8 to WD+19'
+  questions_and_answers:
+  - question: What is the Frequency of reconcilation of AR gain/loss
+    answer: The frequency of reconciliation of AR Gain/loss is monthly
+  - question: What is the start period for the Reconcilation of AR gain/loss activity
+      ?
+    answer: The reconciliation of AR Gain/loss is monthly post close activity start
+      from WD +8
+  - question: What is the end  period for the Reconcilation of AR gain/loss activity
+      ?
+    answer: The reconciliation of AR Gain/loss is monthly post close activity end
+      by WD +19

@@ -1,0 +1,318 @@
+domain: 'BPOD order to cash: Fleet Audit Trail, Customer Invoice and P&D Daily Download
+  (1)'
+document_outline: The steps involved in downloading and publishing the Audit trail
+  report, customer invoices and special preparation and delivery credit memo daily
+  to the fleet invoicing team and customers.
+seed_examples:
+- context: '# Overview
+
+
+    ## Objective(s)
+
+
+    On a daily basis, an audit trail report should be downloaded and shared with the
+    fleet invoicing auditor for verifying the entries. The Audit trail report contains
+    details of invoices generated on the prior day by the fleet invoicing assistants.
+    This report helps the auditor, in auditing the invoices generated through RASS
+    and let the invoicing assistants know if any changes to be made.
+
+
+    Customer Invoices are downloaded on a daily basis. This report cantains all the
+    customer invoices generated from prior day invoicing. The fleet invoicing teams
+    will be using this information for sending the invoices to customer based on the
+    requirement.
+
+
+    A Special Preparation and Delivery credit notes are downloaded on a daily basis.
+    This report contains the details of memos generated against the preparation and
+    delivery for a specific unit. The report is shared with the customers and fleet
+    invoicing team.
+
+
+    ## SIPOC
+
+
+    +---------------------------+-------------------------+----------------------------------------------------------------+--------------------------------------+----------------------------+
+
+    | **SUPPLIER**              | **INPUT**               | **PROCESS**                                                    |
+    **OUTPUT**                           | **CUSTOMER**               |
+
+    +===========================+=========================+================================================================+======================================+============================+
+
+    | Fleet Invoicing Assistant | Invoice created in RASS | -Download the Audit Trail
+    report from ERD                      | -Audit Trail report                  |
+    -Fleet Invoicing Assistant |
+
+    |                           |                         |                                                                |                                      |                            |
+
+    |                           |                         | -Download cusomer invoices
+    from Access Database                | -Customer Invoices                   | -Customers                 |
+
+    |                           |                         |                                                                |                                      |                            |
+
+    |                           |                         | -Download Special Prep
+    & Delivery invoice from Access database | -Special Prep & Delivery credit memo
+    |                            |
+
+    +---------------------------+-------------------------+----------------------------------------------------------------+--------------------------------------+----------------------------+'
+  questions_and_answers:
+  - question: What is the purpose of the audit trail report in fleet invoicing?
+    answer: The purpose of the audit trail report is to help the auditor in auditing
+      the invoices generated through RASS and to let the invoicing assistants know
+      if any changes need to be made.
+  - question: What are the different types of reports downloaded on a daily basis
+      in fleet invoicing?
+    answer: 'The three types of reports downloaded on a daily basis in fleet invoicing
+      are:
+
+      1. Audit Trail report
+
+      2. Customer Invoices report
+
+      3. Special Preparation and Delivery credit notes report'
+  - question: Who is the supplier in the fleet invoicing process?
+    answer: The supplier in the fleet invoicing process is the Fleet Invoicing Assistant.
+- context: '# Process Detail
+
+
+    ## Overview
+
+
+    Audit Trail report contains details of invoices generated on the prior day by
+    the fleet invoicing assistants. This report helps the auditor, in auditing the
+    invoices generated through RASS for the prior day and let the invoicing assistants
+    know if any changes to be made.
+
+
+    Customer Invoices are downloaded on a daily basis. This report cantains all the
+    customer invoices generated through RASS from prior days invoicing. The fleet
+    invoicing teams will be using this information for sending the invoices to customer
+    based on the requirement.
+
+
+    A Special Preparation and Delivery credit notes are downloaded on a daily basis.
+    This report contains the details of memos generated against the preparation and
+    delivery for a specific unit. The report should be shared with fleet invoicing
+    team and the NFC team.'
+  questions_and_answers:
+  - question: What is the purpose of audit trail report?
+    answer: The purpose of the Audit Trail report is to help the auditor in auditing
+      the invoices generated through RASS for the prior day and to inform the invoicing
+      assistants of any changes to be made.
+  - question: What information is contained in the Customer Invoices report?
+    answer: The Customer Invoices report contains all the customer invoices generated
+      through RASS from prior days invoicing.
+  - question: Who uses the information from the Special Preparation and Delivery credit
+      notes report?
+    answer: The information from the Special Preparation and Delivery credit notes
+      report is shared with the fleet invoicing team and the NFC team.
+- context: "### AUDIT TRAIL REPORT\n\n1.  Open Client Engage homepage(**[https://example.com]{.ul}**),\
+    \ and click on the window button\n\n2.  Click on Client Apps, scroll down the\
+    \ page and select Enterprise Report Distribution(ERD) option\n\n3.  Below page\
+    \ will be opened, click on the plus sign on the first line that says RASS AUDIT\
+    \ TRAIL REPORT FILE\n\n4.  It expands the information and day wise report can\
+    \ be visible on the screen. Click on the latest report that needs to be downloaded.\
+    \ In the below screen it will be Apr 9, 2022 report.\n\n5.  Report will be opened,\
+    \ click on the Print icon to generate the report in the PDF format \n\n6.  This\
+    \ will show the number of invoices that was generated on the prior day by the\
+    \ fleet invoicing assistants. The data is converted into PDF format.\n\n7.  Once\
+    \ the PDF file is generated, click on the Send option.\n\n8.  Update the file\
+    \ name as Audit Trails Printed with current date. Click OK.\n\n9.  This creates\
+    \ an email with the attachment \n\n10. Add fleet invoicing assistants, pre audior\
+    \ and post auditor email address and click on Send."
+  questions_and_answers:
+  - question: Describe the steps to access the Audit Trail Report?
+    answer: "Following are the steps to access the Audit Trail Report.\n1. Open the\
+      \ Client Engage homepage, \n2. Click on the window button, \n3. Select Client\
+      \ Apps, and then select Enterprise Report Distribution (ERD) option."
+  - question: What format is the Audit Trail Report generated in?
+    answer: The Audit Trail Report is generated in PDF format.
+  - question: Describe the steps to generate the Audit Trail report?
+    answer: "Following are the steps to generate Audit Trail Report.\n1.  Open Client\
+      \ Engage homepage(https://example.com), and click on the window button.\n\
+      2.  Click on Client Apps, scroll down the page and select Enterprise Report\
+      \ Distribution(ERD) option\n3.  Below page will be opened, click on the plus\
+      \ sign on the first line that says RASS AUDIT TRAIL REPORT FILE.\n4.  It expands\
+      \ the information and day wise report can be visible on the screen. Click on\
+      \ the latest report that needs to be downloaded. \n5.  Report will be opened,\
+      \ click on the Print icon to generate the report in the PDF format \n6.  This\
+      \ will show the number of invoices that was generated on the prior day by the\
+      \ fleet invoicing assistants. The data is converted into PDF format.\n7.  Once\
+      \ the PDF file is generated, click on the Send option.\n8.  Update the file\
+      \ name as Audit Trails Printed with current date. Click OK.\n9.  This creates\
+      \ an email with the attachment \n10. Add fleet invoicing assistants, pre audior\
+      \ and post auditor email address and click on Send."
+- context: '### Customer Invoice Download
+
+
+    1.  Check for the auto generated email from KNOX System Notifications on the inbox
+    to start the activity for downloading the invoices for prior day. Do not start
+    the activity until the email is received. Below are the sample of email.
+
+
+    **[US:-]{.ul}**
+
+
+    **[CANADA]{.ul}**
+
+
+    2.  Sometimes instead of a completion email, an error mail will be received with
+    Bogus Dates. The bogus dates should be fixed in the system before downloading
+    the customer invoices. Open the text file attached on the email. If there is no
+    error email, follow from step 2.10.
+
+
+    3.  Open the text file attached on the email.
+
+
+    4.  From the details provided in the email, identify the dates which are updated
+    wrongly during invoicing in RASS. On the below example for Chassis \# PL686130,
+    the due date is updated as 2020-04-28. As we are invoicing the truck on 2022-03-29,
+    the due date cannot be updated as back dated. For Chassis \# PN002145, the due
+    date is wrongly updated as 2202-04-19 instead of 2022-04-19. These needs to be
+    changed.
+
+
+    5.  On the text file, with the chassis number search for the line item.
+
+
+    6.  Identify the line item, error will be fixed against the particular chassis
+    number details.
+
+
+    7.  Scroll towards right on the text file until the cursor reach on the column
+    648 which was mentioned on the email. Update the corret date on the text file.
+
+
+    8.  After changing the date, save the file on the desktop. Reply back on the same
+    email attaching the updated text file.
+
+
+    9.  The support team will pick up the text file and makes correction. A confirmation
+    mail will be received.
+
+
+    10. From the start option on the desktop, select Remote Desktop Connection and
+    click on brkpc-h00201
+
+
+    11. Login with your credentials. Click OK
+
+
+    12. A new desktop will be opened, click OK.
+
+
+    13. From the remote desktop, open CustomerInvoiceProject access database.
+
+
+    14. Access database will be opened. Click on Send To Imaging option under US Invoices
+
+
+    15. Below message will appear if the fleet customer number is missing on the database.
+    Click OK. If there is no error message perform from step 2.15.
+
+
+    16. The fleet customer number should be entered to run the database. To update
+    the same login to IMS with credentials.
+
+
+    17. Type /for tg on top left corner of the screen and press ENTER
+
+
+    18. On the next screen, type raih as CODE and p as LOC. Press ENTER on keyboard.
+
+
+    19. Update the chassis number from the database. Last 8 digit of VIN number is
+    chassis number. Press ENTER on keyboard.
+
+
+    20. The details will be pulled on the screen. Copy the CUST NO: to update into
+    access database.'
+  questions_and_answers:
+  - question: What should be done if an error email is received with bogus dates in
+      Customer Invoice Download?
+    answer: If an error email is received with bogus dates during customer invoice
+      download, the bogus dates should be fixed in the system before downloading the
+      customer invoices.
+  - question: How do we fix the bogus dates received from KNOX system notifications
+      before customer invoice download?
+    answer: "Follow the below steps when bogus dates are received from KNOX system\
+      \ notifications before customer invoice download.\n1. Open the text file attached\
+      \ on the email.\n2.  From the details provided in the email, identify the dates\
+      \ which are updated wrongly during invoicing in RASS. \n3.  On the text file,\
+      \ with the chassis number search for the line item.\n4.  Identify the line item,\
+      \ error will be fixed against the particular chassis number details.\n5.  Scroll\
+      \ towards right on the text file until the cursor reach on the column 648 which\
+      \ was mentioned on the email. Update the correct date on the text file.\n6.\
+      \  After changing the date, save the file on the desktop. Reply back on the\
+      \ same email attaching the updated text file.\n7.  The support team will pick\
+      \ up the text file and make correction. A confirmation mail will be received."
+  - question: What is the first step in the customer invoice download process?
+    answer: The first step in the customer invoice download process is to check for
+      the auto-generated email from KNOX System Notifications on the inbox to start
+      the activity for downloading the invoices for the prior day.
+- context: '### Special Prep & Delivery Credit Memo Download
+
+
+    31. Check for the auto generated email from KNOX System Notification on the inbox
+    to start the activity for downloading the invoices for Special Prep & Delivery.
+    Do not start the activity until the email is received.
+
+
+    32. Open CUSTFORM access database from path **[M:\\Sales Invoicing\\NAI\\DATA\\ACCESS]{.ul}**
+
+
+    33. Click on PRINT US P&D ADVICE option
+
+
+    34. This will generate the credit memo created on the prior day on left side of
+    the screen
+
+
+    35. Right click on the credit memo and select print option. Change the Name to
+    Broadgun pdfMachine and click OK
+
+
+    36. This creates a PDF file
+
+
+    37. Click on Save As option and save the file on desktop with current date
+
+
+    38. Create a new email and send the saved pdf file to the Fleet Invoicing generic
+    mailbox
+
+
+    39. Click on EMAIL US P&D ADVICE option. This will generate automated emails directly
+    to the customers
+
+
+    40. Once the emailing completed, a confirmation message box appears. Click OK.
+
+
+    41. Fleet invoicing assistants will start receiving the emails into the inbox
+    based on the invoices that is completed on prior day. The same will be available
+    on the Fleet Invoicing generic mail box as well.
+
+
+    42. Follow the steps from 3.3 to 3.10 for the CANADA side.
+
+
+    43. If there are no credit memos created on prior day, a message box appears with
+    confirmation.
+
+
+    44. Close the access database. The activity is concluded here.'
+  questions_and_answers:
+  - question: What happens if there are no credit memos created on the prior day?
+    answer: If there are no credit memos created on the prior day, a message box appears
+      with confirmation.
+  - question: What is the trigger to start the Special Prep & Delivery Credit Memo
+      Download activity?
+    answer: What is the trigger to start the Special Prep & Delivery Credit Memo Download
+      activity?
+  - question: How are the credit memos generated and sent to customers?
+    answer: The credit memos are generated by clicking on the "PRINT US P&D ADVICE"
+      option in the CUSTFORM access database, which creates a PDF file that is saved
+      and sent to the Fleet Invoicing generic mailbox and also emailed directly to
+      customers by clicking on the "EMAIL US P&D ADVICE" option.

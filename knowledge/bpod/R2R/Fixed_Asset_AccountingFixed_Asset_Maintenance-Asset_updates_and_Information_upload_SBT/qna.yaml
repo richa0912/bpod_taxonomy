@@ -1,0 +1,181 @@
+domain: 'BPOD record to analyze: Fixed Asset AccountingFixed Asset Maintenance-Asset updates
+  & Information upload (SBT) 2022 V1.0 (1)'
+document_outline: Describes how IBM Delivery Centre will perform the Fixed Asset Accounting-
+  SBT Asset Updates Processing.
+seed_examples:
+- context: "# Control Points\n\n  ***\\#***   **Sub process Activity**           \
+    \        **Sub process Activity Description**                                \
+    \                                                       **Control Objective(s)**\
+    \                       **Control Activity**                           **Risk\
+    \ Assertions**              **Frequency (i.e. Event, Daily, Monthly, Quarterly,\
+    \ Annually)**   **Evidence**\n  ---------- ------------------------------------------\
+    \ --------------------------------------------------------------------------------------------------------------------------\
+    \ ---------------------------------------------- ----------------------------------------------\
+    \ -------------------------------- -----------------------------------------------------------------\
+    \ -----------------------------------\n  1          Fixed Asset Accounting- SBT\
+    \ Asset Update   updating the existing asset details like Location Code, Program,\
+    \ PO Business Unit, PO Number and Delivered part produced   Validating the correct\
+    \ asset updated details   Assets details tagged correctly as requested   Incorrect\
+    \ Asset update details   As Needed                                           \
+    \              PeopleSoft, asset update approval\n\n## Process Measurement Reports\
+    \ \n\n> As Needed. Accountant has to spend 5 to 10 Minutes per asset to perform\
+    \ this activity (Request has to be processed within 48 hours from email received)."
+  questions_and_answers:
+  - question: What is the control objective of the Fixed Asset Accounting- SBT Asset
+      Update process?
+    answer: The control objective is to validate the correct asset updated details.
+  - question: What is the risk assertion associated with the Fixed Asset Accounting-
+      SBT Asset Update process?
+    answer: ' The risk assertion associated with the Fixed Asset Accounting- SBT Asset
+      Update process is that incorrect asset update details may occur.'
+  - question: How long does it take to perform the Fixed Asset Accounting- SBT Asset
+      Update process per asset?
+    answer: The Fixed Asset Accounting- SBT Asset Update process takes 5 to 10 minutes
+      per asset to perform, and the request must be processed within 48 hours from
+      email received.
+- context: "# Document Information\n\n## About this Document\n\n> This is official\
+    \ IBM guide document which describes how IBM Delivery Centre will perform the\
+    \ Fixed Asset Accounting- SBT Asset Updates Processing. This document will be\
+    \ used for future reference, either for IBM team or for Client Team.\n\n## Who\
+    \ should use this Document?\n\n> This document can be used by the R2R Fixed Asset\
+    \ Associate and reviewer who will be processing Fixed Asset Accounting- SBT Asset\
+    \ Updates.\n\n## Revision/Approval History\n\n  -------------------- --------------------\
+    \ ------------------------ ------------------ -----------------------------------------------------\
+    \ -------------------\n  **Version number**   **Effective Date**   **Summary of\
+    \ Changes**   **Author**         **Reviewer**                                \
+    \          **Approver**\n  1.0                  07/15/2022           Draft   \
+    \                 RM   TPW\
+    \   SJC\n  1.0                                                 \
+    \                                                                            \
+    \            \n  -------------------- -------------------- ------------------------\
+    \ ------------------ ----------------------------------------------------- -------------------"
+  questions_and_answers:
+  - question: Show the document Revision/Approval History Table for Fixed Asset Maintenance
+      Asset updates & Information upload process?
+    answer: 'The document Revision/Approval History Table for Fixed Asset Maintenance
+      Asset updates & Information upload process is provided in the table below.
+
+
+      | Version Number | Effective Date | Summary of Changes | Author | Reviewer |
+      Approver |
+
+      | 1.0 | 07/15/2022 | Draft | RM | TPW | SJC |'
+  - question: What is the purpose of Fixed Asset AccountingFixed Asset Maintenance-Asset
+      updates & Information upload (SBT) 2022 V1.0 document?
+    answer: Fixed Asset AccountingFixed Asset Maintenance-Asset updates & Information
+      upload (SBT) 2022 V1.0 document describes how IBM Delivery Centre will perform
+      the Fixed Asset Accounting- SBT Asset Updates Processing.
+  - question: What is the latest version of Fixed Asset AccountingFixed Asset Maintenance-Asset
+      updates & Information upload (SBT) 2022 V1.0 document?
+    answer: The latest version of Fixed Asset AccountingFixed Asset Maintenance-Asset
+      updates & Information upload (SBT) 2022 V1.0 document is 1.0.
+- context: "# Overview\n\n## Objective(s)\n\n> To Update the Asset details like Location\
+    \ Code, Program, PO Business Unit, PO Number and Delivered part produced, IBM\
+    \ FA accountant will make necessary changes in PeopleSoft.\n\n### Frequency: \n\
+    \n-   As needed\n\n### Source: \n\n-   Outlook- based on e-mail request\n\n###\
+    \ System Accesses:\n\n-   PeopleSoft via EUR\n\n-   Outlook Mailbox\n\n## Inputs\
+    \ & Outputs\n\n+-----------------------+--------------------------+\n| Input \
+    \                | From                     |\n+-----------------------+--------------------------+\n\
+    | > E-mail Notification | > Client Tooling Manager |\n+-----------------------+--------------------------+\n\
+    \n+-----------------------+--------------+\n| Output                | To     \
+    \      |\n+-----------------------+--------------+\n| > Asset detail Update |\
+    \ > PeopleSoft |\n+-----------------------+--------------+"
+  questions_and_answers:
+  - question: What are the system and application accesses needed to perform Fixed
+      Asset Maintenance Asset updates & Information upload process?
+    answer: "The system and application accesses needed to perform Fixed Asset Maintenance\
+      \ Asset updates & Information upload process are :\n\u2022\tPeopleSoft via EUR\n\
+      \u2022\tOutlook Mailbox"
+  - question: What is the output expected from Fixed Asset Maintenance Asset updates
+      & Information upload process?
+    answer: The output expected from Fixed Asset Maintenance Asset updates & Information
+      upload process is - Asset detail Update on Peoplesoft
+  - question: What is the source of the input for the asset detail update process?
+    answer: The input for the asset detail update process comes from an e-mail notification
+      from the Client Tooling Manager, received through Outlook.
+- context: "# Roles & Responsibilities\n\n## Description\n\n  **Role**           \
+    \         **Responsibility**\n  --------------------------- -----------------------------------------------------------------\n\
+    \  IBM R2R_Fixed Assets Team   Asset Updates based on the email received from\
+    \ Tooling Manager.\n\n## Segregation of Duties (SOD) Matrix\n\n> For the SOD assessment\
+    \ on conflicting tasks and accesses, please refer to the related Aggregate SOD\
+    \ (A-SOD). ***\\<SOD Matrix pending IBM GPS internal review and approval\\>***"
+  questions_and_answers:
+  - question: Who is responsible for asset updates based on email received from tooling
+      manager?
+    answer: The IBM R2R_Fixed Assets Team is responsible for asset updates based on
+      the email received from the Tooling Manager.
+  - question: Is there a Segregation of Duties (SOD) Matrix available for asset updates?
+    answer: No, the SOD Matrix  for asset update process is pending IBM GPS internal
+      review and approval.
+  - question: What is the responsibility of the IBM R2R_Fixed Assets Team?
+    answer: The responsibility of the IBM R2R_Fixed Assets Team is to update assets
+      based on the email received from the Tooling Manager.
+- context: '## Process Description
+
+
+    1.  Receive an E-mail from Tooling Manager. To update asset, need to base on the
+    request details as shown on the below example:
+
+
+    2.  Login to PeopleSoft with credentials to get the Asset update.
+
+
+    3.  Navigate to Main Menu Asset Management Search for an Asset.
+
+
+    -   Unit : 09900
+
+
+    -   Asset ID : Copy from E-mail ( 000000056512)
+
+
+    -   Click on Search
+
+
+    -   Drill-Down To : Select Asset Information
+
+
+    -   Click on GO
+
+
+    4.  After selecting ''GO'', Below screen appears. Click on Additional Asset information
+    tab
+
+
+    > Delivered Part Produced : 3450272R91 (based on E-mail request need to add Rack
+    Number to Asset i,e Delivered Part Produced)
+
+    >
+
+    > Click on SAVE.
+
+
+    > **Note :**
+
+
+    -   If Tooling Manager sends an E-mail to Asset update for Description or Tag
+    Number in PS
+
+
+    > Main Menu Asset Management Search for an Asset Basic Add
+
+    >
+
+    > Selete Asset Information, Make necessary changes and Click on SAVE.
+
+
+    -   Need to Change Location Code, Program, PO Business Unit, PO Number and Delivered
+    part produced, Select Additional Information make necessary changes and Click
+    on SAVE.'
+  questions_and_answers:
+  - question: How do you access the asset update in PeopleSoft?
+    answer: To access the asset update, you need to login to PeopleSoft with credentials
+      and then navigate to Main Menu > Asset Management > Search for an Asset.
+  - question: What information do you need to update in the asset information tab
+      in PeopleSoft?
+    answer: You need to update the Delivered Part Produced field with the rack number,
+      as per the email request.
+  - question: What other changes can be made to the asset information in PeopleSoft?
+    answer: In PeopleSoft, you can make changes to the Description, Tag Number, Location
+      Code, Program, PO Business Unit, and PO Number by selecting the relevant tab
+      (Basic Add or Additional Information) and making the necessary changes.

@@ -1,0 +1,226 @@
+domain: 'BPOD Human Resource: Hope Medical Center_Paid Time Off and PTO-Safe Sick
+  Policy'
+document_outline: Hope Medical Center's Paid Time Off and PTO-Safe Sick Policy outlines
+  the accrual, use, and tracking of paid time off (PTO) and PTO-Safe Sick for eligible
+  caregivers. It covers accrual rates, cash-out rules, maximum accrual limits, and
+  protection against retaliation. Caregivers can use PTO-Safe Sick for covered and
+  non-covered reasons, with different tracking and payment methods for each.
+seed_examples:
+- context: 'A caregiver will continue to accrue PTO while out on PTO or on approved
+    short-term disability leave.
+
+    1. Non-exempt (Hourly) Caregivers. Non-exempt caregivers will earn PTO each pay
+    period based on their actual hours worked in the previous two weeks. However,
+    PTO will not be earned on any hours exceeding a 1.0 FTE status (40 hours per pay
+    week).
+
+    2. Exempt (Salaried) Caregivers. Exempt full-time and part-time caregivers accrue
+    PTO based on their assigned full-time equivalent (FTE).
+
+    B. Recording Time Off
+
+    1. Non-exempt (Hourly) Caregivers. PTO hours taken should be recorded in the appropriate
+    increments that match the caregiver''s regular work schedule and time taken. For
+    example, a non-exempt caregiver who regularly works eight hours per day and takes
+    a full day off, would record eight hours of PTO for the missed day. Partial day
+    absences must be recorded in at least 15-minute increments.
+
+    2. Exempt (Salaried) Caregivers. Exempt caregivers should record PTO in full day
+    FTE increments only.'
+  questions_and_answers:
+  - question: How does a caregiver's PTO accrual change when they are out on PTO or
+      approved short-term disability leave under Hope Medical Center's Paid Time Off
+      and PTO-Safe Sick Policy?
+    answer: A caregiver will continue to accrue PTO while out on PTO or on approved
+      short-term disability leave under Hope Medical Center's Paid Time Off and PTO-Safe
+      Sick Policy.
+  - question: How does a non-exempt (hourly) caregiver accrue PTO in Hope Medical
+      Center's Paid Time Off and PTO-Safe Sick Policy?
+    answer: Non-exempt caregivers accrue PTO each pay period based on their actual
+      hours worked in the previous two weeks, but they do not earn PTO on any hours
+      exceeding a 1.0 FTE status (40 hours per pay week) in Hope Medical Center's
+      Paid Time Off and PTO-Safe Sick Policy.
+  - question: How does an exempt (salaried) caregiver accrue PTO in Hope Medical Center's
+      Paid Time Off and PTO-Safe Sick Policy?
+    answer: Exempt full-time and part-time caregivers accrue PTO based on their assigned
+      full-time equivalent (FTE) in Hope Medical Center's Paid Time Off and PTO-Safe
+      Sick Policy.
+- context: 'D. Paid Time Off Cash Out. Accrued PTO will not be cashed out, except
+    upon termination (subject to Separation of Employment policy) or a status change
+    to less than 0.5 FTE.
+
+    E. Paid Time Off Accrual Balances
+
+    Each caregiver''s cumulative PTO balance will appear on the caregiver''s pay statement
+    and is accessible through the timekeeping system. It is the responsibility of
+    each caregiver to identify any potential discrepancy in the amount that appears
+    on the pay statement and bring this to the attention of the Payroll Department
+    as soon as possible.
+
+    Each caregiver''s PTO balance is subject to the maximum accruals set forth in
+    the tables above. Accruals will stop when the maximum limit is reached. The caregiver''s
+    accrual will resume when time off has been taken and the balance falls below the
+    maximum.
+
+    F. Paid Time Off in Connection with Short-Term Disability & Workers'' Compensation.
+    PTO can be used to cover the waiting periods for both short-term disability and
+    workers'' compensation leaves. PTO can also be used to supplement short-term disability
+    or workers'' compensation benefits to 100% of base pay for the life of the claim
+    or until PTO is exhausted, but no longer than six months from the first date of
+    disability (any PTO hours remaining will be available upon return to work or will
+    be cashed out upon termination per policy).'
+  questions_and_answers:
+  - question: Under what circumstances will accrued PTO be cashed out under Hope Medical
+      Center's Paid Time Off and PTO-Safe Sick Policy?
+    answer: Accrued PTO will not be cashed out under Hope Medical Center's Paid Time
+      Off and PTO-Safe Sick Policy, except upon termination (subject to the Separation
+      of Employment policy) or a status change to less than 0.5 FTE.
+  - question: How can a caregiver access their cumulative PTO balance under Hope Medical
+      Center's Paid Time Off and PTO-Safe Sick Policy?
+    answer: Each caregiver's cumulative PTO balance will appear on their pay statement
+      and is accessible through the timekeeping system under Hope Medical Center's
+      Paid Time Off and PTO-Safe Sick Policy.
+  - question: How does PTO accrual work when a caregiver reaches the maximum accrual
+      limit under Hope Medical Center's Paid Time Off and PTO-Safe Sick Policy?
+    answer: When a caregiver reaches the maximum accrual limit, their PTO accruals
+      will stop under Hope Medical Center's Paid Time Off and PTO-Safe Sick Policy.
+      Once time off has been taken and the balance falls below the maximum, the caregiver's
+      accrual will resume.
+- context: 'F. Tracking and Payment. Each pay period, PTO-Safe Sick balances will
+    be reflected on each caregiver''s pay statement. Caregivers will also receive
+    all notices required by applicable federal, state and/or local laws. Caregivers
+    will be paid at the rate of pay that they would have earned had they worked that
+    particular day. It is the caregivers'' responsibility to code PTO-Safe Sick on
+    timecards. If caregivers are unavailable, core leaders will assume responsibility.
+    For non-exempt caregivers, PTO-Safe Sick may be taken in 15-minute increments.
+    PTO-Safe Sick hours will not count towards the calculation of overtime. Exempt
+    caregivers will track PTO-Safe Sick in whole day increments.
+
+    G. Protection Against Retaliation. Caregivers who use PTO-Safe Sick in accordance
+    with this policy will not be retaliated or discriminated against for use of that
+    time. Leave time under this policy may run concurrently with leave taken under
+    other applicable policies as well as under local, state, or federal law, including
+    leave taken pursuant to the Family and Medical Leave Act (FMLA) and/or equivalent
+    applicable local laws/ordinances.
+
+    H. Use of PTO-Safe Sick For Non-Covered Reasons. Caregivers may choose to use
+    PTO-Safe Sick for reasons other than those covered by the Washington Paid Sick
+    Leave law (e.g., vacation). However, when using PTO-Safe Sick for such reasons,
+    the Protection Against Retaliation and other provisions set forth above regarding
+    notice and verification will not apply. In general, caregivers must follow all
+    requirements related to the use of PTO and their department''s approval of time-off'
+  questions_and_answers:
+  - question: How will PTO-Safe Sick balances be reflected and paid to caregivers
+      in Hope Medical Center's Paid Time Off and PTO-Safe Sick Policy?
+    answer: Each pay period, PTO-Safe Sick balances will be reflected on each caregiver's
+      pay statement under Hope Medical Center's Paid Time Off and PTO-Safe Sick Policy.
+      Caregivers will be paid at the rate of pay they would have earned had they worked
+      that particular day.
+  - question: How should caregivers code PTO-Safe Sick on timecards under Hope Medical
+      Center's Paid Time Off and PTO-Safe Sick Policy?
+    answer: Caregivers are responsible for coding PTO-Safe Sick on timecards under
+      Hope Medical Center's Paid Time Off and PTO-Safe Sick Policy. If caregivers
+      are unavailable, core leaders will assume responsibility.
+  - question: How can caregivers use PTO-Safe Sick for reasons other than those covered
+      by the Washington Paid Sick Leave law under Hope Medical Center's Paid Time
+      Off and PTO-Safe Sick Policy?
+    answer: Under Hope Medical Center's Paid Time Off and PTO-Safe Sick Policy, caregivers
+      may choose to use PTO-Safe Sick for reasons other than those covered by the
+      Washington Paid Sick Leave law, such as vacation. However, when using PTO-Safe
+      Sick for such reasons, the Protection Against Retaliation and other provisions
+      set forth above regarding notice and verification will not apply. Caregivers
+      must follow all requirements related to the use of PTO and their department's
+      approval of time-off.
+- context: 'Hope Medical Center ("facility")
+
+    Department: Human Resources
+
+    Approved by: Chief Human Resources Officer
+
+    Date Last Reviewed: 8/25/2023
+
+    Date Last Revised: 8/25/2023
+
+    Date Adopted: 1/6/2019
+
+    Policy Name: Paid Time Off and PTO-Safe Sick
+
+    Scope: All caregivers of the facility who work the full-time equivalent of 50%
+    or more (0.5 FTE), except for caregivers covered by a time off plan specific to
+    their role (such as certain leadership roles, providers and medical residents).
+
+    Purpose: In keeping with our mission and values, the purpose of this policy is
+    to describe the paid time off (PTO) program.
+
+    Policy:
+
+    The facility provides eligible caregivers the opportunity to accrue paid time
+    off for absences. The intent of PTO is to allow caregivers to maintain appropriate
+    work-life balance by providing time off for vacation, holidays, personal days
+    and/or incidental sick time or any other reason required by law. This policy does
+    not replace the need for caregivers to communicate with their core leaders regarding
+    the need for and request of leave. PTO for absences from work are subject to the
+    limits and conditions described below. Use of PTO may also be governed by applicable
+    federal, state and local laws'
+  questions_and_answers:
+  - question: Who is covered under Hope Medical Center's Paid Time Off and PTO-Safe
+      Sick Policy?
+    answer: The Hope Medical Center's Paid Time Off and PTO-Safe Sick Policy covers
+      all full-time caregivers at Hope Medical Center who work 50% or more of a full-time
+      equivalent (0.5 FTE), excluding caregivers with specific time off plans for
+      their roles such as leadership positions, providers, and medical residents.
+  - question: What is the purpose of the Paid Time Off (PTO) program at Hope Medical
+      Center?
+    answer: The purpose of the PTO program  Hope Medical Cente is to help caregivers
+      maintain a healthy work-life balance by providing paid time off for various
+      reasons, including vacation, holidays, personal days, incidental sick time,
+      and any other reason required by law.
+  - question: How can caregivers use their PTO for absences from work under Hope Medical
+      Center's Paid Time Off and PTO-Safe Sick Policy?
+    answer: Caregivers can use their PTO for absences from work, but it is subject
+      to the limits and conditions described in the Hope Medical Center's Paid Time
+      Off and PTO-Safe Sick Policy. The use of PTO may also be governed by applicable
+      federal, state, and local laws. It is important for caregivers to communicate
+      with their core leaders regarding the need for and request of leave.
+- context: 'To help ensure compliance with Washington State Paid Sick Leave requirements
+    and help caregivers better understand what portion of their PTO may be covered
+    by these laws, caregivers will accrue PTO hours in two separate banks: PTO and
+    PTO-Safe Sick. PTO-Safe Sick will accrue and may be used in accordance with the
+    Washington State Paid Sick Leave law.
+
+    1. PTO and PTO-Safe Sick Accrual Rates (assumes a 1.0 FTE working 80 hours per
+    pay period):
+
+    3. * Pursuant to state law, and as further explained below, PTO-Safe Sick accruals
+    are not capped. PTO-Safe Sick continues to accrue throughout the year. However,
+    no more than 108 hours of PTO-Safe Sick may be carried over to the following calendar
+    year.
+
+    4. Paid Time Off (PTO)
+
+    A. Paid Time Off (PTO) Accrual. Caregivers accrue PTO hours each pay period based
+    on length of service starting with the date of eligibility. Time becomes available
+    for use, with core leader approval, once the accrual shows in the PTO bank on
+    the last day of each pay period. On each subsequent pay period, 1/26th (or 1/27th
+    if appropriate for the year) of the annual PTO hours, per the accrual schedule,
+    will be added to each caregiver''s PTO balance. This balance will be reduced each
+    pay period for any PTO hours recorded'
+  questions_and_answers:
+  - question: How many PTO hours does a caregiver accrue each pay period under Hope
+      Medical Center's Paid Time Off and PTO-Safe Sick Policy?
+    answer: A caregiver accrues PTO hours each pay period based on their length of
+      service, starting from the date of eligibility under Hope Medical Center's Paid
+      Time Off and PTO-Safe Sick Policy. On each subsequent pay period, 1/26th (or
+      1/27th if appropriate for the year) of the annual PTO hours, per the accrual
+      schedule, will be added to their PTO balance
+  - question: How many PTO-Safe Sick hours does a caregiver accrue each pay period
+      in Hope Medical Center's Paid Time Off and PTO-Safe Sick Policy?
+    answer: Caregivers accrue PTO-Safe Sick hours each pay period, but the accrual
+      rate is not specified in the document. However, it is mentioned that PTO-Safe
+      Sick accruals are not capped and continue to accrue throughout the year, with
+      no more than 108 hours carrying over to the following calendar year.
+  - question: What is the maximum number of PTO-Safe Sick hours that can be carried
+      over to the following calendar year?
+    answer: According to the Hope Medical Center's Paid Time Off and PTO-Safe Sick
+      Policy, no more than 108 hours of PTO-Safe Sick can be carried over to the following
+      calendar year.

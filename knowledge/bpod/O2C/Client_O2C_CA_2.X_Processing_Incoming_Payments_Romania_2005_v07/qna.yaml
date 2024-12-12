@@ -1,0 +1,586 @@
+domain: 'BPOD order to cash: Client O2C CA 2.X Processing Incoming Payments Romania
+  2005 v07'
+document_outline: Process involved in automatic (SWIFT) matching of incoming payments
+  of consultants in Client Application, it includes Bank deposits, COD, CHEQUE, PAY
+  U, and POS.
+seed_examples:
+- context: "# Control Points\n\n  **Control Point \\#**   **Control Point / Activity**\
+    \                                                                            \
+    \                                             **Control Objective**          \
+    \                                                                            \
+    \                                                                            \
+    \  **Control Risk**                                                          \
+    \                                          **Test Attributes**\n  ----------------------\
+    \ ----------------------------------------------------------------------------------------------------------------------------------------------------\
+    \ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+    \ -------------------------------------------------------------------------------------------------------------------\
+    \ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\
+    \  1                      Ensure that all bank files pertaining to date are processed\
+    \ in Client Application.                                                     \
+    \              To ensure that all the transactions got credited into correct consultant\
+    \ account                                                                    \
+    \                                     Any lapse in this control will lead to differences\
+    \ in daily reconciliation & piling of unmatched payments.          User must ensure\
+    \ all the bank credits are processed in Client Application & reconciliation is\
+    \ done on daily basis.\n  2                      All unmatched receipts are processed.\
+    \ **All the unmatched receipts details with local finance which IBM team is unable\
+    \ to identify or recognize.**   **To ensure that no payment is pending to transfer\
+    \ in consultant account. To check correct details of consultant in Client Application\
+    \ & transfer the payment in consultant account.**   **Any unmatched transaction\
+    \ left in Client Application will delay the confirmation of consultant payment.**\
+    \         **Correct matching is mandatory else it will lead to escalation from\
+    \ market**.\n  3                      Allocation of Payments                 \
+    \                                                                            \
+    \                                  To rightly allocate the payments to right Consultant\
+    \ and to the right invoice                                                   \
+    \                                                         It can lead to wrong\
+    \ selection of Consultant and/or invoice, thereby allocating wrong amount and\
+    \ wrong consultant   User must ensure Correct selection of date (in general **one\
+    \ day** **before the actual date, depending on each cash collector/bank**) and\
+    \ correct selection of Consultants\n  4                      Download the bank\
+    \ statement )ING)                                                            \
+    \                                                        Download the bank statement\
+    \ )ING)file for right dates from bank and right format to Share Drive        \
+    \                                                                            \
+    \      Otherwise the data will not be matched and it will be an inaccurate data.\
+    \                                           User must be ensure that the right\
+    \ bank statement is uploaded and shared in right drive.\n  5                 \
+    \     Select right movement (bank)in POS                                     \
+    \                                                                            \
+    \  Sometimes movements are entered manually so it is important to ensure that\
+    \ the right posting is done selecting right movement.                        \
+    \                                   It can lead to wrong posting and wrong bank\
+    \ selection.                                                              User\
+    \ to select right movement (Bank) to ensure right posting in right bank account.\n\
+    \  6                      **Correction in Client Application while performing\
+    \ Return payment on demand of the consultant**                               \
+    \                      **To rightly perform the return money to the consultant**\
+    \                                                                            \
+    \                                                    **Can lead to wrong posting\
+    \ of data in consultant bank account**                                       \
+    \             **User should be confirmed/sure about the consultant number and\
+    \ the amount .These returns should be on done only on specific demand from the\
+    \ consultant.**\n  7                      For COD -- Cargus select the current\
+    \ date instead of one day earlier date for movement                          \
+    \                                     To Ensure right selection of COD movement\
+    \                                                                            \
+    \                                                                    Wrong matching\
+    \ of COD Data                                                                \
+    \                          User to select the current date and the movement to\
+    \ see unmatched transactions in Client Application under Cargus is 2316 unknown\
+    \ Bank Pay (Cargus)."
+  questions_and_answers:
+  - question: What is the control objective for Ensure that all bank files pertaining
+      to date are processed in Client Application?
+    answer: The control objective for Ensure that all bank files pertaining to date
+      are processed in Client Application is to ensure that all the transactions got
+      credited into correct consultant account.
+  - question: What is the control objective and control risk for control activity
+      Download the bank statement (ING)
+    answer: 'The control objective for Download the bank statement (ING) is to download
+      the bank statement (ING) file for right dates from bank and right format to
+      Share Drive.
+
+      The control risk associated with downloading the bank statement (ING) for wrong
+      dates and in wrong format is that the data will not be matched and it will be
+      an inaccurate data.'
+  - question: List down all the control activities for incoming payments processing
+    answer: "Following are the control activites listed in Client_O2C_CA_2.X Processing\
+      \ Incoming Payments_Romania_2005_V0.7:\n1. Ensure that all bank files pertaining\
+      \ to date are processed in Client Application.\n2. All unmatched receipts are\
+      \ processed.  All the unmatched receipts details with local finance which IBM\
+      \ team  is unable to identify or recognize.\n3. Allocation  of Payments\n4.\
+      \ Download the bank statement (ING)\n5. Select right movement (bank)in POS\n\
+      6. Correction in Client Application while performing Return payment on demand\
+      \ of the consultant\n7. For COD \u2013 Cargus select the current date instead\
+      \ of one day earlier date for movement  "
+- context: '**PENALTY CANCELLATION-** Penalty cancellation is an activity in which
+    the system calculates the penalty/interest on the consultant every day but if
+    the client pays on the same date in which the penalty is charged we cancel the
+    penalty charged to the consultant.
+
+
+    We only cancel the penalty 2 and 3 i.e.. Penalty 2 is the penalty which is 15
+    days delayed or more and penalty 3 is the penalty which is 25 days delayed or
+    more. It''s a daily activity before applying dunning.
+
+
+    While cancelling the interest we don''t cancel the interest charged to payu or
+    card.
+
+
+    Now to cancel the penalty we go to Client Application \> reports\>custom\>finance
+    reports\> penalizari-data paltii facturii (32174).
+
+
+
+    After that we select the date a day before as mentioned in the screenshot**.**
+
+
+
+    Then a report is generated and we export the file to excel and calculate the days
+    as mentioned in below screenshot**.**
+
+
+
+    After calculating the days, then we segregate the penalty bucket i.e. penalty
+    2 and penalty 3.
+
+
+
+    After exporting the file to excel we select the consultant number from the excel
+    sheet and search the consultant.
+
+
+    **[CASE 1]{.ul}**
+
+
+    Then we select the invoice number and go to ctrl+fin details.
+
+
+    So as we can see in the below screenshot the penalty is applied to the consultant
+    in the same date so we cancel the penalty with the current date.
+
+
+    To cancel the penalty, we go to transaction tab and click on cancel and the date
+    remains the same in which we are cancelling the penalty.
+
+
+    **[CASE-2]{.ul}**
+
+
+    In case two we select the consultant number from the excel sheet and search the
+    consultant.
+
+
+    We do the same and go to ctrl+ fin details and as we see in the below screenshot
+    the interest calculated id 6.64 whereas the unpaid interest is 6.38 (in the excel
+    sheet) which means that the consultant paid more than his amount and the amount
+    has covered some part of his interest.
+
+
+    So here we cancel the invoice before cancelling the interest in the current date
+    only and for that we go to the transaction tab to cancel the invoice. Also we
+    take the total of all the amounts of the movements i.e. 66.43+5.57=72.
+
+
+    After canceling the transaction, we cancel the interest as shown in the below
+    screenshot.
+
+
+    After cancelling the interest, we need to allocate the same transaction again
+    with the same amount i.e. 72. While allocating we need to be sure about selecting
+    the right movement with the current date only**.**
+
+
+    **[Case 3]{.ul}**
+
+
+    In case two we select the consultant number from the excel sheet and search the
+    consultant.
+
+
+    We do the same and go to ctrl+ fin details and as we see in the below screenshot
+    the interest calculated id 51.10 whereas the unpaid interest is 51.01 (in the
+    excel sheet) which means that the consultant paid more than his amount and the
+    amount has covered some part of his interest.
+
+
+    So here we cancel the invoice before cancelling the interest in the current date
+    only and for that we go to the transaction tab to cancel the invoice. Also, we
+    take the total of all the amounts of the movements i.e. 552.
+
+
+    When we select the transaction tab we see that the transaction was allocated from
+    unmatched receipts and therefore we don''t cancel the penalty here .
+
+    We go to unmatched of the same date i.e. the date for which we are cancelling
+    the penalty and we select the transaction of the same amount and cancel the transaction
+    from the right side transaction tab.
+
+
+    After that we cancel the interest as shown in the below screenshot.
+
+
+    And after that we allocate the amount to the same consultant.'
+  questions_and_answers:
+  - question: What is Penalty cancellation?
+    answer: 'Penalty cancellation is an activity in which the system calculates the
+      penalty/interest on the consultant every day but if the client pays on the same
+      date in which the penalty is charged we cancel the penalty charged to the consultant.
+
+
+      We only cancel the penalty 2 and 3 i.e.. Penalty 2 is the penalty which is 15
+      days delayed or more and penalty 3 is the penalty which is 25 days delayed or
+      more. It''s a daily activity before applying dunning.
+
+
+      While cancelling the interest we don''t cancel the interest charged to payu
+      or card.'
+  - question: Where do we go to cancel the penalty?
+    answer: To cancel the penalty we go to Client Application \> reports\>custom\>finance
+      reports\> penalizari-data paltii facturii (32174).
+  - question: What are the three cases of penalty cancellation for consultant
+    answer: 'Three cases for penalty cancellation once consultant number is selected
+      from the excel are:
+
+
+      Case 1: When the penalty is applied to the consultant in the same date so cancel
+      the penalty with the current date.
+
+      To cancel the penalty, go to transaction tab and click on cancel and the date
+      remains the same in which we are cancelling the penalty.
+
+
+      Case 2: When the consultant paid more than his amount and the amount has covered
+      some part of his interest.
+
+      Here cancel the invoice before cancelling the interest in the current date only
+      and for that we go to the transaction tab to cancel the invoice. Also we take
+      the total of all the amounts of the movements. After canceling the transaction,
+      we cancel the interest. After cancelling the interest, we need to allocate the
+      same transaction again with the same amount. While allocating we need to be
+      sure about selecting the right movement with the current date only.
+
+
+      Case 3: When the consultant paid more than his amount and the amount has covered
+      some part of his interest for transaction with unmatched receipts.
+
+      Here we cancel the invoice before cancelling the interest in the current date
+      only and for that we go to the transaction tab to cancel the invoice. Also,
+      we take the total of all the amounts of the movements. When we select the transaction
+      tab we see that the transaction was allocated from unmatched receipts and therefore
+      we don''t cancel the penalty here . We go to unmatched of the same date i.e.
+      the date for which we are cancelling the penalty and we select the transaction
+      of the same amount and cancel the transaction from the right side transaction
+      tab. After that we cancel the interest and allocate the amount to the same consultant.'
+- context: '**[COD (CASH ON DELIVERY)]{.ul}**
+
+
+    Now next collector is Cargus (It is the collector for Cash on delivery). The file
+    related to Cargus has been uploaded automatically in TOS bank payments through
+    VPN.
+
+
+    It is important to note that the Cargus has specific thing that it is imported
+    with the current date for ex- if we check the unmatched transactions from Client
+    Application we should select the current date and the movement to see unmatched
+    transactions in Client Application under Cargus is 2316 unknown Bank Pay (Cargus).
+
+
+    There is possibility that in unmatched transactions there is no description of
+    the consultant as mentioned in the below screen shot
+
+
+
+    So every time Cargus send the details file in which all payment related with Cargus
+    are there for that particular date
+
+
+
+    So, in this case we will open the file got from Cargus and search the consultant
+    via amounts.
+
+
+
+    Then we will try to find out the consultant through the details mentioned in the
+    file sent by Cargus and search the consultant in Client Application. Also, we
+    can cross check the details of the Client Application with the file received from
+    Cargus to make sure that we are paying the right consultant.
+
+
+
+    In Cargus the processing date of the unmatched transaction should be same as the
+    date of file.
+
+
+    Now we need to allocate the amount to the consultant with correct date as well
+    as with correct move type as mentioned in the below screenshots.
+
+
+
+    [Cheque (ING online)]{.ul}
+
+
+    Now another collector we have in Romania is Cheque collector.
+
+
+    To process this collector, we need to log in to ING online website so that we
+    can download the statement from bank website as mentioned in the below screenshot.
+
+
+
+    After downloading the statement, we should save the file in EXP format in the
+    common oriflamme share drive and save it as mentioned in the below screen shot:
+
+
+
+    Now we will copy the same file and save import in the Client Application \>TOS
+    folder under common share drive so that the file will upload to the Client Application.
+
+
+    So, the procedure to upload the file under common share drive remains the same
+    as mentioned in the above steps.
+
+
+    After Importing the file in the share drive we will go to the Client Application
+    in TOS \>files \>click on payments from bank then process the file as mentioned
+    in the below screenshot:
+
+
+
+    And after clicking on process we should make sure that we select the correct move
+    type before processing the transactions and the correct move types as well as
+    correct date for this collector as mentioned in the below screen shot.
+
+
+
+    This collector''s payment should be allocated with one date before the current
+    date and also after clicking on process a pop will come which says that the file
+    is successfully processed.
+
+
+
+    Now go to the unmatched receipts to check the unmatched transactions and we should
+    select the correct move type so that all unmatched transactions related to this
+    collector will reflect.
+
+
+    Move type -- 2304 unknown bank pay (CEC).
+
+
+
+    So, every time we have to be particular about dates because whatever date we will
+    select Client Application will show the unmatched transactions related to that
+    date. Go to the unmatched receipts select date and click on read to
+
+
+    Check the unmatched transaction and follow the same procedure for incoming payment
+    processing as mentioned earlier .'
+  questions_and_answers:
+  - question: What is the name of collector for Cash on Delivery?
+    answer: The name of the collector for Cash on Delivery is Cargus.
+  - question: How to handle the case of missing consultant description in unmatched
+      transactions?
+    answer: 'Every time Cargus send the details file in which all payment related
+      with Cargus are there for that particular date. So, in this case when there
+      is no description of the consultant in unmatched transactions, open the file
+      received from Cargus and search the consultant via amounts.
+
+
+      Then try to find out the consultant through the details mentioned in the file
+      sent by Cargus and search the consultant in Client Application. Also, cross
+      check the details of the Client Application with the file received from Cargus
+      to make sure that right consultant is paid.'
+  - question: How to process the Cheque collector in Romania Incomings
+    answer: 'Following are the steps to process cheque collector:
+
+
+      1. Log in to ING online website so that we can download the statement from bank
+      website
+
+      2. After downloading the statement, we should save the file in EXP format in
+      the common oriflamme share drive and save it
+
+      3. Copy the same file and save import in the Client Application \>TOS folder
+      under common share drive so that the file will upload to the Client Application.
+
+      4. After Importing the file in the share drive, go to the Client Application
+      in TOS \>files \>click on payments from bank then process the file
+
+      5. After clicking on process make sure that to select the correct move type
+      before processing the transactions and the correct move types as well as correct
+      date for this collector
+
+      6. This collector''s payment should be allocated with one date before the current
+      date and also after clicking on process a pop will come which says that the
+      file is successfully processed.
+
+      7. Now go to the unmatched receipts to check the unmatched transactions and
+      select the correct move type so that all unmatched transactions related to this
+      collector will reflect.
+
+      Move type -- 2304 unknown bank pay (CEC).
+
+      8. Be particular about dates because whatever date is selected Client Application
+      will show the unmatched transactions related to that date. Go to the unmatched
+      receipts select date and click on Read to check the unmatched transaction and
+      follow the same procedure for incoming payment processing'
+- context: '3.Next collector is ROBO (BRD) Collector and again and there is an automatic
+    sync of bank statements to Client Application .We must follow the same procedure
+    in order to post the incoming payments.
+
+
+    Go to the TOS\> bank payments in Client Application and check if we have file
+    with the name BRDEROBU as mentioned in the below screenshot.
+
+
+    Now we need to verify whether all the transactions are matched or not. We will
+    go to the unmatched receipts\>select the dates and in the transaction tab select
+    the move type for BRDEROBU i.e.
+
+
+    2317 unknown bank pay (robot) and click on read as mentioned in the below screenshot
+    and allocate the payments as per the information provided.
+
+
+
+    So, to allocate the payment to the consultant we need to the same procedure as
+    mentioned earlier.
+
+
+    Go to Find Order and search the consultant as per the details mentioned in the
+    unmatched transaction and pay the amount to the consultant as per the information
+    provided as mentioned in the below screen shot.
+
+
+    And as per the information allocate the payments with correct move types and date
+    i.e. **one day before the actual date**.
+
+
+
+    4\. Now next collector is QIWI and again there is an automatic sync of bank statements
+    to Client Application we must follow the same procedure of incomings.
+
+
+    Go to the TOS\> bank payments in Client Application and check if we have file
+    with the name QIWI as mentioned in the below screenshot. Now we need to verify
+    whether all the transactions are matched or not.
+
+
+
+    Movements:
+
+
+    For debt- 2015 Bank to Invoice (QIWI)
+
+
+    For interest -- 2115 Bank to Interest (QIWI)
+
+
+    For Prepayment -2215 Bank to prepayment (QIWI)
+
+
+    In this cash collector, we pay the whole amount received from consultant in just
+    one invoice. We need no to allocate the amounts to the different invoices. For
+    ex -- if we have received 250 RON from consultant and when we open the consultant
+    in the Client Application we found three invoices of the consultant are not paid
+    so in this case also we must allocate the whole amount in the invoice mentioned
+    in the unmatched transaction. In case if there is no invoice number we can put
+    the whole amount in the last opened invoice of the consultant.
+
+
+    5.Next collector we have is ORPOSTA (Romanian POST). It is also a cash collector.
+    Again there is an automatic sync of bank statements to Client Application we must
+    follow the same procedure of incomings.
+
+
+
+    After checking the files on TOS, we need to verify whether all the transactions
+    are matched or not . For that we need select the unmatched receipts option from
+    Client Application and see if we have some transactions in the unmatched.
+
+
+
+    In this bank, there is a possibility that we receive some backdate transactions
+    as mentioned in the below screen shot:
+
+
+
+    As in the upper screenshot we can see that the there are two transactions related
+    to the date 15-03-2017 but if we see the rest of the transactions are with the
+    date 20-03-2017.
+
+
+    So, in this case we should reallocate the amounts with the date of the file. We
+    need to cancel the transactions with the previous date (15-03-2017) and again
+    we need to book the transactions with the date mentioned in the bank statement
+    i.e. (20-03-2017)."'
+  questions_and_answers:
+  - question: What are the movements for collector QIWI?
+    answer: 'The movements in collector QIWI are as following:
+
+
+      For debt- 2015 Bank to Invoice (QIWI)
+
+
+      For interest -- 2115 Bank to Interest (QIWI)
+
+
+      For Prepayment -2215 Bank to prepayment (QIWI)'
+  - question: How should backdated transactions be handled in ORPOSTA cash collector?
+    answer: Backdated transactions should be reallocated with the date of the file.
+      Transactions with the previous date (e.g., 15-03-2017) should be canceled, and
+      the transactions should be booked again with the correct date as mentioned in
+      the bank statement (e.g., 20-03-2017).
+  - question: How to verify the presence of the file related to ROBO (BRD) Collector
+      in the Client Application?
+    answer: 'Navigate to TOS > Bank Payments in the Client Application and check if
+      there is a file named BRDEROBU '
+- context: "SWIFT payments, wherein payments are deposited in bank & it's linked in\
+    \ backend with Client Application in\n\nsuch a way that whenever consultant pays\
+    \ for any order it clears the invoices in Client Application automatically.\n\n\
+    Unmatched Receipts are those transactions where system is unable to match consultant\
+    \ details, for ex -- consultant no, invoice no., name & amount with the details\
+    \ available in Client Application. User must match all the details in Client Application\
+    \ checking it with bank statement. In case if still there are some unmatched transactions\
+    \ which are not traced, query should be raised to local finance for the same.\n\
+    \n## Who should use this Document\n\n-   IBM OTC Team\n\n## Revision/Approval\
+    \ History\n\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
+    | **Version number** | **Effective Date** | **Summary of Changes** | **Author**\
+    \            | **Reviewer**                                                  \
+    \     | **Approver**          |\n|                    |                    | \
+    \                       |                       |                            \
+    \                                        |                       |\n|        \
+    \            |                    |                        | **\\<Name and Role\\\
+    >** | **\\<Name and Role\\>**                                              | **\\\
+    <Name and Role\\>** |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
+    | 0.1                | 30^th^ March 17    | Draft                  | Sarwan S\
+    \ -- O2C   | Sandhya G -O2C Manager, Ravi J - O2C TL, Lalit M-O2C SME\
+    \ | Anna O       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
+    | 0.3                | 21^st^ April 2017  | Reviewed               | Sarwan S\
+    \ -- O2C   | Sandhya G -O2C Manager, Ravi J - O2C TL, Lalit M-O2C SME\
+    \ | Anna O       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
+    | 0.4                | 14^th^ Jun 2017    | Reviewed by LF         | Sarwan S\
+    \ -- O2C   | Alina G / Bogdan B                               \
+    \   | Anna O       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
+    | 0.5                | 20^th^ June 2017   | Updated by IBM         | Sarwan S\
+    \ -- O2C   | Sandhya G -O2C Manager, Ravi J - O2C TL, Lalit M-O2C SME\
+    \ | Anna O       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
+    | 0.6                | 27^th^ June 2017   | Reviewed by LF         | Sarwan S\
+    \ -- O2C   | Alina G / Bogdan B                               \
+    \   | Anna O       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
+    | 0.7                | 30^th^ June 2017   | Updated by IBM         | Sarwan S\
+    \ -- O2C   | Sandhya G -O2C Manager, Ravi J - O2C TL, Lalit M-O2C SME\
+    \ | Anna O       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
+    \n## References\n\n**Tools Used**:\n\n1.  Bank Statements\n\n2.  Client Application\n\
+    \n# Overview\n\n## Objectives of the Process\n\n-   The objective of this process\
+    \ is to ensure & check that automatic(SWIFT) matching of incoming payments of\
+    \ consultants in Client Application is happening & also process unmatched receipts\
+    \ for all SWIFT markets. Accountant must ensure that all the incoming payments\
+    \ of consultant received in bank statement is duly transferred in Client Application.\_\
+    \n\n  ***Entity***   ***Entity Code***\n  -------------- -------------------\n\
+    \  Romania        *2005*\n\n## Inputs & Outputs\n\n+---------------------------------------+--------------------+\n\
+    | Input                                 | From               |\n+---------------------------------------+--------------------+\n\
+    | -   Incoming payment from consultants | -   Bank statement |\n+---------------------------------------+--------------------+\n\
+    \n+-------------------------------------------+------------------------+\n| Output\
+    \                                    | To                     |\n+-------------------------------------------+------------------------+\n\
+    | -   Amount credited in consultant account | -   Client Application |\n+-------------------------------------------+------------------------+"
+  questions_and_answers:
+  - question: What is the purpose of the SWIFT payments process in relation to the
+      Client Application?
+    answer: The purpose is to ensure that SWIFT payments deposited in the bank are
+      automatically linked in backend with the Client Application in such a way that
+      whenever consultant pays for any order it clears the invoices in Client Application
+      automatically.
+  - question: What are the primary inputs and outputs of the SWIFT payments process?
+    answer: The primary inputs are incoming payments from consultants as listed in
+      the bank statement, and the output is the amount credited to the consultant
+      account in the Client Application.
+  - question: What are unmatched receipts in context of incoming payments processing
+    answer: Unmatched Receipts are those transactions where system is unable to match
+      consultant details, for ex -- consultant no, invoice no., name & amount with
+      the details available in Client Application. User must match all the details
+      in Client Application checking it with bank statement. In case if still there
+      are some unmatched transactions which are not traced, query should be raised
+      to local finance for the same.

@@ -1,0 +1,288 @@
+domain: 'BPOD procure to pay: TSE P AP Invoice Processing General Expense Manual Invoice
+  V1.3'
+document_outline: "This document provides a step-by-step guide for performing \"Invoice\
+  \ Processing General Expenses,\" outlining the standard procedures for verifying,\
+  \ submitting, and posting invoices, ensuring accurate and efficient invoice handling."
+seed_examples:
+- context: '# Process Detail
+    > **General Expenses** invoices are expenses incurred primarily by Client employees
+    across all departments for:
+    -   Repairs and Maintance
+    -   Office consumables
+    -   Utility (Electricity, Water, Telecom)
+    -   Rent & Lease
+    -   IT support (License)
+    -   General Affairs Expenses (Corporate Insurance)
+    -   Service Charge
+    -   Equipments
+    -   Spare Part
+    > All invoices of General Expenses are without a Purchase Order. General Expense
+    Invoice document type **[In scope]{.underline}** is **BL, TV**
+    -   Vendor general expense -- BL, TV
+    > all other document types **[Out of Scope]{.underline}** for **IBM BPO AP** are:
+    -   Sales Deductions - C2
+    -   Fixed Assets -- AA
+    -   Custom Duty -- KE
+    -   Logistics -- LE
+    -   Repair Cost -- LP
+    -   Service Compensation -- UZ
+    -   Inter Company (Non Trade) -- BN
+    -   Credit Notes -- VG
+    -   Inter Company (Trade Invoice) -- MO
+    -   Inter Company (Direct Shipment) -- MS
+    -   Inventory Procurement (3rd Party) -- MA.
+    -   IRP (special IT expense) -- YV
+    -   Manual invoice -- VV
+    > These invoices are accounted against a **General Ledger Account Code (GL)**
+    as per the nature of the expense, **Cost Center (CC)** based on the requestor
+    and sent for approvals from Subsidiary Business/Finance.'
+  questions_and_answers:
+  - question: What types of invoices are out of scope for IBM BPO AP?
+    answer: "The types of invoices that are out of scope for IBM BPO AP include Sales\
+      \ Deductions - C2, Fixed Assets - AA, Custom Duty - KE, Logistics\
+      \ - LE, Repair Cost - LP, Service Compensation - UZ, Inter Company\
+      \ (Non Trade) - BN, Credit Notes - VG, Inter Company (Trade Invoice)\
+      \ - MO, Inter Company (Direct Shipment) - MS, Inventory Procurement\
+      \ (3rd Party) - MA, IRP (special IT expense) - YV, and Manual invoice\
+      \ - VV."
+  - question: What types of expenses are categorized under General Expenses invoices?
+    answer: General Expenses invoices cover a wide range of expenses including repairs
+      and maintenance, office consumables, utility bills, rent and lease, IT support,
+      general affairs expenses, service charges, equipment, and spare parts.
+  - question: How are General Expenses invoices accounted for?
+    answer: General Expenses invoices are accounted against a General Ledger Account
+      Code (GL) as per the nature of the expense and a Cost Center (CC) based on the
+      requestor, and are then sent for approvals from Subsidiary Business/Finance.
+- context: '# Process Steps Multiple Invoice
+    **STEP 1.** SR received, Click on the SR that we will process.
+    This is for the case that there are the invoices more than 1 invoice with same
+    supporting document and approval path, this can send as multiple invoice.
+    Email : <vendor@XXX.com>
+    Subject format : [\[AP:MTIV\] TSE-P/Vendor Code_Vendor Name/Invoice Number]{.underline}
+    The SR title start from \[AP:MTIV\] as below.
+    **STEP 2** click download invoice and supporting document.
+    **STEP 3** Click "**Go**" at [Finance Hub]{.underline} to link to my finance as
+    below:-
+    **STEP 4** once click Go will show Finance Hub as below:-
+    **STEP 5** On Finance Hub, Click ''create Invoice'' to create invoice we want
+    to process.
+    A window shall be displayed as below to create invoice manually:
+    -   Vendor code
+    -   Document date. : invoice date
+    -   Invoice amount as per invoice
+    -   Tax Code : V1 : Tax invoice/ VD : invoice/ V0 : no Tax (check Tax amount after
+    calculate must be same with tax amount on the invoice.
+    -   Invoice no : As per invoice
+    -   Attach the invoice by clicking Browse
+    -   Click "**Save"**.
+    **After create invoice manually, the process of submitting invoice will be the
+    same starting as per section 6.**
+    # Step of processing Settlement request for Non-PR Invoices:
+    **Step 1**: Click ''Go'' button at ''Invoice Verification & Confirmation (Category
+    Change)'' to verify invoice information in OCR:
+    **Step 2**: Verify OCR information.
+    **Step 3**: Posting & Submission:
+    1.  Click 2^nd^ Go button ''**NEXT E-Invoice Submit (No PR**)'' at ''myFinance
+    Posting & Submission'' to process invoice in NERP
+    2.  A window shall be showed as below:
+    3.  Input Business Area and click ''Go''
+    4.  The "Request Type input" will pop up for GL search:
+    5.  Enter correct GL code to create settlement request:
+    6.  After select correct GL account, settlement request will be created for posting.
+    # BQMS Process Expansion Biz Management
+    -   This process effective on **1st September 2022** on the expansion of 32 G/L
+    codes (since NERP go live) to 194 G/L codes.
+    -   HQ Audit/Finance/Risk Mgt. Depart. confirmed 194 G/L Acc. for BQMS mandatory-use.
+    -   If any general vendor purchase related to the 194 G/L Acc. not going through
+    BQMS Biz Mgmt. would require IBM to select a reason code while processing through
+    Finance hub.
+    **Scenario 1: With BQMS contract**
+    When posting SR on settlement request using NERP, certain GL account requires
+    IBM to input BQMS contract number in which to be provided by the sub PIC. IBM
+    need to input this contract number as shown below on settlement request when processing.
+    **Scenario 2: Without BQMS contract**
+    In the case if there is no BQMS contract, sub PIC requires to state one of the
+    reason below for IBM to input in the system.
+    Once attained confirmation from sub PIC, IBM needs to choose reason as per PIC
+    advice.
+    \*\*\*IBM **should not** post the SR without getting confirmation from sub PIC.
+    In this case, IBM needs to put the SR on hold with valid reason until further
+    confirmation from sub PIC.'
+  questions_and_answers:
+  - question: What is the process for processing multiple invoices?
+    answer: 'The process for processing multiple invoices involves: (1) Receiving
+      the SR, (2) Clicking on the SR to process, (3) Downloading the invoice and supporting
+      document, (4) Clicking "Go" at Finance Hub, (5) Creating an invoice manually,
+      and (6) Submitting the invoice for processing.'
+  - question: What is the process for handling BQMS contract-related invoices?
+    answer: 'The process for handling BQMS contract-related invoices involves: (1)
+      If a BQMS contract is available, inputting the contract number on the settlement
+      request, (2) If no BQMS contract is available, selecting a reason code from
+      the list provided by the sub PIC, and (3) Not posting the SR without confirmation
+      from the sub PIC, and instead putting the SR on hold with a valid reason'
+  - question: What are the steps for processing a settlement request for Non-PR invoices?
+    answer: "The steps of processing Settlement request for Non-PR Invoices:\nClick\
+      \ the ''Go'' button at ''Invoice Verification & Confirmation (Category\
+      \ Change)'' to verify invoice information in OCR.\nVerify OCR information.\n\
+      In 'myFinance Posting & Submission,' click the 2nd Go button, input the Business\
+      \ Area, enter the correct GL code, and create the settlement request for posting."
+- context: "# Process Steps Single Invoice\n\n## Invoice Receipt\n\n**STEP 1:** Login\
+    \ to GSSC Portal\n\n**STEP 2:** Click on S/R:\n\n**STEP 3:** Click GO under Transaction\
+    \ Type to verify invoice detail :\n\n**STEP 4:** Click confirm after verifying\
+    \ all the details:\n\n\\- Document category : choose correct category (General\
+    \ invoice, Marketing invoice, MRO invoice)\n\n\\- Vendor code\n\n\\- Vender address\
+    \ ( must same with the one registered in vendor master)\n\n\\- Client address\n\
+    \n\\- Invoice date\n\n\\- Invoice no.\n\n\\- invoice amount (Net amount, Tax amount\
+    \ and total amount)\n\nOnce detail verified and correct then click 'confirm' if\
+    \ not correct click modify.\n\nOnce confirm, GSSC will bring to next stept \"\
+    Finance Hub\"\n\n**STEP 5:** Click Go in order to proceed invoice:\n\nGSSC will\
+    \ interface to Finance Hub directly. Click Evidence List\n\n**STEP 6:** Tick on\
+    \ the invoice number and create settlement request, input the GL Code on the box\
+    \ \"Request Type input\" and click on the \"GL Seach\" icon to select the GL account.\
+    \ Choose relevant GL\n\n**STEP 7:** A settlement request will be created for that\
+    \ invoice. NERP window shall be displayed as below, syncing all the captured fields\
+    \ of previous steps on GSSC into NERP data.\n\nCheck the following fields and\
+    \ click save:\n\n-   **Prepaid PUMI Category:** Choose expense from the dropdown\
+    \ if it is a regular expense and choose pre-paid if it is a pre-paid expense\n\
+    \n-   **GL Account:** Select the relevant GL from the drop down list\n\n-   **Cost\
+    \ Center:** Input the correct cost center.\n\n-   **JC:** Select the Job Category\
+    \ by clicking the box highlighted to reflect the correct JC.\n\n-   **Tax Code:**\
+    \ As applicable.\n\n-   **Amount:** Amount in Expense info should match the taxable\
+    \ amount in basic info\n\n-   **Tax amount:** Tax Amount\n\n-   **Subject:** As\
+    \ per Subs' format. Refer to previous postings for more details.\n\n-   **Prepaid\
+    \ Expense:** Input the details of the period, clearing account and assignment\
+    \ (only applicable for pre-paid expense)\n\n-   **Requester Dept:** Input the\
+    \ cost center to determine the approval path\n\nNote: In case for expenses which\
+    \ needs allocation, choose multi tax, click on \"**+**\" button in 'Expense Info'\
+    \ field. Another line will appear for allocation.\n\nIn case of there are a lot\
+    \ of cost centers to allocate, use the \"upload\" function to upload all of the\
+    \ allocation lines via an excel file under a pre-determined form. First of all,\
+    \ download the form by press the 'Excel download\" icon:\n\nOpen the excel file\
+    \ to to start filling the actual allocation excel sheet.\n\nWhen the copy is done,\
+    \ save and close the excel form. Go back to the window and press \"excel upload\"\
+    \ to upload the file.\n\n**STEP 8:** Click on \"Attachment\" Before submitting\
+    \ the Invoice, to attach all the supporting documents along with the invoice.\n\
+    \n-   Click on \"Attachment\" icon. A sub-window appears.\n\n-   Click on \"**Please\
+    \ attach a file here**\" to attach the file\n\n    -   Contract is for agreement\n\
+    \n    -   ETC for PUMI/Knox/Pre Request Approvals\n\n    -   Evidence for Invoice\
+    \ and Supporting Documents\n\n    -   For other than mentioned above, you may\
+    \ select the dropdown on the right and click others\n\n-   Click on **\"Close\"\
+    ** to close the windows and continue process\n\nClick on \"**Save**\" before click\
+    \ \"**Submit**\" to process the invoice and get the approval in order to get the\
+    \ payment processed:\n\n**STEP 9:** Add approval path as per specific in suppoting\
+    \ documents and click OK.\n\n**STEP 10:** Go back to GSSC and click Additional\
+    \ Info tab and click create. Select W/F Object Key from the dropdown and input\
+    \ the Client Doc No in the Value field and click save"
+  questions_and_answers:
+  - question: What are the steps involved in submitting the single invoice for approval?
+    answer: 'The steps involved in submitting the single invoice for approval are:
+      STEP 8: Click on "Attachment" to attach all the supporting documents along with
+      the invoice, STEP 9: Add approval path as per specific in supporting documents
+      and click OK, and STEP 10: Go back to GSSC and click Additional Info tab and
+      click create, selecting W/F Object Key from the dropdown and inputting the Client
+      Doc No in the Value field and clicking save'
+  - question: What are the steps involved in processing a single invoice in GSSC Portal?
+    answer: 'The steps involved in processing a single invoice in GSSC Portal are:
+      (1) Login to GSSC Portal, (2) Click on S/R, (3) Click GO under Transaction Type
+      to verify invoice detail, (4) Click Confirm after verifying all the details,
+      (5) Click Go in order to proceed invoice, (6) Tick on the invoice number and
+      create settlement request, (7) Check the fields and click Save, and (8) Click
+      on Attachment to attach all the supporting documents along with the invoice.'
+  - question: What are the fields that need to be checked and saved in the NERP window
+      to process single invoice?
+    answer: 'The fields that need to be checked and saved in the NERP window for single
+      invoice are: Prepaid PUMI Category, GL Account, Cost Center, JC, Tax Code, Amount,
+      Tax Amount, Subject, Prepaid Expense, and Requester Dept.'
+- context: '> **Mode of Receipt - Invoice and Supporting Documents:**
+
+    > All General Expense Invoice should be accompanied with suporting documents;
+    please refer to the Document Validation Matrix.
+
+    > Invoices are received in the form of:
+    -   Hard Copy -- Via Post
+    -   Soft copy -- Via Email
+    -   E-Invoice -- Trade Shift (For e-invoicing Compliant countries)
+    -   Web Invoice -- Downloaded from respective company website
+    > ''Invoice Processing - General Expenses Appendix''
+
+    > **Mail Room -- OCR Process:**
+
+    > **Process Map for the Mail Room Solution to be included beat & below section
+    needs to ammended at a later stage as required**
+    -   Invoices are received at Mail Room -- Scanning center located in Australia,
+    directly from Vendors.(\*\*For TSE-P Subs PIC will send email to mailroom directly)
+    -   Scanning provider receives, sorts and scans envelope, invoices, supporting
+    documents.
+    -   These invoices requires indexing. Indexing activity refers to entering data
+    from invoice to a form in GSSC portal.In order to perform Indexing automatically,
+    OCR is leveraged to capture information from invoice. Scanning provider to perform
+    OCR correction for missing/incorrect data fields from indexing.
+    -   Upon completion of OCR correction, invoice is now available in GSSC portal
+    for IBM AP team for processing.
+    -   IBM AP team member performs validation prior to submitting the invoices for
+    approval in GFP.
+    -   If the invoice is invalid or data is incorrect it will be rejected back to
+    the vendor with notification.
+    -   If the invoices has to be rescanned, IBM AP team to contact scanning provider.'
+  questions_and_answers:
+  - question: What are the modes of receipt for General Expense Invoices?
+    answer: 'The modes of receipt for General Expense Invoices are: Hard Copy - Via
+      Post, Soft Copy - Via Email, E-Invoice - Trade Shift (For e-invoicing Compliant
+      countries), and Web Invoice - Downloaded from respective company website.'
+  - question: What happens if an invoice is invalid or has incorrect data?
+    answer: If an invoice is invalid or has incorrect data, it will be rejected back
+      to the vendor with notification. If the invoice needs to be rescanned, IBM AP
+      team should contact the scanning provider.
+  - question: What is the process for invoices received at the Mail Room - OCR Process?
+    answer: 'The process for invoices received at the Mail Room - OCR Process involves:
+      (1) Invoices are received at the Mail Room - Scanning center located in Australia,
+      directly from Vendors; (2) Scanning provider receives, sorts and scans envelope,
+      invoices, supporting documents; (3) Invoices require indexing, which involves
+      entering data from the invoice to a form in the GSSC portal; (4) OCR is leveraged
+      to capture information from the invoice; and (5) The invoice is now available
+      in the GSSC portal for IBM AP team for processing.'
+- context: 'Below are the indexing fields that would be captured:
+    -   Document Type (Invoice/Credit Note)
+    -   Document Date
+    -   Company Code
+    -   Business Area
+    -   Vendor Code
+    -   Document Number
+    -   Total Amount
+    -   Tax Amount
+    -   Net Amount
+    -   Currency Code
+    -   Knox Email ID from Envelope
+    -   Invoice Description
+    ## Process Description
+    IBM BPO AP team has to perform the following checks before processing an Invoice
+    for General Expenses:
+    -   IBM BPO AP team verifies the documents received for its completeness and correctness.
+    -   Upon receipt of invoices IBM BPO AP team to contact requestor/General Affairs
+    for additional supporting documents such as Knox approval etc. in case anything
+    is missing.
+    -   If the document is invalid, the invoice has to be rejected and sent back to
+    the Vendor.
+    -   The AP Invoice Processor should ensure that invoice is not duplicate, prior
+    to processing.
+    ## 5.3 System/Applications Used: {#systemapplications-used .unnumbered}
+    -   N-ERP
+    -   Knox Portal
+    -   GSSC
+    -   SAP'
+  questions_and_answers:
+  - question: What are the indexing fields that would be captured?
+    answer: 'The indexing fields that would be captured include: Document Type, Document
+      Date, Company Code, Business Area, Vendor Code, Document Number, Total Amount,
+      Tax Amount, Net Amount, Currency Code, Knox Email ID from Envelope, and Invoice
+      Description.'
+  - question: What systems and applications are used by the IBM BPO AP team?
+    answer: 'The IBM BPO AP team uses the following systems and applications: N-ERP,
+      Knox Portal, GSSC, and SAP.'
+  - question: What are the checks that the IBM BPO AP team needs to perform before
+      processing an Invoice for General Expenses?
+    answer: 'The IBM BPO AP team needs to perform the following checks: (1) Verify
+      the documents received for completeness and correctness, (2) Contact requestor/General
+      Affairs for additional supporting documents if anything is missing, (3) Reject
+      and send back to vendor if the document is invalid, and (4) Ensure that the
+      invoice is not a duplicate prior to processing.'

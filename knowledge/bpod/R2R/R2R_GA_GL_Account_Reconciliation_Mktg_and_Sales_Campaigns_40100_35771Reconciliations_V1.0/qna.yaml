@@ -1,0 +1,289 @@
+domain: 'BPOD Record to Analyze: R2R_GA_GL Account Reconciliation-Mktg and Sales Campaigns-40100_35771Reconciliations_V1.0.doc'
+document_outline: Describes how IBM Delivery Centre will perform monthly reconciliations
+  for Entity-40100, Account-35771
+seed_examples:
+- context: "## Inputs & Outputs\n\n+----------------------------------+--------------+\n\
+    | Input                            | From         |\n+----------------------------------+--------------+\n\
+    | > Extracting the required report | > PeopleSoft |\n+----------------------------------+--------------+\n\
+    \n+-------------------+------------+\n| Output            | To         |\n+-------------------+------------+\n\
+    | > Reconciliations | > Trintech |\n+-------------------+------------+\n\n# Control\
+    \ Points\n\n  ***\\#***   **Sub process Activity**                           \
+    \                  **Sub process Activity Description**                      \
+    \              **Control Objective(s)**                                      \
+    \    **Control Activity**                                                 **Risk\
+    \ Assertions**                                                               \
+    \   **Frequency (i.e. Event, Daily, Monthly, Quarterly, Annually)**   **Evidence**\n\
+    \  ---------- --------------------------------------------------------------------\
+    \ ----------------------------------------------------------------------- -----------------------------------------------------------------\
+    \ -------------------------------------------------------------------- ------------------------------------------------------------------------------------\
+    \ ----------------------------------------------------------------- --------------\n\
+    \  1          40100_35771 (Marketing & Sales Campaigns Accruals) Reconciliations\
+    \   Perform the reconciliations on monthly basis and certify in Trintech.   Match\
+    \ the GL balance with Trintech balance for required period.   Balance sheet reconciliations\
+    \ are performed (Higher level control)   There are errors in the preparation of\
+    \ the equity reconciliation and statement(s).   Monthly (Before 17^th^ of every\
+    \ month)                            Trintech"
+  questions_and_answers:
+  - question: What are the inputs and outputs required for marketing campaigns while
+      performing Account Reconciliation?
+    answer: '+----------------------------------+--------------+
+
+      | Input                            | From         |
+
+      +----------------------------------+--------------+
+
+      | > Extracting the required report | > PeopleSoft |
+
+      +----------------------------------+--------------+
+
+
+      +-------------------+------------+
+
+      | Output            | To         |
+
+      +-------------------+------------+
+
+      | > Reconciliations | > Trintech |
+
+      +-------------------+------------+'
+  - question: 'What is the description for subprocess activity: 40100_35771 (Marketing
+      & Sales Campaigns Accruals) Reconciliations?'
+    answer: 'The description for subprocess activity: 40100_35771 (Marketing & Sales
+      Campaigns Accruals) Reconciliations is: Perform the reconciliations on monthly
+      basis and certify in Trintech.'
+  - question: What is the risk assertion for control activity Balance sheet reconciliations
+      are performed (Higher level control)?
+    answer: 'The risk assertion for control activity Balance sheet reconciliations
+      are performed (Higher level control) is: There are errors in the preparation
+      of the equity reconciliation and statement(s).'
+- context: '## Process Description
+
+
+    1.  Login to Trintech: Open Client Home Page\>Open the Trintech link\>Input the
+    Credentials\>Click on Sign In.
+
+
+    2.  After login Into Trintech, Click on Effective Date\>Click on Not Started as
+    shown below.
+
+
+    3.  Navigate to Trintech & if required select on Page Size drop down option to
+    increase or decrease the Page Size.
+
+
+    4.  Navigate to find the account "40100-35771-E0055-30-NULL-NULL- NULL-NULL" to
+    prepare the recon.
+
+
+    5.  Click on Reconcile option to open the required account.
+
+
+    6.  Then click on Compare button. The compare button allows to look at the months
+    previous balance.
+
+
+    7.  Then Click on Files.
+
+
+    8.  Then Click on link under view file to download the recon template which was
+    loaded for month prior to effective date.
+
+
+    9.  Then Click on Open.
+
+
+    10. This is what the recon template looks like.
+
+
+    11. After this, Navigate to Client browser page\>Click on PeopleSoft link\>Use
+    credentials and click on Sign In
+
+
+    12. Once signed into PeopleSoft, the below page will appear
+
+
+    13. Under Menu, Click on General Ledger.
+
+
+    14. Under Review Financial Information \>Click on Ledger.
+
+
+    15. Click on Basic Search.
+
+
+    16. Then fill the required details under the Unit\>Ledger\>Account\>Under Sum
+    By Click on check box\>Operating Unit\> Under Sum By Click on check box \>Subaccount\>
+    Under Sum By Click on check box \>Click on Search.
+
+
+    > Note: 40100(Unit/Entity)-35771(Account)-E0055(Subaccount)-30(Operating Unit)-NULL-NULL-
+    NULL-NULL
+
+
+    17. Compare and make sure that the GL balance matches with Trintech balance.
+
+
+    18. Update the spreadsheet: Change the date and save the spreadsheet to upload
+    in Trintech.
+
+
+    19. Click on Files and upload the recon template.
+
+
+    20. Once Uploaded\>Click on Home button.
+
+
+    21. The amount should be updated as shown below and Click on Certify.
+
+
+    22. Go Back to Trintech home page\>Click on Effective Date\>Click on Not Started\>Navigate
+    to find the account "40100-35771-NULL-30-NULL-NULL- NULL-PR018"\>Click on view.
+
+
+    23. Click on Files\>Under View Files Click on the link to download the recon template
+    which was loaded for month prior to effective date.
+
+
+    24. Go to PeopleSoft Page\>Click on Inquiry Criteria.'
+  questions_and_answers:
+  - question: How to login Into Trintech?
+    answer: 'To login to Trintech: Open Client Home Page>Open the Trintech link>Input
+      the Credentials>Click on Sign In.'
+  - question: Which account number is used to prepare the recon?
+    answer: The account "40100-35771-E0055-30-NULL-NULL- NULL-NULL" is used to prepare
+      the recon.
+  - question: Where to do Basic Search in Peoplesoft for General Ledger?
+    answer: '1. Once signed into PeopleSoft, the below page will appear
+
+      2. Under Menu, Click on General Ledger.
+
+      3. Under Review Financial Information >Click on Ledger.
+
+      4. Click on Basic Search.
+
+      5. Then fill the required details under the Unit>Ledger>Account>Under Sum By
+      Click on check box>Operating Unit> Under Sum By Click on check box >Subaccount>
+      Under Sum By Click on check box >Click on Search.'
+- context: "## Process Measurement Reports \n\n> Need to perfrom the 7 reconciliation\
+    \ (Marketing and Sales Campaigns Accrual) activites on monthly basis and the cutoff\
+    \ time to complete these activities every month is third week of the month.\n\n\
+    -   40100-35771-C0286-30-NULL-NULL- NULL-NULL\n\n-   40100-35771-E0055-30-NULL-NULL-\
+    \ NULL-NULL\n\n-   40100-35771-NULL-30-NULL-NULL- NULL-PR018\n\n-   40100-35771-\
+    \ NULL-30-NULL-NULL- NULL-PR039\n\n-   40100-35771- NULL-30-NULL-NULL- NULL-PR040\n\
+    \n-   40100-35771- NULL-30-NULL-NULL- NULL-XXXXX\n\n-   40100-35771- NULL-30-NULL-NULL-\
+    \ NULL-PR026\n\n# Roles & Responsibilities\n\n## Description\n\n  **Role**   \
+    \   **Responsibility**\n  ------------- -------------------------------------------------------------\n\
+    \  R2R GA Team   Perform the reconciliation activity for the listed accounts\n\
+    \n## Segregation of Duties (SOD) Matrix\n\n> For the SOD assessment on conflicting\
+    \ tasks and accesses, please refer to the related Aggregate SOD (A-SOD). ***\\\
+    <SOD Matrix pending IBM GPS internal review and approval\\>***\n\n# Process Detail\n\
+    \n## Overview\n\n> Login to Trintech to download the recon template which was\
+    \ loaded for month prior to effective date,then login to PeopleSoft to query the\
+    \ General Ledger balance for the required period and match the balance to Trintech\
+    \ balance. Perform the reconciliation, update the balance details into Trintech,\n\
+    >\n> attach the recon template into Trintech and Certify.\n>\n> Note: The cutoff\
+    \ time to complete these activities every month is third week of the month."
+  questions_and_answers:
+  - question: What are the 7 reconciliation (Marketing and Sales Campaigns Accrual)
+      activites ?
+    answer: 'The 7 reconciliation (Marketing and Sales Campaigns Accrual) activites
+      are:
+
+      1. 40100-35771-C0286-30-NULL-NULL- NULL-NULL
+
+      2. 40100-35771-E0055-30-NULL-NULL- NULL-NULL
+
+      3. 40100-35771-NULL-30-NULL-NULL- NULL-PR018
+
+      4. 40100-35771- NULL-30-NULL-NULL- NULL-PR039
+
+      5. 40100-35771- NULL-30-NULL-NULL- NULL-PR040
+
+      6. 40100-35771- NULL-30-NULL-NULL- NULL-XXXXX
+
+      7. 40100-35771- NULL-30-NULL-NULL- NULL-PR026'
+  - question: Who is responsible to Perform the reconciliation activity for the listed
+      accounts
+    answer: R2R GA Team is responsible to Perform the reconciliation activity for
+      the listed accounts
+  - question: What is the deadline or cut off time to complete the activities of reconciliation,
+      updating the balance details into Trintech, and attach the recon template into
+      Trintech and Certify?
+    answer: The deadline or cut off time to complete the activities is every month
+      by third week of the month.
+- context: "40. Compare and make sure that the GL balance matches with Trintech balance.\n\
+    \n41. Update the spreadsheet: Change the date and balance and save the spreadsheet\
+    \ to upload in Trintech.\n\n42. Click on Files\\> Then upload the recon template\
+    \ into Trintech\\>Click on Balance details to update the GL balance\\>Click on\
+    \ Certify\\>Click on dashboardto go back to trintech home page.\n\n43. Click on\
+    \ Effective Date\\>Click on Not Started\\>Navigate to find the account \"40100-35771-C0286-30-NULL-NULL-\
+    \ NULL\"\\>Click on view.\n\n44. Click on Files\\>Under View Files Click on the\
+    \ link to download the recon template which was uploaded for month prior to effective\
+    \ date.\n\n45. Go to PeopleSoft Page\\>Click on Inquiry Criteria.\n\n46. Then\
+    \ fill the required details under the Unit\\>Ledger\\>Account\\>Under Sum By Click\
+    \ on check box\\>Operating Unit\\> Under Sum By Click on check box \\>Subaccount\\\
+    > Under Sum By Click on check box \\>Click on Search.\n\n> Note: 40100(Unit/Entity)-35771(Account)-C0286(Subaccount)-30(Operating\
+    \ Unit)-NULL-NULL- NULL-NULL\n\n47. Compare and make sure that the GL balance\
+    \ matches with Trintech balance.\n\n48. Update the spreadsheet: Change the date\
+    \ and balance and save the spreadsheet.\n\n49. Then upload the recon template\
+    \ into Trintech\\>Click on Balance details to update the GL balance\\>Click on\
+    \ Certify\\>Click on dashboard to go back to trintech home page.\n\n50. Click\
+    \ on Effective Date\\>Click on Not Started\\>Navigate to find the account \"40100-35771-\
+    \ NULL-30-NULL-NULL- NULL-XXXXX\"\\>Click on view.\n\n51. Click on Files\\>Under\
+    \ View Files Click on the link to download the recon template which was loaded\
+    \ for month prior to effective date.\n\n52. Go to PeopleSoft Page\\>Click on Inquiry\
+    \ Criteria.\n\n53. Then fill the required details under the Unit\\>Ledger\\>Account\\\
+    >Under Sum By Click on check box\\>Operating Unit\\> Under Sum By Click on check\
+    \ box \\>Program Code(\\~)\\>Under Sum By Click on check box \\>Subaccount(\\\
+    ~)\\>Under Sum By Click on check box Click on Search.\n\n> Note: 40100(Unit/Entity)-35771(Account)-NULL-30(Operating\
+    \ Unit)-NULL-NULL-XXXXX\n\n54. Compare and make sure that the GL balance matches\
+    \ with Trintech balance.\n\n55. Update the spreadsheet: Change the date and balance\
+    \ and save the spreadsheet.\n\n56. Then upload the recon template into Trintech\\\
+    >Click on Reconciling items to update the GL balance\\>Click on Certify\\>Click\
+    \ on dashboard to go back to trintech home page.\n\n57. Please follow the above\
+    \ steps to prepare the 40100-35771- NULL-30-NULL-NULL- NULL-PR026 reconciliation\
+    \ activity.\n\n# Definitions\n\nThe following are definitions of acronyms used\
+    \ in this document:\n\n  Term   Definition\n  ------ ----------------\n  GL  \
+    \   General Ledger"
+  questions_and_answers:
+  - question: What is the full form of acronym GL?
+    answer: GL stands for General Ledger.
+  - question: What is the final step in 40100-35771- NULL-30-NULL-NULL- NULL-PR026
+      reconciliation activity?
+    answer: Final step is to upload the recon template into Trintech>Click on Reconciling
+      items to update the GL balance>Click on Certify>Click on dashboard to go back
+      to trintech home page.
+  - question: GL balance should match to which balance?
+    answer: The GL balance should match with Trintech balance.
+- context: "Overview\n\n## Objective(s)\n\n> The function of performing this reconciliation\
+    \ is that some of the Client suppliers will provide funding, which meant to be\
+    \ offset the amount to Client spends for marketing related to their products.\n\
+    >\n> In this case, with the vendor Vendor1, the comprehensive supplier agreement\
+    \ between the Client and supplier includes a section stating that \"Vendor1 will\
+    \ provide 500K annually for this purpose\". When a supplier agrees to the use\
+    \ of these funds for a specific purpose, the agreed amount is reclassed from this\
+    \ liability account to a marketing expense account.\n>\n> Examples of such marketing\
+    \ purposes include sponsorships of trade shows or customer events.\n\n### Frequency:\
+    \ \n\n> Monthly\n\n### Source: \n\n> Trintech\n\n### System Accesses:\n\n-   Trintech\n\
+    \n-   PeopleSoft\n\n-   Microsoft Excel\n\n-   Microsoft Outlook"
+  questions_and_answers:
+  - question: Provide some example of the marketing expenses for GA_GL Account Reconciliation
+      marketing campaigns.
+    answer: Examples of marketing purposes for GA_GL Account Reconciliation include
+      sponsorships of trade shows or customer events.
+  - question: What are the system accesses needed for marketing campaigns while performing
+      Account Reconciliation?
+    answer: 'The system accesses needed for marketing campaigns while performing Account
+      Reconciliation are:
+
+      1. Trintech
+
+      2. PeopleSoft
+
+      3. Microsoft Excel
+
+      4. Microsoft Outlook'
+  - question: What is the source of the marketing campaigns while performing Account
+      Reconciliation?
+    answer: The source for the marketing campaigns while performing Account Reconciliation
+      is Trintech

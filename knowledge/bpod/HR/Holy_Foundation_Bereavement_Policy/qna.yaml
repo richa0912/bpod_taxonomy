@@ -1,0 +1,137 @@
+domain: 'BPOD Human Resource: Holy Foundation_Bereavement Policy'
+document_outline: The Holy Foundation Bereavement Policy provides paid time off for
+  caregivers in the event of the death of an immediate family member. Caregivers may
+  receive up to 24 hours with pay, and additional paid time off or unpaid time off
+  may be authorized on a case-by-case basis. The policy applies to all facility caregivers
+  and is subject to change at the facility's discretion.
+seed_examples:
+- context: 'Holy Foundation ("facility")
+
+    Department: Human Resources
+
+    Approved by: Chief Human Resources Officer
+
+    Date Last Reviewed: 5/1/2022
+
+    Date Last Revised: 5/1/2022 Date Adopted: 10/19/2019
+
+    Policy Name: Bereavement
+
+    Scope: All facility caregivers
+
+    Purpose: To establish the facility''s policy, expectations and guidelines for
+    paid time off in the event of the death of an immediate family member when caregivers
+    are eligible for bereavement leave.
+
+    Terms:
+
+    Immediate family member is defined as the caregiver''s:
+
+    - current spouse or domestic partner
+
+    - child
+
+    - parent
+
+    - sibling
+
+    - stepparent, stepchild, step-sibling
+
+    - grandparent or grandchild
+
+    - a person who stood in loco parentis (legal responsibility of a person to take
+    on the functions and responsibilities of a parent)
+
+    - or current in-law relationships through marriage or partnership of the above'
+  questions_and_answers:
+  - question: Who is eligible for bereavement leave at the Holy Foundation under Holy
+      Foundation Bereavement Policy?
+    answer: All facility caregivers are eligible for bereavement leave in the event
+      of the death of an immediate family member under Holy Foundation Bereavement
+      policy.
+  - question: What is the definition of an immediate family member at the Holy Foundation
+      under Holy Foundation Bereavement policy?
+    answer: under Holy Foundation Bereavement policy, an immediate family member is
+      defined as the caregiver's current spouse or domestic partner, child, parent,
+      sibling, stepparent, stepchild, step-sibling, grandparent or grandchild, a person
+      who stood in loco parentis, or current in-law relationships through marriage
+      or partnership of the above.
+  - question: What is the purpose of the Holy Foundation's Bereavement policy?
+    answer: The purpose of the Holy Foundation's Bereavement policy is to establish
+      the facility's policy, expectations, and guidelines for paid time off in the
+      event of the death of an immediate family member when caregivers are eligible
+      for bereavement leave.
+- context: 'Policy:
+
+    In keeping with our mission and values, the facility provides all benefits-eligible
+    caregivers time off without loss of pay in the event of the death of an immediate
+    family member (as defined above). Caregivers may receive up to 24 hours with pay
+    in the event of the death of an immediate family member or up to 40 hours with
+    pay in the event of the death of the caregiver''s spouse, domestic partner or
+    child. Additional paid time off (PTO) (in accordance with the facility''s PTO
+    policy) or unpaid time (in the event the caregiver has insufficient PTO) may be
+    authorized by your core leader on a case-by-case basis, based upon operational
+    needs. If leave is needed due to the death of a person who does not qualify as
+    an immediate family member, PTO or unpaid time off may similarly be authorized
+    by your core leader. The facility will comply with applicable state or local laws
+    that provide additional bereavement benefits. Caregivers should consult with HR
+    to determine if an additional bereavement benefit is available.
+
+    Caregivers in a manager level position or above who do not accrue PTO may take
+    leader time off (LTO) for bereavement in accordance with the facility''s LTO policy,
+    upon authorization by your core leader based on operational needs.'
+  questions_and_answers:
+  - question: How much paid time off can a caregiver receive in the event of the death
+      of an immediate family member according to Holy Foundation Bereavement policy?
+    answer: Caregivers may receive up to 24 hours with pay in the event of the death
+      of an immediate family member according to Holy Foundation Bereavement policy.
+  - question: What happens if a caregiver needs additional paid time off due to the
+      death of someone who does not qualify as an immediate family member under Holy
+      Foundation Bereavement policy?
+    answer: according to Holy Foundation Bereavement policy, if a caregiver needs
+      additional paid time off due to the death of someone who does not qualify as
+      an immediate family member, PTO or unpaid time off may be authorized by their
+      core leader on a case-by-case basis, based upon operational needs.
+  - question: How does the Holy Foundation Bereavement policy apply to caregivers
+      in a manager level position or above?
+    answer: Caregivers in a manager level position or above who do not accrue PTO
+      may take leader time off (LTO) for bereavement in accordance with the facility's
+      LTO policy, upon authorization by their core leader based on operational needs
+      under Holy Foundation Bereavement policy.
+- context: 'Procedures:
+
+    1. Requests for paid bereavement leave must be submitted to your core leader.
+    Time will typically be taken within two (2) weeks of notification of the death;
+    however, exceptions will be considered as appropriate (e.g., memorial or funeral
+    has been postponed, travel required out of the country, cultural/religious practices
+    which may require services long after death).
+
+    2. Paid bereavement leave is paid at the caregiver''s base rate of pay, including
+    shift differential, if applicable.
+
+    3. Paid bereavement leave is not available to caregivers who are on leaves of
+    absence.
+
+    4. Bereavement pay is coded in the timekeeping system.
+
+    5. Caregivers may be requested to provide documentation regarding the need for
+    bereavement leave.
+
+    Help: For questions about this policy, or assistance with understanding your obligations
+    under this policy, please contact human resources.
+
+    The statements of this policy document are not to be construed as a contract or
+    covenant of employment. They are not promises of specific treatment in specific
+    situations and are subject to change at the sole discretion of the facility'
+  questions_and_answers:
+  - question: Who should caregivers submit requests for paid bereavement leave to
+      acc. To Holy Foundation Bereavement policy?
+    answer: Caregivers should submit requests for paid bereavement leave to their
+      core leader acc. To Holy Foundation Bereavement policy.
+  - question: How is paid bereavement leave paid in Holy Foundation Bereavement policy?
+    answer: Paid bereavement leave is paid at the caregiver's base rate of pay, including
+      shift differential, if applicable in Holy Foundation Bereavement policy.
+  - question: Are caregivers on leaves of absence eligible for paid bereavement leave
+      under Holy Foundation Bereavement policy?
+    answer: No, paid bereavement leave is not available to caregivers who are on leaves
+      of absence under Holy Foundation Bereavement policy.

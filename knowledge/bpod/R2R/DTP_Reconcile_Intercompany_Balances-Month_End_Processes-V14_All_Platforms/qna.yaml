@@ -1,0 +1,350 @@
+domain: 'BPOD record to analyze: DTP Reconcile Intercompany Balances - Month End Processes
+  - V14 All Platforms'
+document_outline: Describes GPM DTP Reconcile Intercompany Balances - Month End Processes
+seed_examples:
+- context: "# Roles and Responsibilities \n\n+-------------------------+-----------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+\n\
+    | > **Role**              | > **Description**                                \
+    \                                                                            \
+    \     | > **Responsibility**                                                 \
+    \                                  |\n+=========================+===================================================================================================================================+========================================================================================================+\n\
+    | > Service Provider      | > The Service Provider Intercompany Hub Accountant\
+    \ is responsible for conducting the simplified reconciliation using Recon Macro.\
+    \ | > [Generate Intercompany General]{.ul} [Ledger]{.ul}                     \
+    \                              |\n| >                       | >              \
+    \                                                                            \
+    \                                       | >                                  \
+    \                                                                    |\n| > Intercompany\
+    \ Hub      | > Post non-judgemental accrual journals to ensure V105 match.   \
+    \                                                                  | > [Items]{.ul}\
+    \                                                                            \
+    \             |\n| >                       |                                 \
+    \                                                                            \
+    \                      | >                                                   \
+    \                                                   |\n| > Accountant        \
+    \    |                                                                       \
+    \                                                            | > [Generate Intercompany\
+    \ Vendor Items]{.ul} [Generate Intercompany Customer]{.ul} Items (Manual Task).\
+    \ |\n|                         |                                             \
+    \                                                                            \
+    \          | >                                                               \
+    \                                       |\n|                         |       \
+    \                                                                            \
+    \                                                | > [Reconcile Intercompany Balances]{.ul}\
+    \                                                               |\n|         \
+    \                |                                                           \
+    \                                                                        | > \
+    \                                                                            \
+    \                         |\n|                         |                     \
+    \                                                                            \
+    \                                  | > (Automated Task within Macro Tool).   \
+    \                                                               |\n+-------------------------+-----------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+\n\
+    |                         |                                                  \
+    \                                                                            \
+    \     |                                                                      \
+    \                                  |\n+-------------------------+-----------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+\n\
+    | > Country Operating     | > The Country OC Representative is consulted and asked\
+    \ to investigate discrepancies. The                                          |\
+    \ > [Resolve escalating issue]{.ul}                                          \
+    \                            |\n| >                       | >                \
+    \                                                                            \
+    \                                     |                                      \
+    \                                                                  |\n| > Centre\
+    \ Representative | > Accountant notifies Country OC Representative about escalated\
+    \ issues.                                                           |        \
+    \                                                                            \
+    \                    |\n+-------------------------+-----------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+"
+  questions_and_answers:
+  - question: Who is responsible for conducting the simplified reconciliation using
+      Recon Macro?
+    answer: The Service Provider Intercompany Hub Accountant is responsible for conducting
+      the simplified reconciliation using Recon Macro.
+  - question: What are the responsibilities of the Service Provider Intercompany Hub
+      Accountant in Reconcile Intercompany Balances process?
+    answer: 'In Reconcile Intercompany Balances process, the Service Provider Intercompany
+      Hub Accountant is responsible for:
+
+
+      *   Generating Intercompany General Ledger
+
+      *   Posting non-judgmental accrual journals to ensure V105 match
+
+      *   Generating Intercompany Vendor Items
+
+      *   Generating Intercompany Customer Items (Manual Task)
+
+      *   Reconciling Intercompany Balances (Automated Task within Macro Tool)'
+  - question: What is the role of the Country Operating Centre Representative in Reconcile
+      Intercompany Balances process?
+    answer: In Reconcile Intercompany Balances process, the Country Operating Centre
+      Representative is consulted and asked to investigate discrepancies, and is notified
+      by the Accountant about escalated issues.
+- context: "# System Enablement \n\n> **SAP Transactions for ALL Platforms.**\n\n\
+    +-----------+--------------------------+-------------------------------------+---------------------+--------------------+-------------------+\n\
+    | > **No.** | > **Process step**       | > **Transaction code**              |\
+    \ > **Action in SAP** | > **Role**         | > **Access Type** |\n+===========+==========================+=====================================+=====================+====================+===================+\n\
+    | > 7.1     | > Reconcile Intercompany | > FBL1N, FBL5N,                     |\
+    \                     | > Service Provider | > Display /       |\n+-----------+--------------------------+-------------------------------------+---------------------+--------------------+-------------------+\n\
+    |           | > Balances -- Month End  | > FBL3N, FGIO, SMX,                 |\
+    \                     | > Intercompany     | > Change          |\n+-----------+--------------------------+-------------------------------------+---------------------+--------------------+-------------------+\n\
+    |           | > Process                | > SM37, FS00,                       |\
+    \                     | > Hub Accountant   |                   |\n|          \
+    \ |                          | >                                   |         \
+    \            |                    |                   |\n|           |       \
+    \                   | > FS10N, Tables - SKA1, SKB1, LFA1, |                  \
+    \   |                    |                   |\n|           |                \
+    \          | >                                   |                     |     \
+    \               |                   |\n|           |                         \
+    \ | > LFB1, KNA1, KNB1,                 |                     |              \
+    \      |                   |\n|           |                          | >     \
+    \                              |                     |                    |  \
+    \                 |\n|           |                          | > T880, T001   \
+    \                     |                     |                    |           \
+    \        |\n+-----------+--------------------------+-------------------------------------+---------------------+--------------------+-------------------+\n\
+    \n###  Global Enablement \n\n+------------------------+------------------------+-------------------------------------+--------------------+\n\
+    | > **System**           | > **Transaction code** | > **Role**               \
+    \           | > **Access Type**  |\n+========================+========================+=====================================+====================+\n\
+    | > Service Now Workflow |                        | > Service Provider Intercompany\
+    \ Hub | > Change / Display |\n|                        |                     \
+    \   | >                                   |                    |\n|          \
+    \              |                        | > Accountant                       \
+    \ |                    |\n|                        |                        |\
+    \ >                                   |                    |\n|              \
+    \          |                        | > Country Operating Centre          |  \
+    \                  |\n|                        |                        | >  \
+    \                                 |                    |\n|                  \
+    \      |                        | > Representative                    |      \
+    \              |\n+------------------------+------------------------+-------------------------------------+--------------------+\n\
+    | > Excel Macro tool     |                        | > Service Provider Intercompany\
+    \ Hub | > Change / Display |\n| >                      |                     \
+    \   | >                                   |                    |\n| > (Simplified\
+    \ Recons)  |                        | > Accountant                        |  \
+    \                  |\n|                        |                        | >  \
+    \                                 |                    |\n|                  \
+    \      |                        | > Country Operating Centre          |      \
+    \              |\n|                        |                        | >      \
+    \                             |                    |\n|                      \
+    \  |                        | > Representative                    |          \
+    \          |\n+------------------------+------------------------+-------------------------------------+--------------------+"
+  questions_and_answers:
+  - question: What transaction codes are required for reconciling intercompany balances
+      in SAP?
+    answer: The transaction codes required for reconciling intercompany balances in
+      SAP are FBL1N, FBL5N, FBL3N, FGIO, and SMX.
+  - question: In Reconcile Intercompany Balances process, what is the role of Service
+      Provider Intercompany Hub Accountant in SAP?
+    answer: In Reconcile Intercompany Balances process,  the Service Provider Intercompany
+      Hub Accountant has the role of reconciling intercompany balance and has display
+      and change access in SAP.
+  - question: In the context of Reconcile Intercompany Balances process, what is the
+      access type for the Country Operating Centre Representative in the Service Now
+      Workflow system?
+    answer: In the context of Reconcile Intercompany Balances process, the Country
+      Operating Centre Representative has change and display access in the Service
+      Now Workflow system.
+- context: "## - Reconcile Intercompany Balances -- Month End Process (Applicable\
+    \ to ALL Platforms) \n\n> In Simplified Reconciliation approach, post the period-end\
+    \ closing intercompany Concern Receivables and Concern Payables, balances are\
+    \ reconciled via simplified reconciliation approach using a newly built Excel\
+    \ Macro tool.\n>\n> IC Hub team ensures that the data is fetched correctly from\
+    \ respective ECC Systems and uploaded into the Macro tool. They also ensure the\
+    \ outputs are reviewed and posted, thereby reconciling intercompany balances.\n\
+    >\n> Below mentioned Excel Macros facilitates the Simplified Reconciliation Process:\n\
+    \na.  Service Now Workflow Reports -- To facilitate the reconciliation of sundry\
+    \ invoicing on WD-3\n\nb.  Recon Macro (Summary & Line Item Level) -- To facilitate\
+    \ the reconciliation of Product invoicing & General Ledger items on WD1.\n\n>\
+    \ **Control Overview**\n>\n> ![](v1.2 all docs\\new_markdown_docs\\DTP Reconcile\
+    \ Intercompany Balances - Month End Processes - V14 All Platforms\\media\\image3.png){width=\"\
+    0.5625in\" height=\"0.5659722222222222in\"}The monthly reconciling process for\
+    \ the intercompany items is executed during Month end reporting of the intercompany\
+    \ transactions and investigation of the outstanding items by the Service Provider\
+    \ Intercompany Hub Accountant. The Service Provider Intercompany Hub Accountant\
+    \ uses the functionalities available in the tools. The resolution of intercompany\
+    \ reconciliation issues require\n>\n> corrective steps in the respective ERP system.\
+    \ No approval of reconciliation is applicable, but service provider to share the\
+    \ output reports with operating center during closing The following tools are\
+    \ to be used during the process:\n\n-   Recon Macro tool enables cross-platform\
+    \ intercompany reconciliation (between different ERP platforms and systems). The\
+    \ data source for the tool is the regional ERP platform.\n\n-   Service Now Workflow\
+    \ tool reports enables booking accruals for all platform invoices routed via tool.\n\
+    \n+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+---------------------------------------+--------------------------------------------------+\n\
+    | > **Control No.** | **Control description**                                \
+    \                                                                            \
+    \                                                         | **Manual or automated\
+    \ control** | **Frequency**                         | > **Reason for the control**\
+    \                     |\n+===================+=============================================================================================================================================================================================+=================================+=======================================+==================================================+\n\
+    | RTR               | > **Intercompany (Reconciliations)**                   \
+    \                                                                            \
+    \                                                         | Semi             \
+    \               | > Reconciliations                     | > Ensure reconciliation\
+    \ of intercompany accounts |\n|                   | >                        \
+    \                                                                            \
+    \                                                                            \
+    \           |                                 |                              \
+    \         |                                                  |\n| C3.3       \
+    \       | > Intercompany reconciliations are performed. Differences identified,\
+    \ investigated and resolved. Remaining mismatches are adjusted in accordance with\
+    \ GCAD defined threshold and frequency. | Automated                       | --\
+    \ Event Driven Adjustments - Monthly |                                       \
+    \           |\n+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+---------------------------------------+--------------------------------------------------+\n\
+    \n> **Note** :- GCAD defined frequency to be referred in below link [https://example.com]{.ul}"
+  questions_and_answers:
+  - question: What is the objective of the Simplified Reconciliation approach in the
+      intercompany reconciliation process?
+    answer: The objective of the Simplified Reconciliation approach is to reconcile
+      intercompany balances via a newly built Excel Macro tool, specifically for post-period
+      end closing intercompany Concern Receivables and Concern Payables balances.
+  - question: Who is responsible for ensuring the data is fetched correctly from respective
+      ECC Systems and uploaded into the Macro tool?
+    answer: 'The IC Hub team is responsible for ensuring the data is fetched correctly
+      from respective ECC Systems and uploaded into the Macro tool.'
+  - question: What is the purpose of Control RTR C3.3 in the intercompany reconciliation
+      process?
+    answer: The purpose of Control RTR C3.3 is to ensure reconciliation of intercompany
+      accounts, specifically to perform intercompany reconciliations, identify and
+      investigate differences, and resolve remaining mismatches in accordance with
+      GCAD defined threshold and frequency.
+- context: "> **The below process description refers to the intercompany reconciliation\
+    \ done on a monthly basis.**\n>\n> ***[General assumptions to Reconcile Intercompany\
+    \ Balances process:]{.ul}***\n\na)  Process of issuing and posting of intercompany\
+    \ invoices for finished goods is aligned with best practices, i.e.:\n\n    - \
+    \  Parallel automated posting of intercompany invoices for finished goods in the\
+    \ books of the issuing and the receiving company is made by the Service Provider\
+    \ (Intercompany Team)\n\n> Please note that if the invoice is issued and posted\
+    \ in the same SAP instance, the posting is done automatically.\n\n-   Automated\
+    \ postings as described above are enabled for different platforms (different ERP\
+    \ system instances).\n\nb)  All deliveries between Client related parties should\
+    \ be done on terms and conditions (incoterms) transferring risks related to the\
+    \ ownership of goods to the buying entity at the moment of sending the goods from\
+    \ the selling entity.\n\n> a\\) and b) assumptions allow to:\n\n-   Recognize\
+    \ goods in transit in the buying entity at the moment of posting the intercompany\
+    \ invoice, which is recognized as a regular inventory after goods received by\
+    \ the buying entity\n\n-   No \"goods received no invoice\" appears in the books\
+    \ and no accruals for are required.\n\n-   Limit the number of un-reconciled intercompany\
+    \ balances to only these resulting from some technical issues which may arise.\n\
+    \nc)  There are deadlines for intercompany billing set up:\n\n    -   Cut-off\
+    \ date for finished goods billing is the last working day of the period. As a\
+    \ result (taking also into account that the on-going reconciliation of intercompany\
+    \ balances resulting from sundry invoices is in place) there should be no un-reconciled\
+    \ items (or only few, resulting only from technical issues) for intercompany balances\
+    \ resulting from sundry invoicing at the month.\n\n    -   Cut-off date for sundry\
+    \ invoicing is Work Day -- 5 (WD-5). This deadline now applies to all months including\
+    \ quarter end (see Intercompany Golden Rules).\n\nd)  Deadline for closing all\
+    \ sub-ledgers is set up at 10.00 a.m. on the first working day of the next period\n\
+    \ne)  There are SLAs set up for the Service Provider (Intercompany Team) related\
+    \ to the value/number of unreconciled intercompany balances to prevent delegation\
+    \ of outstanding items clearing to Client/to prevent posting high accruals."
+  questions_and_answers:
+  - question: What are the general assumptions for the Reconcile Intercompany Balances
+      process?
+    answer: 'The general assumptions or the Reconcile Intercompany Balances process
+      are:
+
+
+      *   Parallel automated posting of intercompany invoices for finished goods in
+      the books of the issuing and the receiving company is made by the Service Provider
+      (Intercompany Team).
+
+      *   All deliveries between Client related parties should be done on terms and
+      conditions (incoterms) transferring risks related to the ownership of goods
+      to the buying entity at the moment of sending the goods from the selling entity.'
+  - question: What are the deadlines for intercompany billing?
+    answer: 'The deadlines for intercompany billing are:
+
+
+      *   Cut-off date for finished goods billing is the last working day of the period.
+
+      *   Cut-off date for sundry invoicing is Work Day -- 5 (WD-5).'
+  - question: In Reconcile Intercompany Balanced pocess, what is the deadline for
+      closing all sub-ledgers?
+    answer: In Reconcile Intercompany Balanced pocess, the deadline for closing all
+      sub-ledgers is 10.00 a.m. on the first working day of the next period.
+- context: '> **This Portion of the document explains how to generate line level reconciliation
+    report:**
+
+
+    -   Country & Platform Line Level Macro - Provides the supporting for simplified
+    reconciliation at Line Level.
+
+
+    -   Summary Version Macro - Provides the supporting at summary level at TP''s
+    and in comparison, with V105 reported balances.
+
+
+    -   Summary Version of macro to be used for posting the adjustments - These summary
+    reports are circulated based on the Global Calendar timelines shared with OCs
+    or Countries by 3PSP accountant a week prior to closing.
+
+
+    > Line level information on WD-2 and WD-1 are shared with OC\''s for reference
+    and assurance purpose, Country''s/OC\''s to provide the GL/CC to be used for simplified/line
+    level recon & agree in advance with 3PSP accountant.
+
+
+    -   IC Hub accountant to post entries basis simplified recon and pre agreed ways
+    of GL/CC postings with OCs or Countries. Entries should resolve the mismatches
+    in V105 during closing as per GCAD defined guidelines and timelines.
+
+
+    -   For Non SAP entities manual reconciliation to be performed basis the statement
+    of accounts or V105 balances updated by counter party.
+
+
+    > **Simplified Recon -- Line Item Level Macro**
+
+    -   Replace_StringQutoes :- This button enables the formatting of SAP raw data
+    by replacing the special characters.
+
+
+    -   Recon Files Generate :- This button enables the formatting of data and updating
+    the BCS Code, Country, Platform and Classifying the document types into Sundry,
+    Prodcut & General Ledger.
+
+
+    -   Cash Report :- This button enables to highlight the line items which are paid
+    on AP side but cash application is not made on AR side due to cash in transit
+
+
+    > **a. Report Generation**
+
+
+    > Platform & Country wise report will be generated using "Platform -- Countries"
+    button, this button enables the line level reconciliation information for each
+    country in that particular platform
+
+
+    > For How to run the Macro for Simplified Line level refer to the Local DTP shared
+    in below link.
+
+
+    > Note : - Stock in Transit output for UAPL & UASCC is done through additional
+    macro tool. This requirement is local and country specific to strengthen the controls
+    in process & to ensure the Stock in Transit is identified and booked at respective
+    BU''s and confirmation is taken from respective OC''s for recording during closing.
+
+
+    > 3PSP to maintain the copy of macro. In case of macro failure, the copy can be
+    used for further processing.
+
+
+    > 34\. Master data maintenance
+
+    > Master data maintenance activity to be carried out by 3PSP based on the local
+    DTP shared on how to update the new Co code, GL accounts, Document types etc.,
+    and ensure the completeness before a day on month/quarter closing (Applicable
+    for both Line level reconciliation and Summary version).'
+  questions_and_answers:
+  - question: In Reconcile Intercompany process, what is the purpose of the Summary
+      Version Macro?
+    answer: In Reconcile Intercompany process, the purpose of the Summary Version
+      Macro is to provide support at summary level at TP's and in comparison with
+      V105 reported balances.
+  - question: In Reconcile Intercompany process, who is responsible for maintaining
+      the copy of the macro, which could be used in case of macro failure?
+    answer: In Reconcile Intercompany process,  the 3PSP is responsible for maintaining
+      the copy of the macro, which could be used in case of macro failure.
+  - question: In Reconcile Intercompany process, what is the purpose of the Simplified
+      Recon -- Line Item Level Macro?
+    answer: In Reconcile Intercompany process, the purpose of the Simplified Recon
+      -- Line Item Level Macro is to enable the formatting of SAP raw data, updating
+      the BCS Code, Country, Platform, and classifying document types into Sundry,
+      Product, and General Ledger.

@@ -1,0 +1,142 @@
+domain: 'BPOD Record to Analyze: WI_R2R_GA_Journal Entry Process- PeopleSoft- GLODCN_Global
+  Dealer Communication_2022_V1.0.docx'
+document_outline: Describes how IBM Delivery Centre will understand the objective
+  of DCN Journals Process
+seed_examples:
+- context: 'Frequency
+
+    Monthly
+
+    Deadline
+
+    WD-5
+
+    Source
+
+    Global dealer support file
+
+    System/Access
+
+    PeopleSoft
+
+    Journal Upload tool (JRNL1)
+
+    M drive'
+  questions_and_answers:
+  - question: What is the frequency of DCN journal in journal process?
+    answer: The frequency of DCN Journal in journal process is monthly
+  - question: What is the deadline (Workday) for DCN journal?
+    answer: The deadline is on WD-5 for DCN Journal
+  - question: What is the source used for DCN journal?
+    answer: The source is Global dealer support file At M drive for DCN journal
+- context: "Objective\nThe objective of this activity is to post journal entry for\
+    \ DCN charges incurred for the services taken by Client dealers. \nClient Dealers\
+    \ are charged an amount for services provided on their monthly statements. The\
+    \ amount charged is based on the amount of dealers.  \nThe Information Technology\
+    \ (IT) organization provides services to the entire Client Dealer organization.\
+    \  \nThis document will relate to the IT services provided to Client Dealers;\
+    \ specifically, the Dealer Communication Network (DCN)."
+  questions_and_answers:
+  - question: What is the objective of Journal entry for DCN Charges Journal Process?
+    answer: The objective is to post journal entry for DCN charges incurred for the
+      services taken by Client dealers.
+  - question: What is the nature of services rendered in DCN charges?
+    answer: The services are in the nature of IT to client dealers , specially to
+      Dealer Communication Network (DCN).
+  - question: How is the service charge for client dealers calculated?
+    answer: The amount charged is based on the amount of dealers and an amount for
+      services provided on their monthly statements.
+- context: "Process\n 1. In order to prepare the journal entry file, go to \"M: drive\"\
+    \ and navigate thru the path mentioned below: \n M:\\GA\\SPREADSHEET CONTROL\\\
+    Financial Statement Close\\John Doe2\\RJEGL0DCN\\FY 2022.\n 2. Open \"RJEGLODCN-\
+    \ Global_Dealer_ Support_Documents_FY22\" file.\n 3. The file consists of 3 tabs,\
+    \ namely JE_FY22, Steve Sakal Support and Swiatkowski \n 4. 'JE_FY22'\
+    \ tab contains the journal entry details such as Unit Code, Account Code, Operating\
+    \ Unit, SubAccount, Department Code, Affiliate and Amount etc. \nNote: IT department\
+    \ number 525042 is where most of the transactions take place. The DCN revenue\
+    \ is recorded in department 525057.\nThis entry represents the IT portion of charges\
+    \ to global dealers\n5. If there are any changes in the Account number(s) will\
+    \ be notified by Sr. Financial Consultant-IT (Steven Sakal W) through email and\
+    \ account number should be updated accordingly for the journal entry.  \n 6. Get\
+    \ confirmation from Export Accounting Manager (John Doe 1) whether there are any\
+    \ changes to the amounts which needs to be posted. \n 7. This is recurring journal.\
+    \ Send an email to Export Accounting Manager (John Doe 1) at the end of each year\
+    \ so that the changes can be incorporated in the following year.\n 8. Attach the\
+    \ email copy(s) in the respective tab(s) of the file.\n 9. Prepare the journal\
+    \ entry based on the details available in \"JE_FY22\" tab.\n 10. Refer the below\
+    \ screenshot for preview of the journal entry before posting in PeopleSoft.\n\
+    11. Import journal to PeopleSoft.\nRefer to the following desk procedure for\
+    \ the instructions to process the Journal entry and send   entry for approval:\n\
+    \ Client_R2R_GA_Peoplesoft Journal Entry posting_2022_V1.0.\nNote: this is recurring\
+    \ journal, it is setup once for entire period and send once for approval. Then\
+    \ repetitive journals for related monthly amount will be posted automatically. "
+  questions_and_answers:
+  - question: How many steps involved in the process of the DCN journal entry process?
+    answer: There are 11 steps involved in DCN process
+  - question: What are the steps involved in the process of the DCN journal entry process?
+    answer: "Steps\n 1. In order to prepare the journal entry file, go to \"M: drive\"\
+      \ and navigate thru the path mentioned below: \n M:\\GA\\SPREADSHEET CONTROL\\\
+      Financial Statement Close\\John Doe2\\RJEGL0DCN\\FY 2022.\n 2. Open \"RJEGLODCN-\
+      \ Global_Dealer_ Support_Documents_FY22\" file.\n 3. The file consists of 3\
+      \ tabs, namely JE_FY22, Steve Sakal Support and Swiatkowski \n 4. 'JE_FY22'\
+      \ tab contains the journal entry details such as Unit Code, Account Code, Operating\
+      \ Unit, SubAccount, Department Code, Affiliate and Amount etc. \nNote: IT department\
+      \ number 525042 is where most of the transactions take place. The DCN revenue\
+      \ is recorded in department 525057.\nThis entry represents the IT portion of\
+      \ charges to global dealers\n5. If there are any changes in the Account number(s)\
+      \ will be notified by Sr. Financial Consultant-IT (Steven Sakal W) through email\
+      \ and account number should be updated accordingly for the journal entry.  \n\
+      \ 6. Get confirmation from Export Accounting Manager (John Doe 1) whether there\
+      \ are any changes to the amounts which needs to be posted. \n 7. This is recurring\
+      \ journal. Send an email to Export Accounting Manager (John Doe 1) at the end\
+      \ of each year so that the changes can be incorporated in the following year.\n\
+      \ 8. Attach the email copy(s) in the respective tab(s) of the file.\n 9. Prepare\
+      \ the journal entry based on the details available in \"JE_FY22\" tab.\n 10.\
+      \ Refer the below screenshot for preview of the journal entry before posting\
+      \ in PeopleSoft.\n11. Import journal to PeopleSoft."
+  - question: What is the Control in the process of the DCN journal entry process?
+    answer: Any changes in the Account number(s) will be notified by Sr. Financial
+      Consultant-IT  through email
+- context: 'System/Access
+
+    PeopleSoft
+
+    Journal Upload tool (JRNL1)
+
+    M drive'
+  questions_and_answers:
+  - question: What is the system used to post for DCN journal?
+    answer: The system is Peoplesoft to post DCN journal
+  - question: What tools is used to upload journal in ERP system?
+    answer: The tool used is Journal Upload tool (JRNL1) to upload journal on Peoplesoft
+      ERP
+  - question: What drive is used to prepare the journal entry file?
+    answer: The  prepare the journal entry file M drive is used.
+- context: 'This entry represents the IT portion of charges to global dealers
+
+    If there are any changes in the Account number(s) will be notified by Sr. Financial
+    Consultant-IT (Steven Sakal W) through email and account number should be updated
+    accordingly for the journal entry.
+
+    Get confirmation from Export Accounting Manager (John Doe 1) whether there are
+    any changes to the amounts which needs to be posted.
+
+    This is recurring journal. Send an email to Export Accounting Manager (John Doe
+    1) at the end of each year so that the changes can be incorporated in the following
+    year.
+
+    Attach the email copy(s) in the respective tab(s) of the file.
+
+    Prepare the journal entry based on the details available in "JE_FY22" tab.
+
+    Refer the below screenshot for preview of the journal entry before posting in
+    PeopleSoft.
+
+    Import journal to PeopleSoft.'
+  questions_and_answers:
+  - question: Is DCN Journal a recurring journal?
+    answer: This is recurring journal.
+  - question: When is recurring DCN journal set up in system?
+    answer: It is setup once for entire period and send once for approval.
+  - question: Is this recurring DCN journal automatically posted?
+    answer: Then repetitive journals for related monthly amount will be posted automatically.

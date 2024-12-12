@@ -1,0 +1,271 @@
+domain: 'BPOD order to cash: Fleet Estimate to NFC'
+document_outline: The steps involved in estimating the number of units that can be
+  invoiced before month end and sending the details to NFC Team.
+seed_examples:
+- context: "# Document Information\n\n## About this Document\n\nThis document explains\
+    \ about the steps involved in estimating the number of units that can be invoiced\
+    \ before month end and sending the details to NFC Team.\n\n## Who should use this\
+    \ Document?\n\n> IBM Client Offshore team and Client Knoxville team\n\n## Revision/Approval\
+    \ History\n\n  -------------------- -------------------- ------------------------\
+    \ ---------------- --------------- ----------------\n  **Version number**   **Effective\
+    \ Date**   **Summary of Changes**   **Author**       **Reviewer**    **Approver**\n\
+    \  1.0                  5/2/2022             Preparation              Chandra\
+    \ S   Satish B   Ellen M\n  2.0                  6/21/2022  \
+    \          Process validation       Perumal T        Vivek CV        Ellen M\n\
+    \  -------------------- -------------------- ------------------------ ----------------\
+    \ --------------- ----------------"
+  questions_and_answers:
+  - question: Who is the intended user of Fleet Estimate to NFC document?
+    answer: ' Fleet Estimate to NFC document is intended for use by the IBM Client
+      Offshore team and Client Knoxville team.'
+  - question: What is the purpose of Fleet Estimate to NFC document?
+    answer: The purpose of  Fleet Estimate to NFC document is to explain the steps
+      involved in estimating the number of units that can be invoiced before month
+      end and sending the details to NFC Team.
+  - question: What is the current version of this document?
+    answer: The current version of this document is 2.0, which was approved on June
+      21, 2022.
+- context: '# Overview
+
+
+    ## Objective(s)
+
+
+    > To identify the status of delivered and delivering units during the month end
+    to estimate the count and amount of trucks that can be invoices. The information
+    needs to send to NFC Team for them to move funds upon estimation.
+
+
+    ## SIPOC
+
+
+    +---------------------------+------------------------+-------------------------------------------------------------------------------------+-----------------------------+------------------------------+
+
+    | **SUPPLIER**              | **INPUT**              | **PROCESS**                                                                         |
+    **OUTPUT**                  | **CUSTOMER**                 |
+
+    +===========================+========================+=====================================================================================+=============================+==============================+
+
+    | Fleet Invoicing Assistant | Fleet Inventory Report | \- From Fleet inventory
+    report pick the VIN numbers                                 | Estimation file
+    to NFC Team | National Finance Corporation |
+
+    |                           |                        |                                                                                     |                             |                              |
+
+    |                           |                        | \- Check in Truck Movers
+    website for the status of units if delivered or delivering |                             |                              |
+
+    |                           |                        |                                                                                     |                             |                              |
+
+    |                           |                        | \- Identify the count of
+    delivered and delivering units                             |                             |                              |
+
+    |                           |                        |                                                                                     |                             |                              |
+
+    |                           |                        | \- Share the count and
+    total amount of trucks                                       |                             |                              |
+
+    |                           |                        |                                                                                     |                             |                              |
+
+    |                           |                        | \- Estimate the count and
+    amount on customer wise                                   |                             |                              |
+
+    |                           |                        |                                                                                     |                             |                              |
+
+    |                           |                        | \- Share the estimation
+    with NFC Team                                               |                             |                              |
+
+    +---------------------------+------------------------+-------------------------------------------------------------------------------------+-----------------------------+------------------------------+'
+  questions_and_answers:
+  - question: What is the objective of Fleet estimate to NFC process?
+    answer: The objective of Fleet estimate to NFC process is to identify the status
+      of delivered and delivering units during the month end to estimate the count
+      and amount of trucks that can be invoiced.
+  - question: What is the input for Fleet estimate to NFC process?
+    answer: The input for Fleet estimate to NFC process is the Fleet Inventory Report.
+  - question: What is the output of Fleet estimate to NFC process?
+    answer: The output of Fleet estimate to NFC process is an estimation file sent
+      to the NFC Team.
+- context: '# Process Detail
+
+
+    ## Overview
+
+
+    > An email will be received from NFC team on last workday of the month for requesting
+    the estimation on the number of units that can be invoiced. Fleet Invoicing Assistant
+    has to identify the status of trucks in Truck Movers website. Prepare an excel
+    file with the details on each customer and share with the team for consolidation.
+    On the consolidated file, an estimation will be calculated to share with the NFC
+    Team. Based on this estimation NFC team will be moving funds with inter company
+    accounts.'
+  questions_and_answers:
+  - question: What is the purpose of the email received from the NFC team on the last
+      workday of the month?
+    answer: The purpose of the email is to request an estimation on the number of
+      units that can be invoiced.
+  - question: What is the role of the Fleet Invoicing Assistant in the estimation
+      process?
+    answer: The Fleet Invoicing Assistant is responsible for identifying the status
+      of trucks in the Truck Movers website, preparing an excel file with customer
+      details, and sharing it with the team for consolidation.
+  - question: What is the next step after the estimation is calculated and shared
+      with the NFC Team?
+    answer: Based on the estimation, the NFC team will move funds with intercompany
+      accounts.
+- context: "# Roles & Responsibilities\n\n## Description\n\n  **Role**           \
+    \         **Responsibility**\n  --------------------------- ---------------------------------------------------------------------------\n\
+    \  NFC Team                    Move funds based on the estimation file\n  Fleet\
+    \ Invoicing Assistant   Provide the estimated count of units and amount of trucks\
+    \ can be invoiced\n\n## Segregation of Duties (SOD) Matrix\n\n> ***\\<SOD Matrix\
+    \ pending IBM GPS internal review and approval\\>***"
+  questions_and_answers:
+  - question: What is the responsibility of the NFC Team in Fleet estimate to NFC
+      process?
+    answer: In Fleet estimate to NFC process, the NFC Team is responsible for moving
+      funds based on the estimation file.
+  - question: In Fleet estimate to NFC process, who is responsible for providing the
+      estimated count of units and amount of trucks that can be invoiced?
+    answer: In Fleet estimate to NFC process, the Fleet Invoicing Assistant is responsible
+      for providing the estimated count of units and amount of trucks that can be
+      invoiced.
+  - question: Is the Segregation of Duties (SOD) Matrix available for Fleet estimate
+      to NFC process?
+    answer: The Segregation of Duties (SOD) Matrix is not available for Fleet estimate
+      to NFC process, as it is pending IBM GPS internal review and approval.
+- context: '## Process Description
+
+
+    1.  NFC Team will send an email for estimated number of units and amount to be
+    invoiced during month end (even if this email is not received the estimate is
+    still due to NFC team by last workday)
+
+
+    2.  Forward the email to fleet invoicing assistants requesting for month end estimates
+
+
+    3.  Once the email is received, invoicing assistant needs to open the fleet inventory
+    report received for the day along with the fleet backlog file from Teams. From
+    the fleet backlog file, select only those customer with term TM Delivery and PENSKE.
+
+
+    4.  For those customers copy the VIN number (column A) from the fleet inventory
+    report based on location
+
+
+    5.  Open truck movers website and click on Units and select Track & Trace
+
+
+    6.  Paste the copied VIN numbers and click on Search
+
+
+    7.  Details will be pulled, scroll down to bottom of the screen and click on Export
+    option.
+
+
+    8.  Click on "Click here to download the file" option to export the file in excel
+    format.
+
+    >
+
+    > The export file looks like below.
+
+    >
+
+
+    9.  Based on the status report pulled from the Truck Movers website, check in
+    column N to identify if the truck is delivered or not. Take the number of units
+    delivered and the truck amount on each unit for each customer to update into the
+    below excel.
+
+
+    10. Each invoicing assistant will be sharing the details via email to one assistant
+    for consolidation.
+
+
+    11. After receiving the details from all the invoicing assistants, create a new
+    file for the current month in the path **[M:\\GeneralSales\\Ellen Sales invoicing
+    Items\\Month End Estimates.]{.ul}** Open previous month file and save as with
+    current month name.
+
+
+    > In this scenario, the file is prepared for the month of April, so file name
+    will be "April 2022 ME Estimate"
+
+    >
+
+
+    12. As per the invoicing assisants input, consolidate the data and based on the
+    available information on each customers exceptions from the actual count, estimate
+    the count of units that could be invoiced before month close. There is no valid
+    reason on estimating the count, only point to keep is the count provided should
+    be acievable by end of the day.
+
+
+    13. Once estimation is completed, reply to the email received from NFC Team with
+    the estimation file.![](v1.2 all docs\new_markdown_docs\Fleet_Estimate to NFC\media\image18.png)
+
+
+    > The activity concludes here.'
+  questions_and_answers:
+  - question: In fleet estimate to NFC process, what is the purpose of the fleet inventory
+      report and fleet backlog file in the estimation process?
+    answer: In fleet estimate to NFC process, The fleet inventory report and fleet
+      backlog file are used to identify the customers with term TM Delivery and PENSKE,
+      and to select the VIN numbers for tracking and tracing.
+  - question: How does the invoicing assistant estimate the count of units that could
+      be invoiced before month close in fleet estimate to NFC process?
+    answer: In fleet estimate to NFC process, the invoicing assistant estimates the
+      count of units that could be invoiced before month close based on the available
+      information on each customer's exceptions from the actual count, and ensures
+      that the estimated count is achievable by the end of the day.
+  - question: What are the steps for fleet estimate to NFC process?
+    answer: 'Following are the steps for fleet estimate to NFC process.
+
+
+      1.  NFC Team will send an email for estimated number of units and amount to
+      be invoiced during month end (even if this email is not received the estimate
+      is still due to NFC team by last workday).
+
+      2.  Forward the email to fleet invoicing assistants requesting for month end
+      estimates.
+
+      3.  Once the email is received, invoicing assistant needs to open the fleet
+      inventory report received for the day along with the fleet backlog file from
+      Teams. From the fleet backlog file, select only those customer with term TM
+      Delivery and PENSKE.
+
+      4.  For those customers copy the VIN number (column A) from the fleet inventory
+      report based on location.
+
+      5.  Open truck movers website and click on Units and select Track & Trace.
+
+      6.  Paste the copied VIN numbers and click on Search
+
+      7.  Details will be pulled, scroll down to bottom of the screen and click on
+      Export option.
+
+      8.  Click on "Click here to download the file" option to export the file in
+      excel format.
+
+      9.  Based on the status report pulled from the Truck Movers website, check in
+      column N to identify if the truck is delivered or not. Take the number of units
+      delivered and the truck amount on each unit for each customer to update into
+      the below excel.
+
+      10. Each invoicing assistant will be sharing the details via email to one assistant
+      for consolidation.
+
+      11. After receiving the details from all the invoicing assistants, create a
+      new file for the current month in the path ''M:\\GeneralSales\\Ellen Sales invoicing
+      Items\\Month End Estimates''. Open previous month file and save as with current
+      month name.
+
+      12. As per the invoicing assisants input, consolidate the data and based on
+      the available information on each customers exceptions from the actual count,
+      estimate the count of units that could be invoiced before month close. There
+      is no valid reason on estimating the count, only point to keep is the count
+      provided should be acievable by end of the day.
+
+      13. Once estimation is completed, reply to the email received from NFC Team
+      with the estimation file.'

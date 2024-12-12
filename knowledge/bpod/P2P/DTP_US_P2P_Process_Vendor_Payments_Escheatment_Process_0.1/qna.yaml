@@ -1,0 +1,306 @@
+domain: 'BPOD procure to pay: DTP_US_P2P_Process Vendor Payments_Escheatment Process_0.1'
+document_outline: Describes the steps to research outstanding checks potentially due
+  for escheatment to the Accounting & Finance team
+seed_examples:
+- context: "# Roles & Responsibilities\n\n## Description\n\n  ---------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\
+    \  **Role**         **Responsibility**\n  IBM AP Analyst   To perform the research\
+    \ leading to the escheatment process and send letters to the vendor informing\
+    \ them about the outstanding check. Also includes updating the outstanding checks\
+    \ spreadsheet sent by the Accounting and Finance team with the details of 'Stop\
+    \ & Void' and 'Stop & Reissue' checks, Vendor address, Tax ID and related information.\n\
+    \  ---------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\
+    \n## SOD Matrix\n\nFor the SOD assessment on conflicting tasks and accesses, please\
+    \ refer to the related Aggregate SOD (A-SOD).\n\n# Process Detail\n\n## Step Description\n\
+    \n### Escheatment process\n\n+------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | Step | Description                                                         \
+    \                                                                            \
+    \                                                                            \
+    \                                                     |\n+======+==================================================================================================================================================================================================================================================================================+\n\
+    |      | The escheatment process is performed by the Accounting and Finance Team\
+    \ and we perform the the research leading to the process and we provide them with\
+    \ a list of the check that need to be escheated.                             \
+    \                                              |\n|      |                   \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                           |\n|      | Who: IBM AP Analyst                  \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \        |\n|      |                                                         \
+    \                                                                            \
+    \                                                                            \
+    \                                                                 |\n|      |\
+    \ When: This activity is performed to twice a year, between June to August for\
+    \ escheatments in September & November through February for Escheatments in March\
+    \ when a list of oustanding checks that are potentially due for escheatment is\
+    \ sent by the Accounting & Finance Team. |\n|      |                         \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                     |\n|      | How: Research on outstanding checks is completed\
+    \ and an updatex file sent to the Accounting & Finance Team. The vendors are also\
+    \ sent an outstanding check -- follow up letter.                             \
+    \                                                                     |\n+------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n"
+  questions_and_answers:
+  - question: What is the role of the IBM AP Analyst in the escheatment process?
+    answer: The responsibilities of IBM AP Analyst is to perform the research leading
+      to the escheatment process and send letters to the vendor informing them about
+      the outstanding check. Also the role includes updating the outstanding checks
+      spreadsheet sent by the Accounting and Finance team with the details of 'Stop
+      & Void' and 'Stop & Reissue' checks, Vendor address, Tax ID and related information.
+  - question: How often is the escheatment process performed?
+    answer: This Escheatment process is performed to twice a year, between June to
+      August for escheatments in September & November through February for Escheatments
+      in March when a list of oustanding checks that are potentially due for escheatment
+      is sent by the Accounting & Finance Team.
+  - question: Who receives the list of checks that need to be escheated?
+    answer: 'The Accounting and Finance Team receives the list of checks that need
+      to be escheated.
+
+      '
+- context: 'Step 10: Click on the invoice document. Click on the ''Go to'' menu item
+    and then ''POP Invoice Images'' to see the documents stored for that invoice.
+
+
+    Step 11: In this case, there are no documents.
+
+
+    Generally, payments for garnishments have no documents. Garnishments can be confirmed
+    by looking into the Header Data in the document screen and have a reference in
+    the WKXXXX-XXXX format.
+
+
+    NOTE: All other types of payment have accompanying documents. Use the LoadMaster
+    to view these accompanying documents (refer Step 5.2.2) .
+
+
+    Step 12: Pull up the vendor info from the Display Document screen below.
+
+
+    Step 13: Use the vendor number, name and company code to pull up the Vendor Line
+    Item Display screen (SAP transaction code FBL1N ) to find if there is a duplicate
+    payment or if the vendor has been paid by any other method.
+
+
+    Step 14: If no other payment has been made, a letter for outstanding check must
+    be sent to the vendor. A copy of the format is in the I:\\POP\\Abandoned Property
+    directory
+
+
+    Step 15: In order to complete the details required by the letter and also the
+    spreadsheet, use the SAP Transaction code XK03 to Display Vendor screen. Enter
+    the vendor number and Company Code. Also check the Address and Control option
+    box in the General date section and press the Enter key.
+
+
+    Step 16: Vendor address and other information is now displayed. Use this information
+    to complete the letter for the outstanding check and also the spreadsheet that
+    needs to be sent to the Accounting & Finance Team.
+
+    '
+  questions_and_answers:
+  - question: What is the usual scenario for payments for garnishments?
+    answer: Generally, payments for garnishments do not have accompanying documents
+      and can be confirmed by looking into the Header Data in the document screen
+      and having a reference in the WKXXXX-XXXX format.
+  - question: What is the SAP transaction code used to Display Vendor screen?
+    answer: ' The SAP transaction code used to Display Vendor screen is XK03.'
+  - question: How to find if there is a duplicate payment or if the vendor has been
+      paid by any other method?
+    answer: Use the vendor number, name and company code to pull up the Vendor Line
+      Item Display screen (SAP transaction code FBL1N ) to find if there is a duplicate
+      payment or if the vendor has been paid by any other method.
+- context: 'Step 17: Click on the ''Next Screen'' icon on the Display Vendor screen
+    to find the Tax ID.
+
+
+    Please note that the Tax ID in this example is 3000 which is the default for vendors
+    without a Tax ID.
+
+
+    Step 18: Enter the Tax ID into the spreadsheet. Enter N/A for vendors that do
+    not have a Tax ID.
+
+
+    Step 19: Also fill the Company Code and Cost/Profit Center details from the above
+    screens.
+
+
+    Step 20: Fill in the Check details in this letter from the screenshot in the Word
+    document
+
+
+    (refer Step 6).
+
+
+    Step 21: Once the vendors reply back to the letter, the rest of the spreadsheet
+    may be filled. ''Submitted to POP'' (column AA) is filled with the date when the
+    vendor replies.
+
+
+    The ''Unclaimed cash'' (column AE) is set to ''Yes'' and we do not reissue the
+    check if it is going to go to the State and ''No'' if the check is going to be
+    voided.
+
+
+    For vendors who do not reply to the letter, the ''Check Voided'' (column AF) is
+    filled with the date the check was voided.
+
+
+    Once the ''Unclaimed Cash'' column is filled for all the lines, the list must
+    be sent back to the Accounting & Finance Team.
+
+
+    NOTE: We do not reissue checks for Duplicate invoices, Utility invoice payments
+    (always paid on time by other methods) and Petty cash payments. These payments
+    are just voided, and reclassed to the original G/L Account & Cost center Code.
+
+
+    The POP team researches and processes only cash refunds for the AR Team. You can
+    distinguish the AR refunds by looking at the Vendor number or Customer number
+    in the document. AR refunds usually have a 7 digit customer number that begins
+    with a ''3''.
+
+
+    AR refunds are usually handed over to the AR Team to reasearch. After the research
+    is completed, the AR Team will communicate to the POP Team if the checks need
+    to be voided, reissued or escheated to the State.'
+  questions_and_answers:
+  - question: What should be done if a vendor does not have a Tax ID?
+    answer: If a vendor does not have a Tax ID, N/A should be entered into the spreadsheet.
+  - question: What details should be filled in spreadsheet once the vendors reply
+      back to the letter?
+    answer: 'Once the vendors reply back to the letter, the rest of the spreadsheet
+      may be filled as following:
+
+      1. ''Submitted to POP'' (column AA) is filled with the date when the vendor
+      replies.
+
+      2. The ''Unclaimed cash'' (column AE) is set to ''Yes'' and we do not reissue
+      the check if it is going to go to the State and ''No'' if the check is going
+      to be voided.
+
+      3. For vendors who do not reply to the letter, the ''Check Voided'' (column
+      AF) is filled with the date the check was voided.
+
+
+      Once the ''Unclaimed Cash'' column is filled for all the lines, the list must
+      be sent back to the Accounting & Finance Team.'
+  - question: What is the policy regarding reissuing checks for duplicate invoices,
+      utility invoice payments, and petty cash payments?
+    answer: Checks for duplicate invoices, utility invoice payments, and petty cash
+      payments are not reissued. Instead, they are voided and reclassed to the original
+      G/L Account & Cost center Code.
+- context: 'Step 1: Open the file sent by the Accounting & Finance Team.
+
+
+    Step 2: Hide columns A, B, I, J, K, L, M, N, O, V, W, X and Y, as these are not
+    relevant to our research, to obtain the format as below:
+
+
+    Step 3: Login to SAP
+
+
+    Step 4 : Use the Transaction code FCH1 in SAP to bring up the Display Check Information
+    screen.
+
+
+    Step 5: In the Display Check Information screen, key in the Company Code as 7000,
+    House Bank as ''First'' and the Account ID as ''Check''. This information is the
+    same for all checks. Now input the check number from the list provided by the
+    Accounting and Finance Dept. The Bank Key and Bank Account fields may be left
+    blank.
+
+
+    Step 6: Click on the Check Issuer button to confirm that it is actually a paper
+    check. ''C'' denotes check as a payment method
+
+
+    Step 7: Take a screenshot of the above SAP screen and paste it into a word document.
+    Click on the ''Accompanying docs'' button to check all the invoices that were
+    paid against the vendor.
+
+
+    Step 8: Take another screenshot of the Check Line items screen and paste it into
+    the same word document.
+
+
+    Step 9: You should now have a word document with all the necessary information
+    to update the spreadsheet.
+
+    '
+  questions_and_answers:
+  - question: What is the transaction code to be used in SAP to bring up the Display
+      Check Information screen?
+    answer: Use the Transaction code FCH1 in SAP to bring up the Display Check Information
+      screen.
+  - question: Which parameters must be filled in FCH1 transaction in the Display Check
+      Information screen in SAP
+    answer: In the Display Check Information screen, key in the Company Code as 7000,
+      House Bank as 'First' and the Account ID as 'Check'. This information is the
+      same for all checks. Now input the check number from the list provided by the
+      Accounting and Finance Dept. The Bank Key and Bank Account fields may be left
+      blank.
+  - question: What should be done to confirm that the payment method is a paper check
+      in SAP?
+    answer: 'Click on the Check Issuer button to confirm that it is actually a paper
+      check. ''C'' denotes check as a payment method.
+
+      '
+- context: 'The accompanying documents for all other invoices is stored in the LoadMaster
+    and must be looked up using their GR Number and year of posting.
+
+
+    Step 1: Click on the document to go into the document view.
+
+
+    Step 2: Click on Environment Menu. Select Document Environment and then Original
+    Document from the sub-menu
+
+
+    Step 3: Click on the Purchase Order number to go into the Purchase Order details.
+
+
+    Step 4: On the Purchase Order screen, click on the ''Purchase Order History''
+    button.
+
+
+    Step 5: You''ll find the GR Number here
+
+
+    Step 6: Goto LoadMaster and click on ERS Invoices under the File menu.
+
+
+    Step 7: Query the document by putting the GR Number followed by the Year of Posting
+    (without spaces) in the Document Number field. The LoadMaster will then display
+    the document.'
+  questions_and_answers:
+  - question: Where are the accompanying documents for all invoices stored?
+    answer: The accompanying documents for all invoices are stored in the LoadMaster.
+  - question: What information is required to query a document in the LoadMaster?
+    answer: The GR Number followed by the Year of Posting (without spaces) should
+      be put in the Document Number field to query a document in the LoadMaster.
+  - question: 'How to find the ERS documents
+
+      '
+    answer: ' to find the ERS documents, follow these steps:
+
+
+      Step 1: Click on the document to go into the document view.
+
+      Step 2: Click on Environment Menu. Select Document Environment and then Original
+      Document from the sub-menu
+
+      Step 3: Click on the Purchase Order number to go into the Purchase Order details.
+
+      Step 4: On the Purchase Order screen, click on the ''Purchase Order History''
+      button.
+
+      Step 5: You''ll find the GR Number here
+
+      Step 6: Goto LoadMaster and click on ERS Invoices under the File menu.
+
+      Step 7: Query the document by putting the GR Number followed by the Year of
+      Posting (without spaces) in the Document Number field. The LoadMaster will then
+      display the document.'

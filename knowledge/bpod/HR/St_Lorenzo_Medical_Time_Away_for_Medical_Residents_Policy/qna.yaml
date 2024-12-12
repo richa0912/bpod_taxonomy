@@ -1,0 +1,167 @@
+domain: 'BPOD Human Resource: St Lorenzo Medical_Time Away for Medical Residents Policy'
+document_outline: Describes the facility policy and expectations for medical residents
+  who accrue time away for planned and unplanned absences.
+seed_examples:
+- context: "1.\tTime Away. Eligible medical residents with a full-time equivalent\
+    \ (FTE) of 0.5 or greater are eligible for time away. 200 time away hours will\
+    \ be front-loaded each year on July 1. The time granted will be prorated based\
+    \ on FTE status (if less than 1.0 FTE) and date of eligibility. Up to 40 hours\
+    \ of time away can be carried over to the next year. The rollover of 40 hours\
+    \ is based on FTE (e.g., a .5 FTE will have up to 20 hours rolled over from one\
+    \ year to the next; if the provider only has 15 hours, all 15 hours will roll\
+    \ over).\n2.\tRecording Time Off. Time away may be taken in hourly increments.\
+    \ Exempt medical residents should only record time away when taken in full day\
+    \ increments."
+  questions_and_answers:
+  - question: Which medical residents are eligible for time away?
+    answer: Eligible medical residents with a full-time equivalent (FTE) of 0.5 or
+      greater are eligible for time away. 200 time away hours will be front-loaded
+      each year on July 1.
+  - question: How many hours of time away can be carried over to the next year for
+      medical residents ?
+    answer: Up to 40 hours of time away can be carried over to the next year for medical
+      residents. The rollover of 40 hours is based on FTE (e.g., a .5 FTE will have
+      up to 20 hours rolled over from one year to the next; if the provider only has
+      15 hours, all 15 hours will roll over).
+  - question: How is the time away recorded for medical residents?
+    answer: Time away may be taken in hourly increments. Exempt medical residents
+      should only record time away when taken in full day increments.
+- context: "3.\tTime Away Scheduling and Usage\nA.\tMedical residents are encouraged\
+    \ to use time away for planned and unplanned time off. Time away requests should\
+    \ be made as much in advance as possible and approved in accordance with departmental\
+    \ procedures. Requests for time away may be approved or denied based on department\
+    \ needs and work requirements. If the reason for the time away request falls under\
+    \ a federal, state and municipal sick leave law, notice/approval requirements\
+    \ may vary. Medical residents are encouraged to appropriately plan the use of\
+    \ their time away to ensure sufficient paid time is available for absences due\
+    \ to incidental illness and observed holidays. \nB.\tWhen two or more medical\
+    \ residents request time away at the same time for the same period, and both requests\
+    \ cannot be granted, the requests will be subject to their core leader's determination\
+    \ unless the reason for the time away request falls under a federal, state or\
+    \ municipal sick leave law which may require that the provider be allowed time\
+    \ away regardless of staffing needs.\nC.\tOccasionally, due to business necessity,\
+    \ medical residents may be asked to postpone their scheduled time away days. \n\
+    D.\tTo the extent permitted by applicable law, medical residents are required\
+    \ to use time away hours before requesting any unpaid time off (except in the\
+    \ case of the short-term disability waiting period). \nE.\tMedical residents may\
+    \ only request time away to replace regularly scheduled hours, not to exceed their\
+    \ normally scheduled work hours.\nF.\tTime away is paid through the normal payroll\
+    \ cycle for actual hours taken in that pay period. Advance time away payments\
+    \ are not allowed. Pay continues when the medical resident takes time off until\
+    \ the time away bank is exhausted. Work Relative Value Unit (RVU) credit is not\
+    \ given for time away days."
+  questions_and_answers:
+  - question: In what case notice/approval requirements for medical residents may
+      vary to request for time away?
+    answer: Requests for time away for medical residents may be approved or denied
+      based on department needs and work requirements. If the reason for the time
+      away request falls under a federal, state and municipal sick leave law, notice/approval
+      requirements may vary.
+  - question: What happens when two or more medical residents request time away at
+      the same time for the same period?
+    answer: When two or more medical residents request time away at the same time
+      for the same period, and both requests cannot be granted, the requests will
+      be subject to their core leader's determination unless the reason for the time
+      away request falls under a federal, state or municipal sick leave law which
+      may require that the provider be allowed time away regardless of staffing needs.
+  - question: How is the time away paid to medical residents?
+    answer: Time away is paid through the normal payroll cycle for actual hours taken
+      in that pay period. Advance time away payments are not allowed. Pay continues
+      when the medical resident takes time off until the time away bank is exhausted.
+      Work Relative Value Unit (RVU) credit is not given for time away days.
+- context: "4.\tSeparation. Time away is not a vested benefit and, as a result, has\
+    \ no cash value. Therefore, unused time away balances will not be cashed out upon\
+    \ separation of employment. \n5.\tTime Away Balances. Time away balances will\
+    \ appear on pay statements. It is the responsibility of each medical resident\
+    \ to identify any potential discrepancy in the amount that appears on the pay\
+    \ statement and bring this to the attention of human resources as soon as possible.\n\
+    6.\tShort-Term Disability and Workers' Compensation. Time away can be used to\
+    \ cover the waiting periods for both short-term disability and workers' compensation\
+    \ leaves. Time away can also be used to supplement short-term disability or workers'\
+    \ compensation benefits to 100% of base pay for the life of the claim or until\
+    \ time away is exhausted."
+  questions_and_answers:
+  - question: What happens to the time away balances upon separation of employment?
+    answer: Time away is not a vested benefit and, as a result, has no cash value.
+      Therefore, unused time away balances will not be cashed out upon separation
+      of employment.
+  - question: Where does Time Away Balances appear?
+    answer: Time away balances will appear on pay statements. It is the responsibility
+      of each medical resident to identify any potential discrepancy in the amount
+      that appears on the pay statement and bring this to the attention of human resources
+      as soon as possible.
+  - question: Can Time away be used to cover the waiting periods for both short-term
+      disability and workers' compensation leaves?
+    answer: Time away can be used to cover the waiting periods for both short-term
+      disability and workers' compensation leaves. Time away can also be used to supplement
+      short-term disability or workers' compensation benefits to 100% of base pay
+      for the life of the claim or until time away is exhausted.
+- context: "7.\tReinstatement/Rehire. Medical residents rehired or reinstated will\
+    \ have the time away days frontloaded into their time away bank, prorated based\
+    \ on FTE and date of reinstatement/rehire. \n8.\tHolidays. If available, time\
+    \ away is to be used for holiday observances. \nA.\tHolidays on a Non-Scheduled\
+    \ Work Day. Time away is not applied when working on a designated holiday. For\
+    \ example, a medical resident regularly scheduled to work Tuesday through Friday\
+    \ would not be required to use time away if the holiday is observed on a Monday.\n\
+    B.\tHolidays on Scheduled Work Days: A provider scheduled to work the designated\
+    \ holiday but requesting the day off will be required to use time away. If a caregiver\
+    \ chooses to work a holiday, with prior approval, no time away time will be used\
+    \ and the day will be recorded as a regular work day."
+  questions_and_answers:
+  - question: What is the tiome away policy for Reinstatement/Rehire medical residents?
+    answer: Medical residents rehired or reinstated will have the time away days frontloaded
+      into their time away bank, prorated based on FTE and date of reinstatement/rehire.
+  - question: What is the time away policy is for Holidays on a Non-Scheduled Work
+      Day for medical residents?
+    answer: Time away for medical residents is not applied when working on a designated
+      holiday. For example, a medical resident regularly scheduled to work Tuesday
+      through Friday would not be required to use time away if the holiday is observed
+      on a Monday
+  - question: What is the time away policy is for Holidays on a Scheduled Work Day
+      for medical residents?
+    answer: A provider scheduled to work the designated holiday but requesting the
+      day off will be required to use time away for medical residents. If a caregiver
+      chooses to work a holiday, with prior approval, no time away time will be used
+      and the day will be recorded as a regular work day.
+- context: 'Department: Human Resources
+
+    Approved by: Chief Human Resources Officer
+
+    Date Last Reviewed: 6/19/2022
+
+    Date Last Revised: 6/19/2022
+
+    Date Adopted: 6/19/2022
+
+    Policy Name: Time Away for Medical Residents
+
+    Scope: All time away-eligible medical residents of the facility
+
+    Purpose: To establish the facility policy and expectations for medical residents
+    who accrue time away for planned and unplanned absences.
+
+    Policy:
+
+    In keeping with our mission and values, the facility provides eligible medical
+    residents time away subject to the limits and conditions described below. Time
+    away allows medical residents to maintain appropriate worklife balance by offering
+    time off for vacation, holidays, personal days and/or sick time or any other reason
+    required by law. This policy does not replace the need for the medical resident
+    to communicate the need for time off. This policy does not preclude or preempt
+    any federal, state or municipal sick leave law requirements. Caregivers should
+    refer to those specific policies/guidelines for additional information.'
+  questions_and_answers:
+  - question: What is the scope of Time Away policy for Medical Residents?
+    answer: Time away policy is applicable for all time away-eligible medical residents
+      of the facility.
+  - question: Explain briefly the Time Away policy for Medical Residents.
+    answer: In keeping with the mission and values, the facility provides eligible
+      medical residents time away subject to the limits and conditions. Time away
+      allows medical residents to maintain appropriate worklife balance by offering
+      time off for vacation, holidays, personal days and/or sick time or any other
+      reason required by law. This policy does not replace the need for the medical
+      resident to communicate the need for time off. This policy does not preclude
+      or preempt any federal, state or municipal sick leave law requirements. Caregivers
+      should refer to those specific policies/guidelines for additional information.
+  - question: When was the Time Away policy for Medical Residents adopted?
+    answer: The Time Away for Medical Residents policy was adopted on 6/19/2022.

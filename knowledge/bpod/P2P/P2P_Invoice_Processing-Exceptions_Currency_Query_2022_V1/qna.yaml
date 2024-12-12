@@ -1,0 +1,323 @@
+domain: 'BPOD procure to pay: P2P_Invoice Processing - Exceptions_Currency Query_2022_V1'
+document_outline: Describes how IBM Delivery Centre will perform the Debit reversal
+  process.
+seed_examples:
+- context: "## Objective(s)\n\nObjective: Debit reversals are created to credit suppliers\
+    \ for debits issued against invoices for pricing or quantity which it has been\
+    \ determined should not have been issued.\n\nThis activity should be performed\
+    \ on Daily basis. So that all Invoices are corrected and gets paid in next Pay\
+    \ Cycle in Peoplesoft.\n\n### Frequency: \n\nWeekly and WD1\n\n### Source: \n\n\
+    Peoplesoft Query Viewer\n\n### System Accesses:\n\nPeoplesoft and Oracle EBZ\n\
+    \n## Inputs & Outputs\n\n+------------------+--------------+\n| Input        \
+    \    | From         |\n+------------------+--------------+\n| > Currency Query\
+    \ | > Peoplesoft |\n+------------------+--------------+\n\n+---------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | Output                          | To                                       \
+    \                                                                            \
+    \                                                                       |\n+---------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | > Invoice Processing- Exception | > Pull the Currency issue Invoices from Peoplesoft\
+    \ Query viewer which are stuck due to currency dicrepancies, should be reviewed\
+    \ and corrected in Peoplesoft to get paid in next Pay Cycle. |\n+---------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    \n# Control Points\n\n  ***\_***     ***Sub process Activity***     ***Sub process\
+    \ Activity Description***   ***Control Objective(s)***                       \
+    \                            ***Control Activity***                          \
+    \ ***Risk Assertions***                             ***Frequency (i.e. Event,\
+    \ Daily, Monthly, Quarterly, Annually)***   ***Evidence***\n  ----------- ------------------------------\
+    \ ---------------------------------------- ----------------------------------------------------------------------------\
+    \ ------------------------------------------------ -------------------------------------------------\
+    \ ------------------------------------------------------------------- --------------------------------\n\
+    \  ***\_\\#***                                                               \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                            \n                                              \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                        \n  \_1          Invoice-Exception\
+    \ processing   Currency Query                           Ensure to check any invoices\
+    \ are stuck in Peoplesoft and action within TAT   Review the currency type and\
+    \ get it corrected.   Invoices stuck in Query Queue- Delay in payment   Weekly-\
+    \ Monday                                                      Currency Query corrected\
+    \ in PS\n                                                                    \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                  \n\n## Process Measurement Reports \n\n> This\
+    \ activity is to pull invoices which are stuck in Peoplesoft due to currency issues\
+    \ and should be performed every week Monday (WD1).\n\n# Roles & Responsibilities\n\
+    \n## Description\n\n  **Role**                 **Responsibility**\n  ------------------------\
+    \ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\
+    \  Invoice Exception Team   Pull the Currency issue Invoices from Peoplesoft Query\
+    \ viewer which are stuck due to currency dicrepancies, should be reviewed and\
+    \ corrected in Peoplesoft to get paid in next Pay Cycle.\n"
+  questions_and_answers:
+  - question: What is the role of the Invoice Exception Team in the Invoice Exception
+      Processing activity?
+    answer: 'The Invoice Exception Team is responsible for pulling the Currency issue
+      Invoices from Peoplesoft Query viewer which are stuck due to currency discrepancies,
+      and reviewing and correcting them in Peoplesoft to get paid in the next Pay
+      Cycle. '
+  - question: What is the objective of the Invoice Exception Processing activity?
+    answer: The objective of the Invoice Exception Processing activity is to create
+      debit reversals to credit suppliers for debits issued against invoices for pricing
+      or quantity which it has been determined should not have been issued. This activity
+      should be performed on a daily basis so that all invoices are corrected and
+      get paid in the next Pay Cycle in Peoplesoft.
+  - question: What is the risk assertion for the Invoice Exception Processing activity?
+    answer: 'The risk assertion for the Invoice Exception Processing activity is that
+      invoices stuck in the Query Queue may cause delays in payment. '
+- context: "## Overview \n\n> This activity main objective is to pull the Invoices\
+    \ from Peoplesoft which are stuck in system due to currency discrepancies and\
+    \ are not paid. Such Invoices should be reviewed and corrected post approval from\
+    \ Jessica French.\n>\n> This activity should be performed on weekly basis (Monday).\
+    \ So that all Invoices are corrected and gets paid in next Pay Cycle in Peoplesoft.\n\
+    \n## Process Flow\n\n## Process Description: \n\n1.  Login to PeopleSoft. Use\
+    \ the below link\n\n> <https://evalued.internationaldelivers.com/ps-finance/psp/jfprd/>\n\
+    >\n> Login to Client home page.\n\n2.  Select Reporting Tools\n\n3.  Select PeopleSoft\
+    \ Main Menu \"Reporting Tools-Query-Query viewer\". Click on \"Vendor Inv's With\
+    \ Curry Issues\".\n\n4.  Click on \"Excel\" to extract the file.\n\n> Note: No\
+    \ need to update date range to pull the Invoices stuck in system due to currency\
+    \ issues.\n\n5.  Once the Query Excel spreadsheet is pulled, remove these debits-\
+    \ SQ Debit, LCML and SWR Debit.\n\n6.  Invoice number starting with \"BZ\" units\
+    \ are handled by \"Shroyer Sue M\". It should be removed from Query spreadsheet.\
+    \ Once these line items sent to \"Shroyer Sue\"\n\n7.  Below is the example email\
+    \ sent to \"Shroyer Sue\".\n\n8.  Insert the column in Query spreadsheet and name\
+    \ it as \"Comments\" and update currency issue research notes in comments field."
+  questions_and_answers:
+  - question: What should be removed from the Query Excel spreadsheet once it is pulled?
+    answer: Remove the debits SQ Debit, LCML, and SWR Debit from the Query Excel spreadsheet.
+  - question: ' What should be done with the Invoice numbers starting with "BZ" units?'
+    answer: Invoice numbers starting with "BZ" units should be handled by "Shroyer
+      Sue M" and should be removed from the Query spreadsheet.
+  - question: What should be updated in the "Comments" field in Query spreadsheet?
+    answer: Update currency issue research notes in the "Comments" field in Query
+      spreadsheet.
+- context: '**Scenario 3.**
+
+
+    1.  Wire Test payments currency issue.
+
+
+    > Invoice location- "M1"
+
+    >
+
+    > Business Unit- 99865
+
+    >
+
+    > Voucher ID- 00060876
+
+    >
+
+    > Invoice currency- USD
+
+    >
+
+    > Payment currency -MXN
+
+    >
+
+    > Invoice No- WIRETEST1R.
+
+
+    2.  Copy the vendor number from the Currency query spread sheet. Go to Peoplesoft
+    Main Menu-\> Reporting Tools-\> Query-\> Query Viewer. Click on the Query"ZI_AP_VENDOR_LISTING_BY_VDR_FT".
+    Update Vendor number and click on "View Results"
+
+
+    3.  Go to Oracle, click on "Saved Searches", update the "Invoice Number" and Click
+    on Enter.
+
+
+    4.  It displays the invoice copy, click on number "1" as shown below to open invoice
+    copy.
+
+
+    5.  Open the Invoice copy and check currency on the Invoice. In this case Invoice
+    copy mentioned as ''''USD''''. This currency type needs to be changed as ''''
+    M1 '''' in Peoplesoft.
+
+
+    6.  Go back to Currecny Query spreadsheet and update the research comments.
+
+
+    **Scenario:4 Currency issues with Freight Vendor:**
+
+
+    1.  If the invoices are part of Vendor "MANITOULIN TRANSPORT INC" Location "AX".
+    In this case, check the Invoice Origin in Peoplesoft.
+
+
+    2.  Go to Peoplesoft. Main Menu-\> Accounts Payable-\>Vouchers-\> Add/Update-\>
+    Regular Entry. Click on "Find and Existing Value" and enter the "Business Unit
+    and Voucher ID" and click on "Search".
+
+
+    3.  Once clicked on "Search" button. Go to summary tab and check the "Origin"-
+    D2L (Data Two logistic). In this case Origin is showing as D2L, they are part
+    of Freight locations, no need to change currency type and remove them from query
+    spreadsheet.
+
+
+    4.  Once all Currency query issues are researched and updated the currency changes
+    comments in the spreadsheet, these line items should be sent to Jessica French
+    A / Nelson C Dock for approval.
+
+
+    5.  Below is the example email sent to Jessica French for Approval.
+
+
+    6.  Below is the approval email received.
+
+
+    7.  Once approved by Jessica French. Go to Peoplesoft. Main Menu-\> Accounts Payable-\>Vouchers-\>
+    Add/Update-\> Regular Entry-\> Payments.
+
+
+    > Click on Location search icon, then "Look Up Location" screen will pop up, click
+    on "M1" Vendor Location.
+
+
+    8.  Next screen will open, click on "Save".
+
+
+    9.  If the currency is changed to "M1" and clicked on "Save" as mentioned above.
+    Click on "Holiday/Currency Options" to view correct currency is updated or not.
+
+
+    10. It will show Payment Currency type updated as ''USD'' and click on "OK".'
+  questions_and_answers:
+  - question: ' What should be done if the Invoice Origin is "D2L"?'
+    answer: If the Invoice Origin is "D2L", no need to change the currency type and
+      remove them from the query spreadsheet.
+  - question: How can you verify that the correct currency type has been updated in
+      Peoplesoft?
+    answer: To verify that the correct currency type has been updated in Peoplesoft,
+      click on "Holiday/Currency Options" to view the updated currency type.
+  - question: Who should the researched and updated currency change comments be sent
+      to for approval?
+    answer: The researched and updated currency change comments should be sent to
+      Jessica French A / Nelson C Dock for approval.
+- context: "**Scenario** 1 - Mexico currency issue:\n\n1.  If the Invoice currency\
+    \ shows as \"USD\" and Payment currency updated as \"MXN\". This needs to be checked\
+    \ in Mexico portal. See below currency issue details, which is mentioned as follows.\n\
+    \n> Invoice location- \"MX\"\n>\n> Business Unit- 99865\n>\n> Voucher ID- 00066398\n\
+    >\n> Invoice currency- USD\n>\n> Payment currency -MXN\n>\n> Invoice No- 1011674273.\n\
+    \n2.  Copy \"Voucher number\" from the currency query spreadsheet.\n\n> **Note:**\
+    \ Invoices for Business Unit - 99865 is part of Mexico. These invoices will not\
+    \ be available in Oracle. These needs to be checked in AP- Mexico Mailbox.\n\n\
+    3.  Go back to Peoplesoft Main Menu and click on \"Regular Entry\".\n\n4.  Click\
+    \ on \"Find an Existing Value\".\n\n5.  Enter the \"Business Unit\" and \"Voucher\
+    \ ID\". Click on \"Search\". These details are available in currency query spreadsheet.\n\
+    \n6.  Click on \"Invoice Information\" tab to find \"Image Ref ID\" as shown below.\
+    \ This Image Ref ID helps to find out the Invoice copy in Mexico portal.\n\n>\
+    \ **Note:** If we do not have access to Mexico portal to view the Invoice copies.\
+    \ Send an email to AP-Mexico email box to confirm correct currency.\n\n7.  Go\
+    \ to \"Payments\" tab under \"Payment Information\" and check the Location. Here\
+    \ Location is showing as \"MX\" and it's for Mexico. But this Invoice is keyed\
+    \ in USD Dollars and Gross Amount shows in USD dollars.\n\n> M1 type for -- USD\n\
+    >\n> MX type for -- PESO\n>\n> .\n\n8.  Voucher ID is part of Mexico. Search the\
+    \ Mexico Invoices in Mexico portal to check the currency code mentioned in original\
+    \ invoice copy.\n\n9.  Go to Mexico portal Main Menu \xE0 RECEPTION FE \xE0 Facturas\
+    \ Recibidas \xE0 Reception Facturas CPP\n\n10. Get into Reception Facturas CPP\
+    \ page and make E-status as \"Todos\"\n\n11. Go back to Peoplesoft and click on\
+    \ Invoice Information tab, Copy the Image Ref ID.\n\n12. Go back to Factura page,\
+    \ paste the copied Image ID number. Click on Filtar.\n\n13. Once clicked on \"\
+    Filtar\" will get the PDF copy.\n\n14. Open PDF Invoice copy and check currency\
+    \ on the Invoice as shown below. In the below invoice, currency is ''USD''. This\
+    \ currency type should be changed as ''M1'' in Peoplesoft.\n\n15. Update the currency\
+    \ issue research findings on the comments field."
+  questions_and_answers:
+  - question: What is the Mexico currency issue scenario in Exception Currency Query
+      process?
+    answer: ' The Mexico currency issue scenario is a currency issue with an invoice
+      for a business unit in Mexico. The invoice currency is shown as USD, but the
+      payment currency has been updated as MXN. This issue needs to be checked in
+      the Mexico portal.'
+  - question: ' Who should be contacted if there is no access to the Mexico portal
+      to view the Invoice copies?'
+    answer: If there is no access to the Mexico portal, an email should be sent to
+      the AP-Mexico email box to confirm the correct currency.
+  - question: Which invoices are not available in Oracle but in AP- Mexico Mailbox?
+    answer: Invoices for Business Unit - 99865 is part of Mexico and will not be available
+      in Oracle. These needs to be checked in AP- Mexico Mailbox.
+- context: 'Scenario: 2 EURO Currency Issue:
+
+
+    1.  If the Invoice currency shows as "USD" and Payment currency updated as "EURO".
+    This needs to be checked in Oracle. See below currency issue details, which is
+    highlighted as follows.
+
+
+    > Invoice location- "AX"
+
+    >
+
+    > Business Unit- 05100
+
+    >
+
+    > Voucher ID- 00215571
+
+    >
+
+    > Invoice currency- USD
+
+    >
+
+    > Payment currency -EURO
+
+    >
+
+    > Invoice No- 7067834336.
+
+
+    2.  Login to Oracle, click on "Saved Searches". Copy the invoice number from the
+    query spreadsheet and paste into "Invoice Number" and hit Enter.
+
+
+    3.  It displays the invoice copy. Click on number "1" as shown below to open invoice
+    copy.
+
+
+    > **Note:** If the invoices are not available in Oracle, Invoice copies needs
+    to be requested from "CEP Customer Service" team.
+
+
+    4.  Open the invoice copy and check the currency type. In this case invoice has
+    USD currency but vendor is setup as Euro currency. Further to confirm. check in
+    Peoplesoft - Vendor setup.
+
+
+    5.  Go to Peoplesoft Main Menu-\> Reporting Tools-\> Query-\> Query Viewer. Click
+    on the Query "ZI_AP_VENDOR_LISTING_BY_VDR_FT".
+
+
+    6.  Once clicked on the PS Query, it will go to next screen. Update the vendor
+    number and click on "View Results".
+
+
+    7.  Verify the location mentioned in PS Query. In this case AX suffix is updated/created
+    for EURO only.
+
+
+    8.  In this case, send an email to "CEP Customer Service" team to determine if
+    the invoice is closed and reissued in Euro currency and Vendor master shows AX
+    suffix is set up to pay in Euro Only. Delete the Euro currency line from Currency
+    spreadsheet.
+
+
+    > **Note:** If CEP team has not taken any action and it keeps repeating in the
+    Euro currency file. Send a follow up email to clear the line item.'
+  questions_and_answers:
+  - question: What should be done to check the invoice copy?
+    answer: To check the invoice copy, login to Oracle, click on "Saved Searches",
+      copy the invoice number from the query spreadsheet and paste into "Invoice Number"
+      and hit Enter.
+  - question: What should be done if the invoices are not available in Oracle?
+    answer: If the invoices are not available in Oracle, invoice copies need to be
+      requested from the "CEP Customer Service" team.
+  - question: What should be done if the vendor is setup as Euro currency?
+    answer: If the vendor is setup as Euro currency, further confirmation is required
+      by checking in Peoplesoft - Vendor setup.

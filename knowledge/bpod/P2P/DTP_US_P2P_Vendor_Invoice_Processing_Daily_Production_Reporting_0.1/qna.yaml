@@ -1,0 +1,358 @@
+domain: 'BPOD procure to pay: DTP_US_P2P_Vendor Invoice Processing_Daily Production
+  Reporting_0.1'
+document_outline: 'Describes the steps to prepare the POP Daily Production Report '
+seed_examples:
+- context: "# Roles & Responsibilities\n\n## Description\n\n  ------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\
+    \  **Role**           **Responsibility**\n  IBM AP Team Lead   To prepare the\
+    \ POP Daily Production Report containing details of the number of invoices pending\
+    \ in the production queues, total number of open cases in Remedy and the number\
+    \ of cases in Remedy that are over 5 days old.\n  ------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\
+    \n## SOD Matrix\n\nFor the SOD assessment on conflicting tasks and accesses, please\
+    \ refer to the related Aggregate SOD (A-SOD).\n\n# Process Detail\n\n## Step Description\n\
+    \n### Daily Production Reporting\n\n+------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | Step | Description                                                         \
+    \                                                                            \
+    \                                                                           |\n\
+    +======+============================================================================================================================================================================================================================+\n\
+    |      | To prepare the POP Daily Production Report containing details of the\
+    \ number of invoices pending in the production queues, total number of open cases\
+    \ in Remedy and the number of cases in Remedy that are over 5 days old. |\n| \
+    \     |                                                                      \
+    \                                                                            \
+    \                                                                          |\n\
+    |      | Who: IBM AP Team Lead                                               \
+    \                                                                            \
+    \                                                                           |\n\
+    |      |                                                                     \
+    \                                                                            \
+    \                                                                           |\n\
+    |      | When: Every day at 7:30 am EST                                      \
+    \                                                                            \
+    \                                                                           |\n\
+    |      |                                                                     \
+    \                                                                            \
+    \                                                                           |\n\
+    |      | How: Data taken from the LoadMaster Workflow application and the Remedy\
+    \ application is used to prepare the report in Excel                         \
+    \                                                                        |\n+------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n"
+  questions_and_answers:
+  - question: Who is responsible for preparing the POP Daily Production Report?
+    answer: The IBM AP Team Lead is responsible for preparing the POP Daily Production
+      Report.
+  - question: 'What is POP Daily Production Report?
+
+      '
+    answer: The POP Daily Production Report is a report that contains details of the
+      number of invoices pending in the production queues, total number of open cases
+      in Remedy, and the number of cases in Remedy that are over 5 days old.
+  - question: What applications are used to prepare the POP Daily Production Report?
+    answer: The LoadMaster Workflow application and the Remedy application are used
+      to prepare the POP Daily Production Report in Excel.
+- context: '### Description of the Queues
+
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | **Queue**                  | **Description**                                                                                                                                 |
+    **High Priority** |
+
+    +============================+=================================================================================================================================================+===================+
+
+    | Loadmaster Invoice         | Daily queues for invoices pending posting in the
+    Loadmaster                                                                                     |                   |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | ERS Daily                  | Daily queues for vendor setup as ERS                                                                                                            |
+    Yes               |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | **Specialty Queues**       |                                                                                                                                                 |                   |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | > Q0                       | Customer Service queue - Was used when vendors
+    sent past due invoices to be prioritized and scheduled for auto post. (May not
+    be used in India) | Yes               |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | Q39                        | Training & Coverage - Used to transfer moderately
+    difficult invoices for the new hires to work on                                               |                   |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | > Q40                      | Multiple Pos                                                                                                                                    |
+    Yes               |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | > Q41                      | FI''s Urgent (NOT USED, we now have a mailbox for
+    FI/Check Requests)                                                                             |
+    No                |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | > Q42                      | Separate queue setup for vendor Chambliss -- Urgent                                                                                             |
+    Yes               |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | Q43                        | Utilities, including Legal                                                                                                                      |
+    Yes               |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | Q44                        | Unmatched - Vendor name to be paid is different
+    from the name in the Invoice                                                                    |
+    Yes               |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | Q45                        | Invoices that have been Keyed and Imaged but are
+    still queued for various reasons                                                               |
+    Yes, but rare     |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | Q46                        | Invoices that are really credits                                                                                                                |
+    No                |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | Q47                        | Discount Vendors                                                                                                                                |
+    Yes               |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | Q50                        | Scheduling Agreements                                                                                                                           |
+    Yes               |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | Q60                        | ERS invoices that do not fall into the daily queues
+    (must be cleared daily)                                                                     |
+    Yes               |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | WF Exception               | Workflow exceptions, usually put in the queue by
+    mistake                                                                                        |
+    Yes               |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | FI Exception               | FI exceptions, usually put in the queue by mistake                                                                                              |
+    Yes               |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | SA Exception               | SA exceptions, usually put in the queue by mistake                                                                                              |
+    Yes               |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | > TA Exception -- Tax Dept | Invoices with tax issues that are being worked
+    upon by the Tax Dept                                                                             |                   |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | > TX Exception -- Tax Dept | Once issues the tax issues are resolved for invoices
+    in the TA Exception queue, the move to the TX Exception queue and are to be keyed
+    from     | Yes               |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | **Remedy Cases**           |                                                                                                                                                 |                   |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | > Outstanding Cases        | All Open Cases in Remedy irrespective of mail box                                                                                               |                   |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    | > Cases over 5 days        | Cases open over 5 days old                                                                                                                      |
+    Yes               |
+
+    +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+
+    '
+  questions_and_answers:
+  - question: What is the Loadmaster Invoice queue used for?
+    answer: 'The Loadmaster Invoice queue is used for daily queues for invoices pending
+      posting in the Loadmaster.
+
+      '
+  - question: What is the purpose of the Q0 queue?
+    answer: The Q0 queue is used for customer service and was used when vendors sent
+      past due invoices to be prioritized and scheduled for auto post.
+  - question: Is the Q40 queue a high priority queue?
+    answer: Yes, the Q40 queue is a high priority queue.
+- context: 'Step 13: In this example we look for the queue status for Day 28 as the
+    queue status for Day 27 is zero.
+
+
+    Step 14: Update the production status report for Day 28 to 267 items. Delete the
+    Day 27 because the queue is clear and add Day 7. Look up each day in the LoadMaster
+    Workflow application and populate Day 29, 30, 3, 4, 5, 6 and 7.
+
+
+    Step 15: Once the Daily Queue information is updated, the Daily Queue Total in
+    the spreadsheet shows the total number of invoices that need to be posted as on
+    Day 11.
+
+
+    Step 16: Repeat the process for ERS Queues and fill in all the details for the
+    ERS Daily Queues.
+
+
+    Step 17: Next, look up Q0 for customer service queue and enter in the spreadsheet
+
+
+    Step 18: Look up the Training Queue Q39 and fill in the pending invoices in the
+    queue (This queue is only used to train a new employee on invoice processing.
+    Count should be zero except for this reason).
+
+
+    Step 19: The process is same for the Speciality Queues. Look up the Queue number
+    and fill in the cell with the number of invoices in the queue.
+
+    '
+  questions_and_answers:
+  - question: What should be done if the queue status for a particular day is zero
+      in the LoadMaster Workflow Application?
+    answer: If the queue status for a particular day is zero in the LoadMaster Workflow
+      Application, the next day's queue status should be looked up and updated in
+      the Production Status Report.
+  - question: What is the purpose of the Training Queue Q39 in the Production Status
+      Report?
+    answer: The Training Queue Q39 is used to train a new employee on invoice processing.
+      The count in this queue should be zero except for this reason.
+  - question: What is the purpose of the Daily Queue Total in the Production Status
+      Report?
+    answer: The Daily Queue Total in the Production Status Report shows the total
+      number of invoices that need to be posted as on the current day.
+- context: 'Step 1: Open the previous Production Status Report ''POP Workload 121012.xls''
+    from the I:\\POP Production Status\\2012\\12 December folder
+
+
+    Step 2: Change the Report dates to the current date and save the file as ''POP
+    Workload 121112.xls'' to the same folder.
+
+
+    Step 3: The cells in yellow containing previous data will have to be deleted and
+    populated with number of items in each queue today.
+
+
+    Step 4: To fill up the data on the Loadmaster Invoice queues, launch the LoadMaster
+    Workflow Application by double-clicking on the POP Invoice Queues Icon on the
+    Desktop
+
+
+    Step 5: Enter your Login ID and password. Click on the Login button to launch
+    the application.
+
+
+    Step 6: Close the Workflow Viewer window as it is not used in the preparation
+    of this report.
+
+
+    Step 7: Maximize the POP Workflow Excel file so that it is alongside and easy
+    to work with.
+
+
+    Step 8: Click on the Database menu in the LoadMaster Workflow Application and
+    select the database ''popdta''
+
+
+    Step 9: Once the ''popdta'' database is selected, the notification is displayed
+    in the status bar and the file ''Open'' icon is enabled.
+
+
+    Step 10: Click on the File Open icon to launch the Queue Selection window.
+
+
+    Step 11: To look for the LoadMaster Invoice Queue for Day 27, ''Click on the Day
+    27 Queue'' in the Queue Selection window and click OK.
+
+
+    Step 12: Number of Pending invoices are displayed at the bottom in "Folders Available".'
+  questions_and_answers:
+  - question: What should be done to fill up the data on the Loadmaster Invoice queues
+      in the Production Status Report?
+    answer: To fill up the data on the Loadmaster Invoice queues in the Production
+      Status Report, the LoadMaster Workflow Application should be launched by double-clicking
+      on the POP Invoice Queues Icon on the Desktop.
+  - question: Where are the Number of Pending invoices displayed in the LoadMaster
+      Workflow Application?
+    answer: The Number of Pending invoices are displayed at the bottom in "Folders
+      Available" in the LoadMaster Workflow Application.
+  - question: What should be done after selecting the 'popdta' database in the LoadMaster
+      Workflow Application?
+    answer: After selecting the 'popdta' database in the LoadMaster Workflow Application,
+      the notification is displayed in the status bar and the file 'Open' icon is
+      enabled.
+- context: 'Step 20: To fill in the Total Open Cases under Remedy Cases, Open the
+    Remedy Application
+
+
+    Step 21: Click on ''BSC In-Box" =\> POP In-Box =\> Open Help Desk Cases =\> All
+    Open Cases
+
+
+    Step 22: At the bottom of the Remedy In-box screen, the total number of open items
+    is displayed.
+
+
+    Step 23: Fill-in the Production Report spreadsheet with this information
+
+
+    Step 24: To see all the Remedy Cases that are over 5 days old, open the Reports
+    menu. Click on ''Reports -- USA'' =\> ''BSC Management Reports'' =\> ''BSC Production
+    Meeting Report''.
+
+
+    Step 25: ''Over 5 Day Report'' is generated.
+
+
+    Step 26: Scroll down to the POP Team section to see the number of remedy cases
+    over 5 days old.
+
+
+    Step 27: Enter this number in the Production Report spreadsheet.
+
+
+    Step 28: Once all the information is obtained and updated, save the file. It can
+    now be sent to the POP Team.
+
+    '
+  questions_and_answers:
+  - question: How to find Total Open Cases under Remedy Cases?
+    answer: 'To get the number of Remedy cases, follow these steps:
+
+
+      1. Open the Remedy application.
+
+      2. Click on ''BSC In-Box'' => ''POP In-Box'' => ''Open Help Desk Cases'' =>
+      ''All Open Cases''.
+
+      3. At the bottom of the Remedy In-box screen, the total number of open items
+      is displayed.
+
+      4. Fill in the Production Report spreadsheet with this information.
+
+      '
+  - question: How to see all the Remedy Cases that are over 5 days old
+    answer: ' To see all the Remedy Cases that are over 5 days old, open the Reports
+      menu. Click on ''Reports -- USA'' => ''BSC Management Reports'' => ''BSC Production
+      Meeting Report''.  ''Over 5 Day Report'' is generated. Scroll down to the POP
+      Team section to see the number of remedy cases over 5 days old.
+
+      '
+  - question: What is the role of the POP Team in relation to the Production Report
+      spreadsheet?
+    answer: 'The POP Team uses the Production Report spreadsheet to view the current
+      status of all open cases in the Remedy application, as well as the total number
+      of invoices that need to be posted as on the current day, and the number of
+      Remedy Cases over 5 days old. '

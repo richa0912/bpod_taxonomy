@@ -1,0 +1,223 @@
+domain: 'BPOD procure to payment: P2P_Invoice Processing_Penske Upload Process_2022_v1.0.doc'
+document_outline: Describes how IBM Delivery Center will perform the Client Upload
+  Process For payment in PeopleSoft.
+seed_examples:
+- context: "# Control Points\n\n  ***\\#***   **Sub process Activity**   **Sub process\
+    \ Activity Description**   **Control Objective(s)**                          \
+    \     **Control Activity**                                                   \
+    \     **Risk Assertions**       **Frequency (i.e. Event, Daily, Monthly, Quarterly,\
+    \ Annually)**   **Evidence**\n  ---------- -------------------------- --------------------------------------\
+    \ ------------------------------------------------------ ---------------------------------------------------------------------------\
+    \ ------------------------- -----------------------------------------------------------------\
+    \ ------------------------\n  1          Invoice Processing         Rent and Uploads\
+    \                       To process Client invoices for payment in PeopleSoft \
+    \  To check all the data has been copied and pasted correctly in upload file \
+    \  Avoid duplicate payment   As Needed                                       \
+    \                  PeopleSoft and Outlook\n\n## Process Measurement Reports \n\
+    \n> Uploads are received as needed and will be processed and confirmed.\n\n# Roles\
+    \ & Responsibilities\n\n## Description\n\n  **Role**                   **Responsibility**\n\
+    \  -------------------------- ------------------------------------------------\n\
+    \  Invoice Processing Team.   Uploading of Client Upload into the PeopleSoft"
+  questions_and_answers:
+  - question: What is the Frequency of the Invoice Processing Rent and Uploads?
+    answer: The invoice processing and upload is done on Need basis.
+  - question: What is the Control Activity associated with subprocess Invoice Processing
+      ?
+    answer: To check all the data has been copied and pasted correctly in upload file
+  - question: Who is responsible for Uploading of Client Upload into the PeopleSoft
+      ?
+    answer: Invoice Processing Team is responsible for Uploading of Client Upload
+      into the PeopleSoft.
+- context: "# Overview\n\n## Objective(s)\n\n### To process Client invoices for payment\
+    \ in PeopleSoft. {#to-process-client-invoices-for-payment-in-peoplesoft. .list-paragraph}\n\
+    \n### Frequency: \n\n> As Needed.\n\n### Source: \n\nOutlook Knoxville Uploads\
+    \ Mailbox.\n\n### System Accesses:\n\n-   Outlook Mailbox access via an IT Service\
+    \ Desk Ticket.\n\n-   M drive access via. DL Knox System Support\n\n-   PeopleSoft\
+    \ access via EUR\n\n## Inputs & Outputs\n\n+------------------+----------------------+\n\
+    | Input            | From                 |\n+------------------+----------------------+\n\
+    | > Link via email | > AR and Collections |\n+------------------+----------------------+\n\
+    \n+-----------------------+----------------------+\n| Output                |\
+    \ To                   |\n+-----------------------+----------------------+\n|\
+    \ PS Confirmation email | > AR and Collections |\n+-----------------------+----------------------+"
+  questions_and_answers:
+  - question: What are the systems accesses to process Client invoices for payment
+      in PeopleSoft?
+    answer: 'System Accesses:
+
+      1. Outlook Mailbox access via an IT Service Desk Ticket.
+
+      2. M drive access via. DL Knox System Support
+
+      3. PeopleSoft access via EUR'
+  - question: What is the input of the process Client invoices for payment in PeopleSoft?
+    answer: The input to process Client invoices  is the Link via email from AR and
+      Collections
+  - question: What is the output of the process Client invoices for payment in PeopleSoft?
+    answer: The output of the process Client invoices payment is the  PS Confirmation
+      email.
+- context: '# Process Detail
+
+    ## Overview
+
+
+    This activity refers to uploading the Client invoices into people soft by referring
+    link received from AR and Collections team through Knoxville mailbox.
+
+
+    ## Process Description
+
+
+    1.  An Email is sent to the Knoxville uploads mailbox from Sharon Clark (AR and
+    Collections) with a link to the Client file.
+
+
+    2.  Click on the link provided in the email and open
+
+
+    3.  When you click on the link it directs you to the spreadsheet of the folder
+
+
+    4.  Type ''GN1'' in CS box, it has all those additional lines
+
+
+    5.  Column GK consists of the number of records and column GL has its additional
+    lines
+
+
+    > **Note**: if any data is missing in the excel or incorrect, we would reply to
+    the email and ask for the correct data and information.
+
+
+    6.  Change column" M" to the User ID of the person who is uploading the file.
+    If the User ID is not the sender''s Or the person who is uploading the file, change
+    the user ID (If Sharon Clark sends the file and Terri Johnson uploads the file,
+    but the user ID is neither of those users, correct the user ID to the uploader''s
+    user ID)
+
+
+    7.  Follow the path **M:\> AP voucher upload\> CE Win10** to open the **ExcelUploadForvoucher_Client.Xlsm**
+    file to upload the data
+
+
+    8.  Highlight the row 4 & paste the copied data using the special value option.
+
+
+    > Note: If pasting special value is not an option, then return to the original
+    file and copy again. If paste special value is not used, then the file will not
+    upload to PeopleSoft
+
+
+    9.  If there is an error with the upload, the box will say an error has occurred.
+    Review by running the PeopleSoft Staging process to ensure the file was not uploaded.
+
+
+    If the file does not exist in staging table, then you will need to start the entire
+    process again. If the error continues, then you may have bad data in the file.
+
+
+    In the original file, delete any blank rows at the bottom or blank columns to
+    the far right. If that still does not resolve the issue on the next attempt, then
+    contact local System Support to assist.'
+  questions_and_answers:
+  - question: What is objective of Client Upload Process?
+    answer: The activity in refers to uploading the Client invoices into people soft
+      by referring link received from AR and Collections team through Knoxville mailbox.
+  - question: What to update in the column M in the Client file?
+    answer: "Change column M to the User ID of the person who is uploading the file.\
+      \ If the User ID is not the sender's Or the person who is uploading the\
+      \ file, change the user ID"
+  - question: What to do if there is an error with the upload in peoplesoft?
+    answer: "If there is an error with the upload, the box will say an error has occurred.\
+      \ Review by running the PeopleSoft Staging process to ensure the file was not\
+      \ uploaded. \n\nIf the file does not exist in staging table, then you will need\
+      \ to start the entire process again.  If the error continues, then you may have\
+      \ bad data in the file.  \n\nIn the original file, delete any blank rows at\
+      \ the bottom or blank columns to the far right. If that still does not resolve\
+      \ the issue on the next attempt, then contact local System Support to assist."
+- context: '10. Open PeopleSoft to verify upload was successful.
+
+
+    11. Select Reporting Tools
+
+
+    12. Select Query Viewer
+
+
+    13. Search for Staged Vouchers query: ZI_AP_STAGED_VOUCHERS
+
+
+    14. Select Run to Excel
+
+
+    15. Enter KUP in the Origin box and select view results.
+
+
+    16. Select Open, then Enable Editing.
+
+
+    17. Verify invoices are in the Staging table. Scroll through the file to see if
+    it matches the original file. In this case, the upload was successful.
+
+
+    If the query did not return any records, then continue to run the query periodically
+    over the next hour. If the records still are not showing, then an email must be
+    sent to the. DL PeopleSoft FSCM Support Team to review. Copy IT Service Desk as
+    well for tracking issues. Please see an example of an email.
+
+
+    In some cases, a job has timed out ahead of the upload and once that is cleared,
+    the upload will feed into PeopleSoft. There are other times when the file must
+    be uploaded again. Proceed with caution in those instances, as there have been
+    times when the file has been duplicated when we have been instructed to upload
+    again. If the file is duplicated, then follow the Desk Procedures for Pre-Edit
+    and Recycle to clear. If it is a large volume, then refer the File Maintenance
+    Desk Procedures for Mass Deletion.
+
+
+    If the support team says the file has been uploaded, but it does not show in Staged
+    Vouchers, then enough time may have passed where the voucher has been created
+    and can be found in Regular Entry by searching by Business Unit and Invoice Number.
+    If the upload runs close to 4:30 EST, then you may ''miss'' the vouchers in staging
+    tables and they will be able to be viewed in Regular Entry since the voucher has
+    already been created.'
+  questions_and_answers:
+  - question: What is the Staged Vouchers query?
+    answer: ZI_AP_STAGED_VOUCHERS
+  - question: What possible issues can be there when uploading a file into Peoplesoft?
+    answer: In some cases, a job has timed out ahead of the upload and once that is
+      cleared, the upload will feed into PeopleSoft.  There are other times when the
+      file must be uploaded again.  Proceed with caution in those instances, as there
+      have been times when the file has been duplicated when we have been instructed
+      to upload again.  If the file is duplicated, then follow the Desk Procedures
+      for Pre-Edit and Recycle to clear.  If it is a large volume, then refer the
+      File Maintenance Desk Procedures for Mass Deletion.
+  - question: What to do when the Staged Vouchers query does not return any records?
+    answer: If the query did not return any records, then continue to run the query
+      periodically over the next hour.  If the records still are not showing, then
+      an email must be sent to the. DL PeopleSoft FSCM Support Team to review.  Copy
+      IT Service Desk as well for tracking issues.
+- context: "18. Once the records have been verified in Staged Vouchers, save the file\
+    \ as Client PS Confirmation MMDDYYYY on the personal drive (U drive), then select\
+    \ Save. Reply to all on original email that the process has been completed and\
+    \ attached is PS Confirmation file.\n\n19. Return to Outlook Knoxville Uploads\
+    \ and save confirmation email to the Client Completed folder.\n\n20. Return to\
+    \ the M:\\\\APVoucherUpload\\\\CE\\\\ExcelUploadforVoucher_InvUpload.xlsm and\
+    \ close. Do not save when prompted.\n\nMove the DEST.XML file from the CE folder\
+    \ to M:\\\\APVoucherUpload\\\\Archive\\\\CE DEST and rename it to Client mmddyy\n\
+    \n21. You will need to log into \\\"M:\\\\PAYSHARE\\\\DATA\\\\EXCEL\\\\BACKLOG\
+    \ REPORT\\\\Knox Uploads Log.xlsx\\\" and enter any uploads you processed to PeopleSoft.\n\
+    \n## Definitions\n\nThe following are definitions of acronyms used in this document:\n\
+    \n  Term   Definition\n  ------ -------------------------------\n  KUP    Knoxville\
+    \ Uploads\n  ASN    Advance Shipment Number\n  CS     Customer Service Analyst\
+    \ Team\n  PS     PeopleSoft"
+  questions_and_answers:
+  - question: Where to move the DEST.XML file from the CE folder?
+    answer: Move the DEST.XML file from the CE folder to M:\APVoucherUpload\Archive\CE
+      DEST and rename it to Client mmddyy
+  - question: What to do Once the records have been verified in Staged Vouchers?
+    answer: Once the records have been verified in Staged Vouchers, save the file
+      as Client PS Confirmation MMDDYYYY on the personal drive (U drive), then select
+      Save. Reply to all on original email that the process has been completed and
+      attached is PS Confirmation file
+  - question: What is the full form of CS?
+    answer: CS stands for Customer Service Analyst Team.

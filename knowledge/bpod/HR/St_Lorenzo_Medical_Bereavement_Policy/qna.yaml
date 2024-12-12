@@ -1,0 +1,93 @@
+domain: 'BPOD Human Resource: St Lorenzo Medical_Bereavement Policy'
+document_outline: Describes the facility's policy, expectations and guidelines for
+  paid time off in the event of the death of an immediate family member when caregivers
+  are eligible for bereavement leave.
+seed_examples:
+- context: "Date Adopted: 1/1/2013\nPolicy Name: Bereavement\nScope: All facility\
+    \ caregivers\nPurpose: To establish the facility's policy, expectations and guidelines\
+    \ for paid time off in the event of the death of an immediate family member when\
+    \ caregivers are eligible for bereavement leave.\nTerms:\nImmediate family member\
+    \ is defined as the caregiver's:\n-\tcurrent spouse or domestic partner\n-\tchild\n\
+    -\tparent\n-\tsibling\n-\tstepparent, stepchild, step-sibling\n-\tgrandparent\
+    \ or grandchild\n-\ta person who stood in loco parentis (legal responsibility\
+    \ of a person to take on the functions and responsibilities of a parent)\n-\t\
+    or current in-law relationships through marriage or partnership of the above"
+  questions_and_answers:
+  - question: According to St. Lorenzo Medical Center facility, who can be Immediate
+      family member of caregiver?
+    answer: "Immediate family member is defined as the caregiver's:\n-\tcurrent spouse\
+      \ or domestic partner\n-\tchild\n-\tparent\n-\tsibling\n-\tstepparent, stepchild,\
+      \ step-sibling\n-\tgrandparent or grandchild\n-\ta person who stood in loco\
+      \ parentis (legal responsibility of a person to take on the functions and responsibilities\
+      \ of a parent)\n-\tor current in-law relationships through marriage or partnership\
+      \ of the above"
+  - question: When was the Bereavement policy adopted in St. Lorenzo Medical Center
+      facility?
+    answer: The Bereavement policy was adopted in St. Lorenzo Medical Center facility
+      on 1/1/2013.
+  - question: What is the purpose of Bereavement policy St. Lorenzo Medical Center
+      facility?
+    answer: The purpose of bereavement policy in St. Lorenzo Medical Center is to
+      establish the facility's policy, expectations and guidelines for paid time off
+      in the event of the death of an immediate family member when caregivers are
+      eligible for bereavement leave.
+- context: 'Policy:
+
+    In keeping with our mission and values, the facility provides all benefits-eligible
+    caregivers time off without loss of pay in the event of the death of an immediate
+    family member (as defined above). Caregivers may receive up to 24 hours with pay
+    in the event of the death of an immediate family member or up to 40 hours with
+    pay in the event of the death of the caregiver''s spouse, domestic partner or
+    child. Additional paid time off (PTO) (in accordance with the facility''s PTO
+    policy) or unpaid time (in the event the caregiver has insufficient PTO) may be
+    authorized by your core leader on a case-by-case basis, based upon operational
+    needs. If leave is needed due to the death of a person who does not qualify as
+    an immediate family member, PTO or unpaid time off may similarly be authorized
+    by your core leader. The facility will comply with applicable state or local laws
+    that provide additional bereavement benefits. Caregivers should consult with HR
+    to determine if an additional bereavement benefit is available.
+
+    Caregivers in a manager level position or above who do not accrue PTO may take
+    leader time off (LTO) for bereavement in accordance with the facility''s LTO policy,
+    upon authorization by your core leader based on operational needs.'
+  questions_and_answers:
+  - question: What is leader time off (LTO) for bereavement in accordance with the
+      St. Lorenzo Medical Center  facility's LTO policy?
+    answer: Caregivers in a manager level position or above who do not accrue PTO
+      may take leader time off (LTO) for bereavement in accordance with the facility's
+      LTO policy, upon authorization by your core leader based on operational needs.
+  - question: When does the caregiver gets the bereavement leave?
+    answer: Caregivers may receive up to 24 hours with pay in the event of the death
+      of an immediate family member or up to 40 hours with pay in the event of the
+      death of the caregiver's spouse, domestic partner or child. Additional paid
+      time off (PTO) (in accordance with the facility's PTO policy) or unpaid time
+      (in the event the caregiver has insufficient PTO) may be authorized by your
+      core leader on a case-by-case basis, based upon operational needs.
+  - question: What if leave is needed due to the death of a person who does not qualify
+      as an immediate family member?
+    answer: If leave is needed due to the death of a person who does not qualify as
+      an immediate family member, PTO or unpaid time off may similarly be authorized
+      by the core leader.
+- context: "Procedures:\n1.\tRequests for paid bereavement leave must be submitted\
+    \ to your core leader. Time will typically be taken within two (2) weeks of notification\
+    \ of the death; however, exceptions will be considered as appropriate (e.g., memorial\
+    \ or funeral has been postponed, travel required out of the country, cultural/religious\
+    \ practices which may require services long after death). \n2.\tPaid bereavement\
+    \ leave is paid at the caregiver's base rate of pay, including shift differential,\
+    \ if applicable.\n3.\tPaid bereavement leave is not available to caregivers who\
+    \ are on leaves of absence.\n4.\tBereavement pay is coded in the timekeeping system.\n\
+    5.\tCaregivers may be requested to provide documentation regarding the need for\
+    \ bereavement leave."
+  questions_and_answers:
+  - question: Who are not eligible for Paid bereavement leave ?
+    answer: Paid bereavement leave is not available to caregivers who are on leaves
+      of absence.
+  - question: When to submit the Requests for paid bereavement leave?
+    answer: Requests for paid bereavement leave must be submitted to the core leader.
+      Time will typically be taken within two (2) weeks of notification of the death;
+      however, exceptions will be considered as appropriate (e.g., memorial or funeral
+      has been postponed, travel required out of the country, cultural/religious practices
+      which may require services long after death).
+  - question: How much is paid for Paid bereavement leave?
+    answer: Paid bereavement leave is paid at the caregiver's base rate of pay, including
+      shift differential, if applicable.

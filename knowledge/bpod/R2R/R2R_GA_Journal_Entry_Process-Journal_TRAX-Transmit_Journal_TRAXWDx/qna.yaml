@@ -1,0 +1,154 @@
+domain: 'BPOD Record to Analyze: R2R_GA_Journal Entry Process-Journal TRAX-additional
+  process activities_Transmit Journal TRAXWDx Bx_2022_V1.0.doc'
+document_outline: Describes how IBM Delivery Centre will prepare Journal  Process
+  TRAX_-additional process activities_Transmit Journal
+seed_examples:
+- context: "Control Points\n  **Sub process Activity**       **Sub process Activity\
+    \ Description**   **Control Objective(s)**                                   \
+    \          **Control Activity**                                **Risk Assertions**\
+    \                                                                            \
+    \                                        **Frequency (i.e. Event, Daily, Monthly,\
+    \ Quarterly, Annually)**   **Evidence**\n1 Transmit Journal TRAX WDx Bx Transmit\
+    \ all batches in Journal TRAX To post all batches in Journal TRAX and validate\
+    \ the total amount. All batches should transmit in Journal TRAX file. The transmission\
+    \ should be done between 8.15AM-8.30PM EST first three weeks and last weeks of\
+    \ the month transmitted after 5.00PM EST Daily Email"
+  questions_and_answers:
+  - question: What is the Control Objective for "Journal  TRAX?
+    answer: Control Objective- To post all batches in Journal TRAX and validate the
+      total amount
+  - question: What is the Control Activity for "Journal  TRAX?
+    answer: The Control Activity for Journal TRAX is " All batches should transmit
+      in Journal TRAX file"
+  - question: What are the Control Risk assertions for Journal TRAX?
+    answer: The Risk assertions for Journal TRAX is as given below:--The transmission
+      should be done between 8.15AM-8.30PM EST first three weeks and last weeks of
+      the month transmitted after 5.00PM EST
+- context: 'Definitions
+
+    The following are definitions of acronyms used in this document:
+
+
+    Term Definition
+
+
+    MBS Marketing bypass system EST Eastern Time Zone GL General Ledger'
+  questions_and_answers:
+  - question: What is the abbreivation of MBS in Journal TRAX process document?
+    answer: The abbreivation of MBS in Journal TRAX process document means" Marketing
+      Bypass System"
+  - question: What is the abbreivation of  EST used in Journal TRAX process document?
+    answer: The abbreivation of EST  in Journal TRAX process document is "Eastern
+      Time Zone"
+  - question: What is the abbreivation of  GL used in Journal TRAX process document?
+    answer: The abbreivation of GL in Journal TRAX process document is General Ledger
+- context: 'Inputs & Outputs
+
+    +----------------------+--------------+ | Input | From | +----------------------+--------------+
+    | > Email Notification | > DL AMS_NFC | +----------------------+--------------+
+
+
+    +--------------------------------+----------------+ | Output | To | +--------------------------------+----------------+
+    | > Transmit the Journal Batches | > Journal TRAX | +--------------------------------+----------------+'
+  questions_and_answers:
+  - question: What is the input for Journal Process TRAX ?
+    answer: The input for Journal TRAX Journal Process is vide Email notification
+  - question: What is the Output for Journal Process TRAX?
+    answer: The Output of Journal Process TRAX is toTransmit the Journals in batches
+  - question: From which generic email do we receive inputs for Journal Process TRAX
+      ?
+    answer: The inputs for Journal Process TRAX are received via DL AMS_NFC
+- context: 'Overview
+
+    Objective(s)
+
+    The purpose of this process is to transmit journal entries processed in Journal
+    TRAX. Transmitting is a critical part of the process, this is charging locations,
+    plants, etc. monthly. The only way this activity gets posted to those locations
+    is through the transmissions each day. If the entries do not transmit every day,
+    no charges would be posted to the GL for the monthly activity.
+
+
+    Frequency:
+
+    Daily-Contains US and CAN journal activity.
+
+
+    Source:
+
+    Email
+
+
+    System Accesses:
+
+    Journal TRAX
+
+
+    Journal TRAX Access Database'
+  questions_and_answers:
+  - question: What is the objective of Journal  Process TRAX?
+    answer: The objective/ purpose of this process is to transmit journal entries
+      processed in Journal TRAX
+  - question: What is the frequency of Journal  Process TRAX ?
+    answer: 'The frequency of Journal Process TRAX  is- it is a
+
+      Daily Activity- US and CAN journal activity.'
+  - question: Whar are the system accesses required in "Journal  Process TRAX ?
+    answer: 'System accesses required for Journal Process TRAX is as follows-
+
+      1) Journal TRAX
+
+      2) Journal TRAX Access Database'
+- context: "Process Description\n\nEmail request will be received to the mailbox from\
+    \ DL AMS_NFC (Generic mail ID).\n\nIn case do not receive the confirmation e-mail\
+    \ from DL AMS_NFC, Then need to file a Service Desk Ticket. Login to NAC Service\
+    \ Portai- NAC Service portal link.\n\nOnce logged in click on Report an issue.\
+    \ \n\nUpdate What is the issue? and Description as per below mentioned.\n\nClick\
+    \ on Add attachement>Submit.\n\nNote -Attach present date text file as per below\
+    \ screenshot.\n\nClick on below path and select JournalTRAX.xlsm Excel file.\n\
+    \nOpen the JournalTRAX.xlsm Excel file .Click on ctrl+J+T to Transmit the files.\n\
+    \nNote- The transmission should be done between 8.15AM-8.30PM EST first three\
+    \ weeks and last weeks of the month transmitted after 5.00PM EST. Transmission\
+    \ cannot occur until all journals have been entered in Journal TRAX and approved\
+    \ by the reviewer. Users cannot be in the Journal TRAX application at the time\
+    \ of transmission. On the last workday transmissions are normally done later than\
+    \ 5.00PM. An email sent to the reviewers requestion notification when they are\
+    \ finished. Once receive the confirmation can proceed with the transmission. All\
+    \ journal batches must be submitted by evening of last workday.\n\nOnce Click\
+    \ on ctrl+J+T,  if there are no journals, receive a pop up message that reads\
+    \ there are no journals to be transmitted.\n\nClik on window select Refection>FTP\
+    \ Client.\n\n \n\nClick on Script>Run Script.\n\nClick on User>alldataS(\\\\knxnas01)\
+    \ (M:) >je >DATA>RFS>JE.rfs\n\nOnce open below screen this will start running\
+    \ the script. \n\nFiles are auto saved in the below shared folder link and open\
+    \ the present date notepad file.\n\nSelect alldataS(\\\\knxnas01) (M:) > GA >\
+    \ SPREADSHEET CONTROL > Financial Statement Close > Tina Eldrige > Batch Log >\
+    \ Open Present Month template. \n\nOpen an email and select Column A, update for\
+    \ US 15009 and CAN 16005 as per email confirmation. \n\nColumn D (Date Submitted)\
+    \ update the Date as per highlighted in the email.\n\nIn Column B (Loc) update\
+    \ the Batch number as per highlighted in the email.\n\nIn Coloum C (Control Total)\
+    \ update the amount as mentioned in the email.\n\nNote- Please refer J&K column\
+    \ to update the last digit number.\n\nLoggin to OBIEE.\n\nClick on FT MBS Truck-Doc\
+    \ J Batches.\n\n Update the Batch submission date>Apply>Export>Open the file.\n\
+    \n In column D-(Batch Submission) Select only 015009.\n\nIn column F(Total Amount)\
+    \ select only credit balance, the sum amount should be same mentioned in the email\
+    \ and MBS file.\n\nColumn D-Batch submission filter only 016005 and click on OK.\n\
+    \nIn Column F(Total Amount) select only credit balance, the total sum should be\
+    \ same as mentioned in the email and MBS file.\n\nIn tab Recuring checklist, update\
+    \ the date in Column F (Processed) & E (Multiples) before saving the file.\n\n\
+    After the last workday send an email to Uttaman Shine and copy General Accounting\
+    \ Client Manager (Kimberly Loffler)  to confirm all weeks batches are posted and\
+    \ completed."
+  questions_and_answers:
+  - question: If confirmation e-mail request for Journal TRAX is not received, where
+      do we need to raise a Helpdesk ticket?
+    answer: In case, if we do not receive the confirmation e-mail from DL AMS_NFC,
+      then we need to file a Service Desk Ticket. Login to NAC Service Portai- NAC
+      Service portal link.
+  - question: What is the name of the "Generic Email request mailbox" for Journal
+      TRAX?
+    answer: The Generic Email request mailbox for Journal TRAX  is DL AMS_NFC
+  - question: To whom should an email be sent to confirm all Journals TRAX weekly
+      batches are posted and completed?
+    answer: After the last workday  an email to Uttaman Shine and copy General Accounting
+      Client Manager (Kimberly Loffler)  to confirm all weeks batches are posted and
+      completed w.r.t Journal TRAX

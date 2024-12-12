@@ -1,0 +1,345 @@
+domain: 'BPOD procure to pay: P2P_Reporting - Future Dated Invoices Process_2022_V1.0'
+document_outline: This official IBM guide outlines the process for Future Dated Invoice
+  Processing by the IBM Delivery Centre. It serves as a reference for both the IBM
+  team and the Client Team for future use and compliance.
+seed_examples:
+- context: "\n# Roles & Responsibilities\n\n## Description\n\n  --------------------------------------------------------------------------------------------------------------------------------------------------\n\
+    \  **Role**           **Responsibility**\n  ------------------ -------------------------------------------------------------------------------------------------------------------------------\n\
+    \  Reporting Team     Team run the Peoplesoft Query to pull the invoices which\
+    \ was processed with future dates, review and correct them accordingly\n\n  --------------------------------------------------------------------------------------------------------------------------------------------------\n\
+    \n# Process Detail\n\n## Overview\n\n> This process main objective is to capture\
+    \ the invoices which was processed with future dates in PeopleSoft. It should\
+    \ happen during the keying process or in the upload process. However, these invoices\
+    \ get into PeopleSoft. Exception team needs to run the query on weekly basis and\
+    \ research Invoice dates and correct them post approval from Jessica French/ Nelson\
+    \ C Dock.\n\n## Process Description\n\n> Go to M Drive - Open the previous week\
+    \ file for Future dated report which was saved in M drive. \"APCS /DATA/EXCEL/\
+    \ FUTURE DATED INVOICES\\\\Future Dated Invoices FY 2022.xlsx\".\n>\n> Update\
+    \ the tab name as working date on weekly every Wednesday.\n>\n> Go to Peoplesoft\
+    \ -\\> Main Menu -\\>Reporting-\\>Tools-\\>Query-\\> Query Viewer\". Click on\
+    \ \"ZI_AP_VCHRS_FUTURE_DATES\" Query.\n>\n> Once click on the above Query. It\
+    \ will go to next screen. Select the previous week date under **\"Date Entered\"\
+    ** field.\n>\n> (For example: If the report is run on Wednesday i.e 04/13/2022\
+    \ need to take previous week date as 04/06/2022).\n\nClick on **\"View Results\"\
+    **\n\nOnce clicked on \"View Results\" will get the query details.\n\n> **Note-**\
+    \ If Wednesday is Holiday, next business day we need to run the Future dated Query\
+    \ and work on it.\n\nCopy the Query results and paste into current week tab of\
+    \ the Future dated report.\n\nGo to Peoplesoft, run another Query. Main Menu-\\\
+    > Reporting Tools-\\> Query-\\> Query Viewer.\n\n> Select ZI_AP_VCHRS_FUTURE_PAY_DATES\
+    \ and Click on \"Excel\" to extract the file..\n\nOnce clicked on Excel, will\
+    \ get the query results in excel sheet.\n\n> Copy the query results and paste\
+    \ into current week tab of the Future dated report in the bottom section.\n>\n\
+    > Add \"Comment\" field in header to update research notes.\n>\n> Copy the Invoice\
+    \ number from the first section of the Future dated file\n>\n> Go to Oracle- Login\
+    \ with credentials.\n>\n> Click on \"Saved Searches\", select \"AP Invoice by\
+    \ Invoice Number\" and paste the invoice number. Hit Enter to fetch the invoice\
+    \ details.\n>\n> No invoice copy is available in Oracle image search as shown\
+    \ below.\n\nIn case no Invoice copy available in Oracle, reach out to Service\
+    \ Parts Customer Service department for requesting invoice copy as per the Business\
+    \ unit."
+  questions_and_answers:
+  - question: What are the steps to run the Future dated Query in PeopleSoft?
+    answer: To run the Future dated Query in PeopleSoft, go to M Drive, open the previous
+      week file for Future dated report, update the tab name to "working date", go
+      to Peoplesoft -> Main Menu -> Reporting -> Tools -> Query -> Query Viewer, click
+      on "ZI_AP_VCHRS_FUTURE_DATES" Query, select the previous week date under "Date
+      Entered" field, and click on "View Results"
+  - question: What the steps to run first query for future dated report on peoplesoft
+    answer: 'Here are the steps to run the first query for the Future Dated report
+      on PeopleSoft:
+
+      1. Go to Peoplesoft -> Main Menu -> Reporting -> Tools -> Query -> Query Viewer.
+
+      2. Click on "ZI_AP_VCHRS_FUTURE_DATES" Query.
+
+      3. Select the previous week date under "Date Entered" field.
+
+      4. Click on "View Results".'
+  - question: what are the steps to run second query  for future dated report on peoplesoft?
+    answer: 'Here are the steps to run the second query for the Future Dated report
+      on PeopleSoft:
+
+      1. Go to Peoplesoft -> Main Menu -> Reporting -> Tools -> Query -> Query Viewer.
+
+      2. Select ZI_AP_VCHRS_FUTURE_PAY_DATES.
+
+      3. Click on "Excel" to extract the file.
+
+      4. Once clicked on Excel, get the query results in an Excel sheet.
+
+      5. Copy the query results and paste into the current week tab of the Future
+      dated report in the bottom section.'
+- context: "\n## Inputs & Outputs\n\n+-----------------------------+------------------------------------------------+\n\
+    | Input                       | From                                         \
+    \  |\n+-----------------------------+------------------------------------------------+\n\
+    | > Future dated invoice file | > Peoplesoft                                 \
+    \  |\n+-----------------------------+------------------------------------------------+\n\
+    \n+---------------------+----------------------------------------------------------------------------------------------------------------------------------+\n\
+    | Output              | To                                                   \
+    \                                                                            |\n\
+    +---------------------+----------------------------------------------------------------------------------------------------------------------------------+\n\
+    | > Reporting team    | > Team run the Peoplesoft Query to pull the invoices which\
+    \ was processed with future dates, review and correct them accordingly. |\n+---------------------+----------------------------------------------------------------------------------------------------------------------------------+\n\
+    \n# Control Points\n\n  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\
+    \  ***\\#***   **Sub process Activity**   **Sub process Activity Description**\
+    \   **Control Objective(s)**                                                 \
+    \    **Control Activity**                                                   **Risk\
+    \ Assertions**   **Frequency (i.e. Event, Daily, Monthly, Quarterly, Annually)**\
+    \   **Evidence**\n  ---------- -------------------------- --------------------------------------\
+    \ ----------------------------------------------------------------------------\
+    \ ---------------------------------------------------------------------- ---------------------\
+    \ ----------------------------------------------------------------- ----------------------------------\n\
+    \  1          Reporting                  Future Dated invoice Process        \
+    \   Pull the Query in PS which was processed with Future dates every Wednesday\
+    \   Make sure Future dated invoices are pulled and corrected accordingly   Delay\
+    \ in payments     Weekly- Every Wednesday                                    \
+    \       PS Invoice Future dated Tracker.\n\n  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+  questions_and_answers:
+  - question: What is the input for the Future Dated Invoice Processing?
+    answer: The input for the Future Dated Invoice Processing is the Future dated
+      invoice file from Peoplesoft.
+  - question: What is the output of the Future Dated Invoice Processing?
+    answer: The output of the Future Dated Invoice Processing is the reporting team
+      running the Peoplesoft Query to pull the invoices that were processed with future
+      dates, reviewing, and correcting them accordingly.
+  - question: What is the control activity for the Future Dated Invoice Processing
+    answer: The control activity for the Future Dated Invoice Processing is to ensure
+      that the Future dated invoices are pulled and corrected accordingly every Wednesday
+      to prevent delay in payments.
+- context: '# Overview
+
+
+    ## Objective(s)
+
+
+    > This process main objective is to capture the invoices which was processed with
+    future dates in PeopleSoft. It should happens during the keying process or in
+    the upload process. However, these invoices get into PeopleSoft. Reporting team
+    needs to run the query on weekly basis and research Invoice dates and correct
+    them post approval from Jessica French/ Nelson C Dock.
+
+
+    ### Frequency:
+
+
+    Weekly Every Wednesday- In case Wednesday is holiday it will be pulled next following
+    day.
+
+
+    ### Source:
+
+
+    Peoplesoft ,Oracle Image Viewer
+
+
+    ### System Accesses:
+
+
+    Peoplesoft, Oracle Image Viewer and Outlook.'
+  questions_and_answers:
+  - question: What is the objective of the Future Dated Invoice Processing?
+    answer: The objective of the Future Dated Invoice Processing is to capture the
+      invoices that were processed with future dates in PeopleSoft and correct them.
+  - question: How often does the reporting team need to run the query to pull the
+      invoices with future dates?
+    answer: The reporting team needs to run the query every Wednesday to pull the
+      invoices with future dates. If Wednesday is a holiday, the query will be pulled
+      on the next following day.
+  - question: What systems and tools are used to access and correct the future dated
+      invoices?
+    answer: The systems and tools used to access and correct the future dated invoices
+      include Peoplesoft, Oracle Image Viewer, and Outlook.
+- context: "**[Steps for fixing up the Future dates in Peoplesoft:]{.underline}**\n\
+    \n> After all invoices are researched and found the correct invoice dates, update\
+    \ the comments in the Future dated file. Should send to \"French Jessica/Nelson\
+    \ Dock\" approval to fix the correct dates in PS.\n>\n> Below is the Approved\
+    \ email received from French Jessica A.\n>\n> Go to Peoplesoft- Main Menu-\\>Reporting-\\\
+    >Query-\\>Query Viewer. Click on \"Regular Entry\" to correct the Vouchers of\
+    \ Future Dated Invoices.\n>\n> Click on the \"Find an Existing value\" Option.\n\
+    \nEnter the Business Unit and Voucher ID. Click on \"Search\" button. Business\
+    \ Unit and Voucher ID is available in Future Dated file.\n\n> Click on \"Add/update\
+    \ \" and select \"UnPost Voucher\". This process is to change the voucher status\
+    \ from \" Posted to Unposted \" and change the \" Accounting Date\".\n>\n> Change\
+    \ the \"Accounting Date\" as Current Date.\n\nClick on \"Unpost\" button to continue.\
+    \ This process allow us to change the Invoice dates.\n\nClick on\" OK\" to continue.\n\
+    \nNote: All the Vouchers ID status needs to be changed from \"Posted to Unposted\"\
+    .\n\n> Go back to Peoplesoft, click on \"Regular Entry\" and Click on \u201EFind\
+    \ an Existing value\". Copy and paste the Business Unit and Voucher ID. Click\
+    \ on \"Search\" button.\n>\n> Once clicked on Search button, in the next screen\
+    \ Voucher status turned as \"Unposted\" under Regular Entry- Invoice information\
+    \ tab.\n>\n> Go to Invoice Date field and update correct Invoice date under \"\
+    Invoice Information\" tab.\n>\n> Once correct date is updated, scroll down the\
+    \ page. Click on \"Save\" button.\n>\n> After clicking on Save button, we can\
+    \ see Invoice Date is changed under \"Payments\" tab as mentioned below.\n>\n\
+    > **Note:** All the Future dated invoices are fixed as mentioned in the above\
+    \ steps."
+  questions_and_answers:
+  - question: How do you update the voucher status to unposted in Peoplesoft?
+    answer: To update the voucher status to unposted, go to Peoplesoft, click on "Regular
+      Entry", click on "Find an Existing value", enter the Business Unit and Voucher
+      ID, click on "Search", click on "Add/update", select "UnPost Voucher", and then
+      click on "Unpost" to continue.
+  - question: How do you update the invoice date in Peoplesoft?
+    answer: To update the invoice date, go to the "Invoice Information" tab, update
+      the correct invoice date, scroll down the page, and click on the "Save" button.
+      This will change the invoice date under the "Payments" tab.
+  - question: provide the steps for fixing the future dates in Peoplesoft
+    answer: 'The following are the steps for fixing the future dates in PeopleSoft:
+
+      After all the invoices are researched and found the correct invoice dates
+
+      1. Update comments in Future dated file.
+
+      2. Send to "French Jessica/Nelson Dock" for approval.
+
+      3. Go to Peoplesoft - Main Menu -> Reporting -> Query -> Query Viewer.
+
+      4. Click on "Regular Entry" to correct vouchers.
+
+      5. Click on "Find an Existing value" and enter Business Unit and Voucher ID.
+
+      6. Click "Add/update" and select "UnPost Voucher".
+
+      7. Change Accounting Date to Current Date and click "Unpost".
+
+      8. Go back to Regular Entry, enter Business Unit and Voucher ID, and click "Search".
+
+      9. Update Invoice Date under "Invoice Information" tab.
+
+      10. Click "Save" button.
+
+      11. Verify Invoice Date is changed under "Payments" tab.'
+- context: '> No invoice copy is available in Oracle image search as shown below.
+
+
+    In case no Invoice copy available in Oracle, reach out to Service Parts Customer
+    Service department for requesting invoice copy as per the Business unit.
+
+
+    > Update the comments in Future dated file as "emailed to SP for Invoice copy"
+
+    >
+
+    > **[Example1:]{.underline}**
+
+    >
+
+    > Copy the Invoice number# **LCD6522020201** and paste into Oracle image viewer
+    to view the Invoice copy. Hit Enter.
+
+    >
+
+    > Invoice copy is available in Oracle Image viewer. Click on "1" icon to open
+    the copy.
+
+    >
+
+    > Open the invoice copy to verify the Invoice Date. In this case Invoice date
+    is upated incorrecly. It should be 11/07/2021.
+
+
+    Update the comment in the Future dated working file as "should be 11/07/21" and
+    save the file.
+
+
+    > **[Example2:]{.underline}**
+
+    >
+
+    > Copy the invoice# 13018. Go to Oracle image viewer, paste the Invoice number
+    and hit Enter.
+
+    >
+
+    > Search results shows, there is a copy available.
+
+    >
+
+    > Click on the Invoice image to open the invioce copy and verify the invoice date
+    mentioned. In this case invoice date should be"1/03/22" but its processed with
+    "11/03/22.
+
+    >
+
+    > Invoice date is not clear and need to get the confirmation from the "CEP Customer
+    Service team". This invoice request should be routed to CEP, since the Business
+    unit 40100 belongs to this team.
+
+    >
+
+    > Update the comment in the Future dated invoice file against to the line item
+    and save the file.
+
+    >
+
+    > **[Example 3:]{.underline}**
+
+    >
+
+    > Copy the invoice# BD3520538. Go to Oracle image viewer, paste the Invoice number
+    and hit enter.
+
+    >
+
+    > Search results shows, there is a copy available. Click on "1" to open the invoice
+    copy.
+
+    >
+
+    > In this case Debit Batches report is available. Here we can see the Batch dates
+    are showing as " June 2021 Debits" under comments field. This information suffice
+    for this case. Invoice date should be considered as "06/30/2021.
+
+    >
+
+    > In the same attachment there is one more note mentioned as highlighted below.
+
+
+    Update the comment in the Future dated invoice file against to the line item and
+    save the file.
+
+
+    > **[Example 3:]{.underline}**
+
+    >
+
+    > Copy the invoice# 97378487. Go to Oracle image viewer, paste the Invoice number
+    and hit Enter.
+
+    >
+
+    > Search results shows, there is a copy available. Click on "1" to open the invoice
+    copy.
+
+    >
+
+    > Credit Invoice copy shows the date as "11/02/2021. This is the accurate invoice
+    date to update.
+
+
+    Update the comment in the Future dated invoice file against the line item and
+    save the file.
+
+
+    > **Note:** All the Future dated invoices search process to be followed as mentioned
+    in the above examples. Also, Invoice copy requests which are sent to other department
+    should be checked and send a follow up email if incase no response received.'
+  questions_and_answers:
+  - question: What should be done if no invoice copy is available in Oracle image
+      search?
+    answer: If no invoice copy is available in Oracle image search, you should reach
+      out to the Service Parts Customer Service department to request an invoice copy
+      as per the business unit. Update the comments in Future dated file as 'emailed
+      to SP for invoice copy"
+  - question: What is the process for verifying the invoice date and updating the
+      comments in the Future dated file?
+    answer: The process involves copying the invoice number, pasting it into Oracle
+      image viewer, searching for the invoice copy, opening the copy to verify the
+      invoice date, and updating the comments in the Future dated file with the correct
+      invoice date or any additional information that may be required.
+  - question: How should you update the comments in the Future dated file?
+    answer: You should update the comments in the Future dated file with the correct
+      invoice date or any additional information that may be required to resolve the
+      issue. For example, if the invoice date is not clear, you should update the
+      comment to indicate that confirmation is needed from the CEP Customer Service
+      team.

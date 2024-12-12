@@ -1,0 +1,173 @@
+domain: 'BPOD Record to Analyze: R2R_GA_Journal Entry Process-PeopleSoft-Legal Reclass
+  Journal Entries_2022_V1.0.doc'
+document_outline: Describes how IBM Delivery Centre will process the Legal Reclass
+  Journal Entries
+seed_examples:
+- context: "# Control Points\n\n  ***\\#***   **Sub process Activity**           \
+    \           **Sub process Activity Description**           **Control Objective(s)**\
+    \                                                                            \
+    \           **Control Activity**                                             \
+    \                          **Risk Assertions**                               \
+    \                  **Frequency (i.e. Event, Daily, Monthly, Quarterly, Annually)**\
+    \   **Evidence**\n  ---------- --------------------------------------------- ----------------------------------------------\
+    \ --------------------------------------------------------------------------------------------------------------\
+    \ ------------------------------------------------------------------------------------------\
+    \ ------------------------------------------------------------------- -----------------------------------------------------------------\
+    \ --------------\n  1          Processing the Legal Reclass Journal entry.   Uploading\
+    \ the Reclass entry into Peoplesoft.   To process the Legal Reclass Journal entry\
+    \ for invoice amount that has been miscoded into the wrong account.   Research\
+    \ the invoice details in PS to confirm the ledger account that must be reclassed.\
+    \   Reclass made to incorrect ledger account without proper research.   As needed.\
+    \                                                        Peoplesoft.\n\n## Process\
+    \ Measurement Reports \n\n> A miscellaneous journal entry or a reclass entry must\
+    \ be processed for the legal activity that has been miscoded into the wrong account.\
+    \ This entry must be processed when the email has been received from the Legal\
+    \ department.\n\n# Roles & Responsibilities\n\n## Description\n\n  **Role**  \
+    \         **Responsibility**\n  ------------------ ------------------------------------------------------------------------\n\
+    \  Legal Department   To send the entry details that must be reclassed to IBM\
+    \ team via email\n  GA Associate       To process the reclass entry into PS."
+  questions_and_answers:
+  - question: What is the control objective for Processing the Legal Reclass Journal
+      entry?
+    answer: The control activity for processing the Legal Reclass Journal entry is
+      to process the Legal Reclass Journal entry for invoice amount that has been
+      miscoded into the wrong account.
+  - question: What is the responsibility of Legal Department?
+    answer: The repsonsibility of Legal Department is to send the entry details that
+      must be reclassed to IBM team via email
+  - question: What is the Control Activity in subprocess Uploading the Reclass entry
+      into Peoplesoft?
+    answer: 'The Control Activity in subprocess Uploading the Reclass entry into Peoplesoft
+      is: Research the invoice details in PS to confirm the ledger account that must
+      be reclassed.'
+- context: "# Overview\n\n## Objective(s)\n\n> The purpose of this activity is to\
+    \ process a miscellaneous journal entry, to reclass legal activity that has been\
+    \ miscoded into the wrong account.\n\n### Frequency: \n\n> As needed. (When received\
+    \ an email from the legal department)\n\n### Due date:\n\n> WD 2\n\n### Source:\
+    \ \n\n-   Email from Legal Department\n\n### System Accesses:\n\n-   PeopleSoft\n\
+    \n## Inputs & Outputs\n\n+-------------------------------------------------------------------+---------------------------+\n\
+    | Input                                                             | From   \
+    \                   |\n+-------------------------------------------------------------------+---------------------------+\n\
+    | > MACLANE JE template, Back up excel and approved Journal voucher | Email from\
+    \ the Legal team |\n+-------------------------------------------------------------------+---------------------------+\n\
+    \n+--------+--------------+\n| Output | To           |\n+--------+--------------+\n\
+    | > JE   | > PeopleSoft |\n+--------+--------------+"
+  questions_and_answers:
+  - question: What is the input required in legal reclass journal entry process?
+    answer: The input of legal reclass journal entry process is the MACLANE JE template,
+      Back up excel and approved Journal voucher coming from the Email from the Legal
+      team.
+  - question: What is the due date for legal reclass journal entry process?
+    answer: The due date is WD 2 for legal reclass journal entry process
+  - question: What is the objective legal reclass journal entry process?
+    answer: The purpose of legal reclass journal entry activity is to process a miscellaneous
+      journal entry, to reclass legal activity that has been miscoded into the wrong
+      account.
+- context: "# Process Detail\n\n## Overview\n\n> A reclass entry must be processed\
+    \ for the legal activity that has been miscoded into a wrong account. An email\
+    \ would be received from the Legal department with the entry details and an approved\
+    \ journal voucher which serves as a backup for the entry. The invoice details\
+    \ must be researched in the PS as to confirm the ledger details that we are reclassing\
+    \ is correct, the entry must be processed into PS.\n\n## Process Description\n\
+    \n1.  Create a new folder for the month in the M drive.\n\n    1.  M drive \\\
+    >GA \\> SPREADSHEET CONTROL \\>Financial Statement Close \\>Kelli Huffaker \\\
+    >Misc Legal \\> Pxx MMM YYYY.\n\n2.  An email would be received from the Legal\
+    \ department, with the attachments. Open the excel file MCLANE_JE Template.\n\n\
+    3.  The file shows the debit and the credit details except for the effective date.\n\
+    \n4.  A copy of the Journal voucher which is approved by Katrina would be received\
+    \ though email.\n\n5.  The Journal voucher will show the effective date and wll\
+    \ have approval sign from Katrina.\n\n6.  Save the Journal voucher in the folder\
+    \ created. This voucher would be the backup for the entry.\n\n    1.  M drive\
+    \ \\>GA \\> SPREADSHEET CONTROL \\>Financial Statement Close \\>Kelli Huffaker\
+    \ \\>Misc Legal \\> Pxx MMM YYYY\n\n7.  Before processing the entry, research\
+    \ has to be made to confirm whether the amount that has been requested to be reclassed\
+    \ was actually posted to the account that we are reclassing from."
+  questions_and_answers:
+  - question: What needs to be done for the legal activity that has been miscoded
+      into a wrong account?
+    answer: A reclass entry must be processed for the legal activity that has been
+      miscoded into a wrong account. An email would be received from the Legal department
+      with the entry details and an approved journal voucher which serves as a backup
+      for the entry. The invoice details must be researched in the PS as to confirm
+      the ledger details that we are reclassing is correct, the entry must be processed
+      into PS.
+  - question: Where to create the new folder for the reclass entry ?
+    answer: 'Create a new folder for the month in the M drive: M drive >GA > SPREADSHEET
+      CONTROL >Financial Statement Close >Kelli Huffaker >Misc Legal > Pxx MMM YYYY.'
+  - question: What does the Journal voucher contain?
+    answer: The Journal voucher shows the effective date and will have approval sign
+      from Katrina.
+- context: "22.\tIf there are more than one invoice number apply sub total for the\
+    \ invoices, this file has to be attached as a backup while processing the entry.\
+    \ \n\n23. Save the file into the folder, this has to be uploaded into PS as backup.\n\
+    \n> 23.1. M drive \\>GA \\> SPREADSHEET CONTROL \\>Financial Statement Close \\\
+    >Kelli Huffaker \\>Misc Legal \\> Pxx MMM YYYY\n\n24. Next the entry has to be\
+    \ processed in PS.\n\n    1.  Main menu \\>General Ledger \\> Journals \\> Journal\
+    \ Entry \\> Create/ Update Journal Entries.\n\n25. Enter the BU -- 40100, Journal\
+    \ ID- NEXT, Journal date -- current date. Click on Add.\n\n26. Then enter the\
+    \ description for the JE -- To reclass Hartline invoices charged to wrong account.\
+    \ At the bottom it has to reflect as reversal because this would be a reversal\
+    \ entry.\n\n27. Click on lines and enter the entry details into PS from the Journal\
+    \ Voucher and click on Process.\n\n28. Create a new folder with the journal name\
+    \ in the same LAN path where the supporing documents are saved and move both the\
+    \ backup files, the journal voucher and the excel backup into it.\n\n29. Refer\
+    \ the attached \"Client_R2R_GA_Peoplesoft Journal Entry\" DTP for further steps\
+    \ to upload the supporting document and process the entry.\n\n# Definitions\n\n\
+    The following are definitions of acronyms used in this document:\n\n  Term   Definition\n\
+    \  ------ ---------------\n  PS     PeopleSoft\n  JE     Journal Entry"
+  questions_and_answers:
+  - question: What are the steps to process reclass entry in PeopleSoft?
+    answer: "1. The entry has to be processed in PS.\nMain menu >General Ledger >\
+      \ Journals > Journal Entry > Create/ Update Journal Entries.\n2. Enter the BU\
+      \ - 40100, Journal ID- NEXT, Journal date - current date. Click on\
+      \ Add.\n3. Then enter the description for the JE - To reclass Hartline\
+      \ invoices charged to wrong account. At the bottom it has to reflect as reversal\
+      \ because this would be a reversal entry.\n4. Click on lines and enter the entry\
+      \ details into PS from the Journal Voucher and click on Process."
+  - question: What does JE stands for?
+    answer: JE stands for Journal Entry.
+  - question: What to do if there are more than one invoice number in reclass entry
+      process?
+    answer: If there are more than one invoice number apply sub total for the invoices,
+      this file has to be attached as a backup while processing the entry.
+- context: "8.\tOpen the other excel file JE backup that was received through email\
+    \ along with the MCLANE_JE template.\n9.  The backup file shows the wrong matter\
+    \ and the correct matter. The transaction column shows the invoices numbers, these\
+    \ invoice numbers has to be checked in PS to \nconfirm the ledger account before\
+    \ processing the JE.\n\n10. To check the ledger details for the invoices, login\
+    \ to PS.\n\n    1.  Main Menu \\>Accounts Payable \\> Vouchers \\> Add/ Update\
+    \ \\> Regular Entry.\n\n11. The backup file dosen't have the vendor number, in\
+    \ order to get the vendor number enter the BU -- 40100 and the invoice number\
+    \ from the backup file and click on Search.\n\n12. Click on Invoice Information\
+    \ to get the vendor number for the invoice.\n\n13. Again open a new window.\n\n\
+    \    1.  Main menu\\> Reporting Tools \\>Query \\> Query Viewer.\n\n14. Then for\
+    \ the query ZI_AP_ACCTG_TAX_AUTH_NAV_DEF click on excel.\n\n15. Enter the BU-\
+    \ 40100, invoice number and the vendor number \\>Search.\n\n16. Under Summary,\
+    \ it shows the invoice amount and the modified date. Here, the modified date shows\
+    \ for the month of May.\n\n17. Go back to the query ZI_AP_ACCTG_TAX_AUTH_NAV_DEF,\
+    \ enter the Begining date and the end date. Example: here the modified month is\
+    \ May, so the begining date would be 5/1/2022 and the end date 5/31/2022, enter\
+    \ the vendor number and the BU. Click on View results.\n\n18. Once the report\
+    \ has been generated copy the query from the PS and update it in the generated\
+    \ report.\n\n19. Delete all the line items except for the invoice details that\
+    \ is required.\n\n20. Then except for the account number that we are looking for\
+    \ delete the remaing line items.\n\n21. Sum up the amount column and the total\
+    \ amount has to match with the amount that has been requested to be reclassed.\
+    \ So, this research confirms that the amount to be reclassed has been proccesed\
+    \ to the ledger account as mentioned in the excel file."
+  questions_and_answers:
+  - question: Which other file is sent through email along with the MCLANE_JE template?
+    answer: JE backup is sent through email along with the MCLANE_JE template. The
+      backup file shows the wrong matter and the correct matter. The transaction column
+      shows the invoices numbers, these invoice numbers has to be checked in PS to
+      confirm the ledger account before processing the JE.
+  - question: How to get the vendor number for the invoice in legal reclass entry?
+    answer: "To get the vendor number for the invoice in legal reclass entry, follow\
+      \ the steps as mentioned below:\n1. To check the ledger details for the invoices,\
+      \ login to PS.\nMain Menu >Accounts Payable > Vouchers > Add/ Update > Regular\
+      \ Entry.\n2. The backup file dosen't have the vendor number, in order to\
+      \ get the vendor number enter the BU - 40100 and the invoice number from\
+      \ the backup file and click on Search.\n3. Click on Invoice Information to get\
+      \ the vendor number for the invoice."
+  - question: Which query is used in the reclass entry?
+    answer: ZI_AP_ACCTG_TAX_AUTH_NAV_DEF is used in the reclass entry.

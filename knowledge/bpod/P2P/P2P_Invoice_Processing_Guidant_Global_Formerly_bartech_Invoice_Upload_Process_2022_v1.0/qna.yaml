@@ -1,0 +1,227 @@
+domain: 'BPOD procure to payment: P2P_Invoice Processing_Guidant Global (Formerly bartech)
+  Invoice Upload Process_2022_v1.0.doc'
+document_outline: Describes how IBM Delivery Centre will perform the processing of
+  Client Global invoices for payment in PeopleSoft.
+seed_examples:
+- context: "Document Information\nAbout this Document\n\n    This is official IBM\
+    \ guide document which describes how IBM Delivery Centre will perform the processing\
+    \ of Client Global invoices for payment in PeopleSoft. This document will be used\
+    \ for future reference, either for IBM team or for Client Team.\n\nWho should\
+    \ use this Document? {#who-should-use-this-document .list-paragraph}\n\n    This\
+    \ document can be used by the Payment Associate / Reviewer who will be processing\
+    \ Client Global invoices for payment in PeopleSoft.\n\nRevision/Approval History\n\
+    \nVersion number Effective Date Summary of Changes Author Reviewer Approver\n\n\
+    1 5/3/2022 Draft Amresh NT/ NR  \nOverview\nObjective(s)\n\n    These invoices\
+    \ are sent from Client or Client to the Knoxville uploads inbox (these are contingent\
+    \ workers) to process Client Global invoices for payment in PeopleSoft.\n\n  \
+    \  [Frequency]{.ul}: Weekly\n\n    [Source]{.ul}: Outlook Knoxville Uploads Mailbox\n\
+    \n    **[Policy:]{.ul}** N/A\n\n    **[System/Access:]{.ul}**\n\n    Outlook Mailbox\
+    \ access via an IT Service Desk Ticket.\n\n    M drive access via. DL Knox System\
+    \ Support\n\n    PeopleSoft access via EUR\n\nInputs & Outputs\n\n+-------------------+--------------------------------+\
+    \ | Input | From | +-------------------+--------------------------------+ | >\
+    \ Outlook mailbox | > Received from Client, Client | +-------------------+--------------------------------+\n\
+    \n+--------------------------+------------------------+ | > Output | > To | +--------------------------+------------------------+\
+    \ | Processed in people soft | > Payment to employees | +--------------------------+------------------------+\n\
+    Control Points\n\n+------------+--------------------------+--------------------------------------+----------------------------------------------------------+--------------------------------------------------------------------------------------------+---------------------------------------------------+-----------------------------------------------------------------+--------------+\
+    \ | > # | Sub process Activity | Sub process Activity Description | Control Objective(s)\
+    \ | Control Activity | Risk Assertions | Frequency (i.e. Event, Daily, Monthly,\
+    \ Quarterly, Annually) | Evidence | +============+==========================+======================================+==========================================================+============================================================================================+===================================================+=================================================================+==============+\
+    \ | | Rent and uploads | Client Global upload invoice process | We will upload\
+    \ all invoices into people soft for payment | Check all invoices are verified\
+    \ or researched correctly without miss to process the upload | To avoid delay\
+    \ in payment and duplicate payments. | Weekly | People soft | +------------+--------------------------+--------------------------------------+----------------------------------------------------------+--------------------------------------------------------------------------------------------+---------------------------------------------------+-----------------------------------------------------------------+--------------+\n\
+    Process Measurement Reports\n\n    This is an uploads process and will be uploaded\
+    \ when received.\n\nRoles & Responsibilities\nDescription\n\n+---------------------------+---------------------------------------+\
+    \ | > Role | > Responsibility | +===========================+=======================================+\
+    \ | > Invoice processing team | To upload the files in Peoplesoft and | +---------------------------+---------------------------------------+\n\
+    Segregation of Duties (SOD) Matrix\n\n    For the SOD assessment on conflicting\
+    \ tasks and accesses, please refer to the related Aggregate SOD (A-SOD). <SOD\
+    \ Matrix pending IBM GPS internal review and approval>"
+  questions_and_answers:
+  - question: In which system does invoie processing for payment take place?
+    answer: IBM Delivery Centre will perform the processing of Client Global invoices
+      for payment in PeopleSoft.
+  - question: How invoices are obtained?
+    answer: 'Invoices are sent from Client or Client to the Knoxville uploads inbox
+      (these are contingent workers) to process Client Global invoices for payment
+      in PeopleSoft.
+
+      Frequency: Weekly
+
+      Source: Outlook Knoxville Uploads Mailbox'
+  - question: Which team uploads invoices in Peoplesoft?
+    answer: Invoice processing team uploads invoices in Peoplesoft
+- context: 'If the support team says the file has uploaded, but it does not show in
+    Staged Vouchers, then enough time may have passed where the voucher has been created
+    and can be found in Regular Entry by searching by Business Unit and Invoice Number.
+    If the upload runs close to 4:30 EST, then you may ''miss'' the vouchers in staging
+    tables and they will be able to be viewed in Regular Entry since the voucher has
+    already been created.
+
+
+    Once the records have been verified in Staged Vouchers, save the file as email
+    subject line (example: Client Client Global Invoices 3-17-19) PS Confirmation
+    MMDDYYYY on the your OneDrive, then select Save.
+
+    Return to the M:\APVoucherUpload\CE Win 10\ExcelUploadforVoucher_InvUpload.xlsm
+    and close. Do not save when prompted.
+
+    Move DEST.XML file from the CE Win 10 folder to M:\APVoucherUpload\Archive\CE
+    DEST and rename to Client Global mmddyy
+
+    Return to Outlook Knoxville Uploads and select the original email.
+
+    Select Reply All
+
+    Send an email confirming that - Process has been completed and attached is PS
+    Confirmation file. (attach PS Confirmation file from OneDrive).
+
+    Wait for confirmation email to show in the Knoxville Uploads mailbox.
+
+    Move the Original and Confirmation emails to Bartech Completed folder.
+
+    You will need to log into \"M:\PAYSHARE\DATA\EXCEL\BACKLOG REPORT\Knox Uploads
+    Log.xlsx\" and enter any uploads you processed to PeopleSoft.
+
+    Definitions
+
+
+    Term Definition
+
+
+    PS PeopleSoft'
+  questions_and_answers:
+  - question: Which parameters do I need to find a file Regular Entry queue in PeopleSoft?
+    answer: "Voucher can be found in Regular Entry by searching by Business Unit and\
+      \ Invoice Number.  If the upload runs close to 4:30 EST, then you may\
+      \ 'miss' the vouchers in staging tables and they will be able to be viewed\
+      \ in Regular Entry since the voucher has already been created."
+  - question: How should I store processed vouchers?
+    answer: "1. Once the records have been verified in Staged Vouchers, save the file\
+      \ as email subject line (example: Client Client Global Invoices 3-17-19) PS\
+      \ Confirmation MMDDYYYY on the your OneDrive, then select Save.\n2. Return to\
+      \ the M:\\APVoucherUpload\\CE Win 10\\ExcelUploadforVoucher_InvUpload.xlsm and\
+      \ close.  Do not save when prompted.\n3. Move DEST.XML file from the CE Win\
+      \ 10 folder to M:\\APVoucherUpload\\Archive\\CE DEST and rename to Client Global\
+      \ mmddyy\n4. Return to Outlook Knoxville Uploads and select the original email.\n\
+      5. Select Reply All\n6. Send an email confirming that - Process has been completed\
+      \ and attached is PS Confirmation file. (attach PS Confirmation file from OneDrive).\n\
+      7. Wait for confirmation email to show in the Knoxville Uploads mailbox. \n\
+      8. Move the Original and Confirmation emails to Bartech Completed folder.\n\
+      9. You will need to log into \"M:\\PAYSHARE\\DATA\\EXCEL\\BACKLOG REPORT\\Knox\
+      \ Uploads Log.xlsx\" and enter any uploads you processed to PeopleSoft."
+  - question: What does abbreviation PS stand for?
+    answer: PeopleSoft
+- context: 'If there is an error with the upload, the box will say an error has occurred.
+    Review by running the PeopleSoft Staging process to ensure the file was truly
+    not uploaded. If the file does not exist in staging then you will need to start
+    the entire process again. If the error continues, then you may have bad data in
+    the file. In the original file, delete any blank rows at the bottom or blank columns
+    to the far right. If that still does not resolve the issue on the next attempt,
+    then contact local System Support to assist.
+
+    Open PeopleSoft to verify upload was successful.
+
+    Select Reporting Tools
+
+    Select Query Viewer
+
+    Search for Staged Vouchers query: ZI_AP_STAGED_VOUCHERS
+
+    Select Run to Excel
+
+    Enter Origin KUP (Knoxville Upload)
+
+    Select View Results
+
+    Select Open
+
+    Select Enable Editing
+
+    Scroll through the file to see if it matches the original file. In this case it
+    does and the upload was successful. If other transactions are showing in the Staging
+    Table, then filter out just those for the Bartech Vendor Codes referenced in the
+    original files.'
+  questions_and_answers:
+  - question: How to proceed if there is an error with the upload?
+    answer: If there is an error with the upload, the box will say an error has occurred.
+      Review by running the PeopleSoft Staging process to ensure the file was truly
+      not uploaded. If the file does not exist in staging then you will need to start
+      the entire process again.
+  - question: How to proceed ifupload error continues?
+    answer: If there is an error with the upload, the box will say an error has occurred.
+      Review by running the PeopleSoft Staging process to ensure the file was truly
+      not uploaded. If the file does not exist in staging then you will need to start
+      the entire process again.  If the error continues, then you may have bad data
+      in the file.  In the original file, delete any blank rows at the bottom or blank
+      columns to the far right.  If that still does not resolve the issue on the next
+      attempt, then contact local System Support to assist.
+  - question: In which query can I find staged vouchers in Peoplesoft?
+    answer: 'Search for Staged Vouchers query: ZI_AP_STAGED_VOUCHERS'
+- context: 'Note: However, if the query did not return any records, then continue
+    to run the query periodically over the next hour.  If the records still are not
+    showing, then an email must be sent to the IT Service Desk,copying .DL PeopleSoft
+    FSCM Support Team and request that the issue be assigned to the .DL PeopleSoft
+    FSCM Support Team to review. Please see an example of an email.
+
+    Note : In some cases a job has timed out ahead of the upload and once that it
+    cleared, the upload will feed into PeopleSoft.  There are other times when the
+    file has to be uploaded again.  Proceed with caution in those instances, as there
+    have been times when the file has been duplicated when we have been instructed
+    to upload again.  If the file is duplicated, then follow the Desk Procedures for
+    Pre-Edit and Recycle to clear.  If it is a large volume, then reference the File
+    Maintenance Desk Procedures for Mass Deletion.'
+  questions_and_answers:
+  - question: What to do in case query does not return any records in Peoplesoft after
+      file upload?
+    answer: If the query did not return any records, then continue to run the query
+      periodically over the next hour.  If the records still are not showing, then
+      an email must be sent to the IT Service Desk,copying .DL PeopleSoft FSCM Support
+      Team and request that the issue be assigned to the .DL PeopleSoft FSCM Support
+      Team to review.
+  - question: What to do in case job has timed out ahead of the upload?
+    answer: In some cases a job has timed out ahead of the upload and once that it
+      cleared, the upload will feed into PeopleSoft.  There are other times when the
+      file has to be uploaded again.  Proceed with caution in those instances, as
+      there have been times when the file has been duplicated when we have been instructed
+      to upload again.  If the file is duplicated, then follow the Desk Procedures
+      for Pre-Edit and Recycle to clear.  If it is a large volume, then reference
+      the File Maintenance Desk Procedures for Mass Deletion.
+  - question: How to proceed in case of upload file duplication?
+    answer: If the file is duplicated, then follow the Desk Procedures for Pre-Edit
+      and Recycle to clear.  If it is a large volume, then reference the File Maintenance
+      Desk Procedures for Mass Deletion.
+- context: "Process Detail\nOverview:\n\n    All Client Global invoices are processed\
+    \ for payment in PeopleSoft by uploading the files received in Knoxville uploads\
+    \ inbox on a weekly basis.\n\nProcess Description\nThis email is received from\
+    \ the Client or Client, and they provide this file (these are contingent workers)\
+    \ to the Client personal in Knoxville Upload inbox.\nThis email is normally sent\
+    \ by MK. Open the attachment.\nCopy all the line items.\nScroll to far right to\
+    \ make sure all lines items have been selected.\nNavigate to M:\\APVoucherUpload\\\
+    CE Win 10\\ExcelUploadforVoucher_InvUpload.xlsm\n\n    and open the file Excel\
+    \ upload for Voucher _Inv Upload.\n\nOpen the File.\nClick on Row 4, right-click\
+    \ and select Paste Special Values. Note: If Paste Special Values is not an option,\
+    \ then return to the original file and copy again. If Paste Special Values is\
+    \ not used, then the file will not upload to PeopleSoft. Once the data has been\
+    \ pasted, then click on \"Generate XML and Post\"\nEnter User ID and Password.\
+    \ Select OK\nCreate a Destination file in: M:\\APVoucherUpload\\CE Win 10, In\
+    \ file name enter, DEST.XML. Note: If a DEST.XML already exists, then it must\
+    \ be renamed (always include date in naming) and move it to M:\\APVoucherUpload\\\
+    Archive prior to creating a new one.\nIn file name enter, DEST.XML., Select Save\n\
+    Select OK"
+  questions_and_answers:
+  - question: Where can I find excel upload template?
+    answer: "Navigate to M:\\APVoucherUpload\\CE Win 10\\ExcelUploadforVoucher_InvUpload.xlsm\
+      \ \nand open the file Excel upload for Voucher _Inv Upload."
+  - question: What to do if paste special Value is not working?
+    answer: 'If Paste Special Values is not an option, then return to the original
+      file and copy again.  If Paste Special Values is not used, then the file will
+      not upload to PeopleSoft.
+
+      Once the data has been pasted, then click on "Generate XML and Post"'
+  - question: How to create a destination file in Peoplesoft?
+    answer: "1. Create a Destination file in:  M:\\APVoucherUpload\\CE Win 10,  In\
+      \ file name enter, DEST.XML.\nNote:  If a DEST.XML already exists, then it must\
+      \ be renamed (always include date in naming) and move it to M:\\APVoucherUpload\\\
+      Archive prior to creating a new one. \n2. In file name enter, DEST.XML., Select\
+      \ Save\n3. Select OK"

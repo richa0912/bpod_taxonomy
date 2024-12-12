@@ -1,0 +1,299 @@
+domain: 'BPOD order to cash: Fleet Invoicing'
+document_outline: Steps involved in Invoicing a Fleet and Bus customer once factory
+  invoice is completed, through RASS system.
+seed_examples:
+- context: "# Control Points\n\n  ***Step No.***   ***Sub process Activity***    \
+    \                ***Control Objective(s)***                                  \
+    \                                     ***Control Activity***                 \
+    \                                 ***Risk Assertions***                      \
+    \                           ***Frequency (i.e. Event, Daily, Monthly, Quarterly,\
+    \ Annually)***   ***Evidence***\n  ---------------- ---------------------------------------------\
+    \ ------------------------------------------------------------------------------------------------\
+    \ ----------------------------------------------------------------------- ---------------------------------------------------------------------\
+    \ ------------------------------------------------------------------- --------------------------------------------------------\n\
+    \  1.22             Credit limit for the customer in PeopleSoft   To make sure\
+    \ the credit balance in the customer account should not exceed the limit     \
+    \         Invoicing will be on hold for such customers and NAM will be notified\
+    \   Invoicing for the customer will not happen the credit limit is less   Daily\
+    \                                                               Mail sent to NAM\
+    \ for any credit limit exceed instance.\n  1.53             Invoice Amount mismatch\
+    \                       The invoice amount in worksheet summary, PO and factory\
+    \ invoice should be matched                Invoice will be on hold if the same\
+    \ is not matching                     Invoicing for the customer will not happen\
+    \                            Daily                                           \
+    \                    Mail sent to NAM for revised paper work\n  1.57         \
+    \    Warranty amount mismatch                      To make sure the warranty amount\
+    \ is matching with worksheet summary and agreed warranty amount   Invoicing will\
+    \ be on hold for such customers and NAM will be notified   Invoicing for the customer\
+    \ will not happen                            Daily                           \
+    \                                    Mail sent to NAM for any credit limit exceed\
+    \ instance.\n  1.60             SPA Number mismatch                          \
+    \ The SPA number in worksheet summary, PO and factory invoice should be matched\
+    \                    Invoice will be on hold if the same is not matching     \
+    \                Invoicing for the customer will not happen                  \
+    \          Daily                                                             \
+    \  Mail sent to NAM for revised paper work\n\n## Process Measurement Reports \n\
+    \nFleet invoicing activity should be performed on a daily basis."
+  questions_and_answers:
+  - question: What is the frequency of Fleet Invoicing activity?
+    answer: The Fleet Invoicing activity should be performed on a daily basis.
+  - question: Describe the Control points of Fleet Invoicing with their objectives.
+    answer: "The control points in Fleet Invoicing and their objectives are listed\
+      \ below.\n1. Credit limit for the customer in PeopleSoft: The credit balance\
+      \ in the customer account should not exceed the limit.\n2. Invoice Amount mismatch:\
+      \ The invoice amount should match in worksheet summary, PO and factory.\n3.\
+      \ Warranty amount mismatch: \tThe warranty amount should match with worksheet\
+      \ summary and agreed warranty amount.\n4. SPA Number mismatch: The SPA number\
+      \ should match in worksheet summary, PO and factory invoice."
+  - question: What are the risks when any of the control point in Fleet invoicing
+      is not met.
+    answer: If any of the control point in Fleet Invoicing is not met, Invoicing for
+      the cutomer will not happen.
+- context: '18. Login to PeopleSoft to identify the credit limit for the customer.
+    Go to Accounts Receivable\>Customer Accounts\>Customer Information\>Account Overview.
+    On the Balances tab, update SetID as FLEET, Unit as FLTUS and click on the magnifier
+    glass next to Customer option.
+
+    19. Select RYDER TRCUK RENTAL INC. This is the customer account for Ryder in PeopleSoft.
+
+    20. Once the customer account is selected, the previous page will open. Update
+    C in Level option and click on Search option
+
+    21. Check the Corporate Credit Limit for the customer. This Balance in the customer
+    account should never cross this credit limit. The invoicing should be on hold
+    for such instance and inform NAM about the same via email.
+
+    22. Save the credit limit on the path **[M:\\Sales Invoicing\\NAI\\Paperless Invoicing\\FY2022\\customer
+    folder\\Month\\Date]{.ul}** and with file name as date. Click on Save option.
+
+    23. Open the sharepoint link. The details on the share point link is updated based
+    on the location. As Ryder is the example shown here, click on location 424.
+
+    24. Open the Ryder bulk approval template.
+
+    25. Copy the entire spreadsheet
+
+    26. Paste into the excel downloaded from Truck movers website as a new tab. This
+    is done becuase due to surcharge change CSA team updates the latest truck invoice
+    amount into the file. This will help while performing invcoing.
+
+    27. Next step is to pull the factory invoice. Go to the Truck invoice viewer website
+    , Enter Account Number as the location number will 3 zeros preceeding. Click on
+    View option.
+
+    28. On the next screen update the chassis number or order number from the file
+    downaloded from Truck Movers website.Click on Search option.
+
+    29. This will pull up the factory invoice. Download it with PDF Broadgun machine.
+
+    30. Incase Truck Invoice Viewer website is not working, factory invoice can be
+    generated with below steps. If factory invoice was downloaded directly go to step
+    1.40. click on the window option on the engage website.
+
+    31. Scroll down and find Stellent Imaging option. Click on the option.
+
+    32. Update user name and password to login to the page.
+
+    33. Click on Find option. From the drop down menu select Document by Saved Search
+
+    34. On the next scree, click on the drop down arrow under Select a saved search
+    option. Select DTI U.S. Factory Invoices (SQL 9-6-06) option.
+
+    35. On the available option, update the CHASSIS details from the file downloaded
+    from Truck Movers website. Press ENTER on the keyboard.
+
+    36. Click on Send To option, fron the drop down menu select Email
+
+    37. Update fleet invoicing assistant email id and click on the Email option.
+
+    38. Fleet invoicing assistant will receive the factory invoice as an email attachment.
+    Below is the sample.
+
+    39. On the PDF Broadgun machine, these factory invoices will get add.'
+  questions_and_answers:
+  - question: How to check credit limit of a customer during Fleet Invoicing?
+    answer: '1. Login to PeopleSoft to identify the credit limit for the customer.
+      Go to Accounts Receivable>Customer Accounts>Customer Information>Account Overview.
+      On the Balances tab, update SetID as FLEET, Unit as FLTUS and click on the magnifier
+      glass next to Customer option.
+
+      2. Select RYDER TRCUK RENTAL INC. This is the customer account for Ryder in
+      PeopleSoft.
+
+      3. Once the customer account is selected, the previous page will open. Update
+      C in Level option and click
+
+      on Search option
+
+      4. Check the Corporate Credit Limit for the customer. This Balance in the customer
+      account should never
+
+      cross this credit limit. The invoicing should be on hold for such instance and
+      inform NAM about the same
+
+      via email.'
+  - question: How should the cutomer credit limit be saved?
+    answer: The custome's credit limit should be saved on the path 'M:\\Sales Invoicing\\NAI\\Paperless
+      Invoicing\\FY2022\\customer folder\\Month\\Date]' with file name as date.
+  - question: How can the factory invoice be generated when  Truck Invoice Viewer
+      website is not working?
+    answer: "When Truck Invoice website is not working, following steps can be used\
+      \ to generate the factory invoice.\n\n1. Scroll down and find and click on Stellent\
+      \ Imaging option. \n2. Enter user name and password to login to the page.\n\
+      3. Click on Find option. From the drop down menu select 'Document by Saved Search'\n\
+      4. On the next screen, click on the drop down arrow under 'Select a saved search'\
+      \ option. Select DTI U.S. Factory Invoices (SQL 9-6-06) option.\n5. On the available\
+      \ option, enter the CHASSIS details from the file downloaded from Truck Movers\
+      \ website. Press ENTER on the keyboard.\n6. Click on 'Send To' option, from\
+      \ the drop down menu select Email\n7. Enter email of fleet invoicing assistant\
+      \ and click on the Email option.\n8. Fleet invoicing assistant will receive\
+      \ the factory invoice as an email attachment. \n9. These factory invoices will\
+      \ get added to PDF Broadgun machine."
+- context: "84. Next go to RAST screen. Update Frieght amount and Surcharge amount\
+    \ on this screen from the checklist. To update SALES TAX EXEMPT information follow\
+    \ next step.\n85. Open Sals Tax Tables file from path **[M:\\\\Sales Invoicing\\\
+    \\NAI\\\\DATA\\\\Excel]{.ul}**\n86. On the data, if C1 is mentioned against any\
+    \ state that means sales tax applicable. If the column is black and percentage\
+    \ mentioned, sales tax is not applicable for those states.\n87. After updating\
+    \ sales tax details go to screen RAGP. Update the details related to special P&D\
+    \ on this screen from the checklist created.\n88. Next screen to update is RASO.\
+    \ Update the Warranty, Customer rebate and Vendor Assistance details on this screen\n\
+    89. Next screen to update is RACI. There are 3 screens to be checked under RACI.\
+    \ Information on this screen need not to be changed always. Cross verify the details\
+    \ on the screen with the supportings docuemnts created.\n\n> Cross check delivery\
+    \ address with the Truck Movers data downloaded.\n> Cross check delivery/completion\
+    \ date with Truck Movers data downloaded. Based on customer terms update the details\
+    \ correctly.\n\n90. Move to next screen by pressing F7 on the keyboard. Based\
+    \ on customer terms change the Y to N.\n91. Press **F7** to move to next screen.\
+    \ Check the Destination charge and A/R terms on this screen. Based on customer\
+    \ terms A/R terms will differ. If the customer needs to be billed based on completion\
+    \ term, update A. If the customer needs to be billed based on delivery term, update\
+    \ B.\n92. Now come back RAPH screen. Check the 1R CONC column. Currently all the\
+    \ rebate/discount amount will be sitting on this column. There should not be anything\
+    \ on this column before releasing a unit for invoicing\n93. Update \\$99,000.00\
+    \ on SPA amount column type **X** and press ENTER on keyboard\n94. This will bring\
+    \ down the 1R CONC column amount\n95. Update the balance amount on OTHER CONC\
+    \ column and put 6T as code. This will make 1R CONC column zero.\n96. Some time\
+    \ the actual used SPA amount will become greater than authorized SPA. In such\
+    \ cases, an email should be sent to Knoxville partners for approving the additional\
+    \ rebate amount. \n\n97. If the documents are pending or waiting for any approval,\
+    \ update HOLD INTERNAL INVOICE option as ''**Y\".** This will hold the invoice,\
+    \ revenue will not be generated and customer invoice will not be printed.\n98.\
+    \ If all the documents are received and no issues on the approals, update HOLD\
+    \ INTERNAL INVOICE as **''N\"**. This will recognize the revenue and customer\
+    \ invoices will get generated during overnight batch run.\n99. On the fleet backlong\
+    \ file, update the details of invoices that are released in RASS. Pre Auditor\
+    \ will refer this file for auditing.\n100. Follow the above steps for all the\
+    \ customers. There are few customers FET calculation is not required. Exclude\
+    \ those steps for such cistomers. This concludes the activity."
+  questions_and_answers:
+  - question: Where can we get the Sales Tax tables file?
+    answer: Sales Tax tables file is available at 'M:\\Sales Invoicing\\NAI\\DATA\\Excel'.
+  - question: How to check if a customer is sales tax exempt in Fleet billing?
+    answer: 'To check if a customer is sales tax exempt, follow these steps.
+
+      1. Open Sals Tax Tables file from path ''M:\\Sales Invoicing\\NAI\\DATA\\Excel''
+
+      2. In the data, if C1 is mentioned against any state that means sales tax applicable.
+      If the column is black and percentage mentioned, sales tax is not applicable
+      for those states.'
+  - question: Which column contains the rebate / discount information in the RAPH
+      screen in Fleet Invoicing?
+    answer: The column 1R CONC in RAPH screen contains rebate / discount information.
+- context: '> **[Retail Accounting Customer Invoice Maintenance(RACI)]{.ul}** : There
+    are three screens to be updated for Customer Invoices (RACI). On the first screen,
+    the filed to update is the completion or delivery date. If the customer is based
+    upon delivery, the delivery date must be updated. This is the date, the unit was
+    delivered to final destination. If the customer is based upon completion, then
+    the completion date field must be updated with the date the unit was completed
+    as contracted by Client. The [A/R account number]{.ul} should be verified. The
+    [Customer P.O number]{.ul} should match with what''ss on customer''s purchase
+    order. [Customer ID]{.ul} should be verified with the invoice suffix numbers.
+    The Invoice Suffix are specific to customers. This suffix must be set up with
+    every address change or new Parent-Child relationship. For example, a state customer
+    may have certain municipalities that order from the state contract. Such cases,
+    municipality is the customer being invoiced, not the State. Therefore a new suffix
+    must be set up for the municipality. This information will be reflected on the
+    customer invoice. The [Ship To Address]{.ul} must reflect the vehicle''s final
+    destination from Client. For instance, if the truck is left at a dealership,but
+    Client is paying the dealer to deliver the truck to a customer, the customer''s
+    address is put into the ship to field. This information will be reflected on the
+    customer invoice.
+
+    > On the second RACI screen, the fields to update are the [A/R terms]{.ul} and
+    the [number of days]{.ul}. If the customer''s A/R terms are based upon delivery,
+    ''"B" must be entered. If the customer is based upon completion, then "A" must
+    be entered. The top section will show the [due date]{.ul} based upon these terms.
+    The next field is the [number of days]{.ul} that the customer has to pay from
+    either completion or delivery. For example, if a customer''s payment terms are
+    30 days from delivery, 30 is entered next to days from delivery date. The top
+    section of this screen shows what will be reflected on the customer invoice. Some
+    customer invoices show only the total invoice price with F.E.T, the destination
+    charge or the P&D cost. If these fields are being shown, the Invoicing Assistant
+    must verify that they are correct.'
+  questions_and_answers:
+  - question: What is the full form of RACI in Fleet Invoicing?
+    answer: In Fleet Invoicing, RACI stands for 'Retail Accounting Customer Invoice
+      maintenance'
+  - question: What details should be added or update on first RACI screen in Fleet
+      Invoicing?
+    answer: "Following details should be updated on the first RACI screen: \n\n1.\
+      \  Completion or Delivery Date: \n2. A/R account number\n3. Customer P.O number\n\
+      4. Customer ID\n5. Ship To Address"
+  - question: What should be entered in A/R terms field in second RACI screen?
+    answer: In the second RACI screen, if the customer's A/R terms are based upon
+      delivery, 'B' must be entered. If the customer's A/R terms are based upon completion,
+      then 'A' must be entered.
+- context: '> **[Retail Accounting Suspense accounts and Other entries(RASO)]{.ul}**
+    : This screen is used to book suspense account entries such as extended warranties,
+    rebates, overallowance, vendor''s assistance and advanced goods purchased accounts.
+    The first entry on this screen is for [Extended Warranty]{.ul}. When booking an
+    extended warranty, enter the Warranty Policy Number. The policy numbers are formatted
+    in the RASS system and must match the price in the system. An invoicing assistant
+    is never to override this information, contact NAM for assistance in verifying
+    the dollar amount for the specific warranty policy.
+
+    > The second entry on this screen is for a [Soft Dollar amount]{.ul}. The account
+    number details can be found on the AR database located at M drive. Account number
+    can be identified by looking for the correct location for the customer and then
+    by description.
+
+    > The third entry is for Vendor''s Assistance. These are 9 control account numbers
+    set up for specific vendor''s assistance applied on the SPA. The account numbers
+    are as follows:
+
+    Michelin - 154900773
+
+    Cummins - 154900807
+
+    Caterpillar - 154900815
+
+    Eaton - 154900849
+
+    Goodyear - 154900856
+
+    Meritor - 154900864
+
+    Miscellaneous-154900872(Accuride, Alcoa, Bendix, BorgWarner, Continental, Dana
+    Spicer, Fontaine...
+
+    Allison - 154900880
+
+    > The fourth entry on this screen is for [Goods Purchased]{.ul}. When an invoice
+    for GP is paid before a truck is released, the invoice is given an Advanced GP
+    Number. This amount is booked on RASO screen instead of RAGP screen.'
+  questions_and_answers:
+  - question: What are the control accounts for vendor assistance in Fleet billing?
+    answer: "The control accounts for vendor assistance are listed below:\n1. Michelin:\
+      \ 154900773\n2. Cummins: 154900807\n3. Caterpillar: 154900815\n4. Eaton: 154900849\n\
+      5. Goodyear: 154900856\n6. Meritor: 154900864\n7: Miscellaneous: 154900872(Accuride,\
+      \ Alcoa, Bendix, BorgWarner, Continental, Dana Spicer, Fontaine\u2026\n8. Allison:\
+      \ 154900880"
+  - question: What is the meant by RASO?
+    answer: RASO stands for 'Retail Accounting Suspense accounts and Other entries'.
+      This screen is used to book suspense account entries such as extended warranties,
+      rebates, overallowance, vendor's assistance and advanced goods purchased accounts.
+  - question: Which type of entries are entered on Goods Purchased screen of RASO?
+    answer: When an invoice for GP is paid before a truck is released, the invoice
+      is given an Advanced GP Number. This amount is booked on the fourth RASO screen
+      called 'Goods Purchased'.

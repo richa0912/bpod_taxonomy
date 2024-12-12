@@ -1,0 +1,190 @@
+domain: 'BPOD Record to Analyze: Fixed Asset Accounting-Fixed Asset Maintenance-Asset
+  Transfer  2022 V1.0'
+document_outline: Describes how IBM Delivery Centre will perform the Asset Transfer
+  Process.
+seed_examples:
+- context: "# Control Points\n\n  ***\\#***   **Sub process Activity**           \
+    \                               **Sub process Activity Description**         \
+    \                                  **Control Objective(s)**                  \
+    \                **Control Activity**                                        \
+    \ **Risk Assertions**         **Frequency (i.e. Event, Daily, Monthly, Quarterly,\
+    \ Annually)**   **Evidence**\n  ---------- -----------------------------------------------------------------\
+    \ ------------------------------------------------------------------------------\
+    \ --------------------------------------------------------- ------------------------------------------------------------\
+    \ --------------------------- -----------------------------------------------------------------\
+    \ --------------------\n  1          Fixed Asset Accounting- Fixed Asset Maintenance-\
+    \ Asset Transfer   The Process is to transfer asset between department or between\
+    \ Business unit   Transfer asset with correct department or Business unit   To\
+    \ transfer asset with correct department or Business unit   Incorrect Asset Reporting\
+    \   As Needed                                                         Email Confirmation\n\
+    \n## Process Measurement Reports \n\n> As Needed. Accountant has to spend 5 to\
+    \ 10 Minutes per asset to perform this activity (Request has to be processed within\
+    \ 48 hours from email received)."
+  questions_and_answers:
+  - question: What is the risk assertion associated with the Fixed Asset Accounting-
+      Fixed Asset Maintenance- Asset Transfer process?
+    answer: The risk assertion is that incorrect asset reporting may occur if the
+      asset is not transferred correctly.
+  - question: What is the control objective of the Fixed Asset Accounting- Fixed Asset
+      Maintenance- Asset Transfer process?
+    answer: The control objective is to transfer asset with correct department or
+      Business unit.
+  - question: How often is the Fixed Asset Accounting- Fixed Asset Maintenance- Asset
+      Transfer process performed?
+    answer: The process is performed as needed, and it takes 5 to 10 minutes per asset
+      to perform the activity, which must be processed within 48 hours from email
+      received.
+- context: "# Overview\n\n## Objective(s)\n\n> To transfer the assets between departments\
+    \ or Business units as requested.\n\n### Frequency: \n\n> As Needed (Based on\
+    \ Email Request)\n\n### Source: \n\n-   E-mail\n\n### System Accesses:\n\n-  \
+    \ PeopleSoft Asset Management\n\n-   M Drive\n\n-   PS Query\n\n-   Outlook\n\n\
+    -   EchoSign\n\n## Inputs & Outputs\n\n+---------------------+---------------------+\n\
+    | Input               | From                |\n+---------------------+---------------------+\n\
+    | E-mail Notification | > Business Partners |\n+---------------------+---------------------+\n\
+    \n+---------------------+---------------------+\n| Output              | To  \
+    \                |\n+---------------------+---------------------+\n| E-Mail Confirmation\
+    \ | > Business Partners |\n+---------------------+---------------------+"
+  questions_and_answers:
+  - question: What system and application accesses are required to perform Fixed Asset
+      Maintenance Asset Transfer Process?
+    answer: "The following system and application accesses are required to perform\
+      \ Fixed Asset Maintenance Asset Transfer Process.\n\u2022\tPeopleSoft Asset\
+      \ Management\n\u2022\tM Drive\n\u2022\tPS Query\n\u2022\tOutlook\n\u2022\tEchoSign"
+  - question: What is the Objective of Fixed Asset Maintenance Asset Transfer Process?
+    answer: The Objective of Fixed Asset Maintenance Asset Transfer Process is to
+      transfer the assets between departments or Business units as requested.
+  - question: What is the output of Fixed Asset Maintenance Asset Transfer Process?
+    answer: The output of Fixed Asset Maintenance Asset Transfer Process is e-mail
+      confirmation to Business Partners.
+- context: "**Asset Transfer between Departments**\n\n## Process Description\n\n1.\
+    \  Receive E-mail from business partners to transfer the Assets in PeopleSoft.\n\
+    \n2.  Need to update the form referring the email and get signed by respective\
+    \ requestor (changed screenshot to correct form)\n\n3.  Send the form through\
+    \ EchoSign and get it signed -- process not shown here.\n\n> Please refer to generic\
+    \ Journal Trax procedure for EchoSign steps to be performed (Client_R2R_Posting\
+    \ JournalTrax Generic Journals_2022_V1.0)\n\n4.  Save the form in Share drive\
+    \ -- \\<location to be added at later stage\\>\n\n5.  Login to Peoplesoft with\
+    \ Client credentials to transfer Asset.\n\n6.  \n7.  To Asset transfer between\
+    \ departments.\n\n> Path : Main Menu > Asset Management > Asset Transactions > Financial\
+    \ Transaction > Cost Adjust/ Transfer Asset.\n\n-   Busuness Unit : 40100\n\n- \
+    \  Asset Identication : ITCP18062114\n\n8.  After selecting **Search**, below\
+    \ screen appears.\n\n-   Transaction Date : 7/25/2022 (Date will be mentioned\
+    \ in E-mail, otherwise confirm with PM)\n\n-   Leave 'Copy Changes to Other Books'\
+    \ checked\n\n-   Action : Transfer\n\n-   Click on GO\n\n9.  Below screen appears,\
+    \ click on cost Information\n\n-   Dept : 525001(which department need to transfer\
+    \ will mentioned in E-mail)\n\n-   Click on APPLY\n\n-   Click on Find/View All\n\
+    \n> **Note:** ~~Save the~~ Changes are finalized in the system after ~~manual~~\
+    \ depreciation run. If the change is for new asset, run depreciation manually\
+    \ before and after change. If the change is for old asset, run depreciation manually\
+    \ after change if you wish to confirm right away that the change took effect.\n\
+    \n10. After selecting View All below screen appears, copy the Asset ID.\n\n11.\
+    \ Go to Asset Depreciation in PeopleSoft\n\n> Path : Main Menu > Asset Management > \
+    \ Depreciation > Review Depreciation > Asset Depreciation\n\n-   Business Unit : 40100\n\
+    \n-   Asset Identification : ITCP18062114\n\n12. Here old Department is visible\
+    \ (Once changes are done, the new department will appear from the current month.\
+    \ On the month when changes happened, it will have both old and new departments)\
+    \ \n\n13. Click on Asset here for the Convention line. The same thing need to\
+    \ be updated on the Cost information tab of the Cost Adjust/Transfer Asset screen\
+    \ ~~the transfer department~~.\n\n14. Update based on above Screen Convenention\
+    \ column by Mid Month, Actual Month, Half year, etc., based on above screen sequentially\
+    \ and Click on SAVE."
+  questions_and_answers:
+  - question: How do you obtain approval for the asset transfer?
+    answer: To get approval for asset transfer, you need to update the form referring
+      to the email and get it signed by the respective requestor, and then send the
+      form through EchoSign to get it signed.
+  - question: What is the path to transfer assets between departments in PeopleSoft?
+    answer: The path to transfer assets between departments in PeopleSoft is Main
+      Menu > Asset Management > Asset Transactions > Financial Transaction > Cost
+      Adjust/Transfer Asset.
+  - question: What is the first step in the Asset Transfer between Departments process?
+    answer: The first step is to receive an email from business partners to transfer
+      the assets in PeopleSoft.
+- context: "11. Below screen appears and Click on Ok.\n\n12. Below screen appears\
+    \ and Click on Process Monitor.\n\n13. Below screen appears and Click on Refresh\\\
+    \n    Run Depreciation should change from Queued to Success\\\n    Distribution\
+    \ Status change from N/A to Posted\n\n14. To see the changes is the Depreciation\
+    \ has been run or not, below is the steps\\\n    Navigate to the below path:\\\
+    \n    Main menu > Asset Management > Depreciation > Review Depreciation Info > Asset Deprecaiton\\\
+    \n    Go to the\_**'Find the Existing Value'**,\\\n    Business Unit: 40100\\\n\
+    \    Asset Idnetification: ITCP18062113\\\n    Click on Search\\\n    Select on\
+    \ the Asset number .\n\n15. In Depreciation tab all asset books should be Zero\
+    \ balance because, it have transferd.\n\n16. In Period Depreciation tab for USA_CRPNW\
+    \ book asset has depreciated for half month because, asset uses Mid-Month depreciation\
+    \ convention.\n\n17. Another way to check depreciation with new BU\n\n-   Business\
+    \ Unit : 43000\n\n-   Assets Identification : ITCP18062113\n\n18. In Period Depreciation\
+    \ tab, here it shows the depreciation for ever month. Current month is shows half\
+    \ depreciation amount because, half is for old BU and other Half is for new BU."
+  questions_and_answers:
+  - question: 'During asset transfer between business units, what is the next step
+      after clicking on "Process Monitor"?'
+    answer: During asset transfer between business units, the next step after clicking
+      on "Process Monitor" is to click on Refresh and verify that the Run Depreciation
+      has changed from Queued to Success and the Distribution Status has changed from
+      N/A to Posted.
+  - question: During asset transfer between business units, how do you verify if the
+      depreciation has been run in PeopleSoft or not?
+    answer: During asset transfer between business units, to verify if the depreciation
+      has been run or not, you need to navigate to the Asset Depreciation screen,
+      select the asset number, and check if the Depreciation tab shows zero balance
+      for all asset books.
+  - question: How do you verify the depreciation for the new Business Unit (BU) in
+      PeopleSoft during asset transfer between business units?
+    answer: To verify the depreciation for the new Business Unit (BU) during asset
+      transfer between business units in PeopleSoft, you need to navigate to the Asset
+      Depreciation screen in PeoplSoft, select the new BU (43000), and check the Period
+      Depreciation tab to see if it shows the depreciation for every month, with the
+      current month showing half depreciation amount because half is for the old BU
+      and the other half is for the new BU.
+- context: "> **Asset Transfer between Business Unit**\n\n1.  Receive E-mail from\
+    \ Project Manager to transfer the Assets in PeopleSoft.\n\n> E-mail request not\
+    \ shown here as the trainer unable to find in inbox.\n\n2.  Login to Peoplesoft\
+    \ with Client credentials to transfer Asset between Business Units.\n\n5.  To\
+    \ Asset transfer between Business Unit.\n\n> Path : Main Menu > Asset Management > \
+    \ Asset Transactions > Financial Transaction > Cost Adjust/ Transfer Asset.\n\n- \
+    \  Busuness Unit : 40100\n\n-   Asset Identication : ITCP18062113\n\n-   Click\
+    \ on Search\n\n6.  After the selecting Search below screen appears.\n\n-   Transaction\
+    \ Date : 7/25/2022 (Date will be mentioned in E-mail if not preparer need to contact\
+    \ with manager to get confrimed on transaction date)\n\n-   Check the box in copy\
+    \ chargers to other books\n\n-   Transfer Other Books by : Percent\n\n-   Action\
+    \ : InterUnit Transfer\n\n-   Click on GO\n\n7.  After clicking GO below screen\
+    \ appears, fill the below highlighted fields by refering E-mail\n\n-   New Unit\
+    \ : 43000 -- new BU\n\n-   New Asset : ITCP18062113 -- same as asset ID on old\
+    \ BU\n\n-   Profile ID : 67 -- leave unchanged\n\n-   Use Profile : uncheck the\
+    \ box\n\n-   USD Convention : Actual Month -- match asset's existing convention\n\
+    \n-   Oper Unit : 30 (Operating unit should match with Department) -- update as\
+    \ needed\n\n-   Subaccount : update as needed\n\n-   Dept : 315000 -- update as\
+    \ needed\n\n> When transferring assets between BUs, the department and OU will\
+    \ most likely change.\n\n8.  Go to Asset Depreciation in PeopleSoft\n\n> Path\
+    \ : Main Menu > Asset Management > Depreciation > Review Depreciation Asset > Depreciation\n\
+    \n-   Business Unit : 40100\n\n-   Asset Identification : ITCP18062113\n\n-  \
+    \ Click on Search\n\n15. Click on Asset here the Convention line same thing need\
+    \ to be updated in the transfer department.\n\n16. Update based on above Screen\
+    \ Convention column be Mid Month, Actual Month, Half year and Click on SAVE.\n\
+    \n> **In Assets whatever changes are made, Depreciation need to be run manually\
+    \ if you want to confirm right away that changes have taken effect or if additional\
+    \ changes are needed on the same assets. PeopleSoft will run depreciation automatically\
+    \ at certain point of time but better to have it run manually especially if needed\
+    \ to be reflected immediately for next updates.**\n\n9.  To run Depreciation\n\
+    \n> Path : Main Menu > Asset Management > Depreciation > Processing > Calculate\n>\n>\
+    \ Click on Search, below Search Result appear click on Depreciation\n\n10. Below\
+    \ screen appears and update the deails.\\\n    Unit -- Asset business unit\\\n\
+    \    Process Frequency -- select\_**'Once'**\_from the drop down\\\n    From Asset\
+    \ ID -- Select the Asset that needed to be transferred highlighted"
+  questions_and_answers:
+  - question: What is the path to transfer assets between Business Units in PeopleSoft?
+    answer: The path to transfer assets between Business Units in PeopleSoft is Main
+      Menu > Asset Management > Asset Transactions > Financial Transaction > Cost
+      Adjust/Transfer Asset.
+  - question: During Asset tranfer between Business Units, what should you do after
+      updating the Convention column in the Asset Depreciation screen?
+    answer: During Asset tranfer between Business Units,  click on Save after updating
+      the Convention column.
+  - question: During asset transfer betwee business units, why is it important to
+      run depreciation manually in PeopleSoft?
+    answer: During asset transfer betwee business units, it is important to run depreciation
+      manually in PeopleSoft if you want to confirm right away that changes have taken
+      effect or if additional changes are needed on the same assets. PeopleSoft will
+      run depreciation automatically at a certain point in time, but it is better
+      to have it run manually, especially if needed to be reflected immediately for
+      next updates.

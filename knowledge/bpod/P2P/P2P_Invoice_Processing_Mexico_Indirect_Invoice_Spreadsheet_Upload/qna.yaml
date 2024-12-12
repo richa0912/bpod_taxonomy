@@ -1,0 +1,357 @@
+domain: 'BPOD procure to payment: P2P_Invoice Processing_Mexico Indirect Invoice Spreadsheet
+  Upload.docx'
+document_outline: Describes how IBM Delivery Centre will perform the Client indirect
+  invoices spreadsheet upload process
+seed_examples:
+- context: "By using paste special values, paste the copied data into vendor code\
+    \ column of Formatting Do Not Delete excel spreadsheet.\n\n    Values get pasted\
+    \ in vendor code column.\n\n    Go back to Client Indirect Report spreadsheet\
+    \ and copy the column E (Folio) which is Invoice number column.\n\n    By using\
+    \ paste special values, paste the copied data into Invoice number column of Formatting\
+    \ Do Not Delete excel spreadsheet.\n\n    Values get pasted in Invoice number\
+    \ column and select convert to number to eliminate leading zeros in the Invoice\
+    \ number column.\n\n    Go back to Client Indirect Report spreadsheet and copy\
+    \ the column F (Total) which is Total invoice amount column.\n\n    Paste the\
+    \ copied data into Total amount column of Formatting Do Not Delete excel spreadsheet.\n\
+    \n    Go back to Client Indirect Report spreadsheet and copy the column G which\
+    \ is currency column.\n\n    By using paste special values paste the copied data\
+    \ into Invoice currency column of Formatting Do Not Delete excel spreadsheet.\n\
+    \n    Values get pasted in the Invoice currency column.\n\n    Go back to Client\
+    \ Indirect Report spreadsheet and copy the column I (Fecha) which is Invoice date\
+    \ column.\n\n    By using paste special values, paste the copied data into Invoice\
+    \ date column of Formatting Do Not Delete excel spreadsheet.\n\n    Delete the\
+    \ invoice numbers which contains alphanumerical, hyphen in Invoice number column\
+    \ by clicking on drop down and tick the invoice numbers which contains alphanumerical\
+    \ and hyphen and click on OK.\n\n    Delete the appeared filter results.\n\n \
+    \   Right click and select Delete rows.\n\n    Make sure alphanumerical and hyphen\
+    \ Invoice numbers are not there in the list of filters and select all and click\
+    \ on OK.\n\n    Filter the vendor code column and check whether all the vendor\
+    \ codes are 5 digits, if not, Add the leading zero to those vendor codes.\n\n\
+    \    After adding leading zeros, filter the vendor code column by clicking on\
+    \ select all to get results.\n\n    Results will appeare.\n\n    Save the file\
+    \ as Client Indirect Invoices in M:/ > PAYSHARE > DATA > EXCEL >MX Indirect Reports\
+    \ > Analyst Receipt Bump.\n\n    Make a copy of file for backup.\n\n    Now, the\
+    \ file is ready to process in database.\n\n    Open Client invoices database in\
+    \ the following path.\n\n    Path: OneDrive > Client Invoices.\n\n    Select Client\
+    \ Indirect Menu from Client Invoices database.\n\n    There will be three steps\
+    \ to process in Client Invoice Database.\n\n    Import PeopleSoft Receipts\n\n\
+    \    Invoice Bump\n\n    Voucher Upload\n\n    File to be created to import PeopleSoft\
+    \ receipts into database.\n\n    Open PeopleSoft > Reporting tools > Query > Query\
+    \ viewer.\n\n    Select the query in excel format.\n\n    Click on Enable editing\
+    \ and delete the first row of spreadsheet.\n\n    Save the file as PeopleSoft\
+    \ receipts in M:/ > APCS > CLIENT > Indirect.\n\n    Go back to Client Invoice\
+    \ database and select Import PeopleSoft receipts.\n\n    It shows as peoplesoft\
+    \ indirect receipts Import completed and click on OK.\n\n    Second step is to\
+    \ select Invoice bump, and it populates as Client indirect invoice bump is completed\
+    \ and click on OK.\n\n    After second step of process i.e., Invoice bump,\n\n\
+    \    In M:/ > PAYSHARE > DATA > EXCEL > MX Indirect Reports > Analyst Receipt\
+    \ Bump folder, The Client Indirect Invoice original file will be disappeared.\n\
+    \n    Invoice Bump file will be shifted from Analyst receipt bump folder to Receipts\
+    \ needed folder. Cut the Client indirect excel file.\n\n    Paste the Client Indirect\
+    \ excel file in uploads folder."
+  questions_and_answers:
+  - question: How to eliminate leading zeros in the invoice number column?
+    answer: 'Go to Client Indirect Report spreadsheet and copy the column E (Folio)
+      which is Invoice number column.
+
+      By using paste special values, paste the copied data into Invoice number column
+      of Formatting Do Not Delete excel spreadsheet.
+
+      Values get pasted in Invoice number column and select convert to number to eliminate
+      leading zeros in the Invoice number column.'
+  - question: What is the location of client indirect invoice template storage?
+    answer: Save the file as Client Indirect Invoices in M:/ > PAYSHARE > DATA > EXCEL\
+      \ >MX Indirect Reports > Analyst Receipt Bump.
+  - question: How to navigate to Query viewer queue in PeopleSoft?
+    answer: Open PeopleSoft > Reporting tools > Query > Query viewer.
+- context: "Document Information\nAbout this Document\n\nThis is official IBM guide\
+    \ document which describes how IBM Delivery Centre will perform the Client indirect\
+    \ invoices spreadsheet upload process. These requests are received via email.\
+    \ The file needs to be formatted and uploaded in the Client invoice database,\
+    \ it gets processed automatically once we upload and auto emails will get generated.\
+    \ If any duplicate found, it will get stopped and that needs to be sent via mail.\n\
+    Who should use this Document?\n\n    This document can be used by the Invoice\
+    \ processing team/reviewer who are working on Client Indirect invoice spreadsheet\
+    \ upload process.\n\nRevision/Approval History\n\nVersion number Effective Date\
+    \ Summary of Changes Author Reviewer Approver\n\n1 30/5/2022  Draft AP NT  \n\
+    Overview\nObjective(s)\n\n    To create the spreadsheet upload through Client\
+    \ invoices tool for the invoices in Por Archivar and problem invoices (Rejected\
+    \ without receipt/ or revision). This is not the final upload to the people soft.\n\
+    \nInputs & Outputs\n\n+-----------+------+ | Input | From | +-----------+------+\
+    \ | > Outlook | > JB | +-----------+------+\n\n+---------------------------+---------------------------------------------------------+\
+    \ | Output | To | +---------------------------+---------------------------------------------------------+\
+    \ | > Client Invoice database | > Team member will upload the spreadsheet into\
+    \ Database | +---------------------------+---------------------------------------------------------+\n\
+    Control Points\n\n*** *** Sub process Activity Sub process Activity Description\
+    \ Control Objective(s) Control Activity Risk Assertions Frequency (i.e. Event,\
+    \ Daily, Monthly, Quarterly, Annually) Evidence\n\n*** ***\n#\n 1 Invoice Processing\
+    \ Client Client Indirect invoices Spreadsheet upload Creating and uploading the\
+    \ Client invoices Client invoices will be uploaded in the Client invoice data\
+    \ base, and it automatically get processed and an email will get generated If\
+    \ any duplicate found that needs to be removed from database and send an email\
+    \ Daily People soft and share drive\nProcess Measurement Reports\n\n    This report\
+    \ must be uploaded before 2:15 PM\n\nRoles & Responsibilities\nDescription\n\n\
+    Role Responsibility\n\nInvoice Processing Team Formatting and uploading of Client\
+    \ Indirect Invoice spreadsheet into Database\nSegregation of Duties (SOD) Matrix\n\
+    \n    For the SOD assessment on conflicting tasks and accesses, please refer to\
+    \ the related Aggregate SOD (A-SOD). <SOD Matrix pending IBM GPS internal review\
+    \ and approval>"
+  questions_and_answers:
+  - question: How is the upload request being received?
+    answer: These requests are received via email. The file needs to be formatted
+      and uploaded in the Client invoice database, it gets processed automatically
+      once we upload and auto emails will get generated. If any duplicate found, it
+      will get stopped and that needs to be sent via mail.
+  - question: Which team is responsible for formatting and uploading indirect spreadsheet
+      into Database?
+    answer: IBM Invoice Processing Team
+  - question: What is the deadline for report upload?
+    answer: This report must be uploaded before 2:15 PM
+- context: "Note: They will pull the invoice from the portal and manually find the\
+    \ receipts, looking at the invoice number received\n\n    Go to Client Invoice\
+    \ database, click on the main menu\n\n    Loco Client Client has sent an email\
+    \ that there will be a spreadsheet that has to be uploaded in 2 and 3 lines\n\n\
+    \    Save the received Excel attachments (Input 3 lines and Input 2 lines) in\
+    \ OneDrive.\n\n    Go to OneDrive and click on date modified to appear the saved\
+    \ excel file.\n\n    Right Click on Input 2 lines file and select rename.\n\n\
+    \    Rename the file as Mexfreight2 to import data into Client Invoices Database.\n\
+    \n    In the \"column N\" enter it as Tax acct\n\n    Select from \"column O to\
+    \ column XFD\" right click, a dialogue box will appear, select Delete\n\n    Select\
+    \ row numbers 219 to 1048574, right-click on the mouse and delete the rows (this\
+    \ is done to make sure nothing is there in the remaining rows and columns)\n\n\
+    \    Then save the file by clicking that icon\n\n    Then close the MexindPSFT051822\
+    \ and delete it\n\n    Mexfreight2 has been saved in the one drive\n\n    Go back\
+    \ to Client Invoices Database and click on Client Freight invoice 2 lines (it\
+    \ will look for duplicates if any duplicates are found then need to remove them\
+    \ from the data)\n\n    Next click on Mexican freight Invoice 2 lines, it will\
+    \ start to process\n\n    Then a dialogue box will appear that processing has\
+    \ been completed\n\n    An auto email or notification is generated by the Client\
+    \ Invoices Database.\n\n    Open email which is received from Loco Client Client\
+    \ and Save the file Input 3 lines 17^th^ May folder in OneDrive.\n\n    Click\
+    \ on Date modified, then the file input 3 lines 17 may folder will appear.\n\n\
+    \    Select the file and right click on it to rename.\n\n    Rename the file name\
+    \ from Input 3 lines to Mexfreight3 to import the data into Client Invoice Database.\n\
+    \n    Open the excel file and delete the rows, except rows and columns which contains\
+    \ data to avoid errors and format issues.\n\n    Then save the file.\n\n    Then\
+    \ it will appear at the beginning.\n\n    Then go to Client invoice processing,\
+    \ click on Client freight invoice 3 lines.\n\n    A dialogue box is populated\
+    \ if there is any kind of error or format issues.\n\n    Select the folder in\
+    \ OneDrive to check the error.\n\n    Delete last two column as they are not needed.\n\
+    \n    Then click on icon to save the document.\n\n    Click on Client Freight\
+    \ invoice 3 lines then it will find the duplicates, here the file will get automatically\
+    \ uploaded when we click on the Client freight 3 lines.\n\n    Invoices are being\
+    \ Processed.\n\nNote: If it stops processing or occurs an error, need to send\
+    \ it to Knoxville system support to review the database.\n\n    Then a dialogue\
+    \ box is populated that Client Freight invoice processing is completed.\n\n  \
+    \  Exit the Database.\n\n    Forward the message as completed and send it to the\
+    \ respective person or concerned team.\n\n    This is the email where database\
+    \ is generating emails or sending notifications.\n\nPortal reports are pulled\
+    \ and sent on Wednesday.\nDefinitions\n\nThe following are definitions of acronyms\
+    \ used in this document:\n\nTerm Definition\n\nMX Client ASN Advance Shipment\
+    \ Number CS Customer Service Analyst Team"
+  questions_and_answers:
+  - question: What is the deadline for pulling and sending Client invoice database
+      reports?
+    answer: Portal reports are pulled and sent on Wednesday.
+  - question: How to proceed in case of file upload error in Client invoice database?
+    answer: If upload stops processing or an error occurs, you need to send it to
+      Knoxville system support to review the database
+  - question: List out acronyms used in this desktop procedure along with the definitions
+    answer: "The following are definitions of acronyms used in this document:\nTerm\t\
+      Definition\nMX\t        Client\nASN\tAdvance Shipment Number\n CS\t        Customer\
+      \ Service Analyst Team"
+- context: "Process Detail\nOverview\n\nThe activity is about processing Client indirect\
+    \ invoices spreadsheet which needs to be formatted and uploaded in the Client\
+    \ invoice database. It will get processed automatically once it is uploaded and\
+    \ an auto email is generated. If any duplicate found, it will get stopped and\
+    \ that needs to be sent via mail.\nProcess Description:\n\nAny rejections or errors\
+    \ are found that is sent to kickout file. The Portal reports are pulled and sent\
+    \ on Wednesday. Receiving the Client indirect invoices which has been sent in\
+    \ mail and stored in the OneDrive, those invoices have to be formatted and uploaded\
+    \ in the Client invoice database. It will get processed when we uploaded it, if\
+    \ any duplicates found then it will get stopped and that needs to be sent to the\
+    \ email that it has a duplicate. Once it is processed, an automatic mail will\
+    \ be sent.\n\nExample: 1\n\n    An email is received from Jamie Beeler with subject\
+    \ Client Indirect Report for PS, and it contains an excel attachment.\n\n    Open\
+    \ the received Client Indirect Report for PS excel attachment.\n\n    Go to the\
+    \ below path to get spreadsheet template to import the data.\n\n    Path: M:/\
+    \ > PAYSHARE > DATA > EXCEL > MX Indirect Reports > Analyst Receipt Bump\n\n \
+    \   Delete the existing file which is processed previously or last time.\n\n \
+    \   Open Formatting Do Not Delete excel file.\n\n    Select records from ROW 3\
+    \ and drag down till end of the spreadsheet and delete it.\n\n    ROW 2 Information\
+    \ helps as reference for copy and paste.\n\n    Delete the selected records.\n\
+    \n    Go back to MX Indirect Report spreadsheet and copy column A which is portal\
+    \ ID column.\n\n    Paste the copied column A (Portal ID column) by using paste\
+    \ special values into Scan Number column of Formatting Do Not Delete excel spreadsheet.\n\
+    \n    Values get pasted in scan number column.\n\n    Go back to MX Indirect report\
+    \ spreadsheet and copy the column B (codigo) which is vendor code column.\n\n\
+    \    By using paste special values, paste the copied data into vendor code column\
+    \ of Formatting Do Not Delete excel spreadsheet.\n\n    Values get pasted in vendor\
+    \ code column.\n\n    Go back to Client Indirect Report spreadsheet and copy the\
+    \ column E (Folio) which is Invoice number column.\n\n    By using paste special\
+    \ values, paste the copied data into Invoice number column of Formatting Do Not\
+    \ Delete excel spreadsheet.\n\n    Values get pasted in Invoice number column\
+    \ and select convert to number to eliminate leading zeros in the Invoice number\
+    \ column.\n\n    Go back to Client Indirect Report spreadsheet and copy the column\
+    \ F (Total) which is Total invoice amount column.\n\n    Paste the copied data\
+    \ into Total amount column of Formatting Do Not Delete excel spreadsheet.\n\n\
+    \    Go back to Client Indirect Report spreadsheet and copy the column G which\
+    \ is currency column.\n\n    By using paste special values paste the copied data\
+    \ into Invoice currency column of Formatting Do Not Delete excel spreadsheet.\n\
+    \n    Values get pasted in the Invoice currency column.\n\n    Go back to Client\
+    \ Indirect Report spreadsheet and copy the column I (Fecha) which is Invoice date\
+    \ column.\n\n    By using paste special values, paste the copied data into Invoice\
+    \ date column of Formatting Do Not Delete excel spreadsheet.\n\n    Delete the\
+    \ invoice numbers which contains alphanumerical, hyphen in Invoice number column\
+    \ by clicking on drop down and tick the invoice numbers which contains alphanumerical\
+    \ and hyphen and click on OK.\n\n    Delete the appeared filter results.\n\n \
+    \   Right click and select Delete rows.\n\n    Make sure alphanumerical and hyphen\
+    \ Invoice numbers are not there in the list of filters and select all and click\
+    \ on OK.\n\n    Filter the vendor code column and check whether all the vendor\
+    \ codes are 5 digits, if not, Add the leading zero to those vendor codes.\n\n\
+    \    After adding leading zeros, filter the vendor code column by clicking on\
+    \ select all to get results.\n\n    Results will appeare.\n\n    Save the file\
+    \ as Client Indirect Invoices in M:/ > PAYSHARE > DATA > EXCEL >MX Indirect Reports\
+    \ > Analyst Receipt Bump.\n\n    Make a copy of file for backup.\n\n    Now, the\
+    \ file is ready to process in database.\n\n    Open Client invoices database in\
+    \ the following path.\n\n    Path: OneDrive > Client Invoices.\n\n    Select Client\
+    \ Indirect Menu from Client Invoices database.\n\n    There will be three steps\
+    \ to process in Client Invoice Database.\n\n    Import PeopleSoft Receipts\n\n\
+    \    Invoice Bump\n\n    Voucher Upload\n\n    File to be created to import PeopleSoft\
+    \ receipts into database.\n\n    Open PeopleSoft > Reporting tools > Query > Query\
+    \ viewer.\n\n    Select the query in excel format.\n\n    Click on Enable editing\
+    \ and delete the first row of spreadsheet.\n\n    Save the file as PeopleSoft\
+    \ receipts in M:/ > APCS > CLIENT > Indirect.\n\n    Go back to Client Invoice\
+    \ database and select Import PeopleSoft receipts.\n\n    It shows as peoplesoft\
+    \ indirect receipts Import completed and click on OK.\n\n    Second step is to\
+    \ select Invoice bump, and it populates as Client indirect invoice bump is completed\
+    \ and click on OK.\n\n    After second step of process i.e., Invoice bump,\n\n\
+    \    In M:/ > PAYSHARE > DATA > EXCEL > MX Indirect Reports > Analyst Receipt\
+    \ Bump folder, The Client Indirect Invoice original file will be disappeared.\n\
+    \n    Invoice Bump file will be shifted from Analyst receipt bump folder to Receipts\
+    \ needed folder. Cut the Client indirect excel file.\n\n    Paste the Client Indirect\
+    \ excel file in uploads folder.\n\n    Delete the old file which is processed\
+    \ previously or last time.\n\n    Open the Client Indirect excel file and filter\
+    \ the columns as shown in the below and click on comment receipt drop down.\n\n\
+    \    Select blanks and click on OK.\n\n    Delete the appeared results.\n\n  \
+    \  Click on comment receipts drop down, select all and click on OK.\n\n    Save\
+    \ the file.\n\n    Make a copy of file for safe side or backup."
+  questions_and_answers:
+  - question: What does email request for indirect invoice posting contain?
+    answer: "1.\tAn email is received with subject Client Indirect Report for PS,\
+      \ and it contains an excel attachment.\n2.\tOpen the received Client Indirect\
+      \ Report for PS excel attachment.\n3.\tGo to the below path to get spreadsheet\
+      \ template to import the data.\nPath: M:/ > PAYSHARE > DATA > EXCEL > MX Indirect\
+      \ Reports > Analyst Receipt Bump"
+  - question: What is the location of spreadsheet template for data import?
+    answer: 'Go to the below path to get spreadsheet template to import the data.
+
+      Path: M:/ > PAYSHARE > DATA > EXCEL > MX Indirect Reports > Analyst Receipt
+      Bump'
+  - question: In which system do indirect invoice requests need to be uploaded?
+    answer: Receiving the Client indirect invoices which has been sent in mail and
+      stored in the OneDrive, those invoices have to be formatted and uploaded in
+      the Client invoice database.
+- context: "Save the file as PeopleSoft receipts in M:/ > APCS > CLIENT > Indirect.\n\
+    \n    Go back to Client Invoice database and select Import PeopleSoft receipts.\n\
+    \n    It shows as peoplesoft indirect receipts Import completed and click on OK.\n\
+    \n    Second step is to select Invoice bump, and it populates as Client indirect\
+    \ invoice bump is completed and click on OK.\n\n    After second step of process\
+    \ i.e., Invoice bump,\n\n    In M:/ > PAYSHARE > DATA > EXCEL > MX Indirect Reports\
+    \ > Analyst Receipt Bump folder, The Client Indirect Invoice original file will\
+    \ be disappeared.\n\n    Invoice Bump file will be shifted from Analyst receipt\
+    \ bump folder to Receipts needed folder. Cut the Client indirect excel file.\n\
+    \n    Paste the Client Indirect excel file in uploads folder.\n\n    Delete the\
+    \ old file which is processed previously or last time.\n\n    Open the Client\
+    \ Indirect excel file and filter the columns as shown in the below and click on\
+    \ comment receipt drop down.\n\n    Select blanks and click on OK.\n\n    Delete\
+    \ the appeared results.\n\n    Click on comment receipts drop down, select all\
+    \ and click on OK.\n\n    Save the file.\n\n    Make a copy of file for safe side\
+    \ or backup.\n\n    Third step of process is voucher upload.\n\n    Open Client\
+    \ Invoice data base and select voucher upload.\n\n    This will check the data\
+    \ and process the invoices whether it has any duplicates, something wrong with\
+    \ invoices and emails the notifications. If there is any error, it shows an error\
+    \ message before it processes the invoices.\n\n    After completion of process,\
+    \ it shows dialog box as completed and click on OK.\n\n    Go back to Client Indirect\
+    \ Report spreadsheet which is raw data file and needs to remove invoices which\
+    \ are processed.\n\n    Open email which is auto generated with details.\n\n \
+    \   Till now, the number invoices processed are 144 and those invoices needs to\
+    \ be removed from Client Indirect Report spreadsheet file.\n\n    Open Client\
+    \ indirect PeopleSoft upload excel file from email attachment and filter all columns.\n\
+    \n    Click on drop down of column C and select blanks and click on OK.\n\n  \
+    \  Delete the appeared results.\n\n    Click on drop down of column C and select\
+    \ all and click on OK.\n\n    Filtered results will be appeared.\n\n    Column\
+    \ CW refers to portal ID reference, convert them to numbers.\n\n    Go back to\
+    \ Client Indirect Report spreadsheet which is raw data and apply VLOOKUP formula\
+    \ as shown in the below picture.\n\n        VLOOKUP formula will be VLOOKUP_Value,\
+    \ table_array, Col_index_num,(range_lookup)\n\n        Here lookup value is the\
+    \ Portal ID in the Client Indirect Report spreadsheet\n\n        Table array will\
+    \ the CW and CX in the Client Indirect Peoplesoft Upload file\n\n        \"2\"\
+    \ will be the column index\n\n        Enter it as false\n\n    Drag the formula\
+    \ up to the bottom of records.\n\n    Copy the comment column and paste it by\
+    \ using paste special values on the same column.\n\n    Filter the comment column\
+    \ by unticking N/A and click on OK.\n\n    Appeared results need to be removed\
+    \ from the spreadsheet as those 144 invoices were already processed.\n\n    Delete\
+    \ those 144 records.\n\n    Select drop down of comment column and click on select\
+    \ all and click on OK.\n\n    Open next email which is received with subject name\
+    \ 'kickouts'.\n\n    A kick out file which has been received in the outlook but\
+    \ in the database, it did find the receipts, but it is include in the kick out\
+    \ because there is a mismatch. The reason for the mismatch is, some locations\
+    \ will be put in different accounting within the receipt details.\n\n    Insert\
+    \ a column beside the Column G\n\n    Copy scan number from Column J and paste\
+    \ in the Column G\n\n    Convert column G into numbers to apply VLOOK UP formula.\n\
+    \n    It has been converted to numbers\n\n    In Client indirect PSFT 051822(Raw\
+    \ data) put the V lookup formula in the comment column\n\n    V lookup formula\
+    \ will be VLOOKUP_Value, table_array, Col_index_num,(range_lookup)\n\n    Here\
+    \ lookup value is the scan number in the raw data spreadsheet\n\n    Table array\
+    \ will be the scan number and comment in the kick out file\n\n    \"2\" will be\
+    \ the column index\n\n    Enter it as false\n\n    From the kick out file, we\
+    \ need to select the table array (the scan number as a comment)\n\n    It will\
+    \ look for the scan number and give a comment as the result hence need to select\
+    \ the scan number and comment in kick out file\n\n    For the first scan number\
+    \ in the comment v lookup has been applied, using those results go to the bottom\
+    \ end corner drag the formula to the bottom end down then the formula will be\
+    \ copied to the entire column.\n\n    Copy comment column and paste in the same\
+    \ column.\n\n    This copy and paste are done to remove the formula.\n\n    Sort\
+    \ the column by \"A to Z\" (that will pull up the receipts at the begging).\n\n\
+    \    Then select only #N/A (Not applicable)\n\n    Select comment column, right\
+    \ click and select 'clear contents'.\n\n    Then click on select all to display\
+    \ receipt numbers.\n\n    67 receipts have been sorted\n\nThis file is ready to\
+    \ send back to the data entry team. They will run the portal report and email\
+    \ it to the concerned person\n\n    Click on file.\n\n    Select share\n\n   \
+    \ A dialog box will appear, select Excel workbook\n\n    Send it to the data entry\
+    \ person, Carbon copy (CC) AP Client customer service.\n\n    Select only blanks\
+    \ and click on Ok (these are the ones we don't find any receipts)\n\n    Go to\
+    \ orden (PO), select few PO's and then click on OK. Two invoices have been selected"
+  questions_and_answers:
+  - question: Which steps should I take after indirect receipts import is completed?
+    answer: "Second step is to select Invoice bump, and it populates as Client indirect\
+      \ invoice bump is completed and click on OK.\nAfter second step of process i.e.,\
+      \ Invoice bump,\n\nIn M:/ > PAYSHARE > DATA > EXCEL > MX Indirect Reports >\
+      \ Analyst Receipt Bump folder, The Client Indirect Invoice original file will\
+      \ be disappeared.\n47.\tInvoice Bump file will be shifted from Analyst receipt\
+      \ bump folder to Receipts needed folder. Cut the Client indirect excel file.\n\
+      48.\tPaste the Client Indirect excel file in uploads folder.\n49.\tDelete the\
+      \ old file which is processed previously or last time.\n50.\tOpen the Client\
+      \ Indirect excel file and filter the columns as shown in the below and click\
+      \ on comment receipt drop down.\n\n51.\tSelect blanks and click on OK.\n52.\t\
+      Delete the appeared results.\n53.\tClick on comment receipts drop down, select\
+      \ all and click on OK.\n54.\tSave the file."
+  - question: Why should I select voucher upload in Client invoice database?
+    answer: 'This will check the data and process the invoices whether it has any
+      duplicates, something wrong with invoices and emails the notifications. If there
+      is any error, it shows an error message before it processes the invoices.
+
+      After completion of process, it shows dialog box as completed and click on OK.'
+  - question: Which xls function should I use to apply portal ID references?
+    answer: "Open Client indirect PeopleSoft upload excel file from email attachment\
+      \ and filter all columns.\nClick on drop down of column C and select blanks\
+      \ and click on OK.\nDelete the appeared results.\nClick on drop down of column\
+      \ C and select all and click on OK.\nFiltered results will be appeared.\nColumn\
+      \ CW refers to portal ID reference, convert them to numbers.\nGo back to Client\
+      \ Indirect Report spreadsheet which is raw data and apply VLOOKUP formula as\
+      \ shown in the below picture.\n\tVLOOKUP formula will be VLOOKUP_Value,\
+      \ table_array, Col_index_num,(range_lookup)\n\tHere lookup value is the\
+      \ Portal ID in the Client Indirect Report spreadsheet\n\tTable array will\
+      \ the CW and CX in the Client Indirect Peoplesoft Upload file\n\t\"2\"\
+      \ will be the column index \n\tEnter it as false"

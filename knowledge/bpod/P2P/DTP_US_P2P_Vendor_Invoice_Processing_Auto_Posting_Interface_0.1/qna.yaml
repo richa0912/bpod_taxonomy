@@ -1,0 +1,210 @@
+domain: 'BPOD procure to pay: DTP_US_P2P_Vendor Invoice Processing_Auto Posting Interface_0.1'
+document_outline: ' Describes how to process Auto Posting in SAP and verification
+  of invoice.'
+seed_examples:
+- context: '## Objectives of the Process
+
+
+    To verify the auto posted invoices in SAP for more than \$10K.
+
+
+    ## Inputs & Outputs
+
+
+    +--------------+-------------+
+
+    | Input        | From        |
+
+    +--------------+-------------+
+
+    | -   Invoices | -   Vendors |
+
+    +--------------+-------------+
+
+
+    +--------------------------------+-------------------------+
+
+    | Output                         | To                      |
+
+    +--------------------------------+-------------------------+
+
+    | -   Auto posted invoice report | -   Payment to Supplier |
+
+    +--------------------------------+-------------------------+'
+  questions_and_answers:
+  - question: What is the objective of the process Auto Posting in SAP?
+    answer: The objective of the process is to verify the auto posted invoices in
+      SAP for more than $10K.
+  - question: What is the input for the process Auto Posting in SAP?
+    answer: The input for the process is invoices from vendors.
+  - question: Who receives the output of the process Auto Posting in SAP?
+    answer: The output of the process, which is the auto posted invoice report, is
+      sent to the Payment to Supplier.
+- context: "## Process Measurements\n\n# Roles & Responsibilities\n\n## Description\n\
+    \n  ------------------------ --------------------------------------------------------------------------------\n\
+    \  **Role**                 **Responsibility**\n  ***IBM AP Processor***   *Ensure\
+    \ the auto posted invoices are verified for more than 10K invoice value*\n  ------------------------\
+    \ --------------------------------------------------------------------------------\n\
+    \n## SOD Matrix\n\nFor the SOD assessment on conflicting tasks and accesses, please\
+    \ refer to the related Aggregate SOD (A-SOD).\n\n# Process Detail\n\n## Auto Posting\
+    \ Interface -- SP01\n\n+------+----------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | Step | Description                                                         \
+    \                                                                   |\n+======+========================================================================================================================================+\n\
+    | 1\\.  | Auto Posting Interface SP01 -- Output Controller                   \
+    \                                                                    |\n|    \
+    \  |                                                                         \
+    \                                                               |\n|      | Who:\
+    \ IBM AP Analyst                                                             \
+    \                                                       |\n|      |          \
+    \                                                                            \
+    \                                                  |\n|      | When: Every Day\
+    \                                                                            \
+    \                                            |\n|      |                     \
+    \                                                                            \
+    \                                       |\n|      | Why: To ensure that all the\
+    \ invoices which have the more than 10K value posted through Auto Posting Interface\
+    \ in SAP have to validate. |\n|      |                                       \
+    \                                                                            \
+    \                     |\n|      | How: Export the auto posted file from SAP by\
+    \ using Tcode --SP01                                                         \
+    \               |\n+------+----------------------------------------------------------------------------------------------------------------------------------------+"
+  questions_and_answers:
+  - question: Who is responsible for verifying auto posted invoices with a value greater
+      than 10K?
+    answer: The IBM AP Processor is responsible for ensuring that auto posted invoices
+      with a value greater than 10K are verified.
+  - question: Which Tcode is used to export the auto posted file from SAP for verification?
+    answer: The Tcode used to export the auto posted file from SAP for verification
+      is SP01.
+  - question: How often are auto posted invoices verified for more than 10K invoice
+      value?
+    answer: 'Auto posted invoices are verified for more than 10K invoice value every
+      day.
+
+      '
+- context: 'Open the file in Excel.
+
+
+    Click on "Fixed with" and press on "Next" button.
+
+
+    See the below screen which is formated one.
+
+
+    Click on "Finish" button.
+
+
+    Save the Excel file and formate as required.
+
+
+    Login to load master imaging tool.
+
+
+    Enter the login id and passwod and press on "Login" button.
+
+
+    Press "DataBase" and Press on "popdta"
+
+
+    Press "File" menu and Press on "POP Vendor Invoices"
+
+
+    Click on "Query" button and fill the document no with adding the company code
+    from the excel sheet.
+
+
+    Click on "Exec" button.
+
+
+    All the information are given below about the particular document.'
+  questions_and_answers:
+  - question: What should be done to login to the load master imaging tool?
+    answer: To login to the load master imaging tool, open the tool and enter the
+      login id and password, then press on the "Login" button.
+  - question: What should be done after logging in to the load master imaging tool?
+    answer: After logging in to the load master imaging tool, press "Database" and
+      press on "popdta". Then press "File" menu and press on "POP Vendor Invoices".
+  - question: What should be done to search for a specific document in the load master
+      imaging tool?
+    answer: To search for a specific document in the load master imaging tool, click
+      on the "Query" button and fill the document no with adding the company code
+      from the Excel sheet. Then click on the "Exec" button. All the information about
+      the particular document will be displayed.
+- context: "Press\" Enter\" button to open the Invoice image to validate the information\
+    \ with excel sheet data.\n\nThe information highlighted below to be validated\
+    \ with the Invoice image data.\n\nValidate the posted invoices fields which is\
+    \ highlighted for more than 10K value, the fields are Vendor name/Invoice Number/Doc\
+    \ Date/Amount.\n\nOnce validated, then fill the \"Review\" coloumn as (\"OK\"\
+    \ and Initials of the person who review the document ) and save it.\n\nIf the\
+    \ invoice number field is wrong, can be edited in FBL1N screen, and if any other\
+    \ fields are wrong have to reverse the invoice and reprocess the invoice manually.\
+    \ (For processing the invoices Refer : PO Invoice processing document)\n\n# Definitions\n\
+    \nThe following are definitions of some terms commonly used in the PO Invoice\
+    \ Processing Process\n\n  **Term**     **Definition**\n  ------------ ------------------------\n\
+    \  PO Invoice   Purchase Order Invoice\n  GRN          Goods Received note\n"
+  questions_and_answers:
+  - question: What fields should be validated with the invoice image data?
+    answer: The fields that should be validated with the invoice image data are the
+      vendor name, invoice number, document date, and amount.
+  - question: What should be done if the invoice number field is wrong?
+    answer: If the invoice number field is wrong, it can be edited in the FBL1N screen.
+      If any other fields are wrong, the invoice should be reversed and reprocessed
+      manually.
+  - question: What does GRN stands for?
+    answer: GRN stands for Goods Received note.
+- context: 'The invoices which matches 3 way (PO/GRN/Invoice) will be interfaced to
+    SAP Automatically, Check the Invoices for more than \$10K value and validate with
+    invoice copy.
+
+
+    Login to SAP and click on t-code "SP01 Output Controller"
+
+
+    Enter the below information and click on "F8 - Execute" button.
+
+
+    Find the "CSR_BATCH" which is completed and put tick mark on the same.
+
+
+    Click on "glass" icon to view the details of posted entries.
+
+
+    Check for the Title for recent file. (ZINVAUTO)
+
+
+    Details shown as below.
+
+
+    Check the "Job Statistics"
+
+
+    Click on "Save to local file" icon
+
+
+    Select the "Spreadsheet" and click on "Green check" button.
+
+
+    Select the path and fill the File Name as mentioned below.
+
+
+    Click on "Generate" option.
+
+
+    Path : I:\\POP\\POP Invoice Interface\\
+
+    '
+  questions_and_answers:
+  - question: What is the t-code used to check the invoices for more than $10K value
+      and validate with invoice copy?
+    answer: ' The t-code used to check the invoices for more than $10K value and validate
+      with invoice copy is SP01 Output Controller.'
+  - question: What should be done after finding the "CSR\_BATCH" which is completed
+      in the SP01 Output Controller?
+    answer: After finding the "CSR\_BATCH" which is completed in the SP01 Output Controller,
+      put a tick mark on the same and click on the "glass" icon to view the details
+      of posted entries.
+  - question: What should be done after selecting the "Spreadsheet" when clicking
+      on the "Save to local file" icon?
+    answer: After selecting the "Spreadsheet" when clicking on the "Save to local
+      file" icon, the path "I:\\POP\\POP Invoice Interface\\" should be selected and
+      the File Name as mentioned should be filled, then click on the "Generate" option.

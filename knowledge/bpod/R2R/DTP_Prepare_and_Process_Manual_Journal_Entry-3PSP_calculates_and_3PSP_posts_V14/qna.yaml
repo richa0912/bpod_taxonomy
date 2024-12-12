@@ -1,0 +1,286 @@
+domain: 'BPOD record to analyze: DTP Prepare and Process Manual Journal Entry - 3PSP calculates
+  and 3PSP posts V14'
+document_outline: Describes the procedure to Prepare and Process Manual Journal Entry
+  for 3PSP calculates and 3PSP posts
+seed_examples:
+- context: "## 7.C Define Rules for Journal Entry (by Country or Supply Chain Company\
+    \ Finance Requestor) \n\n> The Country or Supply Chain Company Finance Requestor\
+    \ performs the periodic review of the financial figures and in case a new non-judgmental\
+    \ journal entry is required, the Finance Requestor defines the calculation rules\
+    \ and sends the information via e-mail (incl. calculation rules and working instructions)\
+    \ to the Service Provider Approver for review and communication to the Service\
+    \ Provider Accountant.\n>\n> The Country or Supply Chain Company Finance Requestor\
+    \ can also receive a notification from the Country or Supply Chain Company Controller\
+    \ to add a new journal entry to the NJJE list (refer to step *7.B. Approve Journal\
+    \ Schedule*).\n>\n> **Note**: The discussion on the new Non-Judgmental Journal\
+    \ Entries also takes place during the Country Lock Meeting (CLM) between the Country\
+    \ or Supply chain Company Finance representatives, the Operating Centre representatives\
+    \ and the Service Provider representatives. During the CLM the need for new non-judgmental\
+    \ accruals can be raised and confirmed via e-mail post the CLM.\n>\n> If any support\
+    \ is required, the Finance Requestor seeks support from the Operating Centre Accountant.\
+    \ Refer to step *7.D. Provide Accounting Support.*"
+  questions_and_answers:
+  - question: Who defines the calculation rules for a new non-judgmental journal entry?
+    answer: The Country or Supply Chain Company Finance Requestor defines the calculation
+      rules for a new non-judgmental journal entry.
+  - question: Who can notify the Country or Supply Chain Company Finance Requestor
+      to add a new journal entry to the NJJE list?
+    answer: The Country or Supply Chain Company Controller can notify the Country
+      or Supply Chain Company Finance Requestor to add a new journal entry to the
+      NJJE list.
+  - question: What is the purpose of the Country Lock Meeting (CLM)?
+    answer: The purpose of the Country Lock Meeting (CLM) is to discuss and confirm
+      the need for new non-judgmental journal entries between the Country or Supply
+      chain Company Finance representatives, the Operating Centre representatives,
+      and the Service Provider representatives.
+- context: "## 7.G Prepare Journal Entry Calculation (by Service Provider Accountant)\
+    \ \n\n> Based on the details included in the checklist of the non-judgmental postings\
+    \ as well as additional local specific instruction that are available, collect\
+    \ the necessary data for preparation of journal entries.\n>\n> **Note**: This\
+    \ also includes generating the required data from SAP.\n\n> The input for initiating\
+    \ the prepayment process may come as a result of one of the following processes:\n\
+    \n-   P2P process, when the invoice is posted for the liability that shall be\
+    \ split over several months (the P2P accountant may contact the R2R Accountant\
+    \ and inform him/her when the invoice is posted),\n\n-   R2R Account Reconciliation\
+    \ process, when the prepayment accounts are analyzed and the R2R accountant identifies\
+    \ that the prepayment posting is missing.\n\n> The Service Provider Accountant\
+    \ performs a regular review of the respective prepayment accounts and based on\
+    \ given materiality limits, decides whether:\n\n-   the posted items refer to\
+    \ current period cost and should be recognized directly into Profit & Loss Account\n\
+    \n-   or the posted items refer to the following periods and must be split into\
+    \ parts which will be posted into cost accounts in the respective future periods.\n\
+    \n> In case any accounting support is required, the Service Provider Accountant\
+    \ will contact the Operating Centre."
+  questions_and_answers:
+  - question: In 3PSP calculates and 3PSP posts manual journal entry process, what
+      are the sources of input for initiating the prepayment process?
+    answer: 'In 3PSP calculates and 3PSP posts manual journal entry process, the inputs
+      for initiating the prepayment process may come from:
+
+      *   P2P process: when the invoice is posted for the liability that shall be
+      split over several months.
+
+      *   R2R Account Reconciliation process: when the prepayment accounts are analyzed
+      and the R2R accountant identifies that the prepayment posting is missing.'
+  - question: In 3PSP calculates and 3PSP posts manual journal entry process, what
+      happens if the Service Provider Accountant requires accounting support?
+    answer: In 3PSP calculates and 3PSP posts manual journal entry process, if the
+      Service Provider Accountant requires accounting support, they will contact the
+      Operating Centre.
+  - question: In 3PSP calculates and 3PSP posts manual journal entry process, what
+      does the Service Provider Accountant review regularly?
+    answer: In 3PSP calculates and 3PSP posts manual journal entry process,  the Service
+      Provider Accountant performs a regular review of the respective prepayment accounts.
+- context: "### a. Prepare journal entry manually \n\n> In order to prepare the journal\
+    \ entry manually follow the steps below:\n\n1.  Go to BlackLine tool. When you\
+    \ access BlackLine, the homepage shows information relevant to your role, and\
+    \ the duties linked to this role. Make sure to select your role as a **Preparer**.\
+    \ To change the role, click on role selection link.\n\n2.  Click on **Preparer**\
+    \ link. Your view will be adjusted automatically.\n\n> **Note**: When accessing\
+    \ BlackLine for the first time, check the display settings. Click on your user\
+    \ icon and then select **Preferences**.\n\n> There is an option to select **Do\
+    \ Not Use Default Browser Language** which refers to language and number format.\
+    \ You may use this option if you wish.\n\n3.  Ensure that you are in the correct\
+    \ period. To change the period, click on the date on the top bar, and then click\
+    \ on the proper period.\n\n4.  To create a new journal, click on **Create** link\
+    \ on the top, go to **Journal** section and then select template **3PSP Calc &\
+    \ 3PSP Post** for needed platform.\n\n5.  Alternatively, to start creating a new\
+    \ journal manually, you can click **Products** link and then click **View Journal\
+    \ Progress** link.\n\n6.  This will take you to **Journals Grid**, where you click\
+    \ on **Add Journal** button, select the needed template from drop-down list and\
+    \ finally click on **Add Manually** button.\n\n7.  The form for selected journal\
+    \ template is displayed. There are the following sections visible:\n\n    -  \
+    \ **Settings** -- includes authorization routing information, will get updated\
+    \ automatically once the journal details are entered,\n\n    -   **Header** --\
+    \ includes all journal header details.\n\n8.  Fill in all mandatory fields in\
+    \ the **Header** section (indicated with an asterisk \"\\*\"):\n\n    -   **JE\
+    \ Classification** -- select value from drop-down list,\n\n    -   **Document\
+    \ Type** -- select value from drop-down list,\n\n    -   **Document Date** --\
+    \ enter the needed date or select from the calendar,\n\n    -   **Posting Date**\
+    \ - enter the needed date or select from the calendar,\n\n    -   **Document Header\
+    \ Text** -- enter document header,\n\n    -   **Header Company Code** -- enter\
+    \ the entity code,\n\n    -   **Document Currency** -- select the currency from\
+    \ drop-down list,\n\n> The **Document Type** SA is by default given by BlackLine\
+    \ Tool. All reversal accruals should have document type as per below table. For\
+    \ non-reversal accruals, the document type should be SA; however, it can be changed\
+    \ depending on the request."
+  questions_and_answers:
+  - question: What is the first step to prepare a journal entry manually in BlackLine
+      tool?
+    answer: The first step to prepare a journal entry manually in BlackLine tool is
+      to go to the BlackLine tool and select your role as a Preparer.
+  - question: What are the mandatory fields that need to be filled in the Header section
+      of the journal template?
+    answer: 'The mandatory fields that need to be filled in the Header section include:
+
+      *   JE Classification
+
+      *   Document Type
+
+      *   Document Date
+
+      *   Posting Date
+
+      *   Document Header Text
+
+      *   Header Company Code
+
+      *   Document Currency'
+  - question: How do you change the period in BlackLine?
+    answer: To change the period, click on the date on the top bar and then click
+      on the proper period.
+- context: '-   **3PSP calculates and 3PSP posts (Template 3**) -- is used for journal
+    entries calculated, prepared and approved by Service Provider; these journal entries
+    are calculated by the Service Provider based on the predefined list and rules
+    set up by Client on a yearly basis (the journals are processed by the Service
+    Provider, including e.g. accrual for borrowings interests'' costs, payroll costs,
+    advertising expenses, promotion expenses),
+
+    -   Reversal (Template 4) -- is used to reverse journal entries, that were not
+    marked as reversible during the initial approval process (the approval for reversal
+    entry is given as per TOA).
+
+    > All templates except Template 4, can be used to post reversible and non-reversible
+    journals. The same templates can be used for setting up the recurring entries.
+
+    > The restatement postings, which are mirror postings to main entry (initial entry
+    is the judgmental entry based on calculation and info received from Central Team)
+    are posted by the Service Provider. As the knowledge about the values is based
+    on data calculated by Central Teams (UBMS) and the Service Provider is not able
+    to explain the figures - in line with current GPM - it should be posted by UL
+    (not by the Service Provider).
+
+    > However, due to fact that those restatements need to mirror the initial posting
+    only, and no further judgment is required - it is still expected to be posted
+    by the Service Provider.
+
+    > If journals or accruals related to tax or payroll with clearly defined rules,
+    are calculated and prepared by the Service Provider, they are considered as non-judgmental
+    postings. The payroll-related entries, even if classified as judgmental, can be
+    initiated and posted by the Service Provider.
+
+    **Note**: All TB transfers from one ERP to another, that are performed in the
+    form of journal entry, can be treated as an exception from the reversing journals.
+    These transfers are not typical accrual journals, but the entire TB is being transferred
+    from non-SAP to SAP, as there is no direct interface.
+
+    > The number of manual accruals recognized should be limited due to the Client
+    policy "No PO, no pay" which means that all purchases apart from a few exceptions
+    listed in the Client policy have to be made based on Purchase Orders.
+
+    > **Note**: There is following special requirement regarding the intercompany
+    175\*-176\* series. All postings to be processed as non-reversible entries and
+    are subject to additional approval of IC Ops Hub prior to posting.
+
+    > When doing cross company journals, ensure the entry is netting to zero at Legal
+    entity level. You should not post cross journals which are not balancing to zero
+    at LE level using journals workflow and it must follow the Intercompany processes.'
+  questions_and_answers:
+  - question: What is the purpose of Template 3 (3PSP calculates and 3PSP posts )
+      in the journal entry process?
+    answer: Template 3 (3PSP calculates and 3PSP posts ) is used for journal entries
+      calculated, prepared, and approved by the Service Provider, based on predefined
+      lists and rules set up by the Client on a yearly basis.
+  - question: Who is responsible for posting restatement postings in the journal entry
+      process?
+    answer: Service Provider is responsible for posting restatement postings in the
+      journal entry process. Despite the fact that restatement postings require knowledge
+      about values calculated by Central Teams (UBMS) and should be posted by UL (not
+      by the Service Provider), it is still expected that the Service Provider will
+      post these entries, as they only need to mirror the initial posting without
+      requiring further judgment.
+  - question: What is the special requirement regarding the intercompany 175*-176*
+      series in the journal entry process?
+    answer: All postings in the intercompany 175*-176* series must be processed as
+      non-reversible entries and are subject to additional approval of IC Ops Hub
+      prior to posting.
+- context: '| > Service              | > The Service Provider Approver maintains and
+    confirms the NJJE list with the Country and other Service Providers (if applicable)
+    at the beginning of each month and sends the completed list to OC for information.                                                                                                                                                                                                                                                                                                                                                                                                                               |
+    [Maintain Journal Schedule]{.ul}                              |
+
+    | >                      | >                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                               |
+
+    | > Provider             | > The Service Provider Approver is responsible for
+    validating the journal and accrual entry definition and for returning them back
+    to the Finance Requestor if corrections are required. Also, he/she receives the
+    journal or accrual calculation for review and approval. He/She is responsible
+    for validating the request and approving it for direct posting to SAP, or for
+    forwarding it to the Service Provider Accountant for corrections if rejected.
+    The request is received, validated and approved or rejected through BlackLine
+    tool, which allows documenting history tracking and automatic notification of
+    relevant process parties. | [Validate Journal Entry Definition]{.ul}                      |
+
+    | >                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                               |
+
+    | > Approver             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+    [Reject Journal Entry Definition]{.ul}                        |
+
+    |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                               |
+
+    |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+    [Review Journal Entry]{.ul}                                   |
+
+    |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                               |
+
+    |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+    [Approve Journal Entry]{.ul}                                  |
+
+    |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                               |
+
+    |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+    [Reject Journal Entry]{.ul}                                   |
+
+    |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                               |
+
+    |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+    [Process Journal into ERP]{.ul}                               |
+
+    |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                               |
+
+    |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+    [Validate Schedule of Journals]{.ul}                          |
+
+    |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                               |
+
+    |                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+    [Request Adjustment]{.ul}                                     |
+
+    +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+
+    | > **Role**             | > **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+    **Responsibility**                                            |
+
+    +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+
+    |                        | > **Note**: On 175\*-176\* series only CG IC Hub is
+    authorized to approve Non-Judgmental Journal Entries.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                               |
+
+    +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+
+    | > Intercompany Ops Hub | > Intercompany Ops Hub is responsible for the review
+    of journal entries related to IC process before the journal can be submitted in
+    BlackLine.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+    [Review and Confirm IC Journal Entry]{.ul} [Calculation]{.ul} |
+
+    +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+
+    '
+  questions_and_answers:
+  - question: What are the responsibilities of the Service Provider Approver in 3PSP
+      calculate and 3PSP posts manual journal entry process?
+    answer: "In 3PSP calculate and 3PSP posts manual journal entry process, the Service\
+      \ Provider Approver is responsible for the following.\n*  Maintain Journal Schedule\
+      \ \n*  Validate Journal Entry Definition \n*  Reject Journal Entry Definition\
+      \  \n*  Review Journal Entry \n*  Approve Journal Entry \n*  Reject Journal\
+      \ Entry \n*  Process Journal into ERP \n*  Validate Schedule of Journals \n\
+      *  Request Adjustment "
+  - question: In 3PSP calculate and 3PSP posts manual journal entry process, who is
+      responsible for reviewing and confirming IC journal entries?
+    answer: In 3PSP calculate and 3PSP posts manual journal entry process, the Intercompany
+      Ops Hub is responsible for reviewing and confirming IC journal entries related
+      to the IC process before the journal can be submitted in BlackLine.
+  - question: Who is authorized to approve Non-judgemental Journal entries of 175*-176*
+      series.
+    answer: On the 175*-176* series, only the CG IC Hub is authorized to approve Non-Judgmental
+      Journal Entries.

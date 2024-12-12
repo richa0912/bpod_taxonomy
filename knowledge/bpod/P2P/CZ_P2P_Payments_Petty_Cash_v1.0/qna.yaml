@@ -1,0 +1,419 @@
+domain: 'BPOD procure to pay: CZ_P2P_Payments_Petty Cash_v1.0'
+document_outline: Describes how the IBM Delivery Centers perform petty cash process
+  from processing to checking the balance at the end of the month
+seed_examples:
+- context: "# Roles & Responsibilities\n\n## Description\n\n  -------------------------------------\
+    \ -------------------------------------------------------------------------------------\n\
+    \  **Role**                              **Responsibility**\n  **Client Requestor**\
+    \                  Initiate request for petty cash, provide the receipts\n  **Client\
+    \ Line Manager Approver**      Review and approve request\n  **Client P2P Manager**\
+    \                Assistance in case of exceeded limit\n  **Client Petty Cash Administrator**\
+    \   Review requests, issue cash to requestors, scanning the receipts and sending\
+    \ to IBM\n  **IBM AP Accountant**                 Check and approve coding and\
+    \ limits, post the petty cash, perform reconciliation\n  -------------------------------------\
+    \ -------------------------------------------------------------------------------------\n\
+    \n# Process Detail\n\n## Step Description\n\n### Submit Request for Petty Cash\n\
+    \n+-------------------------------------------+\n| Description               \
+    \                |\n+===========================================+\n| Who: Client\
+    \ Requestor                     |\n|                                         \
+    \  |\n| When: Once need for petty cash identified |\n|                       \
+    \                    |\n| Why: N/A -- on client side                |\n|     \
+    \                                      |\n| How: N/A -- on client side       \
+    \         |\n+-------------------------------------------+\n\n### Review Request\n\
+    \n+--------------------------------------------+\n| Description              \
+    \                  |\n+============================================+\n| Who: Client\
+    \ Line Manager Approver          |\n|                                        \
+    \    |\n| When: After request submitted by Requestor |\n|                    \
+    \                        |\n| Why: N/A -- on client side                 |\n|\
+    \                                            |\n| How: N/A -- on client side \
+    \                |\n+--------------------------------------------+\n\n### Request\
+    \ Rejected Confirmation\n\n+----------------------------------------------------------+\n\
+    | Description                                              |\n+==========================================================+\n\
+    | Who: Client Requestor                                    |\n|              \
+    \                                            |\n| When: Once request was rejected\
+    \ by Line Manager Approver |\n|                                              \
+    \            |\n| Why: N/A -- on client side                               |\n\
+    |                                                          |\n| How: N/A -- on\
+    \ client side                               |\n+----------------------------------------------------------+\n\
+    \n### Review the request\n\n+----------------------------------------------------------+\n\
+    | Description                                              |\n+==========================================================+\n\
+    | Who: Client Petty Cash Administrator                     |\n|              \
+    \                                            |\n| When: Once request was approved\
+    \ by Line Manager Approver |\n|                                              \
+    \            |\n| Why: N/A -- on client side                               |\n\
+    |                                                          |\n| How: N/A -- on\
+    \ client side                               |\n+----------------------------------------------------------+\n"
+  questions_and_answers:
+  - question: What are the responsibilities of Client Line Manager Approver and IBM
+      AP Accountant in the petty cash process
+    answer: 'The Client Line Manager Approver is responsible for reviewing and approving
+      the request for petty cash.
+
+      The IBM AP Accountant checks and approves coding and limits, posts the petty
+      cash, and performs reconciliation.'
+  - question: What happens when Client Requestor submits request for Petty Cash?
+    answer: The request is sent to Client Line Manager Approver for review.
+  - question: What should be done once the request for petty cash is rejected by Line
+      Manager Approver?
+    answer: Once the request for petty cash is rejected by Line Manager Approver,
+      the Client Requestor confirms the rejection.
+- context: '**- cost center --** check the attached file "Supporting data". Please
+    note, that the cost centers ending with **...4010** are assigned to materials
+    and those ending with **...4030** are assigned to transport for the same plant.
+
+
+    **- VAT code --** based on tax amount and tax rate on the receipt and the attached
+    file "Supporting data". If receipt has two VAT codes, it must be split into two
+    lines with two tax codes, as described above in case of incorrect GL number.
+
+
+    **Note:** If you are not able to determine one of the values, you can refer to
+    previous posting visible in FBCJ -- please compare the type of expense, description
+    etc. and copy the values accordingly.
+
+
+    Once all required data has been provided, you can move to step [5.2.19 Post the
+    petty cash](#post-the-petty-cash)
+
+
+    **Note**: There''s a special kind of posting done on a regular basis, based on
+    a services PO invoice received into the petty cash mailbox that was already paid
+    directly by the cashier. Example of such invoice is attached below.
+
+
+    In such case, the invoice should be posted against vendor as a regular PO invoice.
+    To check how to post this kind of invoice, please refer to the following DTP:
+    Client CZ_P2P_IP_Process Invoice - PO Invoice.
+
+
+    There will also be an open position in the FBCJ -- cash register. This open position
+    should be processed the same way as described above.
+
+
+    Below you can see how this kind of entry looks like in FBCJ transaction:
+
+
+    Next, the invoice posted against vendor account and the record in cash register
+    should be manually cleared in F-44 transaction -- please see instruction below.
+
+
+    Open F-44 transaction
+
+
+    Fill in the vendor number and company code and confirm with enter:
+
+
+    List of all open items will be displayed:
+
+
+    Select the lines you want to clear by double clicking on "CZK Gross" cell (as
+    stated on the screenshot below). You can search based on amount, assignment, or
+    any other criteria to be sure to pick up the correct lines. In the selected lines
+    the amount will be highlighted. The difference amount and Not Assigned amount
+    should always be zero.
+
+    '
+  questions_and_answers:
+  - question: What is the transaction to manually clear records in the P2P Payments
+      Petty Cash process?
+    answer: The record in cash register should be manually cleared in F-44 transaction
+  - question: How is the VAT code determined for a petty cash transaction?
+    answer: The VAT code for a petty cash transaction is determined based on the tax
+      amount and tax rate on the receipt and the attached file "Supporting data".
+      If the receipt has two VAT codes, it must be split into two lines with two tax
+      codes.
+  - question: What should be done if all required data for a petty cash transaction
+      cannot be determined?
+    answer: If all required data for a petty cash transaction cannot be determined,
+      the user can refer to the previous posting visible in FBCJ and compare the type
+      of expense, description, etc. to copy the values accordingly.
+- context: '**Bank transfer**
+
+
+    Documents indicating transfer of cash to the bank are usually confirmations from
+    post office or banks -- see example below. In such case, please follow the below
+    steps.
+
+
+    Check if amounts are matching between received documents and SAP. Please note
+    that for bank transfers, the "Business transaction" description in SAP also changes,
+    same as description:
+
+
+    To be able to post this kind of entry in SAP, please check and if necessary, fill
+    in or correct the following data:
+
+
+    -   **Business area** -- it should be always **1003** for company code 4300 and
+    **1004** for company code 4311
+
+
+    -   **Profit center** -- based on the attached file "Supporting data"
+
+
+    If you are not able to determine one of the values, you can refer to previous
+    posting visible in FBCJ -- please compare the type of expense, description etc.
+    and copy the values accordingly.
+
+
+    **Transfer of petty cash between two cash boxes**
+
+
+    For this kind of transaction there is a specific kind of document received via
+    email (see screenshots below) but this is not obligatory. If there will be no
+    supporting documents sent - in case you see an open entry in SAP for which no
+    corresponding email has been received and in the text field there''s information
+    about cash transfer to different cashbox (see screenshot below), please follow
+    the below steps. If there is no description in the text informing about cash transfer
+    between two cash boxes, please reach out to specific cash box administrator via
+    email.
+
+
+    1.  Open the cash journal mentioned in the text field (*Napajedla* in this example)
+    in new SAP window.
+
+
+    2.  In the mentioned cash journal (*Napajedla)*, please go to the tab "Cash receipts"
+    and verify if the amounts match between both cash journals. If yes, post the open
+    item in Cash Payments tab as described above.
+
+
+    3.  If there is a difference in amount between cash journals or the transfer was
+    not found as open item in mentioned cash journal, tab "Cash receipts", please
+    contact Client Petty Cash Administrator from the first cash box (*Zajeci* in this
+    example) who initiated the transfer to different cash box via email. To find the
+    proper email address please search for respective location (address) in file "Supporting
+    data" (Attached). The same applies if there is no information provided to which
+    cash journal the transfer has been made.
+
+    '
+  questions_and_answers:
+  - question: What is the Business area for company code 4300 for bank transfers?
+    answer: The Business area for company code 4300 for bank transfers is 1003.
+  - question: What should be done if there is no supporting document for transfer
+      of petty cash between two cash boxes?
+    answer: 'If there will be no supporting documents, follow the below steps:
+
+
+      1. Open the cash journal mentioned in the text field in new SAP window.
+
+      2. In the mentioned cash journal, go to the tab "Cash receipts" and verify if
+      the amounts match between both cash journals. If yes, post the open item in
+      Cash Payments tab.
+
+      3.  If there is a difference in amount between cash journals or the transfer
+      was not found as open item in mentioned cash journal, tab "Cash receipts", contact
+      Client Petty Cash Administrator from the first cash box who initiated the transfer
+      to different cash box via email.'
+  - question: What kind of documents indicate a bank transfer to the bank?
+    answer: Documents indicating transfer of cash to the bank are usually confirmations
+      from post office or banks.
+- context: '**Note:** For cash transfer between two petty cash boxes, you need to
+    post both open items in both cash journals (from and to which cash has been transferred)
+    -- please remember, that for cash journal to which the transfer took place, you
+    should post the open item in tab "Cash receipts".
+
+
+    The status will change to green indicator (completed):
+
+
+    Once an entry is posted in SAP, please move the respective email to "Done_NAME"
+    folder in mailbox. Please create this kind of folder for each new processor. **Do
+    not delete any emails!**
+
+
+    ### Verification of the interface
+
+
+    +------------------------------------------+
+
+    | Description                              |
+
+    +==========================================+
+
+    | Who: IBM AP Accountant                   |
+
+    |                                          |
+
+    | When: Monthly (before month end closing) |
+
+    |                                          |
+
+    | Why: To publish not published items      |
+
+    |                                          |
+
+    | How: see description below               |
+
+    +------------------------------------------+
+
+
+    1.  Open transaction Y433E_CASH_Report
+
+
+    2.  Fill in the required data: plant number and dates (since the beginning of
+    the current fiscal year till current date)
+
+
+    **Note:** There are variants created in SAP for both company codes to view errors
+    only, so you can use following variants:
+
+
+    "PRENOS 4300/A" and "PRENOS 4300/B" for company code 4300 and "PRENOS 4311/A"
+    for company code 4311; see screenshot:
+
+
+    3.  Confirm with the "Clock" icon
+
+
+    The list of errors for given period and company code will be generated:
+
+
+    Please mark those items by clicking the tick in the left-hand column:
+
+
+    Next, please post those items by clicking "Post" button:
+
+
+    ### Perform Periodic Petty Cash Reconciliation
+
+
+    +----------------------------------------------+
+
+    | Description                                  |
+
+    +==============================================+
+
+    | Who: IBM AP Accountant                       |
+
+    |                                              |
+
+    | When: Monthly (during month end closing)     |
+
+    |                                              |
+
+    | Why: To ensure all records are posted to ERP |
+
+    |                                              |
+
+    | How: see description below                   |
+
+    +----------------------------------------------+
+
+
+    On a monthly basis, we receive from Client a request for balance confirmation
+    for all cash journals and company codes via email. (see examples below). You need
+    to compare the cash journals and current cash level as per attached documents
+    with SAP records -- details described below.
+
+
+    You should track, if each month, for each cash register and company code this
+    kind of confirmation has been received. If there is no confirmation request received
+    on the last working day of the month, please reach out to that plant. If there''s
+    still no reply on the first working day of next month after 12:00 CET, please
+    contact Client PTP Manager via email to inform about this issue.'
+  questions_and_answers:
+  - question: What transaction should be opened to view errors for company code 4300?
+    answer: Transaction Y433E\_CASH\_Report should be opened, and the variant "PRENOS
+      4300/A" or "PRENOS 4300/B" should be used.
+  - question: Who is responsible for performing periodic petty cash reconciliation?
+    answer: The IBM AP Accountant is responsible for performing periodic petty cash
+      reconciliation.
+  - question: What should be done if there is no confirmation request received for
+      a cash register and company code on the last working day of the month?
+    answer: The plant should be reached out to, and if there's still no reply on the
+      first working day of next month after 12:00 CET, the Client PTP Manager should
+      be contacted via email to inform about the issue.
+- context: 'There are different kinds of transactions that can be subject of cash
+    payment, including following: goods, fuel and other materials, representation
+    costs, services, and others. To identify the kind of expense and assign the correct
+    GL account, please refer to file "Supporting data" in the section [Reference](#_Reference).
+
+
+    Apart from cash payments made to the suppliers, there are two other kind of transactions
+    handled by IBM -- transfers of cash to the bank and transfer between two petty
+    cash boxes. Each kind of transaction is described in detail below.
+
+
+    #### **Login to mailbox and check received documents.**
+
+
+    To login to mailbox, please connect the GlobalProcect VPN and go to following
+    address: <https://outlook.office.com/mail/>.
+
+
+    **Note:** If you are connected to Cisco Any Connect (IBM VPN) you need to disconnect
+    first.
+
+
+    To process the mails related to petty cash process, you need to have access to
+    following mailbox: [xxx.IBMCZ\@client.com](xxx.IBMCZ@cemex.com). To
+    request access to this mailbox, please first get email approval from Client PTP
+    Manager and once obtained, send a request to [gsc.europe\@client.com](mailto:gsc.europe@cemex.com).
+
+
+    Once access is granted, please add the shared mailbox to your account, as follows:
+
+
+    Right click on the "Folders" menu and choose option "Add shared folder or mailbox":
+
+
+    Paste the address [xxx.IBMCZ\@client.com](mailto:xxx.IBMCZ@cemex.com)
+    into the pop-up windows and confirm the choice by clicking the suggested entry
+    and click "Add"
+
+
+    The shared mailbox will appear below your standard folder:
+
+
+    Go to Inbox and pick the open emails starting with the oldest. Open one email
+    and open the attachment:
+
+
+    There are two possible kind of documents that can be attached -- receipts as a
+    confirmation of payments made to the suppliers and confirmation of transfer of
+    cash to the bank. Depending on the document type, the process of posting in SAP
+    is slightly different -- both cases will be described separately in the following
+    section: [5.2.19 Post the petty cash](#post-the-petty-cash)
+
+
+    Prior steps are the same for all type of transactions.
+
+
+    #### **Login to SAP**
+
+
+    To login to SAP, go to following address: [http://xxxxx/CLIENTUSMXWeb/](http://xxxxx/CEMEXUSMXWeb/)
+    and login using your CLIENTID and password, choose region EMEA:
+
+
+    Switch to APPS:
+
+
+    Choose following icon: (SAP Logon IT-ServideDelivery-GTS):
+
+
+    Choose SRP system and login with your SAP ID (same as CLIENTID but with "0" instead
+    of "-"). Client should be "500":
+
+
+    #### **Open transaction FBCJ -- Cash Journal**00":'
+  questions_and_answers:
+  - question: What transactions that can be subject of cash payment in the P2P Payments
+      Petty Cash process?
+    answer: 'The different kinds of transactions that can be subject of cash payment
+      include goods, fuel and other materials, representation costs, services, and
+      others.
+
+      Apart from cash payments made to the suppliers, there are two other kind of
+      transactions handled by IBM -- transfers of cash to the bank and transfer between
+      two petty cash boxes.'
+  - question: What are the two possible kinds of documents that can be attached to
+      the emails in the shared mailbox?
+    answer: The two possible kinds of documents that can be attached to the emails
+      in the shared mailbox are receipts as a confirmation of payments made to the
+      suppliers and confirmation of transfer of cash to the bank.
+  - question: What is the transaction used to display the Cash Journal in the P2P
+      Payments Petty Cash process?
+    answer: The transaction used to display the Cash Journal in the P2P Payments Petty
+      Cash process is FBCJ.

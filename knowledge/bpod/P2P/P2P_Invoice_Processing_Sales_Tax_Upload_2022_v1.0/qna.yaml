@@ -1,0 +1,251 @@
+domain: 'BPOD procure to payment: P2P_Invoice Processing_Sales Tax Upload_2022_v1.0.docx'
+document_outline: Describes how IBM Delivery Center will perform the process of Client
+  tax upload in general XML.
+seed_examples:
+- context: "# Control Points\n\n  ***\_***    ***Sub process Activity***   ***Sub\
+    \ process Activity Description***   ***Control Objective(s)***           ***Control\
+    \ Activity***                                                        ***Risk Assertions***\
+    \                                                   ***Frequency (i.e. Event,\
+    \ Daily, Monthly, Quarterly, Annually)***   ***Evidence***\n  ---------- ----------------------------\
+    \ ---------------------------------------- ------------------------------------\
+    \ -----------------------------------------------------------------------------\
+    \ ----------------------------------------------------------------------- -------------------------------------------------------------------\
+    \ ----------------\n  ***\_***                                               \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                      \n  ***\\#***         \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \               \n  \_1         As needed                    Upload sale tax in\
+    \ people soft           Uploading Client tax and FedEx tax   Reconciliation of\
+    \ the report which we will get from general accounting team   Avoid duplicate\
+    \ payment, Delay of payment, Mismatch report validation   Daily              \
+    \                                                 Peoplesoft\n\n## Process Measurement\
+    \ Reports \n\n> This is an uploads process and will be uploaded when received.\n\
+    \n# Roles & Responsibilities\n\n## Description\n\n  **Role**                 \
+    \ **Responsibility**\n  ------------------------- ----------------------------------------------------------------------\n\
+    \  Invoice Processing Team   Upload the Client tax and FedEx tax upload invoices\
+    \ into Peoplesoft."
+  questions_and_answers:
+  - question: What is the Control Activity associated with Upload sale tax in people
+      soft?
+    answer: The control activity associated with Upload sale tax in people soft is
+      the Reconciliation of the report which comes from general accounting team.
+  - question: What is the risk assertions in Uploading Client tax and FedEx tax?
+    answer: 'The risk assertions in uploading client tax and fedex tax are: Duplicate
+      payment, Delay of payment and Mismatch report validation.'
+  - question: Who is responsible for Uploading the Client tax and FedEx tax upload
+      invoices into Peoplesoft?
+    answer: Invoice Processing Team is responsible for Uploading the Client tax and
+      FedEx tax upload invoices into Peoplesoft.
+- context: "## Who should use this Document?\n\n> This document can be used by the\
+    \ Invoice processing team/reviewer who are working on Client tax upload activity.\n\
+    \n## Revision/Approval History\n\n  **Version number**   **Effective Date**  \
+    \ **Summary of Changes**   **Author**   **Reviewer**   **Approver**\n  --------------------\
+    \ -------------------- ------------------------ ------------ -------------- --------------\n\
+    \  1                    12/06/2022           \_Draft                   PRD   \
+    \       BPS            \_\n\n# Overview\n\n## Objective(s)\n\n> To upload Client\
+    \ tax and FedEx tax invoices into PeopleSoft system and validate report and send\
+    \ confirmation.\n\n## Inputs & Outputs\n\n+------------------------------+---------------------------+\n\
+    | Input                        | From                      |\n+------------------------------+---------------------------+\n\
+    | > Outlook Knoxville emailbox | > General Accounting team |\n+------------------------------+---------------------------+\n\
+    \n+------------------------------------------------------------+----------------------------------------------------------+\n\
+    | Output                                                     | To            \
+    \                                           |\n+------------------------------------------------------------+----------------------------------------------------------+\n\
+    | > Upload by using generate XML into PeopleSoft for payment | > Team member will\
+    \ reconcile report and reply to sender. |\n+------------------------------------------------------------+----------------------------------------------------------+"
+  questions_and_answers:
+  - question: What is the objective of the document P2P_Invoice Processing_Sales Tax
+      Upload_2022_v1.0?
+    answer: The objective of the document P2P_Invoice Processing_Sales Tax Upload_2022_v1.0
+      is to upload Client tax and FedEx tax invoices into PeopleSoft system and validate
+      report and send confirmation.
+  - question: What is the input and its source of Sales Tax Upload process?
+    answer: The input of the Sales Tax Upload process is the Outlook Knoxville emailbox
+      from General Accounting team
+  - question: What is the output of the Sales Tax Upload process?
+    answer: The input of the Sales Tax Upload process is Uploading tax invoices by
+      using generate XML into PeopleSoft for payment. Team member will reconcile report
+      and reply to sender.
+- context: '### Process for State Client Tax.
+
+
+    1.  The email for Client tax upload is sent in Knoxville upload mailbox from General
+    Accounting team**.**
+
+
+    2.  The email would look like the below
+
+
+    3.  The email is received with the subject as ''State Tax Paymwnt File Created''.
+
+
+    4.  To continue with the process, open M\>AP Voucher Upload and open StateTaxPayment.xlsx
+    Excel Report
+
+
+    5.  After opening the excel, type GN1 In the top left corner box to include all
+    the additional lines.
+
+
+    6.  Then select and copy the data
+
+
+    7.  After copying the data, open the file from path: M dirive\> APinvoice upload
+    \> CE Wire 10\>Exceluploadfor voucher_ClientTax.xlsm sheet
+
+
+    **Note: The Sale tax/Fed tax and the state Client tax goes into this particular
+    tamplate (Exceluploadfor voucher_ClientTax.xlsm sheet).**
+
+
+    8.  Paste the details with special value pasting option 123 in Exceluploadforvoucher_Client
+    tax sheet.
+
+
+    Note; After pasting the data cross varify the data with both the file, all the
+    data must match.
+
+
+    9.  Click on **Generate XML and Post** option tab, enter the User ID and Password
+    and click on Ok to upload.
+
+
+    10. After uploading the data
+
+
+    11. Open PeopleSoft to verify upload was successful.
+
+
+    12. Select Reporting Tools
+
+
+    13. Select Query
+
+
+    14. Select Query Viewer
+
+
+    15. Search for Staged Vouchers query: ZI_AP_STAGED_VOUCHERS
+
+
+    16. Enter KUP and select View Results and copy the data
+
+
+    17. Copy the data from people soft and with the same copy, reply all to the original
+    email that the upload has been completed with confirmation file.
+
+
+    **Note;** If the data has been uploaded at 2pm central time, voucher billing happens,
+    it is not going to get picked until the 5pm. If the data has been uploaded at
+    5pm central it will get picked up on the next day.'
+  questions_and_answers:
+  - question: What is the Process for State Client Tax upload?
+    answer: "To upload the State Client tax, follow the following steps:\n1. The email\
+      \ for Client tax upload is sent in Knoxville upload mailbox from General Accounting\
+      \ team.\n2. The email is received with the subject as 'State Tax Paymwnt\
+      \ File Created'.\n3. To continue with the process, open M>AP Voucher Upload\
+      \ and open StateTaxPayment.xlsx Excel Report\n4. After opening the excel, type\
+      \ GN1 In the top left corner box to include all the additional lines.\n5. Then\
+      \ select and copy the data \n6. After copying the data, open the file from path:\
+      \ M dirive> APinvoice upload > CE Wire 10>Exceluploadfor voucher_ClientTax.xlsm\
+      \ sheet \nNote: The Sale tax/Fed tax and the state Client tax goes into this\
+      \ particular tamplate (Exceluploadfor voucher_ClientTax.xlsm sheet).\n7. Paste\
+      \ the details with special value pasting option 123 in Exceluploadforvoucher_Client\
+      \ tax sheet.\nNote: After pasting the data cross varify the data with both the\
+      \ file, all the data must match. \n8. Click on Generate XML and Post option\
+      \ tab, enter the User ID and Password and click on Ok to upload. \n9. After\
+      \ uploading the data, Open PeopleSoft to verify upload was successful.\n10.\
+      \ Select Reporting Tools\n11. Select Query \n12. Select Query Viewer\n13. Search\
+      \ for Staged Vouchers query: ZI_AP_STAGED_VOUCHERS\n14. Enter KUP and select\
+      \ View Results and copy the data \n15. Copy the data from people soft and with\
+      \ the same copy, reply all to the original email that the upload has been completed\
+      \ with confirmation file."
+  - question: What query is used as Staged Vouchers query in the process of uploading
+      the State Client tax.
+    answer: ZI_AP_STAGED_VOUCHERS query is used for Staged Vouchers query in the Process
+      for State Client Tax.
+  - question: Where to paste the data copied from StateTaxPayment.xlsx Excel Report?
+    answer: 'After copying the data, open the file from path: M drive> APinvoice upload
+      > CE Wire 10>Exceluploadfor voucher_ClientTax.xlsm sheet'
+- context: '**Note;** If the data has been uploaded at 2pm central time, voucher billing
+    happens, it is not going to get picked until the 5pm. If the data has been uploaded
+    at 5pm central it will get picked up on the next day.
+
+
+    ### Process for Client Tax/Fed Client Tax
+
+
+    1.  The email is received in knoxville upload mail box subjecting as Client Tax
+    Payment File Created.
+
+
+    2.  Opne the ''M'' drive \>Ap voucher uopload \> Client tax payment.
+
+
+    3.  Open the report and Copy all the data with GN1
+
+
+    4.  After copying the data, open the file from path: M dirive\> APinvoice upload
+    \> CE Wire 10\>Exceluploadfor voucher_ClientTax.xlsm sheet
+
+
+    18. Paste the details with special value pasting option 123 in Exceluploadforvoucher_Client
+    tax sheet.
+
+
+    Note; After pasting the data cross, verify the data with both the files, all the
+    data must match.
+
+
+    19. Clik on **Generate XML and Post** option tab, enter the User ID and Password
+    and click on Ok to upload.
+
+
+    20. After uploading the data
+
+
+    21. Open PeopleSoft to verify upload was successful.
+
+
+    22. Select Reporting Tools
+
+
+    23. Select Query
+
+
+    24. Select Query Viewer'
+  questions_and_answers:
+  - question: When does the data uloaded in State Client Tax process gets picked up?
+    answer: If the data has been uploaded at 2pm central time, voucher billing happens,
+      it is not going to get picked until the 5pm. If the data has been uploaded at
+      5pm central it will get picked up on the next day.
+  - question: What is the subject of the email in Process for Client Tax/Fed Client
+      Tax
+    answer: The email received in knoxville upload mail box has the subject as Client
+      Tax Payment File Created.
+  - question: Which pasting option is used to paste the details in Exceluploadforvoucher_Client
+      tax sheet
+    answer: Paste the details with special value pasting option 123 in Exceluploadforvoucher_Client
+      tax sheet.
+- context: "25. Search for Staged Vouchers query: ZI_AP_STAGED_VOUCHERS\n\n26. Enter\
+    \ KUP and select View Results\n\n5.  Copy the data from people soft and with the\
+    \ same copy reply to all on the original email that the upload has been completed\
+    \ with confirmation file.\n\n6.  If something is incorrect in file, then it will\
+    \ kick out in back end process. Go back to the sender email and respond back with\
+    \ the details. Below screenshot of the email for refernce.\n\n# Definitions\n\n\
+    The following are definitions of acronyms used in this document:\n\n  Term   Definition\n\
+    \  ------ -------------------\n  US     United State\n  PS     People Soft\n \
+    \ KUP    Knoxville Uploads"
+  questions_and_answers:
+  - question: What happens if there is something wrong with confirmation file
+    answer: If something is incorrect in file, then it will kick out in back end process.
+      Go back to the sender email and respond back with the details.
+  - question: What is the full form of acronym PS?
+    answer: PS stands for People Soft.
+  - question: Where is the report located  after the email is received for Client
+      Tax Payment File.
+    answer: The report is located at M drive >Ap voucher uopload > Client tax payment.

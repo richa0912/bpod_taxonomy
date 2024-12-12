@@ -1,0 +1,177 @@
+domain: 'BPOD record to analyze: DTP US R2R Cash & Financial Management (Treasury) Audit
+  Request 0.2'
+document_outline: Describes the actions required to respond to an audit request.
+seed_examples:
+- context: "# Control Points\n\n  **Control Point \\#**   **Control Point / Activity**\
+    \   **Control Objective**                                                    \
+    \                                **Control Risk**            **Test Attributes**\n\
+    \  ---------------------- ------------------------------ --------------------------------------------------------------------------------------------------------\
+    \ --------------------------- ---------------------\n  CP1                   \
+    \ Audit Request                  to provide response to the requests raised by\
+    \ the auditors related to wire transfers & journal entries   *Incorrect audit\
+    \ results*   SAP Screenhsot\n\n## Process Measurements\n\nNo SLA"
+  questions_and_answers:
+  - question: What is the purpose of R2R Cash & Financial Management (Treasury) Audit
+      Request Control Point?
+    answer: The purpose of R2R Cash & Financial Management (Treasury) Audit Request
+      Control Point is to provide a response to the requests raised by the auditors
+      related to wire transfers & journal entries.
+  - question: What is the control risk associated with R2R Cash & Financial Management
+      (Treasury) Audit Request Control Point?
+    answer: The control risk associated with R2R Cash & Financial Management (Treasury)
+      Audit Request Control Point is incorrect audit results, which could lead to
+      financial or reputational damage.
+  - question: What is the test attribute for R2R Cash & Financial Management (Treasury)
+      Audit Request Control Point?
+    answer: The test attribute for R2R Cash & Financial Management (Treasury) Audit
+      Request Control Point is a SAP screenshot, which will be used to verify that
+      the audit request has been responded to accurately and in a timely manner.
+- context: "# Document Information\n\n## About this Document\n\nThis DTP describes\
+    \ the actions required to respond to an audit request.\n\n## Who should use this\
+    \ Document\n\nIBM R2R Accountant and Finance Team\n\n## Revision/Approval History\n\
+    \n  -------------------- -------------------- ------------------------ --------------\
+    \ -------------- ---------------\n  **Version number**   **Effective Date**  \
+    \ **Summary of Changes**   **Author**     **Reviewer**   **Approver**\n  1.0 \
+    \                                      Creation of DTP          P S \
+    \                 \n  1.1                  6/18/2014            Review update\
+    \            A G    S P D   M C\n  0.2                  05/20/2021\
+    \           DTP Name Change          A P    H B   E O\n\
+    \  -------------------- -------------------- ------------------------ --------------\
+    \ -------------- ---------------\n\n## References\n\n-   Trainer Name: S D\n\
+    \n-   Session ID: JPL628430 & MFS 463\n\n## Document Control Information\n\n+------------------------------------------------------------------+\n\
+    | **END OF DOCUMENT**                                              |\n|      \
+    \                                                            |\n| DTP_US_R2R_Cash\
+    \ & Financial Management (Treasury)\\_Audit Request |\n+------------------------------------------------------------------+"
+  questions_and_answers:
+  - question: What is the purpose of R2R Cash & Financial Management (Treasury) Audit
+      Request document?
+    answer: R2R Cash & Financial Management (Treasury) Audit Request document describes
+      the actions required to respond to an audit request.
+  - question: Who is the intended audience for R2R Cash & Financial Management (Treasury)
+      Audit Request document?
+    answer: R2R Cash & Financial Management (Treasury) Audit Request document is intended
+      to be used by IBM R2R Accountant and Finance Team.
+  - question: What is the current version of R2R Cash & Financial Management (Treasury)
+      Audit Request document?
+    answer: The current version of R2R Cash & Financial Management (Treasury) Audit
+      Request document  is '0.2', which was updated on '05/20/2021' to change the
+      DTP name.
+- context: '# Overview
+    ## Objectives of the Process
+    The objective of this DTP is to provide response to the requests raised by the
+    auditors related to wire transfers & journal entries.
+
+    ## Inputs & Outputs
+
+    +------------------------+---------+
+    | Input                  | From    |
+    +------------------------+---------+
+    | -   MM Audit Cash File | -   SAP |
+    |                        |         |
+    | -   G/L reports        |         |
+    +------------------------+---------+
+
+    +------------------------------------------------------------+------------------+
+    | Output                                                     | To               |
+    +------------------------------------------------------------+------------------+
+    | -   Back up documents for journal entries & wire transfers | -   Finance Team
+    |
+    |                                                            |                  |
+    |                                                            | -   Auditors     |
+    +------------------------------------------------------------+------------------+'
+  questions_and_answers:
+  - question: What is the Objective or the purpose of R2R Cash & Financial Management
+      (Treasury) Audit Request process?
+    answer: The objective or purpose of the R2R Cash & Financial Management (Treasury)
+      Audit Request process is to provide response to the requests raised by the auditors
+      related to wire transfers and journal entries.
+  - question: What are the inputs required for R2R Cash & Financial Management (Treasury)
+      Audit Request process?
+    answer: The inputs required for R2R Cash & Financial Management (Treasury) Audit
+      Request process are MM Audit Cash File and G/L reports from SAP.
+  - question: Whom is the output of  R2R Cash & Financial Management (Treasury) Audit
+      Request process sent to?
+    answer: The output of  R2R Cash & Financial Management (Treasury) Audit Request
+      process sent to Finance Team and Auditors
+- context: "# Roles & Responsibilities\n\n## Description\n\n  --------------------\
+    \ ---------------------------------------------------------------------------------------------------------------\n\
+    \  **Role**             **Responsibility**\n  IBM R2R Accountant   IBM R2R Accountant\
+    \ would prepare the USA Footnote file and first level review would be done by\
+    \ IBM TL/Manager\n  finance team         Client to do the final level account\
+    \ review\n  -------------------- ---------------------------------------------------------------------------------------------------------------\n\
+    \n## SOD Matrix\n\nSOD is covered in process flow in segregation of duties"
+  questions_and_answers:
+  - question: Who is responsible for preparing the USA Footnote file in R2R Cash &
+      Financial Management (Treasury) Audit Request process?
+    answer: IBM R2R Accountant is responsible for preparing the USA Footnote file
+      in R2R Cash & Financial Management (Treasury) Audit Request process.
+  - question: Who performs the first level review of the USA Footnote file in R2R
+      Cash & Financial Management (Treasury) Audit Request process?
+    answer: In R2R Cash & Financial Management (Treasury) Audit Request process, the
+      first level review of the USA Footnote file is performed by the IBM TL/Manager.
+  - question: In R2R Cash & Financial Management (Treasury) Audit Request process,
+      who performs the final level account review?
+    answer: Client finance team performs the final level account review in R2R Cash
+      & Financial Management (Treasury) Audit Request process.
+- context: '## Step Description
+
+    Audit support process includes (but not limited to) fetching of journal entries
+    & wire transfers on the basis of a request received. The request is mostly received
+    from Heather Murray or internal/external auditors.
+
+    The two basic things which are reviewed in case of a wire include the backup document
+    for a wire & ensuring that the person who signed off was authorized to do the
+    same.
+
+    Approval matrix contains the names of the person authorized to sign off, along
+    with their respective authority limits
+
+    To open the Approval matrix, use the following path
+
+    My documents>Misc Folder>Research Folder>MM-YY folder>Approval Matrix File
+
+    The approval matrix is also available on the intranet. The approval matrix gets
+    updated on a weekly basis.
+
+    The link for getting the file from intranet is as follows
+
+    The most important column to be used from the approval matrix is the column stating
+    Check requests and wire transfers & the column for statutory payments
+
+    For example, to find out the name of the person who can approve the wire transfer
+    of amount up to \$200,000, click on the filter applied on check request & wire
+    transfers column
+
+    Select all the options having \$ 200,000
+
+    The report displays the name of all the persons who can approve the wire transfers
+    up to \$ 200,000 for different regions
+    In response to the request received in relation to the wire transfers & journal
+    entries, the hard copy of the backup documents is provided.
+    An example of the order request received from the auditors is shown below
+    The request includes the date, amount & description of the wire
+    To open the file containing the details of all the wire transfers made in a month,
+    use the following path
+    Shared Drive>Treasury>Current Month>MM-YY cash file>Cash Disbursements tab
+    This file is kept as a tracker for reference purposes to find out the details
+    of all the wire transfers made in a month
+    The current process involves finding out the back up document/hard copies for
+    all the audit requests & providing a xerox copy to the person from whom the request
+    is received. All wire requests should be saved on the Treasury analyst''s email
+    archive.'
+  questions_and_answers:
+  - question: In the context of R2R Cash & Financial Management (Treasury) Audit Request,
+      what is the purpose of the audit support process?
+    answer: In the context of R2R Cash & Financial Management (Treasury) Audit Request,
+      the purpose of the audit support process is to fetch journal entries and wire
+      transfers based on a request received, and to provide backup documents to support
+      the audit.
+  - question: What are the two key things reviewed in the case of a wire transfer?
+    answer: 'The two key things reviewed in the case of a wire transfer are:
+      1.  Backup document for the wire: to ensure that the wire transfer is properly
+      documented.
+      2.  Authorization: to ensure that the person who signed off on the wire transfer
+      was authorized to do so.'
+  - question: How are backup documents provided in response to an audit request?
+    answer: In response to an audit request, the hard copy of the backup documents
+      is provided to the person who made the request.

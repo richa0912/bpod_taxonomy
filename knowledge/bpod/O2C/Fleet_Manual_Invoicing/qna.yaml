@@ -1,0 +1,207 @@
+domain: 'BPOD order to cash: Fleet Manual Invoicing'
+document_outline: 'The steps involved in performing Manual Invoicing for the units
+  that are wrecked or moved from a Dealer to a Fleet customer. '
+seed_examples:
+- context: "# Control Points\n\n  ***Step No.***   ***Sub process Activity***    \
+    \                               ***Control Objective(s)***                   \
+    \                                                     ***Control Activity*** \
+    \                      ***Risk Assertions***                     ***Frequency\
+    \ (i.e. Event, Daily, Monthly, Quarterly, Annually)***   ***Evidence***\n  ----------------\
+    \ ------------------------------------------------------------ -------------------------------------------------------------------------------------------------\
+    \ -------------------------------------------- -----------------------------------------\
+    \ ------------------------------------------------------------------- -----------------------------------------------------\n\
+    \  1.4              Manaul Invoice should be process after receiving approval.\
+    \   Manual Invoicing should be processed only with approval to make sure no duplicating\
+    \ is involved   Approval should be taken before processing   Customer invoice\
+    \ will not get generated   Adhoc                                             \
+    \                  Invoice will be generated after overnight batch run\n\n## Process\
+    \ Measurement Report\n\nManual Invoices should be completed when email is received\
+    \ from Fleet Office to invoice a truck."
+  questions_and_answers:
+  - question: What are the control points for fleet manual invoicing?
+    answer: The control point in Fleet Invoicing to process the Manual Invoice after
+      receiving approval to make sure that no duplication is involved.
+  - question: What is the risk associated with not processing Manual Fleet Invoicing
+      on time?
+    answer: The risk associated with not processing Manual Fleet Invoicing on time
+      is that customer invoice will not get generated.
+  - question: What is the frequency of Manual Fleet Invoicing?
+    answer: The Manual Fleet Invoicing process is performed on an ad hoc basis.
+- context: "# Definitions\n\nThe following are definitions of acronyms used in this\
+    \ document:\n\n  Term   Definition\n  ------ --------------------------------\n\
+    \  RASS   Retail Accounting Sales System\n  TASS   Truck Accounting Sales System\n\
+    \  SPA    Special Price Authorization\n  VIN    Vehicle Identification Number"
+  questions_and_answers:
+  - question: What is meant by RASS in Fleet manual invoicing?
+    answer: RASS in manual invoicing stands for Retail Accounting Sales System.
+  - question: What is the short form of Special Price Authorization in fleet manual
+      invoicing?
+    answer: The short form of Special Price Authorization in fleet manual invoicing
+      is SPA.
+  - question: What is the full form of TASS in fleet manual invoicing?
+    answer: TASS in fleet manual invoiving stands for Truck Accounting Sales System.
+- context: '# Overview
+
+
+    ## Objective(s)
+
+
+    Manual invoicing assists in updating the invoices details manually in Manual invoicing
+    form and updating in Final submission form to key the invoice information in IMS
+    RASS. This is performed only when the Fleet invoicing assistance is not able to
+    key the invoices details in IMS RASS. Fleet invoicing assistance will not be able
+    to key the information in IMS only when the Age of the truck is more than 6 months
+    sitting in the Dealer location while transferring to Fleet location.
+
+
+    ## SIPOC
+
+
+    +----------------------+-----------------------------------+---------------------------------------------------------------------------------------+-------------------------------------------------------------------------+-----------------+
+
+    | **Supplier**         | **Input**                         | **Process**                                                                           |
+    **Output**                                                              | **Customer**    |
+
+    +======================+===================================+=======================================================================================+=========================================================================+=================+
+
+    | Fleet office and Nam | Invoice copies and purchase order | \- Receive email
+    from Fleet Office                                                    | Receive
+    email confirmation for invoice submission and processed in RASS | Fleet Customers
+    |
+
+    |                      |                                   |                                                                                       |                                                                         |                 |
+
+    |                      |                                   | \- Check in RASS
+    if the customer details are available                                |                                                                         |                 |
+
+    |                      |                                   |                                                                                       |                                                                         |                 |
+
+    |                      |                                   | \- Consolidate the
+    paperwork for the truck, same as normal invoicing                  |                                                                         |                 |
+
+    |                      |                                   |                                                                                       |                                                                         |                 |
+
+    |                      |                                   | \- Take approval
+    from Knoxville Team                                                  |                                                                         |                 |
+
+    |                      |                                   |                                                                                       |                                                                         |                 |
+
+    |                      |                                   | \- Update the details
+    in Manual Form                                                  |                                                                         |                 |
+
+    |                      |                                   |                                                                                       |                                                                         |                 |
+
+    |                      |                                   | \- Final Submission
+    Form will be updated for batch run to enter the details into RASS |                                                                         |                 |
+
+    +----------------------+-----------------------------------+---------------------------------------------------------------------------------------+-------------------------------------------------------------------------+-----------------+'
+  questions_and_answers:
+  - question: What is the SIPOC of Fleet manual invoicing?
+    answer: 'Based on the provided context, the SIPOC (Supplier, Input, Process, Output,
+      Customer) for Fleet Manual Invoicing is:
+
+
+      1. Supplier: Fleet office and Nam
+
+      2. Input: Invoice copies and purchase order
+
+      3. Process: Receive email from Fleet Office, check in RASS if the customer details
+      are available, consolidate the paperwork for the truck, take approval from Knoxville
+      Team, update the details in Manual Form, final submission form will be updated
+      for batch run to enter the details into RASS
+
+      4. Output: Receive email confirmation for invoice submission and processed in
+      RASS
+
+      5. Customer: Fleet Customers'
+  - question: What does Fleet Manual Invoicing assist in?
+    answer: Manual invoicing assists in updating the invoices details manually in
+      Manual invoicing form and updating in Final submission form to key the invoice
+      information in IMS RASS.
+  - question: When does the Fleet invoicing assitant will not be able to key the information
+      in IMS?
+    answer: Fleet invoicing assistance will not be able to key the information in
+      IMS when the Age of the truck is more than 6 months sitting in the Dealer location
+      while transferring to Fleet location.
+- context: "# Roles & Responsibilities\n\n## Description\n\n  **Role**           \
+    \         **Responsibility**\n  --------------------------- ----------------------------------------------------------------------------------------\n\
+    \  Fleet Invoicing Assistant   Submit manual invoice forms for trucks that are\
+    \ wrecked or moved from dealer to fleet.\n  Fleet Office                Provide\
+    \ paperwork details required for invoicing\n  Knoxville Team              Approve\
+    \ manual invoicing paperwork"
+  questions_and_answers:
+  - question: What is the responsibility of Invoicing assistant in Fleet manual invoicing?
+    answer: The responsibility of Invoicing Assistant in Fleet Manual Invoicing is
+      to submit manual invoice forms for trucks that are wrecked or moved from dealer
+      to fleet.
+  - question: Who approves manual invoicing paperwork?
+    answer: Knoxville Team approves manual invoicing paperwork.
+  - question: What is the responsibility of Fleet Office in Fleet Manual Invoicing?
+    answer: The responsibility of Fleet Office is to provide paperwork details required
+      for invoicing.
+- context: "## Process Description\n\n1.  Fleet invoicing assistant receives the email\
+    \ from Fleet Office for invoicing a truck along with paperwork\n\n2.  Login to\
+    \ RASS, goto code RAPH and update JOB NUMBER to identify if the invoicing can\
+    \ be completed in system. If an error message receives if invoicing cannot be\
+    \ completed like shown in the below screen. \n\n3.  Once the error message receives,\
+    \ it confirms invoicing cannot be completed through system and should be followed\
+    \ with manual steps. Send and email to Knoxville Team confirming on manual invoice.\n\
+    \n4.  Receive email with the invoice number that needs to be used while processing.\
+    \ Make sure approval is taken for processing the manual invoice\n\n5.  To get\
+    \ the invoice number open ManualInvoicesBooked excel file from path **[M:drive\\\
+    \\Sales Invoicing\\\\NAI\\\\DATA\\\\EXCEL\\\\Manual Invoices Booked]{.ul}**\n\n\
+    6.  From column E (batch \\#), pick the next available number (in the below case\
+    \ it will be 234).\n\n7.  Open the Manual Invoice Template Form from the email\n\
+    \nBelow is the format of Manual Invoice template\n\n8.  Open the paperwork file\
+    \ received from the email. This paperwork contains of Factory Invoice, Purchase\
+    \ Order, Worksheet summary and other supporting documents.\n\n9.  Fill in the\
+    \ manual invoice template using the details from paperwork. All the highlighted\
+    \ columns(Amber color) in the template should be updated.\n\n10. Details like\
+    \ Order no., Model, Chassis No are updated into the template.\n\n11. Customer\
+    \ name and address will be available in Purchase Order\n\n12. Invoice amount from\
+    \ Purchase Order should match with amount in Worksheet summary and Dealer Net\
+    \ amount should be updated from Factory Invoice. If the amounts does not match\
+    \ contact fleet office.\n\nBelow are the screenshots showing Purchase order amount\
+    \ and worksheet summary amount are matching\n\nBelow screen shot shows the Dealer\
+    \ Net amount from Factory Invoice:\n\n13. Update Goods purchased and Special P&D\
+    \ amount from Worksheet summary\n\n14. Update Freight charges and Surcharge amount\
+    \ from paperwork\n\n15. Once all the highlighted items in Manual Invoicing Form\
+    \ are filled out, next step is to fill Final Submission Form to create the customer\
+    \ invoice. The link is available on a document which will be shared with the team.\
+    \ Click on the link to open the path where the document is saved.\n\n16. Open\
+    \ Truck_and_Fleet_Entry -- V1.5 excel file form the folder opened\n\n17. Update\
+    \ the details from Manual Invoicing Form to Final Submission Form\n\n[**Note**:\
+    \ Amounts in Final Submission Form should always be positive.]{.ul}\n\n18. After\
+    \ all the information is keyed, click on Submit button. Once submitted a pop up\
+    \ window appears stating '**Successfully transferred file to Mainframe.** Click\
+    \ OK.\n\n**[Note: Do not close the extension box for a minute and later after\
+    \ a minute close the extension box.]{.ul}**\n\n19. A confirmation email will be\
+    \ received to the inbox from .DL AMS_NFC saying the file is processed."
+  questions_and_answers:
+  - question: How to check if Fleet manual invoicing can be done in the system?
+    answer: "Following are the steps to check to check if Fleet manual invoicing can\
+      \ be done in the system.\n1. Login to RASS.\n2. Foto code RAPH and update JOB\
+      \ NUMBER to identify if the invoicing can be completed in system. \n3. If an\
+      \ error message is received then invoicing cannot be completed."
+  - question: What are the steps to update final submission form for Fleet manual
+      invoice?
+    answer: "Following are the steps to update final submission form for Fleet manual\
+      \ invoice.\n1. Once all the highlighted items in Manual Invoicing Form are filled\
+      \ out, next step is to fill Final Submission Form to create the customer invoice.\
+      \ The link is available on a document which will be shared with the team. Click\
+      \ on the link to open the path where the document is saved.\n2. Open Truck_and_Fleet_Entry\
+      \ \u2013 V1.5 excel file from the folder opened.\n3. Update the details from\
+      \ Manual Invoicing Form to Final Submission Form. Note: Amounts in Final Submission\
+      \ Form should always be positive.\n4. After all the information is keyed in,\
+      \ click on Submit button. Once submitted a pop up window appears stating \u2018\
+      Successfully transferred file to Mainframe. \n5. Click OK. Note: Wait for a\
+      \ minute before closing the extension box.\n6. A confirmation email will be\
+      \ received to the inbox from .DL AMS_NFC saying the file is processed"
+  - question: Where to get invoice number for Fleet manual invoicing?
+    answer: 'Following are the steps to get the invoice number.
+
+      1. Open ManualInvoicesBooked excel file from path ''M:drive\Sales Invoicing
+
+      AI\DATA\EXCEL\Manual Invoices Booked''
+
+      2. From column E (batch #), pick the next available number.'

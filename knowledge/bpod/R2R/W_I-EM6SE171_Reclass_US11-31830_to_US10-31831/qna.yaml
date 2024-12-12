@@ -1,0 +1,96 @@
+domain: 'BPOD Record to Analyze: W I - EM6SE171 Reclass US11-31830 to US10-31831.docx'
+document_outline: Describes how IBM Delivery Centre will understand the objective
+  of reclass of Intercompany journal process.
+seed_examples:
+- context: "1. List of company codes in scope:\n \nEntity Name Company Code name GL\
+    \ Account number Profit Center System\nAvnet Inc US10 31831 650003 SAP\nTelmi\
+    \ Electronics, Inc US11 31830 650010\n  SAP"
+  questions_and_answers:
+  - question: What is the list of country code in scope for Reclass entry?
+    answer: Refer company code name US 10, US11 from the List of company codes in
+      scope
+  - question: Which entity name is involved for reclass entry?
+    answer: There are 2 entity name for doing reclass entity Avnet and telmi electronics
+  - question: Which profit center is involved for reclass entry?
+    answer: This WI is prepared for GL 31831 and 31830 for the Profit center 650003,650010.
+- context: "ACTIVITIES:\n Reclass of inter-company posting on US11-31830 to US10 31831:\n\
+    JID EM6SE171 Reclass US11 - 31830 to US10 - 31831\nThis is a reclass entry\
+    \ that is done to correct the incorrect coding of GL 31830 on the company code\
+    \ US11 in EVOLVE.  This activity is performed every month on WD+1.  \nStep User\
+    \ Action\n1 Go to T-code FAGLL03 in SAP and complete the following fields\ni.\
+    \ G/L Account - 31830 to 31831\nii. Company code - US10 to US 11\niii.\
+    \ Select open items and under open at key date - select the fiscal month\
+    \ end date of the reporting period\niv. Under layout field select chasity layout\n\
+    v. Next select customs selection icon  and go to GL Ledger Line items and select\
+    \ trading partner.          Now key in US10EM and US11EM in the trading partner\
+    \ fields\nvi. Next go to G/L Account line items and select fiscal year and posting\
+    \ period.  Save the selections and execute.\n \nStep User Action\n2 Re-sort GL\
+    \ Account and ensure that the amount is netted to zero\nFor GL Account 31830,\
+    \ the trading partner for Cocd US11 is US10EM and for GL account 31831, the trading\
+    \ partner for CoCd US10, is US11EM.  Trading partner is used to offset the entries\
+    \ between the GL accounts \nStep User Action\n3 Copy previous month's reclass\
+    \ worksheet and save the same in the reporting period \nStep User Action\n4 Delete\
+    \ previous month's posting verification data from the results tab\n5 Go to\
+    \ the ZFIT_UPLOAD (EVOLVE) and complete the following:\ni. Posting date: Fiscal\
+    \ month end date \nii. Segment: EM\niii. JE Number - 6\niv. Standard JID:\
+    \ SE - 171\nv. Doc Header: Reclass 31830 to 31831\nvi. Prepared By: The name\
+    \ of preparer \nvii. Date prepared: Business Day 1 of the reporting period\n \n\
+    \ \nExcept for the posting key and document currency, none other fields change.\n\
+    \ \nStep User Action\n6 Go to SAP and copy the screen shot and paste the same\
+    \ in 31830-31831 tab and key in the amount shown in doc currency for our entry.\n\
+    Step User Action\n7 Go to ZFIT_UPLOAD (EVOLVE) tab and key in the amount in Column\
+    \ L and save and close the work sheet.\nStep User Action\n8 Login to SAP and select\
+    \ t-code ZFIT_UPLOAD for checking and posting the Journal Entry.\nStep User Action\n\
+    9 Check for validation and documentation errors if any.  In case of errors rectify\
+    \ the same before posting.\nStep User Action\n10 Go back to the posting screen\
+    \ and select post document from file\nStep User Action\n11 Export the data from\
+    \ SAP into excel and copy the documentation posting information into the posting\
+    \ tab and save the worksheet."
+  questions_and_answers:
+  - question: What trading partner are involved to offset the entry between the GL
+      account?
+    answer: For GL Account 31830, the trading partner for Cocd US11 is US10EM and
+      for GL account 31831, the trading partner for CoCd US10, is US11EM.  Trading
+      partner is used to offset the entries between the GL accounts
+  - question: What T code is used checking and posting the Journal Entry?
+    answer: Login to SAP and select t-code ZFIT_UPLOAD for checking and posting the
+      Journal Entry.
+  - question: How many steps involved in the process of the  Reclass entry?
+    answer: Ther are 11 steps involved to complete the reclass entry
+- context: "TERMS AND DEFINITION\n \nTerm/Abbreviation Description \nR2R Record to\
+    \ Report\nGL General Ledger\nWD Workday\nEOD  End of Day"
+  questions_and_answers:
+  - question: What is the abbreivation of  GL used in reclass Journal process document?
+    answer: The abbreivation of  GL used in reclass Journal process document is General
+      ledger
+  - question: What is the abbreivation of  WD used in reclass Journal process document?
+    answer: The abbreivation of  WD used in reclass Journal process document is Workday
+  - question: What is the abbreivation of  EOD used in reclass Journal process document?
+    answer: The abbreivation of  EOD used in reclass Journal process document is End
+      of day
+- context: 'WHAT: The key objective of the WI is to explain the reclass of inter-company
+    posting on US11-31830 to US10 31831
+
+    WHY: This is an intercompany journal entry prepared to reclass postings from GL
+    31830 to 31831 for company code US11.  This reclass is done due to an incorrect
+    GL mapping on company code US11 in the AVNET system.
+
+    WHO: This document should be used by IBM R2R Accountant, Avnet R2R Accountant
+    and Avnet Manager only'
+  questions_and_answers:
+  - question: What is the objective of the WI on  Intercompany reclass posting?
+    answer: The key objective of the WI is to explain the reclass of inter-company
+      posting
+  - question: What GLs are involved for Intercompany reclass journal posting?
+    answer: GL 31830 to 31831 are involved for intercompany journal entry reclass
+      postings
+  - question: Why is the need for reclass entry?
+    answer: This reclass is done due to an incorrect GL mapping on company code US11
+- context: 'WHEN: Monthly, WD+1, by EOD'
+  questions_and_answers:
+  - question: What is the Frequency of  Reclass of Intercompany posting?
+    answer: The frequency of  Reclass of Intercompany posting is monthly
+  - question: What is the deadline (Workday) for Reclass journal?
+    answer: The Reclass journal deadline is by WD+1
+  - question: What is the deadline (Time) for Reclass journal?
+    answer: The Reclass journal timeline is byEOD on WD+1

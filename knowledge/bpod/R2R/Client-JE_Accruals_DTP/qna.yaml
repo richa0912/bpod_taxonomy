@@ -1,0 +1,208 @@
+domain: 'BPOD record to analyze: Client-JE Accruals DTP'
+document_outline: Describes how IBM Delivery Centre will perform the SBT - Accrual
+  (PCCACR) process.
+seed_examples:
+- context: "#  Control Points \n\n+------------+--------------------------------------------------------------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------------------------------------------------------------------------+---------------------------------+---------------------------------------------------+-------------------------+\n\
+    | > ***\\#*** | > **Sub process Activity**                                   \
+    \      | > **Sub process Activity Description**                              \
+    \                       | > **Control Objective(s)**                         \
+    \                | > **Control Activity**                                    \
+    \              | > **Risk Assertions**           | > **Frequenc y (i.e.**    \
+    \                        | > **Evidence**          |\n|            |         \
+    \                                                           |                \
+    \                                                                            |\
+    \                                                                    |       \
+    \                                                                  |         \
+    \                        | >                                                 |\
+    \                         |\n|            |                                  \
+    \                                  |                                         \
+    \                                                   |                        \
+    \                                            |                               \
+    \                                          |                                 |\
+    \ > **Event, Daily, Monthly, Quarterly, Annually)** |                        \
+    \ |\n+============+====================================================================+============================================================================================+====================================================================+=========================================================================+=================================+===================================================+=========================+\n\
+    |            |                                                               \
+    \     | > The function of                                                    \
+    \                      |                                                     \
+    \               |                                                            \
+    \             |                                 |                            \
+    \                       |                         |\n+------------+--------------------------------------------------------------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------------------------------------------------------------------------+---------------------------------+---------------------------------------------------+-------------------------+\n\
+    |            |                                                               \
+    \     | > processing                                                         \
+    \                      |                                                     \
+    \               |                                                            \
+    \             |                                 |                            \
+    \                       |                         |\n+------------+--------------------------------------------------------------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------------------------------------------------------------------------+---------------------------------+---------------------------------------------------+-------------------------+\n\
+    | > 1        | > Journal Entry Process- PeopleSoft entries SBT - Accrual (PCCACR)\
+    \ | > journal if any project that failed to be capitalized should be processed\
+    \ through posting | > To post the Capital Spend in Peoplesoft system on the same\
+    \ month | > Manual journal entries are reviewed and approved in line with Company\
+    \ | > Incorrect financial reporting | > Monthly                              \
+    \           | > JE                    |\n|            |                      \
+    \                                              |                             \
+    \                                                               |            \
+    \                                                        | >                 \
+    \                                                      |                     \
+    \            |                                                   | >         \
+    \              |\n|            |                                             \
+    \                       |                                                    \
+    \                                        |                                   \
+    \                                 | > policy prior to                        \
+    \                               |                                 |          \
+    \                                         | > identification number |\n+------------+--------------------------------------------------------------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------------------------------------------------------------------------+---------------------------------+---------------------------------------------------+-------------------------+\n\
+    |            |                                                               \
+    \     | > accruals.                                                          \
+    \                      |                                                     \
+    \               | > being posted                                             \
+    \             |                                 |                            \
+    \                       |                         |\n+------------+--------------------------------------------------------------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------------------------------------------------------------------------+---------------------------------+---------------------------------------------------+-------------------------+\n\
+    \n1.  []{#3.1_Process_Measurement_Reports .anchor}**Process Measurement Reports**\n\
+    \n> Monthly WD03, Accruals to be posted in PeopleSoft."
+  questions_and_answers:
+  - question: What is the control objective of the journal entry process for SBT accruals?
+    answer: The control objective is to post the capital spend in Peoplesoft system
+      on the same month.
+  - question: What is the control activity for the journal entry process for SBT accruals?
+    answer: The control activity for the journal entry process for SBT accruals is
+      to review and approve manual journal entries in line with company policy prior
+      to being posted.
+  - question: What is the risk assertion for the journal entry process for SBT accruals?
+    answer: The risk assertion for the journal entry process for SBT accruals is that
+      incorrect financial reporting may occur if the journal entries are not accurately
+      processed and approved.
+- context: "1.  #  Document Information \n\n    1.  ## About this Document\n\n> This\
+    \ is official IBM guide document which describes how IBM Delivery Centre will\
+    \ perform the SBT - Accrual (PCCACR) process. This document will be used for future\
+    \ reference, either for IBM team or for Client Team.\n\n## Who should use this\
+    \ Document?\n\n> This document can be used by the R2R Fixed Asset Associate processing\
+    \ the entry and the journal reviewer.\n\n## Revision/Approval History\n\n+----------------------+----------------------+--------------------------+-----------------+----------------------------------------------------------+---------------------+\n\
+    | > **Version number** | > **Effective Date** | > **Summary of Changes** | > **Author**\
+    \    | > **Reviewer**                                           | > **Approver**\
+    \      |\n+======================+======================+==========================+=================+==========================================================+=====================+\n\
+    | > 1.0                | > 05/17/2022         | > Draft                  | > K/B\
+    \ | > R T / S N / E W | > C J S\
+    \ |\n+----------------------+----------------------+--------------------------+-----------------+----------------------------------------------------------+---------------------+\n\
+    \n## References\n\n> [[https://example.com\\\
+    #bpmn]{.ul}](https://example.com#bpmn)\n\n\
+    > Refer the below stated generic Desk procedure to process PeopleSoft Journal\
+    \ entry.\n>\n> Client_R2R_GA_Peoplesoft Journal Entry posting_2022_V1.0\n\n##\
+    \ Document Control Information\n\n> At the end of this document is a labelled\
+    \ box indicating the end of text."
+  questions_and_answers:
+  - question: Where can I find the process map for SBT - Accrual (PCCACR) process?
+    answer: The process map is available in the following link - https://example.com#bpmn
+  - question: What is the purpose of Client-JE Accruals document?
+    answer: The purpose of Client-JE Accruals document is to describe the process
+      of SBT - Accrual (PCCACR) and to serve as a guide for future reference for both
+      IBM and Client teams.
+  - question: What is the reference document for processing PeopleSoft Journal entry?
+    answer: The reference document for processing PeopleSoft Journal entry is 'Client_R2R_GA_Peoplesoft
+      Journal Entry posting_2022_V1.0'.
+- context: "2.  #  Overview \n\n    1.  ## Objective(s)\n\n> If any project (SBT)\
+    \ that failed to be capitalized by end of the month should be created an accrual\
+    \ on WD03 in the peoplesoft system to ensure the capital spend recorded on the\
+    \ same period when it occurs.\n\n1.  **Frequency:**\n\n> Monthly\n\n2.  **Source:**\n\
+    \n> PeopleSoft Query\n\n3.  **System Accesses:**\n\n> PeopleSoft Financials M:\
+    \ Drive\n\n## Inputs & Outputs\n\n+--------------------+--------------+\n| > **Input**\
+    \        | > **From**   |\n+====================+==============+\n| > PeopleSoft\
+    \ Query | > PeopleSoft |\n+--------------------+--------------+\n\n+------------------------------+--------------+\n\
+    | > **Output**                 | > **To**     |\n+==============================+==============+\n\
+    | > SBT Accrual(PCCACR) posted | > Peoplesoft |\n+------------------------------+--------------+"
+  questions_and_answers:
+  - question: What is the objective of SBT - accrual process?
+    answer: The objective  of SBT - accrual process is to ensure that the capital
+      spend is recorded in the same period when it occurs, even if the project fails
+      to be capitalized by the end of the month.
+  - question: How often is the SBT accrual process performed?
+    answer: The SBT accrual process is performed monthly, typically on WD03.
+  - question: What system accesses are required for the SBT accrual process?
+    answer: 'The required system accesses are PeopleSoft Financials and M: Drive.'
+- context: "5.  #  Process Detail \n\n    1.  ## Overview\n\n> If there is any project\
+    \ (SBT) that failed to be capitalized by end of the month, an accrual should be\
+    \ created on WD03 in the PeopleSoft system to ensure the capital spend recorded\
+    \ on the same period when it occurs. IBM Fixed Asset Associate will run PeopleSoft\
+    \ query to get the list of projects failed to be capitalized. The associate will\
+    \ book accrual entry for the same.\n\n## Process Flow\n\n## Process Description\n\
+    \n1.  Login to Client Citrix, Navigate below path and rollforward the prior month\
+    \ JE file(SBT PCCACR Master) to current month folder\n\n> FA > AM BU >\
+    \ 09900 > 2022 > JE\n\n2.  To pull the items which were supposed to\
+    \ be capitalize but not during the period, Login to PeopleSoft, navigate below\
+    \ path and select highlighted Query, click on Excel\n\n> Main Menu > Reporting\
+    \ Tools >Query > Query Viewer\n\n3.  Below screen appear, update the\
+    \ Business Unit (0990 always), Account(24540 (always), Account 2 (24542 always),\
+    \ Fiscal Year (Current Fiscal Year).\n\n> Click on View Result as highlighted\
+    \ below.\n\n4.  Report will open in Excel as shown below, Go to Acctg Date column\
+    \ and filter WD1 date, excel looks below\n\n> If any line item found on WD1 date\
+    \ then book an accrual entry\n\n5.  Open the SBT PCCACR Master excel file, go\
+    \ to ZI_SBT_PAC_AM_STATUS_NOT_DIST tab and update the WD1 line item.\n\n6.  Go\
+    \ to JE tab and update the line item details into JE template accordingly.\n\n\
+    > Debit 32110(Cost account) Credit 24542(CIP account)\n>\n> Once JE is ready,\
+    \ Upload into PeopleSoft using the journal upload tool.\n>\n> Refer the below\
+    \ stated generic Desk procedure to process PeopleSoft Journal entry. Client_R2R_GA_Peoplesoft\
+    \ Journal Entry posting_2022_V1.0"
+  questions_and_answers:
+  - question: How does the IBM Fixed Asset Associate obtain the list of projects that
+      failed to be capitalized?
+    answer: The IBM Fixed Asset Associate runs a PeopleSoft query to obtain the list
+      of projects that failed to be capitalized.
+  - question: What are the steps to update the SBT PCCACR Master excel file and prepare
+      the journal entry?
+    answer: 'The steps to update the SBT PCCACR Master excel file and prepare the
+      journal entry are:
+
+
+      1.  Update the WD1 line item** in the ZI_SBT_PAC_AM_STATUS_NOT_DIST tab.
+
+      2.  Update the line item details into the JE template accordingly.  Debit 32110
+      (Cost account) and Credit 24542 (CIP account).
+
+      3.  Upload the journal entry into PeopleSoft using the journal upload tool.'
+  - question: When creating SBT PCCACR Master Excel file, what is the next step after
+      running the PeopleSoft query?
+    answer: When creating SBT PCCACR Master Excel file, after running the PeopleSoft
+      query, the report will open in Excel, and you need to go to the Acctg Date column
+      and filter WD1 date to check if any line item is found on WD1 date. If yes,
+      then book an accrual entry.
+- context: '6.  []{#6_Definitions .anchor} **Definitions**
+
+
+    > The following are definitions of acronyms used in this document:
+
+
+    +----------+-----------------------------------------+
+
+    | > Term   | > Definition                            |
+
+    +==========+=========================================+
+
+    | > R2R    | > Record to Report                      |
+
+    +----------+-----------------------------------------+
+
+    | > PCCACR | > PCC (Journal ID of Accrual reversal), |
+
+    |          | >                                       |
+
+    |          | > ACR (Journal ID of Accruals)          |
+
+    +----------+-----------------------------------------+
+
+    | > JE     | > Journal Entry                         |
+
+    +----------+-----------------------------------------+
+
+    | > WD     | > Work Day                              |
+
+    +----------+-----------------------------------------+
+
+    | > PS     | > PeopleSoft                            |
+
+    +----------+-----------------------------------------+'
+  questions_and_answers:
+  - question: What does the acronym "JE" stand for?
+    answer: The acronym "JE" stands for **Journal Entry**.
+  - question: What does the acronym "PCCACR" stand for?
+    answer: The acronym "PCCACR" is a combination of PCC and ACR where for PCC refers
+      to Journal ID of Accrual reversal and and ACR  refers to Journal ID of Accruals.
+  - question: What is the short name or acronym for Work Day.
+    answer: Work day can be called WD in short.

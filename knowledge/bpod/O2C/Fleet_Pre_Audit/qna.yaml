@@ -1,0 +1,327 @@
+domain: 'BPOD order to cash: Fleet Pre Audit'
+document_outline: Explains the steps involved in the reviewing paperwork created for
+  invoicing for the trucks that are delivered for recognizing the revenue.
+seed_examples:
+- context: "# Control Points\n\n+----------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------+---------------------------------------------------------------------------------+-------------------------------------------------------------------+-------------------------------------------------------------------------------+---+\n\
+    | ***Step No.*** | ***Sub process Activity***                                \
+    \                             | ***Control Objective(s)***                   \
+    \                                                | ***Control Activity***    \
+    \                          | ***Risk Assertions***                           \
+    \                                | ***Frequency (i.e. Event, Daily, Monthly, Quarterly,\
+    \ Annually)*** | ***Evidence***                                              \
+    \                  |   |\n+================+========================================================================================+==============================================================================================+=====================================================+=================================================================================+===================================================================+===============================================================================+===+\n\
+    |                |                                                           \
+    \                             |                                              \
+    \                                                |                           \
+    \                          |                                                 \
+    \                                |                                           \
+    \                        |                                                   \
+    \                            |   |\n+----------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------+---------------------------------------------------------------------------------+-------------------------------------------------------------------+-------------------------------------------------------------------------------+---+\n\
+    |                |                                                           \
+    \                             |                                              \
+    \                                                |                           \
+    \                          |                                                 \
+    \                                |                                           \
+    \                        |                                                   \
+    \                            |   |\n+----------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------+---------------------------------------------------------------------------------+-------------------------------------------------------------------+-------------------------------------------------------------------------------+---+\n\
+    | ***1.19***     | *Checking all the paperwork and calculation with reference\
+    \ to the invoicing checklist* | *Identifying the missed and mismatch paperwork,\
+    \ correcting the calculation before invoicing* | *Once Sales order File created\
+    \ for each unit*       | *Revenue is not Recognized because without pre audit\
+    \ Invoicing will not happen* | *Daily*                                       \
+    \                    | *Units for those having all the proper paperwork invoice\
+    \ will get generated.* |   |\n|                |                             \
+    \                                                           |                \
+    \                                                                            \
+    \  |                                                     |                   \
+    \                                                              |             \
+    \                                                      |                     \
+    \                                                          |   |\n|          \
+    \      |                                                                     \
+    \                   |                                                        \
+    \                                      | *and updated in backlog file Pre audit\
+    \ takes place* |                                                             \
+    \                    |                                                       \
+    \            |                                                               \
+    \                |   |\n+----------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------+---------------------------------------------------------------------------------+-------------------------------------------------------------------+-------------------------------------------------------------------------------+---+\n\
+    |                |                                                           \
+    \                             |                                              \
+    \                                                |                           \
+    \                          |                                                 \
+    \                                |                                           \
+    \                        |                                                   \
+    \                            |   |\n+----------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------+---------------------------------------------------------------------------------+-------------------------------------------------------------------+-------------------------------------------------------------------------------+---+\n\
+    |                |                                                           \
+    \                             |                                              \
+    \                                                |                           \
+    \                          |                                                 \
+    \                                |                                           \
+    \                        |                                                   \
+    \                            |   |\n+----------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------+---------------------------------------------------------------------------------+-------------------------------------------------------------------+-------------------------------------------------------------------------------+---+\n\
+    \n## Process Measurement Reports \n\n> Pre Audit for Fleet activity will be performed\
+    \ on Daily basis."
+  questions_and_answers:
+  - question: How frequently is the pre-audit for fleet activity performed?
+    answer: The pre-audit for fleet activity is performed on a daily basis.
+  - question: What is the risk assertion associated with the control activity "Checking
+      all the paperwork and calculation with reference to the invoicing checklist"
+      in Fleet pre-audit?
+    answer: The risk assertion associated with the control activity "Checking all
+      the paperwork and calculation with reference to the invoicing checklist" in
+      Fleet pre-audit is that revenue will not be recognized because invoicing will
+      not happen without pre-audit.
+  - question: During fleet pre-audit, what is the objective of control point "Checking
+      all the paperwork and calculation with reference to the invoicing checklist"?
+    answer: During fleet pre-audit, objective of control point "Checking all the paperwork
+      and calculation with reference to the invoicing checklist" is to identify missed
+      and mismatched paperwork and correct calculations before invoicing.
+- context: '# Overview
+
+
+    ## Objective(s)
+
+
+    To review and make sure all paperworks created for a particular truck/unit are
+    aligned with the checklist and the amount are matched with the factory invoice,
+    worksheet summary and other required documents available against the unit. During
+    pre audit, the sales order files have to be checked for the informations like
+    Total price of the unit, Credit limit of the customer from PeopleSoft, PO Number
+    available on factory invoice and worksheet summary, SPA amount from eDeal website,
+    Frieght charges, Surcharges, Delivery date, Terms with the customer on recognizing
+    revenue, Special Prep & Delivery, Rebates and Warranty, FET calculations and backup
+    emails with reference to the invoicing checklist.
+
+
+    ## SIPOC
+
+
+    +----------------------------+--------------------+---------------------------------------------------------+-------------------------------------------------------+-----------------+
+
+    | **SUPPLIER**               | **INPUT**          | **PROCESS**                                             |
+    **OUTPUT**                                            | **CUSTOMER**    |
+
+    +============================+====================+=========================================================+=======================================================+=================+
+
+    | Fleet Invoicing Assistants | Fleet Backlog file | \- Check for the units for
+    which paperwork is created   | Corrections are made and units are sent for invocing.
+    | Fleet customers |
+
+    |                            |                    |                                                         |                                                       |                 |
+
+    |                            |                    | \- Match the amount, PO numbers
+    etc..with paperwork     |                                                       |                 |
+
+    |                            |                    |                                                         |                                                       |                 |
+
+    |                            |                    | \- Inform invoicing assistant
+    if any changes to be made |                                                       |                 |
+
+    +----------------------------+--------------------+---------------------------------------------------------+-------------------------------------------------------+-----------------+'
+  questions_and_answers:
+  - question: What are some of the key pieces of information that need to be checked
+      during the pre-audit process?
+    answer: The key information that need to be checked during the pre-audit process
+      include Total price of the unit, Credit limit of the customer from PeopleSoft,
+      PO Number available on factory invoice and worksheet summary, SPA amount from
+      eDeal website, Freight charges, Surcharges, Delivery date, Terms with the customer
+      on recognizing revenue, Special Prep & Delivery, Rebates and Warranty, FET calculations,
+      and backup emails with reference to the invoicing checklist.
+  - question: Who is the supplier in the SIPOC (Supplier, Input, Process, Output,
+      Customer) diagram for Fleet pre-audit?
+    answer: The supplier in the SIPOC diagram for Fleet pre-audit are the Fleet Invoicing
+      Assistants.
+  - question: What is the output of the pre-audit process?
+    answer: The output of the pre-audit process are the corrections made to the paperwork
+      and units being sent for invoicing.
+- context: '## Overview
+
+
+    > Pre Audit activity is performed to check all the paperwork before sending for
+    invoicing to make sure the details are matched and corrected. To review and make
+    sure all paperworks created for a particular truck/unit are aligned with the checklist
+    and the amount are matched with the factory invoice, worksheet summary and other
+    required documents available against the unit. During pre audit, the sales order
+    files have to be checked for the informations like Total price of the unit, Credit
+    limit of the customer from PeopleSoft, PO Number available on factory invoice
+    and worksheet summary, SPA amount from eDeal website, Frieght charges, Surcharges,
+    Delivery date, Terms with the customer on recognizing revenue, Special Prep &
+    Delivery, Rebates and Warranty, FET calculations and backup emails with reference
+    to the invoicing checklist. Pre Auditor should perform this activity daily before
+    the invoices are send for processing in the overnight batch run.'
+  questions_and_answers:
+  - question: What is the purpose of the pre-audit activity?
+    answer: The purpose of the pre-audit activity is to review and ensure that all
+      paperwork for a particular truck/unit is accurate, complete, and aligned with
+      the checklist and the amount matches with the factory invoice, worksheet summary
+      and other required documents available against the unit..
+  - question: What information should be checked in the sales order files during pre-audit?
+    answer: During pre-audit, the sales order files should be checked for the information
+      like Total price of the unit, Credit limit of the customer from PeopleSoft,
+      PO Number available on factory invoice and worksheet summary, SPA amount from
+      eDeal website, Frieght charges, Surcharges, Delivery date, Terms with the customer
+      on recognizing revenue, Special Prep & Delivery, Rebates and Warranty, FET calculations
+      and backup emails with reference to the invoicing checklist.
+  - question: What is the goal of verifying the information in the sales order files
+      during pre-audit?
+    answer: The goal of verifying the information in the sales order files during
+      pre-audit is to ensure that the details are matched and corrected before sending
+      the paperwork for invoicing, to prevent errors and discrepancies.
+- context: '## Process Description
+
+
+    1.  Download the current fleet backlog file from Teams (in this scenario, it is
+    10th May 2022 file). In Fleet backlog file, multiple tabs are created for each
+    fleet invoicing assistants for updating the details of the units for which paperworks
+    are created.
+
+
+    2.  To wal through the steps Ryder customer under Location 424 is used.
+
+
+    3.  Open the paperwork for Ryder US, Order number **576632** from the path **[M:\\Sales
+    Invoicing\\NAI\\Paperless Invoicing\\FY2022\\Ryder\\424\\05 May\\05.10.2022\\Order
+    576632.]{.ul}**
+
+
+    4.  First page of paperwork will be **R-100 Checklist** template. This should
+    be attached with all the paperwork created for any customer.
+
+
+    5.  Next will be a manual **Invoicing checklist** which will be prepared by the
+    fleet invoicing assistant. This document will have all the details that are going
+    to key into RASS like Total price, PO Number, SPA amount, Frieght charges, Surcharges,
+    P&D amount, State, Model, Rebates, Warranty, Delivery date & Customer terms if
+    its a Completion customer(A) or Delivery customer(B). The details updated in the
+    document are from the consolidated paperwork.
+
+
+    6.  Next document will be the **Factory Invoice,** which provides information
+    such as Order number, Customer PO, SPA number and amount. Make sure to match these
+    information with invoice checklist and worksheet summary.
+
+
+    7.  Continuing on the second page of **Factory Invoice,** shows Warranty code,
+    Frieght charges, Raw material Surcharges and any other surcharges if available.
+    Match this amount with invoicing checklist.
+
+
+    8.  **Factory Invoice** also shows details of engine code. This information will
+    be required while identifying the vendor assistance amount.
+
+
+    9.  Next document is **Worksheet summary,** which provides complete information
+    aboutthe pricing of the truck.
+
+
+    10. Next will be Special P&D paperwork for any additional specifiaction added
+    to the truck. Make sure the amount is matching with the invoicing checklist.
+
+
+    Below is a detailed break up document and calculation.
+
+
+    11. Check W**arranty** paperwork is attached and the amount and contract number
+    is matching with worksheet summary and checklist.
+
+
+    12. Next check for the **SPA** supporting documents. The document should be dated
+    with current date
+
+
+    13. **Rebate** can be identified from SPA document. Make sure to match the amount
+    with invoicing checklist.
+
+
+    14. Check if engine specification on factory invoice is available on SPA document.
+    If the same specification are available, the customer is eligible for vendor assistance.
+    Make sure the amount is updated based on SPA document in the invoicing checklist.'
+  questions_and_answers:
+  - question: What is the purpose of the 'Invoicing checklist' document in Fleet Pre-Audit?
+    answer: In Fleet Pre-Audit, the 'Invoicing checklist' document is prepared by
+      the fleet invoicing assistant and contains all the details that will be keyed
+      into RASS, such as Total price, PO Number, SPA amount, Freight charges, Surcharges,
+      P&D amount, State, Model, Rebates, Warranty, Delivery date, and Customer terms.
+  - question: For Fleet Pre-Audit, what information should be matched between the
+      'Factory Invoice' and the 'Invoicing checklist'?
+    answer: For Fleet Pre-Audit, Order number, Customer PO, SPA number and amount
+      should be matched between the 'Factory Invoice' and the 'Invoicing checklist'.
+  - question: How is the vendor assistance amount identified and updated in the 'Invoicing
+      checklist' for Fleet Pre-audit?
+    answer: For Fleet Pre-audit, the vendor assistance amount is identified by checking
+      if the engine specification on the 'Factory Invoice' is available on the SPA
+      document. If the same specifications are available, the customer is eligible
+      for vendor assistance, and the amount is updated based on the SPA document in
+      the 'Invoicing checklist'.
+- context: '15. If customer is eligible for rebate, make sure the rebate program approved
+    file is available as a supporting document.
+
+
+    16. If any additional approvals are taken on SPA, the approved email should be
+    attached as supporting document.
+
+
+    17. Next check for the credit line supporting downloaded from PeopleSoft. Make
+    sure the customer credit limit is not crossed.
+
+
+    18. Make sure Delivery confirmation supporting is attached.
+
+
+    19. Once all supporting documents are checked, compared and verified with invoicing
+    checklist, go back to backlog file and update initial under the PRE-AUDIT (column
+    G), this means the pre audit is completed for the particular unit. If any of the
+    paperwork is not matching or details are missing, update the comment against the
+    unit so that the invoicing assitant could go back and make corrections on the
+    supporting document.
+
+
+    20. For Penske customer under Location 132, on the Financial summary sheet check
+    for Special P&D.
+
+
+    21. A Sales Tax Exemption Form should be attached as supporting document for the
+    PENSKE customer
+
+
+    22. FET Exemption certificate should be attached as supporting document
+
+
+    23. FET calculation working sheet should be available for review
+
+
+    24. If any variance on the FET calculation, an approved variance letter should
+    be attached as supporting document
+
+
+    25. For PENSKE, SPA includes two different Rebate programmes for Medium and Heavy
+    units. Check in the invoicing checklist if the correct model is considered.
+
+
+    26. Once all the units are pre audited, open FY2022 NAI SALES Files from Teams
+    folder.
+
+
+    27. Update the file with the details of units that are pre audited.
+
+
+    28. Match the total count on **FY2022 NAI Sales** file with **Backlog file.**
+    This should be matching.
+
+
+    The pre audit activity concludes here.'
+  questions_and_answers:
+  - question: What should be done if any of the paperwork is not matching or details
+      are missing during the pre-audit process?
+    answer: If any of the paperwork is not matching or details are missing during
+      pre-audit process, the comment should be updated against the unit in the backlog
+      file so that the invoicing assistant can go back and make corrections on the
+      supporting document.
+  - question: During fleet pre-audit, what specific supporting documents are required
+      for PENSKE customers under Location 132?
+    answer: During Fleet pre-audit,  Sales Tax Exemption Form, FET Exemption certificate,
+      and FET calculation working sheet are required for PENSKE customers under Location
+      132.
+  - question: What supporting document should be attached during fleet pre-audit,
+      if a customer is eligible for a rebate?
+    answer: If a customer is eligible for a rebate during fleet pre-audit, the rebate
+      program approved file should be attached as a supporting document.

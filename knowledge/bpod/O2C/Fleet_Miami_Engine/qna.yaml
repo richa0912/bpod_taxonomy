@@ -1,0 +1,323 @@
+domain: 'BPOD order to cash: Fleet Miami Engine'
+document_outline: Explains the steps involved in processing the miami engine invoices
+  for parts in PeopleSoft.
+seed_examples:
+- context: "# Control Points\n\n  ***Step No***   ***Sub process Activity***   ***Control\
+    \ Objective(s)***   ***Control Activity***   ***Risk Assertions***   ***Frequency\
+    \ (i.e. Event, Daily, Monthly, Quarterly, Annually)***   ***Evidence***\n  ---------------\
+    \ ---------------------------- ---------------------------- ------------------------\
+    \ ----------------------- -------------------------------------------------------------------\
+    \ ----------------\n                                                         \
+    \                                                                            \
+    \                                                            \n\n## Process Measurement\
+    \ Reports \n\n> Performa invoices will be recieved via email and same should be\
+    \ accounted in PeopleSoft.\n\n# Roles & Responsibilities\n\n## Description\n\n\
+    \  **Role**                    **Responsibility**\n  ---------------------------\
+    \ -----------------------------------------------------\n  Brazil Team       \
+    \          Send Proforma invoices to Fleet invoicing assistant\n  Fleet Invoicing\
+    \ Assistant   Upload the details into PeopleSoft\n\n"
+  questions_and_answers:
+  - question: What is the responsibility of the Brazil Team in the Fleet Miami Engine
+      process?
+    answer: In, Fleet Miami Engine, the Brazil Team is responsible for sending Proforma
+      invoices to the Fleet Invoicing Assistant.
+  - question: In Fleet Miami Engine, who is responsible for uploading the details
+      into PeopleSoft?
+    answer: In Fleet Miami Engine, the  Fleet Invoicing Assistant is responsible for
+      uploading the details into PeopleSoft?
+  - question: Is the Segregation of Duties (SOD) Matrix available in Fleet Miami Engine?
+    answer: The Segregation of Duties (SOD) Matrix for Fleet Miami Engine is currently
+      pending IBM GPS internal review and approval.
+- context: "# Document Information\n\n## About this Document\n\nThis document explains\
+    \ about the steps involved in processing the miami engine invoices for parts in\
+    \ PeopleSoft.\n\n## Who should use this Document?\n\n> IBM Client Offshore team\
+    \ and Client Knoxville team\n\n## Revision/Approval History\n\n  --------------------\
+    \ -------------------- ------------------------ ------------ --------------- ----------------\n\
+    \  **Version number**   **Effective Date**   **Summary of Changes**   **Author**\
+    \   **Reviewer**    **Approver**\n  1.0                  6/20/2022           \
+    \ Preparation              Sinchana     Satish B   Ellen M\n  2.0\
+    \                  6/18/2023            Process updation         Sinchana    \
+    \ Vivek CV        Ellen M\n  -------------------- --------------------\
+    \ ------------------------ ------------ --------------- ----------------"
+  questions_and_answers:
+  - question: What is the purpose of Fleet Miami Engine document?
+    answer: The purpose of Fleet Miami Engine document is to explain the steps involved
+      in processing the Miami engine invoices for parts in PeopleSoft.
+  - question: Who should use Fleet Miami Engine document?
+    answer: The Fleet Miami Engine document is intended for use by the IBM Client
+      Offshore team and Client Knoxville team.
+  - question: What is the current version of Fleet Miami Engine document?
+    answer: The current version of the Fleet Miami Enginer document is 2.0, which
+      was approved on June 18, 2023.
+- context: '# Overview
+
+
+    ## Objective(s)
+
+
+    > To account the invoice manually generated for Miami engines into PeopleSoft
+    a seperate process needs to be followed. These invoices will not be generated
+    in RASS system. Brazil Team will generate the invoices manually and submit to
+    customer. At the same time, the manual invoice will be forwarded to fleet invoicing
+    assistant to account the same in PeopleSoft.
+
+
+    ## SIPOC
+
+
+    +--------------+-------------------------------------+--------------------------------------------------------+------------------------------------------+-----------------------+
+
+    | **SUPPLIER** | **INPUT**                           | **PROCESS**                                            |
+    **OUTPUT**                               | **CUSTOMER**          |
+
+    +==============+=====================================+========================================================+==========================================+=======================+
+
+    | Brazil Team  | Performa Invoice received via email | \- Receive Proforma invoice
+    from Brazil team via email | Invoices will be accounted in PeopleSoft | Cash receivables
+    team |
+
+    |              |                                     |                                                        |                                          |                       |
+
+    |              |                                     | \- Cross verify the invoice
+    details                    |                                          |                       |
+
+    |              |                                     |                                                        |                                          |                       |
+
+    |              |                                     | \- Create upload file for
+    PeopleSoft                   |                                          |                       |
+
+    |              |                                     |                                                        |                                          |                       |
+
+    |              |                                     | \- Upload the invoice details
+    into PeopleSoft          |                                          |                       |
+
+    |              |                                     |                                                        |                                          |                       |
+
+    |              |                                     | \- Generate invoice to
+    send to Brazil team             |                                          |                       |
+
+    +--------------+-------------------------------------+--------------------------------------------------------+------------------------------------------+-----------------------+'
+  questions_and_answers:
+  - question: Who is the supplier for Fleet Miami Engine process?
+    answer: The supplier for this Fleet Miami Engine process is the Brazil Team.
+  - question: What is the input received from the supplier in Fleet Miami Engine process
+      ?
+    answer: The input received from the supplier in Fleet Miami Engine process is
+      the Performa Invoice received via email.
+  - question: '
+
+      What is the output of Fleet Miami Engine process?'
+    answer: The output of Fleet Miami Emgine process is that the invoices will be
+      accounted in PeopleSoft.
+- context: '## Process Description
+
+
+    1.  Receive request from Brazil Team with Proforma invoice and Mahindra invoice
+    as attachment.
+
+
+    2.  Save the invoice copies and email to path **[M:\\General Sales\\Miami Engine\\Parts\\Create
+    folder for current invoices]{.ul}**.
+
+
+    3.  Open the invoice.
+
+
+    > Below is the invoice.
+
+
+    4.  Login to PeopleSoft, go to Billing \> Maintain Bills \> Standard Billing
+
+
+    5.  Click on Add a new value tab, enter Business Unit as 40148 and Invoice as
+    NEXT.
+
+
+    6.  Click on magnifier option next to Bill Type Identfier, select Service option
+    from the list.
+
+
+    7.  Click on magnifier option next to Bill Source, select Order Management option
+    from the list.
+
+
+    8.  Click on magnifier option next to Customer, check in the proforma invoice
+    received to identify the customer. In this scenario customer name is ALMACENES
+    JUAN JURI CIA LTD. Select the customer from the list.
+
+
+    9.  After selecting all the options and click on Add.
+
+
+    10. On the next screen under tab Header - Info 1, update the date. Date should
+    be current date (date on which upload is processed).
+
+
+    11. On Line info - 1 tab, update the details as below.
+
+
+    > Table - ID PS/billing Charge ID
+
+    >
+
+    > Identifier - Service
+
+    >
+
+    > Quantity - 1
+
+    >
+
+    > Description - Parts
+
+    >
+
+    > Unit price - According to Proforma invoice received(in this case \$2943)
+
+
+    After updating the required details, click on SAVE option.
+
+
+    12. Go back to Header -- Info 1 tab, change the Status option from NEW to RDY
+    (Ready to Invoice). Click on Save option. Make a not of the Invoice number from
+    the screen (in this case ME00013639)
+
+
+    13. Go to Billing \> Generate Invoices \> Non-Consolidated \> Single Action Invoice
+
+
+    14. Click on screen, under Find an Existing Value tab click on Search option.
+    This will bring up a list of control ID''s. Select ME_SINGLE_ACTION option from
+    the list.
+
+
+    15. To create a new ID, click on Add a New value option and enter the Run Contril
+    ID. Then click on Add option. This will create a new ID.
+
+
+    16. Enter From Invoice and To Invoice and click on save. Then click on Bill to
+    be processed option to check the status on the upload.
+
+
+    17. Corss verify the details on the screen and click on Return option to get back
+    to the pervious page.
+
+
+    18. Click on RUN option.
+
+
+    19. Select MIAMI_Engine\_ BL Print option from the list and click OK.
+
+
+    20. Click on Process Monitor option.
+
+
+    21. Check the Run Status. Wait until it turns to Sccuess.'
+  questions_and_answers:
+  - question: What is the purpose of changing the Status option from "NEW" to "RDY
+      (Ready to Invoice)" in Fleet Miami Engine?
+    answer: Changing the Status option from "NEW" to "RDY (Ready to Invoice)" in Fleet
+      Miami Engine indicates that the invoice is ready to be processed and generated.
+  - question: What is the purpose of the RUN option in the Fleet Miami Engine?
+    answer: The purpose of the RUN option in Fleet Miami Engine is to process the
+      billing information and generate an invoice. After clicking on RUN, select the
+      MIAMI_Engine_BL Print option from the list and click OK, then click on Process
+      Monitor option to check the Run Status.
+  - question: Which details need to be updated in 'Line info - 1' tab in Fleet Miami
+      Engine?
+    answer: Table, Identifier, Quantity, Description and Unit price need to be updated
+      in 'Line info - 1' tab in Fleet Miami Engine.
+- context: '22. Once the posting is success, go to Main menu \> Accounts Receivable
+    \> Receivables Update \> Request Receivable Update
+
+
+    23. On the Find an Existing Value tab, click on Search option. From the list select
+    ARUpdate option.
+
+
+    24. Enter Group Unit as 40148, Accounting Date From and Accounting Date To. Click
+    on Save option. Then click on Run option.
+
+
+    25. Select PS/AR Receivable Update and click OK.
+
+
+    26. Click on Process Monitor option
+
+
+    27. Make sure Run Status is Posted.
+
+
+    28. Open Proforma invoice from the saved folder. Update Client details, Date and
+    Inv Number.
+
+
+    29. Print the invoice in Broadgun PDF Machine.
+
+
+    30. Save the invoice in path **[M:\\General Sales\\Miami Engine\\Parts\\current
+    folder]{.ul}**
+
+
+    31. Open Mahindra invoice. Change exporter information to Client details, Invoice
+    number and date, take out all the formulas, delete buyer details and works payment
+    terms.
+
+
+    32. Print the invoice into Broadgun PDF Machine.
+
+
+    33. Save the file in path **[M:\\General Sales\\Miami Engine\\Parts\\current folder]{.ul}**
+
+
+    34. On Mahindra Invoice, go to Custom Invoice tab. Update the below details.
+
+
+    Add ME number ( this is from PeopleSoft)
+
+
+    Business unit -- 40148
+
+
+    Vendor - 50534AX(this is will be updated by Barzil team)
+
+
+    Account number -- 401484074880 (this will be updated by Brazil team)
+
+
+    35. Print the invoice to Broadgun PDF Machine.
+
+
+    36. Save the file in folder **[M:\\General Sales\\Miami Engine\\Parts\\Current
+    folder]{.ul}**
+
+
+    37. Send the PDF files created for invoicing and packing list back to Brazil team.
+
+
+    38. Send Packing list invoice copy to Accounts Payable team(xxx\@Client.com).
+    Save the signed invoice on the folder
+
+
+    The activity concludes here.'
+  questions_and_answers:
+  - question: What is the purpose of printing the invoices using Broadgun PDF Machine?
+    answer: The purpose of printing the invoices using Broadgun PDF Machine is to
+      save the invoices as PDF files, which can be sent to the Brazil team and Accounts
+      Payable team.
+  - question: What is the path where Fleet Miami enginer related invoices should be
+      saved?
+    answer: The Fleet Miami Enginer invoices should be saved in the path 'M:\General
+      Sales\Miami Engine\Parts\current folder'.
+  - question: Which details need to be updated in Custom Invoice Tab for Mahindra
+      Invoice in Fleet Miami Engine process?
+    answer: 'Following details need to be updated in Custom Invoice Tab for Mahindra
+      Invoice in Fleet Miami Engine process.
+
+      1. ME number ( from PeopleSoft)
+
+      2. Business unit: 40148
+
+      3. Vendor: 50534AX (will be updated by Brazil team)
+
+      4. Account number: 401484074880 (will be updated by Brazil team)'

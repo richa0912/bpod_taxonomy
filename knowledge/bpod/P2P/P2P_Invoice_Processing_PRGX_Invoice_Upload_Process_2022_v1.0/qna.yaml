@@ -1,0 +1,295 @@
+domain: 'BPOD procure to pay: P2P_Invoice Processing_CLIENT Invoice Upload Process_2022_v1.0'
+document_outline: This document outlines the process for IBM Delivery Center to handle
+  CLIENT claims in PeopleSoft and upload images to Oracle via Capsys. It serves as a
+  reference guide for both the IBM team and the Client Team for future use.
+seed_examples:
+- context: '
+
+    ### Copy all the Attachments in the Email and Paste in the KOFAX folder in the
+    following Path i.e., M:\>allshare\>XEROX_Scan\>KOFAX\>Knoxville Uploads.
+
+
+    ### Select the CLIENT file and Delete the File. (Only Pdf files need to be Pasted
+    in the KOFAX folder, so here we are removing CLIENT Excel file).
+
+
+    ### Captures is the Utility and Capsys is the taking Images and placing them in
+    Oracle Imaging.
+
+
+    ### Open Capsys product. Client link and Login with the Credentials.
+
+
+    ### Home Page will Populate.
+
+
+    ### Select Capture in Capsys home Page.
+
+
+    ### Select CP-MX Prefix Payable in the dropdown for Profile Column and Click on
+    Scan/Import.
+
+
+    ### A dialogue box will populate showing Scan Type as Corporate, Click on OK.
+
+
+    ### Go to M:\>allshare\>XEROX_Scan\>KOFAX\>Knoxville Uploads and Select the PDF
+    files (Only 4 at Once) and Click on Open.
+
+
+    ### PDF files will be Imported in the Capture page.
+
+
+    ### Select the Batch and Click on Release.
+
+
+    ### A Dialogue box will populate showing to conform the Release then Click on
+    OK.
+
+
+    ### Select the Index tab and Click on Release if the Batch is Populated.
+
+
+    ### Open the Outlook and Select the Knoxville Uploads CLIENT Email and move it to
+    the CLIENT Completed Folder.
+
+
+    ### Open the CLIENT Email and Copy the Subject and Go to M:\>AP VoucherUpload\>CE
+    Win 10\>Select the Destination file (DEST) and Rename with the Subject of PRGX
+    email with Current Date (MMDDYY).
+
+
+    ### Select and Move the Renamed File to CE DEST folder from CE Win 10 folder.'
+  questions_and_answers:
+  - question: What is the next step after importing the PDF files into the Capture
+      page in Capsys?
+    answer: The next step after importing the PDF files using Capsys is to open the
+      Outlook and select the Knoxville Uploads CLIENT Email and move it to the PRGX
+      Completed Folder.
+  - question: What is the final step in the CLIENT Invoice Upload process
+    answer: The final step in the process is to select and move the renamed Destination
+      file (DEST) to the CE DEST folder from the CE Win 10 folder.
+  - question: What is the purpose of deleting the CLIENT file
+    answer: he CLIENT file is deleted because only PDF files need to be pasted in the
+      KOFAX folder, and the CLIENT file is an Excel file.
+- context: "## About this Document\n\nThis is official IBM guide document which describes\
+    \ how IBM Delivery Center will perform the processing of CLIENT claims in PeopleSoft\
+    \ and upload images to Oracle via Capsys. This document will be used for future\
+    \ reference, either for IBM team or for Client Team.\n\n## Who should use this\
+    \ Document?\n\nThe Document can be used by the Invoice processing team/reviewer\
+    \ who will be processing the CLIENT Invoice Upload Process.\n\n## Revision/Approval\
+    \ History\n\n  -------------------- -------------------- ------------------------\
+    \ ------------ --------------------------- --------------\n  **Version number**\
+    \   **Effective Date**   **Summary of Changes**   **Author**   **Reviewer**  \
+    \              **Approver**\n\n  1.0                  06/06/2022           Draft\
+    \                    DKS     YSB  \n  --------------------\
+    \ -------------------- ------------------------ ------------ ---------------------------\
+    \ --------------\n\n## Document Control Information\n\nAt the end of this document\
+    \ is a labelled box indicating the end of text.\n\n+-----------------------------------------------------------------------+\n\
+    | END OF DOCUMENT                                                       |\n| \
+    \                                                                      |\n| PRGX\
+    \ Invoice Upload Process                                           |\n+-----------------------------------------------------------------------+\n\
+    \n# Overview\n\n## Objective(s)\n\nCLIENT files for claims are sent weekly to the\
+    \ Knoxville Uploads Mailbox from CLIENT Auditors along with the claim copies for\
+    \ Oracle. The Excel file is uploaded to PeopleSoft via the Spreadsheet Upload\
+    \ Process. The PDF files are imported to Oracle via Capsys.\n\n## Inputs & Outputs\n\
+    \n+-----------------------------------------------------------------------------------------+------------------------------------------------+\n\
+    | Input                                                                      \
+    \             | From                                           |\n+-----------------------------------------------------------------------------------------+------------------------------------------------+\n\
+    | > Email request received in Knoxville Uploadsgeneric email box and saved in\
+    \ ShareDrive. | > CLIENT Audit Team                              |\n+-----------------------------------------------------------------------------------------+------------------------------------------------+"
+  questions_and_answers:
+  - question: What is the objective of the CLIENT Invoice Upload Process?
+    answer: The objective of the CLIENT Invoice Upload Process is to process CLIENT claims
+      for payment in PeopleSoft and upload images to Oracle via Capsys
+  - question: What is the source of the input for the CLIENT Invoice Upload Process?
+    answer: The source of the input for the CLIENT Invoice Upload Process is the email
+      request received in Knoxville Uploads generic email box and saved in ShareDrive
+      from the CLIENT Audit Team.
+  - question: Who should use this document the CLIENT Invoice Upload Process?
+    answer: The document can be used by the Invoice processing team/reviewer who will
+      be processing the CLIENT Invoice Upload Process.
+- context: '## Process Description
+
+
+    ### Open Outlook Knoxville Uploads folder to review for new requests.
+
+
+    ### Open the Excel file.
+
+
+    ### Select Enable Editing. In the invoice number heading there is invoice number
+    is populated and we need to correct the header and place the invoices number correctly.
+    So, we need to cross check whether the invoices are exactly matching with there
+    data available in the spreadsheet.
+
+
+    ### Open the Invoice copy from the email and cross check the CLIENT Claim number,
+    Invoice Number, and chargeback Amount.
+
+
+    ### Select F row from the Column 3 to 12 and click on Insert.
+
+
+    ### Select Shift cells down and click on OK.
+
+
+    ### A blank cell will appear, and we need to enter Invoice Number in the Blank
+    cell.
+
+
+    ### Check the Gross Invoice amount is matching with the Merchandised Amt. If it
+    is matching means we can be ready to copy the data from the spreadsheet.
+
+
+    ### Copy all line items scroll to far right to make sure all lines items are selected.
+
+
+    ### Go to M drive\>APVoucherUpload\>CE Win 10\>ExcelUploadforVoucher_InvUpload.xlsm
+    and open the file.
+
+
+    ### Click on Row 4, right-click and select Paste Special Values.
+
+
+    Note: If Paste Special Values is not used, then the file will not upload to PeopleSoft.
+
+
+    ### Cross check the Merchandised Amt in the DF row with the Merchandised Amt in
+    the GU row. If it is matching, we can upload it in the Peoplesoft.
+
+
+    ### Enter User ID and Password. Select OK.
+
+
+    ### Create a Destination file and the file name should be DEST.XML. Click on Save.
+
+
+    M drive\>APVoucherUploads\>CE Win 10
+
+
+    Note:If a DEST.XML already exists, then it must be moved to M:\\APVoucherUpload\\Archive
+    prior to creating a new one. Change DEST.XML file name to the Upload that was
+    previously done, MMDDYYYY and save.'
+  questions_and_answers:
+  - question: Why is it crucial to use "Paste Special Values"?
+    answer: If "Paste Special Values" is not used, the file will not upload to PeopleSoft.
+  - question: Where is the DEST.XML file saved and what is its purpose?
+    answer: The DEST.XML file is saved in M drive>APVoucherUploads>CE Win 10, and
+      its purpose is to create a destination file for uploading data to PeopleSoft.
+  - question: What is the first step in the CLIENT Invoice Upload Process?
+    answer: The first step is to open the Outlook Knoxville Uploads folder to review
+      for new requests.
+- context: '### Create a Destination file and the file name should be DEST.XML. Click
+    on Save.
+
+
+    M drive\>APVoucherUploads\>CE Win 10
+
+
+    Note:If a DEST.XML already exists, then it must be moved to M:\\APVoucherUpload\\Archive
+    prior to creating a new one. Change DEST.XML file name to the Upload that was
+    previously done, MMDDYYYY and save.
+
+
+    ### Select OK and the file is saved.
+
+
+    Note: If there is an error with the upload, the box will say an error has occurred.
+    Start the entire process again. If the error continues, then you may have bad
+    data in the file. In the original file, delete any blank rows at the bottom or
+    blank columns to the far right. If that still does not resolve the issue on the
+    next attempt, then contact local System Support to assist.
+
+
+    ### Open PeopleSoft to verify upload was successful.
+
+
+    ### Select Reporting Tools. Click on Query and select Query Viewer.
+
+
+    ### Search for Staged Vouchers query: ZI_AP_STAGED_VOUCHERS and select Run to
+    Excel.
+
+
+    ### Enter Origin KUP (Knoxville Upload) and click on View Result.
+
+
+    ### Click on Open to open the pdf file.
+
+
+    ### Click on Enable editing to make the necessary changes.
+
+
+    ### Scroll through file to see if it matches the original file. In this case there
+    have been other files uploaded Delete those data from the spreadsheet.
+
+
+    ### Click on File and select Save as to save the file in the drive.
+
+
+    ### Save the file by the name CLIENT Batch m-dd-yy PS Confirmation mmddyy. Click
+    on Save and the file is saved in the onedrive.
+
+
+    ### Rename the File as ''CLIENT Batch MMDDYY (Received Date) PS Conformation MMDDYY
+    (Current Date)'' and Save the File in the One Drive.
+
+
+    ### Send Email to Audit Team Lead and Knoxville Uploads ''saying Process has been
+    Completed and attached PS Conformation File''.
+
+
+    ### Go to Outlook and Open the Email from Audit Team Lead, click on excel folder
+    and right click and Click on select All.'
+  questions_and_answers:
+  - question: What should be done if there is an error with the upload
+    answer: If there is an error with the upload, the box will say an error has occurred,
+      and the entire process should be started again. If the error continues, then
+      bad data in the file may be the issue, and the original file should be checked
+      for blank rows or columns.
+  - question: How do you verify that the upload was successful?
+    answer: 'To verify that the upload was successful, open PeopleSoft, select Reporting
+      Tools, click on Query, and select Query Viewer. Search for the Staged Vouchers
+      query: ZI_AP_STAGED_VOUCHERS and select Run to Excel. Enter Origin KUP (Knoxville
+      Upload) and click on View Result. Click on Open to open the pdf file, and then
+      click on Enable editing to make the necessary changes.'
+  - question: What is the purpose of creating a Destination file and saving it as
+      DEST.XML?
+    answer: The purpose of creating a Destination file and saving it as DEST.XML is
+      to specify the destination for the uploaded file.
+- context: "+---------------------+-----------------------------------------------------------------+\n\
+    | Output              | To                                                   \
+    \           |\n+---------------------+-----------------------------------------------------------------+\n\
+    | > Data Entry Team   | > Data Entry Team to key the invoices for payment in PeopleSoft\
+    \ |\n+---------------------+-----------------------------------------------------------------+\n\
+    \n# Control Points\n\n  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\
+    \  ***\_***    ***Sub process Activity***   ***Sub process Activity Description***\
+    \   ***Control Objective(s)***                     ***Control Activity***    \
+    \                        ***Risk Assertions***    ***Frequency (i.e. Event, Daily,\
+    \ Monthly, Quarterly, Annually)***   ***Evidence***\n  ---------- ----------------------------\
+    \ ---------------------------------------- ----------------------------------------------\
+    \ ------------------------------------------------- ------------------------ -------------------------------------------------------------------\
+    \ -----------------------------------\n  ***\_***                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \       \n\n  ***\\#***                                                      \
+    \                                                                            \
+    \                                                                            \
+    \                                                        \n\n  1          Invoice\
+    \ Processing           CLIENT Invoice Upload Process              To check all invoices\
+    \ are proessed correctly   To check all prossed date and processor details   Aviod\
+    \ delay of payment   Weekly                                                  \
+    \            Invoices are posted in Peoplesoft\n  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+  questions_and_answers:
+  - question: Who is responsible for processing CLIENT claims for payment in PeopleSoft?
+    answer: The Invioce Processing Team is responsible for processing CLIENT claims
+      for payment in PeopleSoft.
+  - question: What is the control objective of the CLIENT Invoice Upload Process?
+    answer: The control objective of the CLIENT Invoice Upload Process is to check all
+      invoices are processed correctly to avoid delay of payment.
+  - question: What is the frequency of the CLIENT Invoice Upload Process?
+    answer: The CLIENT Invoice Upload Process is performed weekly, specifically on Wednesday,
+      and is used to check all invoices are processed correctly to avoid delay of
+      payment.

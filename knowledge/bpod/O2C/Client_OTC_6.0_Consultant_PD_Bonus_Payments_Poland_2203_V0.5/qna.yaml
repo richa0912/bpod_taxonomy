@@ -1,0 +1,204 @@
+domain: 'BPOD order to cash: Client_OTC_6.0_Consultant PD_Bonus_Payments_Poland_2203_V0.5'
+document_outline: This document describes detailed process for generated files on
+  to Client Application for PD & Bonus Payments and Reconciliation of PD & Bonus Payments
+  (between Client Application bonus payment calculation and bank input payment file)
+seed_examples:
+- context: "\n## Objectives of the Process\n\n-   The objective of this process is\
+    \ to ensure Bonus payment calculation is validated and imported on to Client Application.\
+    \ The final numbers are reconciled and matched with Client Application balance\
+    \ for Bonus Payouts.\n\n  -----------------------------------------------------------------------\n\
+    \  ***Entity***                        ***Entity Code***\n  -----------------------------------\
+    \ -----------------------------------\n  Poland                              2203\n\
+    \n  -----------------------------------------------------------------------\n\n\
+    ##  {#section .unnumbered}\n\n## Inputs & Outputs\n\n+---------------------------------+------------------------------------+\n\
+    | Input                           | From                               |\n+---------------------------------+------------------------------------+\n\
+    | -   Bonuses to Pay Report File  | -   LF-Sales Team                  |\n+---------------------------------+------------------------------------+\n\
+    | Output                          | To                                 |\n+---------------------------------+------------------------------------+\n\
+    | -   Reconciled Spreadsheet      | -   Bank input payment file        |\n+---------------------------------+------------------------------------+\n\
+    \n# Control Points\n\n  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\
+    \  **Control Point \\#**   **Control Point / Activity**                      \
+    \                                                                            \
+    \                           **Control Objective**                            \
+    \                                      **Control Risk**                      \
+    \                                                                            \
+    \                                       **Test Attributes**\n  ----------------------\
+    \ --------------------------------------------------------------------------------------------------------------------------------------------------------\
+    \ --------------------------------------------------------------------------------------\
+    \ --------------------------------------------------------------------------------------------------------------------------------------------------------\
+    \ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\
+    \  1                      Ensure catalogue closing is performed before generating\
+    \ the PD & Bonus Payments report in Client Application.                      \
+    \                      To ensure that all the transactions are captured for reconciliation\
+    \                    Any lapse in this control will lead to differences in reconciliation\
+    \ resulting in unmatched transactions                                        \
+    \         User must ensure catalogue closure before reconciliation.\n\n  2   \
+    \                   All consultant's payments should be processed by Friday evening\
+    \ by OTC OF team                                                             \
+    \              If the consultants have an overdue amount, then they would not\
+    \ be eligible for bonus   Any lapse will dent the chances of collection on the\
+    \ overdue invoices                                                           \
+    \                         *Ensure all payments are processed before this procedure*\n\
+    \n  3                      Date Transaction count and Total should tally -- Payment\
+    \ Order to tally with total payments and the difference should be\"0\"       \
+    \                       To correctly calculate and release the PD Bonus      \
+    \                                  Wrong payout and calculation in PD Bonus  \
+    \                                                                            \
+    \                                   *Operator to ensure difference between the\
+    \ Payment Order and total payment should be \"Zero\" else should not process the\
+    \ PD Bonus and contact LF*\n\n  4                      Approver 1 & Approver 2\
+    \ approval at PD Processing generation. The person who is running PD bonus generation\
+    \ is running approval 1 and approval 2 task.   To evaluate maker and checker concept\
+    \                                                  Since it's a continuous process\
+    \ of running PD bonus generation. Maker and checker process implementation needs\
+    \ to be evaluated further to keep control   *As a Next step, the operator and\
+    \ TL needs to evaluate maker and checker concept for approval 1 and approval 2\
+    \ since the generation of PD bonus and automated and approvals are being run by\
+    \ the same person.*\n  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n"
+  questions_and_answers:
+  - question: what is the objective of the Client Application for PD & Bonus Payments
+      process?
+    answer: The objective of  the Client Application for PD & Bonus Payments process
+      is to ensure the validation and importation of bonus payment calculations onto
+      the Client Application. The final numbers are reconciled and matched with the
+      Client Application balance for bonus payouts.
+  - question: What are the inputs and outputs of the Client Application for PD & Bonus
+      Payments process
+    answer: The inputs of the Client Application for PD & Bonus Payments process include
+      the Bonuses to Pay Report File from the LF-Sales Team. The output is the Reconciled
+      Spreadsheet, which is sent to the Bank input payment file.
+  - question: Mention all the control objectives of the Client Application for PD
+      & Bonus Payments process
+    answer: The control objectives are to ensure that all the transactions are captured
+      for reconciliation, if the consultants have an overdue amount, then they would
+      not be eligible for bonus, to correctly calculate the PD Bonus and to evaluate
+      maker and checker concept.
+- context: "## Importing PD & Bonus Payment Report in Client Application  \n\nThe\
+    \ purpose of this exercise is to generate from Client Application system a payment\
+    \ proposal\n\nContent of payment proposal are consultant cash bonuses.\n\nThere\
+    \ are two steps of this exercise :-\n\n1)  Prepare list of bonuses releases &\
+    \ Approve payment order list generated\n\n2)  Reconcile bonus releases vs payment\
+    \ list generated & Submit payment order excel file to AP"
+  questions_and_answers:
+  - question: what is the purpose of "Importing PD & Bonus Payment Report in Client
+      Application" exercise?
+    answer: '  The purpose of the "Importing PD & Bonus Payment Report in Client Application"
+      exercise is to generate a payment proposal from the Client Application system,
+      which includes consultant cash bonuses.
+
+      '
+  - question: What are the steps involved in the "Importing PD & Bonus Payment Report
+      in Client Application" exercise?
+    answer: "The steps involved in the \"Importing PD & Bonus Payment Report in Client\
+      \ Application\" exercise are:\n\n   a. Prepare a list of bonuses releases and\
+      \ approve the payment order list generated.\n\n   b. Reconcile the bonus releases\
+      \ with the payment list generated and submit the payment order Excel file to\
+      \ the Accounts Payable (AP) team."
+  - question: ' What is the content of the payment proposal generated by the "Importing
+      PD & Bonus Payment Report in Client Application" exercise?'
+    answer: The content of the payment proposal generated by the "Importing PD & Bonus
+      Payment Report in Client Application" exercise includes consultant cash bonuses.
+- context: "**How to Perform Payment Order Generation in Client Application**\n\n\
+    1.  On Client Application screen, choose Bonuses\U0001F86ABonus Release\U0001F86A\
+    \ Payment Orders\U0001F86A Payment Order Generator (this pick up the list of bonuses\
+    \ to be paid)\n\n2.  In the bonus filter Select correct POG: here it is SWIFT-ING\
+    \ BANK\n\n-   Choose the first Cell and Press CTRL+SHIFT+Insert to convert these\
+    \ line items into excel spreadsheet\n\n3.  Ensure date or payment order is current\
+    \ -- means day when payment order is generated\n\n4.  Move data from Client Application\
+    \ to Excel (ctrl+shift+insert), On column 'D' sum up total amount to be paid and\
+    \ save it to payment order tab. This will be required later for reconciliation\
+    \ purposes.\n\n5.  Go back to Client Application to generate a report!\n"
+  questions_and_answers:
+  - question: How to choose Payment Order Generator option to perform Payment Order
+      Generation in Client Application
+    answer: "the user should go on the Client Application screen, and choose Bonuses\u2192\
+      Bonus Release\u2192 Payment Orders\u2192 Payment Order Generator (this pick\
+      \ up the list of bonuses to be paid)."
+  - question: what date and payment order should be mentioned in excel for Payment
+      Order generation exercise ?
+    answer: The date and payment order should be current- means the day when the payment
+      order is generated for Payment Order Generation exercise.
+  - question: what is the fullform of POG in the Client Application for PD & Bonus
+      Payments process
+    answer: The full form of  POG is Payment Order Generator in the Client Application
+      for PD & Bonus Payments process?
+- context: "+--------------------------+------------------------------------------------------------------------------------------------------------------------------+\n\
+    | **Role**                 | **Responsibility**                              \
+    \                                                                            \
+    \ |\n+==========================+==============================================================================================================================+\n\
+    | ***IBM-O2C Accountant*** | *Generate Bonus Calculation report in Client Application.*\
+    \                                                                   |\n|     \
+    \                     |                                                      \
+    \                                                                        |\n|\
+    \                          | *Reconcile bank input file and bonus file.*     \
+    \                                                                            \
+    \ |\n|                          |                                            \
+    \                                                                            \
+    \      |\n|                          | *Reconciliation of PD & Bonus Payments\
+    \ (between Client Application bonus payment calculation and bank input payment\
+    \ file)..* |\n+--------------------------+------------------------------------------------------------------------------------------------------------------------------+\n\
+    \n## SOD Matrix\n\nFor the SOD assessment on conflicting tasks and accesses, please\
+    \ refer to the related Aggregate SOD (A-SOD).\n\n# Process Detail\n\n## Exception\
+    \ Details\n\n  ----------------------------------------------------------------------------------------------------------------------------------------\n\
+    \  **No**   **Name**                                                  **Type**\
+    \   **Description**\n  -------- ---------------------------------------------------------\
+    \ ---------- ----------------------------------------------------------\n  1 \
+    \       catalogue closing is performed before generating the PD   Process    User\
+    \ must ensure catalogue closure before reconciliation\n\n  ----------------------------------------------------------------------------------------------------------------------------------------\n\
+    \n## Step Description \n\nTitle : PD Bonus Payment generation of payment list\n\
+    \nWho : Accountants from the O2C team.\n\nWhen : Weekly (Monday)\n\nThe purpose\
+    \ of this exercise is to generate from Client Application system a payment proposal--\
+    \ this is to be done on weekly basis every Monday morning.\n\nWhy : This activity\
+    \ is required in order to complete payment process and recognize this payment\
+    \ in IFS =\\> Client Application data must agree with IFS data\n\n## Importing\
+    \ PD & Bonus Payment Report in Client Application  {#importing-pd-bonus-payment-report-in-client-application\
+    \ .unnumbered}\n\nThe purpose of this exercise is to generate from Client Application\
+    \ system a payment proposal\n\nContent of payment proposal are consultant cash\
+    \ bonuses.\n\nThere are two steps of this exercise :-\n\n1)  Prepare list of bonuses\
+    \ releases & Approve payment order list generated\n\n2)  Reconcile bonus releases\
+    \ vs payment list generated & Submit payment order excel file to AP"
+  questions_and_answers:
+  - question: what is the responsibilities of IBM-O2C Accountant in the Client Application
+      for PD & Bonus Payments process
+    answer: "there are the following responsibilities of the Client Application for\
+      \ PD & Bonus Payments process:-\n1. Generate Bonus Calculation report in Client\
+      \ Application. \n2. Reconcile bank input file and bonus file. \n3. Reconciliation\
+      \ of PD & Bonus Payments (between Client Application bonus payment calculation\
+      \ and bank input payment file).."
+  - question: what is the purpose of PD Bonus Payment generation of payment list in
+      the Client Application for PD & Bonus Payments process?
+    answer: "The purpose of the PD Bonus Payment generation of payment list in Client\
+      \ Application for PD & Bonus Payments process is to generate from Client Application\
+      \ system a payment proposal\u2013 this is to be done on weekly basis every Monday\
+      \ morning."
+  - question: why does PD Bonus Payment generation of payment list  required in the
+      Client Application for PD & Bonus Payments process?
+    answer: the PD Bonus Payment generation of payment list in Client Application
+      for PD & Bonus Payments process is required in order to complete payment process
+      and recognize this payment in IFS => Client Application data must agree with
+      IFS data.
+- context: "6.  Once the spreadsheet is saved, click on Generate and then click **\\\
+    'OK\\'** on the pop up window. This step ensures they are generated in Client\
+    \ Application system now.\n\nConfirmation of file being generated successfully.\n\
+    \n7.  Go back to the Client Application screen and choose Payment Orders\U0001F86A\
+    \ Order files. This will reflect the old files and the new. Choose on current\
+    \ line item(which was created today) and click View Orders\n\n8.  Now to check\
+    \ the payment amounts, convert these line items to a spreadsheet by clicking the\
+    \ excel button. This will help to get a total of the items generated today.\n\n\
+    <!-- -->\n\n9.  Paste the contents of the spreadsheet to Payment Orders tab in\
+    \ the reconciliation sheet.\n\nSummarize the total Bonus Amount\n\n10. Notice\
+    \ the Reconciliation tab is auto formulated and the difference is **'0'.** Hence\
+    \ reconciled as the amounts match.\n\n11. Approving the orders: Click on Order\
+    \ file (follow activity 7 for steps)\n"
+  questions_and_answers:
+  - question: what is the step to ensure the file has been generated successfully
+      in Payment order generation exercise in client application?
+    answer: 'once the spreadsheet is saved, click on generate and then click ''OK''
+      on the pop-up window. This step will ensure that the file is successfully generated. '
+  - question: how to check the payment amounts in the Payment Order generation exercise?
+    answer: 'to check the payment amounts, first go to client application and choose
+      payment orders and order files. choose on current line item (which was created
+      today) and click view orders. convert these line items to a spreadsheet by clicking
+      excel button. This will help you get a total of the items generated today. '
+  - question: what is the meaning of the difference is zero in reconciliation tab?
+    answer: The reconciliation tab was auto formulated and if the difference is zero
+      that means reconciled as the amounts match.

@@ -1,0 +1,143 @@
+domain: 'BPOD Record to Analyze: R2R_GA_ Journal Entry Process-Journal Trax_MiscDealer
+  Journal_2022_V1.0.docx'
+document_outline: Describes how IBM Delivery Centre will perform the Journal Trax
+  Misc Dealer Journal Entry Process.
+seed_examples:
+- context: '+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+    | **System/Access** | GA SharePoint                                                                                                                                                  |
+
+    |                   |                                                                                                                                                                |
+
+    |                   | Journal Trax -. DL Knox System Support (mapped to the user\''s
+    One Drive)                                                                                       |
+
+    |                   |                                                                                                                                                                |
+
+    |                   | Can Tax -. DL Knox System Support (mapped to user''s One
+    Drive)                                                                                                 |
+
+    |                   |                                                                                                                                                                |
+
+    |                   | Share Drive- General Accounting Team Leader                                                                                                                    |
+
+    |                   |                                                                                                                                                                |
+
+    |                   | EchoSign/ Adobe sign                                                                                                                                           |
+
+    |                   |                                                                                                                                                                |
+
+    |                   | Capsys Capture                                                                                                                                                 |
+
+    +-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+'
+  questions_and_answers:
+  - question: What is the system/ access mapped to the user's One Drive in the  Journal
+      Entry Process-Journal Trax_MiscDealer Journal ?
+    answer: "In the Journal Entry Process-Journal Trax_MiscDealer Journal, following\
+      \ system/access is mapped to the user's One drive\n1) Journal Trax -. DL Knox\
+      \ System Support (mapped to the user's One Drive)\n2) Can Tax -. DL Knox System\
+      \ Support (mapped to user's One Drive)"
+  - question: Name the Share drives/Share Point used in Journal Entry Process-Journal
+      Trax_MiscDealer Journal ?
+    answer: 'Following are the Share drive/ Share Point used In the Journal Entry
+      Process-Journal Trax_MiscDealer Journal-
+
+      a) GA SharePoint
+
+      b) Share Drive- General Accounting Team Leader'
+  - question: List out all the System / accesses required in the Journal Entry Process-Journal
+      Trax_MiscDealer Journal ?
+    answer: "Following are the System/ Accesses required in Journal Entry Process-Journal\
+      \ Trax_MiscDealer Journal-\n1. GA SharePoint\n2.Journal Trax -. DL Knox System\
+      \ Support (mapped to the user's One Drive)\n3.Can Tax -. DL Knox System Support\
+      \ (mapped to user's One Drive)\n4.Share Drive- General Accounting Team\
+      \ Leader\n5.EchoSign/ Adobe sign\n6.Capsys Capture"
+- context: "-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+\
+    \ |\_Objective\_| Majority of journals related to Travel expenses or miscellaneous\
+    \ for dealers. The journals could be for charging the dealers and/or for crediting\
+    \ the dealers. | | | | | | Journal must be processed on the same month. |"
+  questions_and_answers:
+  - question: What is the objective of Journal Trax Misc Dealer Journal Process?
+    answer: The objective Journal Entry Process- Journal Trax Misc Dealer Journal
+      is to explain journals related to Travel expenses or miscellaneous for dealers-
+      could be for charging and/or for crediting the dealers" - to serve as a guide
+      for future reference for both IBM and Client teams.
+  - question: What is Journal Entry Process-Journal Trax_MiscDealer Journal related
+      to?
+    answer: The journals could be for charging the dealers and/or for crediting the
+      dealers.
+  - question: What is the processing timeline per Journal Entry Process-Journal Trax_MiscDealer
+      Journal objective?
+    answer: The timeline to process Journal Trax_MiscDealer Journals   received in
+      a month "must be processed on the same month".
+- context: "-----------------------------------------\n  File from GA SharePoint \
+    \                Dealer Administration (John Doe 1)\n  **Output**            \
+    \                  **To**\n  Journal uploaded                        Journal Trax\n\
+    \  Journal posted                          PeopleSoft\n  Journal backup uploaded\
+    \                 PeopleSoft via Capsys\n  Approved journal with backup uploaded\
+    \   SharePoint\\\\Dealer Journals\\\\Signed JEs\n  Journal number added      \
+    \              Sharepoint\n\n**[Process]{.ul}**"
+  questions_and_answers:
+  - question: What are the input source for Journal Trax Misc Dealer Journal?
+    answer: The inputs for Journal Entry Process-Journal Trax_MiscDealer is "File
+      from GA SharePoint "
+  - question: Who should share the Inputs for Journal Trax Misc Dealer Journal?
+    answer: The inputs for Journal Entry Process-Journal should be provided by Dealer
+      Administration (John Doe 1)
+  - question: List System Accesses required to perform processing Journal Trax Misc-
+      Dealer Journal?
+    answer: "The following system accesses are required to perform processing Journal\
+      \ Trax Misc- Dealer Journal :\n1. Journal Trax -. DL Knox System Support (mapped\
+      \ to the user's One Drive)\n2. Can Tax -. DL Knox System Support (mapped to\
+      \ user's One Drive)\n3. Share Drive- General Accounting Team Leader\n4.\
+      \ EchoSign/ Adobe sign\n5 Capsys Capture"
+- context: '4.  Process journal entry:
+
+
+    > Process US Dealer Journals using GenericJournal2.xls & GenericJournalsModified.accdb
+
+    >
+
+    > Process the Canadian Dealers using the JE_ImportTemplate_CN.xlsx and CanTax
+    database
+
+    >
+
+    > Refer the generic procedure ''Client_R2R_Posting JournalTrax Generic Journals_2022_V1.0''
+    for the instructions to process the Journal entry (including upload, route it
+    for approval via EchoSign, upload journal backup via Capsys to Oracle IPM).'
+  questions_and_answers:
+  - question: What is the JE template to be used to process Canadian Dealers Journal
+      Trax Misc Dealer Journal Process?
+    answer: Template to be used to process the Canadian Dealers should use JE_ImportTemplate_CN.xlsx
+      and CanTax database
+  - question: What are the JE upload routes used to send for Approval w.r.t Journal
+      Entry Process-Journal Trax_MiscDealer Journal?
+    answer: 'Journal Entry Process-Journal Trax_MiscDealer Journal can be uploaded
+      for approval are done as follows:-
+
+      including upload, route it for approval via EchoSign, upload journal backup
+      via Capsys to Oracle IPM)'
+  - question: Where is the pdf file (Journal and Advice file) generated saved in  one
+      drive in connection with Journal Entry Process-Journal Trax_MiscDealer Journal?
+    answer: "The Journal Trax_Misc Dealer JE processed as 2 pdf files and saved in\
+      \ 'M' drive.\n\nPath details as shared is : M' drive > GA > Spreadsheet\
+      \ control > Financial Statement Close > Ksenia Buchanan > Truck Group Dealer\
+      \ Invoices."
+- context: "Note: \n\nThe dealer should be only 6 digits. Take off the last three\
+    \ zeros\n\nIf the OU is 30 then the MRAS Account is 044036044. \n\nIf the OU is\
+    \ 50 then the MRAS Account is 044036184\n\nReference \u2013 Travel, Description\
+    \ \u2013 Travel expense reimb"
+  questions_and_answers:
+  - question: If the OU is 30, what should be MRAS Account in Journal Trax Misc Dealer
+      Journal Process?
+    answer: The Journal Trax Misc Dealer Journal Process state that "If the OU is
+      30 then the MRAS Account is 044036044"
+  - question: If the OU is 50, what should be MRAS Account in Journal Trax Misc Dealer
+      Journal Process?
+    answer: The Journal Trax Misc Dealer Journal Process state that "If the OU is
+      50 then the MRAS Account is 044036184"
+  - question: How many digits should the Dealer contain in Journal Trax Misc Dealer
+      Journal Process?
+    answer: The Journal Trax Misc Dealer Journal Process state the dealer should be
+      only 6 digits. Take off the last three zeros

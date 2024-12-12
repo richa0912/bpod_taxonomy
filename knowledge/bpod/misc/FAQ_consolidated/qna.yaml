@@ -1,0 +1,175 @@
+document_outline: The document has the frequently asked question
+domain: BPOD  faq
+seed_examples:
+- context: "Are there any validations performed prior to TB Review? OR Are there any\
+    \ presiding activities prior to closing the subledgers?\nAll journal entries needs\
+    \ to be posted before downloading the Trial Balance Report. \nBelow validation\
+    \ are performed during the Trial Balance Review :\n-\tIf the total debits\
+    \ and credits do not equal, then there is an error somewhere in the accounting\
+    \ system.\n-\tmissing transactions, duplicate entries, or incorrect account\
+    \ balances.\n-\tIdentify unusual or unexpected account balances.\n\nIs there\
+    \ a workflow for the TB review activity? OR What is the mode of trial balance\
+    \ review and approval?\nThe review and approval are on email. \nIBM R2R Accountant\
+    \ prepares the HFM TB review File, IBM Reviewer will review and provide observations/comments\
+    \ and finally the Client reviewer reviews and provide observations/comments\n\
+    Control Points\n\nWhat is the Control Objective for the TB review activity? OR\
+    \ What are the Control Points for the trial balance review activity? OR What are\
+    \ the Control Activities for TB review? OR What are the Control risks for the\
+    \ trial balance review activity?\n\n-\tControl Objective - Objective is to\
+    \ ensure that the initial TB review is done to find out any misallocation or wrong\
+    \ postings.\n-\tControl Point - Efficient TB review controls the month\
+    \ end process and prevents misallocation and wrong entries.\n-\tControl Activity\
+    \ - Efficient TB review controls the month end process and prevents misallocation\
+    \ and wrong entries.\n-\tControl Risk - Financial risk or wrong reporting\
+    \ of numbers due to over/under charge of expense in P&L.\nRefer section 3 in 5.1.14_GL_Client_UK_Trial\
+    \ balance Review"
+  questions_and_answers:
+  - answer: "All journal entries needs to be posted before downloading the Trial Balance\
+      \ Report. \nBelow validation are performed during the Trial Balance Review :\n\
+      -\tIf the total debits and credits do not equal, then there is an error\
+      \ somewhere in the accounting system.\n-\tmissing transactions, duplicate\
+      \ entries, or incorrect account balances.\n-\tIdentify unusual or unexpected\
+      \ account balances."
+    question: Are there any validations performed prior to TB Review? OR Are there
+      any presiding activities prior to closing the subledgers?
+  - answer: "The review and approval are on email. \nIBM R2R Accountant prepares the\
+      \ HFM TB review File, IBM Reviewer will review and provide observations/comments\
+      \ and finally the Client reviewer reviews and provide observations/comments\n"
+    question: Is there a workflow for the TB review activity? OR What is the mode
+      of trial balance review and approval?
+  - answer: "-\tControl Objective - Objective is to ensure that the initial TB\
+      \ review is done to find out any misallocation or wrong postings.\n-\t\
+      Control Point - Efficient TB review controls the month end process and\
+      \ prevents misallocation and wrong entries.\n-\tControl Activity - Efficient\
+      \ TB review controls the month end process and prevents misallocation and wrong\
+      \ entries.\n-\tControl Risk - Financial risk or wrong reporting of numbers\
+      \ due to over/under charge of expense in P&L."
+    question: What is the Control Objective for the TB review activity? OR What are
+      the Control Points for the trial balance review activity? OR What are the Control
+      Activities for TB review? OR What are the Control risks for the trial balance
+      review activity?
+- context: |
+    What if there is a mismatch in invoice auto posting?
+    If the invoice number field is wrong, it can be edited in FBL1N screen, and if any other fields are wrong, you must reverse the invoice and reprocess the invoice manually. (For processing the invoices Refer: PO Invoice processing document).
+    What is the transaction/t-code to see auto-posted documents?
+    SP01
+
+    FAQ for DTP US P2P Vendor Invoice Processing Daily Production Reporting
+    Who is responsible to prepare the POP Daily Production Report?
+    IBM AP Team leader
+    What is the purpose of the POP Daily Production Report process?
+    To prepare the POP Daily Production Report containing details of the number of invoices pending in the production queues, total number of open cases in Remedy and the number of cases in Remedy that are over 5 days old.
+    What applications are used to prepare the POP Daily Production Report?
+    Data is taken from the LoadMaster Workflow application and the Remedy application is used to prepare the report in Excel.
+  questions_and_answers:
+  - answer: |-
+      If the invoice number field is wrong, it can be edited in FBL1N screen, and if any other fields are wrong, you must reverse the invoice and reprocess the invoice manually. (For processing the invoices Refer: PO Invoice processing document).
+    question: What if there is a mismatch in invoice auto posting?
+  - answer: |-
+      To prepare the POP Daily Production Report containing details of the number of invoices pending in the production queues, total number of open cases in Remedy and the number of cases in Remedy that are over 5 days old.
+    question: What is the purpose of the POP Daily Production Report process?
+  - answer: |-
+      Data is taken from the LoadMaster Workflow application and the Remedy application is used to prepare the report in Excel.
+    question: What applications are used to prepare the POP Daily Production Report?
+- context: "What is Record to Report? Or What is R2R? Or What is RTR?\nRecord-to-report\
+    \ (R2R) is a finance and accounting management process that involves collecting,\
+    \ processing, and presenting financial information in the form of documents that\
+    \ are used by management to perform analysis and review. The primary objective\
+    \ of the Record to Report process is to ensure the accurate and timely recording\
+    \ of financial data, the preparation of financial statements, and compliance with\
+    \ regulatory requirements.\n\nWhat is Fixed Asset Accounting? OR What is FA Accounting?\
+    \ OR What is Capital Asset Accounting? OR What is Fixed Assets? \nFixed assets\
+    \ accounting is a subset of accounting that focuses on the management and reporting\
+    \ of a company's long-term tangible assets, also known as fixed assets or property,\
+    \ plant, and equipment (PP&E). Fixed assets are items that a business owns and\
+    \ uses in its operations for an extended period, typically more than one accounting\
+    \ period (usually a year). These assets are not meant for immediate resale and\
+    \ are essential for the company's ongoing operations.\nWhat is Capital project\
+    \ maintenance? OR Define Capital project maintenance? \nCapital project maintenance\
+    \ refers to the management and accounting for maintenance or improvement projects\
+    \ that are considered capital in nature. These projects involve significant expenditures\
+    \ to either extend the useful life of existing fixed assets, enhance their capabilities,\
+    \ or increase their efficiency. Capital project maintenance is distinct from routine\
+    \ maintenance and repairs, which are generally expensed as incurred.\n"
+  questions_and_answers:
+  - answer: |-
+      Record-to-report (R2R) is a finance and accounting management process that involves collecting, processing, and presenting financial information in the form of documents that are used by management to perform analysis and review. The primary objective of the Record to Report process is to ensure the accurate and timely recording of financial data, the preparation of financial statements, and compliance with regulatory requirements.
+    question: What is Record to Report? Or What is R2R? Or What is RTR?
+  - answer: |-
+      Fixed assets accounting is a subset of accounting that focuses on the management and reporting of a company's long-term tangible assets, also known as fixed assets or property, plant, and equipment (PP&E). Fixed assets are items that a business owns and uses in its operations for an extended period, typically more than one accounting period (usually a year). These assets are not meant for immediate resale and are essential for the company's ongoing operations.
+    question: 'What is Fixed Asset Accounting? OR What is FA Accounting? OR What is
+      Capital Asset Accounting? OR What is Fixed Assets? '
+  - answer: |-
+      Capital project maintenance refers to the management and accounting for maintenance or improvement projects that are considered capital in nature. These projects involve significant expenditures to either extend the useful life of existing fixed assets, enhance their capabilities, or increase their efficiency. Capital project maintenance is distinct from routine maintenance and repairs, which are generally expensed as incurred.
+    question: 'What is Capital project maintenance? OR Define Capital project maintenance? '
+- context: "What is Trial Balance Report? OR What do you mean by TB? OR What makes\
+    \ up a Trial Balance Report?\nA trial balance is a financial report that lists\
+    \ the balances of all general ledger accounts at a specific point in time. It\
+    \ is prepared by totalling the debits and credits in each account and then listing\
+    \ them in two columns, one for debits and one for credits. The total debits and\
+    \ credits should be equal, which indicates that the accounting system is mathematically\
+    \ accurate.\n\nWhy is Trial Balance Reviewed? OR What steps are performed during\
+    \ Trial Balance Review? \nTrial balance review is needed for the following reasons:\n\
+    -\tTo ensure the accuracy of the accounting system. A trial balance is a\
+    \ good way to check for mathematical errors in the general ledger. If the total\
+    \ debits and credits do not equal, then there is an error somewhere in the accounting\
+    \ system.\n-\tTo identify errors in the general ledger. A trial balance review\
+    \ can help to identify errors in the general ledger, such as missing transactions,\
+    \ duplicate entries, or incorrect account balances.\n-\tTo prepare financial\
+    \ statements. A trial balance is used to prepare financial statements, such as\
+    \ the balance sheet and income statement. Therefore, it is important to review\
+    \ the trial balance to ensure that it is accurate before preparing the financial\
+    \ statements.\n\nWhat is HFM? \nHFM stands for Hyperion Financial Management.\
+    \ It is a web-based financial consolidation, reporting, and analysis tool developed\
+    \ by Oracle. It is used by businesses of all sizes to automate and streamline\
+    \ their financial reporting process.\n\nWhy is Trial Balance important for Consolidation\
+    \ in HFM? How is Trial Balance used in HFM?\nHFM uses trial balances as a source\
+    \ of data for its consolidation and reporting processes. HFM can import trial\
+    \ balances from a variety of sources including ERP.\n"
+  questions_and_answers:
+  - answer: "Trial balance review is needed for the following reasons:\n-\tTo\
+      \ ensure the accuracy of the accounting system. A trial balance is a good way\
+      \ to check for mathematical errors in the general ledger. If the total debits\
+      \ and credits do not equal, then there is an error somewhere in the accounting\
+      \ system.\n-\tTo identify errors in the general ledger. A trial balance\
+      \ review can help to identify errors in the general ledger, such as missing\
+      \ transactions, duplicate entries, or incorrect account balances.\n-\t\
+      To prepare financial statements. A trial balance is used to prepare financial\
+      \ statements, such as the balance sheet and income statement. Therefore, it\
+      \ is important to review the trial balance to ensure that it is accurate before\
+      \ preparing the financial statements.\n"
+    question: 'Why is Trial Balance Reviewed? OR What steps are performed during Trial
+      Balance Review? '
+  - answer: |-
+      HFM stands for Hyperion Financial Management. It is a web-based financial consolidation, reporting, and analysis tool developed by Oracle. It is used by businesses of all sizes to automate and streamline their financial reporting process.
+    question: What is HFM?
+  - answer: |-
+      A trial balance is a financial report that lists the balances of all general ledger accounts at a specific point in time. It is prepared by totalling the debits and credits in each account and then listing them in two columns, one for debits and one for credits. The total debits and credits should be equal, which indicates that the accounting system is mathematically accurate.
+    question: What is Trial Balance Report? OR What do you mean by TB? OR What makes
+      up a Trial Balance Report?
+- context: "What is the transaction code in SAP to Display Check?\nFCH1\nWhich parameters\
+    \ must be filled in FCH1 transaction?\nIn the Display Check Information screen,\
+    \ key in the Company Code as 7000, House Bank as 'First' and the Account\
+    \ ID as 'Check'. This information is the same for all checks. Now input\
+    \ the check number from the list provided by the Accounting and Finance Dept.\
+    \ The Bank Key and Bank Account fields may be left blank.\nHow to open documents\
+    \ attached to an invoice in SAP?\nClick on the invoice document. Click on the\
+    \ 'Go to' menu item and then 'POP Invoice Images' to see the\
+    \ documents stored for that invoice.\nWhat if there is no attachment to an invoice\
+    \ in SAP?\nGenerally, payments for garnishments have no documents. Garnishments\
+    \ can be confirmed by looking into the Header Data in the document screen and\
+    \ have a reference in the WKXXXX-XXXX format.\n"
+  questions_and_answers:
+  - answer: "In the Display Check Information screen, key in the Company Code as 7000,\
+      \ House Bank as 'First' and the Account ID as 'Check'. This\
+      \ information is the same for all checks. Now input the check number from the\
+      \ list provided by the Accounting and Finance Dept. The Bank Key and Bank Account\
+      \ fields may be left blank."
+    question: Which parameters must be filled in FCH1 transaction?
+  - answer: "Click on the invoice document. Click on the 'Go to' menu item\
+      \ and then 'POP Invoice Images' to see the documents stored for that\
+      \ invoice."
+    question: How to open documents attached to an invoice in SAP?
+  - answer: |-
+      Generally, payments for garnishments have no documents. Garnishments can be confirmed by looking into the Header Data in the document screen and have a reference in the WKXXXX-XXXX format.
+    question: What if there is no attachment to an invoice in SAP?

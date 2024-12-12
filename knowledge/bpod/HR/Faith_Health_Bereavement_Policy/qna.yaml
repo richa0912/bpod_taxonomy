@@ -1,0 +1,134 @@
+domain: 'BPOD Human Resource: Faith Health_Bereavement Policy'
+document_outline: Describes the ministry's policy, expectations and guidelines for
+  paid time off in the event of the death of an immediate family member when caregivers
+  are eligible for bereavement leave
+seed_examples:
+- context: "3.\tPaid bereavement leave is not available to caregivers who are on leaves\
+    \ of absence.\n4.\tBereavement pay is coded in the timekeeping system.\n5.\tCaregivers\
+    \ may be requested to provide documentation regarding the need for bereavement\
+    \ leave.\nHelp: For questions about this policy, or assistance with understanding\
+    \ your obligations under this policy, please contact human resources."
+  questions_and_answers:
+  - question: Which caregivers are not eligible for Paid bereavement leave?
+    answer: Paid bereavement leave is not available to caregivers who are on leaves
+      of absence.
+  - question: Who to contact for questions about bereavement policy?
+    answer: For questions about this policy, or assistance with understanding your
+      obligations under this policy, contact human resources.
+  - question: Where is the Bereavement pay coded ?
+    answer: Bereavement pay is coded in the timekeeping system.
+- context: 'Faith Health ("ministry")
+
+    Department: Human Resources
+
+    Approved by: Chief Human Resources Officer
+
+    Date Last Reviewed: 5/1/2022
+
+    Date Last Revised: 5/1/2022 Date Adopted: 11/22/2015
+
+    Policy Name: Bereavement
+
+    Scope: All ministry caregivers
+
+    Purpose: To establish the ministry''s policy, expectations and guidelines for
+    paid time off in the event of the death of an immediate family member when caregivers
+    are eligible for bereavement leave.'
+  questions_and_answers:
+  - question: Who approves the Bereavement Policy under Faith Health?
+    answer: Chief Human Resources Officer is responsible to approve the Bereavement
+      policy under Faith Health.
+  - question: What is the purpose of the Bereavement policy of Faith Health ministry?
+    answer: The purpose is to establish the ministry's policy, expectations and guidelines
+      for paid time off in the event of the death of an immediate family member when
+      caregivers are eligible for bereavement leave.
+  - question: What is the scope of the Bereavement policy of Faith Health ministry?
+    answer: The scope is All ministry caregivers of the Bereavement policy.
+- context: 'Policy:
+
+    In keeping with our mission and values, the ministry provides all benefits-eligible
+    caregivers time off without loss of pay in the event of the death of an immediate
+    family member (as defined above). Caregivers may receive up to 24 hours with pay
+    in the event of the death of an immediate family member or up to 40 hours with
+    pay in the event of the death of the caregiver''s spouse, domestic partner or
+    child. Additional paid time off (PTO) (in accordance with the ministry''s PTO
+    policy) or unpaid time (in the event the caregiver has insufficient PTO) may be
+    authorized by your core leader on a case-by-case basis, based upon operational
+    needs. If leave is needed due to the death of a person who does not qualify as
+    an immediate family member, PTO or unpaid time off may similarly be authorized
+    by your core leader. The ministry will comply with applicable state or local laws
+    that provide additional bereavement benefits. Caregivers should consult with HR
+    to determine if an additional bereavement benefit is available.
+
+    Caregivers in a manager level position or above who do not accrue PTO may take
+    leader time off (LTO) for bereavement in accordance with the ministry''s LTO policy,
+    upon authorization by your core leader based on operational needs.'
+  questions_and_answers:
+  - question: How much time it takes to give the pay to the caregivers in the event
+      of the death ?
+    answer: Caregivers may receive up to 24 hours with pay in the event of the death
+      of an immediate family member or up to 40 hours with pay in the event of the
+      death of the caregiver's spouse, domestic partner or child.
+  - question: Which time off should the Caregivers in a manager level position or
+      above who do not accrue PTO take?
+    answer: Caregivers in a manager level position or above who do not accrue PTO
+      may take leader time off (LTO) for bereavement in accordance with the ministry's
+      LTO policy, upon authorization by your core leader based on operational needs.
+  - question: When is PTO or unpaid time off needed as per the bereavement policy?
+    answer: If leave is needed due to the death of a person who does not qualify as
+      an immediate family member, PTO or unpaid time off is needed to be authorized
+      by your core leader.
+- context: "Procedures:\n1.\tRequests for paid bereavement leave must be submitted\
+    \ to your core leader. Time will typically be taken within two (2) weeks of notification\
+    \ of the death; however, exceptions will be considered as appropriate (e.g., memorial\
+    \ or funeral has been postponed, travel required out of the country, cultural/religious\
+    \ practices which may require services long after death). \n2.\tPaid bereavement\
+    \ leave is paid at the caregiver's base rate of pay, including shift differential,\
+    \ if applicable.\n3.\tPaid bereavement leave is not available to caregivers who\
+    \ are on leaves of absence.\n4.\tBereavement pay is coded in the timekeeping system.\n\
+    5.\tCaregivers may be requested to provide documentation regarding the need for\
+    \ bereavement leave."
+  questions_and_answers:
+  - question: What is the procedure for bereavement leave?
+    answer: "1.\tRequests for paid bereavement leave must be submitted to your core\
+      \ leader. Time will typically be taken within two (2) weeks of notification\
+      \ of the death; however, exceptions will be considered as appropriate (e.g.,\
+      \ memorial or funeral has been postponed, travel required out of the country,\
+      \ cultural/religious practices which may require services long after death).\
+      \ \n2.\tPaid bereavement leave is paid at the caregiver's base rate of pay,\
+      \ including shift differential, if applicable.\n3.\tPaid bereavement leave is\
+      \ not available to caregivers who are on leaves of absence.\n4.\tBereavement\
+      \ pay is coded in the timekeeping system.\n5.\tCaregivers may be requested to\
+      \ provide documentation regarding the need for bereavement leave."
+  - question: When should the request for paid bereavement leave must be submitted
+      to the core leader?
+    answer: Requests for paid bereavement leave must be submitted to the core leader
+      within two weeks of notification of the death; however, exceptions will be considered
+      as appropriate (e.g., memorial or funeral has been postponed, travel required
+      out of the country, cultural/religious practices which may require services
+      long after death).
+  - question: How the Paid bereavement leave is paid?
+    answer: Paid bereavement leave is paid at the caregiver's base rate of pay, including
+      shift differential, if applicable.
+- context: "Terms:\nImmediate family member is defined as the caregiver's:\n-\tcurrent\
+    \ spouse or domestic partner\n-\tchild\n-\tparent\n-\tsibling\n-\tstepparent,\
+    \ stepchild, step-sibling\n-\tgrandparent or grandchild\n-\ta person who stood\
+    \ in loco parentis (legal responsibility of a person to take on the functions\
+    \ and responsibilities of a parent)\n-\tor current in-law relationships through\
+    \ marriage or partnership of the above"
+  questions_and_answers:
+  - question: List down the Immediate family members as mentioned in terms of the
+      Bereavement policy.
+    answer: "Immediate family member is defined as the caregiver's:\n-\tcurrent spouse\
+      \ or domestic partner\n-\tchild\n-\tparent\n-\tsibling\n-\tstepparent, stepchild,\
+      \ step-sibling\n-\tgrandparent or grandchild\n-\ta person who stood in loco\
+      \ parentis (legal responsibility of a person to take on the functions and responsibilities\
+      \ of a parent)\n-\tor current in-law relationships through marriage or partnership\
+      \ of the above"
+  - question: Can stepparent, stepchild or step-sibling be considered as caregiver
+      as per the bereavement policy?
+    answer: Yes, stepparent, stepchild or step-sibling can be considered as caregiver
+      as per the bereavement policy.
+  - question: Who is loco parentis ?
+    answer: Loco parentis is the legal responsibility of a person to take on the functions
+      and responsibilities of a parent.

@@ -1,0 +1,131 @@
+domain: 'BPOD Human Resource: Hope Medical Center_Extended Illness Bank Policy'
+document_outline: The Hope Medical Center Extended Illness Bank (EIB) Policy outlines
+  the use of EIB for caregivers' personal or family member illnesses, injuries, or
+  medical conditions, as well as absences to care for family members. EIB hours can
+  be used to supplement Workers' Compensation Payments or short-term disability benefits
+  for up to six months. Caregivers can also use EIB for adoption or fostering, and
+  EIB benefits are paid out in cash upon resignation or retirement.
+seed_examples:
+- context: 'EIB approved usages:
+
+    - Caregiver''s illness, injury or temporary medical disability (for example, associated
+    with pregnancy or childbirth). EIB is not appropriate for elective, non-preventative
+    procedures (for example elective sterilization for birth control).
+
+    - Absences to care for caregiver''s minor child who has a health condition requiring
+    treatment or supervision.
+
+    - Absences to care for the caregiver''s adult child who has a health condition
+    requiring treatment or supervision, if the adult child is incapable of self-care
+    because of a mental or physical disability.
+
+    - Absences to care for the caregiver''s spouse, registered domestic partner, parent,
+    parent-in-law or grandparent, who has either a serious health condition; or an
+    emergency condition.
+
+    - Under extraordinary circumstances when a treatment plan requires multiple consecutive
+    visits, a caregiver may qualify for using EIB for themselves, child(ren), spouse,
+    registered domestic partner, parent, parent-in-law or grandparent. As a general
+    rule, physician visits do not qualify for accessing EIB.
+
+    - For leaves to care for caregivers, children, spouse or parent with serious medical
+    conditions under the Family and Medical Leave Act'
+  questions_and_answers:
+  - question: What types of illnesses, injuries, or medical conditions qualify for
+      EIB usage  at Hope Medical Center?
+    answer: Caregivers' own illnesses, injuries, or temporary medical disabilities,
+      including those associated with pregnancy or childbirth, are eligible for EIB
+      usage  at Hope Medical Center. Additionally, absences to care for minor or adult
+      family members with health conditions requiring treatment or supervision may
+      also qualify.
+  - question: Can EIB be used for elective, non-preventative procedures in Extended
+      Illness Bank (EIB) policy at Hope Medical Center?
+    answer: No, EIB is not appropriate for elective, non-preventative procedures such
+      as elective sterilization for birth control in Extended Illness Bank (EIB) policy
+      at Hope Medical Center.
+  - question: Under what circumstances can a caregiver use EIB for themselves, their
+      children, spouse, registered domestic partner, parent, parent-in-law, or grandparent
+      in Extended Illness Bank (EIB) policy at Hope Medical Center?
+    answer: Caregivers may use EIB for themselves, their children, spouse, registered
+      domestic partner, parent, parent-in-law, or grandparent under extraordinary
+      circumstances when a treatment plan requires multiple consecutive visits in
+      Extended Illness Bank (EIB) policy at Hope Medical Center. However, physician
+      visits generally do not qualify for accessing EIB.
+- context: 'EIB payment upon resignation/retirement
+
+    Caregivers who resign or retire their employment after completing thirty-one thousand,
+    two hundred hours
+
+    (31,200) or more of service with the facility shall have their EIB benefits paid
+    out in cash above and beyond 520 hours and under the maximum amount of 650 hours
+    converted to cash at the rate of 100%. Caregivers hired prior to January 1, 1977,
+    who had any unused EIB up to five hundred twenty (520) hours will be paid as terminal
+    pay, to any full-time caregiver who terminates employment with the facility provided
+    the caregiver has continuous service as a full-time caregiver from January 1,
+    1977, to the date of termination. Such EIB benefits will be paid at the caregiver''s
+    base rate at the time of termination.'
+  questions_and_answers:
+  - question: How are EIB benefits paid out to caregivers who resign or retire after
+      completing 31,200 hours of service with the facility in Extended Illness Bank
+      (EIB) policy at Hope Medical Center?
+    answer: Caregivers who resign or retire after completing 31,200 hours of service
+      with the facility will have their EIB benefits paid out in cash above and beyond
+      520 hours and under the maximum amount of 650 hours converted to cash at the
+      rate of 100% in Extended Illness Bank (EIB) policy at Hope Medical Center.
+  - question: How are EIB benefits paid out to caregivers hired prior to January 1,
+      1977, who had any unused EIB up to 520 hours in Extended Illness Bank (EIB)
+      policy at Hope Medical Center?
+    answer: Caregivers hired prior to January 1, 1977, who had any unused EIB up to
+      520 hours will be paid as terminal pay at their base rate at the time of termination,
+      provided they have continuous service as a full-time caregiver from January
+      1, 1977, to the date of termination in Extended Illness Bank (EIB) policy at
+      Hope Medical Center.
+  - question: What is the maximum amount of EIB benefits that can be converted to
+      cash upon resignation or retirement in Extended Illness Bank (EIB) policy at
+      Hope Medical Center?
+    answer: The maximum amount of EIB benefits that can be converted to cash upon
+      resignation or retirement is 650 hours in Extended Illness Bank (EIB) policy
+      at Hope Medical Center.
+- context: 'Hope Medical Center ("facility")
+
+    Department: Human Resources
+
+    Approved by: Chief Human Resources Officer
+
+    Date Last Reviewed: 2/4/2022
+
+    Date Last Revised: 2/4/2022
+
+    Date Adopted: 3/9/2016
+
+    Policy Name: Extended Illness Bank (EIB)
+
+    Scope: All facility caregivers not on a contract
+
+    Purpose: Benefits-eligible caregivers with an EIB balance may use their EIB for
+    certain absences as described in this policy.
+
+    Policy: If a caregiver misses work because of personal or family member illness
+    or injury, the caregiver must use Paid Time Off (PTO) and/or EIB to cover payment
+    for lost work hours. Absences of more than three days, due to a personal or family
+    member illness, must be confirmed by a doctor''s certificate upon request. A doctor''s
+    certificate for an absence of less than three days may also be required at your
+    core leader''s option.'
+  questions_and_answers:
+  - question: Who is eligible to use the Extended Illness Bank (EIB) at Hope Medical
+      Center?
+    answer: All benefits-eligible caregivers at Hope Medical Center who are not on
+      a contract can use the Extended Illness Bank (EIB) for certain absences as described
+      in the policy.
+  - question: What happens if a caregiver misses work due to personal or family member
+      illness or injury in Extended Illness Bank (EIB) policy at Hope Medical Center?
+    answer: If a caregiver misses work due to personal or family member illness or
+      injury, they must use Paid Time Off (PTO) and/or EIB to cover payment for lost
+      work hours inExtended Illness Bank (EIB) policy at Hope Medical Center. Absences
+      of more than three days must be confirmed by a doctor's certificate upon request.
+  - question: When is a doctor's certificate required for an absence in Extended Illness
+      Bank (EIB) policy at Hope Medical Center?
+    answer: A doctor's certificate is required for an absence of less than three days
+      at the core leader's option, and it is mandatory for absences of more than three
+      days due to a personal or family member illness in Extended Illness Bank (EIB)
+      policy at Hope Medical Center.

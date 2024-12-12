@@ -1,0 +1,310 @@
+domain: 'BPOD record to analyze: DTP Process Fixed Assets Depreciation - V13 All Platforms'
+document_outline: Describes GPM DTP R2R Process Fixed Assets Depreciation Process
+seed_examples:
+- context: "# 2. Purpose \n\nThe objective of the procedure is:\n\na)  To ensure the\
+    \ monthly depreciation is processed correctly in SAP and that all assets are depreciated\
+    \ according to depreciation rates, which reflect their normal use within the period.\n\
+    \nb)  Procedure describes the steps required to timely and accurately process\
+    \ Fixed Asset Depreciation.\n\nc)  It gives directions on the process timeline,\
+    \ required steps and transaction usage in SAP.\n\nd)  It also provides instructions\
+    \ on BMC Remedy Workflow functionalities that support the process.\n\n+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+\n\
+    | In Client, Fixed Asset transactions are recorded in three independent depreciation\
+    \ areas: |                                                                   \
+    \                                                                            \
+    \                         |                                                  \
+    \               |\n+===========================================================================================+========================================================================================================================================================================+=================================================================+\n\
+    | 1                                                                          \
+    \               | > Book (local) depreciation area                           \
+    \                                                                            \
+    \                                | > Used to record Fixed Asset values as per\
+    \ local regulations.   |\n+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+\n\
+    | 2                                                                          \
+    \               | > Fiscal (Tax) depreciation area                           \
+    \                                                                            \
+    \                                | > Used to record Fixed Asset values as per\
+    \ tax regulations.     |\n+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+\n\
+    | 3                                                                          \
+    \               | > Concern (UL) depreciation area                           \
+    \                                                                            \
+    \                                | > Used to record Fixed Asset values as per\
+    \ Client requirements. |\n+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+\n\
+    | NOTE:                                                                      \
+    \               | > Fiscal (Tax) depreciation area is applicable only in these\
+    \ geographies, where the migration of tax depreciation area (as per S4SCOA Project\
+    \ timelines) has happened. |                                                 \
+    \                |\n+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+\n\
+    \nEach movement on 'Fixed Asset Register (FAR)' such as capitalization, write\
+    \ off, transfer, disposal, correction etc., is reflected separately on their respective\
+    \ depreciation area. They are then, depreciated as per useful life/depreciation\
+    \ rate assigned in particular depreciation area in Fixed Asset Master Data.\n\n\
+    Tax Depreciation Area (Implementation from S4SCOA Project)\n\nTax depreciation\
+    \ area is set up globally from January 2020 as one of deliverable of S4SCOA Project.\n\
+    \nImplementation of Tax Depreciation Area in SAP, allows to:\n\n-   Record and\
+    \ Maintain tax values of Fixed Assets in Fixed Asset register of SAP.\n\n-   Post\
+    \ tax value related transactions for both BS and P&L automatically from Fixed\
+    \ Asset register.\n\n-   Post tax value adjustments via Manual Journals."
+  questions_and_answers:
+  - question: What are the three independent depreciation areas in Client?
+    answer: 'The three independent depreciation areas are:
+
+
+      *   Book (local) depreciation area: used to record Fixed Asset values as per
+      local regulations.
+
+      *   Fiscal (Tax) depreciation area: used to record Fixed Asset values as per
+      tax regulations.
+
+      *   Concern (UL) depreciation area: used to record Fixed Asset values as per
+      Client requirements.'
+  - question: What is the purpose of implementing the Tax Depreciation Area in SAP?
+    answer: The purpose is to record and maintain tax values of Fixed Assets in the
+      Fixed Asset register of SAP, and to post tax value related transactions for
+      both BS and P&L automatically from the Fixed Asset register.
+  - question: What is the objective of the procedure for Fixed Asset Depreciation?
+    answer: The objective of Fixed Asset Depreciation procedure is to ensure the monthly
+      depreciation is processed correctly in SAP and that all assets are depreciated
+      according to depreciation rates, which reflect their normal use within the period.
+- context: "# 6. System Enablement \n\n+----------+------------------------------------+-------------------------------+---------------+\n\
+    | > System | > Transaction code                 | > Role                     \
+    \   | > Access type |\n+==========+====================================+===============================+===============+\n\
+    | > SAP    | > AFAB -- Depreciation Posting Run | Service Provider Accountant\
+    \   | Change        |\n+----------+------------------------------------+-------------------------------+---------------+\n\
+    |          |                                    | > Service Provider Approver\
+    \   | > Display     |\n+----------+------------------------------------+-------------------------------+---------------+\n\
+    | > SAP    | > AFAR -- Recalculate Depreciation | > Service Provider Accountant\
+    \ | > Change      |\n+----------+------------------------------------+-------------------------------+---------------+\n\
+    |          |                                    | > Service Provider Approver\
+    \   | > Display     |\n+----------+------------------------------------+-------------------------------+---------------+\n\
+    | > SAP    | > ASKB -- Periodic Asset Postings  | > Service Provider Accountant\
+    \ | > Change      |\n+----------+------------------------------------+-------------------------------+---------------+\n\
+    |          |                                    | > Service Provider Approver\
+    \   | > Display     |\n+----------+------------------------------------+-------------------------------+---------------+\n\
+    | > SAP    | > SM37 -- Simple Job Selection     | > Service Provider Accountant\
+    \ | > Change      |\n+----------+------------------------------------+-------------------------------+---------------+\n\
+    | > SAP    | > F.01 -- Financial Statement      | > Service Provider Accountant\
+    \ | > Display     |\n+----------+------------------------------------+-------------------------------+---------------+\n\
+    |          |                                    | > Service Provider Approver\
+    \   | > Display     |\n+----------+------------------------------------+-------------------------------+---------------+"
+  questions_and_answers:
+  - question: What is the transaction code for Depreciation Posting Run in SAP?
+    answer: The transaction code for Depreciation Posting Run in SAP is **AFAB**.
+  - question: When performing fixed asset depreciation in SAP system, what kind of
+      transactions does Service Provider Accountant process?
+    answer: "When performing fixed asset depreciation in SAP system, the Service Provider\
+      \ Accountant processes following transactions.\n1. Depreciation Posting Run,\
+      \ \n2. Recalculate Depreciation, \n3. Periodic Asset Postings, \n4. Simple Job\
+      \ Selection."
+  - question: When performing fixed asset depreciation in SAP system, what is the
+      access type for the Service Provider Approver in the SAP system?
+    answer: When performing fixed asset depreciation in SAP system, the access type
+      for the Service Provider Approver is Display, which means they can view but
+      not change the transactions.
+- context: "# 7. Process Overview \n\n+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | NOTE: The following 'Process steps' are applicable across Cordillera, Fusion,\
+    \ Sirius and U2K2 platforms. |                                               \
+    \                   |                                                        \
+    \                                                                            \
+    \                                           |\n+==========================================================================================================+==================================================================+===============================================================================================================================================================================+\n\
+    | Step No.                                                                   \
+    \                              | > Process Steps                             \
+    \                     |                                                      \
+    \                                                                            \
+    \                                             |\n+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | A                                                                          \
+    \                              | > Conduct Depreciation Test run (by Service Provider\
+    \ Accountant) |                                                              \
+    \                                                                            \
+    \                                     |\n+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    |                                                                            \
+    \                              | > 1                                         \
+    \                     | > Before executing 'Test Run', Run a report to check locked\
+    \ cost centers. In SAP GUI. Enter transaction 'YUFI_AAR01'.                  \
+    \                                       |\n+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    |                                                                            \
+    \                              | > 2                                         \
+    \                     | > Enter Company Code and Report Date. Press Execute. \
+    \                                                                            \
+    \                                             |\n+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    |                                                                            \
+    \                              | > 3                                         \
+    \                     | > Report with all locked 'Cost Centers' will be generated.\
+    \                                                                            \
+    \                                        |\n+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    |                                                                            \
+    \                              | > 4                                         \
+    \                     | > In SAP GUI. Enter transaction 'AFAB' to start the Test\
+    \ Run.                                                                       \
+    \                                          |\n+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    |                                                                            \
+    \                              | > 5                                         \
+    \                     | > Fill in Company Code, Fiscal year, posting period, Reason\
+    \ for posting and select 'Test Run'.                                         \
+    \                                       |\n+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    |                                                                            \
+    \                              | > 6                                         \
+    \                     | > Click 'Programs' and select 'Execute in Background'.\
+    \                                                                            \
+    \                                            |\n+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    |                                                                            \
+    \                              | > 7                                         \
+    \                     | > Within the 'Background Print Parameters' window, click\
+    \ on the green tick mark without entering any data.                          \
+    \                                          |\n+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    |                                                                            \
+    \                              | > 8                                         \
+    \                     | > Click 'Save'.                                      \
+    \                                                                            \
+    \                                             |\n+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    |                                                                            \
+    \                              | > 9                                         \
+    \                     | > To check status of Depreciation posting run, go to job\
+    \ overview -- T-code 'SM37'.                                                 \
+    \                                          |\n+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    |                                                                            \
+    \                              | > 10                                        \
+    \                     | > Under 'Simple Job Selection' screen, click 'Execute'.\
+    \                                                                            \
+    \                                           |\n+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+"
+  questions_and_answers:
+  - question: In Fixed Assets Depreciation Process, what is the purpose of conducting
+      a Depreciation Test run?
+    answer: In Fixed Assets Depreciation Process, the purpose of conducting a Depreciation
+      Test run is to test the depreciation process before executing the actual depreciation
+      posting run.
+  - question: What is the first step to be performed before executing the Depreciation
+      Test run?
+    answer: The first step  to be performed before executing the Depreciation Test
+      run is to run a report to check locked cost centers by entering transaction
+      'YUFI_AAR01' in SAP GUI.
+  - question: How do you start the Depreciation Test run in SAP?
+    answer: To start the Depreciation Test run, you need to enter transaction 'AFAB'
+      and fill in the required fields, including Company Code, Fiscal year, posting
+      period, and Reason for posting, and then select 'Test Run'.
+- context: "## A. Conduct Depreciation Test run (by Service Provider Accountant) \n\
+    \nThe process of Fixed Asset depreciation is highly automated, using the standard\
+    \ SAP functionalities. The depreciation amounts are automatically calculated according\
+    \ to depreciation rates and useful life entered in the Fixed Assets register/Master\
+    \ Data.\n\n+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | NOTE: | > One run of depreciation will post depreciation for all depreciation\
+    \ areas at the same time: Local, fiscal (tax) and concern. The accounts which\
+    \ depreciation will be posted to, are automatically picked up based on Fixed Asset\
+    \ class and depreciation area. The cost center to which the depreciation is booked\
+    \ is taken out of fixed asset master data as well. |\n+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    \nBefore running the depreciation run in the production mode, the test run needs\
+    \ to be executed. It should happen on WD-3 latest, after all asset transactions\
+    \ for the current month are processed. The depreciation test run allows checking\
+    \ whether depreciation can be posted correctly, helps to identify potential errors\
+    \ and solve them before final run. If any error appears in the depreciation test\
+    \ run, the production run cannot be executed. The Service Provider Accountant\
+    \ jointly with Service Provider Approver work out the solution to process the\
+    \ depreciation accurate.\n\n+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | > 1\\. | Before executing the test run, a report is run to check locked cost\
+    \ centers, if any. Go to SAP and enter transaction 'YUFI_AAR01'.             \
+    \                            |\n+=======+============================================================================================================================================================================+\n\
+    |       |  |\n+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    \n+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | > 2\\. | Enter Company Code & Report Date & press Execute.                 \
+    \                                                                            \
+    \                            |\n+=======+===========================================================================================================================================================================+\n\
+    |       |  |\n+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    \n+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | > 3\\. Report with all locked cost centers will be generated.              \
+    \                                                                            \
+    \                     |                                                      \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                   |\n+============================================================================================================================================================================+=========================================================================================================================================================================================================================================================================================================================================================================================+\n\
+    | |                                                                          \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                           |\n\
+    +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | > NOTE:                                                                    \
+    \                                                                            \
+    \                    | > In case of any locked cost center, verify if there are\
+    \ any assets associated to that cost center. In case there are, contact the client\
+    \ and get the alternative cost center. Follow the process GPM DTP Maintain Fixed\
+    \ Asset Master Data (inclusive Fixed Asset Cost Collector). Once the correct cost\
+    \ center is entered for fixed asset account, follow the actions described below.\
+    \ |\n+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    \n+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | > 4\\. | Go to SAP. Enter transaction AFAB -- Depreciation Posting Run in transaction\
+    \ window and press Enter or Execute button.                                  \
+    \                   |\n+=======+============================================================================================================================================================================+\n\
+    |       |  |\n+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    \n}\n\n+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | > NOTE | > There are several options/reasons that can be marked while processing\
+    \ the depreciation (in both production and test run)"
+  questions_and_answers:
+  - question: What should be done if any locked cost centers are found in the depreciation
+      test run report?
+    answer: ' If any locked cost centers are found in depreciation test run report,
+      you should verify if there are any assets associated with that cost center.
+      If there are, you should contact the client and get the alternative cost center
+      and then follow the process GPM DTP Maintain Fixed Asset Master Data.'
+  - question: When should the Depreciation test run be completed?
+    answer: Depreciation test run should happen latest by WD-3, after all asset transactions
+      for the current month are processed.
+  - question: What transaction code is used to start the depreciation posting run
+      in SAP?
+    answer: The transaction code used to start the depreciation posting run in SAP
+      is 'AFAB'.
+- context: "## D. Verify and prepare adjustments to be made (by Service Provider Accountant)\
+    \ \n\n+------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | NOTE | > Any errors detected during the depreciation run that are not IT related\
+    \ need to be verified and corrected or adjusted for. Most common errors may result\
+    \ from: |\n|      |                                                          \
+    \                                                                            \
+    \                            |\n|      | -   Accounting period to which the depreciation\
+    \ is to be posted, has already been closed.                                  \
+    \                                      |\n|      |                           \
+    \                                                                            \
+    \                                                           |\n|      | -   Data\
+    \ mismatch in Fixed asset master data (cost center and account number not mapped).\
+    \                                                                        |\n|\
+    \      |                                                                     \
+    \                                                                            \
+    \                 |\n|      | -   Cost centers, accounts blocked for posting in\
+    \ Master Data.                                                               \
+    \                                    |\n+------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    \nTo verify how fixed asset, accounts or cost centers has been set up, refer to\
+    \ procedure GPM DTP Maintain Fixed Assets Master Data and/or GPM DTP Maintain\
+    \ GL Accounts at Primary Chart of Account Level and/or GPM DTP Maintain GL Accounts\
+    \ at Company Code Level.\n\n+------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | NOTE | > Depending of the type of error, an adjustment or correction proposal\
+    \ is to be prepared and sent to the Service Provider for review and approval.\
+    \ After obtaining the approval, the required action must be performed according\
+    \ to the respective GPM Procedures, e.g.: if master data change is required, then\
+    \ the Master Data maintenance process must be initiated by Service Provider Accountant.\
+    \ |\n+------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    \nAlthough the responsibility for this activity is with the Service provider Accountant\
+    \ it will be useful to contact the Service Provider Approver to work out the solution\
+    \ for detected errors in order to process depreciation accurate in the reporting\
+    \ month."
+  questions_and_answers:
+  - question: What are some common errors that may be identified in the depreciation
+      run?
+    answer: 'Some common errors found during depreciation run are:
+
+
+      *   Accounting period to which the depreciation is to be posted, has already
+      been closed.
+
+      *   Data mismatch in Fixed asset master data (cost center and account number
+      not mapped).
+
+      *   Cost centers, accounts blocked for posting in Master Data.'
+  - question: What should be done to verify how fixed assets, accounts, or cost centers
+      have been set up?
+    answer: To verify how fixed assets, accounts, or cost centers have been set up,
+      you should refer to procedures GPM DTP Maintain Fixed Assets Master Data, GPM
+      DTP Maintain GL Accounts at Primary Chart of Account Level, and/or GPM DTP Maintain
+      GL Accounts at Company Code Level.
+  - question: What is the purpose of verifying and preparing adjustments to be made
+      during the depreciation run?
+    answer: The purpose of verifying and preparing adjustments to be made during the
+      depreciation run is to verify and correct or adjust for any errors detected
+      during the depreciation run that are not IT-related.

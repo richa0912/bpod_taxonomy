@@ -1,0 +1,145 @@
+domain: 'BPOD Record to Analyze: R2R_GA_ Journal Entry Process- Journal Trax_AQ Billing_2022_V1.0'
+document_outline: Describes how IBM Delivery Centre will understand the objective
+  of Journal  Process TRAX_AQ Billing Process
+seed_examples:
+- context: "# Control Points\n\n  ***\\#***   **Sub process Activity**   **Sub process\
+    \ Activity Description**   **Control Objective(s)**                          \
+    \                    **Control Activity**                                    \
+    \                                                                    **Risk Assertions**\
+    \                                                                            \
+    \                                                                            \
+    \                        **Frequency (i.e. Event, Daily, Monthly, Quarterly, Annually)**\
+    \   **Evidence**\n  ---------- -------------------------- --------------------------------------\
+    \ --------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------\
+    \ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+    \ ----------------------------------------------------------------- ------------------------------------------------------------------------\n\
+    \  1          AQ Billing                 AQ Advanced DLB Programming Charge  \
+    \   Ensure US and Canadian entries are identified and treated correctly   Manual\
+    \ journal entries are reviewed and approved in line with Company policy prior\
+    \ to being posted (Higher level control)   Assets, liabilities, and equity interests\
+    \ recorded in the financial statements are not valid. Transactions and components\
+    \ are not properly classified and disclosed in the financial statements.   Monthly\
+    \                                                           Approval is stored\
+    \ in Oracle IPM Imaging along with all Journal backup"
+  questions_and_answers:
+  - question: What is the Control Objective for "Journal  Process TRAX_AQ Billing"
+      charge?
+    answer: The Control Objective Journal  Process TRAX_AQ Billing" charge is to ensure
+      US and Canadian entries are identified and treated correctly
+  - question: What is the Control Activity for "Journal  Process TRAX_AQ Billing"
+      charge?
+    answer: The Control activity Journal  Process TRAX_AQ Billing" charge are "Manual
+      journal entries are reviewed and approved in line with Company policy prior
+      to being posted (Higher level control) "
+  - question: What are the Control Risk assertions for Journal  Process TRAX_AQ Billing"
+      charge?
+    answer: "The Control Risk assertions for Journal  Process TRAX_AQ Billing\" charge\
+      \ are as detailed below :-\n Assets, liabilities, and equity interests recorded\
+      \ in the financial statements are not valid. Transactions and components are\
+      \ not properly classified and disclosed in the financial statements"
+- context: '# Process Detail
+
+    ## Overview
+
+
+    > Around 25th of every month AQ Billing spreadsheet will be saved in the GA SharePoint
+    by Client business partner/associate. Within WD-1 Journal should be prepared and
+    processed in Journal TRAX for US and Canadian Dealers. AQ Billing journal is posted
+    to charge/credit dealers for AQ Advanced DLB programming completed on VIN specific
+    vehicles. AQ stands for Aftermarket Quotation. Advanced DLB Programming is custom
+    software for cab and chassis electrical systems generated to provide requested
+    functionality for our customers.'
+  questions_and_answers:
+  - question: When will the inputs required to perform Journal Process TRAX_AQ Billing
+      need to be shared?
+    answer: Inputs required to perform Journal Process TRAX_AQ Billing need to be
+      shared around 25th of every month AQ Billing spreadsheet will be saved in the
+      GA SharePoint
+  - question: What does AQ stand for in "Journal Proces TRAX_AQ Billing"?
+    answer: AQ in "Journal Process TRAX_AQ Billing " refers "Aftermarket Quotation"
+  - question: What is AQ Billing Process in Journal  Process TRAX_AQ Billing"?
+    answer: AQ Billing journal is posted to charge/credit dealers for AQ Advanced
+      DLB programming completed on VIN specific vehicles in Journal Process TRAX_AQ
+      Billing
+- context: "# Roles & Responsibilities\n\n## Description\n\n  **Role**           \
+    \                              **Responsibility**\n  ------------------------------------------------\
+    \ ---------------------------------------------------------------------------------------------------------------------\n\
+    \  R2R GA Offshore team                             Prepare Journal and upload\
+    \ in Journal Trax\n  Electrical Integration Engineer (Bill Pawelko)   AQ Billing\
+    \ spreadsheet will be saved in GA SharePoint\n  Onshore Manager              \
+    \                    Journal is reviewed through Echo Sign with backup broadgun\
+    \ as part of the package sent to the reviewer for approval"
+  questions_and_answers:
+  - question: What is the responsibility of R2R GA Offshore team in Journal Entry
+      Process-Journal Trax_AQ Billing ?
+    answer: In the Journal Entry Process-Journal Trax_AQ Billing the role of R2R GA
+      Offshore team is Prepare Journal and upload in Journal Trax
+  - question: What is the responsibility of Electrical Integration Engineer (Bill
+      Pawelko)  in Journal Entry Process-Journal Trax_AQ Billing ?
+    answer: In the Journal Entry Process-Journal Trax_AQ Billing the resposibility
+      of Electrical Integration Engineer (Bill Pawelko) is to provide AQ Billing spreadsheet
+      will be saved in GA SharePoint
+  - question: What is the resposibility of Onshore Manager  in Journal Entry Process-Journal
+      Trax_AQ Billing ?
+    answer: In the Journal Entry Process-Journal Trax_AQ Billing the Onsshore Manager
+      is responsible for the Journal which is reviewed through Echo Sign with backup
+      broadgun as part of the package sent to the reviewer for approval
+- context: '## Inputs & Outputs
+
+
+    +-----------------+---------------------------------------------------+
+
+    | Input           | From                                              |
+
+    +-----------------+---------------------------------------------------+
+
+    | > GA SharePoint | > Electrical Integration Engineer (Bill Pawelko). |
+
+    +-----------------+---------------------------------------------------+
+
+
+    +----------------------------------------+---------------------------------------------+
+
+    | Output                                 | To                                          |
+
+    +----------------------------------------+---------------------------------------------+
+
+    | > Submit the Journal using JournalTrax | > Client -- Process owner (Onshore
+    Manager) |
+
+    +----------------------------------------+---------------------------------------------+
+
+    |                                        |                                             |
+
+    +----------------------------------------+---------------------------------------------+'
+  questions_and_answers:
+  - question: Where is the Input shared for GA Sharepoint for "Journal  Process TRAX_AQ
+      Billing"?
+    answer: Inputs for Journal Process TRAX_AQ Billing are shared in GA Sharepoint
+  - question: Who shares the inputs for Journal  Process TRAX_AQ Billing"?
+    answer: Inputs will be shared vy Electrical Integration Engineer (Bill Pawelko).
+  - question: What is the expected Output in Journal Process TRAX_AQ Billing?
+    answer: The Output in Journal Process TRAX_AQ Billing  is to submit the Journal
+      using JournalTrax
+- context: "## Objective(s)\n\n> To charge/credit dealers for AQ Advanced DLB programming\
+    \ completed on VIN\n>\n> specific vehicles (AQ stands for Aftermarket Quotation).\
+    \ Advanced DLB Programming is custom software for cab and chassis electrical systems\
+    \ generated to provide requested functionality for customers.\n\n### Frequency:\n\
+    \n> Once a Month (WD-1)\n\n### Source:\n\n> Spreadsheet from AQ billing folder\
+    \ in GA SharePoint\n\n### System Accesses:\n\n>  GA SharePoint Site\n>\n\
+    >  OBIEE\n>\n>  Generic Journal\n>\n>  Journal Trax\n\n-   CanTax\
+    \ access database\n\n>  Echo sign/Adobe sign\n>\n>  Oracle IPM (Capsys)"
+  questions_and_answers:
+  - question: What is the objective of Journal  Process TRAX_AQ Billing?
+    answer: 'The objective is to charge dealers for AQ Advanced DLB programming completed
+      on VIN specific vehicles.
+
+      Advanced DLB Programming is custom software for cab and chassis electrical systems
+      generated to provide requested functionality for customers.'
+  - question: What is the frequency of Journal  Process TRAX_AQ Billing?
+    answer: The frequency of Journal  Process TRAX_AQ Billing is once a Month (WD-1)
+  - question: Whar are the system accesses required in "Journal  Process TRAX_AQ Billing"?
+    answer: "Required System Accesses-required in \"Journal  Process TRAX_AQ Billing\"\
+      \ include-\n GA SharePoint Site\n OBIEE\n Generic Journal\n\
+       Journal Trax  and\nCanTax access database\n Echo sign/Adobe sign\n\
+       Oracle IPM (Capsys)"

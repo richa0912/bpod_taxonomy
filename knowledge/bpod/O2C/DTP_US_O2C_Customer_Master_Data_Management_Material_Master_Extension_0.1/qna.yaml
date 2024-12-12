@@ -1,0 +1,410 @@
+domain: 'BPOD order to cash: DTP US O2C Customer Master Data Management Material Master
+  Extension 0.1'
+document_outline: The steps followed for processing daily request received through
+  SAP to extend materials to plants other than where it exists.
+seed_examples:
+- context: '# Overview
+
+
+    ## Objectives of the Process
+
+
+    The objective of this process is to extend an existion material to a plant other
+    than where it exists. The requests are received in SAP through a ZMAT with the
+    required details updated on it. The existing material would need to be extended/attached
+    to the requested plant. And the ZMAt needs to be closed accordingly.
+
+
+    ## Inputs & Outputs
+
+
+    +----------+---------+
+
+    | Input    | From    |
+
+    +----------+---------+
+
+    | -   ZMAT | -   SAP |
+
+    +----------+---------+
+
+
+    +------------------------------------------------------+----------------+
+
+    | Output                                               | To             |
+
+    +------------------------------------------------------+----------------+
+
+    | -   Material attached to a different requested Plant | -   Requesters |
+
+    +------------------------------------------------------+----------------+'
+  questions_and_answers:
+  - question: What is the purpose of the material extension process?
+    answer: The objective of the material extension process is to extend an existing
+      material to a plant other than where it exists.
+  - question: What is the input needed for the material extension process?
+    answer: The input needed for the material extension process is a ZMAT received
+      through SAP with the required details updated on it.
+  - question: What is the expected output of the material extension process?
+    answer: The expected output of the material extension process is the material
+      attached to a different requested plant, which will be communicated to the requesters.
+- context: '## Step Description for Extension Modifications for DIEN & NLAG
+
+
+    ### Opening the Extension Request
+
+
+    The Extension request is received in the Business Workplace, as shown below. Double
+    click on the request to open the Z-Mat request.
+
+
+    The below screen will appear. Copy the Material number as highlighted below and
+    open a new session on SAP .
+
+
+    The ''Display Material Master Request'' screen will appear as shown below. The
+    details of the case can be checked on this screen as here the below highlighted
+    Material Number has to be copied to the plant. Copy this material number and
+
+
+    Note - The number was made recently like a month or two ago as it starts with
+    ''155''& if the plant number begins with 127 that it would have been made up in
+    2006-2007.
+
+
+    ### Making the Extension Modification for DIEN & NLAG
+
+
+    Go to the SAP and enter the transaction code MM01. The below screen will show
+    up.
+
+
+    Enter the T-Code ''MM01'' and hit enter. The below screen will appear. Here paste
+    the material number into the two boxes marked ''Material'' and hit enter.
+
+
+    The Industry Sector & Material Type will automatically populate as highlighted
+    below. Hit enter.
+
+
+    A select Views Dialog box will appear. Here dis-select the MRP -1,2,3,4 values
+    and hit enter.
+
+
+    Type in the Plant Number, Sales Org. number and the Dist. Channel from the Z-Mat
+    Request that needs this material number attached to it, as done and highlighted
+    below. Hit enter.
+
+
+    Note -- The Distr. Channel will always be ''99''.
+
+
+    Click on the ''Plant number'' box under the ''Copy From'' Side. The below shown
+    list will appear.
+
+
+    Select the other plant using this same material, as in this case it is \# 1123.
+    Check and write the sales org. number for this plant. Here the Sales Organization
+    for this plant is 2001. Click on proceed green mark on the top of the screen.
+
+
+    The Sales: Sales Org tab will appear on the screen. The values should be as --
+
+
+    Matl Statistics Group -- Always "1"
+
+
+    Acct Assign Group -- Always "10"
+
+
+    Item Category Group -- DIEN because this is a service; or NLAG because it is non-inventory
+    item. AS per the request.
+
+
+    Tax Class -- Always "1"
+
+
+    Now hit enter.'
+  questions_and_answers:
+  - question: What is the purpose of the Material Master Request screen?
+    answer: The Material Master Request screen is used to check the details of the
+      case and copy the Material Number to the plant.
+  - question: What is the significance of the Material Number in the Extension Modification
+      process?
+    answer: The Material Number is significant in the Extension Modification process
+      because it needs to be copied to the plant field and used to populate the Industry
+      Sector & Material Type in SAP. The material number also helps to identify the
+      age of the material, with numbers starting with '155' indicating that it was
+      made recently, while numbers starting with '127' indicate that it was made in
+      2006-2007.
+  - question: Which SAP T-Code is used to make an Extension Modification for DIEN
+      & NLAG in SAP?
+    answer: SAP T-Code 'MM01' is used to make an Extension Modification for DIEN &
+      NLAG in SAP.
+- context: '## Step Description for Extension Modifications for HAWA
+
+
+    ### Opening the Extension Request
+
+
+    The Extension request is received in the Business Workplace, as shown below.
+
+
+    Click on a request and the below screen will appear. Click on the ''Material request
+    as highlighted below.
+
+
+    The ''Display Material Master Request'' screen will appear as shown below. The
+    details of the case can be checked on this screen as here the below highlighted
+    Material Number has to be attached to the plant. Copy this material number and
+    hit enter.
+
+
+    Note -- HAWA & HALB are literally the same things. The only difference is that
+    HAWA was last created till the m,aterial number starting with ''135'' and since
+    then only HALB''s are created. HAWA never has the tabs for the Costing screens
+    as seen with HALB materials.
+
+
+    ### Making the Extension Modification for HAWA.
+
+
+    The modifications steps are similar ti HALB with just one difference that the
+    ''MRP'' tab, which is between ''Purchasing Order Text'' and ''Forecasting'' tab,
+    is not to be selected.'
+  questions_and_answers:
+  - question: What is the difference between HAWA and HALB?
+    answer: The main difference between HAWA and HALB is that HAWA does not have the
+      tabs for the Costing screens, whereas HALB does.
+  - question: What is the modification step unique to HAWA materials?
+    answer: The modification step unique to HAWA materials is that the 'MRP' tab should
+      not be selected, unlike in HALB materials.
+  - question: Which screen contains the case details in Extension modifications for
+      HAWA?
+    answer: Display Material Master Request' screen contains the case details in Extension
+      modifications for HAWA.
+- context: '### Performing the Extension Modification for HIBE in SAP
+
+
+    Go to the SAP and enter the transaction code MM01. The below screen will show
+    up.
+
+
+    Enter the material no. in the top box and the bottom box as done below. Press
+    enter.
+
+
+    A select Views Dialog box will appear. As the material is just being purchased
+    so dis-select the sales tabs and hit enter.
+
+
+    The organisational Levels screen will appear as a dialog box. Enter the value
+    for both the plants as it is to be coppied from Plant no. 1553 to 1555.Enter these
+    values and hit enter.
+
+
+    The Purchasing tab will appear on the screen as shown below. Check the purchase
+    Group code as ''G01''and hit enter.
+
+
+    Note- Purchasing group is always as per plant spcified. Below is list.
+
+
+    Gypusum Plant- R01,
+
+
+    Pipe Plant-P01
+
+
+    The Purchase Order Text tab will appear. This will remain the same. Hit enter
+    again.
+
+
+    The MRP 1 tab will appear. The MRP group will be ''0900'', ABC Indicator has to
+    be entered only for Cement material which is nat a case here and MRP Controller
+    has to be ''004''. Press enter.
+
+
+    Note -- The values -- ''PC'', ''PD'' & ''EX'' will remain the same as highlighted
+    above.
+
+
+    The MRP 2 tab will appear as below.Always put planned delivery days as 3 unless
+    anything else is given on the request. Then press enter.
+
+
+    The MRP 3 tab will appear as below. In the Individual/coll. field enter ''2''
+    as highlighted below. Now press enter.
+
+
+    The Forecasting tab will appear now. Nothing has to be changed here. So press
+    enter.
+
+
+    Plant Data/Stor. tab will appear on the screen now. Here click on the Profit centre
+    box as highlighted.
+
+
+    The Profit centre (2) dialog box will appear. Put the value for ''Person in Charges''
+    i.e. the plant no. 1555 and hit enter.
+
+
+    Profit centre details will be shown as in below.
+
+
+    Go to the Z-Mat request screen and click n Proceed on the top and highlighted.
+
+
+    The Display material Master Request screen will appear. It contains the profit
+    centre number in the end box as highlighted below.
+
+
+    Select the correct Profit centre i.e. 91007, and hit enter.
+
+
+    The Accounting 1 tab will appear on the screen. Click on Price control box as
+    highlighted below.
+
+
+    The Display material Master Request screen will appear. It contains the Price
+    per unit as shown below.
+
+
+    Put the price value in the Accounting 1 tab as done and highligfhted below. Hit
+    enter.
+
+
+    Costing 1 tab will appear on the screen. Nothing to change here, so hit enter.
+
+
+    Note : Make sure that Material Origin is always checked.
+
+
+    A dialog box will appear. Click ''Yes'' so that the entension can be saved.
+
+
+    Now go to the Decision Step in the Business Workflow. Click on the ''Process the
+    Material request Form'' as highlighted below.'
+  questions_and_answers:
+  - question: Which T-Code is used for Performing the Extension Modification for HIBE
+      in SAP?
+    answer: T-Code MM01 is used for Performing the Extension Modification for HIBE
+      in SAP.
+  - question: What is the purpose of the MRP 1 tab in the extension modification for
+      HIBE process?
+    answer: The MRP 1 tab in the extension modification for HIBE process is used to
+      enter the MRP group, ABC indicator (only for cement material), and MRP controller
+      values.
+  - question: What purchasing group should be selected for pipe plant in extension
+      modification for HIBE process?
+    answer: Purchasing group P01 should be selected for pipe plant in extension modification
+      for HIBE process.
+- context: '### Performing the Extension Modification for Non-manufactured/manufactured
+    HALB in SAP.
+
+
+    Go to the SAP and enter the transaction code MM01. The below screen will show
+    up.
+
+
+    Enter the material no. in the top box and the bottom box as done below. Press
+    enter.
+
+
+    The Industry Sector & Material Type will automatically populate as highlighted
+    below. Hit enter.
+
+
+    A select Views Dialog box will appear. The screens are to be selected as default,
+    so hit enter.
+
+
+    The organisational Levels screen will appear as a dialog box. Enter the value
+    for both the plants where the material has to be coppied to from Plant no. 1553
+    to 1555. Enter these values and hit enter. It will show the Sales Org. for both
+    the plants as shown below. Hit enter again.
+
+
+    The Sales: Sales org tab will appear on the screen as shown below. The values
+    ate put up here by default and to change them is not required, so hit enter.
+
+
+    The Sales: General/Plant tab will appear.Make sure that Loading group is always
+    0001., Availability check is 02.
+
+
+    Click on the Profit centre.
+
+
+    A dialog box will appear as below. Type in the Plant number as highlighted below
+    and hit enter.
+
+
+    This will show the entries screen to select the profit centre a below. Select
+    the one highlighted by clicking on it.
+
+
+    Note -- the profit centre for Gypsum material will not be the one that says transport.
+    It has to be the one that is in the plant. Hence 28010 is selected.
+
+
+    The Profit centre box will now be populated as highlighted below. Hit enter.
+
+
+    The sales text tab will appear on the screen as shown below. There is no need
+    to change the description below as for Metal Framing(MF) the same description
+    can be written in different ways. Press enter.
+
+
+    The Purchasing tab will appear on the screen as shown below. Nothing to change
+    on this screen, so hit enter.
+
+
+    The Purchsing Order Text tab will appear. Hit enter here as there is nothing to
+    be changed.
+
+
+    The MRP 1 tab will appear. Press enter.
+
+
+    Note -- The values -- ''PC'', ''R01'' & ''EX'' will remain the same as highlighted
+    above.
+
+
+    The MRP 2 tab will appear as below.
+
+
+    Remove the value fron the ''Planned Deliv. Time'' box as highlighted below. Now
+    press enter.
+
+
+    The MRP 3 tab will appear as below. There is nothing to change in this tab. Now
+    press enter.
+
+
+    The Forecasting tab will appear now. Nothing has to be changed here.Check that
+    all the below shown fields should be filled as exactly shown below So press enter.
+
+
+    Plant Data/Stor. tab will appear on the screen now. There is nothing to change
+    here, so hit enter
+
+
+    Note -- For the Gypsum material, not much information is given on the Z-mat request
+    page as most of the information is set-up by default and there is no need for
+    updating that information.'
+  questions_and_answers:
+  - question: What is the transaction code to enter in SAP for extension modification
+      for Non-manufactured/manufactured HALB?
+    answer: The transaction code to enter in SAP for extension modification for Non-manufactured/manufactured
+      HALB is MM01.
+  - question: What is the Loading group and Availability check values that should
+      be used for extension modification for Non-manufactured/manufactured HALB in
+      SAP?
+    answer: For extension modification for Non-manufactured/manufactured HALB in SAP,
+      the Loading group should be 0001 and Availability check should be 02.
+  - question: 'What values need to be selected in the organizational levels tab during
+      extension modification for Non-manufactured/manufactured HALB in SAP? '
+    answer: Value for both the plants where the material has to be copied to and from
+      in the organizational levels tab during extension modification for Non-manufactured/manufactured
+      HALB in SAP.

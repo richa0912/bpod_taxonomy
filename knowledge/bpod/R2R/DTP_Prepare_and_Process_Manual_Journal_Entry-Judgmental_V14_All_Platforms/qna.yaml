@@ -1,0 +1,382 @@
+domain: 'BPOD record to analyze: DTP Prepare and Process Manual Journal Entry - Judgmental
+  V14 All Platforms'
+document_outline: Describes the process 'DTP Prepare and Process Manual Journal Entry
+  -- Judgmental_All Platforms'
+seed_examples:
+- context: "# 5 Roles and Responsibilities \n\n+----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+\n\
+    | > **Role**           | **Description**                                     \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                       | > **Responsibility**\
+    \                                                                |\n+======================+============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+=====================================================================================+\n\
+    | > Country or         | The Country or Supply Chain Company Non-Finance     \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                       | > [Review\
+    \ financial figures to]{.ul} [determine need for journal]{.ul} [entry]{.ul} |\n\
+    | >                    |                                                     \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                       | >  \
+    \                                                                            \
+    \     |\n| > Supply Chain       | Requestor is responsible for determining the\
+    \ need to post a journal entry. The Non-Finance Requestor reviews the financial\
+    \ figures and analyzes Client's present obligations resulting from past events,\
+    \ when it is possible/likely/estimated that there will be an outflow of resources\
+    \ (for example a future cash payment) and when a reliable estimate of the obligation\
+    \ can be made (e.g. obligations resulting from tax, legal issues, warranty, fixed\
+    \ assets impairment, employee indemnities, restructuring). The Non-Finance Requestor\
+    \ collects the journal entry history and all other data required to prepare a\
+    \ Provision Proposal in accordance with the rules set up in Client Accounting\
+    \ Policy Manual.                                      | > [Communicate details\
+    \ to be]{.ul} [posted]{.ul}                                    |\n| >        \
+    \            |                                                               \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                             |              \
+    \                                                                       |\n| >\
+    \ Company NonFinance | The Non-Finance Requestor is also responsible for determining\
+    \ a need for provision based on the agreed materiality levels for provisions.\
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                              |             \
+    \                                                                        |\n|\
+    \ >                    |                                                     \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                       |    \
+    \                                                                            \
+    \     |\n| > Requestor          | Finally, the Non-Finance Requestor must collect\
+    \ the required supporting documentation for the journal entry and share it with\
+    \ the Finance Requestor.                                                     \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                          | \
+    \                                                                            \
+    \        |\n+----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+"
+  questions_and_answers:
+  - question: What is the role of the Country or Supply Chain Company Non-Finance
+      Requestor in Prepare and Process Manual Journal Entry Judgemental process?
+    answer: In Prepare and Process Manual Journal Entry Judgemental process, the Country
+      or Supply Chain Company Non-Finance Requestor is responsible for reviewing financial
+      figures to determine the need for a journal entry, analyzing Client's present
+      obligations, and collecting journal entry history and data required to prepare
+      a Provision Proposal.
+  - question: In Prepare and Process Manual Journal Entry Judgemental process, what
+      is the role of the Non-Finance Requestor in collecting supporting documentation?
+    answer: In Prepare and Process Manual Journal Entry Judgemental process, the Non-Finance
+      Requestor is responsible for collecting the required supporting documentation
+      for the journal entry and sharing it with the Finance Requestor.
+  - question: What is the purpose of the Provision Proposal in Prepare and Process
+      Manual Journal Entry Judgemental process?
+    answer: In Prepare and Process Manual Journal Entry Judgemental process, the Provision
+      Proposal is prepared in accordance with the rules set up in the Client Accounting
+      Policy Manual, and is used to determine the need for provision based on Client's
+      present obligations resulting from past events.
+- context: "## Global Enablement \n\n+-------------------+------------------------+--------------------------------------------+------------------+\n\
+    | > **System**      | > **Transaction code** | > **Role**                    \
+    \             | **Access Type**  |\n+===================+========================+============================================+==================+\n\
+    | > Cadency         | > N/A                  | > Country or Supply Chain Company\
+    \ Finance  | Display / Change |\n| >                 |                       \
+    \ | >                                          |                  |\n| > Journal\
+    \ Entry   |                        | > Requestor,                            \
+    \   | Display / Change |\n| >                 |                        | >   \
+    \                                       |                  |\n| > Tool (Trintech)\
+    \ |                        | > Country or Supply Chain Company Approver |    \
+    \              |\n+-------------------+------------------------+--------------------------------------------+------------------+\n\
+    | > BMC Remedy      | > N/A                  | > Country or Supply Chain Company\
+    \ Finance  | Display / Change |\n|                   |                       \
+    \ | >                                          |                  |\n|       \
+    \            |                        | > Requestor                          \
+    \      | Display / Change |\n|                   |                        | >\
+    \                                          |                  |\n|           \
+    \        |                        | > Country or Supply Chain Company Approver\
+    \ |                  |\n+-------------------+------------------------+--------------------------------------------+------------------+\n\
+    | > MS Outlook      |                        | > Country or Supply Chain Company\
+    \ Finance  | Display / Change |\n|                   |                       \
+    \ | >                                          |                  |\n|       \
+    \            |                        | > Requestor                          \
+    \      | Display / Change |\n|                   |                        | >\
+    \                                          |                  |\n|           \
+    \        |                        | > Country or Supply Chain Company Non    \
+    \  | Display / Change |\n|                   |                        | >    \
+    \                                      |                  |\n|               \
+    \    |                        | > Finance Requestor                        | Display\
+    \ / Change |\n|                   |                        | >               \
+    \                           |                  |\n|                   |      \
+    \                  | > Operating Centre Accountant              |            \
+    \      |\n|                   |                        | >                   \
+    \                       |                  |\n|                   |          \
+    \              | > Intercompany Ops Hub                     |                \
+    \  |\n+-------------------+------------------------+--------------------------------------------+------------------+"
+  questions_and_answers:
+  - question: What are the roles that have access to the Cadency Journal Entry Tool?
+    answer: 'The roles that have access to the Cadency Journal Entry Tool include:
+
+
+      *   Country or Supply Chain Company Finance Requestor
+
+      *   Country or Supply Chain Company Approver'
+  - question: What is the access type for the Country or Supply Chain Company Finance
+      Requestor in the BMC Remedy system?
+    answer: The access type for the Country or Supply Chain Company Finance Requestor
+      in the BMC Remedy system is Display / Change.
+  - question: In the context of processing Judgemental Manual Journal Entry, what
+      are the roles that have access to the MS Outlook system?
+    answer: 'In the context of processing Judgemental Manual Journal Entry, the roles
+      that have access to the MS Outlook system include:
+
+
+      *   Country or Supply Chain Company Finance Requestor
+
+      *   Country or Supply Chain Company Approver
+
+      *   Country or Supply Chain Company Non-Finance Requestor
+
+      *   Operating Centre Accountant
+
+      *   Intercompany Ops Hub'
+- context: "### 7.G Prepare Journal Entry (by Country or Supply Chain Company Finance\
+    \ Requestor) \n\n> The Country or Supply Chain Company Finance Requestor creates\
+    \ the journal in Cadency Journal Entry Tool, based on own calculations or on behalf\
+    \ of Non-Finance Requestors.\n\n1.  Login to Cadency Journal Entry Tool using\
+    \ your credentials. Please note that the users can open only one window for Cadency\
+    \ application\n\n2.  Go to the **Journal Entries** module from the main menu.\
+    \ A list of all journals created by the user or assigned for review will be displayed\
+    \ along with the journal status.\n\n3.  To create a new journal click on **New**\
+    \ button.\n\n4.  The following window will appear, fill in the following fields\
+    \ and click **OK** button.\n\n    -   Name\n\n    -   Template -- select the proper\
+    \ template from the drop down list\n\n    -   Period -- in which the posting is\
+    \ required\n\n5.  The journal entry details window will appear. Fill in the required\
+    \ fields based on the prepared journal proposal.\n\n6.  Enter header information:\
+    \ Template, Period and Name of the journal were given in point 4 of this step\
+    \ above and do not require any changes at this level (if the information is correct).\n\
+    \n7.  The **Document number** field will be filled in when the SAP posting will\
+    \ be done. Leave this field empty on this level.\n\n8.  The **Document Type:**\
+    \ SA -- is automatically given by Cadency Journal Entry Tool all reversal accruals\
+    \ should have document type as in the below table. For non- reversal accruals\
+    \ document type should be SA; however it can be changed depending on the request.\n\
+    \n> Document types for which reversal is carried through SAP:\n\n+---------------+----------------+--------------+------------+------------------+\n\
+    | **Template**  | > **Sirius**   | > **Fusion** | > **U2K2** | > **Cordillera**\
+    \ |\n+===============+================+==============+============+==================+\n\
+    | Document Type | > Y1, Y2, F2\\* | > ZM, F2\\*   | > ZA, F2\\* | > Y1, AR, F2\\\
+    *   |\n+---------------+----------------+--------------+------------+------------------+\n\
+    \n9.  Fill in following fields:\n\n    -   Document Header Text\n\n    -   Currency\
+    \ Key\n\n    -   Document Date -- pay attention to the format which depends on\
+    \ your user/ browser settings\n\n    -   Posting Date\n\n    -   Company Code\n\
+    \n    -   VAT Date\n\n    -   Translation Date\n\n    -   Exchange Rate (Leave\
+    \ blank if inputting in local currency)\n\n    -   Reversal reason & Date"
+  questions_and_answers:
+  - question: What fields need to be filled in when creating a new journal?
+    answer: 'When creating a new journal, the fields that need to be filled in include:
+
+
+      *   Name
+
+      *   Template
+
+      *   Period'
+  - question: What should be the document type for non-reveral accruals in Cadency
+      Journal Entry Tool?
+    answer: For non- reversal accruals in Cadency Journal Entry Tool, document type
+      should be SA
+  - question: For which Cadency tool document types for Cordillera is the reversal
+      carried out through SAP?
+    answer: For document types Y1, AR, F2 for Cordilera reversal is carried out through
+      SAP.
+- context: "### 7.H Review Journal Entry (by Country or Supply Chain Company Approver)\
+    \ \n\n> The following control is executed within SAP in a manual way based on\
+    \ system configuration. The control is inbuilt in the interface. When the approval\
+    \ is given for the journal via Cadency Journal Entry Tool, pressing of the Approve\
+    \ button initiates the posting in SAP. Cadency and SAP set up ensures that all\
+    \ approved journals are posted in SAP.\n\n+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
+    | > **Control No.** | **Control description**                                \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                               | **Manual or\
+    \ automated control** | > **Frequency** | **Reason for the control**         \
+    \                                                                            \
+    \                                                              |\n+===================+===========================================================================================================================================================================================================================================================================================================================================================+=================================+=================+==============================================================================================================================================================================+\n\
+    | RTR C2.20         | **Journal Entries (Trintech / Blackline**              \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                               | Manual     \
+    \                     | Eventdriven     | The control ensures that all journal\
+    \ entries are approved or authorized by the client, complete and accurate. Ensures\
+    \                                                        |\n|                \
+    \   |                                                                        \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                               |                            \
+    \     |                 |                                                    \
+    \                                                                            \
+    \                                              |\n|                   | **Approval)**\
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                             |                                 |            \
+    \     | Segregation of Duties and detects manual errors which may occur when the\
+    \ journal entry is entered. The control enables the identification of manual errors\
+    \ prior to posting. |\n|                   |                                 \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \          |                                 |                 |             \
+    \                                                                            \
+    \                                                                            \
+    \         |\n|                   | All journal entries (judgmental or nonjudgmental),\
+    \ posted directly to a General Ledger are raised, using a journal entry workflow\
+    \ tool which is integrated with SAP. All requests for approval of journal entries\
+    \ are accompanied by relevant supporting documentation and approved by an independent\
+    \ authorized user, prior to being processed into SAP. |                      \
+    \           |                 |                                              \
+    \                                                                            \
+    \                                                    |"
+  questions_and_answers:
+  - question: What is the purpose of Control RTR C2.20?
+    answer: The purpose of Control RTR C2.20 is to ensure that all journal entries
+      are approved or authorized by the client, complete and accurate, and to detect
+      manual errors that may occur when the journal entry is entered.
+  - question: How often is Control RTR C2.20 executed?
+    answer: Control RTR C2.20 is executed event-driven, meaning it is triggered by
+      a specific event, such as the approval of a journal entry.
+  - question: What is the benefit of Control RTR C2.20?
+    answer: The benefit of Control RTR C2.20 is that it **enables the identification
+      of manual errors prior to posting**, ensuring that all journal entries are accurate
+      and complete before being processed into SAP.
+- context: '> **Exception for RUB countries**: All the judgmental entries are to be
+    prepared, posted and approved by UL (not PSP). This rule does not apply for RUB
+    countries.
+
+    > For those countries exceptional treatment is agreed:
+
+    > All the judgmental entries which are calculated and prepared by MCO, but sent
+    to CG for posting in Trintech will be treated as judgmental entries, with full
+    ownership in MCO. Dedicated persons from CG team, who will be posting the entries
+    mentioned above, will be removed from the current non-judgmental TOA in Trintech
+    and assigned to the UL (judgmental) TOA, with proper UL approvers assigned --
+    WL2, WL3 and WL4, based on the global thresholds. Separate tracker/list will be
+    kept by CG team for these entries, updated monthly with document numbers and shared
+    with MCO for audit and control purposes.
+
+    > There are following accounting areas which may result in a need for Manual Journal
+    Entry/Accrual posting:
+
+
+    -   All Record and Account entries: Fixed Assets, Capital Project, Cost Accounting,
+    Inventory Accounting, Sales Accounting, Treasury payments
+
+
+    -   Pre-defined or not Period Close Entries: journals, prepayments, provisions,
+    accruals, foreign exchange adjustments, tax reporting
+
+
+    -   Reconciliations: Trial Balance Reconciliations (incl. reconciliations of Sub-Ledgers
+    to General Ledger), Bank Reconciliations, Third Party Reconciliations, Intercompany
+    Reconciliations
+
+
+    -   Adjustment entries following P&L and Balance Sheet Reviews
+
+
+    -   P&L analysis: Fixed/Variable costs variance analysis
+
+
+    -   Working Capital Analysis: Account Receivables ageing Analysis, Days Payable
+    Outstanding analysis, WIP ageing analysis
+
+
+    > As a rule all journals should be processed in Cadency Journal Entry Tool (Trintech).
+    There are four main templates defined to standardize journal entries posting using
+    Cadency Journal Entry Tool:
+
+
+    a)  Judgmental/Non Judgmental Accrual -- for posting Accrual entries including
+    a reversal date and a reversal reason, which are reversed in the following period
+
+
+    b)  Judgmental/Non Judgmental Non-Accrual -- designated to post Non-Accrual entries
+    which do not need any reversal at period ends
+
+
+    c)  AR/ Customer Journal- designated to post GL Accounts to Customer accounts
+    by using proper posting keys, which are aligned with SAP
+
+
+    d)  AP/ Vendor Journal -- designated to post GL Accounts to Vendor accounts by
+    using proper posting keys, which are aligned with SAP
+
+
+    **Note**: All TB transfers from one ERP to another, that are performed in the
+    form of journal entry, can be treated as an exception from the reversing journals.
+    These transfers are not typical accrual journals, but the entire TB is being transferred
+    from non-SAP to SAP, as there is no direct interface.'
+  questions_and_answers:
+  - question: What is the exception for RUB countries in terms of journal preparation
+      and approval?
+    answer: For RUB countries, all judgmental entries are to be prepared, posted,
+      and approved by UL (not PSP).
+  - question: Which tool should be used to process all journals?
+    answer: Cadency Journal Entry Tool (Trintech) tool should be used to process all
+      journals.
+  - question: What are the four main templates defined to standardize journal entries
+      posting using the Cadency Journal Entry Tool?
+    answer: 'The four main templates defined to standardize journal entries posting
+      using the Cadency Journal Entry Tool are:
+
+
+      *   Judgmental/Non Judgmental Accrual: for posting Accrual entries including
+      a reversal date and a reversal reason, which are reversed in the following period
+
+      *   Judgmental/Non Judgmental Non-Accrual: designated to post Non-Accrual entries
+      which do not need any reversal at period ends
+
+      *   AR/ Customer Journal: designated to post GL Accounts to Customer accounts
+      by using proper posting keys, which are aligned with SAP
+
+      *   AP/ Vendor Journal: designated to post GL Accounts to Vendor accounts by
+      using proper posting keys, which are aligned with SAP'

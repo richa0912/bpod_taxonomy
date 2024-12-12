@@ -1,0 +1,291 @@
+domain: 'BPOD procure to payment: P2P_Invoice Processing_Rental CoCar Upload Process_2022_v1.0.docx'
+document_outline: Describes how the IBM Delivery Center will perform the preparation
+  of the CLIENT Rental-Company Vehicle Upload file and upload to process it for payment.
+seed_examples:
+- context: "# Document Information\n\n## About this Document\n\nThis is an official\
+    \ IBM guide document that describes how the IBM Delivery Center will perform the\
+    \ preparation of the CLIENT Rental-Company Vehicle Upload file and upload to process\
+    \ it for payment.\n\n## Who should use this Document?\n\nThis document can be\
+    \ used by the Invoice processing team/reviewer who will be preparing the CLIENT\
+    \ Rental-Company vehicle upload file.\n\n## Revision/Clientproval History\n\n\
+    \  **Version number**   **Effective Date**   **Summary of Changes**   **Author**\
+    \   **Reviewer**   **Clientprover**\n  -------------------- --------------------\
+    \ ------------------------ ------------ -------------- ------------------\n  1.0\
+    \                  05/30/2022           Draft                    ENC         \
+    \ NKS            \n\n# Overview\n\n## Objective(s)\n\nThe objective of this document\
+    \ is to match the total invoice value with the merchandise amount and upload it\
+    \ to PeopleSoft to verify and send the CLIENT Rental-Company Vehicle upload file\
+    \ for Knoxville Uploads.\n\n**2.1.1** Frequency**:** Monthly.\n\n**2.1.2** System**:**\
+    \ PeopleSoft, Excel, Outlook.\n\n**2.1.3** Access:\n\n-   Microsoft System/Access:\
+    \ PeopleSoft and Outlook via EUR.\n\n-   Microsoft Excel via .dl Knox System Support."
+  questions_and_answers:
+  - question: What is the objective of the document P2P_Invoice Processing_Rental
+      CoCar Upload Process?
+    answer: The objective of the document P2P_Invoice Processing_Rental CoCar Upload
+      Process is to match the total invoice value with the merchandise amount and
+      upload it to PeopleSoft to verify and send the CLIENT Rental-Company Vehicle
+      upload file for Knoxville Uploads.
+  - question: How frequently is the Rental CoCar Upload Process done?
+    answer: The Rental CoCar Upload Process is done monthly
+  - question: What system access is needed for Rental CoCar Upload Process
+    answer: 'For Rental CoCar Upload Process, the systems are PeopleSoft, Excel and
+      Outlook. The access is needed for:
+
+      -   Microsoft System/Access: PeopleSoft and Outlook via EUR.
+
+      -   Microsoft Excel via .dl Knox System Support.'
+- context: "## Inputs & Outputs\n\n+---------------------------------------------------------------------+-------------------------------------------------------------------------+\n\
+    | Input                                                               | From \
+    \                                                                   |\n+=====================================================================+=========================================================================+\n\
+    | > An email will receive in the Knoxville Uploads genrice email box. | Susan\
+    \ Miller and Delfina Rodriguez from Travel team will send an Email. |\n+---------------------------------------------------------------------+-------------------------------------------------------------------------+\n\
+    \n+----------------------------+-----------------------------------------------------------------------------------------------+\n\
+    | Output                     | To                                            \
+    \                                                |\n+============================+===============================================================================================+\n\
+    | > Uploads are done into PS | > <xxx@Client.com> team members would perform the\
+    \ Upload to process the invoices for payment. |\n+----------------------------+-----------------------------------------------------------------------------------------------+\n\
+    \n# Control Points\n\n  ***\_***    ***Sub process Activity***   ***Sub process\
+    \ Activity Description***   ***Control Objective(s)***                       \
+    \        ***Control Activity***                                         ***Risk\
+    \ Assertions***                 ***Frequency (i.e. Event, Daily, Monthly, Quarterly,\
+    \ Annually)***   ***Evidence***\n  ---------- ---------------------------- ----------------------------------------\
+    \ -------------------------------------------------------- --------------------------------------------------------------\
+    \ ------------------------------------- -------------------------------------------------------------------\
+    \ ------------------------------------------------------\n  ***\_***         \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                               \n  ***\\#***\
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                       \n  \_\
+    1         Invoice Processing           CLIENT Rental-Company Vehicle Upload  \
+    \   To check the total invoice amount is entered correctly   To check all amounts\
+    \ are matched and uploaded to PeopleSoft.   Incorrect payment, delay of payment\
+    \   Monthly                                                             PeopleSoft,\
+    \ Staging table, email to KnoxvilleUploads"
+  questions_and_answers:
+  - question: What is the input and output mentioned in the P2P_Invoice Processing_Rental
+      CoCar Upload Process document?
+    answer: The input mentioned in the P2P_Invoice Processing_Rental CoCar Upload
+      Process document  is an email received in the Knoxville Uploads genrice email
+      box from Travel team. The output is that the Uploads are done into PS by client
+      team members to process the invoices for payment..
+  - question: Explain the Control Objective for the Sub process Activity Description
+      'CLIENT Rental-Company Vehicle Upload'.
+    answer: The Control Objective for subprocess 'CLIENT Rental-Company Vehicle Upload'
+      is to check the total invoice amount is entered correctly
+  - question: What is the risk associated with CLIENT Rental-Company Vehicle Upload?
+    answer: The risk associated with CLIENT Rental-Company Vehicle Upload are Incorrect
+      payment and delay of payment.
+- context: '## Process Description
+
+
+    An email will be sent by Travel requesting upload for Company Car.
+
+
+    1.  Open Outlook.
+
+
+    2.  Under Knoxville Uploads select the email with subject Rental/Company Vehecial
+    PS Upload.
+
+
+    3.  We will receive emails from two people - Susan miller and Delfina Rodriguez.
+
+
+    4.  Open the Email.
+
+
+    5.  Click on the link in the email to open the file you want to upload.
+
+
+    6.  Once you click on the link the below Excel sheet will Clientpear.
+
+
+    7.  From the upper left search box enter **gn1** in the search option.
+
+
+    8.  Hit Enter.
+
+
+    9.  Once we search with the GN1 the below screen will Clientpear.
+
+
+    10. There are multiple line item in one upload
+
+
+    11. Select all the records beginning at row 2, scroll down till the last record,
+    and then select copy.
+
+
+    12. Check for the amounts in columns R, DF, GU, open the file explorer to continue
+    the process.
+
+
+    13. Open M: Drive\> CLIENT Voucher Upload\> CE Win 10\> select company car allocation
+    excel file.
+
+
+    14. OpenExcelUploadforVoucher_CoCarAlloc.xlsm.
+
+
+    15. The below screenshot is the specified template.
+
+
+    16. Select line 4, right-click and select Paste Special Values.
+
+
+    **NOTE:** If Paste Special Values is not working, then return to the original
+    file and copy again. If Paste Special Values is not used, then the file will not
+    upload to PeopleSoft.'
+  questions_and_answers:
+  - question: What to do if paste special Value is not working?
+    answer: If Paste Special Values is not working, then return to the original file
+      and copy again.  If Paste Special Values is not used, then the file will not
+      upload to  PeopleSoft.
+  - question: How to select company car allocation excel file?
+    answer: 'Open M: Drive> CLIENT Voucher Upload> CE Win 10> and select company car
+      allocation excel file.'
+  - question: How to Check amounts in Rental/Company Vehical PS Upload process?
+    answer: "1.\tOpen Outlook.\n2.\tUnder Knoxville Uploads select the email with\
+      \ subject Rental/Company Vehecial PS Upload.\n3.\tOpen the Email.\n4.\tClick\
+      \ on the link in the email to open the file to upload.\n5.\tOnce link is clicked,\
+      \ the Excel sheet will appear.\n6.\tFrom the upper left search box enter gn1\
+      \ in the search option.\n7.\tHit Enter.\n8.\tThere are multiple line item in\
+      \ one upload.\n9. Select all the records beginning at row 2, scroll down till\
+      \ the last record, and then select copy.\n10. Check for the amounts in columns\
+      \ R, DF, GU, open the file explorer to continue the process."
+- context: '28. Select Generate XML and Post. Enter your User ID and Password, OK.
+
+
+    29. A list of the Upload programs will Clientpear.
+
+
+    30. Create a Destination file in M:\\CLIENTVoucherUpload\\CE
+
+
+    **NOTE:** If a DEST.XML already exists, then it **must** be moved to **M:\\CLIENTVoucherUpload\\Archive**
+    before creating a new one. Change DEST.XML file name to last upload name plus
+    MMDDYYYY and save.
+
+
+    31. In file name enter, DEST.XML., Select Save
+
+
+    32. Select OK
+
+
+    **NOTE:** If there is an error with the upload, the box will say an error has
+    occurred. Start the entire process again. If the error continues, then you may
+    have bad data in the file. Delete any blank rows at the bottom or blank columns
+    to the far right in the original file. If that still does not resolve the issue
+    on the next attempt, then contact local System Support to assist.
+
+
+    33. Open PeopleSoft to verify upload was successful.
+
+
+    34. Select Reporting Tools
+
+
+    35. Select Query Viewer
+
+
+    36. Select Excel for the ZI_CLIENT_STAGED_VOUCHERS query
+
+
+    37. Enter KUP for Origin
+
+
+    38. Select View Results
+
+
+    39. Select Open
+
+
+    40. Select Enable Editing
+
+
+    41. Delete line 1
+
+
+    42. Select Find and enter one of the invoice numbers from the spreadsheet. If
+    you find even one of the invoice numbers, it means all the invoices are loaded.
+
+
+    43. If the query did not return any records, then continue to run the query periodically
+    over the next hour. If the records still are not showing, then an email must be
+    sent to the.DL PeopleSoft FSCM Support Team to review. Copy IT Service Desk as
+    well for tracking issues. Please see an example of an email.
+
+
+    44. In some cases, a job has timed out ahead of the upload and once that is cleared,
+    the upload will feed into PeopleSoft. There are other times when the file has
+    to be uploaded again. Proceed with caution in those instances, as there have been
+    times when the file has duplicated when we have been instructed to upload again.
+    If the file is duplicated, then follow the Desk Procedures for Pre-Edit and Recycle
+    to clear. If it is a large volume, then reference the File Maintenance Desk Procedures
+    for Mass Deletion.'
+  questions_and_answers:
+  - question: What to do if DEST.XML already exists?
+    answer: If a DEST.XML already exists, then it must be moved to M:\\CLIENTVoucherUpload\\Archive
+      before creating a new one. Change DEST.XML file name to last upload name plus
+      MMDDYYYY and save.
+  - question: What can be done if the query ZI_CLIENT_STAGED_VOUCHERS does not return
+      any records?
+    answer: If the query does not return any records, then continue to run the query
+      periodically over the next hour. If the records still are not showing, then
+      an email must be sent to the.DL PeopleSoft FSCM Support Team to review. Copy
+      IT Service Desk as well for tracking issues.
+  - question: How to check if all the invoices are loaded in PeopleSoft in Rental
+      CoCar Upload Process?
+    answer: '1. Open PeopleSoft to verify upload was successful.
+
+      2. Select Reporting Tools
+
+      3. Select Query Viewer
+
+      4. Select Excel for the ZI_CLIENT_STAGED_VOUCHERS query
+
+      5. Enter KUP for Origin
+
+      6. Select View Results
+
+      7. Select Open
+
+      8. Select Enable Editing
+
+      9. Delete line 1
+
+      10. Select Find and enter one of the invoice numbers from the spreadsheet. If
+      you find even one of the invoice numbers, it means all the invoices are loaded.'
+- context: "45. If the support team says the file has been uploaded, but it does not\
+    \ show in Staged Vouchers, then enough time may have passed where the voucher\
+    \ has been created and can be found in Regular Entry by searching by Business\
+    \ Unit and Invoice Number. If the upload runs close to 4:30 EST, then you may\
+    \ 'miss' the vouchers in staging tables and they will be able to be viewed in\
+    \ Regular Entry since the voucher has already been created.\n\n46. Open Outlook\
+    \ and select the Rental/Company Vehicle PS Upload email and select Reply to All.\
+    \ Advise that the upload has been completed and sent.\n\n47. Move the Original\
+    \ and Confirmation emails to Company Car Completed.\n\n48. Change DEST.XML file\
+    \ name to CoCar MMDDYYYY.\n\n49. M:\\\\CLIENTVoucherUpload\\\\Archive\\\\CE DEST.\n\
+    \n50. Move the received email and confirmation email from Knoxville Uploads to\
+    \ sub folder Company Car Completed folder.\n\n# Definitions\n\nThe following are\
+    \ definitions of acronyms used in this document:\n\n  Term   Definition\n  ------\
+    \ -------------------------------\n  KUP    Knoxville Uploads\n  ASN    Advance\
+    \ Shipment Number\n  CS     Customer Service Analyst Team\n  PS     PeopleSoft"
+  questions_and_answers:
+  - question: What does it mean if the support team says the file has been uploaded,
+      but it does not show in Staged Vouchers in Rental CoCar Upload Process?
+    answer: If the support team says the file has been uploaded, but it does not show
+      in Staged Vouchers, then enough time may have passed where the voucher has been
+      created and can be found in Regular Entry by searching by Business Unit and
+      Invoice Number. If the upload runs close to 4:30 EST, then you may 'miss' the
+      vouchers in staging tables and they will be able to be viewed in Regular Entry
+      since the voucher has already been created.
+  - question: What does ASN stand for?
+    answer: ASN stands for Advance Shipment Number
+  - question: What is the full form of acronym KU?
+    answer: KU means Knoxville Uploads.

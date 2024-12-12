@@ -1,0 +1,457 @@
+domain: 'BPOD record to analyze: DTP Prepare and Process Manual Journal Entry - Non Judgmental
+  V14 All Platforms'
+document_outline: Describes the steps to Prepare and Process Non Judgemental Manual
+  Journal Entry
+seed_examples:
+- context: "# 1 Introduction \n\n> The Effective Financial Control and Reporting (EFCR)\
+    \ programme has been established within Client as a joint initiative between the\
+    \ Group Controller's Department and Enterprise Support. This is one of the Continuous\
+    \ Improvement initiatives that will support Client business growth through simpler,\
+    \ faster and therefore more cost effective processes.\n>\n> The Effective Financial\
+    \ Control & Reporting Programme is an important driver for speed & simplification\
+    \ and aims to deliver:\n\n-   A truly global 'end-to-end' financial control process\
+    \ with improved quality and reduced complexity and cost and\n\n-   An accelerated\
+    \ financial reporting cycle - from 5 weeks to 2 weeks.\n\n> As an important step\
+    \ forward to achieve these ambitious goals, the Global R2R Client Process Model\
+    \ was developed representing Client best practices across all regions, platforms\
+    \ and different R2R process participants. As a logical output Global Standard\
+    \ Desktop Procedures were created which are documenting the processes on a detailed\
+    \ level and are supporting the Client growth by:\n\n-   Simplifying and harmonising\
+    \ the end to end R2R processes globally\n\n-   Exploiting technology to be faster\
+    \ and more cost effective\n\n-   Incorporating a zero based control approach\n\
+    \n-   Creating global, harmonised timings in order to ensure the accelerated financial\
+    \ reporting cycle."
+  questions_and_answers:
+  - question: What are the main goals of the Effective Financial Control & Reporting
+      Programme?
+    answer: 'The main goals of the programme are to deliver:
+
+      *  A truly global ''end-to-end'' financial control process with improved quality
+      and reduced complexity and cost.
+
+      *  An accelerated financial reporting cycle - from 5 weeks to 2 weeks.'
+  - question: What is the Global R2R Client Process Model?
+    answer: he Global R2R Client Process Model represents **Client best practices
+      across all regions, platforms, and different R2R process participants, and was
+      developed as an important step forward to achieve the programme's ambitious
+      goals.
+  - question: What are the benefits of the Global Standard Desktop Procedures?
+    answer: 'he benefits of the Global Standard Desktop Procedures are that they:
+
+
+      *  Simplify and harmonise the end-to-end R2R processes globally.
+
+      *  Exploit technology to be faster and more cost-effective.
+
+      *  Incorporate a zero-based control approach.
+
+      *  Create global, harmonised timings to ensure the accelerated financial reporting
+      cycle.'
+- context: "# 2 Purpose \n\n> Journals can be classified as either Judgmental or Non\
+    \ judgmental as per their ownership and approval methodology:\n\na.  **Judgmental\
+    \ Journals** require business knowledge as some judgement is needed to ensure\
+    \ that the amounts involved are correct. The Country or Supply Chain Company Finance\
+    \ is responsible for their initiation and approval.\n\nb.  **Non Judgmental Journals**\
+    \ do not require detailed business knowledge and the steps to prepare and post\
+    \ the journals are explicitly explained in the respective desktop procedure. These\
+    \ can then be processed over and over again without any judgement involved. Booking\
+    \ is initiated on the regular basis (at the period end) by the Service Provider\
+    \ based on the predefined list and rules set up by Client.These are hence under\
+    \ the responsibility of 3^rd^ Party Service Provider for initiation and approval.\n\
+    \n> Examples of JEs which can be classified as non-judgmental::\n\n-   Journal\
+    \ is prepared and posted from entirely by 3PSP; the journal entry is part of the\
+    \ Non-Judgmental Journal Entry list and the working instruction exists,\n\n- \
+    \  Journal input is extracted by Country and sent to 3PSP without any modification;\
+    \ based on this input 3PSP prepares and posts the journal. Journal is part of\
+    \ the Non-Judgmental Journal Entry and the working instruction exists; it has\
+    \ to be documented in the working instruction that inputs are not modified,\n\n\
+    -   Journal values are calculated centrally, but 3PSP understands and is able\
+    \ to validate their correctness; the journal entry is part of the Non-Judgmental\
+    \ Journal Entry list and the working instruction exists,\n\n-   During journal\
+    \ calculation or validation the Country exercises judgement/inputs but this judgment\
+    \ (or input) is understood by 3PSP and 3PSP can validate its correctness. the\
+    \ journal entry is part of the Non-Judgmental Journal Entry list and the working\
+    \ instruction exists,\n\n-   Journals are prepared and posted based on contracts,\
+    \ hence 3PSP understands and is able to validate the correctness of values; the\
+    \ journal entry is part of the Non-Judgmental Journal Entry list and the working\
+    \ instruction exists,\n\n-   Journals are prepared and posted based on fixed/recurring\
+    \ amounts. 3PSP is not able to prepare the working instruction or 3PSP not able\
+    \ to validate journal values. If values are recurring journal can be moved to\
+    \ recurring entries with first entry posted by Country according to global ToA.\n\
+    \n> There are following accounting areas which may result in a need for accrual\
+    \ posting:\n\n-   All Record and Account entries: Fixed Assets, Capital Project,\
+    \ Cost Accounting, Inventory Accounting, Sales Accounting, Treasury payments\n\
+    \n-   Pre-defined or not Period Close Entries: accruals, prepayments, provisions,\
+    \ foreign exchange adjustments, tax reporting\n\n-   Reconciliations: Trial Balance\
+    \ Reconciliations (incl. reconciliations of Sub-Ledgers to General Ledger), Bank\
+    \ Reconciliations, Third Party Reconciliations, Intercompany Reconciliations\n\
+    \n-   Adjustment entries following P&L and Balance Sheet Reviews\n\n-   P&L analysis:\
+    \ Fixed/Variable costs variance analysis\n\n-   Working Capital Analysis: Account\
+    \ Receivables ageing Analysis, Days Payable Outstanding analysis, WIP ageing analysis.\n"
+  questions_and_answers:
+  - question: What are the two types of journals based on their ownership and approval
+      methodology?
+    answer: 'The two types of journals based on their ownership and approval methodology
+      are:
+
+
+      *   Judgmental Journals: require business knowledge and judgment to ensure that
+      the amounts involved are correct.
+
+      *   Non-Judgmental Journals: do not require detailed business knowledge and
+      the steps to prepare and post the journals are explicitly explained in the respective
+      desktop procedure.'
+  - question: What are some examples of Non-Judgmental Journals?
+    answer: 'Examples of Non-Judgmental Journals include:
+
+
+      *   Journals prepared and posted entirely by the 3rd Party Service Provider.
+
+      *   Journals input extracted by the Country and sent to the 3rd Party Service
+      Provider without modification.
+
+      *   Journals values calculated centrally, but the 3rd Party Service Provider
+      understands and is able to validate their correctness.'
+  - question: ' What are some accounting areas that may result in a need for accrual
+      posting?'
+    answer: 'Some accounting areas that may result in a need for accrual posting include:
+
+
+      *   All Record and Account entries: Fixed Assets, Capital Project, Cost Accounting,
+      Inventory Accounting, Sales Accounting, Treasury payments.
+
+      *   Pre-defined or not Period Close Entries: accruals, prepayments, provisions,
+      foreign exchange adjustments, tax reporting.
+
+      *   Reconciliations: Trial Balance Reconciliations, Bank Reconciliations, Third
+      Party Reconciliations, Intercompany Reconciliations.
+
+      *  Adjustment entries following P&L and Balance Sheet Reviews.
+
+      *  P&L analysis: Fixed/Variable costs variance analysis.
+
+      *  Working Capital Analysis: Account Receivables ageing Analysis, Days Payable
+      Outstanding analysis, WIP ageing analysis.'
+- context: "# 5 Roles and Responsibilities \n\n+-------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+\n\
+    | > **Role**                    | **Description**                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                | > **Responsibility**\
+    \                                            |\n+===============================+================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+=================================================================+\n\
+    | > Country or Supply           | > The Country or Supply Chain Company Finance\
+    \ Requestor is responsible for performing on periodical basis the review of the\
+    \ financial figures and identification of the need for new non-judgmental Journals/Accrual\
+    \ to be added to the Journal/Accrual checklist. The Finance Requestor defines\
+    \ the rules for accrual calculation, accounting details and frequency and sends\
+    \ them to the Service Provider Approver for validation.                      \
+    \                                                                            \
+    \                                                                            \
+    \                                             | > [Define rules for Journal Entry]{.ul}\
+    \                         |\n| >                             |               \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                 |                                                          \
+    \       |\n| > Chain Company               |                                 \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                           |\
+    \                                                                 |\n| >     \
+    \                        |                                                   \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                         |                  \
+    \                                               |\n| > Finance Requestor     \
+    \      |                                                                     \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                       |                                    \
+    \                             |\n+-------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+\n\
+    | > Country or Supply           | > Country Controller reviews and confirms NJJE\
+    \ list on monthly basis and changes to the list. If delegation is required Country\
+    \ Controller is responsible for correct delegation and must retain documentation\
+    \ for the delegation.                                                        \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                     | > Approve Journal Schedule\
+    \                                      |\n| >                             |  \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                              |                                             \
+    \                    |\n| > Chain Company               |                    \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \            |                                                               \
+    \  |\n| >                             |                                      \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                      |     \
+    \                                                            |\n| > Controller\
+    \                  |                                                         \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                   |                        \
+    \                                         |\n+-------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+\n\
+    | > Operating Centre Accountant | > The Operating Centre Accountant is responsible\
+    \ for providing further accounting support.                                  \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                           | > [Provide Accounting\
+    \ Support]{.ul}                             |\n+-------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+\n\
+    | > Service Provider Accountant | > The Service Provider Accountant is responsible\
+    \ for collecting all data that are necessary for Journal/Accrual preparation.\
+    \ He/She is also responsible for preparing the Journal/Accrual proposal and for\
+    \ submitting it for review and approval. The Request is submitted, received and\
+    \ approved/rejected through Cadency Journal Entry Tool, which allows documenting\
+    \ history tracking and automatic notification of relevant process parties. The\
+    \ Service Provider Accountant is also responsible for reversing Accruals.    \
+    \                                                                            \
+    \                                                   | > [Prepare Journal Entry]{.ul}\
+    \ [Calculation]{.ul}               |\n|                               | >    \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                          | >                                               \
+    \                |\n|                               | > Note: On 175\\*-176\\\
+    * series only CG IC Hub is authorized to post Non Judgmental Journal Entries \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \         | > [Secure Alignment with]{.ul} [Counter Party]{.ul}             |\n\
+    |                               |                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                | >         \
+    \                                                      |\n|                  \
+    \             |                                                              \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                              | > [Prepare Journal Entry]{.ul}\
+    \                                  |\n|                               |      \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                          | >                                               \
+    \                |\n|                               |                        \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \                                                                            \
+    \        | > [Reverse Accruals in Following]{.ul} [Period]{.ul}            |\n\
+    +-------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+"
+  questions_and_answers:
+  - question: What is the responsibility of the Country or Supply Chain Company Finance
+      Requestor in processing Non judgemental manual journal entry?
+    answer: When  processing Non judgemental manual journal entry, the Company Finance
+      Requestor is responsible for defining the rules for journal entry, including
+      accrual calculation, accounting details, and frequency, and for sending them
+      to the Service Provider Approver for validation.
+  - question: ' Who responsible for reviewing and confirming the Non-Judgmental Journal
+      Entry (NJJE) list on a monthly basis and for approving any changes to the list?'
+    answer: The Country Controller is responsible for reviewing and confirming the
+      Non-Judgmental Journal Entry (NJJE) list on a monthly basis and for approving
+      any changes to the list.
+  - question: When processing Non judgemental manual journal entry, what is the responsibility
+      of the Service Provider Accountant?
+    answer: When processing Non judgemental manual journal entry, the Service Provider
+      Accountant is responsible for collecting data necessary for journal/accrual
+      preparation, preparing the journal/accrual proposal, and submitting it for review
+      and approval.
+- context: "## 7.J Prepare Journal Entry (by Service Provider Accountant) \n\n**Note**:\
+    \ In case of scheduled entries that can be set up in the system as recurring,\
+    \ refer to the *DTP Prepare Recurring Document - Non Judgmental* which is the\
+    \ required way of work*.* In case the entry requires approval on the monthly basis\
+    \ and needs to be initiated in Cadency the below steps are to be followed.\n\n\
+    > Based on the agreed schedule and input data received, the Service Provider Accountant\
+    \ prepares the respective calculation. When the calculation is ready, the proper\
+    \ posting template needs to be submitted via Cadency Journal Entry tool.\n\nThe\
+    \ following window will appear, for non-judgmental manual accruals select the\
+    \ template called Non**Judgmental Accrual**. Fill in the following fields and\
+    \ click **OK** button\n\n-   Name\n\n-   Template -- select the proper template\
+    \ from the drop down list\n\n-   Period -- in which the posting is required\n\n\
+    -   **Document Number** field will be filled in when the SAP posting is done.\
+    \ Leave this field empty on this level.\n\n-   **Document Type** -- SA -- is automatically\
+    \ given by Cadency Journal Entry Tool, all reversal accruals should have document\
+    \ type as in the table below. For non-reversal accruals document type should be\
+    \ SA, and however it can be changed depending on the request.\n\n+---------------+----------------+--------------+------------+------------------+\n\
+    | **Template**  | > **Sirius**   | > **Fusion** | **U2K2**   | > **Cordillera**\
+    \ |\n+===============+================+==============+============+==================+\n\
+    | Document Type | > Y1, Y2, F2\\* | > ZM, F2\\*   | > ZA, F2\\* | > Y1, AR, F2\\\
+    *   |\n+---------------+----------------+--------------+------------+------------------+\n\
+    \n-   Currency Key\n\n-   Document Date -- pay attention to the format which depends\
+    \ on user/browser settings\n\n-   Posting Date\n\n-   Company Code\n\n-   Translation\
+    \ Date -- for postings done in foreign currencies\n\n-   VAT Date\n\n-   Exchange\
+    \ Rate (Leave blank if inputting in local currency) \u2022 Reversal Date\n\n>\
+    \ **Note:** The signs -- and + with amount determine whether it is debit or credit\
+    \ posting.\n>\n> **Note:** The journal entry is now saved. After having returned\
+    \ to the dashboard it will be visible on the users list.\n\nThe following window\
+    \ will appear, browse the file, name it and then select what kind of attachment\
+    \ file has to be added. When ready click **Save** button."
+  questions_and_answers:
+  - question: When preparing Journal Entry by Service Provide Account, what fields
+      need to be filled in when using the Cadency Journal Entry tool?
+    answer: 'When preparing Journal Entry by Service Provide Account, following fields
+      in Cadency Journal Entry tool need to be filled.
+
+      *   Name
+
+      *   Template (select the proper template from the drop-down list)
+
+      *   Period (in which the posting is required)
+
+      *   Currency Key
+
+      *   Document Date (pay attention to the format which depends on user/browser
+      settings)
+
+      *   Posting Date
+
+      *   Company Code
+
+      *   Translation Date (for postings done in foreign currencies)
+
+      *   VAT Date
+
+      *   Exchange Rate (leave blank if inputting in local currency)
+
+      *   Reversal Date'
+  - question: When preparing Journal Entry by Service Provide Account, How do you
+      determine whether a posting is a debit or credit?
+    answer: When preparing Journal Entry by Service Provide Account, the signs --
+      and + with amount determine whether it is debit or credit posting.
+  - question: What template should be used for non-judgmental manual accruals?
+    answer: The template called Non-Judgmental Accrual should be used for non-judgmental
+      manual accruals.
+- context: "### Control Overview \n\n> **RTR C2.1a** : The following control must\
+    \ be executed within the process in a manual way. On a regular basis, the list\
+    \ of all posted journals is compared with the checklist in order to ensure that\
+    \ all required journals are posted in a timely manner, no journals are missed\
+    \ out from being recorded and any prior period accruals that have not been reversed\
+    \ automatically are duly reversed manually. The checklist is maintained by Service\
+    \ Provider Approver based on the information being received from Countries and\
+    \ stored on the SharePoint.\n\n+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+---------------+----------------------------------------------------+\n\
+    | > **Control No.** | **Control description**                                \
+    \                                                                            \
+    \                                                                            |\
+    \ **Manual or automated control** | **Frequency** | > **Reason for the control**\
+    \                       |\n+===================+================================================================================================================================================================================================================+=================================+===============+====================================================+\n\
+    | > RTR C2.1a       | **Journal Entries (Maintenance and review of list of non-judgemental\
+    \ journals)**                                                                \
+    \                                                               | Manual     \
+    \                     | Monthly       | To ensure that accruals are complete and\
+    \ accurate. |\n|                   |                                         \
+    \                                                                            \
+    \                                                                            \
+    \               |                                 |               |          \
+    \                                          |\n|                   | An up-to-date\
+    \ list is retained by the 3PSP for all recurring non-judgemental journal entries.\
+    \ The list is reviewed by an independent authorized user with the Unit to ensure\
+    \ that it is complete and accurate. |                                 |      \
+    \         |                                                    |\n+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+---------------+----------------------------------------------------+\n\
+    \n  Check Type:                 Accounting -- Checks if proper accounting is applied\
+    \ for the process Technical -- Checks technical correctness and completeness of\
+    \ the request/process\n  --------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------\n\
+    \  Source of information:      Checklist, SAP, Cadency JE\n  Required actions:\
+    \           Review of the checklist vs. journals processed in Cadency JE and SAP\n\
+    \  Control Evidence:           Cadency JE approval history and checklist with\
+    \ version control\n  Control Evidence storage:   Cadency JE and SharePoint\n \
+    \                             \n\n> The following are detailed requirements related\
+    \ to preparation and updates of NJJE list:\n\n1.  The Non-Judgmental Journal Entry\
+    \ list contains non-judgmental journals prepared by 3PSP. It is also recommended\
+    \ to include the list of the non-judgmental recurring journals prepared by 3PSP\
+    \ and posted directly in SAP (recurring entries are covered by the controls C2.20c\
+    \ and C2.20d).\n\n> The Non-Judgmental Journal Entry list is maintained by 3PSP\
+    \ Approver based on the information approved by the countries and stored on the\
+    \ OC SharePoint.\n"
+  questions_and_answers:
+  - question: What is the Objective of Control RTR C2.1a?
+    answer: The objective of Control RTR C2.1a is to ensure that all required journals
+      are posted in a timely manner, no journals are missed out from being recorded,
+      and any prior period accruals that have not been reversed automatically are
+      duly reversed manually.
+  - question: How often is Control RTR C2.1a performed?
+    answer: Control RTR C2.1a is performed monthly.
+  - question: What are the sources of information for Control RTR C2.1a?
+    answer: The source of information for Control RTR C2.1a are the Checklist, SAP,
+      and Cadency JE.

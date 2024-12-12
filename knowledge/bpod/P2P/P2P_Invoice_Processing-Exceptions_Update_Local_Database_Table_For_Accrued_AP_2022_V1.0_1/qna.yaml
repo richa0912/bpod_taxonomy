@@ -1,0 +1,167 @@
+domain: 'BPOD procure to pay: P2P_Invoice Processing - Exceptions_Update Local Database
+  Table For Accrued AP_2022_V1.0 (1)'
+document_outline: Describes how IBM Delivery Centre will perform the activity - Update
+  Local Database Table for Accrued AP
+seed_examples:
+- context: "# Control Points\n\n  ***\\#***   **Sub process Activity**   **Sub process\
+    \ Activity Description**          **Control Objective(s)**                  **Control\
+    \ Activity**                                                             **Risk\
+    \ Assertions**         **Frequency (i.e., Event, Daily, Monthly, Quarterly, Annually)**\
+    \   **Evidence**\n  ---------- -------------------------- ---------------------------------------------\
+    \ ----------------------------------------- --------------------------------------------------------------------------------\
+    \ --------------------------- ------------------------------------------------------------------\
+    \ --------------------\n  1          Invoice processing         Update Local database\
+    \ tables for Accrued AP   Update open receipts tables in Database   Need to check\
+    \ for the notification email and Update tables in Access Database.   Delay in\
+    \ Accrued Process.   Daily                                                   \
+    \           Email Notification\n\n## Process Measurement Reports \n\n> The process\
+    \ should be completed on daily basis at 9:30am. I\n>\n> n the absence of Notification\
+    \ email, should reach out to **\"KNOX Support System\" ([xxx\\\
+    @Client.com](mailto:xxx@Navistar.com))** to find out Job run\
+    \ status from their end.\n\n# Roles & Responsibilities\n\n## Description\n\n \
+    \ **Role**                             **Responsibility**\n  ------------------------------------\
+    \ ----------------------------------------------------------------------------------------------------\n\
+    \  Invoice Processing Exceptions Team   Run the Database to update the Tables\
+    \ for \"Create Table for all Current Open receipts\" at backend.\n\n## Segregation\
+    \ of Duties (SOD) Matrix\n\n> For the SOD assessment on conflicting tasks and\
+    \ accesses, please refer to the related Aggregate SOD (A-SOD). ***\\<SOD Matrix\
+    \ pending IBM GPS internal review and approval\\>***\n"
+  questions_and_answers:
+  - question: What should be done as a control activity for updating open receipts
+      tables in the database?
+    answer: 'As a control activity, the notification email should be checked and tables
+      in the Access Database should be updated.
+
+      '
+  - question: What is the role of the Invoice Processing Exceptions Team?
+    answer: 'The Invoice Processing Exceptions Team is responsible for running the
+      database to update the tables for "Create Table for all Current Open receipts"
+      at the backend. '
+  - question: What is the risk assertion for the control objective of updating open
+      receipts tables in the database?
+    answer: 'The risk assertion for the control objective of updating open receipts
+      tables in the database is delay in the accrued process. '
+- context: '# Process Detail
+    ## Overview
+    > Auto Notification Email is received from Knoxville System Notification to Knoxville
+    Uploads stating that Job run is completed. Exception team should perform this
+    task to create the tables for all open receipts in Access Database. This process
+    is to help match the vouchers at the backend.
+    ## Process Flow
+    ## Process Description
+    1.   Auto notification Emails is received in Knoxville Uploads mailbox from "KNOX
+    System Notifications"
+    > Notification advises the team to run the Access Database to create the tables
+    to match receipts to vouchers.
+    2.  Open the email. It will provide the JOB RUN "BaaN Open Material Receipts import"
+    > **Note** -- In the absence of Notification email, should reach out to **"KNOX
+    Support System" ([xxx\@Client.com](mailto:xxx@Navistar.com))**
+    to find out Job run status from their end.
+    3.  Go to Search option and find the "Access" and click on it.
+    4.  Click on "Open"
+    5.  Click on Browse.'
+  questions_and_answers:
+  - question: Where are the auto notification emails received from Knoxville System
+      Notifications?
+    answer: The auto notification emails are received in the Knoxville Uploads stating
+      that Job run is completed.
+  - question: What should be done if there is no notification email received from
+      Knoxville System Notifications?
+    answer: If there is no notification email received, the KNOX Support System should
+      be reached out to find out the job run status.
+  - question: What is the purpose of Auto notification Emails?
+    answer: Notification advises the team to run the Access Database to create the
+      tables to match receipts to vouchers.
+- context: "## Objective(s)\n\nUpdate the receipts in BAAN Database (BAAN Open Receipts).\
+    \ This program is used to help match the open receipts to vouchers.\n\nEmail notification\
+    \ is received from Knoxville System to perform the task - \"Create the Tables\
+    \ for all Open Receipts\" in Access Database.\n\n### Frequency: \n\nDaily/As needed\n\
+    \nWorkday 1 - Should run the \"RellinsopenReceipts.exe\" from the Peoplesoft.\n\
+    \n**Note**: Work Day 1: Prior to running SQL Tables on Work Day 1, should Run\
+    \ the ZI_AP_OPEN_ROLLINS_RCPTS from the Peoplesoft.\n\n### Source:\n\nNotification\
+    \ Email from KNOX system every day 09:30 AM.\n\n### System Accesses: \n\nAccess\
+    \ Database, Knoxville upload mailbox and Peoplesoft and M:\\\\PP\\\\DATA\\\\ACCESS\
+    \ \\\\ACCRUEDAP\\\\ACCRUEDAP\n\n## Inputs & Outputs\n\n+--------------------------------------------------------------+-----------------------------+\n\
+    | Input                                                        | From        \
+    \                |\n+--------------------------------------------------------------+-----------------------------+\n\
+    | Email notifications in 'Knoxville Uploads' generic mailbox | KNOX System Notifications\
+    \ |\n+--------------------------------------------------------------+-----------------------------+\n\
+    \n+-------------------------------------+------------------------------------------------------------------------------------------------------------+\n\
+    | Output                              | To                                   \
+    \                                                                      |\n+-------------------------------------+------------------------------------------------------------------------------------------------------------+\n\
+    | Vouchers matched to Open reciepts | Run the Database to update the Tables to\
+    \ update \"Create Table for all Current Open receipts\" at backend. |\n+-------------------------------------+------------------------------------------------------------------------------------------------------------+\n"
+  questions_and_answers:
+  - question: What is the objective to update the receipts in BAAN Database?
+    answer: The objective to update the receipts in the BAAN Database (BAAN Open Receipts)
+      is to help match the open receipts to vouchers.
+  - question: ' What are the inputs and outputs of the process - Update Local Database
+      Table for Accrued AP?'
+    answer: The input is the email notifications in the 'Knoxville Uploads' generic
+      mailbox from KNOX System Notifications and the output are the vouchers matched
+      to open receipts to run the Database to update the Tables to update "Create
+      Table for all Current Open receipts" at backend..
+  - question: Where do the email notifications come from in the process - Update Local
+      Database Table for Accrued AP??
+    answer: The email notifications come from the KNOX system and are received in
+      the 'Knoxville Uploads' generic mailbox every day at 09:30 AM.
+- context: '6.  Go to Windows(C):drive and click on temp folder.
+    7.  Select "ACCRUED AP.accdb" and click on Open
+    8.  Click on Open dropdown and select "Open Exclusive".
+    9.  Database is now open, Click on "Create Table of All Current Open Receipts
+    (Excludes Pesos Receipts)". This will overight the prior tables.
+    10. Once tables are created, will get the below pop-up message **"Create Open
+    Receipts Table"**.
+    Click on **OK**
+    11. On the right side under Access Database, can view that the table has been
+    created.
+    > [Additional steps need to be performed on]{.ul} [**WORKDAY 1 (WD1)** before
+    creating the tables.]{.ul}
+    1.  Login into PeopleSoft- Main Menu-Reporting tools-Query-Query viewer.
+    2.  Run the Query (ZI_AP_OPEN_ROLLINS_RCPTS) and click on Excel to extract the
+    file.
+    3.  Save the extracted excel in M-drive with "RellinsOpenReceipts.exe" name.
+    4.  Open M drive PP- DATA- ACCESS- AccruedAP and click to Run "RellinsopenReceipts.exe"
+    file.
+    5.  Once we click on the "RellinsopenReceipts.exe", program will run in background
+    and it will update the records in the table.
+    > **Note**- It will not show any confirmation notification as completed.
+    6.  Once the above steps are completed, respond to the notification email which
+    was received from KNOX System Notifications as Completed. Also need to copy "**Nora
+    Grandle and Jessica French"** so that they can work on Accrued AP process.'
+  questions_and_answers:
+  - question: What is the purpose of running the query ZI_AP_OPEN_ROLLINS_RCPTS?
+    answer: The purpose of running the query ZI_AP_OPEN_ROLLINS_RCPTS is to extract
+      the file in Excel format.
+  - question: What will happen when the "RellinsopenReceipts.exe" file is run?
+    answer: 'When the "RellinsopenReceipts.exe" file is run, it will update the records
+      in the table in the background without showing any confirmation notification.
+
+      '
+  - question: What is the next step after running the "RellinsopenReceipts.exe" file?
+    answer: The next step is to respond to the notification email from KNOX System
+      Notifications, marking the task as completed. Also, "Nora Grandle and Jessica
+      French" should be copied in the response so that they can work on the Accrued
+      AP process.
+- context: "7.  Once the email is replied, Go back to Access Database and make sure\
+    \ to click on \"**Exit Access\"** in the Database tool as shown below.\n\n> **Important**\
+    \ **note** -- User should exit the Access Database after the task is completed.\
+    \ If user does not exit from the Database \"Database will get locked\\\" and it\
+    \ will not allow other users to access the database.\n\n8.  Once activity is completed,\
+    \ move the email to SQL completed folder.\n\n# Definitions\n\nThe following are\
+    \ definitions of acronyms used in this document:\n\n  Term   Definition\n  ------\
+    \ ---------------------------\n  AP     Accounts Payable\n  SQL    Structured\
+    \ Query Language\n         "
+  questions_and_answers:
+  - question: What is the next step after replying to the notification email received
+      from KNOX System Notifications?
+    answer: The next step is to go back to the Access Database and click on "Exit
+      Access" in the Database tool to close the database.
+  - question: Why is it important to exit the Access Database after the task is completed?
+    answer: 'It is important to exit the Access Database after the task is completed
+      to prevent the database from getting locked, which could prevent other users
+      from accessing the database.
+
+      '
+  - question: What is the final step after exiting the Access Database?
+    answer: The final step is to move the email to the SQL completed folder.
