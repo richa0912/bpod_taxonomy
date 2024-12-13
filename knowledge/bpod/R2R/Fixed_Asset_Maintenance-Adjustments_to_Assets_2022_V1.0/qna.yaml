@@ -1,6 +1,13 @@
-domain: 'BPOD Record to Analyze: Fixed Asset Maintenance-Adjustments to Assets 2022 V1.0'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Fixed_Asset_Maintenance-Adjustments_to_Assets_2022_V1.0.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: 'Describes how IBM Delivery Centre will perform the Adjustment to
   Assets Process. '
+domain: 'BPOD Record to Analyze: Fixed Asset Maintenance-Adjustments to Assets 2022
+  V1.0'
 seed_examples:
 - context: "# Control Points\n\n  ***\\#***   **Sub process Activity**   **Sub process\
     \ Activity Description**                                                     \
@@ -19,17 +26,17 @@ seed_examples:
     \ \n\n> As Requested, To change the useful life of an asset**,** each asset takes\
     \ approximately 5-10 minutes to setup in Peoplesoft system."
   questions_and_answers:
-  - question: What is the control objective of the Adjustment to Assets process?
-    answer: The control objective is to ensure that the adjustments to the asset are
+  - answer: The control objective is to ensure that the adjustments to the asset are
       accurate and properly recorded in PeopleSoft.
-  - question: What is the risk assertion associated with the Adjustment to Assets
-      process?
-    answer: The risk assertion is that incorrect asset reporting may occur if the
+    question: What is the control objective of the Adjustment to Assets process?
+  - answer: The risk assertion is that incorrect asset reporting may occur if the
       adjustments are not properly made.
-  - question: How often is the Adjustment to Assets process performed and how long
-      does it take?
-    answer: The Adjustment to Assets process is performed as needed, and each asset
+    question: What is the risk assertion associated with the Adjustment to Assets
+      process?
+  - answer: The Adjustment to Assets process is performed as needed, and each asset
       takes approximately 5-10 minutes to set up in the PeopleSoft system.
+    question: How often is the Adjustment to Assets process performed and how long
+      does it take?
 - context: "# Overview\n\n## Objective(s)\n\n> The objective of this process is to\
     \ make adjustments for the assets into the PeopleSoft, based on the request.\n\
     >\n> Cost adjustments - To cost adjust an asset for late invoices, invoice adjustments,\
@@ -46,23 +53,23 @@ seed_examples:
     \              |\n+--------------------+---------------------+\n| Email Confirmation\
     \ | > Business Partners |\n+--------------------+---------------------+"
   questions_and_answers:
-  - question: What are the objectives of Fixed Asset Maintenance Adjustments to Assets
-      Process?
-    answer: "The objective of this process is to make following adjustments for the\
+  - answer: "The objective of this process is to make following adjustments for the\
       \ assets into the PeopleSoft, based on the request. \n1 .Cost adjustments: To\
       \ cost adjust an asset for late invoices, invoice adjustments, or errors in\
       \ original addition.\n2. Impairment assets: To align the Net Book Value of an\
       \ Asset with the assessed Fair Market Value.\n3. Useful life adjustments: To\
       \ adjust the life cycle of assets in the peoplesoft based on the request. "
-  - question: What System Accessess are required to perform Fixed Asset Maintenance
-      Adjustments to Assets Process?
-    answer: "The System Accessess are required to perform Fixed Asset Maintenance\
+    question: What are the objectives of Fixed Asset Maintenance Adjustments to Assets
+      Process?
+  - answer: "The System Accessess are required to perform Fixed Asset Maintenance\
       \ Adjustments to Assets Process are : \n\u2022 PeopleSoft Financials\n\u2022\
       \ Echo Sign\n\u2022 Outlook Mailbox\n\u2022 M Drive "
-  - question: What is the frequency of performing Fixed Asset Maintenance Adjustments
-      to Assets Process?
-    answer: The frequency of performing Fixed Asset Maintenance Adjustments to Assets
+    question: What System Accessess are required to perform Fixed Asset Maintenance
+      Adjustments to Assets Process?
+  - answer: The frequency of performing Fixed Asset Maintenance Adjustments to Assets
       Process is - As needed (Based on email request)
+    question: What is the frequency of performing Fixed Asset Maintenance Adjustments
+      to Assets Process?
 - context: "### Cost Adjustment\n\n1.  Business will be providing the information\
     \ and need to update the data in below Cost Adjustment form\n\n2.  Send the form\
     \ through EchoSign to get it signed from the requestor - Screen shot yet to be\
@@ -74,42 +81,39 @@ seed_examples:
     \ appears in Main Transaction need to update below details.\n\n> Transaction Date:\
     \ Inservice Date\n>\n> Copy Changes to Other Books: Must be ~~un~~**checked**\n\
     >\n> Action: Select Adjustment from the dropdown\n>\n> Click on Go\n\n> Follow\
-    \ this step if Inservice date is not able to find.\n>\n> Main Menu > Asset Management > \
-    \ Deprication > Review Deprication Info > Asset Depreciation.\n>\n> Business Unit:\n\
-    >\n> Asset Identification: Asset number\n>\n> Click on Serach\n>\n> Click on the\
-    \ asset number\n\n6.  Go to Cost Information tab in Cost Adjust/Transfer Asset.\n\
-    \n> Cost: Update the amount\n>\n> **Instead, update adjustment amount in 'Adjust\
-    \ Current Row by'**\n>\n> Click on Apply.\n\n7.  Click on View All and you see\
-    \ the changes in cost amount has been increased highlighted in below screen.\n\
-    \n8.  Below screen appears and copy the Asset ID number.\n\n9.  Navigate to Asset\
-    \ Deprication to check the convention in the same formateshould be updated in\
-    \ Cost Adjust/Transfer Asset under Cost Information.\n\n> Main Menu > Asset Management > \
-    \ Deprication > Review Deprication Info > Asset Depreciation.\n>\n> Business Unit:\n\
-    >\n> Asset Identification: Asset number\n>\n> Click on the asset number.\n>\n\
-    > Below screen appears.\n\n10. Go back to Cost Adjust/Transfer Asset under Cost\
-    \ Information.\n\n> Need to update the Convention as per the Book Name\n\n  **Book\
-    \ Name**   **Convention**\n  --------------- ----------------\n  USA_CRPNW   \
-    \    Mid Month\n  USA_ACE         Actual Month\n  USA_AMT         Half Year\n\
-    \  USA_CRPTR       Mid Month\n  USA_FED         Actual Month\n  USA_STATE    \
-    \   Half Year\n\n> ~~Under USA_CRPNW book need to update the Oper Unit, Dept and\
-    \ Category~~\n>\n> ~~as per above~~\n>\n> Click on Save\n>\n> Click on Yes\n>\n\
-    > Note: All new asset in Corp books convention are Mid month\n>\n> For FED book\
-    \ for Software its Actual month, Building its Mid month and remaining are Half\
-    \ year. Regardless, make sure you check the individual asset's conventions by\
-    \ book on the Asset Depreciation screen.\n>\n> System is configure and will be\
-    \ having the information can be update as per that convnetion.\n>\n> Convnetion\
+    \ this step if Inservice date is not able to find.\n>\n> Main Menu > Asset Management\
+    \ >  Deprication > Review Deprication Info > Asset Depreciation.\n>\n> Business\
+    \ Unit:\n>\n> Asset Identification: Asset number\n>\n> Click on Serach\n>\n> Click\
+    \ on the asset number\n\n6.  Go to Cost Information tab in Cost Adjust/Transfer\
+    \ Asset.\n\n> Cost: Update the amount\n>\n> **Instead, update adjustment amount\
+    \ in 'Adjust Current Row by'**\n>\n> Click on Apply.\n\n7.  Click on View All\
+    \ and you see the changes in cost amount has been increased highlighted in below\
+    \ screen.\n\n8.  Below screen appears and copy the Asset ID number.\n\n9.  Navigate\
+    \ to Asset Deprication to check the convention in the same formateshould be updated\
+    \ in Cost Adjust/Transfer Asset under Cost Information.\n\n> Main Menu > Asset\
+    \ Management >  Deprication > Review Deprication Info > Asset Depreciation.\n\
+    >\n> Business Unit:\n>\n> Asset Identification: Asset number\n>\n> Click on the\
+    \ asset number.\n>\n> Below screen appears.\n\n10. Go back to Cost Adjust/Transfer\
+    \ Asset under Cost Information.\n\n> Need to update the Convention as per the\
+    \ Book Name\n\n  **Book Name**   **Convention**\n  --------------- ----------------\n\
+    \  USA_CRPNW       Mid Month\n  USA_ACE         Actual Month\n  USA_AMT      \
+    \   Half Year\n  USA_CRPTR       Mid Month\n  USA_FED         Actual Month\n \
+    \ USA_STATE       Half Year\n\n> ~~Under USA_CRPNW book need to update the Oper\
+    \ Unit, Dept and Category~~\n>\n> ~~as per above~~\n>\n> Click on Save\n>\n> Click\
+    \ on Yes\n>\n> Note: All new asset in Corp books convention are Mid month\n>\n\
+    > For FED book for Software its Actual month, Building its Mid month and remaining\
+    \ are Half year. Regardless, make sure you check the individual asset's conventions\
+    \ by book on the Asset Depreciation screen.\n>\n> System is configure and will\
+    \ be having the information can be update as per that convnetion.\n>\n> Convnetion\
     \ is not always same it differen from assets to assets.\n>\n> Note: Manual Deprciation\
     \ Run need to performed which is been showed in Impairement Adjustment from Point\
     \ 12 to Point 16"
   questions_and_answers:
-  - question: What is the purpose of sending the Cost Adjustment form through EchoSign?
-    answer: The purpose of sending the Cost Adjustment form through EchoSign is to
+  - answer: The purpose of sending the Cost Adjustment form through EchoSign is to
       get it signed by the requestor.
-  - question: What are the steps to update the asset details in PeopleSoft for a Cost
-      Adjustment?
-    answer: 'The steps to update the asset details in PeopleSoft for a Cost Adjustment
-      are:
-      1.  Login to PeopleSoft with credentials.
+    question: What is the purpose of sending the Cost Adjustment form through EchoSign?
+  - answer: 'The steps to update the asset details in PeopleSoft for a Cost Adjustment
+      are: 1.  Login to PeopleSoft with credentials.
 
       2.  Navigate to Asset Management > Asset Transaction > Asset Book Information
       > Cost Adjust/Transfer Asset.
@@ -120,96 +124,97 @@ seed_examples:
       on go.
 
       5.  Update the cost information, including the cost and adjustment amount.'
-  - question: How do you verify the convention for the asset in PeopleSoft for a Cost
+    question: What are the steps to update the asset details in PeopleSoft for a Cost
       Adjustment?
-    answer: To verify the convention for the asset, navigate to Asset Management >
+  - answer: To verify the convention for the asset, navigate to Asset Management >
       Depreciation Review > Depreciation Info > Asset Depreciation, and then update
       the convention as per the book name in the Cost Adjust/Transfer Asset under
       Cost Information.
+    question: How do you verify the convention for the asset in PeopleSoft for a Cost
+      Adjustment?
 - context: "### Impairment Adjustment\n\n1.  Business will be providing the information\
     \ and need to update the data in below Impairment form.\n\n2.  Send the form through\
     \ EchoSign to get it approved by the requestor - Screen shot not been shown.\n\
     \n3.  To change assets, Login to PeopleSoft with credentials.\n\n4.  Navigate\
-    \ to Main Menu > Asset Management > Asset Transaction > Asset Book Information Cost > \
-    \ Adjust/Transfer Asset\n\n> Update below details and Click on Serach.\n>\n> Business\
-    \ Unit : As per the BU\n>\n> Asset Identification : Asset number\n>\n> Click on\
-    \ Search\n>\n> Click on the Asset ID/Description\n\n5.  Below screen appears in\
-    \ Main Transaction need to update below details.\n\n> Transaction Date: Provided\
-    \ from business\n>\n> Copy Changes to Other Books: Must be unchecked\n>\n> Action:\
-    \ Select Adjustment from the dropdown\n>\n> Click on Go\n\n6.  Below screen appears\
-    \ in Cost Information\n\n> Click on to add the new row, this will be adding the\
-    \ extra record to the same asset.\n>\n\n7.  The highligted asset from the below\
-    \ screen will be having 2 entries in the Net book value report one will be Starndard\
-    \ record and other will be Impairment record.\n\n8.  Only need to make changes\
-    \ for Corporate Book.\n\n> Cost Type: Select I (Impairement Loss)\n>\n> Adjust\
-    \ Current Row by: -0.01\n>\n> Quantity: 1.000\n>\n> Cost: Provided by business\n\
-    >\n> Click on Apply.\n>\n> Click on View All\n\n9.  Below screen appears and copy\
-    \ the Asset ID number.\n\n10. Navigate to Asset Depreciation to check the convention\
-    \ in the same format should be updated in Cost Adjust/Transfer Asset under Cost\
-    \ Information.\n\n> Main Menu > Asset Management > Deprication > Review Deprication\
-    \ Info > Asset Depreciation.\n>\n> Business Unit:\n>\n> Asset Identification: Asset\
-    \ number\n>\n> Below screen appears.\n\n11. Go back to Cost Adjust/Transfer Asset\
-    \ under Cost Information.\n\n> Need to update the Convention as per the Book Name\n\
-    \n  **Book Name**   **Convention**\n  --------------- ----------------\n  USA_CRPNW\
-    \       Mid Month\n  USA_ACE         Actual Month\n  USA_AMT         Half Year\n\
-    \  USA_CRPTR       Mid Month\n  USA_FED         Actual Month\n  USA_STATE    \
-    \   Half Year\n\n> Under USA_CRPNW book need to update the Oper Unit, Dept and\
-    \ Category\n>\n> as per above\n>\n> Click on Save\n>\n> Click on Yes\n\n12. The\
-    \ changes can be reflected by running Depreciation.\n\n> Navigate to the below\
-    \ path:\n>\n> Main menu > Asset Management > Depreciation > Processing > Calculate\n>\n\
-    > Go to the **'Find the Existing Value'**,\n>\n> Click on **'Search'**.\n>\n>\
-    \ Search Results will be appeared. Select **'Depreciation'**."
+    \ to Main Menu > Asset Management > Asset Transaction > Asset Book Information\
+    \ Cost >  Adjust/Transfer Asset\n\n> Update below details and Click on Serach.\n\
+    >\n> Business Unit : As per the BU\n>\n> Asset Identification : Asset number\n\
+    >\n> Click on Search\n>\n> Click on the Asset ID/Description\n\n5.  Below screen\
+    \ appears in Main Transaction need to update below details.\n\n> Transaction Date:\
+    \ Provided from business\n>\n> Copy Changes to Other Books: Must be unchecked\n\
+    >\n> Action: Select Adjustment from the dropdown\n>\n> Click on Go\n\n6.  Below\
+    \ screen appears in Cost Information\n\n> Click on to add the new row, this will\
+    \ be adding the extra record to the same asset.\n>\n\n7.  The highligted asset\
+    \ from the below screen will be having 2 entries in the Net book value report\
+    \ one will be Starndard record and other will be Impairment record.\n\n8.  Only\
+    \ need to make changes for Corporate Book.\n\n> Cost Type: Select I (Impairement\
+    \ Loss)\n>\n> Adjust Current Row by: -0.01\n>\n> Quantity: 1.000\n>\n> Cost: Provided\
+    \ by business\n>\n> Click on Apply.\n>\n> Click on View All\n\n9.  Below screen\
+    \ appears and copy the Asset ID number.\n\n10. Navigate to Asset Depreciation\
+    \ to check the convention in the same format should be updated in Cost Adjust/Transfer\
+    \ Asset under Cost Information.\n\n> Main Menu > Asset Management > Deprication\
+    \ > Review Deprication Info > Asset Depreciation.\n>\n> Business Unit:\n>\n> Asset\
+    \ Identification: Asset number\n>\n> Below screen appears.\n\n11. Go back to Cost\
+    \ Adjust/Transfer Asset under Cost Information.\n\n> Need to update the Convention\
+    \ as per the Book Name\n\n  **Book Name**   **Convention**\n  ---------------\
+    \ ----------------\n  USA_CRPNW       Mid Month\n  USA_ACE         Actual Month\n\
+    \  USA_AMT         Half Year\n  USA_CRPTR       Mid Month\n  USA_FED         Actual\
+    \ Month\n  USA_STATE       Half Year\n\n> Under USA_CRPNW book need to update\
+    \ the Oper Unit, Dept and Category\n>\n> as per above\n>\n> Click on Save\n>\n\
+    > Click on Yes\n\n12. The changes can be reflected by running Depreciation.\n\n\
+    > Navigate to the below path:\n>\n> Main menu > Asset Management > Depreciation\
+    \ > Processing > Calculate\n>\n> Go to the **'Find the Existing Value'**,\n>\n\
+    > Click on **'Search'**.\n>\n> Search Results will be appeared. Select **'Depreciation'**."
   questions_and_answers:
-  - question: ' Who provides the information for the Impairment form?'
-    answer: The business provides the information for the Impairment form.
-  - question: In Peoplesoft, what is the convetion for book name USA_STATE in Cost
-      Adjust / Transfer Asset under Cost Information?
-    answer: In Peoplesoft, the convetion for book name USA_STATE in Cost Adjust /
+  - answer: The business provides the information for the Impairment form.
+    question: ' Who provides the information for the Impairment form?'
+  - answer: In Peoplesoft, the convetion for book name USA_STATE in Cost Adjust /
       Transfer Asset under Cost Information is Half Year.
-  - question: In Peoplesoft, which details you need to update if you select book name
-      USA_CRPNW in Cost Adjust / Transfer Asset under Cost Information?
-    answer: You need to update Oper Unit, Dept and Category when you select USA_CRPNW
+    question: In Peoplesoft, what is the convetion for book name USA_STATE in Cost
+      Adjust / Transfer Asset under Cost Information?
+  - answer: You need to update Oper Unit, Dept and Category when you select USA_CRPNW
       as book name in Cost Adjust / Transfer Asset under Cost Information in PeopleSoft.
+    question: In Peoplesoft, which details you need to update if you select book name
+      USA_CRPNW in Cost Adjust / Transfer Asset under Cost Information?
 - context: "### Useful Life Adjustment\n\n1.  Request is received via email from the\
     \ requestor by McIntosh Zachary J.\n\n2.  Fill the ~~Asset addition~~ Accelerated\
     \ Depreciation or Useful Life Adjustment form and print in Broadgun \n\n3.  Send\
     \ the form through EchoSign to get it approved from the requestor for changes\
     \ - Screen shot yet to been shown.\n\n4.  Save the Signed form in Share drive.\
-    \ Below is the path.\n\n> FA > AM BU > 40130 > 2022 > AM > Useful Life Adjustments\n\n5.\
-    \  To change assets, Login to PeopleSoft with credentials.\n\n7.  Navigate to\
-    \ Main Menu > Asset Management > Asset Transaction > Asset Book Information ? Define Tax/Depr\
-    \ Criteria\n\n> Update below details and Click on Serach.\n>\n> Business Unit\
-    \ : As per the BU\n>\n> Asset Identification : Asset ID\n>\n> Click on Search\n\
-    >\n> Click on the Asset ID/Description\n>\n8.  Below screen appears update the\
-    \ details.\n\n> Trans Date: Inservice date or Modified date should be the effective\
-    \ date (it shouldn't be future date).\n>\n> Accounting Date: Current date.\n>\n\
-    > Book Name: USA_CRPNW (**Need to work on ONLY Corp Book**)\n>\n> Convention:\
-    \ Mid Month\n>\n> Retire Conv: Mid Month\n>\n> Method: Straight Line\n>\n> Calculation\
-    \ Type: Life-to-Date or Remaining Value, depending on reason for adjustment.\n\
-    >\n> Useful Life: Per request.\n>\n> Impairment Process: Must be unchecked\n>\n\
-    > Click on Save.\n>\n> **Note**: If End Date needs to be updated instead of Useful\
-    \ Life, delete contents of Useful Life field and update end date of depreciation\
-    \ in End Date field.\n>\n> **Note**: Calculation Type Remaining Value is selected\
-    \ and Trans Date should be current date, it would be better crosschecking with\
-    \ the Client Team once.\n\n9.  The changes can be reflected by running Depreciation.\n\
-    \n> Navigate to the below path:\n>\n> Main menu > Asset Management > Depreciation > \
-    \ Processing > Calculate\n>\n> Go to the **'Find the Existing Value'**,\n>\n> Click\
-    \ on **'Search'**.\n>\n> Search Results will be appeared. Select **'Depreciation'**.\n\
-    \n10. Below screen appears.\n\n> Update the below information in the required\
-    \ information.\n>\n> Unit -- Asset business unit\n>\n> Process Frequency -- select\
-    \ **'Once'** from the drop down\n>\n> From Asset ID -- Select the Asset that needed\
-    \ to useful life change as below highlighted\n\n> Below is screenshot with updated\
-    \ details. Click on **'Run'**.\n\n11. Below screen appears. Click on **'Ok'**.\n\
-    \n12. Below screen appears. Click on **'Process monitor'**.\n\n> Below screen\
-    \ appears. Click on **'Refresh'** till the below highlighted status will be success\
-    \ & posted."
+    \ Below is the path.\n\n> FA > AM BU > 40130 > 2022 > AM > Useful Life Adjustments\n\
+    \n5.  To change assets, Login to PeopleSoft with credentials.\n\n7.  Navigate\
+    \ to Main Menu > Asset Management > Asset Transaction > Asset Book Information\
+    \ ? Define Tax/Depr Criteria\n\n> Update below details and Click on Serach.\n\
+    >\n> Business Unit : As per the BU\n>\n> Asset Identification : Asset ID\n>\n\
+    > Click on Search\n>\n> Click on the Asset ID/Description\n>\n8.  Below screen\
+    \ appears update the details.\n\n> Trans Date: Inservice date or Modified date\
+    \ should be the effective date (it shouldn't be future date).\n>\n> Accounting\
+    \ Date: Current date.\n>\n> Book Name: USA_CRPNW (**Need to work on ONLY Corp\
+    \ Book**)\n>\n> Convention: Mid Month\n>\n> Retire Conv: Mid Month\n>\n> Method:\
+    \ Straight Line\n>\n> Calculation Type: Life-to-Date or Remaining Value, depending\
+    \ on reason for adjustment.\n>\n> Useful Life: Per request.\n>\n> Impairment Process:\
+    \ Must be unchecked\n>\n> Click on Save.\n>\n> **Note**: If End Date needs to\
+    \ be updated instead of Useful Life, delete contents of Useful Life field and\
+    \ update end date of depreciation in End Date field.\n>\n> **Note**: Calculation\
+    \ Type Remaining Value is selected and Trans Date should be current date, it would\
+    \ be better crosschecking with the Client Team once.\n\n9.  The changes can be\
+    \ reflected by running Depreciation.\n\n> Navigate to the below path:\n>\n> Main\
+    \ menu > Asset Management > Depreciation >  Processing > Calculate\n>\n> Go to\
+    \ the **'Find the Existing Value'**,\n>\n> Click on **'Search'**.\n>\n> Search\
+    \ Results will be appeared. Select **'Depreciation'**.\n\n10. Below screen appears.\n\
+    \n> Update the below information in the required information.\n>\n> Unit -- Asset\
+    \ business unit\n>\n> Process Frequency -- select **'Once'** from the drop down\n\
+    >\n> From Asset ID -- Select the Asset that needed to useful life change as below\
+    \ highlighted\n\n> Below is screenshot with updated details. Click on **'Run'**.\n\
+    \n11. Below screen appears. Click on **'Ok'**.\n\n12. Below screen appears. Click\
+    \ on **'Process monitor'**.\n\n> Below screen appears. Click on **'Refresh'**\
+    \ till the below highlighted status will be success & posted."
   questions_and_answers:
-  - question: What form needs to be filled out for a useful life adjustment?
-    answer: The 'Accelerated Depreciation or Useful Life Adjustment' form needs to
+  - answer: The 'Accelerated Depreciation or Useful Life Adjustment' form needs to
       be filled out and printed in Broadgun for useful life adjustment.
-  - question: What are the steps to update the asset details in PeopleSoft?
-    answer: 'The steps to update the asset details in PeopleSoft are:
-      1.  Login to PeopleSoft with credentials.
+    question: What form needs to be filled out for a useful life adjustment?
+  - answer: 'The steps to update the asset details in PeopleSoft are: 1.  Login to
+      PeopleSoft with credentials.
 
       2.  Navigate to Asset Management > Asset Transaction > Asset Book Information
       > Define Tax/Depr Criteria.
@@ -220,8 +225,8 @@ seed_examples:
       retire conv, method, calculation type, useful life, and impairment process.
 
       5. Click on Save'
-  - question: How do we check if the changes to asset details in PeopleSoft are successful?
-    answer: 'Following re the steps to check if the changes to asset details in PeopleSoft
+    question: What are the steps to update the asset details in PeopleSoft?
+  - answer: 'Following re the steps to check if the changes to asset details in PeopleSoft
       are successful.
 
       1.  Navigate to Asset Management > Depreciation Processing > Calculate.
@@ -233,3 +238,5 @@ seed_examples:
 
       4.  Click on ''Run'' and then ''Process monitor'' to refresh the status until
       it is successful and posted.'
+    question: How do we check if the changes to asset details in PeopleSoft are successful?
+version: 3

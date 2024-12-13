@@ -1,6 +1,12 @@
-domain: 'BPOD procure to pay: DTP_US_P2P_Vendor Invoice Processing_Auto Posting Interface_0.1'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - DTP_US_P2P_Vendor_Invoice_Processing_Auto_Posting_Interface_0.1.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: ' Describes how to process Auto Posting in SAP and verification
   of invoice.'
+domain: 'BPOD procure to pay: DTP_US_P2P_Vendor Invoice Processing_Auto Posting Interface_0.1'
 seed_examples:
 - context: '## Objectives of the Process
 
@@ -32,14 +38,14 @@ seed_examples:
 
     +--------------------------------+-------------------------+'
   questions_and_answers:
-  - question: What is the objective of the process Auto Posting in SAP?
-    answer: The objective of the process is to verify the auto posted invoices in
+  - answer: The objective of the process is to verify the auto posted invoices in
       SAP for more than $10K.
-  - question: What is the input for the process Auto Posting in SAP?
-    answer: The input for the process is invoices from vendors.
-  - question: Who receives the output of the process Auto Posting in SAP?
-    answer: The output of the process, which is the auto posted invoice report, is
+    question: What is the objective of the process Auto Posting in SAP?
+  - answer: The input for the process is invoices from vendors.
+    question: What is the input for the process Auto Posting in SAP?
+  - answer: The output of the process, which is the auto posted invoice report, is
       sent to the Payment to Supplier.
+    question: Who receives the output of the process Auto Posting in SAP?
 - context: "## Process Measurements\n\n# Roles & Responsibilities\n\n## Description\n\
     \n  ------------------------ --------------------------------------------------------------------------------\n\
     \  **Role**                 **Responsibility**\n  ***IBM AP Processor***   *Ensure\
@@ -69,19 +75,19 @@ seed_examples:
     \ using Tcode --SP01                                                         \
     \               |\n+------+----------------------------------------------------------------------------------------------------------------------------------------+"
   questions_and_answers:
-  - question: Who is responsible for verifying auto posted invoices with a value greater
-      than 10K?
-    answer: The IBM AP Processor is responsible for ensuring that auto posted invoices
+  - answer: The IBM AP Processor is responsible for ensuring that auto posted invoices
       with a value greater than 10K are verified.
-  - question: Which Tcode is used to export the auto posted file from SAP for verification?
-    answer: The Tcode used to export the auto posted file from SAP for verification
+    question: Who is responsible for verifying auto posted invoices with a value greater
+      than 10K?
+  - answer: The Tcode used to export the auto posted file from SAP for verification
       is SP01.
-  - question: How often are auto posted invoices verified for more than 10K invoice
-      value?
-    answer: 'Auto posted invoices are verified for more than 10K invoice value every
+    question: Which Tcode is used to export the auto posted file from SAP for verification?
+  - answer: 'Auto posted invoices are verified for more than 10K invoice value every
       day.
 
       '
+    question: How often are auto posted invoices verified for more than 10K invoice
+      value?
 - context: 'Open the file in Excel.
 
 
@@ -118,18 +124,18 @@ seed_examples:
 
     All the information are given below about the particular document.'
   questions_and_answers:
-  - question: What should be done to login to the load master imaging tool?
-    answer: To login to the load master imaging tool, open the tool and enter the
+  - answer: To login to the load master imaging tool, open the tool and enter the
       login id and password, then press on the "Login" button.
-  - question: What should be done after logging in to the load master imaging tool?
-    answer: After logging in to the load master imaging tool, press "Database" and
+    question: What should be done to login to the load master imaging tool?
+  - answer: After logging in to the load master imaging tool, press "Database" and
       press on "popdta". Then press "File" menu and press on "POP Vendor Invoices".
-  - question: What should be done to search for a specific document in the load master
-      imaging tool?
-    answer: To search for a specific document in the load master imaging tool, click
+    question: What should be done after logging in to the load master imaging tool?
+  - answer: To search for a specific document in the load master imaging tool, click
       on the "Query" button and fill the document no with adding the company code
       from the Excel sheet. Then click on the "Exec" button. All the information about
       the particular document will be displayed.
+    question: What should be done to search for a specific document in the load master
+      imaging tool?
 - context: "Press\" Enter\" button to open the Invoice image to validate the information\
     \ with excel sheet data.\n\nThe information highlighted below to be validated\
     \ with the Invoice image data.\n\nValidate the posted invoices fields which is\
@@ -143,15 +149,15 @@ seed_examples:
     \ Processing Process\n\n  **Term**     **Definition**\n  ------------ ------------------------\n\
     \  PO Invoice   Purchase Order Invoice\n  GRN          Goods Received note\n"
   questions_and_answers:
-  - question: What fields should be validated with the invoice image data?
-    answer: The fields that should be validated with the invoice image data are the
+  - answer: The fields that should be validated with the invoice image data are the
       vendor name, invoice number, document date, and amount.
-  - question: What should be done if the invoice number field is wrong?
-    answer: If the invoice number field is wrong, it can be edited in the FBL1N screen.
+    question: What fields should be validated with the invoice image data?
+  - answer: If the invoice number field is wrong, it can be edited in the FBL1N screen.
       If any other fields are wrong, the invoice should be reversed and reprocessed
       manually.
-  - question: What does GRN stands for?
-    answer: GRN stands for Goods Received note.
+    question: What should be done if the invoice number field is wrong?
+  - answer: GRN stands for Goods Received note.
+    question: What does GRN stands for?
 - context: 'The invoices which matches 3 way (PO/GRN/Invoice) will be interfaced to
     SAP Automatically, Check the Invoices for more than \$10K value and validate with
     invoice copy.
@@ -194,17 +200,18 @@ seed_examples:
 
     '
   questions_and_answers:
-  - question: What is the t-code used to check the invoices for more than $10K value
-      and validate with invoice copy?
-    answer: ' The t-code used to check the invoices for more than $10K value and validate
+  - answer: ' The t-code used to check the invoices for more than $10K value and validate
       with invoice copy is SP01 Output Controller.'
-  - question: What should be done after finding the "CSR\_BATCH" which is completed
-      in the SP01 Output Controller?
-    answer: After finding the "CSR\_BATCH" which is completed in the SP01 Output Controller,
+    question: What is the t-code used to check the invoices for more than $10K value
+      and validate with invoice copy?
+  - answer: After finding the "CSR\_BATCH" which is completed in the SP01 Output Controller,
       put a tick mark on the same and click on the "glass" icon to view the details
       of posted entries.
-  - question: What should be done after selecting the "Spreadsheet" when clicking
-      on the "Save to local file" icon?
-    answer: After selecting the "Spreadsheet" when clicking on the "Save to local
+    question: What should be done after finding the "CSR\_BATCH" which is completed
+      in the SP01 Output Controller?
+  - answer: After selecting the "Spreadsheet" when clicking on the "Save to local
       file" icon, the path "I:\\POP\\POP Invoice Interface\\" should be selected and
       the File Name as mentioned should be filled, then click on the "Generate" option.
+    question: What should be done after selecting the "Spreadsheet" when clicking
+      on the "Save to local file" icon?
+version: 3

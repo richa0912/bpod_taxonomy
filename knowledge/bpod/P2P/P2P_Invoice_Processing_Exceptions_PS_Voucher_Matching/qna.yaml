@@ -1,7 +1,13 @@
-domain: 'BPOD procure to pay: P2P_Invoice Processing Exceptions_Client Voucher Matching'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - P2P_Invoice_Processing_Exceptions_PS_Voucher_Matching.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: This document is an official IBM guide outlining the process for
   IBM Delivery Centre to perform PS voucher matching. It will serve as a reference
   for both IBM and Client teams.
+domain: 'BPOD procure to pay: P2P_Invoice Processing Exceptions_Client Voucher Matching'
 seed_examples:
 - context: '
 
@@ -55,23 +61,23 @@ seed_examples:
     30. Go to summary screen to check the Match status - Now the status is matched.
     End of the process.'
   questions_and_answers:
-  - question: What happens if a match request is received via email to the Indirect
-      Exceptions mailbox?
-    answer: If a match request is received via email to the Indirect Exceptions mailbox,
+  - answer: If a match request is received via email to the Indirect Exceptions mailbox,
       you need to enter the Business Unit and Voucher ID and click on the search button
       to view the match status.
-  - question: How do you handle an exception case where the match status is "Exception"?
-    answer: To handle an exception case where the match status is "Exception", you
+    question: What happens if a match request is received via email to the Indirect
+      Exceptions mailbox?
+  - answer: To handle an exception case where the match status is "Exception", you
       need to click on the voucher attributes and go to the match action, select the
       status as "Overridden", click on Override reason and write comments, and then
       click OK. After that, you need to go back to the voucher Attribute tab, copy
       the Voucher ID, click on "Return to search", paste the voucher ID, save it,
       and click on "Run".
-  - question: What is the final step in the process to handle an exception case in
-      PS voucher matching?
-    answer: The final step in the process to handle an exception case is to go to
+    question: How do you handle an exception case where the match status is "Exception"?
+  - answer: The final step in the process to handle an exception case is to go to
       the summary screen to check the Match status, which should now be "Matched",
       and end the process.
+    question: What is the final step in the process to handle an exception case in
+      PS voucher matching?
 - context: "\n## Process Description:\n\n1.  Login to PeopleSoft by creating an Employee\
     \ Update Request (EUR). Use the below link Login to Client home page.\n\n2.  Select\
     \ PeopleSoft main menu and click on \"eProcurement\".\n\n3.  Select\n\n<!-- -->\n\
@@ -107,18 +113,18 @@ seed_examples:
     \ and click on Save.\n\n16. Go back to Summary screen to check the Match Status-\
     \ Now the Match status is \"Matched\"- End the Process."
   questions_and_answers:
-  - question: What is the purpose of creating a Run Control ID in Peoplesoft?
-    answer: The purpose of creating a Run Control ID in Peoplesoft is to name the
+  - answer: The purpose of creating a Run Control ID in Peoplesoft is to name the
       process, such as "PS Matching", and to save the name for future reference.
-  - question: How do you update the Run Control Parameters screen?
-    answer: 'To update the Run Control Parameters screen, you need to enter the following
+    question: What is the purpose of creating a Run Control ID in Peoplesoft?
+  - answer: 'To update the Run Control Parameters screen, you need to enter the following
       details: Description - Name of Vendor, Process Frequency - Always Process, Match
       Action - Matching, As of Date - Current date (Working date), Add each voucher,
       After all vouchers are added, and Save.'
-  - question: What is the final step of the PS voucher matching process?
-    answer: The final step in the PS voucher matching process is to go back to the
+    question: How do you update the Run Control Parameters screen?
+  - answer: The final step in the PS voucher matching process is to go back to the
       Summary screen to check the Match Status, which should now be "Matched", and
       end the process.
+    question: What is the final step of the PS voucher matching process?
 - context: "# Document Information\n\n## About this Document\n\n> This is official\
     \ IBM guide document which describes how IBM Delivery Centre will perform the\
     \ PS voucher matching. This document will be used for future reference, either\
@@ -128,34 +134,33 @@ seed_examples:
     \ -------------------- ------------------------ ------------ ----------------------------------------\
     \ --------------\n  **Version number**   **Effective Date**   **Summary of Changes**\
     \   **Author**   **Reviewer**                             **Approver**\n\n  1.0\
-    \                  04/05/2022           Draft                    Mubha    \
-    \ NASREE/ROHI/RANA  \n\n  2.0                  12/3/23 \
-    \             Draft                    Nika     Mohi                     \
-    \               \n  -------------------- -------------------- ------------------------\
-    \ ------------ ---------------------------------------- --------------\n\n## Document\
-    \ Control Information\n\nAt the end of this document is a labelled box indicating\
-    \ the end of text.\n\n# Overview\n\n## Objective(s)\n\n> Peoplesoft Vouchers are\
-    \ processed by the Invoice processing team, if the vouchers are not auto matched\
-    \ in Peoplesoft, it will get into exception queue via Peoplesoft e-procurement\
-    \ website/ Email.\n>\n> File maintenance person should have access to perform\
-    \ this voucher matching process in Peoplesoft. This activity should be performed\
-    \ on same day, so that vouchers get matched and processed in Peoplesoft overnight.\n\
-    >\n> Also, will get the unmatched vouchers in the Exception match work bench process.\
-    \ Then, we need to match the vouchers rather than waiting to see exception on\
-    \ the next day.\n\n### Frequency:\n\nDaily/As needed\n\n### Source:\n\nIndirect\
-    \ Exception Mailbox\n\n### System Accesses:\n\nPeoplesoft"
+    \                  04/05/2022           Draft                    Mubha     NASREE/ROHI/RANA\
+    \  \n\n  2.0                  12/3/23              Draft                    Nika\
+    \     Mohi                                    \n  -------------------- --------------------\
+    \ ------------------------ ------------ ----------------------------------------\
+    \ --------------\n\n## Document Control Information\n\nAt the end of this document\
+    \ is a labelled box indicating the end of text.\n\n# Overview\n\n## Objective(s)\n\
+    \n> Peoplesoft Vouchers are processed by the Invoice processing team, if the vouchers\
+    \ are not auto matched in Peoplesoft, it will get into exception queue via Peoplesoft\
+    \ e-procurement website/ Email.\n>\n> File maintenance person should have access\
+    \ to perform this voucher matching process in Peoplesoft. This activity should\
+    \ be performed on same day, so that vouchers get matched and processed in Peoplesoft\
+    \ overnight.\n>\n> Also, will get the unmatched vouchers in the Exception match\
+    \ work bench process. Then, we need to match the vouchers rather than waiting\
+    \ to see exception on the next day.\n\n### Frequency:\n\nDaily/As needed\n\n###\
+    \ Source:\n\nIndirect Exception Mailbox\n\n### System Accesses:\n\nPeoplesoft"
   questions_and_answers:
-  - question: Who is this document Invoice Processing Exceptions PS voucher Matching
-      intended for?
-    answer: This document 'Invoice Processing Exceptions PS voucher Matching' is intended
+  - answer: This document 'Invoice Processing Exceptions PS voucher Matching' is intended
       for the Invoice exception Associate who will be processing PS voucher matching.
-  - question: What is the objective of the PS voucher matching process?
-    answer: The objective of the PS voucher matching process is to match vouchers
+    question: Who is this document Invoice Processing Exceptions PS voucher Matching
+      intended for?
+  - answer: The objective of the PS voucher matching process is to match vouchers
       that are not auto-matched in Peoplesoft, so that they can be processed overnight.
-  - question: How often should the PS voucher matching process be performed?
-    answer: The PS voucher matching process should be performed daily or as needed,
+    question: What is the objective of the PS voucher matching process?
+  - answer: The PS voucher matching process should be performed daily or as needed,
       and the unmatched vouchers should be matched in the Exception match work bench
       process rather than waiting to see exceptions on the next day.
+    question: How often should the PS voucher matching process be performed?
 - context: '# Process Detail
 
 
@@ -178,17 +183,17 @@ seed_examples:
     Then, we need to match the vouchers rather than waiting to see exception on the
     next day.'
   questions_and_answers:
-  - question: What happens if vouchers are not auto matched in Peoplesoft
-    answer: If vouchers are not auto matched in Peoplesoft, they will get into the
+  - answer: If vouchers are not auto matched in Peoplesoft, they will get into the
       exception queue via the Peoplesoft e-procurement website or email.
-  - question: How should the voucher matching process be performed?
-    answer: The voucher matching process should be performed on the same day, so that
+    question: What happens if vouchers are not auto matched in Peoplesoft
+  - answer: The voucher matching process should be performed on the same day, so that
       vouchers get matched and processed in Peoplesoft overnight, and unmatched vouchers
       should be matched in the Exception match work bench process rather than waiting
       to see exceptions on the next day.
-  - question: Who can perform the voucher matching process in Peoplesoft?
-    answer: The voucher matching process in Peoplesoft can be performed by the File
+    question: How should the voucher matching process be performed?
+  - answer: The voucher matching process in Peoplesoft can be performed by the File
       maintenance person.
+    question: Who can perform the voucher matching process in Peoplesoft?
 - context: "## Inputs & Outputs\n\n+----------------------------------------+----------------------------------------------------------------+\n\
     | Input                                  | From                              \
     \                             |\n+----------------------------------------+----------------------------------------------------------------+\n\
@@ -239,15 +244,16 @@ seed_examples:
     \ not on daily basis   Delay in payment        Daily/ As needed              \
     \                                      Email tracker\n  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
   questions_and_answers:
-  - question: What is the input for the PS voucher matching process?
-    answer: The input for the PS voucher matching process is the vouchers received
+  - answer: The input for the PS voucher matching process is the vouchers received
       from the E-Procurement website (Peoplesoft Finance) or from Client associates
       via email.
-  - question: What is the control objective of the PS voucher matching process?
-    answer: The control objective of the PS voucher matching process is to ensure
+    question: What is the input for the PS voucher matching process?
+  - answer: The control objective of the PS voucher matching process is to ensure
       that vouchers are matched and paid overnight, and to check for any requests
       received through email and take action within the TAT (Turnaround Time).
-  - question: What is the output for the PS voucher matching process?
-    answer: The output for the PS voucher matching process is the Invoice Processing
+    question: What is the control objective of the PS voucher matching process?
+  - answer: The output for the PS voucher matching process is the Invoice Processing
       Exception for invoice exception team to match the voucher Id's in peoplesoft
       Finance for overnight payment..
+    question: What is the output for the PS voucher matching process?
+version: 3

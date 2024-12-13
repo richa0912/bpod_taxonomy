@@ -1,6 +1,12 @@
-domain: 'BPOD procure to pay: P2P_Invoice Processing - Exceptions_NPPI Emailbox_2022_V1.0'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - P2P_Invoice_Processing-Exceptions_NPPI_Emailbox_2022_V1.0.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how IBM Delivery Centre will perform the activity when
   the request is received from Supplier via NPPI mailbox
+domain: 'BPOD procure to pay: P2P_Invoice Processing - Exceptions_NPPI Emailbox_2022_V1.0'
 seed_examples:
 - context: '## Audit Confirmation
 
@@ -51,8 +57,7 @@ seed_examples:
 
     10. Move the email to Completed folder.'
   questions_and_answers:
-  - question: What is the objective of the audit confirmation process?
-    answer: Audit confirmation process main ojective is to provide confirmation of
+  - answer: Audit confirmation process main ojective is to provide confirmation of
       vendor payments per audit firm request. Audit confirmations email received to
       "Service Parts Customer Service" that email should be forwarded to NPPI email
       box. Vendor has an auditor who is reviewing their Receivables and Payables as
@@ -60,12 +65,13 @@ seed_examples:
       vendors, to find out the payments for certain invoices are in their system to
       be paid. Such instances vendors reach out to NPPI for the Payment details along
       with Invoice Date.
-  - question: What query should be used to search for the vendor's open and paid invoices?
-    answer: The query ZI_AP_VCHR_PYMT_DETAIL_SPI_V2 should be used to search for the
+    question: What is the objective of the audit confirmation process?
+  - answer: The query ZI_AP_VCHR_PYMT_DETAIL_SPI_V2 should be used to search for the
       vendor's open and paid invoices.
-  - question: What should be the name of the saved excel file in audit confirmation
+    question: What query should be used to search for the vendor's open and paid invoices?
+  - answer: The name of the saved excel file should be "Remittance Details".
+    question: What should be the name of the saved excel file in audit confirmation
       process?
-    answer: The name of the saved excel file should be "Remittance Details".
 - context: "## Overview \n\n> Supplier emails are received in generic NPPI Mailbox\
     \ inquiring multiple types of requests. This activity explains how to retrieve\
     \ the Debit copies, Payment Remittance, Other questions, and Audit confirmations.\
@@ -102,23 +108,18 @@ seed_examples:
     \ Us**- Features is enabled to the vendors to reach out NPPI email box to get\
     \ the required information.\n"
   questions_and_answers:
-  - question: What are the types of requests in Payment Portal Inquiries - NPPI process?
-    answer: 'Types of requests are as following:
-      -   Debit Copies
-      -   Payment Remittances
+  - answer: 'Types of requests are as following: -   Debit Copies -   Payment Remittances
       -   Invoice Inqueries (questions) - Generally need to provide status on invoice
-      payment or forward to right department
-      -   Audits Confirmations'
-  - question: What are the queries used in NPPI Mailbox inquiring?
-    answer: 'The queries used are:
-      1. ZI_AP_PAID_VCHRS_ITEM_REF  (PAYMENT REMITTANCE)
-      2. ZI_AP_VCHR_PYMT_DETAIL_SPI (OPEN PAID INVOICES)
-      3. ZI_AP_ERS_VENDOR_LIST'
-  - question: List down the features present in Client Invoice Status Portal.
-    answer: "The features are listed below:\n\n1. Invoice Payment information\n2.\
+      payment or forward to right department -   Audits Confirmations'
+    question: What are the types of requests in Payment Portal Inquiries - NPPI process?
+  - answer: 'The queries used are: 1. ZI_AP_PAID_VCHRS_ITEM_REF  (PAYMENT REMITTANCE)
+      2. ZI_AP_VCHR_PYMT_DETAIL_SPI (OPEN PAID INVOICES) 3. ZI_AP_ERS_VENDOR_LIST'
+    question: What are the queries used in NPPI Mailbox inquiring?
+  - answer: "The features are listed below:\n\n1. Invoice Payment information\n2.\
       \ Vendor communication Navigation Guide \n3. Supplier Invoicing Requirements\n\
       4. Debit Inquiry listings\n5. Payment Cycle change Effective\n6. Client Early\
       \ Payments program\n7. Contact Us"
+    question: List down the features present in Client Invoice Status Portal.
 - context: '## Remittances
 
     > Retrieving the remittances are from auto emails which are already in Completed
@@ -176,21 +177,21 @@ seed_examples:
     Attach the excel sheet which contains payment information. Reply to the email
     request'
   questions_and_answers:
-  - question: How to pull the remittances from peoplesoft?
-    answer: "Remittance pulling steps in Peoplesoft:\nGo to Peoplesoft Query. Click\
+  - answer: "Remittance pulling steps in Peoplesoft:\nGo to Peoplesoft Query. Click\
       \ on the \"ZI_AP_PAID_VCHRS_ITEM_REF\"\nOnce clicked on the Query -- in the\
       \ Next screen update Vendor Code, Payment Reference # and click on \"View Results\"\
       .\nA screen will open, Update the Remit Vendor and Max Rows \u201C3000\u201D\
       .\nData is pulled from the Query, this should be forwarded to supplier."
-  - question: What should be done if the payment reference number is not provided
-      by the vendor?
-    answer: If the payment reference number is not provided by the vendor, the remittances
+    question: How to pull the remittances from peoplesoft?
+  - answer: If the payment reference number is not provided by the vendor, the remittances
       can be pulled with the vendor number by logging into PeopleSoft, navigating
       to Accounts Payable, Review Accounts Payable Info, Payment, and entering the
       vendor number in the Remit Vendor field.
-  - question: What fields are included in the remittance file?
-    answer: The remittance file includes fields such as Payment references number,
+    question: What should be done if the payment reference number is not provided
+      by the vendor?
+  - answer: The remittance file includes fields such as Payment references number,
       Invoice#, Currency, Inv Date, etc.
+    question: What fields are included in the remittance file?
 - context: '> **Invoice Payment Information:**
 
     > **[Example:1]{.ul}** How vendor search Invoice payment information from the
@@ -231,19 +232,15 @@ seed_examples:
     NPPI and submit to NPPI.
 
     > This template is required especially for Production PO''s. Click on "Send My
-    Question".\
-    > Here is the template to be filled by the suppliers.
+    Question".\ > Here is the template to be filled by the suppliers.
 
     3.  **Inquiry type: "Why was my Invoice Short Paid**" - Supplier can go through
     the message below and retrive the details. if the shortage is due to pricing,
-    supplier should email to [xxx\@Client.com](mailto:xxx@navistar.com).
-    If they have further questions, use the option "Other" in the Combo Box using
-    the Contact Us feature to reach NPPI.
-    '
+    supplier should email to [xxx\@Client.com](mailto:xxx@navistar.com). If they have
+    further questions, use the option "Other" in the Combo Box using the Contact Us
+    feature to reach NPPI. '
   questions_and_answers:
-  - question: How can a vendor search for Invoice payment information in the Client
-      Invoice Status Portal?
-    answer: "1. A vendor can search for Invoice payment information in the Client\
+  - answer: "1. A vendor can search for Invoice payment information in the Client\
       \ Invoice Status Portal by entering the Vendor# and Invoice# and clicking on\
       \ \"Search\". \nPayment status N means not paid P means Paid.\nAll the Invoices\
       \ \"Scheduled Pay Date\" showing as future dates, same can be extracted and\
@@ -251,31 +248,31 @@ seed_examples:
       \ status in Client portal is just to remove Invoice Number and update the date\
       \ range and click on \u201DDate Range Search\u201D. This data can be downloaded\
       \ in excel."
-  - question: How can a vendor submit a past due Invoice in the Client Invoice Status
-      Portal?
-    answer: A vendor can submit a past due Invoice in the Client Invoice Status Portal
+    question: How can a vendor search for Invoice payment information in the Client
+      Invoice Status Portal?
+  - answer: A vendor can submit a past due Invoice in the Client Invoice Status Portal
       by using the "Contact Us" feature and providing the required details. The Exception
       team can follow the same steps to pull the Invoice payment information and send
       it back to the vendor.
-  - question: What should a vendor do if they have a question regarding their Short
+    question: How can a vendor submit a past due Invoice in the Client Invoice Status
+      Portal?
+  - answer: 'If a vendor has a question regarding their Invoice and the shortage is
+      due to pricing, they should email xxx@Client.com. If they have further questions,
+      they can use the option "Other" in the Combo Box using the Contact Us feature
+      to reach NPPI. '
+    question: What should a vendor do if they have a question regarding their Short
       Paid Invoice?
-    answer: 'If a vendor has a question regarding their Invoice and the shortage is
-      due to pricing, they should email xxx@Client.com. If they have further
-      questions, they can use the option "Other" in the Combo Box using the Contact
-      Us feature to reach NPPI. '
 - context: '> **[Scenario 3:]{.ul} AFBE Type Debit copy:**
 
     > Request email received to NPPI email box. See below example screenshot asking
     about backup copy for AFBE. AFBE is related to "Pricing Discrepancies Inquiries"
-    and those would auto email to NPPI.
-    > Note: All the copies are kept for 3 months in the mailbox, post that its auto
-    deleted. If any 6 months old copy is requested by the supplier, exception team
-    should go to specific website and pull the copy.
+    and those would auto email to NPPI. > Note: All the copies are kept for 3 months
+    in the mailbox, post that its auto deleted. If any 6 months old copy is requested
+    by the supplier, exception team should go to specific website and pull the copy.
     > Search with the Debit Nunber in the Debit Copies sub folder Email Box, which
-    were auto sent to NPPI.
-    > Copy the email and attach to original request which was received from supplier.
-    Reply to supplier with debit copy.
-    **[Scenario 4:]{.ul} BR/SCC/SWR Type Debit:**
+    were auto sent to NPPI. > Copy the email and attach to original request which
+    was received from supplier. Reply to supplier with debit copy. **[Scenario 4:]{.ul}
+    BR/SCC/SWR Type Debit:**
 
     > Request email received to NPPI email box.
 
@@ -311,19 +308,20 @@ seed_examples:
 
     Export the data to excel and forward it to the Supplier.'
   questions_and_answers:
-  - question: ' How can the AFB Debits be pulled for vendors when there are pricing
-      issues?'
-    answer: The AFB Debits can be pulled for vendors when there is pricing issues
+  - answer: The AFB Debits can be pulled for vendors when there is pricing issues
       by going to the Pricing Database, clicking on "Vendor Excel Request - AFB/PR
       Invoices - by Invoice Date", and updating the Date range. The data can then
       be exported to excel and forwarded to the supplier.
-  - question: What is the process for handling AFBE Type Debit copy requests received
-      via email?
-    answer: The process for handling AFBE Type Debit copy requests received via email
+    question: ' How can the AFB Debits be pulled for vendors when there are pricing
+      issues?'
+  - answer: The process for handling AFBE Type Debit copy requests received via email
       involves searching for the debit copy in the Debit Copies sub folder Email Box
       using the Debit Number, copying the email and attaching it to the original request,
       and replying to the supplier with the debit copy.
-  - question: How can the BR Type Debits be found for BR Debit copy requests received
+    question: What is the process for handling AFBE Type Debit copy requests received
       via email?
-    answer: The BR Type Debits can be found for BR Debit copy requests received via
+  - answer: The BR Type Debits can be found for BR Debit copy requests received via
       email by searching in the Debit copies sub folder using the BR debit number.
+    question: How can the BR Type Debits be found for BR Debit copy requests received
+      via email?
+version: 3

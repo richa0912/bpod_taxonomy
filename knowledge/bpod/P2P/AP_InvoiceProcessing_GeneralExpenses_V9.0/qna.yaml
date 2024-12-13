@@ -1,6 +1,12 @@
-domain: 'BPOD procure to pay: AP InvoiceProcessing GeneralExpenses V9.0'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - AP_InvoiceProcessing_GeneralExpenses_V9.0.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: 'Describes how IBM BPO AP team validates and approves the General
   Expense invoices '
+domain: 'BPOD procure to pay: AP InvoiceProcessing GeneralExpenses V9.0'
 seed_examples:
 - context: "## Inputs & Outputs\n+-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
     | Input                                               | From                 \
@@ -46,18 +52,18 @@ seed_examples:
     \ and wrong GL account.)*   *\\<Describe the criteria to be used to validate if\
     \ the control point is being executed\\>*"
   questions_and_answers:
-  - question: What are the control risks associated with Control Point - Registered
-      data and invoice data must be matched?
-    answer: ' The control risk associated is the late submitting of invoices due to
+  - answer: ' The control risk associated is the late submitting of invoices due to
       lack of document, incorrect information, or wrong GL account.'
-  - question: ' Where does the invoice come from in the GSSC Portal process?'
-    answer: The invoice comes from the scanning center, where the vendor sends the
+    question: What are the control risks associated with Control Point - Registered
+      data and invoice data must be matched?
+  - answer: The invoice comes from the scanning center, where the vendor sends the
       invoice and supporting documents to CROWN ~ CAD Networks and Iron Mountain where
       Client PIC sends scanned invoice/debit note into the email address
-  - question: "What is the final output of the process Invoice Processing \u2013 General\
-      \ Expenses?"
-    answer: The invoice is posted in SAP and is ready for payment, and is sent to
+    question: ' Where does the invoice come from in the GSSC Portal process?'
+  - answer: The invoice is posted in SAP and is ready for payment, and is sent to
       the subsidiary.
+    question: "What is the final output of the process Invoice Processing \u2013 General\
+      \ Expenses?"
 - context: '**General Expenses** invoices are expenses incurred primarily by Client
     employees across all departments for:
 
@@ -168,20 +174,20 @@ seed_examples:
     which was authorized and a bar-code to validate it is a valid invoice. List of
     vendor allowed to issue e-invoice is as below, in the tab "E-invoice vendor":'
   questions_and_answers:
-  - question: What are General Expenses?
-    answer: General Expenses invoices are expenses incurred primarily by Client employees
+  - answer: General Expenses invoices are expenses incurred primarily by Client employees
       across all departments including Repairs and Maintenance, Office consumables,
       Utility (Electricity, Water, Telecom, Gardening, Parking fee, etc.), Rent &
       Lease, IT, General Affairs Expenses (Employee Welfare, Insurance, etc.) , Customer
       Service Expenses (for Maintenance centers, Call centers, etc.), Outsourcing
       expenses, and Events for company.
-  - question: How are General Expense Invoices typically received?
-    answer: General Expense Invoices are received in the form of Hard Copy via Post
+    question: What are General Expenses?
+  - answer: General Expense Invoices are received in the form of Hard Copy via Post
       or E-Invoice via email.
-  - question: How are General Expenses invoices accounted for?
-    answer: General Expenses invoices are accounted against a General Ledger Account
+    question: How are General Expense Invoices typically received?
+  - answer: General Expenses invoices are accounted against a General Ledger Account
       Code (GL) as per the nature of the expense, and Cost Center (CC) based on the
       requestor, and sent for approvals from Subsidiary Business/Finance.
+    question: How are General Expenses invoices accounted for?
 - context: "**Step of processing Settlement request for Non-PR Invoices:**\n\n**Step\
     \ 1**: Click 'Go' button at 'Invoice Verification & Confirmation (Category Change)'\
     \ to verify invoice information in OCR:\n\n**Step 2**: Verify OCR information:\n\
@@ -207,8 +213,7 @@ seed_examples:
     \ for IBM PIC to input in the system.\n\nOnce attained confirmation from Sub PIC\
     \ as shown above, IBM PIC need to choose the reason as per Sub PIC advice."
   questions_and_answers:
-  - question: What are the steps of processing Settlement request for Non-PR Invoices?
-    answer: "Following are the steps of  processing Settlement request for Non-PR\
+  - answer: "Following are the steps of  processing Settlement request for Non-PR\
       \ Invoices:\nStep 1: Click \u2018Go\u2019 button at \u2018Invoice Verification\
       \ & Confirmation (Category Change)\u2019 to verify invoice information in OCR:\n\
       Step 2: Verify OCR information:\nStep 3: Posting & Submission:\n1.\tClick 2nd\
@@ -219,16 +224,17 @@ seed_examples:
       \ to create settlement request:\n6.\tAfter select correct GL account, settlement\
       \ request will be created for posting. Proceed to submit for approval once all\
       \ settlement request information have been filled up.\n"
-  - question: What is the requirement for IBM when processing a general vendor purchase
-      that is not going through BQMS Biz Mgmt.?
-    answer: "If any general vendor purchase related to the 194 G/L Acc. not going\
+    question: What are the steps of processing Settlement request for Non-PR Invoices?
+  - answer: "If any general vendor purchase related to the 194 G/L Acc. not going\
       \ through BQMS Biz Mgmt. would require IBM to\_**select a reason code\_**while\
       \ processing through Finance hub"
-  - question: What is the scenario with BQMS contract when posting an SR on settlement
-      request?
-    answer: When posting SR on settlement request using NERP, certain GL account requires
+    question: What is the requirement for IBM when processing a general vendor purchase
+      that is not going through BQMS Biz Mgmt.?
+  - answer: When posting SR on settlement request using NERP, certain GL account requires
       IBM PIC to input BQMS contract number in which to be provided by the Sub PIC.
       IBM PIC need to input this contract number on settlement request when processing.
+    question: What is the scenario with BQMS contract when posting an SR on settlement
+      request?
 - context: 'IBM BPO AP team has to perform the following checks before processing
     an Invoice for General Expenses:
 
@@ -251,20 +257,20 @@ seed_examples:
     to provide supporting docs, avoiding the case that SUB PIC posts in different
     invoice number, then IBM cannot detect duplication.)'
   questions_and_answers:
-  - question: What action does the IBM BPO AP team take if additional supporting documents
-      are required for an invoice for General Expenses?
-    answer: The IBM BPO AP team contacts the requestor/HR-General Affairs/GWP or Customer
+  - answer: The IBM BPO AP team contacts the requestor/HR-General Affairs/GWP or Customer
       Service team to obtain the additional supporting documents.
-  - question: What happens if an invoice for General Expenses is found to be invalid?
-    answer: If the invoice is invalid (content wrongly issued or not following the
+    question: What action does the IBM BPO AP team take if additional supporting documents
+      are required for an invoice for General Expenses?
+  - answer: If the invoice is invalid (content wrongly issued or not following the
       basic rules of issuing Invoices and Receipts under Accounting Law), the invoice
       is rejected and sent back to the Vendor (if vendor sent the document package
       into scanning center) or rejected to PIC (if PIC kept the hardcopy and sent
       the scanned files to Iron Mountain email address).
-  - question: Who should ensure that an invoice for General expenses is not duplicate
-      prior to processing?
-    answer: The AP Invoice Processor should ensure that invoice is not duplicate,
+    question: What happens if an invoice for General Expenses is found to be invalid?
+  - answer: The AP Invoice Processor should ensure that invoice is not duplicate,
       prior to processing.
+    question: Who should ensure that an invoice for General expenses is not duplicate
+      prior to processing?
 - context: 'If the gray fields was captured incorrectly, IBM PIC must contact team
     leader/reprocessing PIC to request correction, due to the gray fields are ones
     of control activities of this accounting procedure. In case captured company code/business
@@ -302,21 +308,19 @@ seed_examples:
     to save the data partially confirmed and input, click on button "Save" at the
     bottom of the left window.'
   questions_and_answers:
-  - question: What is the procedure for rejecting an invoice that was issued incorrectly?
-    answer: If the invoice was issued incorrectly, IBM PICs need make sure that SUBs
+  - answer: If the invoice was issued incorrectly, IBM PICs need make sure that SUBs
       PIC confirmation either attach in GSSC Comment side bar or received email via
       GSSC before clicking on button "reject", note down the rejection reason and
       send out an email to Client PIC, carbon copy teamleader to notify the SR has
       been rejected.
-  - question: ' How does the IBM PIC handle an invoice that was scanned too blurrily
-      to view?'
-    answer: If the invoice was scanned too blurrily to view, IBM PIC must click on
+    question: What is the procedure for rejecting an invoice that was issued incorrectly?
+  - answer: If the invoice was scanned too blurrily to view, IBM PIC must click on
       button "rescan" and request scanning center to scan the document package again.
       IBM PIC need follow up closedly due to TAT still running, it will causes TAT
       overrun if rescan long time didn't come back.
-  - question: What is the step-by-step procedure that the IBM PIC must follow when
-      the gray fields are captured incorrectly in the accounting procedure?
-    answer: 'If the gray fields was captured incorrectly, IBM PIC must contact team
+    question: ' How does the IBM PIC handle an invoice that was scanned too blurrily
+      to view?'
+  - answer: 'If the gray fields was captured incorrectly, IBM PIC must contact team
       leader/reprocessing PIC to request correction. In case captured company code/business
       area/original invoice number was wrong, IBM PIC must contact the reprocessing
       PIC by clicking on the button "Reprocess" at the bottom of the left window,
@@ -327,3 +331,6 @@ seed_examples:
       date, invoice amount, currency was wrong, IBM PIC must contact team leader by
       clicking on "Modify" button to note down the points which need to be corrected
       and click "ok". '
+    question: What is the step-by-step procedure that the IBM PIC must follow when
+      the gray fields are captured incorrectly in the accounting procedure?
+version: 3

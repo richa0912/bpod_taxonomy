@@ -1,8 +1,14 @@
-domain: 'BPOD procure to pay: P2P_Invoice Processing_AP Springfield Chargesbacks Upload_2022_v1.0'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - P2P_Invoice_Processing_AP_Springfield_Chargesbacks_Upload_2022_v1.0.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: This document outlines the IBM Delivery Centre's process for performing
   Springfield chargebacks via spreadsheet uploads. Chargeback invoices are received
   from plant representatives and uploaded to PeopleSoft using the Spreadsheet Upload
   Process, sent to the Knoxville Uploads mailbox.
+domain: 'BPOD procure to pay: P2P_Invoice Processing_AP Springfield Chargesbacks Upload_2022_v1.0'
 seed_examples:
 - context: '
 
@@ -44,23 +50,22 @@ seed_examples:
     to CS and the CS have recognized that this is correct, the supplier has provided
     goods and services and that''s when a reversal is processed.'
   questions_and_answers:
-  - question: What happens if there is missing documentation for a chargeback invoice?
-    answer: If there is missing documentation for a chargeback invoice, the dollar
+  - answer: If there is missing documentation for a chargeback invoice, the dollar
       amount must be researched to determine the correct amount to charge as a fee.
       If there is a shortage of dollar amount, a negative dollar amount is done.
-  - question: What does the "R" notation in the invoice number indicate?
-    answer: The "R" notation in the invoice number indicates that the supplier had
+    question: What happens if there is missing documentation for a chargeback invoice?
+  - answer: The "R" notation in the invoice number indicates that the supplier had
       disputed the charge and has provided supporting documentation to CS, which has
       been recognized as correct.
-  - question: What is the significance of the -$500 charge in the spreadsheet?
-    answer: The -$500 charge is done when the location had to do any additional work,
+    question: What does the "R" notation in the invoice number indicate?
+  - answer: The -$500 charge is done when the location had to do any additional work,
       and the positive $500 charge is the reversal of a disputed charge. The supplier
       had disputed it, but provided supporting documentation to CS, which has been
       recognized as correct.
-- context: '
-    5.  If there is a leading Zero In the supplier code or a vendor code on the left
-    of the zero there will be a **green** **color** tick mark that is populated for
-    That zero to Come over
+    question: What is the significance of the -$500 charge in the spreadsheet?
+- context: ' 5.  If there is a leading Zero In the supplier code or a vendor code
+    on the left of the zero there will be a **green** **color** tick mark that is
+    populated for That zero to Come over
 
     6.  We Verify the dollar amount would be the same in "**R, DF and GU**" as in
     most of the uploads
@@ -124,21 +129,21 @@ seed_examples:
     before creating a new one. Change the DEST.XML file name to the Upload that was
     previously done, MMDD, YYYY, and saves.'
   questions_and_answers:
-  - question: What is the purpose of verifying the dollar amount in columns R, DF,
-      and GU?
-    answer: The purpose of verifying the dollar amount in columns R, DF, and GU is
+  - answer: The purpose of verifying the dollar amount in columns R, DF, and GU is
       to ensure that the amounts match the amount from the original spreadsheet. If
       the amounts do not match, a response should be sent to the original email advising
       of the discrepancy.
-  - question: What happens if a DEST.XML file already exists in the M:\APVoucherUpload
-      directory?
-    answer: If a DEST.XML file already exists, it must be moved to the M:\APVoucherUpload\Archive
+    question: What is the purpose of verifying the dollar amount in columns R, DF,
+      and GU?
+  - answer: If a DEST.XML file already exists, it must be moved to the M:\APVoucherUpload\Archive
       directory before creating a new one. The DEST.XML file name should be changed
       to reflect the previous upload date in the format MMDD, YYYY.
-  - question: What should be done if there is a leading zero in the supplier code
+    question: What happens if a DEST.XML file already exists in the M:\APVoucherUpload
+      directory?
+  - answer: If there is a leading zero in the supplier code or vendor code, a green
+      color tick mark will be populated to indicate that the zero should be removed.
+    question: What should be done if there is a leading zero in the supplier code
       or vendor code?
-    answer: If there is a leading zero in the supplier code or vendor code, a green
-      color tick mark will be populated to indicate that the zero should be removed.  
 - context: "## Objective(s)\n\nThe objective of this is to upload supplier chargeback\
     \ debit invoices issued by the Springfield plant location into PeopleSoft\n\n\
     **2.2.1 Frequency:** As needed\n\n**2.2.2 Source:** Outlook Knoxville Uploads\
@@ -200,111 +205,102 @@ seed_examples:
     \ into PeopleSoft.\n\nNote: The total number of tokens used in the context is\
     \ 345.\n\nCopy Text\n\nCheck Bias"
   questions_and_answers:
-  - question: What is the objective of the AP Springfield Chargebacks Upload process?
-    answer: The objective of the AP Springfield Chargebacks Upload process is to upload
+  - answer: The objective of the AP Springfield Chargebacks Upload process is to upload
       supplier chargeback debit invoices issued by the Springfield plant location
       into PeopleSoft.
-  - question: What is the source of the input for AP Springfield Chargebacks Upload
-      process?
-    answer: The input for  AP Springfield Chargebacks Upload process is received in
+    question: What is the objective of the AP Springfield Chargebacks Upload process?
+  - answer: The input for  AP Springfield Chargebacks Upload process is received in
       the Outlook Knoxville Uploads Mailbox, which is issued by the Springfield plant
       location.
-  - question: Who is responsible for uploading chargeback debit invoices into PeopleSoft
-    answer: The Invoice Processing Team is responsible for uploading chargeback debit
+    question: What is the source of the input for AP Springfield Chargebacks Upload
+      process?
+  - answer: The Invoice Processing Team is responsible for uploading chargeback debit
       invoices into PeopleSoft
+    question: Who is responsible for uploading chargeback debit invoices into PeopleSoft
 - context: '**NOTE:** If there is an error with the upload, the box will say an error
     has occurred. Start the entire process again. If the error continues, then you
     may have bad data in the file. In the original file, delete any blank rows at
     the bottom or blank columns to the far right. If that still does not resolve the
-    issue on the next attempt, then contact local System Support to assist.
-    25. Then a pop-up will come "**The** **process** **successfully finished**".
-    Note: if any errors are found it will go to the staging table and it will go to
-    the integration broker.
-    26. Open PeopleSoft to verify upload was successful.
-    27. Select **reporting** **tool.**
-    28. Click on **query** **viewer**
-    29. Search for **Staged Vouchers query: ZI_AP_STAGED_VOUCHERS**, select Run to
-    **Excel**.
-    30. Enter **Origin** **KUP** (Knoxville Upload), Select View **Results.**
-    31. Select **open**.
-    32. Data will be **downloaded** then click on **enable** **editing**
-    33. Delete Line 1 -Voucher Row, right-click, select **delete.**
-    34. Scroll through the file to see if it matches the original file. In this, case
-    there have been other files uploaded. Remove any invoices that do not pertain
-    to this upload by highlighting and deleting it. Once this is done the remaining
-    invoices should match the original file.
-    35. These are the records that we will find that were uploaded 77 (in this case
-    it has been entered **twice** as there was another uploader who did the same request,
+    issue on the next attempt, then contact local System Support to assist. 25. Then
+    a pop-up will come "**The** **process** **successfully finished**". Note: if any
+    errors are found it will go to the staging table and it will go to the integration
+    broker. 26. Open PeopleSoft to verify upload was successful. 27. Select **reporting**
+    **tool.** 28. Click on **query** **viewer** 29. Search for **Staged Vouchers query:
+    ZI_AP_STAGED_VOUCHERS**, select Run to **Excel**. 30. Enter **Origin** **KUP**
+    (Knoxville Upload), Select View **Results.** 31. Select **open**. 32. Data will
+    be **downloaded** then click on **enable** **editing** 33. Delete Line 1 -Voucher
+    Row, right-click, select **delete.** 34. Scroll through the file to see if it
+    matches the original file. In this, case there have been other files uploaded.
+    Remove any invoices that do not pertain to this upload by highlighting and deleting
+    it. Once this is done the remaining invoices should match the original file. 35.
+    These are the records that we will find that were uploaded 77 (in this case it
+    has been entered **twice** as there was another uploader who did the same request,
     hence we need to send an email to terms maintenance team to mass delete of these
-    duplicate records)
-    36. Here the amount is **doubled** (because it has been uploaded twice) (this
-    needs to be sent in an email saying this has been uploaded twice)
+    duplicate records) 36. Here the amount is **doubled** (because it has been uploaded
+    twice) (this needs to be sent in an email saying this has been uploaded twice)
     However, if the query did not return any records, then continue to run the query
     periodically over the next hour. If the records still are not showing, report
     an issue by going to [https://xxx.Client.com/Client](https://xxx.navistar.com/navistar)'
   questions_and_answers:
-  - question: What happens if an error occurs during the upload process?
-    answer: If an error occurs, a message will appear indicating that an error has
+  - answer: If an error occurs, a message will appear indicating that an error has
       occurred, and the entire process should be started again. If the error persists,
       it may be due to bad data in the file, and the original file should be checked
       for blank rows or columns, and if necessary, local System Support should be
       contacted for assistance.
-  - question: What is the purpose of running the Staged Vouchers query in PeopleSoft?
-    answer: The purpose of running the Staged Vouchers query is to verify that the
+    question: What happens if an error occurs during the upload process?
+  - answer: The purpose of running the Staged Vouchers query is to verify that the
       upload was successful and to check for any errors or discrepancies in the data.
       The query is used to search for staged vouchers and to view the results in Excel.
-  - question: What should be done if duplicate records are found in the Staged Vouchers
-      query?
-    answer: If duplicate records are found, an email should be sent to the Terms Maintenance
+    question: What is the purpose of running the Staged Vouchers query in PeopleSoft?
+  - answer: If duplicate records are found, an email should be sent to the Terms Maintenance
       team to request a mass deletion of the duplicate records. Additionally, an email
       should be sent to the team to notify them of the issue and to ask them to investigate
       further.
-- context: 'However, if the query did not return any records, then continue to run
+    question: What should be done if duplicate records are found in the Staged Vouchers
+      query?
+- context: However, if the query did not return any records, then continue to run
     the query periodically over the next hour. If the records still are not showing,
     report an issue by going to [https://xxx.com/Client](https://xxx.navistar.com/navistar)
-    37. Open **Report** an **Issue**
-    38. Enter reason as PeopleSoft Integration Broker -- Production Critical, enter
-    Description of an issue as Please assigns to DL PeopleSoft FSCM Support Team.
-    "Please advise if there is an upload that has timed out or if there is an error
-    causing the upload not to show in staging tables", you can add the PS Upload template
-    where you generated the file from as an attachment to the incident report by saving
-    the file to your OneDrive then selecting add an attachment.
-    In some cases, a job has timed out ahead of the upload and once that is cleared,
-    the upload will feed into PeopleSoft. There are other times when the file has
-    to be uploaded again. Proceed with caution in those instances, as there have been
-    times when the file has duplicated when we have been instructed to upload again.
-    If the file is duplicated, then follow the Desk Procedures for Pre-Edit and Recycle
-    to clear. If it is a large volume, then reference the File Maintenance Desk Procedures
-    for Mass Deletion.
-    If the support team says the file has been uploaded, but it does not show in Staged
-    Vouchers, then enough time may have passed where the voucher has been created
-    and can be found in Regular Entry by searching by Business Unit and Invoice Number.
-    If the upload runs close to 4:30 EST, then you may ''miss'' the vouchers in staging
-    tables and they will be able to be viewed in Regular Entry since the voucher has
-    already been created.
-    39. Once the uploading is completed then send the mail in outlook
-    40. Return to **Outlook** **Knoxville** **Uploads** and select the email for the
-    file uploaded, select reply all
-    41. Select **Insert, select Attach File, and select the correct file**
-    42. In the body enter **Process has been completed** and attached is the PS Confirmation
-    file, Select **Send**
-    43. **Move both emails to Knoxville uploads Archive,** Saved Emails, Springfield
-    Supplier Chargebacks Completed folder'
+    37. Open **Report** an **Issue** 38. Enter reason as PeopleSoft Integration Broker
+    -- Production Critical, enter Description of an issue as Please assigns to DL
+    PeopleSoft FSCM Support Team. "Please advise if there is an upload that has timed
+    out or if there is an error causing the upload not to show in staging tables",
+    you can add the PS Upload template where you generated the file from as an attachment
+    to the incident report by saving the file to your OneDrive then selecting add
+    an attachment. In some cases, a job has timed out ahead of the upload and once
+    that is cleared, the upload will feed into PeopleSoft. There are other times when
+    the file has to be uploaded again. Proceed with caution in those instances, as
+    there have been times when the file has duplicated when we have been instructed
+    to upload again. If the file is duplicated, then follow the Desk Procedures for
+    Pre-Edit and Recycle to clear. If it is a large volume, then reference the File
+    Maintenance Desk Procedures for Mass Deletion. If the support team says the file
+    has been uploaded, but it does not show in Staged Vouchers, then enough time may
+    have passed where the voucher has been created and can be found in Regular Entry
+    by searching by Business Unit and Invoice Number. If the upload runs close to
+    4:30 EST, then you may 'miss' the vouchers in staging tables and they will be
+    able to be viewed in Regular Entry since the voucher has already been created.
+    39. Once the uploading is completed then send the mail in outlook 40. Return to
+    **Outlook** **Knoxville** **Uploads** and select the email for the file uploaded,
+    select reply all 41. Select **Insert, select Attach File, and select the correct
+    file** 42. In the body enter **Process has been completed** and attached is the
+    PS Confirmation file, Select **Send** 43. **Move both emails to Knoxville uploads
+    Archive,** Saved Emails, Springfield Supplier Chargebacks Completed folder
   questions_and_answers:
-  - question: What should be done if the Staged Vouchers query does not return any
-      records?
-    answer: If the query does not return any records, the query should be run periodically
+  - answer: If the query does not return any records, the query should be run periodically
       over the next hour. If the records still do not show, an issue should be reported
       by going to https://xxx.Client.com/Client and filling out a report.
-  - question: What is the purpose of reporting an issue to the PeopleSoft FSCM Support
-      Team?
-    answer: The purpose of reporting an issue to the PeopleSoft FSCM Support Team
+    question: What should be done if the Staged Vouchers query does not return any
+      records?
+  - answer: The purpose of reporting an issue to the PeopleSoft FSCM Support Team
       is to request assistance with resolving the issue with the upload not showing
       in the staging tables. The report should include a description of the issue
       and the PS Upload template as an attachment.
-  - question: What should be done if the support team confirms that the file has been
-      uploaded, but it does not show in Staged Vouchers?
-    answer: If the support team confirms that the file has been uploaded, but it does
+    question: What is the purpose of reporting an issue to the PeopleSoft FSCM Support
+      Team?
+  - answer: If the support team confirms that the file has been uploaded, but it does
       not show in Staged Vouchers, it may be due to the voucher having been created
       and moved to Regular Entry. In this case, the vouchers can be searched for in
       Regular Entry by business unit and invoice number.
+    question: What should be done if the support team confirms that the file has been
+      uploaded, but it does not show in Staged Vouchers?
+version: 3

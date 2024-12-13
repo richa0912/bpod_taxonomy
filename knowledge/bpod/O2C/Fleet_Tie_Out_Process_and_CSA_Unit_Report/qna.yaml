@@ -1,6 +1,12 @@
-domain: 'BPOD order to cash: Fleet Tie Out Process and CSA Unit Report'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Fleet_Tie_Out_Process_and_CSA_Unit_Report.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: The steps involved in matching the total inventory during the month
   end with the total inventory on the beginning of the next month.
+domain: 'BPOD order to cash: Fleet Tie Out Process and CSA Unit Report'
 seed_examples:
 - context: "# Control Points\n\n+----------------+--------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+---------------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------------------------------------------------------+-------------------------------------------------+---+\n\
     | ***Step No.*** | ***Sub process Activity***                                \
@@ -61,19 +67,19 @@ seed_examples:
     \ workday and workday 1 of every month.\n>\n> CSA Unit Report file is performed\
     \ on workday 1 of every month."
   questions_and_answers:
-  - question: When is CSA unit report file prepared?
-    answer: CSA Unit Report file is performed on workday 1 of every month
-  - question: What are the control points and their objectives for the Fleet Tie Out
-      Process
-    answer: "There is only one control point for the Fleet Tue out process: Tie out\
+  - answer: CSA Unit Report file is performed on workday 1 of every month
+    question: When is CSA unit report file prepared?
+  - answer: "There is only one control point for the Fleet Tue out process: Tie out\
       \ working file should be shared with Fleet invoicing assistants and CSA Team.\
       \ It\u2019s objective is to make sure that the pending units are worked on priority\
       \ to recognize the revenue on same month.\n\t\n\t"
-  - question: What is the risk of not sharing the Tie out working file with Fleet
-      invoicing assistants and CSA Team in a timely manner?
-    answer: 'If the Tie out working file is not shared with Fleet invoicing assistants
+    question: What are the control points and their objectives for the Fleet Tie Out
+      Process
+  - answer: 'If the Tie out working file is not shared with Fleet invoicing assistants
       and CSA Team in a timely manner, the fleet invoicing assistants and CSA team
       will not be aware about the pending units for invoicing. '
+    question: What is the risk of not sharing the Tie out working file with Fleet
+      invoicing assistants and CSA Team in a timely manner?
 - context: '### CSA UNIT REPORT
 
 
@@ -92,22 +98,22 @@ seed_examples:
 
     The activity concludes here.'
   questions_and_answers:
-  - question: Where should the Excel file for CSA Unit Report be saved before sending
-      the report to CSA team?
-    answer: The Excel file for CSA Unit Report should be saved in 'M:\\GeneralSales\\Ellen
+  - answer: The Excel file for CSA Unit Report should be saved in 'M:\\GeneralSales\\Ellen
       Sales Invoicing Items\\Workday 1 and 2 Inventory\\FY 2022\\04 April\\WD1]' with
       file name 'MONTH END INVENTORY 052022' before the CSA report is sent to the
       CSA team.
-  - question: What does CSA stand for in Fleet Tie Out Process and CSA Unit Report?
-    answer: CSA in Fleet Tie Out Process and CSA Unit Report stands for Central Sales
+    question: Where should the Excel file for CSA Unit Report be saved before sending
+      the report to CSA team?
+  - answer: CSA in Fleet Tie Out Process and CSA Unit Report stands for Central Sales
       Administration.
-  - question: What are steps to create and save CSA Unit Report Excel file.
-    answer: "Following are the steps to create and save CSA Unit Report Excel File.\n\
+    question: What does CSA stand for in Fleet Tie Out Process and CSA Unit Report?
+  - answer: "Following are the steps to create and save CSA Unit Report Excel File.\n\
       \n1.  Open WD1 INVENTORY MAY 2022 file.\n2.  Copy Fleet Inventory WD1 tab and\
       \ Busfleet Inventory WD1 tab to a new excel file. \n3. Delete the calculation\
       \ and Vlookup formula from both the tabs.\n4.  Save the file in the path 'M:\\\
       \\GeneralSales\\\\Ellen Sales Invoicing Items\\\\Workday 1 and 2 Inventory\\\
       \\FY 2022\\\\04 April\\\\WD1' with file name 'MONTH END INVENTORY 052022'."
+    question: What are steps to create and save CSA Unit Report Excel file.
 - context: "### Tie out Process : Last Workday of the month\n\n1.  Every day an auto\
     \ generated email will be received from .DL IT CA Supt Invoicing mailbox to the\
     \ Fleet invoicing mailbox for Fleet and Bus Inventory report. Open the emails.\n\
@@ -132,30 +138,30 @@ seed_examples:
     \ excel file into the LAST WORKDAY INVENTORY MONTH YEAR file and rename the tab\
     \ with location and customer name(in this case its, **114 AIM)**."
   questions_and_answers:
-  - question: What is the frequency of emails received from DL IT CA Supt Invoicing
-      mailbox to the Fleet invoicing mailbox for Fleet and Bus Inventory report?
-    answer: The frequency of emails received from DL IT CA Supt Invoicing mailbox
+  - answer: The frequency of emails received from DL IT CA Supt Invoicing mailbox
       to the Fleet invoicing mailbox for Fleet and Bus Inventory report is daily.
-  - question: 'Where is the guidance to save Excel file for ''Tie out Process : Last
-      Workday of the month''?'
-    answer: 'The Excel file for ''Tie out Process : Last Workday of the month'' should
+    question: What is the frequency of emails received from DL IT CA Supt Invoicing
+      mailbox to the Fleet invoicing mailbox for Fleet and Bus Inventory report?
+  - answer: 'The Excel file for ''Tie out Process : Last Workday of the month'' should
       be saved in ''M:\\Download\\GeneralSales\\Ellen Sales Invoicing Items\\Workday
       1 and 2 Inventory\\FY2022\\04 April\\Last WD'' with name ''LAST WORKDAY INVENTORY
       MONTH YEAR''.'
-  - question: 'What are the steps to download data from Truck movers website for Tie
-      out Process : Last Workday of the month?'
-    answer: 'Following are the steps to download data from Truck movers website for
+    question: 'Where is the guidance to save Excel file for ''Tie out Process : Last
+      Workday of the month''?'
+  - answer: 'Following are the steps to download data from Truck movers website for
       Tie out Process : Last Workday of the month.
 
 
       1. Copy VIN number from the fleet inventory file.
 
-      2. Open Truck Movers webiste using link ''https://example.com'' and click
-      on ''Serial'' option.
+      2. Open Truck Movers webiste using link ''https://example.com'' and click on
+      ''Serial'' option.
 
       3. Paste the copied VIN numbers and click on Search option.
 
       4. Click on Export option to download the data from the website.'
+    question: 'What are the steps to download data from Truck movers website for Tie
+      out Process : Last Workday of the month?'
 - context: '14. Follow steps 1.7 to 1.13 for all customers that has Term TM Delivery
     to update into the file. The same should be followed for Bus Inventory tab also.
 
@@ -191,21 +197,21 @@ seed_examples:
     **[M:\\Download\\GeneralSales\\Ellen Sales Invoicing Items\\Workday 1 and 2 Inventory\\
     FY2022\\04 April\\Last WD]{.ul}** and both'
   questions_and_answers:
-  - question: For which customer 3rd Party completion is required in Tie out process?
-    answer: 3rd Party completion is required in Tie out process for customer 320 Star.
-  - question: What is the exception for customer 320 star in Tie out process?
-    answer: 'For customer 320 Star, filter in column H(Model) to see if there are
+  - answer: 3rd Party completion is required in Tie out process for customer 320 Star.
+    question: For which customer 3rd Party completion is required in Tie out process?
+  - answer: 'For customer 320 Star, filter in column H(Model) to see if there are
       any medium units are available. Model starts with M are medium trucks. For these
       units a 3rd party completion confirmation is required. Update REQUIRES 3RD PARTY
       COMPLETION as comment for these
 
       units.'
-  - question: Where should we save the last workday for Fleet Tie Out Process and
-      CSA Unit Report?
-    answer: Last workday for Fleet Tie Out Process and CSA Unit Report should be saved
+    question: What is the exception for customer 320 star in Tie out process?
+  - answer: Last workday for Fleet Tie Out Process and CSA Unit Report should be saved
       in 'M:\\Download\\GeneralSales\\Ellen Sales Invoicing Items\\Workday 1 and 2
       Inventory\\ FY2022\\04 April\\Last WD' with name LAST WORKDAY INVENTORY MONTH
       YEAR.
+    question: Where should we save the last workday for Fleet Tie Out Process and
+      CSA Unit Report?
 - context: '7.  Paste the copied formula into the current month working file. Update
     details as follows.
 
@@ -268,16 +274,17 @@ seed_examples:
 
     15. Once file is completed send to Ellen for approval.'
   questions_and_answers:
-  - question: How to update volume of new inventory during Tie out process on WD1?
-    answer: To update the volume for New Inventory, in Fleet Inventory WD1 tab and
+  - answer: To update the volume for New Inventory, in Fleet Inventory WD1 tab and
       Busfleet inventory WD1 tab put filter in Create Date(column K) and select only
       current month dated line items(in this case May month), the total count will
       be the new inventory. Highlight these items with a color, this is going to feed
       the data for CSA Unit Report.
-  - question: What is the formula to to count Last WD Beginning Inventory?
-    answer: Last WD Beginning Inventory = Total count in Fleet Inventory Last WD tab
+    question: How to update volume of new inventory during Tie out process on WD1?
+  - answer: Last WD Beginning Inventory = Total count in Fleet Inventory Last WD tab
       + Total count in Busfleet Inventory last WD tab
-  - question: Where to save the Fleet and Bus Inventory report in Tie out process?
-    answer: Save the file in the path M:\Download\GeneralSales\Ellen Sales Invoicing
+    question: What is the formula to to count Last WD Beginning Inventory?
+  - answer: Save the file in the path M:\Download\GeneralSales\Ellen Sales Invoicing
       Items\Workday 1 and 2 Inventory\FY2022\04 April\Last WD, with name LAST WORKDAY
       INVENTORY MONTH YEAR.
+    question: Where to save the Fleet and Bus Inventory report in Tie out process?
+version: 3

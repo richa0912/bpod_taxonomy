@@ -1,4 +1,9 @@
-domain: 'BPOD Human Resource: Hope Medical Center_Time Away for Providers Policy'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Hope_Medical_Center_Time_Away_for_Providers_Policy.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Hope Medical Center's Time Away for Providers Policy outlines the
   facility's policy and expectations for providers who accrue time away for planned
   and unplanned absences. Providers can use time away for vacation, holidays, personal
@@ -6,6 +11,7 @@ document_outline: Hope Medical Center's Time Away for Providers Policy outlines 
   be made in advance and approved according to departmental procedures. Time away
   can be used to cover short-term disability and workers' compensation waiting periods
   and can supplement benefits.
+domain: 'BPOD Human Resource: Hope Medical Center_Time Away for Providers Policy'
 seed_examples:
 - context: '3. Time Away Scheduling and Usage
 
@@ -39,24 +45,24 @@ seed_examples:
     the provider takes time off until the time away bank is exhausted. Work Relative
     Value Unit (RVU) credit is not given for time away days.'
   questions_and_answers:
-  - question: How should providers make time away requests under  Hope Medical Center's
-      Time Away for Providers Policy?
-    answer: Providers are encouraged to make time away requests as much in advance
+  - answer: Providers are encouraged to make time away requests as much in advance
       as possible and follow departmental procedures for approval under  Hope Medical
       Center's Time Away for Providers Policy. Requests may be approved or denied
       based on department needs and work requirements.
-  - question: What happens when two or more providers request time away at the same
-      time in  Hope Medical Center's Time Away for Providers Policy?
-    answer: When two or more providers request time away at the same time for the
+    question: How should providers make time away requests under  Hope Medical Center's
+      Time Away for Providers Policy?
+  - answer: When two or more providers request time away at the same time for the
       same period, and both requests cannot be granted, the requests will be subject
       to the core leader's determination unless the reason for the time away request
       falls under a federal, state, or municipal sick leave law under  Hope Medical
       Center's Time Away for Providers Policy.
-  - question: Can providers request time away to replace irregularly scheduled hours
-      under  Hope Medical Center's Time Away for Providers Policy?
-    answer: No, providers may only request time away to replace regularly scheduled
+    question: What happens when two or more providers request time away at the same
+      time in  Hope Medical Center's Time Away for Providers Policy?
+  - answer: No, providers may only request time away to replace regularly scheduled
       hours, not to exceed their normally scheduled work hours under  Hope Medical
       Center's Time Away for Providers Policy.
+    question: Can providers request time away to replace irregularly scheduled hours
+      under  Hope Medical Center's Time Away for Providers Policy?
 - context: '6. Short-Term Disability and Workers'' Compensation. Time away can be
     used to cover the waiting periods for both short-term disability and workers''
     compensation leaves. Time away can also be used to supplement short-term disability
@@ -79,26 +85,26 @@ seed_examples:
     chooses to work a holiday, with prior approval, no time away time will be used
     and the day will be recorded as a regular work day.'
   questions_and_answers:
-  - question: How can time away be used for short-term disability and workers' compensation
-      leaves under  Hope Medical Center's Time Away for Providers Policy?
-    answer: Time away can be used to cover the waiting periods for both short-term
+  - answer: Time away can be used to cover the waiting periods for both short-term
       disability and workers' compensation leaves under  Hope Medical Center's Time
       Away for Providers Policy. It can also be used to supplement short-term disability
       or workers' compensation benefits to 100% of base pay for the life of the claim
       or until time away is exhausted.
-  - question: What happens when a provider is rehired or reinstated under  Hope Medical
-      Center's Time Away for Providers Policy?
-    answer: Providers rehired or reinstated will have the time away days front-loaded
+    question: How can time away be used for short-term disability and workers' compensation
+      leaves under  Hope Medical Center's Time Away for Providers Policy?
+  - answer: Providers rehired or reinstated will have the time away days front-loaded
       into their time away bank, prorated based on FTE and date of reinstatement/rehire
       under  Hope Medical Center's Time Away for Providers Policy.
-  - question: How is time away used for holidays under  Hope Medical Center's Time
-      Away for Providers Policy?
-    answer: If available, time away is to be used for holiday observances under  Hope
+    question: What happens when a provider is rehired or reinstated under  Hope Medical
+      Center's Time Away for Providers Policy?
+  - answer: If available, time away is to be used for holiday observances under  Hope
       Medical Center's Time Away for Providers Policy. Time away is not applied when
       working on a designated holiday. However, if a provider scheduled to work the
       designated holiday but requests the day off, they will be required to use time
       away. If a caregiver chooses to work a holiday with prior approval, no time
       away time will be used and the day will be recorded as a regular work day.
+    question: How is time away used for holidays under  Hope Medical Center's Time
+      Away for Providers Policy?
 - context: 'Hope Medical Center ("facility")
 
     Department: Human Resources
@@ -130,20 +136,21 @@ seed_examples:
     sick leave law requirements. Caregivers should refer to those specific policies/guidelines
     for additional information.'
   questions_and_answers:
-  - question: Who is Hope Medical Center's Time Away for Providers Policy applicable
-      to?
-    answer: The  Hope Medical Center's Time Away for Providers Policy is applicable
+  - answer: The  Hope Medical Center's Time Away for Providers Policy is applicable
       to all time away-eligible providers, which include non-shift-based physicians
       and advanced practice providers at Hope Medical Center.
-  - question: What is the purpose of the  Hope Medical Center's Time Away for Providers
-      Policy?
-    answer: The purpose of the  Hope Medical Center's Time Away for Providers Policy
+    question: Who is Hope Medical Center's Time Away for Providers Policy applicable
+      to?
+  - answer: The purpose of the  Hope Medical Center's Time Away for Providers Policy
       is to establish the facility's policy and expectations for providers who accrue
       time away for planned and unplanned absences, while maintaining work-life balance.
-  - question: Does this policy replace or preempt any federal, state, or municipal
-      sick leave law requirements under Hope Medical Center's Time Away for Providers
+    question: What is the purpose of the  Hope Medical Center's Time Away for Providers
       Policy?
-    answer: No, the  Hope Medical Center's Time Away for Providers Policy does not
+  - answer: No, the  Hope Medical Center's Time Away for Providers Policy does not
       replace or preempt any federal, state, or municipal sick leave law requirements.
       Caregivers should refer to those specific policies/guidelines for additional
       information.
+    question: Does this policy replace or preempt any federal, state, or municipal
+      sick leave law requirements under Hope Medical Center's Time Away for Providers
+      Policy?
+version: 3

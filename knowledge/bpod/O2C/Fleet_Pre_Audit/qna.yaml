@@ -1,6 +1,12 @@
-domain: 'BPOD order to cash: Fleet Pre Audit'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Fleet_Pre_Audit.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Explains the steps involved in the reviewing paperwork created for
   invoicing for the trucks that are delivered for recognizing the revenue.
+domain: 'BPOD order to cash: Fleet Pre Audit'
 seed_examples:
 - context: "# Control Points\n\n+----------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------+---------------------------------------------------------------------------------+-------------------------------------------------------------------+-------------------------------------------------------------------------------+---+\n\
     | ***Step No.*** | ***Sub process Activity***                                \
@@ -61,20 +67,20 @@ seed_examples:
     \n## Process Measurement Reports \n\n> Pre Audit for Fleet activity will be performed\
     \ on Daily basis."
   questions_and_answers:
-  - question: How frequently is the pre-audit for fleet activity performed?
-    answer: The pre-audit for fleet activity is performed on a daily basis.
-  - question: What is the risk assertion associated with the control activity "Checking
-      all the paperwork and calculation with reference to the invoicing checklist"
-      in Fleet pre-audit?
-    answer: The risk assertion associated with the control activity "Checking all
+  - answer: The pre-audit for fleet activity is performed on a daily basis.
+    question: How frequently is the pre-audit for fleet activity performed?
+  - answer: The risk assertion associated with the control activity "Checking all
       the paperwork and calculation with reference to the invoicing checklist" in
       Fleet pre-audit is that revenue will not be recognized because invoicing will
       not happen without pre-audit.
-  - question: During fleet pre-audit, what is the objective of control point "Checking
-      all the paperwork and calculation with reference to the invoicing checklist"?
-    answer: During fleet pre-audit, objective of control point "Checking all the paperwork
+    question: What is the risk assertion associated with the control activity "Checking
+      all the paperwork and calculation with reference to the invoicing checklist"
+      in Fleet pre-audit?
+  - answer: During fleet pre-audit, objective of control point "Checking all the paperwork
       and calculation with reference to the invoicing checklist" is to identify missed
       and mismatched paperwork and correct calculations before invoicing.
+    question: During fleet pre-audit, what is the objective of control point "Checking
+      all the paperwork and calculation with reference to the invoicing checklist"?
 - context: '# Overview
 
 
@@ -118,21 +124,21 @@ seed_examples:
 
     +----------------------------+--------------------+---------------------------------------------------------+-------------------------------------------------------+-----------------+'
   questions_and_answers:
-  - question: What are some of the key pieces of information that need to be checked
-      during the pre-audit process?
-    answer: The key information that need to be checked during the pre-audit process
+  - answer: The key information that need to be checked during the pre-audit process
       include Total price of the unit, Credit limit of the customer from PeopleSoft,
       PO Number available on factory invoice and worksheet summary, SPA amount from
       eDeal website, Freight charges, Surcharges, Delivery date, Terms with the customer
       on recognizing revenue, Special Prep & Delivery, Rebates and Warranty, FET calculations,
       and backup emails with reference to the invoicing checklist.
-  - question: Who is the supplier in the SIPOC (Supplier, Input, Process, Output,
-      Customer) diagram for Fleet pre-audit?
-    answer: The supplier in the SIPOC diagram for Fleet pre-audit are the Fleet Invoicing
+    question: What are some of the key pieces of information that need to be checked
+      during the pre-audit process?
+  - answer: The supplier in the SIPOC diagram for Fleet pre-audit are the Fleet Invoicing
       Assistants.
-  - question: What is the output of the pre-audit process?
-    answer: The output of the pre-audit process are the corrections made to the paperwork
+    question: Who is the supplier in the SIPOC (Supplier, Input, Process, Output,
+      Customer) diagram for Fleet pre-audit?
+  - answer: The output of the pre-audit process are the corrections made to the paperwork
       and units being sent for invoicing.
+    question: What is the output of the pre-audit process?
 - context: '## Overview
 
 
@@ -149,23 +155,23 @@ seed_examples:
     to the invoicing checklist. Pre Auditor should perform this activity daily before
     the invoices are send for processing in the overnight batch run.'
   questions_and_answers:
-  - question: What is the purpose of the pre-audit activity?
-    answer: The purpose of the pre-audit activity is to review and ensure that all
+  - answer: The purpose of the pre-audit activity is to review and ensure that all
       paperwork for a particular truck/unit is accurate, complete, and aligned with
       the checklist and the amount matches with the factory invoice, worksheet summary
       and other required documents available against the unit..
-  - question: What information should be checked in the sales order files during pre-audit?
-    answer: During pre-audit, the sales order files should be checked for the information
+    question: What is the purpose of the pre-audit activity?
+  - answer: During pre-audit, the sales order files should be checked for the information
       like Total price of the unit, Credit limit of the customer from PeopleSoft,
       PO Number available on factory invoice and worksheet summary, SPA amount from
       eDeal website, Frieght charges, Surcharges, Delivery date, Terms with the customer
       on recognizing revenue, Special Prep & Delivery, Rebates and Warranty, FET calculations
       and backup emails with reference to the invoicing checklist.
-  - question: What is the goal of verifying the information in the sales order files
-      during pre-audit?
-    answer: The goal of verifying the information in the sales order files during
+    question: What information should be checked in the sales order files during pre-audit?
+  - answer: The goal of verifying the information in the sales order files during
       pre-audit is to ensure that the details are matched and corrected before sending
       the paperwork for invoicing, to prevent errors and discrepancies.
+    question: What is the goal of verifying the information in the sales order files
+      during pre-audit?
 - context: '## Process Description
 
 
@@ -236,22 +242,22 @@ seed_examples:
     If the same specification are available, the customer is eligible for vendor assistance.
     Make sure the amount is updated based on SPA document in the invoicing checklist.'
   questions_and_answers:
-  - question: What is the purpose of the 'Invoicing checklist' document in Fleet Pre-Audit?
-    answer: In Fleet Pre-Audit, the 'Invoicing checklist' document is prepared by
+  - answer: In Fleet Pre-Audit, the 'Invoicing checklist' document is prepared by
       the fleet invoicing assistant and contains all the details that will be keyed
       into RASS, such as Total price, PO Number, SPA amount, Freight charges, Surcharges,
       P&D amount, State, Model, Rebates, Warranty, Delivery date, and Customer terms.
-  - question: For Fleet Pre-Audit, what information should be matched between the
-      'Factory Invoice' and the 'Invoicing checklist'?
-    answer: For Fleet Pre-Audit, Order number, Customer PO, SPA number and amount
+    question: What is the purpose of the 'Invoicing checklist' document in Fleet Pre-Audit?
+  - answer: For Fleet Pre-Audit, Order number, Customer PO, SPA number and amount
       should be matched between the 'Factory Invoice' and the 'Invoicing checklist'.
-  - question: How is the vendor assistance amount identified and updated in the 'Invoicing
-      checklist' for Fleet Pre-audit?
-    answer: For Fleet Pre-audit, the vendor assistance amount is identified by checking
+    question: For Fleet Pre-Audit, what information should be matched between the
+      'Factory Invoice' and the 'Invoicing checklist'?
+  - answer: For Fleet Pre-audit, the vendor assistance amount is identified by checking
       if the engine specification on the 'Factory Invoice' is available on the SPA
       document. If the same specifications are available, the customer is eligible
       for vendor assistance, and the amount is updated based on the SPA document in
       the 'Invoicing checklist'.
+    question: How is the vendor assistance amount identified and updated in the 'Invoicing
+      checklist' for Fleet Pre-audit?
 - context: '15. If customer is eligible for rebate, make sure the rebate program approved
     file is available as a supporting document.
 
@@ -310,18 +316,19 @@ seed_examples:
 
     The pre audit activity concludes here.'
   questions_and_answers:
-  - question: What should be done if any of the paperwork is not matching or details
-      are missing during the pre-audit process?
-    answer: If any of the paperwork is not matching or details are missing during
+  - answer: If any of the paperwork is not matching or details are missing during
       pre-audit process, the comment should be updated against the unit in the backlog
       file so that the invoicing assistant can go back and make corrections on the
       supporting document.
-  - question: During fleet pre-audit, what specific supporting documents are required
-      for PENSKE customers under Location 132?
-    answer: During Fleet pre-audit,  Sales Tax Exemption Form, FET Exemption certificate,
+    question: What should be done if any of the paperwork is not matching or details
+      are missing during the pre-audit process?
+  - answer: During Fleet pre-audit,  Sales Tax Exemption Form, FET Exemption certificate,
       and FET calculation working sheet are required for PENSKE customers under Location
       132.
-  - question: What supporting document should be attached during fleet pre-audit,
-      if a customer is eligible for a rebate?
-    answer: If a customer is eligible for a rebate during fleet pre-audit, the rebate
+    question: During fleet pre-audit, what specific supporting documents are required
+      for PENSKE customers under Location 132?
+  - answer: If a customer is eligible for a rebate during fleet pre-audit, the rebate
       program approved file should be attached as a supporting document.
+    question: What supporting document should be attached during fleet pre-audit,
+      if a customer is eligible for a rebate?
+version: 3

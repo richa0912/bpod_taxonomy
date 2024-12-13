@@ -1,5 +1,11 @@
-domain: 'BPOD procure to payment: CZ_P2P_VMD_New Vendor Creation v1.0(1).docx'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - CZ_P2P_VMD_New_Vendor_Creation_v1.01.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes the process of new vendor creation in CAVI system.
+domain: 'BPOD procure to payment: CZ_P2P_VMD_New Vendor Creation v1.0(1).docx'
 seed_examples:
 - context: "# Overview\n\n## Objectives of the Process\n\nThe objective of this procedure\
     \ is to explain the process of new vendor creation in CAVI system.\n\n## Inputs\
@@ -29,9 +35,7 @@ seed_examples:
     \ in CAVI and supporting documentation attached\n  ---------------------------------------\
     \ --------------------------------------------------------------------------------------------------------------------------------------------------------------"
   questions_and_answers:
-  - question: List down the inputs and outputs of the process of new vendor creation
-      in CAVI system?
-    answer: 'Input and output for new vendor creation process in CAVI system are in
+  - answer: 'Input and output for new vendor creation process in CAVI system are in
       the following tables:
 
 
@@ -61,9 +65,9 @@ seed_examples:
       | -   Vendor account created | -   ERP system |
 
       +----------------------------+----------------+'
-  - question: What are the responsibilities of IBM VMD Team in new vendor creation
-      process?
-    answer: 'The responsibilities of IBM VMD Team in new vendor creation process are
+    question: List down the inputs and outputs of the process of new vendor creation
+      in CAVI system?
+  - answer: 'The responsibilities of IBM VMD Team in new vendor creation process are
       as following:
 
 
@@ -72,9 +76,11 @@ seed_examples:
 
       2. Inform Client Business Requestor / Buyer in case if a new vendor needs to
       be created, e.g., invoices received from vendor that does not exist in ERP system.'
-  - question: Who initiates the request for new vendor creation in ERP system?
-    answer: Client Business Requestor / Buyer initiates the request for new vendor
+    question: What are the responsibilities of IBM VMD Team in new vendor creation
+      process?
+  - answer: Client Business Requestor / Buyer initiates the request for new vendor
       creation in ERP system.
+    question: Who initiates the request for new vendor creation in ERP system?
 - context: '### Provide comment and reject request
 
 
@@ -235,17 +241,17 @@ seed_examples:
     On daily basis, IBM VMD team should login to CAVI to check if there are any requests
     pending action.'
   questions_and_answers:
-  - question: What is the next step after the client approver accepts the creation
-      request?
-    answer: After Approver has decided that supplier creation is needed, the onboarding
+  - answer: After Approver has decided that supplier creation is needed, the onboarding
       registration starts.
-  - question: How is the data provided by Vendor is verified?
-    answer: The verification is an automated process performed by the CAVI tool or
+    question: What is the next step after the client approver accepts the creation
+      request?
+  - answer: The verification is an automated process performed by the CAVI tool or
       by IBM VMD Team.
-  - question: Once the vendor creation request is received, what does IBM VMD Team
-      do with the ticket?
-    answer: IBM VMD Team checks on regular basis if the supplier already exists to
+    question: How is the data provided by Vendor is verified?
+  - answer: IBM VMD Team checks on regular basis if the supplier already exists to
       avoid duplicate entry.
+    question: Once the vendor creation request is received, what does IBM VMD Team
+      do with the ticket?
 - context: '1.  **Check against the DPL and embargoed countries list**
 
 
@@ -336,18 +342,18 @@ seed_examples:
     In case of any mismatches during any of the validations, please move to step [5.2.14
     Provide comment and reject request](#provide-comment-and-reject-request-1).'
   questions_and_answers:
-  - question: Which countries belong under embargoed/sanctioned list?
-    answer: The list of embargoed/sanctioned countries are Cuba, Iran, North Korea,
+  - answer: The list of embargoed/sanctioned countries are Cuba, Iran, North Korea,
       Syria, Russia, Afghanistan and the Crimea, Donetsk, Luhansk, Kherson and Zaporizhia
       (Zaporizhzhia) regions of Ukraine.
-  - question: To which Vendors do ARES & VIES database apply?
-    answer: ARES database applies to vendors located in Czech Republic and VIES for
+    question: Which countries belong under embargoed/sanctioned list?
+  - answer: ARES database applies to vendors located in Czech Republic and VIES for
       vendors located in the European Union. For vendors outside the EU, there is
       no specific database, and we have to rely on the documents attached by vendor/requestor.
-  - question: What is DPL?
-    answer: DPL is a webpage available in the IBM w3 environment and contains a list
+    question: To which Vendors do ARES & VIES database apply?
+  - answer: DPL is a webpage available in the IBM w3 environment and contains a list
       of parties that IBM is not allowed to conduct business with, updated on regular
       basis.
+    question: What is DPL?
 - context: 'Once completed, please click on Submit:
 
 
@@ -447,17 +453,15 @@ seed_examples:
 
     +--------------------------------------------------+'
   questions_and_answers:
-  - question: Who is responsible to cancel the vendor creation request and start new
-      process via proxy request
-    answer: Once the Vendor did not correct its request, Client Business Requestor
+  - answer: Once the Vendor did not correct its request, Client Business Requestor
       / Buyer is responsible to cancel the request and start new process via proxy
       request.
-  - question: What does Private and Public Note Type mean?
-    answer: Use option "Private" to notify requestor only and option "Public" to notify
+    question: Who is responsible to cancel the vendor creation request and start new
+      process via proxy request
+  - answer: Use option "Private" to notify requestor only and option "Public" to notify
       requestor and supplier.
-  - question: What steps should be taken in case of Vendor being found in DPL and
-      embargo/sanctions list?
-    answer: 'In case a vendor was found in DPL and/or embargo and sanctions list,
+    question: What does Private and Public Note Type mean?
+  - answer: 'In case a vendor was found in DPL and/or embargo and sanctions list,
       please send following notification to the requester and close (delete) the request
       in CAVI:
 
@@ -470,6 +474,8 @@ seed_examples:
       In case of any other mismatches/discrepancies found during the validation, that
       require action on requestor and/or vendor side, please describe the issue in
       the "Notes" option and then reject the request.'
+    question: What steps should be taken in case of Vendor being found in DPL and
+      embargo/sanctions list?
 - context: 'To login to CAVI, please follow the below steps.
 
 
@@ -566,8 +572,7 @@ seed_examples:
 
     If there are no entries found in XK03 this means you can process the request further.'
   questions_and_answers:
-  - question: What are the steps to login to CAVI?
-    answer: 'To login to CAVI, please follow the below steps:
+  - answer: 'To login to CAVI, please follow the below steps:
 
 
       First, login to Client environment, please connect the GlobalProcect VPN.
@@ -587,9 +592,11 @@ seed_examples:
 
       Then, you will be automatically moved to the two-factor authentication. Please
       follow the method that was established during Client account setup.'
-  - question: Which SAP transaction code is used to check if the supplier does already
+    question: What are the steps to login to CAVI?
+  - answer: XK03
+    question: Which SAP transaction code is used to check if the supplier does already
       exist in SAP?
-    answer: XK03
-  - question: When can you process the creation request further after logging to SAP?
-    answer: If there are no entries found in XK03 this means you can process the request
+  - answer: If there are no entries found in XK03 this means you can process the request
       further.
+    question: When can you process the creation request further after logging to SAP?
+version: 3

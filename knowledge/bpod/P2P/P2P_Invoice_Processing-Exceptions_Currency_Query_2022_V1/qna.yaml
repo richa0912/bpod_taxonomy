@@ -1,6 +1,12 @@
-domain: 'BPOD procure to pay: P2P_Invoice Processing - Exceptions_Currency Query_2022_V1'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - P2P_Invoice_Processing-Exceptions_Currency_Query_2022_V1.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how IBM Delivery Centre will perform the Debit reversal
   process.
+domain: 'BPOD procure to pay: P2P_Invoice Processing - Exceptions_Currency Query_2022_V1'
 seed_examples:
 - context: "## Objective(s)\n\nObjective: Debit reversals are created to credit suppliers\
     \ for debits issued against invoices for pricing or quantity which it has been\
@@ -51,21 +57,21 @@ seed_examples:
     \ viewer which are stuck due to currency dicrepancies, should be reviewed and\
     \ corrected in Peoplesoft to get paid in next Pay Cycle.\n"
   questions_and_answers:
-  - question: What is the role of the Invoice Exception Team in the Invoice Exception
-      Processing activity?
-    answer: 'The Invoice Exception Team is responsible for pulling the Currency issue
+  - answer: 'The Invoice Exception Team is responsible for pulling the Currency issue
       Invoices from Peoplesoft Query viewer which are stuck due to currency discrepancies,
       and reviewing and correcting them in Peoplesoft to get paid in the next Pay
       Cycle. '
-  - question: What is the objective of the Invoice Exception Processing activity?
-    answer: The objective of the Invoice Exception Processing activity is to create
+    question: What is the role of the Invoice Exception Team in the Invoice Exception
+      Processing activity?
+  - answer: The objective of the Invoice Exception Processing activity is to create
       debit reversals to credit suppliers for debits issued against invoices for pricing
       or quantity which it has been determined should not have been issued. This activity
       should be performed on a daily basis so that all invoices are corrected and
       get paid in the next Pay Cycle in Peoplesoft.
-  - question: What is the risk assertion for the Invoice Exception Processing activity?
-    answer: 'The risk assertion for the Invoice Exception Processing activity is that
+    question: What is the objective of the Invoice Exception Processing activity?
+  - answer: 'The risk assertion for the Invoice Exception Processing activity is that
       invoices stuck in the Query Queue may cause delays in payment. '
+    question: What is the risk assertion for the Invoice Exception Processing activity?
 - context: "## Overview \n\n> This activity main objective is to pull the Invoices\
     \ from Peoplesoft which are stuck in system due to currency discrepancies and\
     \ are not paid. Such Invoices should be reviewed and corrected post approval from\
@@ -84,14 +90,14 @@ seed_examples:
     \ sent to \"Shroyer Sue\".\n\n8.  Insert the column in Query spreadsheet and name\
     \ it as \"Comments\" and update currency issue research notes in comments field."
   questions_and_answers:
-  - question: What should be removed from the Query Excel spreadsheet once it is pulled?
-    answer: Remove the debits SQ Debit, LCML, and SWR Debit from the Query Excel spreadsheet.
-  - question: ' What should be done with the Invoice numbers starting with "BZ" units?'
-    answer: Invoice numbers starting with "BZ" units should be handled by "Shroyer
+  - answer: Remove the debits SQ Debit, LCML, and SWR Debit from the Query Excel spreadsheet.
+    question: What should be removed from the Query Excel spreadsheet once it is pulled?
+  - answer: Invoice numbers starting with "BZ" units should be handled by "Shroyer
       Sue M" and should be removed from the Query spreadsheet.
-  - question: What should be updated in the "Comments" field in Query spreadsheet?
-    answer: Update currency issue research notes in the "Comments" field in Query
+    question: ' What should be done with the Invoice numbers starting with "BZ" units?'
+  - answer: Update currency issue research notes in the "Comments" field in Query
       spreadsheet.
+    question: What should be updated in the "Comments" field in Query spreadsheet?
 - context: '**Scenario 3.**
 
 
@@ -188,17 +194,17 @@ seed_examples:
 
     10. It will show Payment Currency type updated as ''USD'' and click on "OK".'
   questions_and_answers:
-  - question: ' What should be done if the Invoice Origin is "D2L"?'
-    answer: If the Invoice Origin is "D2L", no need to change the currency type and
+  - answer: If the Invoice Origin is "D2L", no need to change the currency type and
       remove them from the query spreadsheet.
-  - question: How can you verify that the correct currency type has been updated in
-      Peoplesoft?
-    answer: To verify that the correct currency type has been updated in Peoplesoft,
+    question: ' What should be done if the Invoice Origin is "D2L"?'
+  - answer: To verify that the correct currency type has been updated in Peoplesoft,
       click on "Holiday/Currency Options" to view the updated currency type.
-  - question: Who should the researched and updated currency change comments be sent
-      to for approval?
-    answer: The researched and updated currency change comments should be sent to
+    question: How can you verify that the correct currency type has been updated in
+      Peoplesoft?
+  - answer: The researched and updated currency change comments should be sent to
       Jessica French A / Nelson C Dock for approval.
+    question: Who should the researched and updated currency change comments be sent
+      to for approval?
 - context: "**Scenario** 1 - Mexico currency issue:\n\n1.  If the Invoice currency\
     \ shows as \"USD\" and Payment currency updated as \"MXN\". This needs to be checked\
     \ in Mexico portal. See below currency issue details, which is mentioned as follows.\n\
@@ -229,19 +235,19 @@ seed_examples:
     \ currency type should be changed as ''M1'' in Peoplesoft.\n\n15. Update the currency\
     \ issue research findings on the comments field."
   questions_and_answers:
-  - question: What is the Mexico currency issue scenario in Exception Currency Query
-      process?
-    answer: ' The Mexico currency issue scenario is a currency issue with an invoice
+  - answer: ' The Mexico currency issue scenario is a currency issue with an invoice
       for a business unit in Mexico. The invoice currency is shown as USD, but the
       payment currency has been updated as MXN. This issue needs to be checked in
       the Mexico portal.'
-  - question: ' Who should be contacted if there is no access to the Mexico portal
-      to view the Invoice copies?'
-    answer: If there is no access to the Mexico portal, an email should be sent to
+    question: What is the Mexico currency issue scenario in Exception Currency Query
+      process?
+  - answer: If there is no access to the Mexico portal, an email should be sent to
       the AP-Mexico email box to confirm the correct currency.
-  - question: Which invoices are not available in Oracle but in AP- Mexico Mailbox?
-    answer: Invoices for Business Unit - 99865 is part of Mexico and will not be available
+    question: ' Who should be contacted if there is no access to the Mexico portal
+      to view the Invoice copies?'
+  - answer: Invoices for Business Unit - 99865 is part of Mexico and will not be available
       in Oracle. These needs to be checked in AP- Mexico Mailbox.
+    question: Which invoices are not available in Oracle but in AP- Mexico Mailbox?
 - context: 'Scenario: 2 EURO Currency Issue:
 
 
@@ -311,13 +317,14 @@ seed_examples:
     > **Note:** If CEP team has not taken any action and it keeps repeating in the
     Euro currency file. Send a follow up email to clear the line item.'
   questions_and_answers:
-  - question: What should be done to check the invoice copy?
-    answer: To check the invoice copy, login to Oracle, click on "Saved Searches",
+  - answer: To check the invoice copy, login to Oracle, click on "Saved Searches",
       copy the invoice number from the query spreadsheet and paste into "Invoice Number"
       and hit Enter.
-  - question: What should be done if the invoices are not available in Oracle?
-    answer: If the invoices are not available in Oracle, invoice copies need to be
+    question: What should be done to check the invoice copy?
+  - answer: If the invoices are not available in Oracle, invoice copies need to be
       requested from the "CEP Customer Service" team.
-  - question: What should be done if the vendor is setup as Euro currency?
-    answer: If the vendor is setup as Euro currency, further confirmation is required
+    question: What should be done if the invoices are not available in Oracle?
+  - answer: If the vendor is setup as Euro currency, further confirmation is required
       by checking in Peoplesoft - Vendor setup.
+    question: What should be done if the vendor is setup as Euro currency?
+version: 3

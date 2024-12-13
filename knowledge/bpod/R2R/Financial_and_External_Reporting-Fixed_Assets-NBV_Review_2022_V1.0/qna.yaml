@@ -1,6 +1,12 @@
-domain: 'BPOD Record to Analyze: Financial & External Reporting-Fixed Assets -NBV Review
-  2022 V1.0'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Financial_and_External_Reporting-Fixed_Assets-NBV_Review_2022_V1.0.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how IBM Delivery Centre will perform the NBV review process.
+domain: 'BPOD Record to Analyze: Financial & External Reporting-Fixed Assets -NBV
+  Review 2022 V1.0'
 seed_examples:
 - context: "# Control Points\n\n  ***\\#***   **Sub process Activity**   **Sub process\
     \ Activity Description**            **Control Objective(s)**                 \
@@ -16,18 +22,17 @@ seed_examples:
     \             Approved through EchoSign\n\n## Process Measurement Reports \n\n\
     > Performing the NBV review activity every month on WD-05."
   questions_and_answers:
-  - question: What is the Control Evidence & Risk of Financial & External Reporting
-      Fixed Assets NBV Review process?
-    answer: 'The Control Evidence of Financial & External Reporting Fixed Assets NBV
+  - answer: The Control Evidence of Financial & External Reporting Fixed Assets NBV
       Review process is "Approved through EchoSign" and Control Risk is "Incorrect
-      financial reporting".
-      The Control Points table should be displayed'
-  - question: What is the control objective of the NBV review process?
-    answer: The control objective is to ensure that all assets are corrected/reported
+      financial reporting". The Control Points table should be displayed
+    question: What is the Control Evidence & Risk of Financial & External Reporting
+      Fixed Assets NBV Review process?
+  - answer: The control objective is to ensure that all assets are corrected/reported
       as required.
-  - question: How often is the NBV review process performed?
-    answer: The NBV review process is performed monthly, specifically on WD-05, and
+    question: What is the control objective of the NBV review process?
+  - answer: The NBV review process is performed monthly, specifically on WD-05, and
       the review is approved through EchoSign.
+    question: How often is the NBV review process performed?
 - context: "# Overview\n\n## Objective(s)\n\n> To Review the Net Book Value of the\
     \ assets which having unusual balances (Negative Values, Salvage Values and not\
     \ falling with Mid Month conventions). If any review and take necessary action\
@@ -40,23 +45,22 @@ seed_examples:
     | > Output     | > To                         |\n+--------------+------------------------------+\n\
     | > NBV review | > Save in Share shared drive |\n+--------------+------------------------------+"
   questions_and_answers:
-  - question: What is the frequency of Financial & External Reporting Fixed Assets
-      NBV Review process?
-    answer: The frequency of Financial & External Reporting Fixed Assets NBV Review
+  - answer: The frequency of Financial & External Reporting Fixed Assets NBV Review
       process is monthly and on WD-05.
-  - question: What are the inputs and the input source for Financial & External Reporting
-      Fixed Assets NBV Review process?
-    answer: The inputs for Financial & External Reporting Fixed Assets NBV Review
-      process are Peoplesoft Queries and the input source is Peoplesoft.
-  - question: What are the objectives of Financial & External Reporting Fixed Assets
+    question: What is the frequency of Financial & External Reporting Fixed Assets
       NBV Review process?
-    answer: The objectives of Financial & External Reporting Fixed Assets NBV Review
+  - answer: The inputs for Financial & External Reporting Fixed Assets NBV Review
+      process are Peoplesoft Queries and the input source is Peoplesoft.
+    question: What are the inputs and the input source for Financial & External Reporting
+      Fixed Assets NBV Review process?
+  - answer: The objectives of Financial & External Reporting Fixed Assets NBV Review
       process is To Review the Net Book Value of the assets which having unusual balances
       (Negative Values, Salvage Values and not falling with Mid Month conventions).
       If any discrepancies found, take necessary action on them to get corrected.
-- context: '## Process Description
-    > On WD-05 IBM FA associate will perform NBV review activity by following the
-    below steps:
+    question: What are the objectives of Financial & External Reporting Fixed Assets
+      NBV Review process?
+- context: '## Process Description > On WD-05 IBM FA associate will perform NBV review
+    activity by following the below steps:
 
     > **[Corporate Books NBV review]{.ul}**
 
@@ -110,22 +114,21 @@ seed_examples:
 
     -   Select the query from below list, which was scheduled.'
   questions_and_answers:
-  - question: What is the first step in the NBV review process for Corporate Books?
-    answer: In the NBV review process for Corporate Books, the first step is to carry
+  - answer: In the NBV review process for Corporate Books, the first step is to carry
       forward the prior month working files to the current month, by navigating to
       the path M drive FA NBV Review 2022 current month.
-  - question: How does the IBM FA associate pull the NBV report for Corporate and
+    question: What is the first step in the NBV review process for Corporate Books?
+  - answer: The IBM FA associate pulls the NBV report by logging in to PeopleSoft
+      with credentials and navigating to the path Main Menu > Reporting Tools > Query
+      > Schedule Query.
+    question: How does the IBM FA associate pull the NBV report for Corporate and
       Federal books?
-    answer: The IBM FA associate pulls the NBV report by logging in to PeopleSoft
-      with credentials and navigating to the path Main Menu > Reporting Tools > Query >
-      Schedule Query.
-  - question: What is the purpose of creating a control run ID in PeopleSoft to generate
-      the NBV report for Corporate and Federal books?
-    answer: The purpose of creating a control run ID is to schedule a query in PeopleSoft,
+  - answer: The purpose of creating a control run ID is to schedule a query in PeopleSoft,
       which is used to generate the NBV report for Corporate and Federal books.
+    question: What is the purpose of creating a control run ID in PeopleSoft to generate
+      the NBV report for Corporate and Federal books?
 - context: '21. Copy the filtered lines and create new excel tab and paste the copied
-    data.
-    -   Highlight the Asset ID column.
+    data. -   Highlight the Asset ID column.
 
     -   Provide the Tab name as ''**NEG NBV**.
 
@@ -162,21 +165,21 @@ seed_examples:
 
     vii. It triggers to approver an auto e-mail from EchoSign to approve or reject.'
   questions_and_answers:
-  - question: What is the purpose of running the salvage value review query 'ZI_AM_NBV_SALVAGE'
-      in PeopleSoft?
-    answer: The PeopleSoft query 'ZI_AM_NBV_SALVAGE' is run to review the salvage
+  - answer: The PeopleSoft query 'ZI_AM_NBV_SALVAGE' is run to review the salvage
       values for all the BUs, to ensure that there are no salvage values listed for
       books other than Corp.
-  - question: What is the final step in the NBV review process, and how is it completed?
-    answer: 'The final step is to convert the NBV review file into a PDF file and
+    question: What is the purpose of running the salvage value review query 'ZI_AM_NBV_SALVAGE'
+      in PeopleSoft?
+  - answer: 'The final step is to convert the NBV review file into a PDF file and
       send it to Client FA manager (Carlos) for approval via EchoSign. '
-  - question: Describe the steps to send NBV Review PDF file to Client FA Manager?
-    answer: "The steps to send NBV Review PDF file to Client FA Manager are. \n1.\
+    question: What is the final step in the NBV review process, and how is it completed?
+  - answer: "The steps to send NBV Review PDF file to Client FA Manager are. \n1.\
       \ log in to EchoSign with valid credentials, \n2. Clicking on Send, \n3. Drag\
       \ the NBV review PDF files into EchoSign, \n4. Update the approver and requester\
       \ fields, \n5. Send the file for approval."
-- context: '8.  Once selecting the query, NBV report will get downloaded.
-    9.  Hide below highlighted columns.
+    question: Describe the steps to send NBV Review PDF file to Client FA Manager?
+- context: '8.  Once selecting the query, NBV report will get downloaded. 9.  Hide
+    below highlighted columns.
 
     10. Apply filter, go to USA_CRP_NBV column and filter the values less than -0.50.
 
@@ -228,19 +231,20 @@ seed_examples:
 
     20. Apply filter, go to USA_FED NBV column and filter the values less than -0.50.'
   questions_and_answers:
-  - question: What should be done if any assets are found to be in negative COST/NBV?
-    answer: If any assets are found to be in negative COST/NBV, the person who handles
+  - answer: If any assets are found to be in negative COST/NBV, the person who handles
       the BUs should be informed, and actions should be taken to correct the same.
       If the issue is due to PeopleSoft issues, it should be reported to the PeopleSoft
       IT team.
-  - question: What is the purpose of running the ZI_AM_PROFILESBOOK_CONVENTION query
-      in PeopleSoft?
-    answer: ' PeopleSoft query ZI_AM_PROFILESBOOK_CONVENTION is run to check the profile
+    question: What should be done if any assets are found to be in negative COST/NBV?
+  - answer: ' PeopleSoft query ZI_AM_PROFILESBOOK_CONVENTION is run to check the profile
       vs book convention, which will help identify any deviations between the book
       convention and profile convention.'
-  - question: What should be done if there is deviation between book convention and
-      profile convention for any of the Business Units managed by Knoxville Fixed
-      Assets Team?
-    answer: If there is any deviation between book convention and profile convention
+    question: What is the purpose of running the ZI_AM_PROFILESBOOK_CONVENTION query
+      in PeopleSoft?
+  - answer: If there is any deviation between book convention and profile convention
       for any of the Business Units managed by Knoxville Fixed Assets (IBM in Future),
       we must check to see who added the asset and request the support for the deviation.
+    question: What should be done if there is deviation between book convention and
+      profile convention for any of the Business Units managed by Knoxville Fixed
+      Assets Team?
+version: 3

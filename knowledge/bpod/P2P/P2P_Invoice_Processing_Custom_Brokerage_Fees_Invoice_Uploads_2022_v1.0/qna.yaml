@@ -1,7 +1,13 @@
-domain: 'BPOD procure to pay: P2P_Invoice Processing_Custom Brokerage Fees Invoice
-  Uploads_2022_v1.0'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - P2P_Invoice_Processing_Custom_Brokerage_Fees_Invoice_Uploads_2022_v1.0.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how IBM Delivery Center will perform the Custom Brokerage
   Fees Invoice Uploads
+domain: 'BPOD procure to pay: P2P_Invoice Processing_Custom Brokerage Fees Invoice
+  Uploads_2022_v1.0'
 seed_examples:
 - context: "## Objective(s)\n\nThis objective is to process Custom Brokerage Fee invoices\
     \ for payment in PeopleSoft.\n\n### Frequency: \n\nMonthly Once\n\n### Source:\
@@ -11,8 +17,8 @@ seed_examples:
     \ Outputs\n\n+--------------------------------------+---------------------------------------------------+\n\
     | Input                                | From                                \
     \              |\n+--------------------------------------+---------------------------------------------------+\n\
-    | > Knoxville Uploads Generic emailbox | > xxx\\@Client.com to Knoxville\
-    \ Uploads |\n+--------------------------------------+---------------------------------------------------+\n\
+    | > Knoxville Uploads Generic emailbox | > xxx\\@Client.com to Knoxville Uploads\
+    \ |\n+--------------------------------------+---------------------------------------------------+\n\
     \n+--------------+---------------------------------------------------------------+\n\
     | Output       | To                                                          \
     \  |\n+--------------+---------------------------------------------------------------+\n\
@@ -35,18 +41,18 @@ seed_examples:
     \ confirmation and reply back to the Knoxville Team.   Avoid duplicate Rent Payment\
     \   Monthly        "
   questions_and_answers:
-  - question: How often are the Custom Brokerage Fee invoices processed for payment
-      in PeopleSoft?
-    answer: The Custom Brokerage Fee invoices are processed for payment in PeopleSoft
+  - answer: The Custom Brokerage Fee invoices are processed for payment in PeopleSoft
       monthly once.
-  - question: What system accesses are required to process the Custom Brokerage Fee
-      invoices for payment in PeopleSoft?
-    answer: The required accesses to process the Custom Brokerage Fee invoices for
+    question: How often are the Custom Brokerage Fee invoices processed for payment
+      in PeopleSoft?
+  - answer: The required accesses to process the Custom Brokerage Fee invoices for
       payment in PeopleSoft are Outlook Mailbox access via an IT Service Desk Ticket,
       M drive access via. DL Knox System Support, and PeopleSoft access via EUR.
-  - question: What is the control objective of the Custom Brokerage Fee invoice processing?
-    answer: 'The control objective of the Custom Brokerage Fee invoice processing
+    question: What system accesses are required to process the Custom Brokerage Fee
+      invoices for payment in PeopleSoft?
+  - answer: 'The control objective of the Custom Brokerage Fee invoice processing
       is Saved the uploads file in M drive folder. Uploads is run using the data base. '
+    question: What is the control objective of the Custom Brokerage Fee invoice processing?
 - context: '## Overview:
 
 
@@ -95,20 +101,20 @@ seed_examples:
     file and copy again. If Paste Special Values is not used, then the file will not
     upload to PeopleSoft.**'
   questions_and_answers:
-  - question: What should be done with the details copied from the spreadsheet attachment
-      from outlook Knoxville Uploads folder?
-    answer: The details copied from the spreadsheet attachment should be pasted into
+  - answer: The details copied from the spreadsheet attachment should be pasted into
       the ExcelUploadorVoucher\_Corporate.xlsm
-  - question: What is the significance of entering GN1 in the upper left box of the
-      spreadsheet
-    answer: Entering GN1 in the upper left box of the spreadsheet allows you to see
+    question: What should be done with the details copied from the spreadsheet attachment
+      from outlook Knoxville Uploads folder?
+  - answer: Entering GN1 in the upper left box of the spreadsheet allows you to see
       all lines for each invoice entry, which is necessary to copy all the line items
       from the spreadsheet in the next step.
-  - question: What happens if Paste Special Values is not used when pasting the details
-      into the ExcelUploadorVoucher_Corporate.xlsm file?
-    answer: If Paste Special Values is not an option, then return to the original
+    question: What is the significance of entering GN1 in the upper left box of the
+      spreadsheet
+  - answer: If Paste Special Values is not an option, then return to the original
       file and copy again. If Paste Special Values is not used, then the file will
       not upload to PeopleSoft.
+    question: What happens if Paste Special Values is not used when pasting the details
+      into the ExcelUploadorVoucher_Corporate.xlsm file?
 - context: "**NOTE:**\n\n> However, if the query did not return any records, then\
     \ continue to run the query periodically over the next hour. If the records still\
     \ are not showing, then an email must be sent to the IT Service Desk,copying .DL\
@@ -134,26 +140,26 @@ seed_examples:
     \ of acronyms used in this document:\n\n  Term   Definition\n  ------ -------------------\n\
     \  US     United State\n  PS     People Soft\n  KUP    Knoxville Uploads"
   questions_and_answers:
-  - question: What should be done if the query does not return any records after running
-      it periodically over the next hour?
-    answer: If the query does not return any records after running it periodically
+  - answer: If the query does not return any records after running it periodically
       over the next hour, an email must be sent to the IT Service Desk, copying .DL
       PeopleSoft FSCM Support Team and request that the issue be assigned to the .DL
       PeopleSoft FSCM Support Team to review.
-  - question: What could be the reason if the records are not showing in Staged Vouchers
-      even after the file has been uploaded?
-    answer: f the support team says the file has uploaded, but it does not show in
+    question: What should be done if the query does not return any records after running
+      it periodically over the next hour?
+  - answer: f the support team says the file has uploaded, but it does not show in
       Staged Vouchers, then enough time may have passed where the voucher has been
       created and can be found in Regular Entry by searching by Business Unit and
       Invoice Number. If the upload runs close to 4:30 EST, then you may 'miss' the
       vouchers in staging tables and they will be able to be viewed in Regular Entry
       since the voucher has already been created.
-  - question: What should be done after verifying the records in Staged Vouchers?
-    answer: After verifying the records in Staged Vouchers, the user should select
+    question: What could be the reason if the records are not showing in Staged Vouchers
+      even after the file has been uploaded?
+  - answer: After verifying the records in Staged Vouchers, the user should select
       File in the upper left-hand side of the spreadsheet, select Save As, browse
       to the personal ONEDRIVE, enter the File Name using the subject line from the
       email (example Customs Payment Upload 091620) PS Confirmation MMDDYYYY, and
       then select Save.
+    question: What should be done after verifying the records in Staged Vouchers?
 - context: '8.  Once the file has been pasted, compare columns DF and GU to ensure
     they sum to the same \$ amount.
 
@@ -223,16 +229,15 @@ seed_examples:
     22. From the highlighted details we can understand whether the invoices are uploaded
     or not.'
   questions_and_answers:
-  - question: What should be done if a DEST.XML already exists?
-    answer: If a DEST.XML already exists, it must be renamed (always include date
+  - answer: If a DEST.XML already exists, it must be renamed (always include date
       in naming) and moved to M:\APVoucherUpload\Archive before creating a new one.
-  - question: What should be done with the DEST.XML file after it has been renamed
-      ?
-    answer: After renaming the DEST.XML file, the user should move the Custom Brokerage
+    question: What should be done if a DEST.XML already exists?
+  - answer: After renaming the DEST.XML file, the user should move the Custom Brokerage
       Fees Invoice mm/dd/yy file from the CE folder to M:\APVoucherUpload\Archive\CE
       DEST.
-  - question: What should be done if there is an error with the upload of DEST.XML?
-    answer: If there is an error with the upload, the box will say an error has occurred.
+    question: What should be done with the DEST.XML file after it has been renamed
+      ?
+  - answer: If there is an error with the upload, the box will say an error has occurred.
       The user should then review by running the PeopleSoft Staging process to ensure
       the file was truly not uploaded. If the file does not exist in staging, the
       user will need to start the entire process again. If the error continues, the
@@ -240,6 +245,7 @@ seed_examples:
       any blank rows at the bottom or blank columns to the far right. If that still
       does not resolve the issue on the next attempt, the user should contact local
       System Support (.dl Knox system support) to assist.
+    question: What should be done if there is an error with the upload of DEST.XML?
 - context: 'As per the DTP Procedure verifying uploading is as per following.
 
 
@@ -273,13 +279,14 @@ seed_examples:
     Staging Table, then filter out just those for the Custom Brokerage Fees Upload
     by highliting all but CBF invoices and right click, select delete.'
   questions_and_answers:
-  - question: How to verify the invoice upload was successful in PeopleSoft?
-    answer: The first step to verify the upload was successful is to open PeopleSoft
+  - answer: The first step to verify the upload was successful is to open PeopleSoft
       via Internet Explorer.
-  - question: What should be selected under Client Applications for verifying invoice
-      uploading?
-    answer: Under Client Applications, PeopleSoft Finance should be selected using
+    question: How to verify the invoice upload was successful in PeopleSoft?
+  - answer: Under Client Applications, PeopleSoft Finance should be selected using
       the drop-down box.
-  - question: What Query name to be entered for the DTP Procedure verifying uploading
+    question: What should be selected under Client Applications for verifying invoice
+      uploading?
+  - answer: The Query Name should be entered as ZI_AP_STAGED_VOUCHERS.
+    question: What Query name to be entered for the DTP Procedure verifying uploading
       of invoices?
-    answer: The Query Name should be entered as ZI_AP_STAGED_VOUCHERS.
+version: 3

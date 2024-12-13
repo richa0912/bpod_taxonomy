@@ -1,6 +1,12 @@
-domain: 'BPOD order to cash: Fleet NPG Navistar Proving Ground'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Fleet_NPG_Navistar_Proving_Ground.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: 'The steps involved in creating the entries in PeopleSoft for the
   invoices created for Client Proving Ground customers. '
+domain: 'BPOD order to cash: Fleet NPG Navistar Proving Ground'
 seed_examples:
 - context: "# Control Points\n\n  ***Step No.***   ***Sub process Activity***    \
     \                    ***Control Objective(s)***                           ***Control\
@@ -21,18 +27,18 @@ seed_examples:
     \ invoice will be created in PeopleSoft\n\n## Process Measurement Reports \n\n\
     > This activity should be completed by last workday of the month."
   questions_and_answers:
-  - question: What are the control points for NPG billing?
-    answer: 'There are two control points in NPG billing.
+  - answer: 'There are two control points in NPG billing.
 
       1. Upload customer invoice details into PeopleSoft: Approval should be taken
       before uploading the file.
 
       2. Error on upload file: There should not be any error on the upload file'
-  - question: When should the NPG billing activity be performed?
-    answer: NPG billing activity should be performed by last day of every month.
-  - question: What is the risk associated with not completing NPG process on time?
-    answer: The risk of not completing NPG process on time is that the customer account
+    question: What are the control points for NPG billing?
+  - answer: NPG billing activity should be performed by last day of every month.
+    question: When should the NPG billing activity be performed?
+  - answer: The risk of not completing NPG process on time is that the customer account
       will not have the invoice amount.
+    question: What is the risk associated with not completing NPG process on time?
 - context: '# Overview
 
 
@@ -77,8 +83,7 @@ seed_examples:
 
     +-------------------------------------+-----------------------------------------+------------------------------------------------------+----------------------------------------------------------+-----------------------+'
   questions_and_answers:
-  - question: What is the SIPOC of Navistar proving ground?
-    answer: 'Based on the provided context, the SIPOC (Supplier, Input, Process, Output,
+  - answer: 'Based on the provided context, the SIPOC (Supplier, Input, Process, Output,
       Customer) for the Navistar Proving Ground is:
 
       1. Supplier: Client Proving Ground Indiana Group
@@ -91,14 +96,14 @@ seed_examples:
       4. Output: Entries for the invoices will be generated in PeopleSoft
 
       5. Customer: Cash Application Team'
-  - question: What is the objective of Fleet Navistart Proving Ground?
-    answer: The objective of Fleet Navistart Proving Ground is to create the entries
+    question: What is the SIPOC of Navistar proving ground?
+  - answer: The objective of Fleet Navistart Proving Ground is to create the entries
       in PeopleSoft for the customer invoices generated for Client Proving Ground
       customers. This is to make sure invoices generated manually are accounted into
       PeopleSoft. This will help Cash Application team to adjust the money received
       against the invoices paid by the customer.
-  - question: What are the steps in the NPG process?
-    answer: 'Following are the steps in the NPG process.
+    question: What is the objective of Fleet Navistart Proving Ground?
+  - answer: 'Following are the steps in the NPG process.
 
       1. Receive customer invoices from NPG Team via email.
 
@@ -107,6 +112,7 @@ seed_examples:
       3. Create upload file.
 
       4. Upload the data into PeopleSoft.'
+    question: What are the steps in the NPG process?
 - context: "# Roles & Responsibilities\n\n## Description\n\n  **Role**           \
     \         **Responsibility**\n  --------------------------- ---------------------------------------------------------------------------------\n\
     \  NPG Indiana Group           Send customer invoices to Fleet invoicing assistant\
@@ -114,16 +120,16 @@ seed_examples:
     \ and after approval upload into PeopleSoft\n  Knoxville Retained Team     Approve\
     \ upload file"
   questions_and_answers:
-  - question: What is the responsibility of NPG Indiana Group in NPG Billing?
-    answer: The responsibility of NPG Indiana Group in NPG Billing is to send customer
+  - answer: The responsibility of NPG Indiana Group in NPG Billing is to send customer
       invoices to Fleet invoicing assistant via email.
-  - question: Who is reponsible for approving uploaded file in NPG Billing?
-    answer: Knoxville Retained Team is reponsible for approving uploaded file in NPG
+    question: What is the responsibility of NPG Indiana Group in NPG Billing?
+  - answer: Knoxville Retained Team is reponsible for approving uploaded file in NPG
       Billing.
-  - question: What are the responsibilities of Fleet Invoicing Assistant in NPG billing?
-    answer: "Following are the responsibilities of Fleet Invoicing Assistant in NPG\
+    question: Who is reponsible for approving uploaded file in NPG Billing?
+  - answer: "Following are the responsibilities of Fleet Invoicing Assistant in NPG\
       \ billing.\n1. Create upload file, \n2. Sent upload file for approval\n3. Upload\
       \ into PeopleSoft after approval."
+    question: What are the responsibilities of Fleet Invoicing Assistant in NPG billing?
 - context: "## Process Description\n1.  Receive customer invoices from Client Proving\
     \ Ground Indiana Group along with an excel file via email.\n2.  Open **NPG Apr\
     \ 2022 Invoice Log -- People Soft** excel file from the attachment. This excel\
@@ -152,22 +158,22 @@ seed_examples:
     \ button on keyboard\n\n11. Change the bussines unit from 5100 to 05100 and save\
     \ the file."
   questions_and_answers:
-  - question: What are the different payment terms in NPG?
-    answer: 'Below are different types of payment term in NPG.
+  - answer: 'Below are different types of payment term in NPG.
 
       1. Immediately Net Due, to be updated in excel as I00.
 
       2. Net 1 Day (per PO), to be updated in excel as I01.'
-  - question: Where is the NPG Excel file saved after verification?
-    answer: 'After verifying and updating all the information, save the file in path
+    question: What are the different payment terms in NPG?
+  - answer: 'After verifying and updating all the information, save the file in path
       ''M:\General Sales\AR New
 
       locations\Client Proving Grounds\NPG UPLOAD FILES\Year\'' . Create a folder
       for current month and save the excel in .CSV format.'
-  - question: Which details should be verified between customer invoice and Excel
-      provided in email in NPG?
-    answer: Verify the Invoice No., Customer PO, Invoice Date, Customer No. and Amount
+    question: Where is the NPG Excel file saved after verification?
+  - answer: Verify the Invoice No., Customer PO, Invoice Date, Customer No. and Amount
       between customer invoice and Excel provided in email in NPG.
+    question: Which details should be verified between customer invoice and Excel
+      provided in email in NPG?
 - context: '12. Send an email with the customer invoices and the upload file to Ellen
     Mahaffey for approval. Keep AR Pending Items generice mailbox on CC.
 
@@ -185,10 +191,10 @@ seed_examples:
 
     > **[Main Menu\>Accounts Receivable\>Pending Items\>External Items]{.ul}**
 
-   
+
     > Update 05100 on Run Control ID begins with
 
-   
+
     16. Another screen will be appear, change Accounting Date to current date
 
 
@@ -212,7 +218,7 @@ seed_examples:
     > **[Main Menu\>Accounts Receivable\>Pending Items\>External Items\>Open Item
     Spread Sheet Upload\>Process Monitor]{.ul}**
 
-   
+
     22. Once the file is uploaded, an autogenerated mail will be received to mail
     box
 
@@ -223,16 +229,15 @@ seed_examples:
 
     > \- While preparing the .csv file, formatting done incorrectly.
 
-   
+
     > \- New customer data available on the file. If a new customer data available,
     send an email to NPG Indiana group to provide the customer information. This information
     should be sent to Support team for creating the customer data in PeopleSoft.
 
-   
+
     > The activity concludes here.'
   questions_and_answers:
-  - question: What are the steps to upload NPG data in PeopleSoft?
-    answer: 'Following are the steps to upload NPG data in PeopleSoft.
+  - answer: 'Following are the steps to upload NPG data in PeopleSoft.
 
       1. Login to People Soft and select open Item Spread Sheet Upload option with
       the below path.
@@ -265,13 +270,15 @@ seed_examples:
 
       9. Open attached excel, check column F (Error Count). Make sure no error are
       available. '
-  - question: What are the possible errors while NPG upload?
-    answer: "Following errors may be encountered during NPG upload. \n1. While preparing\
+    question: What are the steps to upload NPG data in PeopleSoft?
+  - answer: "Following errors may be encountered during NPG upload. \n1. While preparing\
       \ the .csv file, formatting is done incorrectly.\n2. New customer data available\
       \ on the file. If a new customer data available, send an email to NPG Indiana\
       \ group to provide the customer information. This information should be sent\
       \ to Support team for creating the customer data in PeopleSoft."
-  - question: How can we check the errors encountered during NPG upload?
-    answer: Once the NPG upload process is completed, an auto-generated email with
+    question: What are the possible errors while NPG upload?
+  - answer: Once the NPG upload process is completed, an auto-generated email with
       an Excel attachment will be received in the mail box. Column F in this Excel
       file contains details of the error.
+    question: How can we check the errors encountered during NPG upload?
+version: 3

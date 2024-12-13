@@ -1,7 +1,13 @@
-domain: 'BPOD procure to payment: P2P_Invoice Processing_Mexico Direct Invoices Spreadsheet
-  Upload_2022_v1.0.doc'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - P2P_Invoice_Processing_Mexico_Direct_Invoices_Spreadsheet_Upload_2022_v1.0.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how IBM Delivery Centre will create the Spreadsheet and
   Uploads the Invoices in the Client Invoice Database
+domain: 'BPOD procure to payment: P2P_Invoice Processing_Mexico Direct Invoices Spreadsheet
+  Upload_2022_v1.0.doc'
 seed_examples:
 - context: "Additional Information\n\n    Looking up Receipts:\n\nThere should only\
     \ be 1 ASN number per invoice, if not the invoice must be rejected. Unless the\
@@ -48,11 +54,10 @@ seed_examples:
     \nThe following are definitions of acronyms used in this document:\n\nTerm Definition\n\
     \nMX Client ASN Advance Shipment Number CS Customer Service Analyst Team"
   questions_and_answers:
-  - question: Where to view a report that is needed to find receipts for?
-    answer: Go to M:\PAYSHARE\DATA\EXCEL\MX Direct Reports\Receipts Needed, to view
+  - answer: Go to M:\PAYSHARE\DATA\EXCEL\MX Direct Reports\Receipts Needed, to view
       a report that you need to find receipts for.
-  - question: How to look up receipts?
-    answer: "1.\tLooking up Receipts:\n\nThere should only be 1 ASN number per invoice,\
+    question: Where to view a report that is needed to find receipts for?
+  - answer: "1.\tLooking up Receipts:\n\nThere should only be 1 ASN number per invoice,\
       \ if not the invoice must be rejected. Unless the invoice has multiple ASN.\n\
       There are several ways you can look up receipts for invoices.\nYou can refer\
       \ to the Direct Client Vendor Information sheet M:\\DE\\Client, for some tips\
@@ -66,33 +71,34 @@ seed_examples:
       \ unit - Line 1 Productivo (BU 01100), Line 2 Productivo (BU 06500). To be able\
       \ to look in both BUs you will need to choose and type both BU with a comma\
       \ in between and no space.\n4.\tASN Use 5 numbers from the ASN to be able to\
-      \ find the receipt.\n'\tVendor number \n'\tClick on Search\nNOTE:\
-      \ If there is a receipt, it will show in the Search Results below and you will\
-      \ need to match per the spreadsheet or the folio facture number.\n5.\tLook at\
-      \ the ASN number to find receipt number that matches as well as Received Date\
-      \ and BU.\nOption 2\n1.\tGo to Query Viewer in Peoplesoft\n2.\tClick on excel\n\
-      3.\tYou only need to enter your vendor code number and date range for looking\
-      \ up receipts and then hit enter or select view results. We usually look for\
-      \ 3 to 4 prior months date to the current date.\n4.\tClick on Enable Editing\n\
-      5.\tDelete column C-N on your spreadsheet\n6.\tGo to column P (Packing Slip)\
-      \ and look for the ASN number that matches your invoice and add the receipt\
-      \ number in column B in your spreadsheet. ***Do not look in ASN column because\
-      \ not always will have the ASN. Also, do not use Ctrl+F because not always we\
-      \ can find the ASN either***\n7.\tGo to Sort and Filter, Select Filter, click\
-      \ the arrow and copy the ASN you are looking to able to find it.\n8.\tIf there\
-      \ is no receipt available, a message that 'No matching values were found'\
-      \ will show.\n9.\tYou will need to add No Receipts (NR, No Rts) to the spreadsheet\
-      \ in column K\n10.\tIf there is no receipt available in 7 days, you will need\
-      \ to change the status of the invoice to \"Rechazado Sin Recibo\" unless it\
-      \ is Optima or Akzo with wait 10 days. \n11.\tClick on Cambia Estatus \n12.\t\
-      Click on Arrow next to box that says Estatus Nuevo\n13.\tChange to Rechazo Sin\
-      \ Recibo\n14.\tClick on Cambiar\n15.\tInvoice status is now Rechazado Sin Recibo\n\
-      Continue this process until spreadsheet is completed and save file. It needs\
-      \ to be sent to the Client Customer Service Analyst."
-  - question: List out acronyms used in this desktop procedure along with definitions
-    answer: "Definitions\nThe following are definitions of acronyms used in this document:\n\
+      \ find the receipt.\n'\tVendor number \n'\tClick on Search\nNOTE: If there is\
+      \ a receipt, it will show in the Search Results below and you will need to match\
+      \ per the spreadsheet or the folio facture number.\n5.\tLook at the ASN number\
+      \ to find receipt number that matches as well as Received Date and BU.\nOption\
+      \ 2\n1.\tGo to Query Viewer in Peoplesoft\n2.\tClick on excel\n3.\tYou only\
+      \ need to enter your vendor code number and date range for looking up receipts\
+      \ and then hit enter or select view results. We usually look for 3 to 4 prior\
+      \ months date to the current date.\n4.\tClick on Enable Editing\n5.\tDelete\
+      \ column C-N on your spreadsheet\n6.\tGo to column P (Packing Slip) and look\
+      \ for the ASN number that matches your invoice and add the receipt number in\
+      \ column B in your spreadsheet. ***Do not look in ASN column because not always\
+      \ will have the ASN. Also, do not use Ctrl+F because not always we can find\
+      \ the ASN either***\n7.\tGo to Sort and Filter, Select Filter, click the arrow\
+      \ and copy the ASN you are looking to able to find it.\n8.\tIf there is no receipt\
+      \ available, a message that 'No matching values were found' will show.\n9.\t\
+      You will need to add No Receipts (NR, No Rts) to the spreadsheet in column K\n\
+      10.\tIf there is no receipt available in 7 days, you will need to change the\
+      \ status of the invoice to \"Rechazado Sin Recibo\" unless it is Optima or Akzo\
+      \ with wait 10 days. \n11.\tClick on Cambia Estatus \n12.\tClick on Arrow next\
+      \ to box that says Estatus Nuevo\n13.\tChange to Rechazo Sin Recibo\n14.\tClick\
+      \ on Cambiar\n15.\tInvoice status is now Rechazado Sin Recibo\nContinue this\
+      \ process until spreadsheet is completed and save file. It needs to be sent\
+      \ to the Client Customer Service Analyst."
+    question: How to look up receipts?
+  - answer: "Definitions\nThe following are definitions of acronyms used in this document:\n\
       Term\tDefinition\nMX\t        Client\nASN\tAdvance Shipment Number\n CS\t  \
       \      Customer Service Analyst Team"
+    question: List out acronyms used in this desktop procedure along with definitions
 - context: "Document Information\nAbout this Document\n\n    This is official IBM\
     \ guide document which describes how IBM Delivery Centre will create the Spreadsheet\
     \ and Uploads the Invoices in the Client Invoice Database. This document will\
@@ -127,8 +133,7 @@ seed_examples:
     \ the related Aggregate SOD (A-SOD). <SOD Matrix pending IBM GPS internal review\
     \ and approval>"
   questions_and_answers:
-  - question: In which system spreadsheet upload takes place?
-    answer: 'Spreadsheet Upload takes place through the Client Invoices tool for invoices
+  - answer: 'Spreadsheet Upload takes place through the Client Invoices tool for invoices
       in Por Archivar and Rejecting the Problem invoices (rejected without receipt
       and/or revision). This is not the final upload to PeopleSoft.
 
@@ -137,12 +142,13 @@ seed_examples:
       Source: M: Drive
 
       System: Client Portal, MS Excel.'
-  - question: What is the deadline for reports upload?
-    answer: "The Reports must be Uploaded before 2: 15 PM.\nFollowing are the Locations\
-      \ from which Reports are Pulled.\n'\tLinea 1 Productivo - 01100.\n'\
-      \tLinea 2 Productivo - 06500."
-  - question: What is the responsibility of Invoice Processing Team?
-    answer: Formatting and Creating Spreadsheet to Upload in the Client Invoice Database.
+    question: In which system spreadsheet upload takes place?
+  - answer: "The Reports must be Uploaded before 2: 15 PM.\nFollowing are the Locations\
+      \ from which Reports are Pulled.\n'\tLinea 1 Productivo - 01100.\n'\tLinea 2\
+      \ Productivo - 06500."
+    question: What is the deadline for reports upload?
+  - answer: Formatting and Creating Spreadsheet to Upload in the Client Invoice Database.
+    question: What is the responsibility of Invoice Processing Team?
 - context: "Duplicate Values: the app will show you what values are duplicate; you\
     \ must remove them from the upload file (the one saved in the M drive). Or the\
     \ invoice was already uploaded once to the database (database will show date and\
@@ -159,23 +165,22 @@ seed_examples:
     \ will automatically send an email with Kickouts. Kickouts are invoices that could\
     \ not be uploaded due to pricing issues, PO issues, wrong receipt or wrong vendor\
     \ code, and BAAN vs PeopleSoft lines that did not match. This file is worked by\
-    \ Data Entry to manually process those invoices. \n\n\
-    \ Problem \n\nUser gets the following Warning. \n\nDiscussion \n\nThe previous\
-    \ set of records was not fully processed. Permanent records were created,\
-    \ but not marked that they had been uploaded. The easiest solution is to\
-    \ remove the not-uploaded records and let the user reprocess the original spreadsheet.\
-    \ \n\nSolution \n\n    Open the application. \n\n    Open the tbl_pp_MexInvoices\
-    \ table, sort by created date, and look for records without an upload date.\n\n\
-    \    Remove all records without an upload date."
+    \ Data Entry to manually process those invoices. \n\n Problem \n\nUser gets the\
+    \ following Warning. \n\nDiscussion \n\nThe previous set of records was not fully\
+    \ processed. Permanent records were created, but not marked that they had been\
+    \ uploaded. The easiest solution is to remove the not-uploaded records and let\
+    \ the user reprocess the original spreadsheet. \n\nSolution \n\n    Open the application.\
+    \ \n\n    Open the tbl_pp_MexInvoices table, sort by created date, and look for\
+    \ records without an upload date.\n\n    Remove all records without an upload\
+    \ date."
   questions_and_answers:
-  - question: How to proceed in case of file upload rejection due to duplicate value?
-    answer: 'Duplicate Values: the app will show you what values are duplicate; you
+  - answer: 'Duplicate Values: the app will show you what values are duplicate; you
       must remove them from the upload file (the one saved in the M drive). Or the
       invoice was already uploaded once to the database (database will show date and
       time when invoice was upload; it will also show you who uploaded the invoice).
       Invoice then must be manually keyed.'
-  - question: How to proceed in case of formatting issue?
-    answer: "1. Formatting Cells: if there is a value that is not formatted as required,\
+    question: How to proceed in case of file upload rejection due to duplicate value?
+  - answer: "1. Formatting Cells: if there is a value that is not formatted as required,\
       \ the app will not complete the upload. Check that all your values match the\
       \ same criteria within the column.\n2. There are some vendors that have a different\
       \ vendor code in the portal. We use the vendor code that People Soft shows.When\
@@ -188,10 +193,11 @@ seed_examples:
       \ issues, wrong receipt or wrong vendor code, and BAAN vs PeopleSoft lines that\
       \ did not match. This file is worked by Data Entry to manually process those\
       \ invoices."
-  - question: How to remove non-uploaded records from the spreadsheet?
-    answer: "Solution \n1.\tOpen the application. \n2.\tOpen the tbl_pp_MexInvoices\
+    question: How to proceed in case of formatting issue?
+  - answer: "Solution \n1.\tOpen the application. \n2.\tOpen the tbl_pp_MexInvoices\
       \ table, sort by created date, and look for records without an upload date.\n\
       3.\tRemove all records without an upload date."
+    question: How to remove non-uploaded records from the spreadsheet?
 - context: "Process Detail\nOverview\n\n    This activity will explain how to Create\
     \ and Upload the Spreadsheet in the Client Invoice Database.\n\nProcess Description\n\
     Please follow the below steps for Client Direct Invoices Spreadsheet Upload:\n\
@@ -221,8 +227,7 @@ seed_examples:
     \ the Report in the following path:\n\n    M:\\PAYSHARE\\DATA\\EXCEL\\MX Direct\
     \ Reports\\Receipts Needed and name the file. (For the example-Line1 MMDDYY)"
   questions_and_answers:
-  - question: How to pull report from the Client Portal?
-    answer: "Please follow the below steps for Client Direct Invoices Spreadsheet\
+  - answer: "Please follow the below steps for Client Direct Invoices Spreadsheet\
       \ Upload:\nPulling Client Report from the Client Portal: \n1.\tLogin to the\
       \ Mexican Portal: \n2.\tClick on the dropdown menu beside Menu de aplicaciones.>Recepcion\
       \ fe(Drop down)> Reportes>Reporte Gnral de Reception.\n3.\tAfter selecting Reporte\
@@ -232,29 +237,30 @@ seed_examples:
       \ Enter the present date in Recepcion de factura Hasta.\n6.\tSelect the Localidad\
       \ (Location) as Linea 2 Productivo and Linea 1 Productivo from the drop down.\n\
       (There are 2 different localidad (locations) for Por Archivar reports that needs\
-      \ to be run separately:\n'\tLinea 1 Productivo - 01100\n'\tLinea 2\
-      \ Productivo) - 06500\n7.\tClick on View Report.\n8.\tThe following page will\
-      \ be populated (Reports).\n9.\tClick on the drop-down and select Excel to change\
-      \ the File to Excel.\n10.\tA box will populate and select open.\n\n11.\tInformation\
-      \ will be opened in an Excel sheet.\nNote: Portal report will be run in two\
-      \ locations, Once Data Entry Team gets the Report it will be sent to the Analyst\
-      \ and the analyst will work on getting the Data to run the Spreadsheet upload.\n\
-      (The Data Entry Team will run the reports and send them an MX CS Analyst, and\
-      \ the Analyst will prepare the Spreadsheet Upload).\n12.\tClick on Enable Editing.\n\
+      \ to be run separately:\n'\tLinea 1 Productivo - 01100\n'\tLinea 2 Productivo)\
+      \ - 06500\n7.\tClick on View Report.\n8.\tThe following page will be populated\
+      \ (Reports).\n9.\tClick on the drop-down and select Excel to change the File\
+      \ to Excel.\n10.\tA box will populate and select open.\n\n11.\tInformation will\
+      \ be opened in an Excel sheet.\nNote: Portal report will be run in two locations,\
+      \ Once Data Entry Team gets the Report it will be sent to the Analyst and the\
+      \ analyst will work on getting the Data to run the Spreadsheet upload.\n(The\
+      \ Data Entry Team will run the reports and send them an MX CS Analyst, and the\
+      \ Analyst will prepare the Spreadsheet Upload).\n12.\tClick on Enable Editing.\n\
       \n13.\tSelect the Header Rows which aren't needed and Right Click and Select\
       \ Delete.\n14.\tSelect and Delete all Empty and hidden columns in the excel.\n\
       15.\tSimilarly Delete all the blank columns in the excel sheet.\n(Delete the\
       \ Usuario cpp column, Transaccion cpp column, Documento cpp column, paymentbatch\
       \ cpp column (K to S))."
-  - question: Do I need to run separate reports per location?
-    answer: "Yes. Select the Localidad (Location) as Linea 2 Productivo and Linea\
+    question: How to pull report from the Client Portal?
+  - answer: "Yes. Select the Localidad (Location) as Linea 2 Productivo and Linea\
       \ 1 Productivo from the drop down.\n(There are 2 different localidad (locations)\
-      \ for Por Archivar reports that needs to be run separately:\n'\tLinea 1\
-      \ Productivo - 01100\n'\tLinea 2 Productivo) - 06500"
-  - question: In which location should the report be saved?
-    answer: "Save the Report in the following path:  \nM:\\PAYSHARE\\DATA\\EXCEL\\\
+      \ for Por Archivar reports that needs to be run separately:\n'\tLinea 1 Productivo\
+      \ - 01100\n'\tLinea 2 Productivo) - 06500"
+    question: Do I need to run separate reports per location?
+  - answer: "Save the Report in the following path:  \nM:\\PAYSHARE\\DATA\\EXCEL\\\
       MX Direct Reports\\Receipts Needed and name the file. (For the example-Line1\
       \ MMDDYY)"
+    question: In which location should the report be saved?
 - context: "Retrieving the Invoices from Client Portal\n\n    Go to M:\\PAYSHARE\\\
     DATA\\EXCEL\\MX Direct Reports\\Receipts Needed.\n\n    Open the Mexican portal\
     \ and Login to the Mexican Portal: Click on the dropdown menu beside Menu de aplicaciones.>Recepcion\
@@ -346,13 +352,12 @@ seed_examples:
     \ the Portal Status to 'Rejected without Receipt'.\n\n    The most common errors\
     \ that could make the upload fail are:  \n\n{=html}\n<!-- -->"
   questions_and_answers:
-  - question: What is the location on Client Portal?
-    answer: "1.\tGo to M:\\PAYSHARE\\DATA\\EXCEL\\MX Direct Reports\\Receipts Needed.\n\
+  - answer: "1.\tGo to M:\\PAYSHARE\\DATA\\EXCEL\\MX Direct Reports\\Receipts Needed.\n\
       2.\tOpen the Mexican portal and Login to the Mexican Portal: Click on the dropdown\
       \ menu beside Menu de aplicaciones.>Recepcion fe> Facturas Recibidas> Recepcion\
       \ Facturas CPP."
-  - question: What is ASN?
-    answer: "A Receipt needs to be found for the direct process to input the receipt\
+    question: What is the location on Client Portal?
+  - answer: "A Receipt needs to be found for the direct process to input the receipt\
       \ into our data or to find the receipt to do the Uploads.\nTo identify the Receipt\
       \ number, ASN (Advanced Shipping Notice) number is needed on the Invoice. \n\
       To find ASN number on the Invoice ACUSE number is Needed. \n\n7.\tSearch for\
@@ -369,18 +374,19 @@ seed_examples:
       \ portal file (In the column of Contrato).\n\n16.\tSimilarly Open all Other\
       \ Invoices (which are having Same Supplier code for portal ID) from the Portal\
       \ and Select the ASN number from the Invoice and Enter in the Portal Excel File.\n\
-      '\tFollow the Procedure for all the Portal ID numbers (With same Supplier\
-      \ Code) in the Portal Excel File.\n17.\tIf the Supplier Code is different, Open\
-      \ the Portal, Enter the Portal ID, and Filter.  Open the Invoices, Find and\
-      \ Enter the ASN number in Excel Portal File (In the column of Contrato) and\
-      \ follow the same procedure for other Portal ID's.\n\n18.\tFollowing is\
-      \ the Data of ASN numbers taken from the Invoices based on Portal ID."
-  - question: How to proceed with kickouts?
-    answer: "If there are any Kickouts they should be Keyed manually. (Kickouts will\
-      \ come if there are any Price differences in Invoice).\n'\tThe uploads\
-      \ kickout file is sent to the Invoice processing team to process the Client\
-      \ Direct invoices manually for payment.\n'\tKickouts are Keyed through\
-      \ PeopleSoft.\n'\tIf the Invoice is uploaded in the Portal, the Receipt\
-      \ should be looked within 5 Business days.\n'\tEven After 7 days, if we\
-      \ are unable to find the Receipts, we would change the Portal Status to '\
-      Rejected without Receipt'."
+      '\tFollow the Procedure for all the Portal ID numbers (With same Supplier Code)\
+      \ in the Portal Excel File.\n17.\tIf the Supplier Code is different, Open the\
+      \ Portal, Enter the Portal ID, and Filter.  Open the Invoices, Find and Enter\
+      \ the ASN number in Excel Portal File (In the column of Contrato) and follow\
+      \ the same procedure for other Portal ID's.\n\n18.\tFollowing is the Data of\
+      \ ASN numbers taken from the Invoices based on Portal ID."
+    question: What is ASN?
+  - answer: "If there are any Kickouts they should be Keyed manually. (Kickouts will\
+      \ come if there are any Price differences in Invoice).\n'\tThe uploads kickout\
+      \ file is sent to the Invoice processing team to process the Client Direct invoices\
+      \ manually for payment.\n'\tKickouts are Keyed through PeopleSoft.\n'\tIf the\
+      \ Invoice is uploaded in the Portal, the Receipt should be looked within 5 Business\
+      \ days.\n'\tEven After 7 days, if we are unable to find the Receipts, we would\
+      \ change the Portal Status to 'Rejected without Receipt'."
+    question: How to proceed with kickouts?
+version: 3

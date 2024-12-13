@@ -1,6 +1,12 @@
-domain: 'BPOD Human Resource: Faith Health_Jury Duty Witness Duty Policy'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Faith_Health_Jury_Duty_Witness_Duty_Policy.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes the importance of serving on a jury or being called as
   a witness and, as such, provides income replacement to eligible caregivers.
+domain: 'BPOD Human Resource: Faith Health_Jury Duty Witness Duty Policy'
 seed_examples:
 - context: 'Department: Human Resources
 
@@ -16,13 +22,13 @@ seed_examples:
 
     Policy Name: Jury Duty/Witness Duty'
   questions_and_answers:
-  - question: What is the policy number of Jury Duty/Witness Duty policy?
-    answer: The policy number of Jury Duty/Witness Duty policy is HR100
-  - question: Who approves the Jury Duty/Witness Duty Policy under Faith Health?
-    answer: Chief Human Resources Officer is responsible to approve the Jury Duty/Witness
+  - answer: The policy number of Jury Duty/Witness Duty policy is HR100
+    question: What is the policy number of Jury Duty/Witness Duty policy?
+  - answer: Chief Human Resources Officer is responsible to approve the Jury Duty/Witness
       Duty policy under Faith Health.
-  - question: When was the Jury Duty/Witness Duty policy adopted?
-    answer: The Jury Duty/Witness Duty policy was adopted in 11/22/2015.
+    question: Who approves the Jury Duty/Witness Duty Policy under Faith Health?
+  - answer: The Jury Duty/Witness Duty policy was adopted in 11/22/2015.
+    question: When was the Jury Duty/Witness Duty policy adopted?
 - context: 'Policy Number: HR100
 
     Policy Name: Jury Duty/Witness Duty
@@ -35,19 +41,19 @@ seed_examples:
     or being called as a witness and, as such, provides income replacement to eligible
     caregivers.'
   questions_and_answers:
-  - question: What is the scope of the Jury Duty/Witness Duty policy of Faith Health
-      ministry?
-    answer: The Jury Duty/Witness Duty policy is eligible for all benefits-eligible
+  - answer: The Jury Duty/Witness Duty policy is eligible for all benefits-eligible
       caregivers.
-  - question: What is the purpose of Jury Duty/Witness Duty policy?
-    answer: 'The pupose of Jury Duty/Witness Duty policy is: As an expression of our
+    question: What is the scope of the Jury Duty/Witness Duty policy of Faith Health
+      ministry?
+  - answer: 'The pupose of Jury Duty/Witness Duty policy is: As an expression of our
       mission and values, the ministry respects each person as an inherently valuable
       member of the human community and as a unique expression of life. The ministry
       recognizes the importance of serving on a jury or being called as a witness
       and, as such, provides income replacement to eligible caregivers.'
-  - question: What is the importance of serving on a jury or being called as a witness?
-    answer: Serving on a jury or being called as a witness can provide income replacement
+    question: What is the purpose of Jury Duty/Witness Duty policy?
+  - answer: Serving on a jury or being called as a witness can provide income replacement
       to eligible caregivers.
+    question: What is the importance of serving on a jury or being called as a witness?
 - context: "Policy:\n1.\tThe ministry encourages caregivers to serve on a jury or\
     \ appear as a witness in court when called. Such caregivers will be eligible for\
     \ their base rate of pay for scheduled work days missed up to 40 hours per week,\
@@ -59,8 +65,7 @@ seed_examples:
     \ or above do not accrue PTO, but rather will be granted paid time off in accordance\
     \ with business needs and as approved by their supervisor."
   questions_and_answers:
-  - question: List down the Jury Duty/Witness Duty policy.
-    answer: "Jury Duty/Witness Duty policy:\n1.\tThe ministry encourages caregivers\
+  - answer: "Jury Duty/Witness Duty policy:\n1.\tThe ministry encourages caregivers\
       \ to serve on a jury or appear as a witness in court when called. Such caregivers\
       \ will be eligible for their base rate of pay for scheduled work days missed\
       \ up to 40 hours per week, provided appropriate and timely notification (i.e.\
@@ -71,14 +76,16 @@ seed_examples:
       \ in a director level position or above do not accrue PTO, but rather will be\
       \ granted paid time off in accordance with business needs and as approved by\
       \ their supervisor."
-  - question: Where is the Jury duty or witness time off usage recorded?
-    answer: Jury duty or witness time off usage will be recorded in the timekeeping
+    question: List down the Jury Duty/Witness Duty policy.
+  - answer: Jury duty or witness time off usage will be recorded in the timekeeping
       system, and time off will not be deducted from PTO accrual.
-  - question: What does caregivers get to serve on a jury or appear as a witness in
-      court when called?
-    answer: The ministry encourages caregivers to serve on a jury or appear as a witness
+    question: Where is the Jury duty or witness time off usage recorded?
+  - answer: The ministry encourages caregivers to serve on a jury or appear as a witness
       in court when called. Such caregivers will be eligible for their base rate of
       pay for scheduled work days missed up to 40 hours per week, provided appropriate
       and timely notification (i.e. the Jury Duty Summons) has been made to the respective
       supervisor, manager or department director that permits adequate coverage of
       the unit/department.
+    question: What does caregivers get to serve on a jury or appear as a witness in
+      court when called?
+version: 3

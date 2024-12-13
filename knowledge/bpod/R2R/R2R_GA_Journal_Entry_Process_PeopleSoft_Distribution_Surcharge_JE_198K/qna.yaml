@@ -1,7 +1,13 @@
-domain: 'BPOD Record to Analyze: R2R GA Journal Entry Process PeopleSoft Distribution
-  Surcharge (JE 198K)'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - R2R_GA_Journal_Entry_Process_PeopleSoft_Distribution_Surcharge_JE_198K.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how IBM Delivery Centre will prepare the Distribution
   Surcharge journal entry.
+domain: 'BPOD Record to Analyze: R2R GA Journal Entry Process PeopleSoft Distribution
+  Surcharge (JE 198K)'
 seed_examples:
 - context: "# Control Points\n\n  ***\\#***   **Sub process Activity**           **Sub\
     \ process Activity Description**                                             \
@@ -24,13 +30,11 @@ seed_examples:
     \ posted by WD +1 to transfer or reclass the scholarship fee of \\$5 associated\
     \ with each vehicle sold by Tulsa to Canada from Distribution surcharge account."
   questions_and_answers:
-  - question: What are the Control Objectives of PeopleSoft Distribution Surcharge
-      Journal Entry process?
-    answer: The Control Objectives of PeopleSoft Distribution Surcharge Journal Entry
+  - answer: The Control Objectives of PeopleSoft Distribution Surcharge Journal Entry
       process is to make sure that the Journals should be posted with Accuracy.
-  - question: What are the Control Risk Assertions of PeopleSoft Distribution Surcharge
+    question: What are the Control Objectives of PeopleSoft Distribution Surcharge
       Journal Entry process?
-    answer: 'The Control Risk Assertions of PeopleSoft Distribution Surcharge Journal
+  - answer: 'The Control Risk Assertions of PeopleSoft Distribution Surcharge Journal
       Entry process are:
 
       * Combo Errors
@@ -40,10 +44,12 @@ seed_examples:
       * Business units and operating units
 
       '
-  - question: What is the frequency of PeopleSoft Distribution Surcharge Journal Entry
-      process?
-    answer: The frequency of PeopleSoft Distribution Surcharge Journal Entry process
+    question: What are the Control Risk Assertions of PeopleSoft Distribution Surcharge
+      Journal Entry process?
+  - answer: The frequency of PeopleSoft Distribution Surcharge Journal Entry process
       is monthly.
+    question: What is the frequency of PeopleSoft Distribution Surcharge Journal Entry
+      process?
 - context: "# Overview\n\n## Objective(s)\n\nThe objective of the journal is to allocate\
     \ Distribution Surcharge to appropriate cost of sale accounts for vehicle sold\
     \ to Canada.\n\n### Frequency: \n\nMonthly (WD+1)\n\n### Source: \n\nMicrosoft\
@@ -57,18 +63,16 @@ seed_examples:
     \             | To                               |\n+------------------------+----------------------------------+\n\
     | > Journal Entry Posted | > Distribution Surcharge Account |\n+------------------------+----------------------------------+"
   questions_and_answers:
-  - question: What are the objectives of PeopleSoft Distribution Surcharge Journal
-      Entry process?
-    answer: The objective of the journal is to allocate Distribution Surcharge to
+  - answer: The objective of the journal is to allocate Distribution Surcharge to
       appropriate cost of sale accounts for vehicle sold to Canada.
-  - question: What is the frequency of PeopleSoft Distribution Surcharge Journal Entry
-      process?
-    answer: The frequency of the PeopleSoft Distribution Surcharge Journal Entry process
+    question: What are the objectives of PeopleSoft Distribution Surcharge Journal
+      Entry process?
+  - answer: The frequency of the PeopleSoft Distribution Surcharge Journal Entry process
       is monthly, specifically on the Wednesday after the first day (WD+1) of the
       month.
-  - question: What System Accesses are required to perform PeopleSoft Distribution
-      Surcharge Journal Entry process?
-    answer: 'The following System Accesses are required to perform the PeopleSoft
+    question: What is the frequency of PeopleSoft Distribution Surcharge Journal Entry
+      process?
+  - answer: 'The following System Accesses are required to perform the PeopleSoft
       Distribution Surcharge Journal Entry process:
 
       * PeopleSoft via EUR
@@ -76,6 +80,8 @@ seed_examples:
       * OBIEE MBS Truck - IT Help Desk
 
       * OBIEE Foreign Exchange Rates - IT Help Desk'
+    question: What System Accesses are required to perform PeopleSoft Distribution
+      Surcharge Journal Entry process?
 - context: "# Roles & Responsibilities\n\n## Description\n\n  **Role**           \
     \            **Responsibility**\n  ------------------------------ -----------------------------------------------------\n\
     \  Client Onshore (Tulsa Plant)   Provide input for the Journal entry\n  R2R Team(IBM)\
@@ -84,19 +90,19 @@ seed_examples:
     \ accesses, please refer to the related Aggregate SOD (A-SOD). ***\\<SOD Matrix\
     \ pending IBM GPS internal review and approval\\>***"
   questions_and_answers:
-  - question: What is R2R Team's role in PeopleSoft Distribution Surcharge Journal
-      Entry process?
-    answer: R2R Team (IBM) is responsible for preparing and posting the Distribution
+  - answer: R2R Team (IBM) is responsible for preparing and posting the Distribution
       Surcharge Journal Entry (JE 198K).
-  - question: Who provides input for the Journal entry in PeopleSoft Distribution
-      Surcharge Journal Entry process?
-    answer: Client Onshore (Tulsa Plant) provides input for the Journal entry in PeopleSoft
+    question: What is R2R Team's role in PeopleSoft Distribution Surcharge Journal
+      Entry process?
+  - answer: Client Onshore (Tulsa Plant) provides input for the Journal entry in PeopleSoft
       Distribution Surcharge Journal Entry process.
-  - question: Is Segregation of Duties (SOD) Matrix available for PeopleSoft Distribution
+    question: Who provides input for the Journal entry in PeopleSoft Distribution
       Surcharge Journal Entry process?
-    answer: No, Segregation of Duties (SOD) Matrix is not available for PeopleSoft
+  - answer: No, Segregation of Duties (SOD) Matrix is not available for PeopleSoft
       Distribution Surcharge Journal Entry process as it is pending IBM GPS internal
       review and approval.
+    question: Is Segregation of Duties (SOD) Matrix available for PeopleSoft Distribution
+      Surcharge Journal Entry process?
 - context: "## Process Description\n\n1.  Gather source data for journal.\n\n    1.\
     \  An email is received each month from Accounting Associate Senior from Client,\
     \ which contains a file indicating which units have a scholarship charge.\n\n\
@@ -114,10 +120,10 @@ seed_examples:
     \ account activity for the MRAS account 3650, login to OBIEE using the link mentioned\
     \ below:\n\n> https://evalue.internationaldelivers.com/obi/analytics/saw.dll?bieehome.\n\
     \n4.  Go to OBIEE and navigate through as mentioned below:\n\n> Dashboard >MBS\
-    \ Truck >MBS Journal Drill Down\n\n5.  Enter the details mentioned below:\n\n```{=html}\n\
-    <!-- -->\n```\na)  BU : 40800\n\nb)  MRAS Account : 3650\n\nc)  Journal Date:\
-    \ Current month date range.\n\nd)  Click on: Apply\n\ne)  Export to Excel\n\n\
-    1.  Export the data to excel and paste to the Working file ''2022_04 APR22 JE\
+    \ Truck >MBS Journal Drill Down\n\n5.  Enter the details mentioned below:\n\n\
+    ```{=html}\n<!-- -->\n```\na)  BU : 40800\n\nb)  MRAS Account : 3650\n\nc)  Journal\
+    \ Date: Current month date range.\n\nd)  Click on: Apply\n\ne)  Export to Excel\n\
+    \n1.  Export the data to excel and paste to the Working file ''2022_04 APR22 JE\
     \ 198K Distribution Surcharge\" Tab ''OBIEE GL Balance\".\n\n3.  In order to extract\
     \ Foreign Exchange rate, go to OBIEE and select the following:\n\n```{=html}\n\
     <!-- -->\n```\na)  Dashboard>NFC>Treasure Rate>Foreign Exchange rate\n\nb)  Enter\
@@ -132,32 +138,30 @@ seed_examples:
     \ Avg rate to the Cell ''I7''.\n\n5.  Change the month in the Cell,\"A1\" .Value\
     \ in Cell ''F1'' will automatically pick the data from cell ''I7''"
   questions_and_answers:
-  - question: In order to extract Foreign Exchange rate what steps needs to be taken
+  - answer: "4.\tIn order to extract Foreign Exchange rate, go to OBIEE and select\
+      \ the following:\na)\tDashboard>NFC>Treasure Rate>Foreign Exchange rate>\nb)\t\
+      Enter current year and month\nc)\tClick on apply\nNote : If the monthend close\
+      \ is April 2022 , select the foreign exchange rate of prior month in this scenario\
+      \ it is March 2022.\n\n4.1.\tClick on Foreign Exchange Rates\u201D tab on the\
+      \ screen.\n4.2.\tScroll down to \u2018US Dollars per currency unit\u2019. Consider\
+      \ the CAD/USD Exchange rate\u2019\u2019 under Monthly Avg rate field. Click\
+      \ on \u2018Export\u2019 option to extract the data in to an excel file.\n\n\
+      4.3.\tCopy the extracted excel data and paste the same in the working file,\u201D\
+      2022_04 APR22 JE 198K   Distribution Surcharge\u201D, \u201DMAV Rate\u201D Tab.\
+      \ \n4.4.\tCopy and paste the \u201DCAD/USD rate\u201D under the monthly Avg\
+      \ rate to the Cell I7. \n4.5.\tChange the month in the Cell,\u201DA1\u201D .Value\
+      \ in Cell F1 will automatically pick the data from cell I7"
+    question: In order to extract Foreign Exchange rate what steps needs to be taken
       in PeopleSoft Distribution Surcharge Journal Entry process?
-    answer: "4.\tIn order to extract Foreign Exchange rate, go to OBIEE and select\
-      \ the following:\na)\tDashboard>NFC>Treasure Rate>Foreign Exchange\
-      \ rate>\nb)\tEnter current year and month\nc)\tClick on apply\nNote : If\
-      \ the monthend close is April 2022 , select the foreign exchange rate of prior\
-      \ month in this scenario it is March 2022.\n\n4.1.\tClick on Foreign\
-      \ Exchange Rates\u201D tab on the screen.\n4.2.\tScroll down to \u2018US Dollars\
-      \ per currency unit\u2019. Consider the CAD/USD Exchange rate\u2019\
-      \u2019 under Monthly Avg rate field. Click on \u2018\
-      Export\u2019 option to extract the data in to an excel file.\n\n4.3.\tCopy the\
-      \ extracted excel data and paste the same in the working file,\u201D2022_04\
-      \ APR22 JE 198K   Distribution Surcharge\u201D, \u201DMAV Rate\u201D Tab. \n\
-      4.4.\tCopy and paste the \u201DCAD/USD rate\u201D under the monthly Avg rate\
-      \ to the Cell I7. \n4.5.\tChange the month in the Cell,\u201D\
-      A1\u201D .Value in Cell F1 will automatically pick the\
-      \ data from cell I7"
-  - question: Where does the source data for the journal in PeopleSoft Distribution
-      Surcharge Journal Entry process come from?
-    answer: The source data for the journal in PeopleSoft Distribution Surcharge Journal
+  - answer: The source data for the journal in PeopleSoft Distribution Surcharge Journal
       Entry process come from an email received from Accounting Associate Senior from
       Client, which contains a file indicating which units have a scholarship charge.
-  - question: Where do you find the Foreign Exchange rate in OBIEE?
-    answer: To find the Foreign Exchange rate, go to OBIEE, select the Dashboard 'NFCTreasure
+    question: Where does the source data for the journal in PeopleSoft Distribution
+      Surcharge Journal Entry process come from?
+  - answer: To find the Foreign Exchange rate, go to OBIEE, select the Dashboard 'NFCTreasure
       RateForeign Exchange rate', enter the current year and month, and click on the
       'Foreign Exchange Rates' tab.
+    question: Where do you find the Foreign Exchange rate in OBIEE?
 - context: '4.  Go to "Tulsa Intercompany units" tab and update the data from the
     excel received via mail for \$5 scholarship fee.
 
@@ -186,13 +190,11 @@ seed_examples:
     9.  Refer Generic PeopleSoft Journal Entry desk procedure - ''''Client_R2R_GA_Peoplesoft
     Journal Entry Posting_2022_V1.0'''' in order to process the journal entry.'
   questions_and_answers:
-  - question: In PeopleSoft Distribution Surcharge Journal Entry process, in which
-      tab of Distribution Surcharge excel do we need to attach the email received?
-    answer: In PeopleSoft Distribution Surcharge Journal Entry process, the email
+  - answer: In PeopleSoft Distribution Surcharge Journal Entry process, the email
       received is attached in the 'Entries' tab of Distribution Surcharge excel.
-  - question: Describe the calculations in the "Entries" tab of of Distribution Surcharge
-      excel in PeopleSoft Distribution Surcharge Journal Entry process?
-    answer: "The calculations in the \"Entries\" tab of of Distribution Surcharge\
+    question: In PeopleSoft Distribution Surcharge Journal Entry process, in which
+      tab of Distribution Surcharge excel do we need to attach the email received?
+  - answer: "The calculations in the \"Entries\" tab of of Distribution Surcharge\
       \ excel in PeopleSoft Distribution Surcharge Journal Entry process are described\
       \ below.\n1. Cell 'E8': linked to \"OBIEE GL Balance\" Tab.\n2. Cell 'E9': linked\
       \ to cell 'G4'.\n3. Cell 'E10': is the remaining balance in the surcharge account\
@@ -200,9 +202,12 @@ seed_examples:
       \ the USD equivalent of the Canadian surcharge.\n5. Cell 'E15': Linked to cell\
       \ 'G5'. \n6. Cell 'E16': formula to calculate the difference, which is posted\
       \ to the exchange gain/loss account."
-  - question: In PeopleSoft Distribution Surcharge Journal Entry process, what Generic
-      PeopleSoft Journal Entry desk procedure is referred to in order to process the
-      journal entry?
-    answer: In PeopleSoft Distribution Surcharge Journal Entry process, Generic PeopleSoft
+    question: Describe the calculations in the "Entries" tab of of Distribution Surcharge
+      excel in PeopleSoft Distribution Surcharge Journal Entry process?
+  - answer: In PeopleSoft Distribution Surcharge Journal Entry process, Generic PeopleSoft
       Journal Entry desk procedure  'Client_R2R_GA_Peoplesoft Journal Entry Posting_2022_V1.0'
       is referred to process the journal entry.
+    question: In PeopleSoft Distribution Surcharge Journal Entry process, what Generic
+      PeopleSoft Journal Entry desk procedure is referred to in order to process the
+      journal entry?
+version: 3

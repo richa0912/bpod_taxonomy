@@ -1,7 +1,13 @@
-domain: 'BPOD record to analyze: DTP Prepare and Process Manual Journal Entry - 3PSP calculates
-  and 3PSP posts V14'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - DTP_Prepare_and_Process_Manual_Journal_Entry-3PSP_calculates_and_3PSP_posts_V14.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes the procedure to Prepare and Process Manual Journal Entry
   for 3PSP calculates and 3PSP posts
+domain: 'BPOD record to analyze: DTP Prepare and Process Manual Journal Entry - 3PSP
+  calculates and 3PSP posts V14'
 seed_examples:
 - context: "## 7.C Define Rules for Journal Entry (by Country or Supply Chain Company\
     \ Finance Requestor) \n\n> The Country or Supply Chain Company Finance Requestor\
@@ -20,19 +26,19 @@ seed_examples:
     \ is required, the Finance Requestor seeks support from the Operating Centre Accountant.\
     \ Refer to step *7.D. Provide Accounting Support.*"
   questions_and_answers:
-  - question: Who defines the calculation rules for a new non-judgmental journal entry?
-    answer: The Country or Supply Chain Company Finance Requestor defines the calculation
+  - answer: The Country or Supply Chain Company Finance Requestor defines the calculation
       rules for a new non-judgmental journal entry.
-  - question: Who can notify the Country or Supply Chain Company Finance Requestor
-      to add a new journal entry to the NJJE list?
-    answer: The Country or Supply Chain Company Controller can notify the Country
+    question: Who defines the calculation rules for a new non-judgmental journal entry?
+  - answer: The Country or Supply Chain Company Controller can notify the Country
       or Supply Chain Company Finance Requestor to add a new journal entry to the
       NJJE list.
-  - question: What is the purpose of the Country Lock Meeting (CLM)?
-    answer: The purpose of the Country Lock Meeting (CLM) is to discuss and confirm
+    question: Who can notify the Country or Supply Chain Company Finance Requestor
+      to add a new journal entry to the NJJE list?
+  - answer: The purpose of the Country Lock Meeting (CLM) is to discuss and confirm
       the need for new non-judgmental journal entries between the Country or Supply
       chain Company Finance representatives, the Operating Centre representatives,
       and the Service Provider representatives.
+    question: What is the purpose of the Country Lock Meeting (CLM)?
 - context: "## 7.G Prepare Journal Entry Calculation (by Service Provider Accountant)\
     \ \n\n> Based on the details included in the checklist of the non-judgmental postings\
     \ as well as additional local specific instruction that are available, collect\
@@ -52,9 +58,7 @@ seed_examples:
     \n> In case any accounting support is required, the Service Provider Accountant\
     \ will contact the Operating Centre."
   questions_and_answers:
-  - question: In 3PSP calculates and 3PSP posts manual journal entry process, what
-      are the sources of input for initiating the prepayment process?
-    answer: 'In 3PSP calculates and 3PSP posts manual journal entry process, the inputs
+  - answer: 'In 3PSP calculates and 3PSP posts manual journal entry process, the inputs
       for initiating the prepayment process may come from:
 
       *   P2P process: when the invoice is posted for the liability that shall be
@@ -62,15 +66,17 @@ seed_examples:
 
       *   R2R Account Reconciliation process: when the prepayment accounts are analyzed
       and the R2R accountant identifies that the prepayment posting is missing.'
-  - question: In 3PSP calculates and 3PSP posts manual journal entry process, what
-      happens if the Service Provider Accountant requires accounting support?
-    answer: In 3PSP calculates and 3PSP posts manual journal entry process, if the
+    question: In 3PSP calculates and 3PSP posts manual journal entry process, what
+      are the sources of input for initiating the prepayment process?
+  - answer: In 3PSP calculates and 3PSP posts manual journal entry process, if the
       Service Provider Accountant requires accounting support, they will contact the
       Operating Centre.
-  - question: In 3PSP calculates and 3PSP posts manual journal entry process, what
-      does the Service Provider Accountant review regularly?
-    answer: In 3PSP calculates and 3PSP posts manual journal entry process,  the Service
+    question: In 3PSP calculates and 3PSP posts manual journal entry process, what
+      happens if the Service Provider Accountant requires accounting support?
+  - answer: In 3PSP calculates and 3PSP posts manual journal entry process,  the Service
       Provider Accountant performs a regular review of the respective prepayment accounts.
+    question: In 3PSP calculates and 3PSP posts manual journal entry process, what
+      does the Service Provider Accountant review regularly?
 - context: "### a. Prepare journal entry manually \n\n> In order to prepare the journal\
     \ entry manually follow the steps below:\n\n1.  Go to BlackLine tool. When you\
     \ access BlackLine, the homepage shows information relevant to your role, and\
@@ -105,13 +111,11 @@ seed_examples:
     \ non-reversal accruals, the document type should be SA; however, it can be changed\
     \ depending on the request."
   questions_and_answers:
-  - question: What is the first step to prepare a journal entry manually in BlackLine
-      tool?
-    answer: The first step to prepare a journal entry manually in BlackLine tool is
+  - answer: The first step to prepare a journal entry manually in BlackLine tool is
       to go to the BlackLine tool and select your role as a Preparer.
-  - question: What are the mandatory fields that need to be filled in the Header section
-      of the journal template?
-    answer: 'The mandatory fields that need to be filled in the Header section include:
+    question: What is the first step to prepare a journal entry manually in BlackLine
+      tool?
+  - answer: 'The mandatory fields that need to be filled in the Header section include:
 
       *   JE Classification
 
@@ -126,9 +130,11 @@ seed_examples:
       *   Header Company Code
 
       *   Document Currency'
-  - question: How do you change the period in BlackLine?
-    answer: To change the period, click on the date on the top bar and then click
+    question: What are the mandatory fields that need to be filled in the Header section
+      of the journal template?
+  - answer: To change the period, click on the date on the top bar and then click
       on the proper period.
+    question: How do you change the period in BlackLine?
 - context: '-   **3PSP calculates and 3PSP posts (Template 3**) -- is used for journal
     entries calculated, prepared and approved by Service Provider; these journal entries
     are calculated by the Service Provider based on the predefined list and rules
@@ -176,24 +182,24 @@ seed_examples:
     entity level. You should not post cross journals which are not balancing to zero
     at LE level using journals workflow and it must follow the Intercompany processes.'
   questions_and_answers:
-  - question: What is the purpose of Template 3 (3PSP calculates and 3PSP posts )
-      in the journal entry process?
-    answer: Template 3 (3PSP calculates and 3PSP posts ) is used for journal entries
+  - answer: Template 3 (3PSP calculates and 3PSP posts ) is used for journal entries
       calculated, prepared, and approved by the Service Provider, based on predefined
       lists and rules set up by the Client on a yearly basis.
-  - question: Who is responsible for posting restatement postings in the journal entry
-      process?
-    answer: Service Provider is responsible for posting restatement postings in the
+    question: What is the purpose of Template 3 (3PSP calculates and 3PSP posts )
+      in the journal entry process?
+  - answer: Service Provider is responsible for posting restatement postings in the
       journal entry process. Despite the fact that restatement postings require knowledge
       about values calculated by Central Teams (UBMS) and should be posted by UL (not
       by the Service Provider), it is still expected that the Service Provider will
       post these entries, as they only need to mirror the initial posting without
       requiring further judgment.
-  - question: What is the special requirement regarding the intercompany 175*-176*
-      series in the journal entry process?
-    answer: All postings in the intercompany 175*-176* series must be processed as
+    question: Who is responsible for posting restatement postings in the journal entry
+      process?
+  - answer: All postings in the intercompany 175*-176* series must be processed as
       non-reversible entries and are subject to additional approval of IC Ops Hub
       prior to posting.
+    question: What is the special requirement regarding the intercompany 175*-176*
+      series in the journal entry process?
 - context: '| > Service              | > The Service Provider Approver maintains and
     confirms the NJJE list with the Country and other Service Providers (if applicable)
     at the beginning of each month and sends the completed list to OC for information.                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -267,20 +273,21 @@ seed_examples:
 
     '
   questions_and_answers:
-  - question: What are the responsibilities of the Service Provider Approver in 3PSP
-      calculate and 3PSP posts manual journal entry process?
-    answer: "In 3PSP calculate and 3PSP posts manual journal entry process, the Service\
+  - answer: "In 3PSP calculate and 3PSP posts manual journal entry process, the Service\
       \ Provider Approver is responsible for the following.\n*  Maintain Journal Schedule\
       \ \n*  Validate Journal Entry Definition \n*  Reject Journal Entry Definition\
       \  \n*  Review Journal Entry \n*  Approve Journal Entry \n*  Reject Journal\
       \ Entry \n*  Process Journal into ERP \n*  Validate Schedule of Journals \n\
       *  Request Adjustment "
-  - question: In 3PSP calculate and 3PSP posts manual journal entry process, who is
-      responsible for reviewing and confirming IC journal entries?
-    answer: In 3PSP calculate and 3PSP posts manual journal entry process, the Intercompany
+    question: What are the responsibilities of the Service Provider Approver in 3PSP
+      calculate and 3PSP posts manual journal entry process?
+  - answer: In 3PSP calculate and 3PSP posts manual journal entry process, the Intercompany
       Ops Hub is responsible for reviewing and confirming IC journal entries related
       to the IC process before the journal can be submitted in BlackLine.
-  - question: Who is authorized to approve Non-judgemental Journal entries of 175*-176*
-      series.
-    answer: On the 175*-176* series, only the CG IC Hub is authorized to approve Non-Judgmental
+    question: In 3PSP calculate and 3PSP posts manual journal entry process, who is
+      responsible for reviewing and confirming IC journal entries?
+  - answer: On the 175*-176* series, only the CG IC Hub is authorized to approve Non-Judgmental
       Journal Entries.
+    question: Who is authorized to approve Non-judgemental Journal entries of 175*-176*
+      series.
+version: 3

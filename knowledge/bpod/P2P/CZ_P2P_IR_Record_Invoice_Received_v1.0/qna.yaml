@@ -1,6 +1,12 @@
-domain: 'BPOD procure to pay: CZ_P2P_IR_Record Invoice Received_v1.0'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - CZ_P2P_IR_Record_Invoice_Received_v1.0.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how the IBM Delivery Centers perform and document operational
   tasks associated with receiving invoices for Client.
+domain: 'BPOD procure to pay: CZ_P2P_IR_Record Invoice Received_v1.0'
 seed_examples:
 - context: '## Step Description
 
@@ -117,15 +123,15 @@ seed_examples:
 
     +-----------------------------------+'
   questions_and_answers:
-  - question: How many ways can suppliers send invoices?
-    answer: 'The supplier can deliver AP documents in two ways: hard copy (paper invoice)
+  - answer: 'The supplier can deliver AP documents in two ways: hard copy (paper invoice)
       submission or PDF submission'
-  - question: What should the Client Scanning Team do once they receive the paper
+    question: How many ways can suppliers send invoices?
+  - answer: Client Scanning Team should open the envelope and pre-sort the document.
+    question: What should the Client Scanning Team do once they receive the paper
       invoice?
-    answer: Client Scanning Team should open the envelope and pre-sort the document.
-  - question: When should the methods of delivering AP documents be defined?
-    answer: The supplier is responsible for defining the methods of delivering AP
+  - answer: The supplier is responsible for defining the methods of delivering AP
       documents before sending invoice to AP
+    question: When should the methods of delivering AP documents be defined?
 - context: '### Complete data and trigger workflow
 
 
@@ -175,23 +181,23 @@ seed_examples:
     there is a correct sender available. If yes, please select the correct sender
     from the dropdown list.'
   questions_and_answers:
-  - question: Who is responsible for ensuring all invoices received from suppliers
-      are completely validated?
-    answer: The IBM AP Invoice Processing Team is responsible for ensuring all invoices
+  - answer: The IBM AP Invoice Processing Team is responsible for ensuring all invoices
       received from suppliers are completely validated.
-  - question: What is Recipient number (Kod Spolecnosti) field in an invoice?
-    answer: The Recipient number (Kod Spolecnosti) field is the address of the CLIENT
+    question: Who is responsible for ensuring all invoices received from suppliers
+      are completely validated?
+  - answer: The Recipient number (Kod Spolecnosti) field is the address of the CLIENT
       company for which the invoice was issued. If the address on the invoice is valid,
       it should match the data captured by the OCR tool. If there is a mismatch, the
       correct address should be determined using the attached "Cheat-sheet" file.
       If the correct recipient number cannot be found, "1" should be put in the total
       value field and the tax amount should be deleted to forward the invoice for
       manual verification.
-  - question: What should be done if the data in the Sender number field does not
-      match the invoice image?
-    answer: If the data in the Sender number (*Cislo dodavatele*) field does not match
+    question: What is Recipient number (Kod Spolecnosti) field in an invoice?
+  - answer: If the data in the Sender number (*Cislo dodavatele*) field does not match
       the invoice image, the dropdown list should be checked for the correct sender.
       If available, the correct sender should be selected from the dropdown list.
+    question: What should be done if the data in the Sender number field does not
+      match the invoice image?
 - context: '**VAT Rate (*Sazba DPH*)** -- based on the tax code or percentage on the
     invoice.
 
@@ -250,20 +256,20 @@ seed_examples:
 
     **Exception:** You don''t have to do this for PO number starting with 1000....'
   questions_and_answers:
-  - question: What is the significance of the VAT Rate field in the invoice processing?
-    answer: The VAT Rate field is based on the tax code or percentage on the invoice.
+  - answer: The VAT Rate field is based on the tax code or percentage on the invoice.
       If there are multiple VAT rates mentioned on the invoice, the value should be
       removed from this field to block the invoice from being processed automatically
       and allow the accountants to process it manually.
-  - question: What should be done if the tax amount is zero and there is no text provided
-      on the invoice?
-    answer: If the tax amount is zero but there is no text provided on the invoice
+    question: What is the significance of the VAT Rate field in the invoice processing?
+  - answer: If the tax amount is zero but there is no text provided on the invoice
       as mentioned in the Tax Decision Tree and the vendor is from Czech Republic,
       a zero can be put in tax amount and in percentage amount and Tax code should
       be N0.
-  - question: What are acceptable PO formats in the Record Invoice Received process?
-    answer: PO numbers starting with 450..., 451..., 55... and 1000... are the acceptable
+    question: What should be done if the tax amount is zero and there is no text provided
+      on the invoice?
+  - answer: PO numbers starting with 450..., 451..., 55... and 1000... are the acceptable
       PO formats.
+    question: What are acceptable PO formats in the Record Invoice Received process?
 - context: 'In case some important information is missing, please put "1" as total
     amount and delete tax amount, to ensure the invoice will be forwarded to accountants
     for manual verification and not processed automatically.
@@ -280,8 +286,8 @@ seed_examples:
     as a PDF to your PC.
 
 
-    Sends this document by email to **\"xxx\@Client.com\"** with the note
-    to "unlink and rescan".
+    Sends this document by email to **\"xxx\@Client.com\"** with the note to "unlink
+    and rescan".
 
 
     Returns to validation tool and deletes the displayed document with multiple invoices
@@ -324,8 +330,7 @@ seed_examples:
 
     13. **Purchase order number (for PO invoices only)**'
   questions_and_answers:
-  - question: What should be done if there are two or more invoices in one PDF file?
-    answer: 'If during validation in the displayed original you found that two or
+  - answer: 'If during validation in the displayed original you found that two or
       more invoices are scanned in one PDF file, please proceed as follows:
 
 
@@ -333,21 +338,22 @@ seed_examples:
       Select the desired file by registration number. Save the displayed document
       with multiple invoices as a PDF to PC.
 
-      2. Send this document by email to "xxx@Client.com" with the note to
-      "unlink and rescan".
+      2. Send this document by email to "xxx@Client.com" with the note to "unlink
+      and rescan".
 
       3. Return to validation tool and delete the displayed document with multiple
       invoices from the system.'
-  - question: What fields should be checked if the received document is a valid invoice?
-    answer: 'If the received document is a valid invoice, the following fields should
+    question: What should be done if there are two or more invoices in one PDF file?
+  - answer: 'If the received document is a valid invoice, the following fields should
       be checked if read correctly by the OCR system: Recipient number, Sender number,
       Bank details, Total amount, Tax amount, Reference number + VAT, Reference number,
       Document date, Date of taxable supply, VAT Rate, Currency, Tax code (for PO
       invoices only), and Purchase order number (for PO invoices only).'
-  - question: What should be done if important information is missing in an invoice?
-    answer: If important information is missing in an invoice, put "1" as the total
+    question: What fields should be checked if the received document is a valid invoice?
+  - answer: If important information is missing in an invoice, put "1" as the total
       amount and delete the tax amount to ensure that the invoice is forwarded to
       accountants for manual verification and not processed automatically.
+    question: What should be done if important information is missing in an invoice?
 - context: 'Once a week you should check and correct the interface errors and rejections.
     To do it, please login to SAP (described in step [5.2.17 Complete data and trigger
     workflow](#complete-data-and-trigger-workflow)) and follow the below steps.
@@ -430,13 +436,14 @@ seed_examples:
 
     '
   questions_and_answers:
-  - question: What transaction should be opened to view all documents prepared for
-      validation?
-    answer: Transaction /n/OTX/PF03\_WP should be opened to view all documents prepared
+  - answer: Transaction /n/OTX/PF03\_WP should be opened to view all documents prepared
       for validation.
-  - question: What should be done if there are more than six attempts to restart the
-      document in the system?
-    answer: The document must be rejected and scanned one more time, and an email
+    question: What transaction should be opened to view all documents prepared for
+      validation?
+  - answer: The document must be rejected and scanned one more time, and an email
       should be sent to xxx@Client.com mentioning the Reg ID.
-  - question: What document type should be put to filter Czech rejections?tor"?
-    answer: CZ should be put as the document type to filter Czech rejections
+    question: What should be done if there are more than six attempts to restart the
+      document in the system?
+  - answer: CZ should be put as the document type to filter Czech rejections
+    question: What document type should be put to filter Czech rejections?tor"?
+version: 3

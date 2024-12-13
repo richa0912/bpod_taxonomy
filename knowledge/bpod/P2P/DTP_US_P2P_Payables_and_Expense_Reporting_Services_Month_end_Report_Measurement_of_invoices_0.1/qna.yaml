@@ -1,7 +1,13 @@
-domain: 'BPOD procure to pay: DTP_US_P2P_Payables and Expense Reporting Services_Month
-  end Report _ Measurement of invoices_0.1'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - DTP_US_P2P_Payables_and_Expense_Reporting_Services_Month_end_Report_Measurement_of_invoices_0.1.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how to measure the electronic and manual invoices processed
   in a month.
+domain: 'BPOD procure to pay: DTP_US_P2P_Payables and Expense Reporting Services_Month
+  end Report _ Measurement of invoices_0.1'
 seed_examples:
 - context: "# Roles & Responsibilities\n\n## Description\n\n  ------------------ -------------------------\n\
     \  **Role**           **Responsibility**\n  IBM AP Team Lead   Measurement of\
@@ -24,16 +30,16 @@ seed_examples:
     \ How: By using SAP                                                         |\n\
     +------+---------------------------------------------------------------------------+"
   questions_and_answers:
-  - question: Who is responsible for measuring invoices?
-    answer: The IBM AP Team Lead is responsible for measuring invoices.
-  - question: How often should the measurement report of invoices be generated from
-      SAP?
-    answer: The measurement report of invoices should be generated from SAP on the
+  - answer: The IBM AP Team Lead is responsible for measuring invoices.
+    question: Who is responsible for measuring invoices?
+  - answer: The measurement report of invoices should be generated from SAP on the
       first working day of the month.
-  - question: What is the purpose of generating the measurement report of invoices
-      from SAP?
-    answer: The purpose of generating the measurement report of invoices from SAP
+    question: How often should the measurement report of invoices be generated from
+      SAP?
+  - answer: The purpose of generating the measurement report of invoices from SAP
       is to measure invoices processed in a month.
+    question: What is the purpose of generating the measurement report of invoices
+      from SAP?
 - context: 'In Tab CY 12 Conforming LOB, update the data in Actual Nov-12 which will
     automatically update the chart for CY 12 Conforming LOB
 
@@ -83,15 +89,15 @@ seed_examples:
 
     +----------------------------------------------------------------------------------------------------+------------------+'
   questions_and_answers:
-  - question: What should be updated to automatically update the chart for CY 12 Conforming
-      LOB?
-    answer: The data in Tab CY 12 Conforming LOB, specifically in Actual Nov-12, should
+  - answer: The data in Tab CY 12 Conforming LOB, specifically in Actual Nov-12, should
       be updated to automatically update the chart for CY 12 Conforming LOB.
-  - question: What is the data to be updated in the Non Conforming Invoices Tab
-    answer: The data to be updated in the Non Conforming Invoices Tab is the total
+    question: What should be updated to automatically update the chart for CY 12 Conforming
+      LOB?
+  - answer: The data to be updated in the Non Conforming Invoices Tab is the total
       of Columns MM IR & Total.
-  - question: What is the definition of P2P?
-    answer: P2P stands for Procure to Pay.
+    question: What is the data to be updated in the Non Conforming Invoices Tab
+  - answer: P2P stands for Procure to Pay.
+    question: What is the definition of P2P?
 - context: 'Log in to SAP.
 
 
@@ -145,18 +151,18 @@ seed_examples:
     Check mark the box at the left on the Job name and click on Spool to generate
     the report (as shown in the screen shot below)'
   questions_and_answers:
-  - question: What is the SAP T. code to be used for generating the measurement report
-      of invoices?
-    answer: The SAP T. code to be used for generating the measurement report of invoices
+  - answer: The SAP T. code to be used for generating the measurement report of invoices
       is 'Z9016_POPSSO- POP Menu- SSO transactions'.
-  - question: How can the user check the status of the invoice report after executing
-      it?
-    answer: The user can check the status of the report by going to T-code SM37, executing
+    question: What is the SAP T. code to be used for generating the measurement report
+      of invoices?
+  - answer: The user can check the status of the report by going to T-code SM37, executing
       it, and checking the Job Overview screen.
-  - question: What should be done to generate the list of invoices if the status of
-      the report shows as 'Finished'?
-    answer: The user should check mark the box at the left on the Job name and click
+    question: How can the user check the status of the invoice report after executing
+      it?
+  - answer: The user should check mark the box at the left on the Job name and click
       on Spool to generate the report.
+    question: What should be done to generate the list of invoices if the status of
+      the report shows as 'Finished'?
 - context: 'To generate the list of invoices, follow the steps below
 
 
@@ -195,14 +201,14 @@ seed_examples:
 
     After adding delete the row "TSA Divested Operations"'
   questions_and_answers:
-  - question: In what format should the list of invoices be saved?
-    answer: The list of invoices should be saved in "Spreadsheet" format.
-  - question: What should be done to the data in the row "TSA Divested Operations"?
-    answer: The data in the row "TSA Divested Operations" should be added to the data
+  - answer: The list of invoices should be saved in "Spreadsheet" format.
+    question: In what format should the list of invoices be saved?
+  - answer: The data in the row "TSA Divested Operations" should be added to the data
       in the "Non integrated row" before deleting the row "TSA Divested Operations".
-  - question: What is the first step to generate the list of invoices?
-    answer: The first step to generate the list of invoices is to click on "System",
+    question: What should be done to the data in the row "TSA Divested Operations"?
+  - answer: The first step to generate the list of invoices is to click on "System",
       then "List", then "Save", then "Local File".
+    question: What is the first step to generate the list of invoices?
 - context: 'Under the Number Tab selcect the Number and Decimal place. Should be zero
     as below shown:
 
@@ -239,12 +245,13 @@ seed_examples:
     Update the chart data by selecting the correct column and row numbers from the
     "Conforming verses Non Confirming" tab.'
   questions_and_answers:
-  - question: What should be done to update the charts on the client Intranet?
-    answer: The charts on the client Intranet should be updated by opening the file
+  - answer: The charts on the client Intranet should be updated by opening the file
       'CY12 Pop Invoice Measurements' and updating the chart data by selecting the
       correct column and row numbers from the 'Conforming verses Non Confirming' tab.
-  - question: What should be done to column J after filling it with the color black?
-    answer: Column J should be filled with the color black after 'Electronic payment'
+    question: What should be done to update the charts on the client Intranet?
+  - answer: Column J should be filled with the color black after 'Electronic payment'
       to show electronic invoices and manual invoices in different parts.
-  - question: What should be done to the report after adding the headings?
-    answer: Borders should be added and the total of the invoices should be calculated.
+    question: What should be done to column J after filling it with the color black?
+  - answer: Borders should be added and the total of the invoices should be calculated.
+    question: What should be done to the report after adding the headings?
+version: 3

@@ -1,10 +1,16 @@
-domain: 'BPOD Human Resource: Hope Medical Center_Bereavement Policy'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Hope_Medical_Center_Bereavement_Policy.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: The Hope Medical Center Bereavement Policy outlines the facility's
   policy for paid time off in the event of the death of an immediate family member.
   Caregivers may receive up to 24 or 40 hours with pay, depending on the relationship,
   and additional paid time off or unpaid time may be authorized on a case-by-case
   basis. The policy also covers caregivers in manager level positions or above who
   do not accrue PTO.
+domain: 'BPOD Human Resource: Hope Medical Center_Bereavement Policy'
 seed_examples:
 - context: 'Hope Medical Center ("facility")
 
@@ -45,22 +51,22 @@ seed_examples:
 
     - or current in-law relationships through marriage or partnership of the above'
   questions_and_answers:
-  - question: What is the purpose of Hope Medical Center's Bereavement Policy?
-    answer: The purpose of Hope Medical Center's Bereavement Policy is to establish
+  - answer: The purpose of Hope Medical Center's Bereavement Policy is to establish
       the facility's policy, expectations, and guidelines for paid time off in the
       event of the death of an immediate family member when caregivers are eligible
       for bereavement leave.
-  - question: When was Hope Medical Center's Bereavement  Policy last reviewed and
-      revised?
-    answer: The Hope Medical Center's Bereavement Policy was last reviewed and revised
+    question: What is the purpose of Hope Medical Center's Bereavement Policy?
+  - answer: The Hope Medical Center's Bereavement Policy was last reviewed and revised
       on May 1, 2022.
-  - question: Who is considered an immediate family member under Hope Medical Center's
-      Bereavement policy?
-    answer: Under Hope Medical Center's Bereavement policy, an immediate family member
+    question: When was Hope Medical Center's Bereavement  Policy last reviewed and
+      revised?
+  - answer: Under Hope Medical Center's Bereavement policy, an immediate family member
       is defined as the caregiver's current spouse or domestic partner, child, parent,
       sibling, stepparent, stepchild, step-sibling, grandparent or grandchild, a person
       who stood in loco parentis, or current in-law relationships through marriage
       or partnership of the above.
+    question: Who is considered an immediate family member under Hope Medical Center's
+      Bereavement policy?
 - context: 'Policy:
 
     In keeping with our mission and values, the facility provides all benefits-eligible
@@ -81,25 +87,25 @@ seed_examples:
     leader time off (LTO) for bereavement in accordance with the facility''s LTO policy,
     upon authorization by your core leader based on operational needs.'
   questions_and_answers:
-  - question: How much paid time off can a caregiver receive in the event of the death
-      of an immediate family member in Hope Medical Center's Bereavement policy?
-    answer: In the event of the death of an immediate family member, a caregiver can
+  - answer: In the event of the death of an immediate family member, a caregiver can
       receive up to 24 hours with pay under Hope Medical Center's Bereavement policy.
       However, in the event of the death of the caregiver's spouse, domestic partner,
       or child, a caregiver can receive up to 40 hours with pay.
-  - question: What happens if a caregiver needs additional paid time off due to the
-      death of a person who does not qualify as an immediate family member in Hope
-      Medical Center's Bereavement policy?
-    answer: If a caregiver needs additional paid time off due to the death of a person
+    question: How much paid time off can a caregiver receive in the event of the death
+      of an immediate family member in Hope Medical Center's Bereavement policy?
+  - answer: If a caregiver needs additional paid time off due to the death of a person
       who does not qualify as an immediate family member, PTO or unpaid time off may
       be authorized by the caregiver's core leader on a case-by-case basis, based
       on operational needs under Hope Medical Center's Bereavement policy.
-  - question: How does the facility handle bereavement benefits for caregivers in
-      manager level positions or above in Hope Medical Center's Bereavement policy?
-    answer: For caregivers in manager level positions or above who do not accrue PTO,
+    question: What happens if a caregiver needs additional paid time off due to the
+      death of a person who does not qualify as an immediate family member in Hope
+      Medical Center's Bereavement policy?
+  - answer: For caregivers in manager level positions or above who do not accrue PTO,
       the facility allows them to take leader time off (LTO) for bereavement in accordance
       with the facility's LTO policy, upon authorization by their core leader based
       on operational needs.
+    question: How does the facility handle bereavement benefits for caregivers in
+      manager level positions or above in Hope Medical Center's Bereavement policy?
 - context: 'Procedures:
 
     1. Requests for paid bereavement leave must be submitted to your core leader.
@@ -130,15 +136,16 @@ seed_examples:
     In the event of a conflict between this policy and the terms of a collective bargaining
     agreement, the collective bargaining agreement will prevail'
   questions_and_answers:
-  - question: How is paid bereavement leave paid in Hope Medical Center's Bereavement
-      policy?
-    answer: Paid bereavement leave is paid at the caregiver's base rate of pay, including
+  - answer: Paid bereavement leave is paid at the caregiver's base rate of pay, including
       shift differential, if applicable in Hope Medical Center's Bereavement  policy.
-  - question: Is paid bereavement leave available to caregivers who are on leaves
-      of absence in Hope Medical Center's Bereavement  policy?
-    answer: No, paid bereavement leave is not available to caregivers who are on leaves
+    question: How is paid bereavement leave paid in Hope Medical Center's Bereavement
+      policy?
+  - answer: No, paid bereavement leave is not available to caregivers who are on leaves
       of absence in Hope Medical Center's Bereavement  policy.
-  - question: How should requests for paid bereavement leave be submitted in Hope
-      Medical Center's Bereavement policy?
-    answer: Requests for paid bereavement leave must be submitted to the caregiver's
+    question: Is paid bereavement leave available to caregivers who are on leaves
+      of absence in Hope Medical Center's Bereavement  policy?
+  - answer: Requests for paid bereavement leave must be submitted to the caregiver's
       core leader in Hope Medical Center's Bereavement policy.
+    question: How should requests for paid bereavement leave be submitted in Hope
+      Medical Center's Bereavement policy?
+version: 3

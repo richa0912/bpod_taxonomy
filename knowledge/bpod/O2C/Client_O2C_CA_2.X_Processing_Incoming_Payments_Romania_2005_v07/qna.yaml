@@ -1,8 +1,14 @@
-domain: 'BPOD order to cash: Client O2C CA 2.X Processing Incoming Payments Romania
-  2005 v07'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Client_O2C_CA_2.X_Processing_Incoming_Payments_Romania_2005_v07.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Process involved in automatic (SWIFT) matching of incoming payments
   of consultants in Client Application, it includes Bank deposits, COD, CHEQUE, PAY
   U, and POS.
+domain: 'BPOD order to cash: Client O2C CA 2.X Processing Incoming Payments Romania
+  2005 v07'
 seed_examples:
 - context: "# Control Points\n\n  **Control Point \\#**   **Control Point / Activity**\
     \                                                                            \
@@ -70,22 +76,21 @@ seed_examples:
     \ see unmatched transactions in Client Application under Cargus is 2316 unknown\
     \ Bank Pay (Cargus)."
   questions_and_answers:
-  - question: What is the control objective for Ensure that all bank files pertaining
-      to date are processed in Client Application?
-    answer: The control objective for Ensure that all bank files pertaining to date
+  - answer: The control objective for Ensure that all bank files pertaining to date
       are processed in Client Application is to ensure that all the transactions got
       credited into correct consultant account.
-  - question: What is the control objective and control risk for control activity
-      Download the bank statement (ING)
-    answer: 'The control objective for Download the bank statement (ING) is to download
+    question: What is the control objective for Ensure that all bank files pertaining
+      to date are processed in Client Application?
+  - answer: 'The control objective for Download the bank statement (ING) is to download
       the bank statement (ING) file for right dates from bank and right format to
       Share Drive.
 
       The control risk associated with downloading the bank statement (ING) for wrong
       dates and in wrong format is that the data will not be matched and it will be
       an inaccurate data.'
-  - question: List down all the control activities for incoming payments processing
-    answer: "Following are the control activites listed in Client_O2C_CA_2.X Processing\
+    question: What is the control objective and control risk for control activity
+      Download the bank statement (ING)
+  - answer: "Following are the control activites listed in Client_O2C_CA_2.X Processing\
       \ Incoming Payments_Romania_2005_V0.7:\n1. Ensure that all bank files pertaining\
       \ to date are processed in Client Application.\n2. All unmatched receipts are\
       \ processed.  All the unmatched receipts details with local finance which IBM\
@@ -94,6 +99,7 @@ seed_examples:
       6. Correction in Client Application while performing Return payment on demand\
       \ of the consultant\n7. For COD \u2013 Cargus select the current date instead\
       \ of one day earlier date for movement  "
+    question: List down all the control activities for incoming payments processing
 - context: '**PENALTY CANCELLATION-** Penalty cancellation is an activity in which
     the system calculates the penalty/interest on the consultant every day but if
     the client pays on the same date in which the penalty is charged we cancel the
@@ -204,8 +210,7 @@ seed_examples:
 
     And after that we allocate the amount to the same consultant.'
   questions_and_answers:
-  - question: What is Penalty cancellation?
-    answer: 'Penalty cancellation is an activity in which the system calculates the
+  - answer: 'Penalty cancellation is an activity in which the system calculates the
       penalty/interest on the consultant every day but if the client pays on the same
       date in which the penalty is charged we cancel the penalty charged to the consultant.
 
@@ -217,11 +222,11 @@ seed_examples:
 
       While cancelling the interest we don''t cancel the interest charged to payu
       or card.'
-  - question: Where do we go to cancel the penalty?
-    answer: To cancel the penalty we go to Client Application \> reports\>custom\>finance
+    question: What is Penalty cancellation?
+  - answer: To cancel the penalty we go to Client Application \> reports\>custom\>finance
       reports\> penalizari-data paltii facturii (32174).
-  - question: What are the three cases of penalty cancellation for consultant
-    answer: 'Three cases for penalty cancellation once consultant number is selected
+    question: Where do we go to cancel the penalty?
+  - answer: 'Three cases for penalty cancellation once consultant number is selected
       from the excel are:
 
 
@@ -254,6 +259,7 @@ seed_examples:
       the date for which we are cancelling the penalty and we select the transaction
       of the same amount and cancel the transaction from the right side transaction
       tab. After that we cancel the interest and allocate the amount to the same consultant.'
+    question: What are the three cases of penalty cancellation for consultant
 - context: '**[COD (CASH ON DELIVERY)]{.ul}**
 
 
@@ -358,11 +364,9 @@ seed_examples:
     Check the unmatched transaction and follow the same procedure for incoming payment
     processing as mentioned earlier .'
   questions_and_answers:
-  - question: What is the name of collector for Cash on Delivery?
-    answer: The name of the collector for Cash on Delivery is Cargus.
-  - question: How to handle the case of missing consultant description in unmatched
-      transactions?
-    answer: 'Every time Cargus send the details file in which all payment related
+  - answer: The name of the collector for Cash on Delivery is Cargus.
+    question: What is the name of collector for Cash on Delivery?
+  - answer: 'Every time Cargus send the details file in which all payment related
       with Cargus are there for that particular date. So, in this case when there
       is no description of the consultant in unmatched transactions, open the file
       received from Cargus and search the consultant via amounts.
@@ -372,8 +376,9 @@ seed_examples:
       sent by Cargus and search the consultant in Client Application. Also, cross
       check the details of the Client Application with the file received from Cargus
       to make sure that right consultant is paid.'
-  - question: How to process the Cheque collector in Romania Incomings
-    answer: 'Following are the steps to process cheque collector:
+    question: How to handle the case of missing consultant description in unmatched
+      transactions?
+  - answer: 'Following are the steps to process cheque collector:
 
 
       1. Log in to ING online website so that we can download the statement from bank
@@ -406,6 +411,7 @@ seed_examples:
       will show the unmatched transactions related to that date. Go to the unmatched
       receipts select date and click on Read to check the unmatched transaction and
       follow the same procedure for incoming payment processing'
+    question: How to process the Cheque collector in Romania Incomings
 - context: '3.Next collector is ROBO (BRD) Collector and again and there is an automatic
     sync of bank statements to Client Application .We must follow the same procedure
     in order to post the incoming payments.
@@ -497,8 +503,7 @@ seed_examples:
     we need to book the transactions with the date mentioned in the bank statement
     i.e. (20-03-2017)."'
   questions_and_answers:
-  - question: What are the movements for collector QIWI?
-    answer: 'The movements in collector QIWI are as following:
+  - answer: 'The movements in collector QIWI are as following:
 
 
       For debt- 2015 Bank to Invoice (QIWI)
@@ -508,15 +513,16 @@ seed_examples:
 
 
       For Prepayment -2215 Bank to prepayment (QIWI)'
-  - question: How should backdated transactions be handled in ORPOSTA cash collector?
-    answer: Backdated transactions should be reallocated with the date of the file.
+    question: What are the movements for collector QIWI?
+  - answer: Backdated transactions should be reallocated with the date of the file.
       Transactions with the previous date (e.g., 15-03-2017) should be canceled, and
       the transactions should be booked again with the correct date as mentioned in
       the bank statement (e.g., 20-03-2017).
-  - question: How to verify the presence of the file related to ROBO (BRD) Collector
-      in the Client Application?
-    answer: 'Navigate to TOS > Bank Payments in the Client Application and check if
+    question: How should backdated transactions be handled in ORPOSTA cash collector?
+  - answer: 'Navigate to TOS > Bank Payments in the Client Application and check if
       there is a file named BRDEROBU '
+    question: How to verify the presence of the file related to ROBO (BRD) Collector
+      in the Client Application?
 - context: "SWIFT payments, wherein payments are deposited in bank & it's linked in\
     \ backend with Client Application in\n\nsuch a way that whenever consultant pays\
     \ for any order it clears the invoices in Client Application automatically.\n\n\
@@ -536,23 +542,23 @@ seed_examples:
     >** | **\\<Name and Role\\>**                                              | **\\\
     <Name and Role\\>** |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
     | 0.1                | 30^th^ March 17    | Draft                  | Sarwan S\
-    \ -- O2C   | Sandhya G -O2C Manager, Ravi J - O2C TL, Lalit M-O2C SME\
-    \ | Anna O       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
+    \ -- O2C   | Sandhya G -O2C Manager, Ravi J - O2C TL, Lalit M-O2C SME | Anna O\
+    \       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
     | 0.3                | 21^st^ April 2017  | Reviewed               | Sarwan S\
-    \ -- O2C   | Sandhya G -O2C Manager, Ravi J - O2C TL, Lalit M-O2C SME\
-    \ | Anna O       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
+    \ -- O2C   | Sandhya G -O2C Manager, Ravi J - O2C TL, Lalit M-O2C SME | Anna O\
+    \       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
     | 0.4                | 14^th^ Jun 2017    | Reviewed by LF         | Sarwan S\
-    \ -- O2C   | Alina G / Bogdan B                               \
-    \   | Anna O       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
+    \ -- O2C   | Alina G / Bogdan B                                  | Anna O    \
+    \   |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
     | 0.5                | 20^th^ June 2017   | Updated by IBM         | Sarwan S\
-    \ -- O2C   | Sandhya G -O2C Manager, Ravi J - O2C TL, Lalit M-O2C SME\
-    \ | Anna O       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
+    \ -- O2C   | Sandhya G -O2C Manager, Ravi J - O2C TL, Lalit M-O2C SME | Anna O\
+    \       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
     | 0.6                | 27^th^ June 2017   | Reviewed by LF         | Sarwan S\
-    \ -- O2C   | Alina G / Bogdan B                               \
-    \   | Anna O       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
+    \ -- O2C   | Alina G / Bogdan B                                  | Anna O    \
+    \   |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
     | 0.7                | 30^th^ June 2017   | Updated by IBM         | Sarwan S\
-    \ -- O2C   | Sandhya G -O2C Manager, Ravi J - O2C TL, Lalit M-O2C SME\
-    \ | Anna O       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
+    \ -- O2C   | Sandhya G -O2C Manager, Ravi J - O2C TL, Lalit M-O2C SME | Anna O\
+    \       |\n+--------------------+--------------------+------------------------+-----------------------+--------------------------------------------------------------------+-----------------------+\n\
     \n## References\n\n**Tools Used**:\n\n1.  Bank Statements\n\n2.  Client Application\n\
     \n# Overview\n\n## Objectives of the Process\n\n-   The objective of this process\
     \ is to ensure & check that automatic(SWIFT) matching of incoming payments of\
@@ -567,20 +573,21 @@ seed_examples:
     \                                    | To                     |\n+-------------------------------------------+------------------------+\n\
     | -   Amount credited in consultant account | -   Client Application |\n+-------------------------------------------+------------------------+"
   questions_and_answers:
-  - question: What is the purpose of the SWIFT payments process in relation to the
-      Client Application?
-    answer: The purpose is to ensure that SWIFT payments deposited in the bank are
+  - answer: The purpose is to ensure that SWIFT payments deposited in the bank are
       automatically linked in backend with the Client Application in such a way that
       whenever consultant pays for any order it clears the invoices in Client Application
       automatically.
-  - question: What are the primary inputs and outputs of the SWIFT payments process?
-    answer: The primary inputs are incoming payments from consultants as listed in
+    question: What is the purpose of the SWIFT payments process in relation to the
+      Client Application?
+  - answer: The primary inputs are incoming payments from consultants as listed in
       the bank statement, and the output is the amount credited to the consultant
       account in the Client Application.
-  - question: What are unmatched receipts in context of incoming payments processing
-    answer: Unmatched Receipts are those transactions where system is unable to match
+    question: What are the primary inputs and outputs of the SWIFT payments process?
+  - answer: Unmatched Receipts are those transactions where system is unable to match
       consultant details, for ex -- consultant no, invoice no., name & amount with
       the details available in Client Application. User must match all the details
       in Client Application checking it with bank statement. In case if still there
       are some unmatched transactions which are not traced, query should be raised
       to local finance for the same.
+    question: What are unmatched receipts in context of incoming payments processing
+version: 3

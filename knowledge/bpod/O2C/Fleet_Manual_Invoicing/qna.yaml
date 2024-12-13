@@ -1,6 +1,12 @@
-domain: 'BPOD order to cash: Fleet Manual Invoicing'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Fleet_Manual_Invoicing.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: 'The steps involved in performing Manual Invoicing for the units
   that are wrecked or moved from a Dealer to a Fleet customer. '
+domain: 'BPOD order to cash: Fleet Manual Invoicing'
 seed_examples:
 - context: "# Control Points\n\n  ***Step No.***   ***Sub process Activity***    \
     \                               ***Control Objective(s)***                   \
@@ -18,28 +24,28 @@ seed_examples:
     \ Measurement Report\n\nManual Invoices should be completed when email is received\
     \ from Fleet Office to invoice a truck."
   questions_and_answers:
-  - question: What are the control points for fleet manual invoicing?
-    answer: The control point in Fleet Invoicing to process the Manual Invoice after
+  - answer: The control point in Fleet Invoicing to process the Manual Invoice after
       receiving approval to make sure that no duplication is involved.
-  - question: What is the risk associated with not processing Manual Fleet Invoicing
-      on time?
-    answer: The risk associated with not processing Manual Fleet Invoicing on time
+    question: What are the control points for fleet manual invoicing?
+  - answer: The risk associated with not processing Manual Fleet Invoicing on time
       is that customer invoice will not get generated.
-  - question: What is the frequency of Manual Fleet Invoicing?
-    answer: The Manual Fleet Invoicing process is performed on an ad hoc basis.
+    question: What is the risk associated with not processing Manual Fleet Invoicing
+      on time?
+  - answer: The Manual Fleet Invoicing process is performed on an ad hoc basis.
+    question: What is the frequency of Manual Fleet Invoicing?
 - context: "# Definitions\n\nThe following are definitions of acronyms used in this\
     \ document:\n\n  Term   Definition\n  ------ --------------------------------\n\
     \  RASS   Retail Accounting Sales System\n  TASS   Truck Accounting Sales System\n\
     \  SPA    Special Price Authorization\n  VIN    Vehicle Identification Number"
   questions_and_answers:
-  - question: What is meant by RASS in Fleet manual invoicing?
-    answer: RASS in manual invoicing stands for Retail Accounting Sales System.
-  - question: What is the short form of Special Price Authorization in fleet manual
-      invoicing?
-    answer: The short form of Special Price Authorization in fleet manual invoicing
+  - answer: RASS in manual invoicing stands for Retail Accounting Sales System.
+    question: What is meant by RASS in Fleet manual invoicing?
+  - answer: The short form of Special Price Authorization in fleet manual invoicing
       is SPA.
-  - question: What is the full form of TASS in fleet manual invoicing?
-    answer: TASS in fleet manual invoiving stands for Truck Accounting Sales System.
+    question: What is the short form of Special Price Authorization in fleet manual
+      invoicing?
+  - answer: TASS in fleet manual invoiving stands for Truck Accounting Sales System.
+    question: What is the full form of TASS in fleet manual invoicing?
 - context: '# Overview
 
 
@@ -96,8 +102,7 @@ seed_examples:
 
     +----------------------+-----------------------------------+---------------------------------------------------------------------------------------+-------------------------------------------------------------------------+-----------------+'
   questions_and_answers:
-  - question: What is the SIPOC of Fleet manual invoicing?
-    answer: 'Based on the provided context, the SIPOC (Supplier, Input, Process, Output,
+  - answer: 'Based on the provided context, the SIPOC (Supplier, Input, Process, Output,
       Customer) for Fleet Manual Invoicing is:
 
 
@@ -114,15 +119,16 @@ seed_examples:
       RASS
 
       5. Customer: Fleet Customers'
-  - question: What does Fleet Manual Invoicing assist in?
-    answer: Manual invoicing assists in updating the invoices details manually in
+    question: What is the SIPOC of Fleet manual invoicing?
+  - answer: Manual invoicing assists in updating the invoices details manually in
       Manual invoicing form and updating in Final submission form to key the invoice
       information in IMS RASS.
-  - question: When does the Fleet invoicing assitant will not be able to key the information
-      in IMS?
-    answer: Fleet invoicing assistance will not be able to key the information in
+    question: What does Fleet Manual Invoicing assist in?
+  - answer: Fleet invoicing assistance will not be able to key the information in
       IMS when the Age of the truck is more than 6 months sitting in the Dealer location
       while transferring to Fleet location.
+    question: When does the Fleet invoicing assitant will not be able to key the information
+      in IMS?
 - context: "# Roles & Responsibilities\n\n## Description\n\n  **Role**           \
     \         **Responsibility**\n  --------------------------- ----------------------------------------------------------------------------------------\n\
     \  Fleet Invoicing Assistant   Submit manual invoice forms for trucks that are\
@@ -130,15 +136,15 @@ seed_examples:
     \ paperwork details required for invoicing\n  Knoxville Team              Approve\
     \ manual invoicing paperwork"
   questions_and_answers:
-  - question: What is the responsibility of Invoicing assistant in Fleet manual invoicing?
-    answer: The responsibility of Invoicing Assistant in Fleet Manual Invoicing is
+  - answer: The responsibility of Invoicing Assistant in Fleet Manual Invoicing is
       to submit manual invoice forms for trucks that are wrecked or moved from dealer
       to fleet.
-  - question: Who approves manual invoicing paperwork?
-    answer: Knoxville Team approves manual invoicing paperwork.
-  - question: What is the responsibility of Fleet Office in Fleet Manual Invoicing?
-    answer: The responsibility of Fleet Office is to provide paperwork details required
+    question: What is the responsibility of Invoicing assistant in Fleet manual invoicing?
+  - answer: Knoxville Team approves manual invoicing paperwork.
+    question: Who approves manual invoicing paperwork?
+  - answer: The responsibility of Fleet Office is to provide paperwork details required
       for invoicing.
+    question: What is the responsibility of Fleet Office in Fleet Manual Invoicing?
 - context: "## Process Description\n\n1.  Fleet invoicing assistant receives the email\
     \ from Fleet Office for invoicing a truck along with paperwork\n\n2.  Login to\
     \ RASS, goto code RAPH and update JOB NUMBER to identify if the invoicing can\
@@ -178,14 +184,12 @@ seed_examples:
     \ a minute close the extension box.]{.ul}**\n\n19. A confirmation email will be\
     \ received to the inbox from .DL AMS_NFC saying the file is processed."
   questions_and_answers:
-  - question: How to check if Fleet manual invoicing can be done in the system?
-    answer: "Following are the steps to check to check if Fleet manual invoicing can\
+  - answer: "Following are the steps to check to check if Fleet manual invoicing can\
       \ be done in the system.\n1. Login to RASS.\n2. Foto code RAPH and update JOB\
       \ NUMBER to identify if the invoicing can be completed in system. \n3. If an\
       \ error message is received then invoicing cannot be completed."
-  - question: What are the steps to update final submission form for Fleet manual
-      invoice?
-    answer: "Following are the steps to update final submission form for Fleet manual\
+    question: How to check if Fleet manual invoicing can be done in the system?
+  - answer: "Following are the steps to update final submission form for Fleet manual\
       \ invoice.\n1. Once all the highlighted items in Manual Invoicing Form are filled\
       \ out, next step is to fill Final Submission Form to create the customer invoice.\
       \ The link is available on a document which will be shared with the team. Click\
@@ -197,11 +201,14 @@ seed_examples:
       Successfully transferred file to Mainframe. \n5. Click OK. Note: Wait for a\
       \ minute before closing the extension box.\n6. A confirmation email will be\
       \ received to the inbox from .DL AMS_NFC saying the file is processed"
-  - question: Where to get invoice number for Fleet manual invoicing?
-    answer: 'Following are the steps to get the invoice number.
+    question: What are the steps to update final submission form for Fleet manual
+      invoice?
+  - answer: 'Following are the steps to get the invoice number.
 
       1. Open ManualInvoicesBooked excel file from path ''M:drive\Sales Invoicing
 
       AI\DATA\EXCEL\Manual Invoices Booked''
 
       2. From column E (batch #), pick the next available number.'
+    question: Where to get invoice number for Fleet manual invoicing?
+version: 3

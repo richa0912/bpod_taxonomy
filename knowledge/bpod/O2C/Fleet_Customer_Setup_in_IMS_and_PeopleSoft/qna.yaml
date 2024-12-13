@@ -1,6 +1,12 @@
-domain: 'BPOD order to cash: Fleet Customer Setup in IMS and PeopleSoft'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Fleet_Customer_Setup_in_IMS_and_PeopleSoft.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: This document explains about the steps involved in creating new
   customer account in RASS and PeopleSoft for invoicing.
+domain: 'BPOD order to cash: Fleet Customer Setup in IMS and PeopleSoft'
 seed_examples:
 - context: "# Control Points\n\n  ***Step No.***   ***Sub process Activity***    \
     \           ***Control Objective(s)***                                  ***Control\
@@ -25,9 +31,7 @@ seed_examples:
     \ Reports \n\n> Customer account should be created in RASS and PeopleSoft based\
     \ on the requests received."
   questions_and_answers:
-  - question: What are the control points and their objectives for Fleet Customer
-      Setup in IMS and PeopleSoft?
-    answer: 'Following are the control points and their objectives in Fleet Customer
+  - answer: 'Following are the control points and their objectives in Fleet Customer
       Setup in IMS and PeopleSoft.
 
       1. Checking Suffix number: Suffix numbers should not be repeating in access
@@ -35,14 +39,16 @@ seed_examples:
 
       2. Approval for creating customer in RASS: To make sure approvals are gathered
       to avoid duplicates.'
-  - question: What is the risk of having duplicate suffix numbers during Fleet Customer
-      setup in IMS and PeopleSoft?
-    answer: Duplication of suffix number during Fleet Customer setup in IMS and PeopleSoft
+    question: What are the control points and their objectives for Fleet Customer
+      Setup in IMS and PeopleSoft?
+  - answer: Duplication of suffix number during Fleet Customer setup in IMS and PeopleSoft
       will cause billing errors.
-  - question: What is the frequency of creating customer account in RASS and Peoplesoft?
-    answer: Customer account should be created in RASS and PeopleSoft based on the
+    question: What is the risk of having duplicate suffix numbers during Fleet Customer
+      setup in IMS and PeopleSoft?
+  - answer: Customer account should be created in RASS and PeopleSoft based on the
       requests received. Hence, cutomer account creation is done on adhoc basis and
       it does not have a fixed frequency.
+    question: What is the frequency of creating customer account in RASS and Peoplesoft?
 - context: '## Process Description
 
 
@@ -79,9 +85,7 @@ seed_examples:
     9.  Scroll down through the column and identify the available suffix. In this
     example suffix identifed is O0.'
   questions_and_answers:
-  - question: What are the steps to verify if the customer suffix is not setup for
-      a customer in access database before Fleet customer setup in IMS and PeopleSoft.
-    answer: 'The steps to verify if the customer suffix is not setup for a customer
+  - answer: 'The steps to verify if the customer suffix is not setup for a customer
       in access datbase are as follows.
 
 
@@ -96,13 +100,15 @@ seed_examples:
       OK.
 
       5.  If no information is pulled, it means the customer city is not setup.'
-  - question: What is the guidance for creating a new suffix for a customer during
-      Fleet Customer Setup in IMS and PeopleSoft?
-    answer: 'A suffix for a cutomer can be set up durint Fleet Customer Setup in IMS
+    question: What are the steps to verify if the customer suffix is not setup for
+      a customer in access database before Fleet customer setup in IMS and PeopleSoft.
+  - answer: 'A suffix for a cutomer can be set up durint Fleet Customer Setup in IMS
       and PeopleSoft with two numerical digit (eg: 75) or an alpha numeric number
       with one alphabet and one number (eg: A1).'
-  - question: What is the location of UCI numbers access database?
-    answer: UCI Numbers access database is available in path 'M:\\Sales Invoicing\\NAI\\DATA\\ACCESS'.
+    question: What is the guidance for creating a new suffix for a customer during
+      Fleet Customer Setup in IMS and PeopleSoft?
+  - answer: UCI Numbers access database is available in path 'M:\\Sales Invoicing\\NAI\\DATA\\ACCESS'.
+    question: What is the location of UCI numbers access database?
 - context: '10. Open the customer set up form from path **[M:\\Sales Invoicing\\NAI\\DATA\\EXCEL\\CUSTOMER
     SET-UP FORM.xls]{.ul}**
 
@@ -132,13 +138,11 @@ seed_examples:
 
     '
   questions_and_answers:
-  - question: Where can we get the customer setup form for Fleet Customer Setup in
-      IMS and PeopleSoft?
-    answer: The customer setup form for Fleet Customer Setup in IMS and PeopleSoft
+  - answer: The customer setup form for Fleet Customer Setup in IMS and PeopleSoft
       is available at 'M:\\Sales Invoicing\\NAI\\DATA\\EXCEL\\CUSTOMER SET-UP FORM.xls'.
-  - question: What details should be entered in customer setup form for Fleet Customer
-      Setup in IMS and PeopleSoft?
-    answer: "Following details should be entered in customer setup form for Fleet\
+    question: Where can we get the customer setup form for Fleet Customer Setup in
+      IMS and PeopleSoft?
+  - answer: "Following details should be entered in customer setup form for Fleet\
       \ Customer Setup in IMS and PeopleSoft.\n\n1. CUSTOMER ID: take from UCI NUMBER\
       \ in access database 2. SUFFIX, take the next available suffix option in access\
       \ database.\n3. Address: this is available on the purchased order received from\
@@ -146,11 +150,13 @@ seed_examples:
       \ and AR_ACCT column from access database.\n5. New Cusomer: select Yes for new\
       \ customer and No for existing customer. If you select No, provide the reasons\
       \ for the changes.\n"
-  - question: Where can we get the customer address to be filled in customer setup
-      form for Fleet Customer Setup in IMS and PeopleSoft?
-    answer: We can get the customer address to be filled in customer setup form for
+    question: What details should be entered in customer setup form for Fleet Customer
+      Setup in IMS and PeopleSoft?
+  - answer: We can get the customer address to be filled in customer setup form for
       Fleet Customer Setup in IMS and PeopleSoft in the purchased order received from
       fleet office via email.
+    question: Where can we get the customer address to be filled in customer setup
+      form for Fleet Customer Setup in IMS and PeopleSoft?
 - context: '16. Once the request approved, open IMS and type **/for tg** on the top
     left corner of the screen and press ENTER on the keyboard
 
@@ -213,9 +219,7 @@ seed_examples:
 
     >'
   questions_and_answers:
-  - question: What details should be entered in 'Find and Existing value' tab in PeopleSoft
-      to get customer details durint Fleet Customer Setup in IMS and PeopleSoft?
-    answer: 'Following  details should be entered in ''Find and Existing value'' tab
+  - answer: 'Following  details should be entered in ''Find and Existing value'' tab
       in PeopleSoft to get customer details durint Fleet Customer Setup in IMS and
       PeopleSoft.
 
@@ -225,9 +229,9 @@ seed_examples:
       up form
 
       '
-  - question: What are the steps to create a new customer account in RASS  during
-      Fleet customer setup in IMS and PeopleSoft?
-    answer: 'To create a new customer account in RASS  during Fleet customer setup
+    question: What details should be entered in 'Find and Existing value' tab in PeopleSoft
+      to get customer details durint Fleet Customer Setup in IMS and PeopleSoft?
+  - answer: 'To create a new customer account in RASS  during Fleet customer setup
       in IMS and PeopleSoft, follow these steps.
 
 
@@ -244,14 +248,16 @@ seed_examples:
 
       5. Press F12 on keyboard. This will create the new customer account in RASS.
       A successful message will appear on the bottom of the screen as confirmation.'
-  - question: How do we validate that a new customer is added in RASS?
-    answer: Once the record is updated successfully into RASS, an overnight batch
+    question: What are the steps to create a new customer account in RASS  during
+      Fleet customer setup in IMS and PeopleSoft?
+  - answer: Once the record is updated successfully into RASS, an overnight batch
       run happens. An automated email will be generated to the inbox with a confirmation
       about the new customer account. The email will have an attachment containing
       the customer details. If the comment section of this attachment shows 'No Errors
       Found', it indicates that the customer is successfully added in RASS. If there
       are any errors, go back and check the customer set up form and details updated
       in RASS.
+    question: How do we validate that a new customer is added in RASS?
 - context: '27. On the Customer ID if the suffix is not ending with 01, then uncheck
     the box against Corporate Customer and type the corporate customer ID on the search
     box. If the Customer ID ends with 01, it means the new customer is already under
@@ -319,9 +325,7 @@ seed_examples:
 
     35. This concludes the steps to create a new customer in RASS and PeopleSoft.'
   questions_and_answers:
-  - question: What details should be updated in Bill of Options tab during Fleet customer
-      setup in PeoplSoft?
-    answer: 'Following details should be updated in Bill of Options tab during Fleet
+  - answer: 'Following details should be updated in Bill of Options tab during Fleet
       customer setup in PeoplSoft.
 
       1. Credit Analyst
@@ -329,12 +333,15 @@ seed_examples:
       2. Collector
 
       3. AR Specialist'
-  - question: 'Which credit analyst should be selected in Bill of Options tab during
-      Fleet customer setup in PeoplSoft for for CN customers with location number
-      greater than 900? '
-    answer: CRFL03 should be selected as Credit Analyst in Bill of Options tab during
+    question: What details should be updated in Bill of Options tab during Fleet customer
+      setup in PeoplSoft?
+  - answer: CRFL03 should be selected as Credit Analyst in Bill of Options tab during
       Fleet customer setup in PeoplSoft for for CN customers with location number
       greater than 900
-  - question: What is meant by payment term D30 in Payment Terms section of PeopleSoft?
-    answer: Payment terms D30 in PeopleSoft means that the payment should be made
+    question: 'Which credit analyst should be selected in Bill of Options tab during
+      Fleet customer setup in PeoplSoft for for CN customers with location number
+      greater than 900? '
+  - answer: Payment terms D30 in PeopleSoft means that the payment should be made
       within 30 days from the date of delivery.
+    question: What is meant by payment term D30 in Payment Terms section of PeopleSoft?
+version: 3

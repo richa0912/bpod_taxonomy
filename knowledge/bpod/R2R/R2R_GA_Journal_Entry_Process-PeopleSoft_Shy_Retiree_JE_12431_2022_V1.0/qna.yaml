@@ -1,7 +1,13 @@
-domain: 'BPOD Record to Analyze: R2R_GA_Journal Entry Process-PeopleSoft_Shy Retiree
-  (JE 12431)_2022_V1.0'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - R2R_GA_Journal_Entry_Process-PeopleSoft_Shy_Retiree_JE_12431_2022_V1.0.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: This document describes how IBM Delivery Centre will process Shy
   Retiree (JE 12431) entry
+domain: 'BPOD Record to Analyze: R2R_GA_Journal Entry Process-PeopleSoft_Shy Retiree
+  (JE 12431)_2022_V1.0'
 seed_examples:
 - context: "# Control Points\n\n  ***\\#***   **Sub process Activity**           \
     \     **Sub process Activity Description**   **Control Objective(s)**        \
@@ -22,20 +28,20 @@ seed_examples:
     \  Client         To send the Medical Benefits file and the Citibank report to\
     \ IBM\n  GA Associate   To process the Shy Retiree (JE 12431) entry"
   questions_and_answers:
-  - question: what is the control activity and risk assertions for Journal Entry Process-
-      PeopleSoft Shy Retiree (JE 12431)?
-    answer: The control activity is updating the JRNL1 template and then processing
+  - answer: The control activity is updating the JRNL1 template and then processing
       it into Peoplespft and risk assertion is processed incorrect amount or account  for
       Journal Entry Process- PeopleSoft Shy Retiree (JE 12431).
-  - question: what are the responsibilities of client in  Journal Entry Process- PeopleSoft
-      Shy Retiree (JE 12431)
-    answer: the responsibility of the Client in  for Journal Entry Process- PeopleSoft
+    question: what is the control activity and risk assertions for Journal Entry Process-
+      PeopleSoft Shy Retiree (JE 12431)?
+  - answer: the responsibility of the Client in  for Journal Entry Process- PeopleSoft
       Shy Retiree (JE 12431) is to send the Medical Benefits file and the Citibank
       report to IBM.
-  - question: what are the responsibilities of GA associates in  Journal Entry Process-
-      PeopleSoft Shy Retiree (JE 12431)
-    answer: the responsibility of the GA Associate in  for Journal Entry Process-
+    question: what are the responsibilities of client in  Journal Entry Process- PeopleSoft
+      Shy Retiree (JE 12431)
+  - answer: the responsibility of the GA Associate in  for Journal Entry Process-
       PeopleSoft Shy Retiree (JE 12431) is to process the Shy Retiree (JE 12431) entry.
+    question: what are the responsibilities of GA associates in  Journal Entry Process-
+      PeopleSoft Shy Retiree (JE 12431)
 - context: '# Overview
 
 
@@ -74,19 +80,19 @@ seed_examples:
 
     -   JRNL1'
   questions_and_answers:
-  - question: What is the frequnecy of Journal Entry Process-PeopleSoft_Shy Retiree
-      (JE 12431)?
-    answer: The frequency of Journal Entry Process-PeopleSoft_Shy Retiree (JE 12431)
+  - answer: The frequency of Journal Entry Process-PeopleSoft_Shy Retiree (JE 12431)
       is Monthly.
-  - question: what are the sources for Journal Entry Process-PeopleSoft_Shy Retiree
-      (JE 12431)
-    answer: The sources for Journal Entry Process-PeopleSoft_Shy Retiree (JE 12431)
+    question: What is the frequnecy of Journal Entry Process-PeopleSoft_Shy Retiree
+      (JE 12431)?
+  - answer: The sources for Journal Entry Process-PeopleSoft_Shy Retiree (JE 12431)
       are Medical Benefits email from Cheryl Seaton (Accounting Asst) and Citi Bank
       Reports (IBM would be notified how the reports would be received).
-  - question: Whar are the system accesses required in Journal Entry Process-PeopleSoft_Shy
-      Retiree (JE 12431)
-    answer: The required system accesses in Journal Entry Process-PeopleSoft_Shy Retiree
+    question: what are the sources for Journal Entry Process-PeopleSoft_Shy Retiree
+      (JE 12431)
+  - answer: The required system accesses in Journal Entry Process-PeopleSoft_Shy Retiree
       (JE 12431) are PeopleSoft and JRNL1.
+    question: Whar are the system accesses required in Journal Entry Process-PeopleSoft_Shy
+      Retiree (JE 12431)
 - context: "## Inputs & Outputs\n\n+--------------------------+---------------------------------------------------------+\n\
     | Input                    | From                                            \
     \        |\n+--------------------------+---------------------------------------------------------+\n\
@@ -110,19 +116,19 @@ seed_examples:
     \ processed   Monthly                                                        \
     \   PeopleSoft"
   questions_and_answers:
-  - question: what are the inputs for Journal Entry Process-PeopleSoft_Shy Retiree
-      (JE 12431)
-    answer: The inputs for Journal Entry Process-PeopleSoft_Shy Retiree (JE 12431)
+  - answer: The inputs for Journal Entry Process-PeopleSoft_Shy Retiree (JE 12431)
       are Medical Benefits email from Cheryl Seaton (Accounting Asst) and Citi Bank
       Reports (IBM would be notified how the reports would be received).
-  - question: what are the outputs for Journal Entry Process-PeopleSoft_Shy Retiree
+    question: what are the inputs for Journal Entry Process-PeopleSoft_Shy Retiree
       (JE 12431)
-    answer: The output for Journal Entry Process-PeopleSoft_Shy Retiree (JE 12431)
+  - answer: The output for Journal Entry Process-PeopleSoft_Shy Retiree (JE 12431)
       is Journal Entry Shy Retiree (JE 12431) to Peoplesoft.
-  - question: what is the control objective of Journal Entry Process-PeopleSoft_Shy
-      Retiree (JE 12431)
-    answer: The control objective of Journal Entry Process-PeopleSoft Shy Retiree
+    question: what are the outputs for Journal Entry Process-PeopleSoft_Shy Retiree
+      (JE 12431)
+  - answer: The control objective of Journal Entry Process-PeopleSoft Shy Retiree
       (JE 12431) is to process the received Journal Entry details into PeopleSoft.
+    question: what is the control objective of Journal Entry Process-PeopleSoft_Shy
+      Retiree (JE 12431)
 - context: "## Process Description\n\n1.  The Medical Benefit pdf file which was received\
     \ from Cheryl through email has to be saved in the M drive and open it.\n\n  \
     \  1.  M drive \\>GA \\> SPREADSHEET CONTROL \\>Financial Statement Close\\> Christopher\
@@ -137,28 +143,28 @@ seed_examples:
     \n6.  Open the Citibank report and find the Shy Retiree details, take a screenshot\
     \ of it and update it in the Summary sheet tab."
   questions_and_answers:
-  - question: Where is the Medical Benefit pdf file to be saved and opened from in
-      Journal Entry Process- PeopleSoft Shy Retiree (JE 12431)?
-    answer: 'The Medical Benefit pdf file is to be saved in the M drive and opened
+  - answer: 'The Medical Benefit pdf file is to be saved in the M drive and opened
       from the following location: M drive >GA > SPREADSHEET CONTROL > Financial Statement
       Close > Christopher Latta > 12431 Shy Retiree.'
-  - question: What is the purpose of making a copy of the prior month's file for the
-      current month and opening it  in Journal Entry Process- PeopleSoft Shy Retiree
-      (JE 12431)?
-    answer: 'The purpose of making a copy of the prior month''s file for the current
+    question: Where is the Medical Benefit pdf file to be saved and opened from in
+      Journal Entry Process- PeopleSoft Shy Retiree (JE 12431)?
+  - answer: 'The purpose of making a copy of the prior month''s file for the current
       month and opening it is to use it as a reference or template for the current
       month''s entries. The location of the prior month''s file is: M drive >GA >SPREADSHEET
       CONTROL > Financial Statement Close > Christopher Latta > 121431 Shy Retiree.'
-  - question: How is the Shy Retiree amount updated in the Summary Sheet tab and what
-      additional information is required in Journal Entry Process- PeopleSoft Shy
-      Retiree (JE 12431) ?
-    answer: The Shy Retiree amount is updated in the Summary Sheet tab by copying
+    question: What is the purpose of making a copy of the prior month's file for the
+      current month and opening it  in Journal Entry Process- PeopleSoft Shy Retiree
+      (JE 12431)?
+  - answer: The Shy Retiree amount is updated in the Summary Sheet tab by copying
       it from the Medical Benefits pdf file and pasting it into the Invoice Backup
       tab. The updated amount will then be automatically reflected in the Summary
       Sheet tab as it is formulated. Additionally, a screenshot of the Shy Retiree
       details from the Citibank report should be taken and updated in the Summary
       sheet tab. The location of the Citibank report is not specified in the provided
       context.
+    question: How is the Shy Retiree amount updated in the Summary Sheet tab and what
+      additional information is required in Journal Entry Process- PeopleSoft Shy
+      Retiree (JE 12431) ?
 - context: '> Note: IBM would be updated how the Citibank report would be received.
 
 
@@ -195,18 +201,19 @@ seed_examples:
     15. Go back to Lines tab, change the Process status to Submit Journal and click
     on Process.'
   questions_and_answers:
-  - question: What are the key items to verify in the JRNL1 template in Journal Entry
-      Process- PeopleSoft Shy Retiree (JE 12431) ?
-    answer: The key items to verify in the JRNL1 template are the journal date, effective
+  - answer: The key items to verify in the JRNL1 template are the journal date, effective
       date, BU, description, and the journal ID.
-  - question: What is the purpose of verifying the account details in the 12431 JE
-      excel file with the account number in the JRNL1 template and updating the amounts
-      in Journal Entry Process- PeopleSoft Shy Retiree (JE 12431)?
-    answer: The purpose of verifying the account details in the 12431 JE excel file
+    question: What are the key items to verify in the JRNL1 template in Journal Entry
+      Process- PeopleSoft Shy Retiree (JE 12431) ?
+  - answer: The purpose of verifying the account details in the 12431 JE excel file
       with the account number in the JRNL1 template and updating the amounts is to
       ensure accuracy and consistency between the two files.
-  - question: What is the process status that needs to be changed in the Lines tab
+    question: What is the purpose of verifying the account details in the 12431 JE
+      excel file with the account number in the JRNL1 template and updating the amounts
+      in Journal Entry Process- PeopleSoft Shy Retiree (JE 12431)?
+  - answer: The process status that needs to be changed in the Lines tab and processed
+      after uploading the spreadsheet is "Submit Journal".
+    question: What is the process status that needs to be changed in the Lines tab
       and processed after uploading the spreadsheet  in Journal Entry Process- PeopleSoft
       Shy Retiree (JE 12431)?
-    answer: The process status that needs to be changed in the Lines tab and processed
-      after uploading the spreadsheet is "Submit Journal".
+version: 3

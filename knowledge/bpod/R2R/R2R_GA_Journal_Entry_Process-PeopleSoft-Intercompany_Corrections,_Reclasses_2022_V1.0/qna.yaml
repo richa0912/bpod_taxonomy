@@ -1,7 +1,13 @@
-domain: 'BPOD Record to Analyze: R2R_GA_Journal Entry Process-PeopleSoft-Intercompany
-  Corrections, Reclasses_2022_V1.0.doc'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - R2R_GA_Journal_Entry_Process-PeopleSoft-Intercompany_Corrections,_Reclasses_2022_V1.0.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how IBM Delivery Centre will process the Legal Reclass
   Journal Entries
+domain: 'BPOD Record to Analyze: R2R_GA_Journal Entry Process-PeopleSoft-Intercompany
+  Corrections, Reclasses_2022_V1.0.doc'
 seed_examples:
 - context: "# Control Points\n\n  ***\\#***   **Subprocess Activity**            \
     \   **Subprocess Activity Description**                            **Control Objective(s)**\
@@ -28,17 +34,17 @@ seed_examples:
     | General Accounting Team                     | Post reclass entry for Intercompany\
     \ imbalances in PeopleSoft |\n+---------------------------------------------+--------------------------------------------------------------+"
   questions_and_answers:
-  - question: What is the risk assertions in Intercompany corrections, reclasses?
-    answer: 'The risk assertion in Intercompany corrections, reclasses is: Incorrect
+  - answer: 'The risk assertion in Intercompany corrections, reclasses is: Incorrect
       account details/Business Unit/Operating Unit/Combo Errors'
-  - question: what is the Control Objective(s) for Subprocess Activity 'Intercompany
-      corrections, reclasses'?
-    answer: 'The control objective for Subprocess Activity ''Intercompany corrections,
+    question: What is the risk assertions in Intercompany corrections, reclasses?
+  - answer: 'The control objective for Subprocess Activity ''Intercompany corrections,
       reclasses'' is: All amounts are booked to correct account number'
-  - question: Who is responsible for Posting reclass entry for Intercompany imbalances
-      in PeopleSoft?
-    answer: General Accounting Team is responsible for Posting reclass entry for Intercompany
+    question: what is the Control Objective(s) for Subprocess Activity 'Intercompany
+      corrections, reclasses'?
+  - answer: General Accounting Team is responsible for Posting reclass entry for Intercompany
       imbalances in PeopleSoft?
+    question: Who is responsible for Posting reclass entry for Intercompany imbalances
+      in PeopleSoft?
 - context: "# Overview\n\n## Objective(s)\n\n### To reclass any out of imbalances\
     \ for intercompany packages/tasks mentioned below. {#to-reclass-any-out-of-imbalances-for-intercompany-packagestasks-mentioned-below.\
     \ .list-paragraph}\n\n  **S No**   **Intercompany Packages**\n  ---------- ---------------------------------\n\
@@ -61,9 +67,7 @@ seed_examples:
     \                                  | To                      |\n+-----------------------------------------+-------------------------+\n\
     | > Post clearing entries into PeopleSoft | > Client- Process Owner |\n+-----------------------------------------+-------------------------+"
   questions_and_answers:
-  - question: What are the system accesses needed for Intercompany Corrections and
-      Reclasses?
-    answer: 'System Accesses needed for Intercompany Corrections and Reclasses are
+  - answer: 'System Accesses needed for Intercompany Corrections and Reclasses are
       as following:
 
       1. PeopleSoft
@@ -71,13 +75,18 @@ seed_examples:
       2. OBIEE
 
       3. Outlook Mailbox: Tina Eldridge'
-  - question: List down the inputs required for Intercompany Corrections and Reclasses?
-    answer: "The inputs for Intercompany Corrections and Reclasses are:\n1. Intercompany\
-      \ Grid from Tina Eldridge- mailbox (Sr Accountant - Client Business Services)\n\
-      2. TRTN - General ledger detail from OBIEE"
-  - question: What is the output of Intercompany Corrections and Reclasses?
-    answer: The output  for Intercompany Corrections and Reclasses process is Post
+    question: What are the system accesses needed for Intercompany Corrections and
+      Reclasses?
+  - answer: 'The inputs for Intercompany Corrections and Reclasses are:
+
+      1. Intercompany Grid from Tina Eldridge- mailbox (Sr Accountant - Client Business
+      Services)
+
+      2. TRTN - General ledger detail from OBIEE'
+    question: List down the inputs required for Intercompany Corrections and Reclasses?
+  - answer: The output  for Intercompany Corrections and Reclasses process is Post
       clearing entries into PeopleSoft to Client- Process Owner.
+    question: What is the output of Intercompany Corrections and Reclasses?
 - context: "## Overview\n\nBased on the intercompany balance details provided thru\
     \ email from Tina Eldridge (Sr Accountant -- Client Business Services) analyze\
     \ and post the reclass entry for any Intercompany imbalances into PeopleSoft by\
@@ -100,24 +109,24 @@ seed_examples:
     \ 40100-40184 PKG using package no: PKG742\n\n4.  Check the balance for Clear\
     \ 49309 activity using package no: PKG131"
   questions_and_answers:
-  - question: List down the Intercompany Packages referring the Intercompany grid
-      file.
-    answer: "Below are the Intercompany Packages referring the Intercompany grid file\
+  - answer: "Below are the Intercompany Packages referring the Intercompany grid file\
       \ provided by Tina Eldridge (Sr Accountant -- Client Business Services) via\
       \ email\n\n  **S no**   **Intercompany Packages**\n  ---------- ---------------------------------\n\
       \  1          47701 IC Correction\n  2          49310 IC Allocation\n  3   \
       \       Clear 40100-40184 PKG\n  4          Clear 49309 activity\n  5      \
       \    PKG 725 Allocation - Conway I/C"
-  - question: Which package number is used to Check the balance for 47701 IC Correction?
-    answer: PKG673 is used to Check the balance for 47701 IC Correction
-  - question: Show the table to check the balances for Intercompany packages using
-      package number.
-    answer: "Check the balances for Intercompany packages using package number\n\n\
+    question: List down the Intercompany Packages referring the Intercompany grid
+      file.
+  - answer: PKG673 is used to Check the balance for 47701 IC Correction
+    question: Which package number is used to Check the balance for 47701 IC Correction?
+  - answer: "Check the balances for Intercompany packages using package number\n\n\
       \  **Sl no**   **Intercompany Packages**         **PKG no**\n  ----------- ---------------------------------\
       \ ------------\n  1           47701 IC Correction               PKG673\n  2\
       \           49310 IC Allocation               PKG725\n  3           Clear 40100-40184\
       \ PKG             PKG742\n  4           Clear 49309 activity              PKG131\n\
       \  5           PKG 725 Allocation - Conway I/C   PKG725"
+    question: Show the table to check the balances for Intercompany packages using
+      package number.
 - context: "####  Reclass SG&A 40184\n\n1.  Go to OBIEE \\> Click on Dashboards \\\
     > TRTN -- General Ledger Detail\n\n2.  Click on Trial Balance (All) tab\n\n  \
     \  i.  Select Corp FY: Year, Corp FP: Respective Month, Local FY: Year, Local\
@@ -134,17 +143,17 @@ seed_examples:
     \ of acronyms used in this document:\n\n  Term   Definition\n  ------ ---------------\n\
     \  PKG    Package\n  IC     Intercompany\n  BU     Business Unit"
   questions_and_answers:
-  - question: What does PKG stands for?
-    answer: PKG refers to Package.
-  - question: What does LBOR Account starts with?
-    answer: LBOR Account starts with 86 (related to expenses account)
-  - question: What if there are imbalances in the Transaction Ending Balance?
-    answer: 'If any imbalances prepare the journal and post the reclass entry into
+  - answer: PKG refers to Package.
+    question: What does PKG stands for?
+  - answer: LBOR Account starts with 86 (related to expenses account)
+    question: What does LBOR Account starts with?
+  - answer: 'If any imbalances prepare the journal and post the reclass entry into
       PeopleSoft.
 
       1.  Dr. 40184-40-74653 Amount
 
       2.  Cr. 40184-40-86421-460999 Amount'
+    question: What if there are imbalances in the Transaction Ending Balance?
 - context: "4.  If any imbalances in intercompany packages, post the reclass entry\
     \ into PeopleSoft\n\n+---------------------------------+------------------------------------+\n\
     | **Intercompany Packages**       | **Reclass Entry**                  |\n+=================================+====================================+\n\
@@ -177,20 +186,21 @@ seed_examples:
     \ Amount\n>\n> Dr. 40100-50-13310-40184-40 Amount\n>\n> Cr. 40184-40-13310-40100-50\
     \ Amount\n>\n> Dr. 40184-40-92999 Amount"
   questions_and_answers:
-  - question: what are the  Intercompany Packages referring a report extracting from
-      OBIEE?
-    answer: "Below are the Intercompany Packages referring a report extracting from\
+  - answer: "Below are the Intercompany Packages referring a report extracting from\
       \ OBIEE\n\n  **Sl no**   **Intercompany Packages**     **Reports**\n  -----------\
       \ ----------------------------- ------------------------------\n  1        \
       \   Allocate 40183 Intercompany   TRTN - General ledger detail\n  2        \
       \   Reclass SG&A 40184            TRTN - General Ledger detail"
-  - question: What is the reclass entry for Intercompany Package 'Clear 40100-40184
-      PKG'?
-    answer: The reclass entry for Intercompany Package 'Clear 40100-40184 PKG' is  Dr.
+    question: what are the  Intercompany Packages referring a report extracting from
+      OBIEE?
+  - answer: The reclass entry for Intercompany Package 'Clear 40100-40184 PKG' is  Dr.
       40100-30-92999 Amount  and Cr. 40100-30-13310-40100-50 Amount.
-  - question: How to open the Trial Balance report file?
-    answer: "1.\tGo to OBIEE > Click on Dashboards > TRTN - General Ledger Detail\n\
+    question: What is the reclass entry for Intercompany Package 'Clear 40100-40184
+      PKG'?
+  - answer: "1.\tGo to OBIEE > Click on Dashboards > TRTN - General Ledger Detail\n\
       2.\tClick on Journal Lines (All) tab\nSelect Local FY: Year, Local FP: Respective\
       \ Month, LBOR BU: 40100, LBOR Acct: 13310, Affiliate BU: 40183 and Click on\
       \ Apply\nClick on Export > Excel > Excel 2007+ > Open the Trial Balance report\
       \ file"
+    question: How to open the Trial Balance report file?
+version: 3

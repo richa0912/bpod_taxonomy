@@ -1,7 +1,13 @@
-domain: 'BPOD procure to pay: P2P_Invoice Processing_Accrual process for Corporate_2022_v1.0'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - P2P_Invoice_Processing_Accrual_process_for_Corporate_2022_v1.0.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: The IBM guide outlines the Accrual Process for Corporate, detailing
   how the IBM Delivery Centre will manage processing. It serves as a reference for
   both IBM and client teams for future use.
+domain: 'BPOD procure to pay: P2P_Invoice Processing_Accrual process for Corporate_2022_v1.0'
 seed_examples:
 - context: '
 
@@ -124,27 +130,27 @@ seed_examples:
 
     ##### Bump menu will open.'
   questions_and_answers:
-  - question: What is the process for updating missing coding in the Corporate Accrual
-      Report, and what tools are used to perform this task?
-    answer: To update missing coding, the process involves using Peoplesoft Purchase
+  - answer: To update missing coding, the process involves using Peoplesoft Purchase
       Order Inquiry (Main Menu > Purchasing > Purchase Orders > Review PO Information
       \> Purchase Orders) to retrieve the coding information. The business unit and
       PO ID from the Excel spreadsheet are entered to search for the purchase order,
       and the coding is retrieved from the purchase order page. The coding is then
       entered into the Excel spreadsheet, and the data is filtered and sorted to ensure
       accuracy.
-  - question: What is the significance of the UTC exception in the accrual process?
-    answer: UTC is the only exception that is excluded because it has the same line
+    question: What is the process for updating missing coding in the Corporate Accrual
+      Report, and what tools are used to perform this task?
+  - answer: UTC is the only exception that is excluded because it has the same line
       of coding for every single entry, making it safe to save with the current coding.
-  - question: How is the VLOOKUP function used to populate the AV column in the May
-      spreadsheet with accurate data, and what steps are taken to filter and sort
-      the data?
-    answer: The VLOOKUP function is used to retrieve the correct coding information
+    question: What is the significance of the UTC exception in the accrual process?
+  - answer: The VLOOKUP function is used to retrieve the correct coding information
       from the April spreadsheet and populate the AV column in the May spreadsheet.
       The function is set up to look up the invoice number in column D (Invoice number)
       and retrieve the corresponding coding information. The data is then sorted and
       filtered to remove any incorrect or missing data, and the final result is a
       list of accurate invoice numbers with corresponding coding information.
+    question: How is the VLOOKUP function used to populate the AV column in the May
+      spreadsheet with accurate data, and what steps are taken to filter and sort
+      the data?
 - context: '# Process Detail
 
 
@@ -168,20 +174,20 @@ seed_examples:
     the Accruing, so we need to make sure all the data we give them is complete and
     comprehensive'
   questions_and_answers:
-  - question: What is the purpose of the accounts payable accrual process used by
-      Corporate, starting with BU 051, 401, 414, and all Client Defense?
-    answer: The purpose of the accounts payable accrual process is to provide Corporate
+  - answer: The purpose of the accounts payable accrual process is to provide Corporate
       with a listing of supplier invoices for expenditures incurred as of the date
       of the balance sheet but not yet paid for.
-  - question: Who packages, sorts, and books accruals based on the report sent to
-      General Accounting (General Accounting Team Knoxville), and what is the next
-      step in the process?
-    answer: The General Accounting Team Knoxville packages, sorts, and books accruals
+    question: What is the purpose of the accounts payable accrual process used by
+      Corporate, starting with BU 051, 401, 414, and all Client Defense?
+  - answer: The General Accounting Team Knoxville packages, sorts, and books accruals
       based on the report. The next step in the process is to send the report to other
       departments in Client so they can book accruals.
-  - question: From where is the listing of invoice detail (invoice date, number, PO,
+    question: Who packages, sorts, and books accruals based on the report sent to
+      General Accounting (General Accounting Team Knoxville), and what is the next
+      step in the process?
+  - answer: The listing of invoice detail is extracted from the Verification database.
+    question: From where is the listing of invoice detail (invoice date, number, PO,
       dollar amount, etc.) extracted for the accounts payable accrual process?
-    answer: The listing of invoice detail is extracted from the Verification database.
 - context: '### Example 1:
 
 
@@ -324,28 +330,28 @@ seed_examples:
     people soft. {#highlight-the-row-in-accrual-spreadsheet-as-we-didnt-find-the-invoice-in-people-soft.
     .unnumbered}'
   questions_and_answers:
-  - question: What is the process for verifying an invoice number that is not processed
-      in PeopleSoft, and what steps are taken to update the invoice details?
-    answer: The process involves copying the invoice number and business unit from
+  - answer: The process involves copying the invoice number and business unit from
       the Accrual spreadsheet, entering them in PeopleSoft, and searching for the
       invoice details. If the invoice is not found, the process is repeated, and a
       message is added to the invoice in the Newletter database. The vendor code is
       then copied and pasted into PeopleSoft to retrieve the invoice details.
-  - question: How is the VLOOKUP formula used to check invoice numbers from the Accrual
-      spreadsheet and match the workbench query excel sheet, and what values are populated
-      on the screen?
-    answer: The VLOOKUP formula is applied to the invoice amount column in the match
+    question: What is the process for verifying an invoice number that is not processed
+      in PeopleSoft, and what steps are taken to update the invoice details?
+  - answer: The VLOOKUP formula is applied to the invoice amount column in the match
       workbench query excel sheet to check if the invoice numbers from the Accrual
       spreadsheet match the workbench query excel sheet. The values of the VLOOKUP
       formula are populated on the screen, and the paid invoice details are filtered
       and started with research.
-  - question: What is the process for handling an invoice that has already been invoiced
-      and paid, and what steps are taken to update the Accrual spreadsheet?
-    answer: The process involves copying the message from the Newletter database and
+    question: How is the VLOOKUP formula used to check invoice numbers from the Accrual
+      spreadsheet and match the workbench query excel sheet, and what values are populated
+      on the screen?
+  - answer: The process involves copying the message from the Newletter database and
       pasting it in the comment column of the Accrual spreadsheet. The voucher ID
       number is then copied from PeopleSoft and pasted into the Accrual spreadsheet
       voucher column and Newletter database message field. The reference number and
       payment date are also copied from PeopleSoft and pasted into the Accrual spreadsheet.
+    question: What is the process for handling an invoice that has already been invoiced
+      and paid, and what steps are taken to update the Accrual spreadsheet?
 - context: '##### Bump menu will open.
 
 
@@ -435,25 +441,25 @@ seed_examples:
 
     ##### Enter the comment in comment column as it is an exception in match status.'
   questions_and_answers:
-  - question: What is the next step after opening the Bump menu, and what is the purpose
-      of deleting old records?
-    answer: The next step is to click on F11 to get the Open Research Template, and
+  - answer: The next step is to click on F11 to get the Open Research Template, and
       then delete all old records. This is done to clear the database and prepare
       it for new data.
-  - question: How is the Voucher ID, Cheque Number, and Cheque Date data populated
-      in the CDS Paid and CDS Open queries, and what steps are taken to copy and paste
-      the data into the copy sheet?
-    answer: The Voucher ID, Cheque Number, and Cheque Date data is populated in the
+    question: What is the next step after opening the Bump menu, and what is the purpose
+      of deleting old records?
+  - answer: The Voucher ID, Cheque Number, and Cheque Date data is populated in the
       CDS Paid and CDS Open queries by running queries and confirming updates. The
       data is then copied from the database and pasted into the copy sheet.
-  - question: What is the process for verifying an invoice number that is marked as
-      an exception in the match status, and what steps are taken to update the comment
-      column in the Excel sheet?
-    answer: The process involves opening the PeopleSoft voucher information, searching
+    question: How is the Voucher ID, Cheque Number, and Cheque Date data populated
+      in the CDS Paid and CDS Open queries, and what steps are taken to copy and paste
+      the data into the copy sheet?
+  - answer: The process involves opening the PeopleSoft voucher information, searching
       for the invoice number, and verifying if it has a scheduled date. If it is past
       the scheduled date, the voucher ID is copied from PeopleSoft and pasted into
       the Excel sheet. A comment is then entered in the comment column to indicate
       that it is an exception in the match status.
+    question: What is the process for verifying an invoice number that is marked as
+      an exception in the match status, and what steps are taken to update the comment
+      column in the Excel sheet?
 - context: 'For Corporate, we don''t know that there will Accruals booked, we won''t
     be doing the Accruing, so we need to make sure all the data we give them is complete
     and comprehensive
@@ -544,20 +550,21 @@ seed_examples:
     **Note:** If any Credits (Negative amounts) found, it needs to be Deleted from
     the Report.'
   questions_and_answers:
-  - question: What is the process for copying data from the previous month's spreadsheet
-      to the current month's spreadsheet in the Excel file?
-    answer: The data is copied from the oldest month's spreadsheet by selecting the
+  - answer: The data is copied from the oldest month's spreadsheet by selecting the
       columns AU, AV, and AW, and then pasted into the last month's spreadsheet. The
       oldest month's worksheet is then deleted, and the March spreadsheet is renamed
       as May.
-  - question: What specific types of data need to be deleted from the Corporate Accrual
-      Report, and how is this done?
-    answer: Plant Business units, Client Defense data, and certain business units
+    question: What is the process for copying data from the previous month's spreadsheet
+      to the current month's spreadsheet in the Excel file?
+  - answer: Plant Business units, Client Defense data, and certain business units
       (41400, 40400, 40200) need to be deleted, which can be done by filtering and
       sorting the data using specific criteria, such as Purchase Order numbers and
       exceptions codes like IP10.
-  - question: What specific business units need to be deleted from the Corporate Accrual
+    question: What specific types of data need to be deleted from the Corporate Accrual
       Report, and how is this done?
-    answer: The business units 00200, 01400, 01500, 02900, and 03700 need to be deleted,
+  - answer: The business units 00200, 01400, 01500, 02900, and 03700 need to be deleted,
       which can be done by filtering the Purchase Order number and sorting with A
       to Z
+    question: What specific business units need to be deleted from the Corporate Accrual
+      Report, and how is this done?
+version: 3

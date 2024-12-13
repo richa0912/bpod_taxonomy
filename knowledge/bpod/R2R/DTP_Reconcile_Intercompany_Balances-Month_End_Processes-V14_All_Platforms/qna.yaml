@@ -1,6 +1,12 @@
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - DTP_Reconcile_Intercompany_Balances-Month_End_Processes-V14_All_Platforms.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
+document_outline: Describes GPM DTP Reconcile Intercompany Balances - Month End Processes
 domain: 'BPOD record to analyze: DTP Reconcile Intercompany Balances - Month End Processes
   - V14 All Platforms'
-document_outline: Describes GPM DTP Reconcile Intercompany Balances - Month End Processes
 seed_examples:
 - context: "# Roles and Responsibilities \n\n+-------------------------+-----------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+\n\
     | > **Role**              | > **Description**                                \
@@ -54,13 +60,11 @@ seed_examples:
     \                                                                            \
     \                    |\n+-------------------------+-----------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+"
   questions_and_answers:
-  - question: Who is responsible for conducting the simplified reconciliation using
-      Recon Macro?
-    answer: The Service Provider Intercompany Hub Accountant is responsible for conducting
+  - answer: The Service Provider Intercompany Hub Accountant is responsible for conducting
       the simplified reconciliation using Recon Macro.
-  - question: What are the responsibilities of the Service Provider Intercompany Hub
-      Accountant in Reconcile Intercompany Balances process?
-    answer: 'In Reconcile Intercompany Balances process, the Service Provider Intercompany
+    question: Who is responsible for conducting the simplified reconciliation using
+      Recon Macro?
+  - answer: 'In Reconcile Intercompany Balances process, the Service Provider Intercompany
       Hub Accountant is responsible for:
 
 
@@ -73,11 +77,13 @@ seed_examples:
       *   Generating Intercompany Customer Items (Manual Task)
 
       *   Reconciling Intercompany Balances (Automated Task within Macro Tool)'
-  - question: What is the role of the Country Operating Centre Representative in Reconcile
-      Intercompany Balances process?
-    answer: In Reconcile Intercompany Balances process, the Country Operating Centre
+    question: What are the responsibilities of the Service Provider Intercompany Hub
+      Accountant in Reconcile Intercompany Balances process?
+  - answer: In Reconcile Intercompany Balances process, the Country Operating Centre
       Representative is consulted and asked to investigate discrepancies, and is notified
       by the Accountant about escalated issues.
+    question: What is the role of the Country Operating Centre Representative in Reconcile
+      Intercompany Balances process?
 - context: "# System Enablement \n\n> **SAP Transactions for ALL Platforms.**\n\n\
     +-----------+--------------------------+-------------------------------------+---------------------+--------------------+-------------------+\n\
     | > **No.** | > **Process step**       | > **Transaction code**              |\
@@ -126,21 +132,21 @@ seed_examples:
     \  |                        | > Representative                    |          \
     \          |\n+------------------------+------------------------+-------------------------------------+--------------------+"
   questions_and_answers:
-  - question: What transaction codes are required for reconciling intercompany balances
-      in SAP?
-    answer: The transaction codes required for reconciling intercompany balances in
+  - answer: The transaction codes required for reconciling intercompany balances in
       SAP are FBL1N, FBL5N, FBL3N, FGIO, and SMX.
-  - question: In Reconcile Intercompany Balances process, what is the role of Service
-      Provider Intercompany Hub Accountant in SAP?
-    answer: In Reconcile Intercompany Balances process,  the Service Provider Intercompany
+    question: What transaction codes are required for reconciling intercompany balances
+      in SAP?
+  - answer: In Reconcile Intercompany Balances process,  the Service Provider Intercompany
       Hub Accountant has the role of reconciling intercompany balance and has display
       and change access in SAP.
-  - question: In the context of Reconcile Intercompany Balances process, what is the
-      access type for the Country Operating Centre Representative in the Service Now
-      Workflow system?
-    answer: In the context of Reconcile Intercompany Balances process, the Country
+    question: In Reconcile Intercompany Balances process, what is the role of Service
+      Provider Intercompany Hub Accountant in SAP?
+  - answer: In the context of Reconcile Intercompany Balances process, the Country
       Operating Centre Representative has change and display access in the Service
       Now Workflow system.
+    question: In the context of Reconcile Intercompany Balances process, what is the
+      access type for the Country Operating Centre Representative in the Service Now
+      Workflow system?
 - context: "## - Reconcile Intercompany Balances -- Month End Process (Applicable\
     \ to ALL Platforms) \n\n> In Simplified Reconciliation approach, post the period-end\
     \ closing intercompany Concern Receivables and Concern Payables, balances are\
@@ -188,21 +194,21 @@ seed_examples:
     \           |\n+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+---------------------------------------+--------------------------------------------------+\n\
     \n> **Note** :- GCAD defined frequency to be referred in below link [https://example.com]{.ul}"
   questions_and_answers:
-  - question: What is the objective of the Simplified Reconciliation approach in the
-      intercompany reconciliation process?
-    answer: The objective of the Simplified Reconciliation approach is to reconcile
+  - answer: The objective of the Simplified Reconciliation approach is to reconcile
       intercompany balances via a newly built Excel Macro tool, specifically for post-period
       end closing intercompany Concern Receivables and Concern Payables balances.
-  - question: Who is responsible for ensuring the data is fetched correctly from respective
+    question: What is the objective of the Simplified Reconciliation approach in the
+      intercompany reconciliation process?
+  - answer: The IC Hub team is responsible for ensuring the data is fetched correctly
+      from respective ECC Systems and uploaded into the Macro tool.
+    question: Who is responsible for ensuring the data is fetched correctly from respective
       ECC Systems and uploaded into the Macro tool?
-    answer: 'The IC Hub team is responsible for ensuring the data is fetched correctly
-      from respective ECC Systems and uploaded into the Macro tool.'
-  - question: What is the purpose of Control RTR C3.3 in the intercompany reconciliation
-      process?
-    answer: The purpose of Control RTR C3.3 is to ensure reconciliation of intercompany
+  - answer: The purpose of Control RTR C3.3 is to ensure reconciliation of intercompany
       accounts, specifically to perform intercompany reconciliations, identify and
       investigate differences, and resolve remaining mismatches in accordance with
       GCAD defined threshold and frequency.
+    question: What is the purpose of Control RTR C3.3 in the intercompany reconciliation
+      process?
 - context: "> **The below process description refers to the intercompany reconciliation\
     \ done on a monthly basis.**\n>\n> ***[General assumptions to Reconcile Intercompany\
     \ Balances process:]{.ul}***\n\na)  Process of issuing and posting of intercompany\
@@ -234,9 +240,7 @@ seed_examples:
     \ to the value/number of unreconciled intercompany balances to prevent delegation\
     \ of outstanding items clearing to Client/to prevent posting high accruals."
   questions_and_answers:
-  - question: What are the general assumptions for the Reconcile Intercompany Balances
-      process?
-    answer: 'The general assumptions or the Reconcile Intercompany Balances process
+  - answer: 'The general assumptions or the Reconcile Intercompany Balances process
       are:
 
 
@@ -247,17 +251,19 @@ seed_examples:
       *   All deliveries between Client related parties should be done on terms and
       conditions (incoterms) transferring risks related to the ownership of goods
       to the buying entity at the moment of sending the goods from the selling entity.'
-  - question: What are the deadlines for intercompany billing?
-    answer: 'The deadlines for intercompany billing are:
+    question: What are the general assumptions for the Reconcile Intercompany Balances
+      process?
+  - answer: 'The deadlines for intercompany billing are:
 
 
       *   Cut-off date for finished goods billing is the last working day of the period.
 
       *   Cut-off date for sundry invoicing is Work Day -- 5 (WD-5).'
-  - question: In Reconcile Intercompany Balanced pocess, what is the deadline for
-      closing all sub-ledgers?
-    answer: In Reconcile Intercompany Balanced pocess, the deadline for closing all
+    question: What are the deadlines for intercompany billing?
+  - answer: In Reconcile Intercompany Balanced pocess, the deadline for closing all
       sub-ledgers is 10.00 a.m. on the first working day of the next period.
+    question: In Reconcile Intercompany Balanced pocess, what is the deadline for
+      closing all sub-ledgers?
 - context: '> **This Portion of the document explains how to generate line level reconciliation
     report:**
 
@@ -333,18 +339,19 @@ seed_examples:
     and ensure the completeness before a day on month/quarter closing (Applicable
     for both Line level reconciliation and Summary version).'
   questions_and_answers:
-  - question: In Reconcile Intercompany process, what is the purpose of the Summary
-      Version Macro?
-    answer: In Reconcile Intercompany process, the purpose of the Summary Version
+  - answer: In Reconcile Intercompany process, the purpose of the Summary Version
       Macro is to provide support at summary level at TP's and in comparison with
       V105 reported balances.
-  - question: In Reconcile Intercompany process, who is responsible for maintaining
-      the copy of the macro, which could be used in case of macro failure?
-    answer: In Reconcile Intercompany process,  the 3PSP is responsible for maintaining
+    question: In Reconcile Intercompany process, what is the purpose of the Summary
+      Version Macro?
+  - answer: In Reconcile Intercompany process,  the 3PSP is responsible for maintaining
       the copy of the macro, which could be used in case of macro failure.
-  - question: In Reconcile Intercompany process, what is the purpose of the Simplified
-      Recon -- Line Item Level Macro?
-    answer: In Reconcile Intercompany process, the purpose of the Simplified Recon
+    question: In Reconcile Intercompany process, who is responsible for maintaining
+      the copy of the macro, which could be used in case of macro failure?
+  - answer: In Reconcile Intercompany process, the purpose of the Simplified Recon
       -- Line Item Level Macro is to enable the formatting of SAP raw data, updating
       the BCS Code, Country, Platform, and classifying document types into Sundry,
       Product, and General Ledger.
+    question: In Reconcile Intercompany process, what is the purpose of the Simplified
+      Recon -- Line Item Level Macro?
+version: 3

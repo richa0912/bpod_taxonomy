@@ -1,7 +1,13 @@
-domain: 'BPOD procure to payment: P2P_Invoice Processing_Mexico Indirect Invoice Spreadsheet
-  Upload.docx'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - P2P_Invoice_Processing_Mexico_Indirect_Invoice_Spreadsheet_Upload.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how IBM Delivery Centre will perform the Client indirect
   invoices spreadsheet upload process
+domain: 'BPOD procure to payment: P2P_Invoice Processing_Mexico Indirect Invoice Spreadsheet
+  Upload.docx'
 seed_examples:
 - context: "By using paste special values, paste the copied data into vendor code\
     \ column of Formatting Do Not Delete excel spreadsheet.\n\n    Values get pasted\
@@ -50,8 +56,7 @@ seed_examples:
     \ needed folder. Cut the Client indirect excel file.\n\n    Paste the Client Indirect\
     \ excel file in uploads folder."
   questions_and_answers:
-  - question: How to eliminate leading zeros in the invoice number column?
-    answer: 'Go to Client Indirect Report spreadsheet and copy the column E (Folio)
+  - answer: 'Go to Client Indirect Report spreadsheet and copy the column E (Folio)
       which is Invoice number column.
 
       By using paste special values, paste the copied data into Invoice number column
@@ -59,11 +64,12 @@ seed_examples:
 
       Values get pasted in Invoice number column and select convert to number to eliminate
       leading zeros in the Invoice number column.'
-  - question: What is the location of client indirect invoice template storage?
-    answer: Save the file as Client Indirect Invoices in M:/ > PAYSHARE > DATA > EXCEL\
+    question: How to eliminate leading zeros in the invoice number column?
+  - answer: Save the file as Client Indirect Invoices in M:/ > PAYSHARE > DATA > EXCEL\
       \ >MX Indirect Reports > Analyst Receipt Bump.
-  - question: How to navigate to Query viewer queue in PeopleSoft?
-    answer: Open PeopleSoft > Reporting tools > Query > Query viewer.
+    question: What is the location of client indirect invoice template storage?
+  - answer: Open PeopleSoft > Reporting tools > Query > Query viewer.
+    question: How to navigate to Query viewer queue in PeopleSoft?
 - context: "Document Information\nAbout this Document\n\nThis is official IBM guide\
     \ document which describes how IBM Delivery Centre will perform the Client indirect\
     \ invoices spreadsheet upload process. These requests are received via email.\
@@ -97,16 +103,16 @@ seed_examples:
     \ the related Aggregate SOD (A-SOD). <SOD Matrix pending IBM GPS internal review\
     \ and approval>"
   questions_and_answers:
-  - question: How is the upload request being received?
-    answer: These requests are received via email. The file needs to be formatted
+  - answer: These requests are received via email. The file needs to be formatted
       and uploaded in the Client invoice database, it gets processed automatically
       once we upload and auto emails will get generated. If any duplicate found, it
       will get stopped and that needs to be sent via mail.
-  - question: Which team is responsible for formatting and uploading indirect spreadsheet
+    question: How is the upload request being received?
+  - answer: IBM Invoice Processing Team
+    question: Which team is responsible for formatting and uploading indirect spreadsheet
       into Database?
-    answer: IBM Invoice Processing Team
-  - question: What is the deadline for report upload?
-    answer: This report must be uploaded before 2:15 PM
+  - answer: This report must be uploaded before 2:15 PM
+    question: What is the deadline for report upload?
 - context: "Note: They will pull the invoice from the portal and manually find the\
     \ receipts, looking at the invoice number received\n\n    Go to Client Invoice\
     \ database, click on the main menu\n\n    Loco Client Client has sent an email\
@@ -150,16 +156,16 @@ seed_examples:
     \ used in this document:\n\nTerm Definition\n\nMX Client ASN Advance Shipment\
     \ Number CS Customer Service Analyst Team"
   questions_and_answers:
-  - question: What is the deadline for pulling and sending Client invoice database
+  - answer: Portal reports are pulled and sent on Wednesday.
+    question: What is the deadline for pulling and sending Client invoice database
       reports?
-    answer: Portal reports are pulled and sent on Wednesday.
-  - question: How to proceed in case of file upload error in Client invoice database?
-    answer: If upload stops processing or an error occurs, you need to send it to
+  - answer: If upload stops processing or an error occurs, you need to send it to
       Knoxville system support to review the database
-  - question: List out acronyms used in this desktop procedure along with the definitions
-    answer: "The following are definitions of acronyms used in this document:\nTerm\t\
+    question: How to proceed in case of file upload error in Client invoice database?
+  - answer: "The following are definitions of acronyms used in this document:\nTerm\t\
       Definition\nMX\t        Client\nASN\tAdvance Shipment Number\n CS\t        Customer\
       \ Service Analyst Team"
+    question: List out acronyms used in this desktop procedure along with the definitions
 - context: "Process Detail\nOverview\n\nThe activity is about processing Client indirect\
     \ invoices spreadsheet which needs to be formatted and uploaded in the Client\
     \ invoice database. It will get processed automatically once it is uploaded and\
@@ -237,21 +243,21 @@ seed_examples:
     \  Click on comment receipts drop down, select all and click on OK.\n\n    Save\
     \ the file.\n\n    Make a copy of file for safe side or backup."
   questions_and_answers:
-  - question: What does email request for indirect invoice posting contain?
-    answer: "1.\tAn email is received with subject Client Indirect Report for PS,\
+  - answer: "1.\tAn email is received with subject Client Indirect Report for PS,\
       \ and it contains an excel attachment.\n2.\tOpen the received Client Indirect\
       \ Report for PS excel attachment.\n3.\tGo to the below path to get spreadsheet\
       \ template to import the data.\nPath: M:/ > PAYSHARE > DATA > EXCEL > MX Indirect\
       \ Reports > Analyst Receipt Bump"
-  - question: What is the location of spreadsheet template for data import?
-    answer: 'Go to the below path to get spreadsheet template to import the data.
+    question: What does email request for indirect invoice posting contain?
+  - answer: 'Go to the below path to get spreadsheet template to import the data.
 
       Path: M:/ > PAYSHARE > DATA > EXCEL > MX Indirect Reports > Analyst Receipt
       Bump'
-  - question: In which system do indirect invoice requests need to be uploaded?
-    answer: Receiving the Client indirect invoices which has been sent in mail and
+    question: What is the location of spreadsheet template for data import?
+  - answer: Receiving the Client indirect invoices which has been sent in mail and
       stored in the OneDrive, those invoices have to be formatted and uploaded in
       the Client invoice database.
+    question: In which system do indirect invoice requests need to be uploaded?
 - context: "Save the file as PeopleSoft receipts in M:/ > APCS > CLIENT > Indirect.\n\
     \n    Go back to Client Invoice database and select Import PeopleSoft receipts.\n\
     \n    It shows as peoplesoft indirect receipts Import completed and click on OK.\n\
@@ -324,8 +330,7 @@ seed_examples:
     \ and click on Ok (these are the ones we don't find any receipts)\n\n    Go to\
     \ orden (PO), select few PO's and then click on OK. Two invoices have been selected"
   questions_and_answers:
-  - question: Which steps should I take after indirect receipts import is completed?
-    answer: "Second step is to select Invoice bump, and it populates as Client indirect\
+  - answer: "Second step is to select Invoice bump, and it populates as Client indirect\
       \ invoice bump is completed and click on OK.\nAfter second step of process i.e.,\
       \ Invoice bump,\n\nIn M:/ > PAYSHARE > DATA > EXCEL > MX Indirect Reports >\
       \ Analyst Receipt Bump folder, The Client Indirect Invoice original file will\
@@ -337,21 +342,23 @@ seed_examples:
       \ on comment receipt drop down.\n\n51.\tSelect blanks and click on OK.\n52.\t\
       Delete the appeared results.\n53.\tClick on comment receipts drop down, select\
       \ all and click on OK.\n54.\tSave the file."
-  - question: Why should I select voucher upload in Client invoice database?
-    answer: 'This will check the data and process the invoices whether it has any
+    question: Which steps should I take after indirect receipts import is completed?
+  - answer: 'This will check the data and process the invoices whether it has any
       duplicates, something wrong with invoices and emails the notifications. If there
       is any error, it shows an error message before it processes the invoices.
 
       After completion of process, it shows dialog box as completed and click on OK.'
-  - question: Which xls function should I use to apply portal ID references?
-    answer: "Open Client indirect PeopleSoft upload excel file from email attachment\
+    question: Why should I select voucher upload in Client invoice database?
+  - answer: "Open Client indirect PeopleSoft upload excel file from email attachment\
       \ and filter all columns.\nClick on drop down of column C and select blanks\
       \ and click on OK.\nDelete the appeared results.\nClick on drop down of column\
       \ C and select all and click on OK.\nFiltered results will be appeared.\nColumn\
       \ CW refers to portal ID reference, convert them to numbers.\nGo back to Client\
       \ Indirect Report spreadsheet which is raw data and apply VLOOKUP formula as\
-      \ shown in the below picture.\n\tVLOOKUP formula will be VLOOKUP_Value,\
-      \ table_array, Col_index_num,(range_lookup)\n\tHere lookup value is the\
-      \ Portal ID in the Client Indirect Report spreadsheet\n\tTable array will\
-      \ the CW and CX in the Client Indirect Peoplesoft Upload file\n\t\"2\"\
-      \ will be the column index \n\tEnter it as false"
+      \ shown in the below picture.\n\tVLOOKUP formula will be VLOOKUP_Value, table_array,\
+      \ Col_index_num,(range_lookup)\n\tHere lookup value is the Portal ID in the\
+      \ Client Indirect Report spreadsheet\n\tTable array will the CW and CX in the\
+      \ Client Indirect Peoplesoft Upload file\n\t\"2\" will be the column index \n\
+      \tEnter it as false"
+    question: Which xls function should I use to apply portal ID references?
+version: 3

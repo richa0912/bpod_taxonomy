@@ -1,9 +1,15 @@
-domain: 'BPOD Human Resource: Holy Foundation_Paid Time Off  Policy'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Holy_Foundation_Paid_Time_Off_Policy.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: The  Holy Foundation Paid Time Off (PTO) policy is designed for
   all caregivers of the Facility who work the full-time equivalent of 50% or more
   (0.5 FTE), excluding those with specific time off plans related to their roles.
   The purpose of this policy is to provide paid time off for absences, allowing caregivers
   to maintain an appropriate work-life balance.
+domain: 'BPOD Human Resource: Holy Foundation_Paid Time Off  Policy'
 seed_examples:
 - context: '4. Paid Time Off Cash Out. Accrued PTO will not be cashed out, except
     upon termination (subject to Separation of Employment policy) or a status change
@@ -23,26 +29,26 @@ seed_examples:
     stop when the maximum limit is reached. The caregiver''s accrual will resume when
     time off has been taken and the balance falls below the maximum.'
   questions_and_answers:
-  - question: How is the PTO balance for caregivers determined under Holy Foundation
-      Paid Time Off policy?
-    answer: The PTO balance for caregivers under Holy Foundation Paid Time Off policy
+  - answer: The PTO balance for caregivers under Holy Foundation Paid Time Off policy
       is determined by their annual accrual rate, which is based on their years of
       service. For example, a staff caregiver with seven years earns 30 days per year,
       allowing them to carry a PTO balance of up to 45 days. Accruals stop when the
       maximum limit is reached, and resume when time off has been taken and the balance
       falls below the maximum.
-  - question: What happens to accrued PTO when a caregiver's status changes to less
-      than 0.5 FTE or when they are terminated according to Holy Foundation Paid Time
-      Off policy?
-    answer: according to Holy Foundation Paid Time Off policy, accrued PTO will not
+    question: How is the PTO balance for caregivers determined under Holy Foundation
+      Paid Time Off policy?
+  - answer: according to Holy Foundation Paid Time Off policy, accrued PTO will not
       be cashed out unless the caregiver's status changes to less than 0.5 FTE or
       they are terminated, subject to the Separation of Employment policy.
-  - question: How can caregivers check their PTO balance and address any discrepancies
-      under Holy Foundation Paid Time Off policy?
-    answer: under Holy Foundation Paid Time Off policy, caregivers can check their
+    question: What happens to accrued PTO when a caregiver's status changes to less
+      than 0.5 FTE or when they are terminated according to Holy Foundation Paid Time
+      Off policy?
+  - answer: under Holy Foundation Paid Time Off policy, caregivers can check their
       PTO balance on their pay statement and through the timekeeping system. If they
       notice any potential discrepancy, they should bring it to the attention of the
       Payroll Department as soon as possible.
+    question: How can caregivers check their PTO balance and address any discrepancies
+      under Holy Foundation Paid Time Off policy?
 - context: '6. Paid Time Off in Connection with Short-Term Disability, Workers'' Compensation
     & Paid Parental Leave. PTO can be used to cover the waiting periods for both short-term
     disability and workers'' compensation leaves. PTO can also be used to supplement
@@ -67,24 +73,24 @@ seed_examples:
     covenant of employment. They are not promises of specific treatment in specific
     situations and are subject to change at the sole discretion of the facility.'
   questions_and_answers:
-  - question: How can PTO be used in connection with short-term disability, workers'
-      compensation, and paid parental leave as per Holy Foundation Paid Time Off policy?
-    answer: as per Holy Foundation Paid Time Off policy, PTO can be used to cover
+  - answer: as per Holy Foundation Paid Time Off policy, PTO can be used to cover
       the waiting periods for both short-term disability and workers' compensation
       leaves. It can also be used to supplement short-term disability, workers' compensation
       benefits, or Paid Parental Leave to 100% of base pay for the life of the claim
       or until PTO is exhausted, but no longer than six months from the first date
       of disability.
-  - question: What are the requirements for using PTO during holiday observances as
-      per Holy Foundation Paid Time Off policy?
-    answer: As per Holy Foundation Paid Time Off policy, caregivers are required to
+    question: How can PTO be used in connection with short-term disability, workers'
+      compensation, and paid parental leave as per Holy Foundation Paid Time Off policy?
+  - answer: As per Holy Foundation Paid Time Off policy, caregivers are required to
       use PTO for holiday observances in accordance with applicable policy. If accrued
       PTO is available, it must be used before unpaid time can be reported.
-  - question: How does the Reemployment policy affect PTO accrual rates for caregivers
-      for Holy Foundation?
-    answer: For purposes of PTO accrual rates, caregivers will receive credit for
+    question: What are the requirements for using PTO during holiday observances as
+      per Holy Foundation Paid Time Off policy?
+  - answer: For purposes of PTO accrual rates, caregivers will receive credit for
       length of service for time worked at other ministries in accordance with the
       Reemployment policy for Holy Foundation.
+    question: How does the Reemployment policy affect PTO accrual rates for caregivers
+      for Holy Foundation?
 - context: '> **Paid Time Off Accrual Rates (based on a full-time (1.0 FTE 40-hours
     a week) caregiver):**
 
@@ -187,18 +193,18 @@ seed_examples:
 
     > \*The number of equivalent days is based on an 8-hour shift.'
   questions_and_answers:
-  - question: How many days of PTO does a non-exempt caregiver accrue per year with
+  - answer: A non-exempt caregiver with less than 3 years of service accrues 25 days
+      of PTO per year  under Holy Foundation Paid Time Off  Policy.
+    question: How many days of PTO does a non-exempt caregiver accrue per year with
       less than 3 years of service under Holy Foundation Paid Time Off  Policy?
-    answer: A non-exempt caregiver with less than 3 years of service accrues 25 days
+  - answer: An exempt caregiver with less than 3 years of service accrues 200 hours
       of PTO per year  under Holy Foundation Paid Time Off  Policy.
-  - question: How many hours of PTO does an exempt caregiver accrue per year with
+    question: How many hours of PTO does an exempt caregiver accrue per year with
       less than 3 years of service  under Holy Foundation Paid Time Off  Policy?
-    answer: An exempt caregiver with less than 3 years of service accrues 200 hours
-      of PTO per year  under Holy Foundation Paid Time Off  Policy.
-  - question: How many hours of PTO does a non-exempt caregiver accrue per pay period
-      with less than 3 years of service under Holy Foundation Paid Time Off  Policy?
-    answer: A non-exempt caregiver with less than 3 years  under Holy Foundation Paid
+  - answer: A non-exempt caregiver with less than 3 years  under Holy Foundation Paid
       Time Off  Policy.
+    question: How many hours of PTO does a non-exempt caregiver accrue per pay period
+      with less than 3 years of service under Holy Foundation Paid Time Off  Policy?
 - context: 'Holy Foundation ("facility")
 
 
@@ -229,20 +235,20 @@ seed_examples:
     the need for and request of leave. PTO for absences from work are subject to the
     limits and conditions described below.'
   questions_and_answers:
-  - question: Who is covered by Holy Foundation Paid Time Off  (PTO) policy?
-    answer: All caregivers of the facility who work the full-time equivalent of 50%
+  - answer: All caregivers of the facility who work the full-time equivalent of 50%
       or more (0.5 FTE), except for caregivers covered by a time off plan specific
       to their role, such as certain leadership roles, providers and medical residents.
-  - question: What is the purpose of the Holy Foundation Paid Time Off  (PTO) policy?
-    answer: The purpose of the Holy Foundation Paid Time Off  (PTO) policy is to describe
+    question: Who is covered by Holy Foundation Paid Time Off  (PTO) policy?
+  - answer: The purpose of the Holy Foundation Paid Time Off  (PTO) policy is to describe
       the paid time off program and provide eligible caregivers the opportunity to
       accrue paid time off for absences, allowing them to maintain an appropriate
       work-life balance.
-  - question: What types of absences are covered under the Holy Foundation Paid Time
-      Off  (PTO) policy?
-    answer: The Holy Foundation Paid Time Off  (PTO) policy covers absences for vacation,
+    question: What is the purpose of the Holy Foundation Paid Time Off  (PTO) policy?
+  - answer: The Holy Foundation Paid Time Off  (PTO) policy covers absences for vacation,
       holidays, personal days, incidental sick time, or any other reason required
       by law.
+    question: What types of absences are covered under the Holy Foundation Paid Time
+      Off  (PTO) policy?
 - context: "Requirements \u2013 Paid Time Off (PTO):\n1. Paid Time Off (PTO) Accrual.\
     \ Caregivers accrue PTO hours each pay period based on length of service starting\
     \ with the date of eligibility. Time becomes available for use, with core leader\
@@ -259,19 +265,20 @@ seed_examples:
     \ hours per week).\nB. Exempt (Salaried) Caregivers. Exempt full-time and part-time\
     \ caregivers accrue PTO based on their assigned full-time equivalent (FTE)."
   questions_and_answers:
-  - question: How does a caregiver accrue PTO hours under Holy Foundation Paid Time
-      Off  (PTO) policy?
-    answer: Caregivers accrue PTO hours each pay period based on their length of service,
+  - answer: Caregivers accrue PTO hours each pay period based on their length of service,
       starting with the date of eligibility. The accrual is added to their PTO balance
       on the last day of each pay period and is reduced each pay period for any PTO
       hours recorded under Holy Foundation Paid Time Off  (PTO) policy.
-  - question: How does a non-exempt caregiver accrue PTO hours under Holy Foundation
-      Paid Time Off  (PTO) policy?
-    answer: Non-exempt caregivers will earn PTO each pay period based on their actual
+    question: How does a caregiver accrue PTO hours under Holy Foundation Paid Time
+      Off  (PTO) policy?
+  - answer: Non-exempt caregivers will earn PTO each pay period based on their actual
       hours worked in the previous two weeks under Holy Foundation Paid Time Off  (PTO)
       policy. PTO will not be earned on any hours exceeding a 1.0 FTE status (40 hours
       per week).
-  - question: How does an exempt caregiver accrue PTO hours under Holy Foundation
+    question: How does a non-exempt caregiver accrue PTO hours under Holy Foundation
       Paid Time Off  (PTO) policy?
-    answer: Exempt full-time and part-time caregivers accrue PTO based on their assigned
+  - answer: Exempt full-time and part-time caregivers accrue PTO based on their assigned
       full-time equivalent (FTE) under Holy Foundation Paid Time Off  (PTO) policy.
+    question: How does an exempt caregiver accrue PTO hours under Holy Foundation
+      Paid Time Off  (PTO) policy?
+version: 3

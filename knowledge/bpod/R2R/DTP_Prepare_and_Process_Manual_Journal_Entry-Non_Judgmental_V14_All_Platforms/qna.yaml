@@ -1,7 +1,13 @@
-domain: 'BPOD record to analyze: DTP Prepare and Process Manual Journal Entry - Non Judgmental
-  V14 All Platforms'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - DTP_Prepare_and_Process_Manual_Journal_Entry-Non_Judgmental_V14_All_Platforms.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes the steps to Prepare and Process Non Judgemental Manual
   Journal Entry
+domain: 'BPOD record to analyze: DTP Prepare and Process Manual Journal Entry - Non
+  Judgmental V14 All Platforms'
 seed_examples:
 - context: "# 1 Introduction \n\n> The Effective Financial Control and Reporting (EFCR)\
     \ programme has been established within Client as a joint initiative between the\
@@ -22,21 +28,20 @@ seed_examples:
     \n-   Creating global, harmonised timings in order to ensure the accelerated financial\
     \ reporting cycle."
   questions_and_answers:
-  - question: What are the main goals of the Effective Financial Control & Reporting
-      Programme?
-    answer: 'The main goals of the programme are to deliver:
+  - answer: 'The main goals of the programme are to deliver:
 
       *  A truly global ''end-to-end'' financial control process with improved quality
       and reduced complexity and cost.
 
       *  An accelerated financial reporting cycle - from 5 weeks to 2 weeks.'
-  - question: What is the Global R2R Client Process Model?
-    answer: he Global R2R Client Process Model represents **Client best practices
+    question: What are the main goals of the Effective Financial Control & Reporting
+      Programme?
+  - answer: he Global R2R Client Process Model represents **Client best practices
       across all regions, platforms, and different R2R process participants, and was
       developed as an important step forward to achieve the programme's ambitious
       goals.
-  - question: What are the benefits of the Global Standard Desktop Procedures?
-    answer: 'he benefits of the Global Standard Desktop Procedures are that they:
+    question: What is the Global R2R Client Process Model?
+  - answer: 'he benefits of the Global Standard Desktop Procedures are that they:
 
 
       *  Simplify and harmonise the end-to-end R2R processes globally.
@@ -47,6 +52,7 @@ seed_examples:
 
       *  Create global, harmonised timings to ensure the accelerated financial reporting
       cycle.'
+    question: What are the benefits of the Global Standard Desktop Procedures?
 - context: "# 2 Purpose \n\n> Journals can be classified as either Judgmental or Non\
     \ judgmental as per their ownership and approval methodology:\n\na.  **Judgmental\
     \ Journals** require business knowledge as some judgement is needed to ensure\
@@ -89,9 +95,7 @@ seed_examples:
     \ Fixed/Variable costs variance analysis\n\n-   Working Capital Analysis: Account\
     \ Receivables ageing Analysis, Days Payable Outstanding analysis, WIP ageing analysis.\n"
   questions_and_answers:
-  - question: What are the two types of journals based on their ownership and approval
-      methodology?
-    answer: 'The two types of journals based on their ownership and approval methodology
+  - answer: 'The two types of journals based on their ownership and approval methodology
       are:
 
 
@@ -101,8 +105,9 @@ seed_examples:
       *   Non-Judgmental Journals: do not require detailed business knowledge and
       the steps to prepare and post the journals are explicitly explained in the respective
       desktop procedure.'
-  - question: What are some examples of Non-Judgmental Journals?
-    answer: 'Examples of Non-Judgmental Journals include:
+    question: What are the two types of journals based on their ownership and approval
+      methodology?
+  - answer: 'Examples of Non-Judgmental Journals include:
 
 
       *   Journals prepared and posted entirely by the 3rd Party Service Provider.
@@ -112,9 +117,8 @@ seed_examples:
 
       *   Journals values calculated centrally, but the 3rd Party Service Provider
       understands and is able to validate their correctness.'
-  - question: ' What are some accounting areas that may result in a need for accrual
-      posting?'
-    answer: 'Some accounting areas that may result in a need for accrual posting include:
+    question: What are some examples of Non-Judgmental Journals?
+  - answer: 'Some accounting areas that may result in a need for accrual posting include:
 
 
       *   All Record and Account entries: Fixed Assets, Capital Project, Cost Accounting,
@@ -132,6 +136,8 @@ seed_examples:
 
       *  Working Capital Analysis: Account Receivables ageing Analysis, Days Payable
       Outstanding analysis, WIP ageing analysis.'
+    question: ' What are some accounting areas that may result in a need for accrual
+      posting?'
 - context: "# 5 Roles and Responsibilities \n\n+-------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+\n\
     | > **Role**                    | **Description**                            \
     \                                                                            \
@@ -321,23 +327,23 @@ seed_examples:
     \        | > [Reverse Accruals in Following]{.ul} [Period]{.ul}            |\n\
     +-------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+"
   questions_and_answers:
-  - question: What is the responsibility of the Country or Supply Chain Company Finance
-      Requestor in processing Non judgemental manual journal entry?
-    answer: When  processing Non judgemental manual journal entry, the Company Finance
+  - answer: When  processing Non judgemental manual journal entry, the Company Finance
       Requestor is responsible for defining the rules for journal entry, including
       accrual calculation, accounting details, and frequency, and for sending them
       to the Service Provider Approver for validation.
-  - question: ' Who responsible for reviewing and confirming the Non-Judgmental Journal
-      Entry (NJJE) list on a monthly basis and for approving any changes to the list?'
-    answer: The Country Controller is responsible for reviewing and confirming the
+    question: What is the responsibility of the Country or Supply Chain Company Finance
+      Requestor in processing Non judgemental manual journal entry?
+  - answer: The Country Controller is responsible for reviewing and confirming the
       Non-Judgmental Journal Entry (NJJE) list on a monthly basis and for approving
       any changes to the list.
-  - question: When processing Non judgemental manual journal entry, what is the responsibility
-      of the Service Provider Accountant?
-    answer: When processing Non judgemental manual journal entry, the Service Provider
+    question: ' Who responsible for reviewing and confirming the Non-Judgmental Journal
+      Entry (NJJE) list on a monthly basis and for approving any changes to the list?'
+  - answer: When processing Non judgemental manual journal entry, the Service Provider
       Accountant is responsible for collecting data necessary for journal/accrual
       preparation, preparing the journal/accrual proposal, and submitting it for review
       and approval.
+    question: When processing Non judgemental manual journal entry, what is the responsibility
+      of the Service Provider Accountant?
 - context: "## 7.J Prepare Journal Entry (by Service Provider Accountant) \n\n**Note**:\
     \ In case of scheduled entries that can be set up in the system as recurring,\
     \ refer to the *DTP Prepare Recurring Document - Non Judgmental* which is the\
@@ -369,9 +375,7 @@ seed_examples:
     \ will appear, browse the file, name it and then select what kind of attachment\
     \ file has to be added. When ready click **Save** button."
   questions_and_answers:
-  - question: When preparing Journal Entry by Service Provide Account, what fields
-      need to be filled in when using the Cadency Journal Entry tool?
-    answer: 'When preparing Journal Entry by Service Provide Account, following fields
+  - answer: 'When preparing Journal Entry by Service Provide Account, following fields
       in Cadency Journal Entry tool need to be filled.
 
       *   Name
@@ -396,13 +400,15 @@ seed_examples:
       *   Exchange Rate (leave blank if inputting in local currency)
 
       *   Reversal Date'
-  - question: When preparing Journal Entry by Service Provide Account, How do you
-      determine whether a posting is a debit or credit?
-    answer: When preparing Journal Entry by Service Provide Account, the signs --
+    question: When preparing Journal Entry by Service Provide Account, what fields
+      need to be filled in when using the Cadency Journal Entry tool?
+  - answer: When preparing Journal Entry by Service Provide Account, the signs --
       and + with amount determine whether it is debit or credit posting.
-  - question: What template should be used for non-judgmental manual accruals?
-    answer: The template called Non-Judgmental Accrual should be used for non-judgmental
+    question: When preparing Journal Entry by Service Provide Account, How do you
+      determine whether a posting is a debit or credit?
+  - answer: The template called Non-Judgmental Accrual should be used for non-judgmental
       manual accruals.
+    question: What template should be used for non-judgmental manual accruals?
 - context: "### Control Overview \n\n> **RTR C2.1a** : The following control must\
     \ be executed within the process in a manual way. On a regular basis, the list\
     \ of all posted journals is compared with the checklist in order to ensure that\
@@ -445,13 +451,14 @@ seed_examples:
     \ Approver based on the information approved by the countries and stored on the\
     \ OC SharePoint.\n"
   questions_and_answers:
-  - question: What is the Objective of Control RTR C2.1a?
-    answer: The objective of Control RTR C2.1a is to ensure that all required journals
+  - answer: The objective of Control RTR C2.1a is to ensure that all required journals
       are posted in a timely manner, no journals are missed out from being recorded,
       and any prior period accruals that have not been reversed automatically are
       duly reversed manually.
-  - question: How often is Control RTR C2.1a performed?
-    answer: Control RTR C2.1a is performed monthly.
-  - question: What are the sources of information for Control RTR C2.1a?
-    answer: The source of information for Control RTR C2.1a are the Checklist, SAP,
+    question: What is the Objective of Control RTR C2.1a?
+  - answer: Control RTR C2.1a is performed monthly.
+    question: How often is Control RTR C2.1a performed?
+  - answer: The source of information for Control RTR C2.1a are the Checklist, SAP,
       and Cadency JE.
+    question: What are the sources of information for Control RTR C2.1a?
+version: 3

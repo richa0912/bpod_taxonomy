@@ -1,6 +1,12 @@
-domain: 'BPOD order to cash: 5.1.14 GL Client UK Trial balance Review'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - 5.1.14_GL_Client_UK_Trial_balance_Review.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Explains the steps which are required to do the first level review
   of Trial Balance for 3 UK Entities.
+domain: 'BPOD order to cash: 5.1.14 GL Client UK Trial balance Review'
 seed_examples:
 - context: "# Document Information\n\n## About this Document\n\nThis document explains\
     \ the steps which are required to do the first level review of Trial Balance for\
@@ -12,34 +18,34 @@ seed_examples:
     \ ---------------- ------------------ --------------------- ------------------\n\
     \  **Version number**   **Effective Date**   **Summary of Changes**   **Author**\
     \       **IBM Reviewer**   **Client Reviewer**   **GPO Approver**\n  1.0     \
-    \             10-Jul-2016          DTP creation             K T   R\
-    \ K          A K         A F\n  -------------------- --------------------\
-    \ ------------------------ ---------------- ------------------ ---------------------\
-    \ ------------------\n\n"
+    \             10-Jul-2016          DTP creation             K T   R K        \
+    \  A K         A F\n  -------------------- -------------------- ------------------------\
+    \ ---------------- ------------------ --------------------- ------------------\n\
+    \n"
   questions_and_answers:
-  - question: Who should use 5.1.14 GL Client UK Trial balance Review document?
-    answer: 'The following individuals should use this document:
+  - answer: 'The following individuals should use this document:
 
-     * IBM UK R2R accountant
+      * IBM UK R2R accountant
 
       * CLIENT
 
       * IBM reviewer
 
       * CLIENT reviewer'
-  - question: What is the purpose of 5.1.14 GL Client UK Trial balance Review document?
-    answer: The purpose of  5.1.14 GL Client UK Trial balance Review document is to
+    question: Who should use 5.1.14 GL Client UK Trial balance Review document?
+  - answer: The purpose of  5.1.14 GL Client UK Trial balance Review document is to
       explain the steps required to perform a first level review of Trial Balance
       for 3 UK Entities.
-  - question: What is the latest version of 5.1.14 GL Client UK Trial balance Review
-      document?
-    answer: The latest version of 5.1.14 GL Client UK Trial balance Review document
+    question: What is the purpose of 5.1.14 GL Client UK Trial balance Review document?
+  - answer: The latest version of 5.1.14 GL Client UK Trial balance Review document
       is 0.1 which is effective from 10-Jul-2016.
+    question: What is the latest version of 5.1.14 GL Client UK Trial balance Review
+      document?
 - context: '# Overview
 
-   ## Objectives of the Process
+    ## Objectives of the Process
 
-   Objective of this process is to review a Trial Balance after all the Journals
+    Objective of this process is to review a Trial Balance after all the Journals
     have been posted into the ERP AX for a month. This process is of paramount importance
     because after doing the first level review it can easily be find out if any entry
     is missing due to variance between actuals and forecasted values. It is also necessary
@@ -48,12 +54,12 @@ seed_examples:
     and if it is not, either the reason for this deviation is identified and agreed
     as correct or corrective actions are required to be taken.
 
-   With this review it is also possible to compare the numbers month over month and
+    With this review it is also possible to compare the numbers month over month and
     find out if there is any abnormal movement in PL or BS.
 
-   ## Inputs & Outputs
+    ## Inputs & Outputs
 
-   +--------------------------------------------------+---------+----------------+
+    +--------------------------------------------------+---------+----------------+
 
     | Input                                            | From    | On             |
 
@@ -68,7 +74,7 @@ seed_examples:
 
     +--------------------------------------------------+---------+----------------+
 
-   +-------------------------+----------------+----------------+
+    +-------------------------+----------------+----------------+
 
     | Output                  | To             |                |
 
@@ -82,42 +88,42 @@ seed_examples:
 
     +-------------------------+----------------+----------------+'
   questions_and_answers:
-  - question: What is the objective of GL Client UK Trial Balance review process?
-    answer: The objective of GL Client UK Trial Balance review process is to review
+  - answer: The objective of GL Client UK Trial Balance review process is to review
       the Trial Balance after all Journals have been posted into the ERP AX for a
       month, to ensure that all entries are correct, and to identify any variances
       between actuals and forecasted values.
-  - question: What are the inputs required for the GL Client UK Trial Balance review
-      process?
-    answer: "Following are the inputs required for the GL Client UK Trial Balance\
+    question: What is the objective of GL Client UK Trial Balance review process?
+  - answer: "Following are the inputs required for the GL Client UK Trial Balance\
       \ review process. \n1. Trial Balance report for GBGB, GBGD, and GBGE from AX,\
       \ \n2. Smart view retrieve file from HFM."
-  - question: In GL Client UK Trial Balance review process, on which working days
-      (WD) is the Trial Balance report and Pre HFM review file typically available?
-    answer: In GL Client UK Trial Balance review process, the Trial Balance report
+    question: What are the inputs required for the GL Client UK Trial Balance review
+      process?
+  - answer: In GL Client UK Trial Balance review process, the Trial Balance report
       and Pre HFM review file are typically available on WD 2 and 3.
+    question: In GL Client UK Trial Balance review process, on which working days
+      (WD) is the Trial Balance report and Pre HFM review file typically available?
 - context: "## Step Description\n\nRecording of the training session for this activity\
-    \ is saved in Box\\@IBM at <https://example.com>\n\
-    \nOpen Trial Balance review file from the shared drive and **save** it with current\
-    \ month's name within the shared drive.\n\nWhenever a Smartview file is open,\
-    \ it requires User ID and password, because these files are linked to HFM.\n\n\
-    Everyone has access of Smartview retrieve file.\n\nEnter your credentials to get\
-    \ the access Smartview retrieve in the file.\n\nGo to **Summary** tab.\n\nColumn\
-    \ names need to be changed as per the closing month. If July is getting closed\
-    \ then Cells C3, C4 and C5 need to be updated with Jul Actual, Jul Forecast and\
-    \ Jul Budget.\n\nCells J3, J4 and J5 need to be changed to Jun Actual, Jun Forecast\
-    \ and Jun Budget because columns J, K and L belong to previous months for comparison.\n\
-    \nColumn C, D and E belongs to current month's data.\n\nColumn G and H provides\
-    \ the current month's variance, July Actual vs July Forecast and July Actual vs\
-    \ July Budget respectively of current month.\n\n[Columns J, K and L belong to\
-    \ the previous month's data which comes from Column C, D and E. Copy these columns\
-    \ and paste the copied data in columns J, K and L respecitively before refreshing\
-    \ the numbers in **HFM P&L** tab.]{.ul}\n\nA new column needs to be inserted before\
-    \ June month (**Column O**) for current month's values.\n\nIn this case, it will\
-    \ be **Jul Month** in Column N, it will provide the variance of Jul Actuals vs\
-    \ Jun Actuals.\n\nColumn N and O are previous month's data which provide the movement\
-    \ of values on month over month.\n\n**[Important Note -- All these numbers are\
-    \ in 000's.]{.ul}**\n\n+---+-------------------------------------------------------------------------------------------------+\n\
+    \ is saved in Box\\@IBM at <https://example.com>\n\nOpen Trial Balance review\
+    \ file from the shared drive and **save** it with current month's name within\
+    \ the shared drive.\n\nWhenever a Smartview file is open, it requires User ID\
+    \ and password, because these files are linked to HFM.\n\nEveryone has access\
+    \ of Smartview retrieve file.\n\nEnter your credentials to get the access Smartview\
+    \ retrieve in the file.\n\nGo to **Summary** tab.\n\nColumn names need to be changed\
+    \ as per the closing month. If July is getting closed then Cells C3, C4 and C5\
+    \ need to be updated with Jul Actual, Jul Forecast and Jul Budget.\n\nCells J3,\
+    \ J4 and J5 need to be changed to Jun Actual, Jun Forecast and Jun Budget because\
+    \ columns J, K and L belong to previous months for comparison.\n\nColumn C, D\
+    \ and E belongs to current month's data.\n\nColumn G and H provides the current\
+    \ month's variance, July Actual vs July Forecast and July Actual vs July Budget\
+    \ respectively of current month.\n\n[Columns J, K and L belong to the previous\
+    \ month's data which comes from Column C, D and E. Copy these columns and paste\
+    \ the copied data in columns J, K and L respecitively before refreshing the numbers\
+    \ in **HFM P&L** tab.]{.ul}\n\nA new column needs to be inserted before June month\
+    \ (**Column O**) for current month's values.\n\nIn this case, it will be **Jul\
+    \ Month** in Column N, it will provide the variance of Jul Actuals vs Jun Actuals.\n\
+    \nColumn N and O are previous month's data which provide the movement of values\
+    \ on month over month.\n\n**[Important Note -- All these numbers are in 000's.]{.ul}**\n\
+    \n+---+-------------------------------------------------------------------------------------------------+\n\
     |   | Login to AX, use the below mentioned URL to open the login page.       \
     \                         |\n|   |                                           \
     \                                                      |\n|   | [**https://example.com**](https://example.com)\
@@ -136,79 +142,77 @@ seed_examples:
     \ your Client email id and subject. **Message format** should be **ASCII.** Click\
     \ OK."
   questions_and_answers:
-  - question: While generating Trial Balance Report from AX what Message Format should
-      be selected?
-    answer: The message format selected for the Trial Balance Report generated from
+  - answer: The message format selected for the Trial Balance Report generated from
       AX should be ASCII.
-  - question: Where can I find the recording of the training session for GL Client
-      UK Trial balance Review?
-    answer: The recording of the training session for GL Client UK Trial balance Review
+    question: While generating Trial Balance Report from AX what Message Format should
+      be selected?
+  - answer: The recording of the training session for GL Client UK Trial balance Review
       is saved in Box@IBM at 'https://example.com'.
-  - question: In GL Client UK Trial balance Review process, what inputs are required
-      to generate Trial Balance report in AX?
-    answer: "In GL Client UK Trial balance Review process, following inputs are required\
+    question: Where can I find the recording of the training session for GL Client
+      UK Trial balance Review?
+  - answer: "In GL Client UK Trial balance Review process, following inputs are required\
       \ to generate Trial Balance report in AX.\n1. 'Financial statement': select\
       \ 'TB OPER' \n2. 'End date': select the month end date."
+    question: In GL Client UK Trial balance Review process, what inputs are required
+      to generate Trial Balance report in AX?
 - context: 'The previous window will come up again, click OK to generate the report.
 
-   So row no. 247 has exactly the same amount of 36,525.04, which means account no.
+    So row no. 247 has exactly the same amount of 36,525.04, which means account no.
     275052 is a newly created account no. in AX.
 
-   Copy this account code and its description and paste it into the **AX TB** tab
+    Copy this account code and its description and paste it into the **AX TB** tab
     just below account no. **275020,** because in the number sequence of the Chart
     of Accounts 275052 comes after 275020 in AX accounts.
 
-   Insert a new row after account code 275020 and paste the newly created account
+    Insert a new row after account code 275020 and paste the newly created account
     code into it.
 
-   Also drag the **left** formula from cell O236 to cell O237 and the vlookup formula
+    Also drag the **left** formula from cell O236 to cell O237 and the vlookup formula
     from cell D236 to D237.
 
-   Column A has HFM codes in the **AX TB** tab which need to be updated too for the
+    Column A has HFM codes in the **AX TB** tab which need to be updated too for the
     new account codes.
 
-   To get the HFM codes for newly created accounts, go to AX and open the Chart of
+    To get the HFM codes for newly created accounts, go to AX and open the Chart of
     Accounts Details window.
 
-   Type **275052** in the search area in the Ledger account column and press enter
+    Type **275052** in the search area in the Ledger account column and press enter
     on your keyboard.
 
-   Copy the Master account number **LB7050** and paste it in column A in cell A237
+    Copy the Master account number **LB7050** and paste it in column A in cell A237
     against account no. **275052**.
 
-   Go back to the Download AX tab and check if the variance has disappeared for 2
+    Go back to the Download AX tab and check if the variance has disappeared for 2
     or not.
 
-   A similar exercise needs to be done for account numbers starting with a 3. The
+    A similar exercise needs to be done for account numbers starting with a 3. The
     amount which needs to be agreed is 381,420.28
 
-   Row no. 286 has the same amount which means account no. 300500 is a new account.
+    Row no. 286 has the same amount which means account no. 300500 is a new account.
 
-   Copy the account no. and its description and paste it into the **AX TB** tab just
+    Copy the account no. and its description and paste it into the **AX TB** tab just
     below 300002 which is in sequence.
 
-   Also copy the formula from Cell O273 to O274 and vlookup formula from cell D273
+    Also copy the formula from Cell O273 to O274 and vlookup formula from cell D273
     to D274.
 
-   Now get the HFM code for account no. 300500 from AX.
+    Now get the HFM code for account no. 300500 from AX.
 
-   Copy LB1020 and paste it in AX tab.
+    Copy LB1020 and paste it in AX tab.
 
-   Go back to the **Download AX** tab again and check the variances. Here the variances
+    Go back to the **Download AX** tab again and check the variances. Here the variances
     are gone and the sum is zero too in cell L16 and M16.
 
-   The reason for having 2 tabs for AX TB report (**Download AX and AX TB**) is because
+    The reason for having 2 tabs for AX TB report (**Download AX and AX TB**) is because
     the TB downloaded from AX is not in a good readable format. So the AX TB tab has
     been created which fetches the data from the Download AX tab and presents in simple
     readable format.
 
-   [Important note : - All the rows in Column A in the **AX TB** tab must have HFM
+    [Important note : - All the rows in Column A in the **AX TB** tab must have HFM
     codes for all non zero values in column D, so that there is no variance in the
     comparison table in the **Download AX** tab.]{.ul}'
   questions_and_answers:
-  - question: What do I need to do after copying the newly created account code and
-      its description in Trial Balance Review file?
-    answer: 'In Trial Balance Review file, after copying the newly created account
+  - answer: 'In Trial Balance Review file, after copying the newly created account
       code and its description, you need to do the following.
 
       1. Paste it into the AX TB tab just below the relevant account code,
@@ -216,81 +220,84 @@ seed_examples:
       2. Insert a new row
 
       3. Drag the formulas from the previous row to the new row.'
-  - question: What is the purpose of having two tabs for the AX TB report (Download
-      AX and AX TB)?
-    answer: The purpose of having two tabs is to present the data from the Download
+    question: What do I need to do after copying the newly created account code and
+      its description in Trial Balance Review file?
+  - answer: The purpose of having two tabs is to present the data from the Download
       AX tab in a simple readable format, as the original TB downloaded from AX is
       not in a good readable format.
-  - question: Why do we need to update the HFM codes in column A of the AX TB tab
-      in AX TB report?
-    answer: We need to update the HFM codes in column A of the AX TB tab of AX TB
+    question: What is the purpose of having two tabs for the AX TB report (Download
+      AX and AX TB)?
+  - answer: We need to update the HFM codes in column A of the AX TB tab of AX TB
       report to ensure that there is no variance in the comparison table in the 'Download
       AX' tab, and to match the HFM codes with the non-zero values in column D.
+    question: Why do we need to update the HFM codes in column A of the AX TB tab
+      in AX TB report?
 - context: 'The report will come to your CLIENT email box. Keep in mind that sometimes
     the report goes to Junk E-Mail folder too. If it goes to Junk E-Mail folder then
     it has to be moved to your Inbox first before the report can be acccessed.
 
-   The email will look like as shown in the below screenshot. The report will come
+    The email will look like as shown in the below screenshot. The report will come
     as a text file as attachment in the email.
 
-   Double click on the attachment to open it.
+    Double click on the attachment to open it.
 
-   Select all the data(Ctrl + A) of the file and copy and paste it into the **Download
+    Select all the data(Ctrl + A) of the file and copy and paste it into the **Download
     AX** tab in Trial Balance review file.
 
-   Once the data is pasted, the numbers on the right side in column L and M will
+    Once the data is pasted, the numbers on the right side in column L and M will
     update automatically as the formula''s are linked to the raw data updated .
 
-   Column K has serial numbers from 1 to 9 and letter Z.
+    Column K has serial numbers from 1 to 9 and letter Z.
 
-   Column L has numbers linked with the previously pasted data in the file. Cell
+    Column L has numbers linked with the previously pasted data in the file. Cell
     L5 has a **sumif** formula as highlighted below which is calculating the sum of
     all the Accounts which start with a 1. Accounts numbers are in column A.
 
-   Similarly L6 has a **sumif** formula which is calculating the sum of all the Accounts
+    Similarly L6 has a **sumif** formula which is calculating the sum of all the Accounts
     which starts with a 2 and so on and so forth.
 
-   So if there are any variances in column O, this means some new accounts have been
+    So if there are any variances in column O, this means some new accounts have been
     added in the month.
 
-   Here there are new accounts codes starting with 2 and 3. A variance in Z means
+    Here there are new accounts codes starting with 2 and 3. A variance in Z means
     one or more formulas in column I are not fully dragged till the last row where
     the report ends, therefore data is missing.
 
-   The first thing that needs to be checked is whether column I is populated till
+    The first thing that needs to be checked is whether column I is populated till
     the last row where the reports ends. Go to the last row where the data ends and
     see if column I has any letters in it or not. Column I has a **left** formula
     in it which is picking the first digit of the account number from column A.
 
-   **=LEFT(A5,1)**
+    **=LEFT(A5,1)**
 
-   So if the formula is not updated down to the last row then there will always be
+    So if the formula is not updated down to the last row then there will always be
     a variance in column O.
 
-   Cells I563 and I564 do not have a formula, so update them and check the variance
+    Cells I563 and I564 do not have a formula, so update them and check the variance
     in column O.
 
-   Updating the formulae in these not only removes the variance in column L but also
+    Updating the formulae in these not only removes the variance in column L but also
     Cell L16 becomes 0. That means debits and credits are equal of the Trial Balance
     and sum to 0.
 
-   But there are still variances in Account codes starting with 2 and 3 which means
+    But there are still variances in Account codes starting with 2 and 3 which means
     new account codes were added in AX.
 
-   To check for that new account, you will see that all the account numbers starting
+    To check for that new account, you will see that all the account numbers starting
     with 2 with a value of 36,525.04. There can be one account or multiple accounts
     added so the variance can be in one row or a sum of multiple lines.'
   questions_and_answers:
-  - question: In GL Client UK Trial balance Review process, where will the Trial Balance
-      report be sent, and what format will it be in?
-    answer: In GL Client UK Trial balance Review process, the Trial Balance report
+  - answer: In GL Client UK Trial balance Review process, the Trial Balance report
       will be sent to your 'CLIENT email box' as a text file attachment in the email.
-  - question: What does a variance in column O of Trial Balance Review file indicate?
-    answer: A variance in column O of Trial Balance Review file indicates that new
+    question: In GL Client UK Trial balance Review process, where will the Trial Balance
+      report be sent, and what format will it be in?
+  - answer: A variance in column O of Trial Balance Review file indicates that new
       accounts have been added in the month, and you need to check for the new account
       codes and update the formulas accordingly.
-  - question: How do I resolve a variance in column O of Trial Balance Review file
-      due to a missing formula in column I?
-    answer: To resolve the variance  in column O of Trial Balance Review file, you
+    question: What does a variance in column O of Trial Balance Review file indicate?
+  - answer: To resolve the variance  in column O of Trial Balance Review file, you
       need to update the formula in column I down to the last row where the data ends,
       using the '=LEFT(A5,1)' formula, and then check the variance in column O again.
+    question: How do I resolve a variance in column O of Trial Balance Review file
+      due to a missing formula in column I?
+version: 3

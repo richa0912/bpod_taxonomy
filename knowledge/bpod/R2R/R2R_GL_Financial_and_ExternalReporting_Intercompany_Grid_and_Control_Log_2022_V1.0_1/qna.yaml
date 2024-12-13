@@ -1,317 +1,267 @@
----
-domain: "BPOD Record to Analyze: R2R GL Financial & ExternalReporting
-  Intercompany Grid and Control Log 2022 V1.0 (1)"
-document_outline: Describes how IBM Delivery Centre will perform Intercompany
-  Grid and Control Log process.
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - R2R_GL_Financial_and_ExternalReporting_Intercompany_Grid_and_Control_Log_2022_V1.0_1.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
+document_outline: Describes how IBM Delivery Centre will perform Intercompany Grid
+  and Control Log process.
+domain: 'BPOD Record to Analyze: R2R GL Financial & ExternalReporting Intercompany
+  Grid and Control Log 2022 V1.0 (1)'
 seed_examples:
-  - context: >-
-      # Control Points
+- context: "# Control Points\n\n  ***\\#***   **Sub process Activity**           \
+    \   **Sub process Activity Description**                                     \
+    \                                                                            \
+    \         **Control Objective(s)**                                 **Control Activity**\
+    \                             **Risk Assertions**                          **Frequency\
+    \ (i.e. Event, Daily, Monthly, Quarterly, Annually)**                  **Evidence**\n\
+    \  ---------- ------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------\
+    \ -------------------------------------------------------- ------------------------------------------------\
+    \ -------------------------------------------- --------------------------------------------------------------------------------\
+    \ --------------------------------\n  1          Intercompany Account Balance\
+    \ Report   Identifies Intercompany account balances, assign new packages or mapping\
+    \ of accounts to existing packages, and identify invalid intercompany relationships.\
+    \   To provide Account balances and assign correct package   Match the balances\
+    \ and correct the differences   Complete the Grid balances before workday4   Monthly\
+    \ Workday 1 to 6 and final posting of control Log is posted on Workday 7   Intercompany\
+    \ Grid Recap report\n\n## Process Measurement Reports \n\n> Monthly prepare the\
+    \ Intercompany Grid Recap file."
+  questions_and_answers:
+  - answer: 'The Control Objectives of Intercompany Grid and Control Log process is
+      to provide Account balances and assign correct package.  '
+    question: What are the Control Objectives of Intercompany Grid and Control Log
+      process?
+  - answer: The Risk Assertions in Intercompany Grid and Control Log process is to
+      complete the Grid balances before workday 4.
+    question: What is the Risk Assertions in Intercompany Grid and Control Log process?
+  - answer: The frequency of the Intercompany Grid and Control Log process is monthly.
+      The process is performed on Workday 1, 2, 3, 4, 5, and 6, with the final posting
+      of the control log done on Workday 7.
+    question: What is the frequency of Intercompany Grid and Control Log process?
+- context: "# Overview\n\n## Objective(s)\n\n> The function of processing Intercompany\
+    \ Grid Recap provides Net Intercompany balances, identifies material balances\
+    \ that the locations need to address prior to close. This will help the Corporate\
+    \ Controller's office to know the balances for respective accounts on that period.\n\
+    >\n> Another objective of this activity is to create Control Log file which will\
+    \ help creating packages to 'N/A' found in Intercompany Grid file, to map \"PKGNONE\"\
+    \ to correct package which will be published into workspace.\n\n### Frequency:\
+    \ \n\n> Monthly Workday 1,2,3,4,5,6\n\n### Source:\n\nHyperion Financial Management\
+    \ (HFM) via Workspace: http://example.com\n\n*(Access to HFM is controlled by\
+    \ Peigh Sabado and Catie Shah at CCO.)*\n\n### System Accesses:\n\n-   Microsoft\
+    \ Excel\n\n-   M: Drive Access.\n\n-   Workspace HFM\n\n## Inputs & Outputs\n\n\
+    +-------------------------+-----------------+\n| Input                   | From\
+    \            |\n+-------------------------+-----------------+\n| > HFM Workspace\
+    \ reports | > HFM Workspace |\n+-------------------------+-----------------+\n\
+    \n+----------------------------------------+----------------+\n| Output      \
+    \                           | To             |\n+----------------------------------------+----------------+\n\
+    | > Provide Intercompany Balances in HFM | > CCO or Plant |\n+----------------------------------------+----------------+"
+  questions_and_answers:
+  - answer: 'The following system accesses are required to perform the Intercompany
+      Grid and Control Log process:
+
+      1. Microsoft Excel
+
+      2. M: Drive Access
+
+      3. Workspace HFM'
+    question: List System Accesses required to perform Intercompany Grid and Control
+      Log process?
+  - answer: The input required  for Intercompany Grid and Control Log process is HFM
+      Workspace reports
+    question: What inputs are required for Intercompany Grid and Control Log process?
+  - answer: 'The processing of Intercompany Grid Recap process is Monthly Workday
+      1,2,3,4,5,6 '
+    question: What is the frequency to the Intercompany Grid and Control Log process?
+- context: "## Process Description\n\n1.  Login to the HFM Workspace with User ID\
+    \ and Password.\n\n> ([http://example.com](http://example.com))\n>\n2.  Navigate\
+    \ to the NHFMTRTN by following below instructions FileOpenAppicationsConsolidationNHFMTRTN.\n\
+    \n3.  Download the report '' AR_AP & NR_NP ICPReport'' by selecting on the DocumentsReportingIntercompany\
+    \ AR_AP & NR_NPICPReport \n\n4.  Once click on the NPICPReport it will popup the\
+    \ below screen and provide the correct criteria by tick on the \"Override Report\
+    \ Definition\" check box as required.\n\n5.  After clicking on the Check box then\
+    \ click on the Period.\n>\n> Under period option select current month and Year\
+    \ as shown in the below.\n>\n> Example If activity is performing in May'2022 ensure\
+    \ to select Year as \"2022\" and month as ''May\".\n>\n6.  From the 'Report Format'\
+    \ selection, select option 'XLS' Format from the dropdown menu. \n\n7.  After\
+    \ selecting 'Override Report Definition' check box from the 'suppress customs'\n\
+    \n> section deselect the 'FM_Custom2\" from the dropdown menu. (\"FM_Custom1,\n\
+    >\n> FM_Custom3, and FM_Custom4\" should be selected).\n\n8.  Once selecting 'Override\
+    \ Report Definition' check box the 'Decimal Override\" section select\n\n> the\
+    \ number '2\" from the dropdown then Click 'OK'.\n>\n9.  Once the Status 'completed\"\
+    , Click on the 'XLS worksheet' icon below the 'Result\" header\n\n> to open the\
+    \ report.\n\n10. Click on the 'Open\" when the popup shown as below.\n\n11. Click\
+    \ on the 'Yes\" to confirm the file format and extention.\n\n12. The 'AR_AP &\
+    \ NR_NP ICPReport\" will be as below from the HFM.\n\n13. Select the First ten\
+    \ rows in the report and delete it(without selecting the Headers).\n\n14. As step\
+    \ 13, below data the 'delete' the rows from the 'Grand Total\" to including the\
+    \ 'header'\n\n> of the next data as hilghted below to remove the Blanks in between.\n\
+    \n15. After the deleting the rows in the, filter the data and Unselect the 'Blanks\"\
+    \ in the 'Account\" header and click on 'OK'."
+  questions_and_answers:
+  - answer: XLS'  format should be selected for the AR_AP & NR_NP ICP report.
+    question: Which format should be selected for the AR_AP & NR_NP ICP report?
+  - answer: The options **'FM_Custom1'**, **'FM_Custom3'**, and **'FM_Custom4'** should
+      be selected  'Suppress Customs' section of AR_AP & NR_NP ICP report.
+    question: Which options should be selected in the 'Suppress Customs' section of
+      AR_AP & NR_NP ICP report?
+  - answer: To delete the blank rows in AR_AP & NR_NP ICP report, filter the data
+      and "Unselect the 'Blanks' in the 'Account' header"" and click on 'OK.
+    question: How do I delete the blank rows in the AR_AP & NR_NP ICP report?
+- context: '31. Open the ''Recap'' Tab, check and remove the blank rows including
+    the total and select all the data sort the with the package as below.
+
+    32. Navigate to the new sheet tab where pasted the Package total amounts select
+    the ''Package'' Column and click on the Text to columnsfixed withselect the column
+    before the totalNextNextfinishclick on Ok to remove ''total'' word from package.
 
-        ***\#***   **Sub process Activity**              **Sub process Activity Description**                                                                                                                          **Control Objective(s)**                                 **Control Activity**                             **Risk Assertions**                          **Frequency (i.e. Event, Daily, Monthly, Quarterly, Annually)**                  **Evidence**
-        ---------- ------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------- ------------------------------------------------ -------------------------------------------- -------------------------------------------------------------------------------- --------------------------------
-        1          Intercompany Account Balance Report   Identifies Intercompany account balances, assign new packages or mapping of accounts to existing packages, and identify invalid intercompany relationships.   To provide Account balances and assign correct package   Match the balances and correct the differences   Complete the Grid balances before workday4   Monthly Workday 1 to 6 and final posting of control Log is posted on Workday 7   Intercompany Grid Recap report
+    33. Navigate to the ''Recap'' Tab and apply Vlookup formula as shown below by
+    providing the
 
-      ## Process Measurement Reports 
+    > correct input.
 
+    a.  The Lookup_value is in column B (the unique package number)
 
-      > Monthly prepare the Intercompany Grid Recap file.
-    questions_and_answers:
-      - question: What are the Control Objectives of Intercompany Grid and Control Log
-          process?
-        answer: "The Control Objectives of Intercompany Grid and Control Log process is
-          to provide Account balances and assign correct package.  "
-      - question: What is the Risk Assertions in Intercompany Grid and Control Log
-          process?
-        answer: The Risk Assertions in Intercompany Grid and Control Log process is to
-          complete the Grid balances before workday 4.
-      - question: What is the frequency of Intercompany Grid and Control Log process?
-        answer: The frequency of the Intercompany Grid and Control Log process is
-          monthly. The process is performed on Workday 1, 2, 3, 4, 5, and 6,
-          with the final posting of the control log done on Workday 7.
-  - context: >-
-      # Overview
+    b.  The Table_array is columns A through C from the ''Sheet 1'' tab(as per the
+    screen below).
 
+    c.  The Col_index_num is 3 from the ''Sheet 1'' tab. (The corresponding package
+    number is in the third column of the ''Sheet 1'' tab.)
 
-      ## Objective(s)
+    34. The Range_lookup value is ''false'' so that only exact matches are returned
+    and drag to the end of the rows to apply the formula so that it will reflect most
+    of the packages are updated with amounts and paste special values to remove the
+    formula and apply ''Round'' formula for(upto 2 digits) the same amount column.
 
+    35. Verify that all of the package totals from the ''Sheet1'' tab are properly
+    reflected on the Recap tab as a result of the VLOOKUP. Some packages have "a"
+    and "b" suffixes and the VLOOKUP will not return those balances; they will need
+    to be added manually. Make changes as necessary and ensure ALL "N/A"s are gone
+    from Column E. (Some packages on the Recap tab may not have any current activity
+    in HFM and therefore should have a zero balance manually input on the Recap tab).
 
-      > The function of processing Intercompany Grid Recap provides Net Intercompany balances, identifies material balances that the locations need to address prior to close. This will help the Corporate Controller's office to know the balances for respective accounts on that period.
+    36. After the Recap tab is completely populated and all balances are accounted
+    for, the ending balance on the Recap should match the ending balance on the Grid.
+    If there are any mismatches, then it would be say PKGNONE, which are due to invalid
+    relationships.
 
-      >
+    37. Based on the Package and relationship account copy and paste in the Grid Recap
+    file in the Recap Tab also copy and paste the amount and description at the end
+    apply sum in Grand total to get the amount matched.
 
-      > Another objective of this activity is to create Control Log file which will help creating packages to 'N/A' found in Intercompany Grid file, to map "PKGNONE" to correct package which will be published into workspace.
+    38. Select all the lines in the ''Recap'' tab(not the PKGNONE in the below)Filter
+    itIn the relationship header click on the dropdownFilter with NC2Ok
 
+    39. When the only the NC2 list populated apply Uniq colour to filter.
 
-      ### Frequency: 
+    40. Select all data ''Sort'' with color applied as shown below.
 
+    41. Separate the rows by inserting and make the total(NC2 and Incomplete) and
+    remove the color.
 
-      > Monthly Workday 1,2,3,4,5,6
+    42. Make the Total by applying sum and provide name to the totals.
 
+    43. Apply the ''Top Border'' for the total amount and highlight with unique color.'
+  questions_and_answers:
+  - answer: The VLOOKUP formula is applied to retrieve the package totals from the
+      'Sheet 1' tab and update the amounts in the 'Recap'  tab of  AR_AP & NR_NP ICP
+      report.
+    question: What is the purpose of applying the VLOOKUP formula in the 'Recap' Tab
+      of  AR_AP & NR_NP ICP report?
+  - answer: When preparing AR_AP & NR_NP ICP report, any mismatches between the ending
+      balance on the Recap tab and the ending balance on the Grid indicates  issue
+      of invalid relationships. These issues need to be resolved to ensure accurate
+      balances.
+    question: When preparing AR_AP & NR_NP ICP report, what should be done if there
+      are any mismatches between the ending balance on the Recap tab and the ending
+      balance on the Grid?
+  - answer: When preparing AR_AP & NR_NP ICP report, if some packages in 'Recap' tab
+      have "a" and "b" suffixes and the VLOOKUP does not return their balances, they
+      need to be added manually in the 'Recap' tab.
+    question: When preparing AR_AP & NR_NP ICP report, what should be done if some
+      packages in 'Recap' tab have "a" and "b" suffixes and the VLOOKUP does not return
+      their balances?
+- context: '66. The balance in the IC_BAL_ICP_NONE tab will be cleared by IC Reclass
+    journal entry.
 
-      ### Source:
+    67. The data updated tabs in the Intercompany Grid Recap file like, ''Defense_Cerberus''
 
+    > Tab (The tab provides the information to book the Journals) Which IBM will not
+    do the
 
-      Hyperion Financial Management (HFM) via Workspace: http://example.com
+    > Journal Entry.
 
+    68. After updating the Summary, Recap, Defense Cerberus, and IC_BAL_ICP_NONE tabs
 
-      *(Access to HFM is controlled by Peigh Sabado and Catie Shah at CCO.)*
+    > Save and **reply to all the mail,** attach the file and send as below.(To: Corporate
+    controllers office and DL monthly close call and in CC need to mention remaining
+    individual accountants)
 
+    69. To Create Control Log- In the sharedrive open recent Intercompany Grid Recap
+    file
 
-      ### System Accesses:
+    > (With updated control log file create control log file and assign packages to
+    post onto Workspace)
 
+    > Note: This activity will be the final step which will done on Workday 7.
 
-      -   Microsoft Excel
+    70. Open the Master Control file and save a the current month control log in the
+    montly folder. Move the recap and the additional information file from the Intercompany
+    Grid Recap to the new created control log. The delete the total lines from the
+    recap tab and sort the data on the packages in the ''Recap'' tab.
 
+    71. Delete the ''All Packages'' tab from the file.
 
-      -   M: Drive Access.
+    72. Open the Control log file apply the VLOOKUP in the ''Net Balance'' header
+    from ''Condensed packages'' tab based on the Recap tab(from pkg to total headdings)
+    select ''\#N/A'' in the net balance heading by filterdelete the linesPaste special
+    formula applied columndelete the Recap tab Save the file with **current date**
+    in the drive.
 
+    > (Ensure not to Overwrite the control log master file)
 
-      -   Workspace HFM
+    73. Once deleted there will be two tabs left(Condensed Packages and Additonal
+    information)Update the date in the condensed tabUpdate the PKGNONE details as
+    shown below from the the amount as per the relationships total should match with
+    the additional information tab total save it and it ready to publish in workspace.
 
+    74. Login to the workspace(step1) Click on ExploreFinancial ReportingUser ReportsIntercompanywhere
+    need to upload the file.
 
-      ## Inputs & Outputs
+    75. Then click on as per below- FileImportfile.
 
+    76. On below popup will click on browseSelect saved file Change the name as shown
+    belowProvide the description as shown belowhit the ''Next'' Button
 
-      +-------------------------+-----------------+
+    77. Do not change anything on the below screenClick on Next button.
 
-      | Input                   | From            |
+    78. Click on the ''Groups'' tab in the first sectionIn the below ''Begins with''
+    dropdown next to that type ''wspublisher'' click on the ''update'' list buttonIt
+    will appear in the below ''name''click on the ''\>'' button in the middle to see
+    the details of that in the next section.
 
-      +-------------------------+-----------------+
+    79. Similar to the above step, update the other two groups and rolesby searching
+    with ''WORLD''and also ''Report Designers''.
 
-      | > HFM Workspace reports | > HFM Workspace |
+    80. Provide the access to the file as shown belowby clicking on the dropdown and
+    select as below
 
-      +-------------------------+-----------------+
+    > WSPUBLISHER-''Full control''
 
+    > WORLD-''View''
 
-      +----------------------------------------+----------------+
+    > ReportDesigners-''Full control''
 
-      | Output                                 | To             |
-
-      +----------------------------------------+----------------+
-
-      | > Provide Intercompany Balances in HFM | > CCO or Plant |
-
-      +----------------------------------------+----------------+
-    questions_and_answers:
-      - question: List System Accesses required to perform Intercompany Grid and Control
-          Log process?
-        answer: >-
-          The following system accesses are required to perform the Intercompany
-          Grid and Control Log process:
-
-          1. Microsoft Excel
-
-          2. M: Drive Access
-
-          3. Workspace HFM
-      - question: What inputs are required for Intercompany Grid and Control Log process?
-        answer: The input required  for Intercompany Grid and Control Log process is HFM
-          Workspace reports
-      - question: What is the frequency to the Intercompany Grid and Control Log process?
-        answer: "The processing of Intercompany Grid Recap process is Monthly Workday
-          1,2,3,4,5,6 "
-  - context: >-
-      ## Process Description
-
-
-      1.  Login to the HFM Workspace with User ID and Password.
-
-
-      > ([http://example.com](http://example.com))
-
-      >
-
-      2.  Navigate to the NHFMTRTN by following below instructions FileOpenAppicationsConsolidationNHFMTRTN.
-
-
-      3.  Download the report '' AR_AP & NR_NP ICPReport'' by selecting on the DocumentsReportingIntercompany AR_AP & NR_NPICPReport 
-
-
-      4.  Once click on the NPICPReport it will popup the below screen and provide the correct criteria by tick on the "Override Report Definition" check box as required.
-
-
-      5.  After clicking on the Check box then click on the Period.
-
-      >
-
-      > Under period option select current month and Year as shown in the below.
-
-      >
-
-      > Example If activity is performing in May'2022 ensure to select Year as "2022" and month as ''May".
-
-      >
-
-      6.  From the 'Report Format' selection, select option 'XLS' Format from the dropdown menu. 
-
-
-      7.  After selecting 'Override Report Definition' check box from the 'suppress customs'
-
-
-      > section deselect the 'FM_Custom2" from the dropdown menu. ("FM_Custom1,
-
-      >
-
-      > FM_Custom3, and FM_Custom4" should be selected).
-
-
-      8.  Once selecting 'Override Report Definition' check box the 'Decimal Override" section select
-
-
-      > the number '2" from the dropdown then Click 'OK'.
-
-      >
-
-      9.  Once the Status 'completed", Click on the 'XLS worksheet' icon below the 'Result" header
-
-
-      > to open the report.
-
-
-      10. Click on the 'Open" when the popup shown as below.
-
-
-      11. Click on the 'Yes" to confirm the file format and extention.
-
-
-      12. The 'AR_AP & NR_NP ICPReport" will be as below from the HFM.
-
-
-      13. Select the First ten rows in the report and delete it(without selecting the Headers).
-
-
-      14. As step 13, below data the 'delete' the rows from the 'Grand Total" to including the 'header'
-
-
-      > of the next data as hilghted below to remove the Blanks in between.
-
-
-      15. After the deleting the rows in the, filter the data and Unselect the 'Blanks" in the 'Account" header and click on 'OK'.
-    questions_and_answers:
-      - question: Which format should be selected for the AR_AP & NR_NP ICP report?
-        answer: XLS'  format should be selected for the AR_AP & NR_NP ICP report.
-      - question: Which options should be selected in the 'Suppress Customs' section of
-          AR_AP & NR_NP ICP report?
-        answer: The options **'FM_Custom1'**, **'FM_Custom3'**, and **'FM_Custom4'**
-          should be selected  'Suppress Customs' section of AR_AP & NR_NP ICP
-          report.
-      - question: How do I delete the blank rows in the AR_AP & NR_NP ICP report?
-        answer: To delete the blank rows in AR_AP & NR_NP ICP report, filter the data
-          and "Unselect the 'Blanks' in the 'Account' header"" and click on 'OK.
-  - context: >-
-      31. Open the 'Recap' Tab, check and remove the blank rows including the
-      total and select all the data sort the with the package as below.
-
-      32. Navigate to the new sheet tab where pasted the Package total amounts select the 'Package' Column and click on the Text to columnsfixed withselect the column before the totalNextNextfinishclick on Ok to remove 'total' word from package.
-
-      33. Navigate to the 'Recap' Tab and apply Vlookup formula as shown below by providing the
-
-      > correct input.
-
-      a.  The Lookup_value is in column B (the unique package number)
-
-      b.  The Table_array is columns A through C from the 'Sheet 1' tab(as per the screen below).
-
-      c.  The Col_index_num is 3 from the 'Sheet 1' tab. (The corresponding package number is in the third column of the 'Sheet 1' tab.)
-
-      34. The Range_lookup value is 'false' so that only exact matches are returned and drag to the end of the rows to apply the formula so that it will reflect most of the packages are updated with amounts and paste special values to remove the formula and apply 'Round' formula for(upto 2 digits) the same amount column.
-
-      35. Verify that all of the package totals from the 'Sheet1' tab are properly reflected on the Recap tab as a result of the VLOOKUP. Some packages have "a" and "b" suffixes and the VLOOKUP will not return those balances; they will need to be added manually. Make changes as necessary and ensure ALL "N/A"s are gone from Column E. (Some packages on the Recap tab may not have any current activity in HFM and therefore should have a zero balance manually input on the Recap tab).
-
-      36. After the Recap tab is completely populated and all balances are accounted for, the ending balance on the Recap should match the ending balance on the Grid. If there are any mismatches, then it would be say PKGNONE, which are due to invalid relationships.
-
-      37. Based on the Package and relationship account copy and paste in the Grid Recap file in the Recap Tab also copy and paste the amount and description at the end apply sum in Grand total to get the amount matched.
-
-      38. Select all the lines in the 'Recap' tab(not the PKGNONE in the below)Filter itIn the relationship header click on the dropdownFilter with NC2Ok
-
-      39. When the only the NC2 list populated apply Uniq colour to filter.
-
-      40. Select all data 'Sort' with color applied as shown below.
-
-      41. Separate the rows by inserting and make the total(NC2 and Incomplete) and remove the color.
-
-      42. Make the Total by applying sum and provide name to the totals.
-
-      43. Apply the 'Top Border' for the total amount and highlight with unique color.
-    questions_and_answers:
-      - question: What is the purpose of applying the VLOOKUP formula in the 'Recap' Tab
-          of  AR_AP & NR_NP ICP report?
-        answer: The VLOOKUP formula is applied to retrieve the package totals from the
-          'Sheet 1' tab and update the amounts in the 'Recap'  tab of  AR_AP &
-          NR_NP ICP report.
-      - question: When preparing AR_AP & NR_NP ICP report, what should be done if there
-          are any mismatches between the ending balance on the Recap tab and the
-          ending balance on the Grid?
-        answer: When preparing AR_AP & NR_NP ICP report, any mismatches between the
-          ending balance on the Recap tab and the ending balance on the Grid
-          indicates  issue of invalid relationships. These issues need to be
-          resolved to ensure accurate balances.
-      - question: When preparing AR_AP & NR_NP ICP report, what should be done if some
-          packages in 'Recap' tab have "a" and "b" suffixes and the VLOOKUP does
-          not return their balances?
-        answer: When preparing AR_AP & NR_NP ICP report, if some packages in 'Recap' tab
-          have "a" and "b" suffixes and the VLOOKUP does not return their
-          balances, they need to be added manually in the 'Recap' tab.
-  - context: >-
-      66. The balance in the IC_BAL_ICP_NONE tab will be cleared by IC
-      Reclass journal entry.
-
-      67. The data updated tabs in the Intercompany Grid Recap file like, 'Defense_Cerberus'
-
-      > Tab (The tab provides the information to book the Journals) Which IBM will not do the
-
-      > Journal Entry.
-
-      68. After updating the Summary, Recap, Defense Cerberus, and IC_BAL_ICP_NONE tabs
-
-      > Save and **reply to all the mail,** attach the file and send as below.(To: Corporate controllers office and DL monthly close call and in CC need to mention remaining individual accountants)
-
-      69. To Create Control Log- In the sharedrive open recent Intercompany Grid Recap file
-
-      > (With updated control log file create control log file and assign packages to post onto Workspace)
-
-      > Note: This activity will be the final step which will done on Workday 7.
-
-      70. Open the Master Control file and save a the current month control log in the montly folder. Move the recap and the additional information file from the Intercompany Grid Recap to the new created control log. The delete the total lines from the recap tab and sort the data on the packages in the 'Recap' tab.
-
-      71. Delete the 'All Packages' tab from the file.
-
-      72. Open the Control log file apply the VLOOKUP in the 'Net Balance' header from 'Condensed packages' tab based on the Recap tab(from pkg to total headdings) select '\#N/A' in the net balance heading by filterdelete the linesPaste special formula applied columndelete the Recap tab Save the file with **current date** in the drive.
-
-      > (Ensure not to Overwrite the control log master file)
-
-      73. Once deleted there will be two tabs left(Condensed Packages and Additonal information)Update the date in the condensed tabUpdate the PKGNONE details as shown below from the the amount as per the relationships total should match with the additional information tab total save it and it ready to publish in workspace.
-
-      74. Login to the workspace(step1) Click on ExploreFinancial ReportingUser ReportsIntercompanywhere need to upload the file.
-
-      75. Then click on as per below- FileImportfile.
-
-      76. On below popup will click on browseSelect saved file Change the name as shown belowProvide the description as shown belowhit the 'Next' Button
-
-      77. Do not change anything on the below screenClick on Next button.
-
-      78. Click on the 'Groups' tab in the first sectionIn the below 'Begins with' dropdown next to that type 'wspublisher' click on the 'update' list buttonIt will appear in the below 'name'click on the '\>' button in the middle to see the details of that in the next section.
-
-      79. Similar to the above step, update the other two groups and rolesby searching with 'WORLD'and also 'Report Designers'.
-
-      80. Provide the access to the file as shown belowby clicking on the dropdown and select as below
-
-      > WSPUBLISHER-'Full control'
-
-      > WORLD-'View'
-
-      > ReportDesigners-'Full control'
-
-      > And click on 'Finish' to publish.
-    questions_and_answers:
-      - question: What is the purpose of the 'Defense_Cerberus' tab in the Intercompany
-          Grid Recap file?
-        answer: The 'Defense_Cerberus' tab provides information to book the Journals.
-          This process is not done by IBM team.
-      - question: Which groups should be give full control of Control Log file?
-        answer: WSPUBLISHER' and 'ReportDesigners' should be give full control of
-          Control Log file.
-      - question: Which tabs from the Control Log file should be retained before
-          publishing it?
-        answer: Condensed Packages' and 'Additonal information' tabs from the Control
-          Log file should be retained before publishing it.
+    > And click on ''Finish'' to publish.'
+  questions_and_answers:
+  - answer: The 'Defense_Cerberus' tab provides information to book the Journals.
+      This process is not done by IBM team.
+    question: What is the purpose of the 'Defense_Cerberus' tab in the Intercompany
+      Grid Recap file?
+  - answer: WSPUBLISHER' and 'ReportDesigners' should be give full control of Control
+      Log file.
+    question: Which groups should be give full control of Control Log file?
+  - answer: Condensed Packages' and 'Additonal information' tabs from the Control
+      Log file should be retained before publishing it.
+    question: Which tabs from the Control Log file should be retained before publishing
+      it?
+version: 3

@@ -1,6 +1,12 @@
-domain: 'BPOD procure to payment: P2P_Invoice Processing_Sales Tax Upload_2022_v1.0.docx'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - P2P_Invoice_Processing_Sales_Tax_Upload_2022_v1.0.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how IBM Delivery Center will perform the process of Client
   tax upload in general XML.
+domain: 'BPOD procure to payment: P2P_Invoice Processing_Sales Tax Upload_2022_v1.0.docx'
 seed_examples:
 - context: "# Control Points\n\n  ***\_***    ***Sub process Activity***   ***Sub\
     \ process Activity Description***   ***Control Objective(s)***           ***Control\
@@ -30,17 +36,17 @@ seed_examples:
     \  Invoice Processing Team   Upload the Client tax and FedEx tax upload invoices\
     \ into Peoplesoft."
   questions_and_answers:
-  - question: What is the Control Activity associated with Upload sale tax in people
-      soft?
-    answer: The control activity associated with Upload sale tax in people soft is
+  - answer: The control activity associated with Upload sale tax in people soft is
       the Reconciliation of the report which comes from general accounting team.
-  - question: What is the risk assertions in Uploading Client tax and FedEx tax?
-    answer: 'The risk assertions in uploading client tax and fedex tax are: Duplicate
+    question: What is the Control Activity associated with Upload sale tax in people
+      soft?
+  - answer: 'The risk assertions in uploading client tax and fedex tax are: Duplicate
       payment, Delay of payment and Mismatch report validation.'
-  - question: Who is responsible for Uploading the Client tax and FedEx tax upload
-      invoices into Peoplesoft?
-    answer: Invoice Processing Team is responsible for Uploading the Client tax and
+    question: What is the risk assertions in Uploading Client tax and FedEx tax?
+  - answer: Invoice Processing Team is responsible for Uploading the Client tax and
       FedEx tax upload invoices into Peoplesoft.
+    question: Who is responsible for Uploading the Client tax and FedEx tax upload
+      invoices into Peoplesoft?
 - context: "## Who should use this Document?\n\n> This document can be used by the\
     \ Invoice processing team/reviewer who are working on Client tax upload activity.\n\
     \n## Revision/Approval History\n\n  **Version number**   **Effective Date**  \
@@ -58,18 +64,18 @@ seed_examples:
     | > Upload by using generate XML into PeopleSoft for payment | > Team member will\
     \ reconcile report and reply to sender. |\n+------------------------------------------------------------+----------------------------------------------------------+"
   questions_and_answers:
-  - question: What is the objective of the document P2P_Invoice Processing_Sales Tax
-      Upload_2022_v1.0?
-    answer: The objective of the document P2P_Invoice Processing_Sales Tax Upload_2022_v1.0
+  - answer: The objective of the document P2P_Invoice Processing_Sales Tax Upload_2022_v1.0
       is to upload Client tax and FedEx tax invoices into PeopleSoft system and validate
       report and send confirmation.
-  - question: What is the input and its source of Sales Tax Upload process?
-    answer: The input of the Sales Tax Upload process is the Outlook Knoxville emailbox
+    question: What is the objective of the document P2P_Invoice Processing_Sales Tax
+      Upload_2022_v1.0?
+  - answer: The input of the Sales Tax Upload process is the Outlook Knoxville emailbox
       from General Accounting team
-  - question: What is the output of the Sales Tax Upload process?
-    answer: The input of the Sales Tax Upload process is Uploading tax invoices by
+    question: What is the input and its source of Sales Tax Upload process?
+  - answer: The input of the Sales Tax Upload process is Uploading tax invoices by
       using generate XML into PeopleSoft for payment. Team member will reconcile report
       and reply to sender.
+    question: What is the output of the Sales Tax Upload process?
 - context: '### Process for State Client Tax.
 
 
@@ -143,15 +149,14 @@ seed_examples:
     it is not going to get picked until the 5pm. If the data has been uploaded at
     5pm central it will get picked up on the next day.'
   questions_and_answers:
-  - question: What is the Process for State Client Tax upload?
-    answer: "To upload the State Client tax, follow the following steps:\n1. The email\
+  - answer: "To upload the State Client tax, follow the following steps:\n1. The email\
       \ for Client tax upload is sent in Knoxville upload mailbox from General Accounting\
-      \ team.\n2. The email is received with the subject as 'State Tax Paymwnt\
-      \ File Created'.\n3. To continue with the process, open M>AP Voucher Upload\
-      \ and open StateTaxPayment.xlsx Excel Report\n4. After opening the excel, type\
-      \ GN1 In the top left corner box to include all the additional lines.\n5. Then\
-      \ select and copy the data \n6. After copying the data, open the file from path:\
-      \ M dirive> APinvoice upload > CE Wire 10>Exceluploadfor voucher_ClientTax.xlsm\
+      \ team.\n2. The email is received with the subject as 'State Tax Paymwnt File\
+      \ Created'.\n3. To continue with the process, open M>AP Voucher Upload and open\
+      \ StateTaxPayment.xlsx Excel Report\n4. After opening the excel, type GN1 In\
+      \ the top left corner box to include all the additional lines.\n5. Then select\
+      \ and copy the data \n6. After copying the data, open the file from path: M\
+      \ dirive> APinvoice upload > CE Wire 10>Exceluploadfor voucher_ClientTax.xlsm\
       \ sheet \nNote: The Sale tax/Fed tax and the state Client tax goes into this\
       \ particular tamplate (Exceluploadfor voucher_ClientTax.xlsm sheet).\n7. Paste\
       \ the details with special value pasting option 123 in Exceluploadforvoucher_Client\
@@ -164,13 +169,14 @@ seed_examples:
       \ View Results and copy the data \n15. Copy the data from people soft and with\
       \ the same copy, reply all to the original email that the upload has been completed\
       \ with confirmation file."
-  - question: What query is used as Staged Vouchers query in the process of uploading
-      the State Client tax.
-    answer: ZI_AP_STAGED_VOUCHERS query is used for Staged Vouchers query in the Process
+    question: What is the Process for State Client Tax upload?
+  - answer: ZI_AP_STAGED_VOUCHERS query is used for Staged Vouchers query in the Process
       for State Client Tax.
-  - question: Where to paste the data copied from StateTaxPayment.xlsx Excel Report?
-    answer: 'After copying the data, open the file from path: M drive> APinvoice upload
+    question: What query is used as Staged Vouchers query in the process of uploading
+      the State Client tax.
+  - answer: 'After copying the data, open the file from path: M drive> APinvoice upload
       > CE Wire 10>Exceluploadfor voucher_ClientTax.xlsm sheet'
+    question: Where to paste the data copied from StateTaxPayment.xlsx Excel Report?
 - context: '**Note;** If the data has been uploaded at 2pm central time, voucher billing
     happens, it is not going to get picked until the 5pm. If the data has been uploaded
     at 5pm central it will get picked up on the next day.
@@ -219,18 +225,18 @@ seed_examples:
 
     24. Select Query Viewer'
   questions_and_answers:
-  - question: When does the data uloaded in State Client Tax process gets picked up?
-    answer: If the data has been uploaded at 2pm central time, voucher billing happens,
+  - answer: If the data has been uploaded at 2pm central time, voucher billing happens,
       it is not going to get picked until the 5pm. If the data has been uploaded at
       5pm central it will get picked up on the next day.
-  - question: What is the subject of the email in Process for Client Tax/Fed Client
-      Tax
-    answer: The email received in knoxville upload mail box has the subject as Client
+    question: When does the data uloaded in State Client Tax process gets picked up?
+  - answer: The email received in knoxville upload mail box has the subject as Client
       Tax Payment File Created.
-  - question: Which pasting option is used to paste the details in Exceluploadforvoucher_Client
-      tax sheet
-    answer: Paste the details with special value pasting option 123 in Exceluploadforvoucher_Client
+    question: What is the subject of the email in Process for Client Tax/Fed Client
+      Tax
+  - answer: Paste the details with special value pasting option 123 in Exceluploadforvoucher_Client
       tax sheet.
+    question: Which pasting option is used to paste the details in Exceluploadforvoucher_Client
+      tax sheet
 - context: "25. Search for Staged Vouchers query: ZI_AP_STAGED_VOUCHERS\n\n26. Enter\
     \ KUP and select View Results\n\n5.  Copy the data from people soft and with the\
     \ same copy reply to all on the original email that the upload has been completed\
@@ -241,11 +247,12 @@ seed_examples:
     \  ------ -------------------\n  US     United State\n  PS     People Soft\n \
     \ KUP    Knoxville Uploads"
   questions_and_answers:
-  - question: What happens if there is something wrong with confirmation file
-    answer: If something is incorrect in file, then it will kick out in back end process.
+  - answer: If something is incorrect in file, then it will kick out in back end process.
       Go back to the sender email and respond back with the details.
-  - question: What is the full form of acronym PS?
-    answer: PS stands for People Soft.
-  - question: Where is the report located  after the email is received for Client
+    question: What happens if there is something wrong with confirmation file
+  - answer: PS stands for People Soft.
+    question: What is the full form of acronym PS?
+  - answer: The report is located at M drive >Ap voucher uopload > Client tax payment.
+    question: Where is the report located  after the email is received for Client
       Tax Payment File.
-    answer: The report is located at M drive >Ap voucher uopload > Client tax payment.
+version: 3

@@ -1,8 +1,14 @@
-domain: 'BPOD Human Resource: Hope Medical Center_Jury Duty Policy'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Hope_Medical_Center_Jury_Duty_Policy.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Hope Medical Center's Jury Duty Policy outlines procedures for caregivers
   who receive jury summons or subpoenas. It includes accommodations, payment, and
   timecard coding. The policy is not a contract and does not modify collective bargaining
   agreements.
+domain: 'BPOD Human Resource: Hope Medical Center_Jury Duty Policy'
 seed_examples:
 - context: 'Hope Medical Center ("facility")
 
@@ -20,14 +26,14 @@ seed_examples:
 
     Scope: This policy applies to all caregivers'
   questions_and_answers:
-  - question: Who does Hope Medical Center Jury Duty  policy apply to?
-    answer: The Hope Medical Center Jury Duty  policy applies to all caregivers at
+  - answer: The Hope Medical Center Jury Duty  policy applies to all caregivers at
       Hope Medical Center.
-  - question: When was Hope Medical Center Jury Duty  policy last reviewed and revised?
-    answer: Hope Medical Center Jury Duty  policy was last reviewed and revised on
+    question: Who does Hope Medical Center Jury Duty  policy apply to?
+  - answer: Hope Medical Center Jury Duty  policy was last reviewed and revised on
       April 28, 2023.
-  - question: What is the date of adoption for Hope Medical Center Jury Duty  policy?
-    answer: Hope Medical Center Jury Duty  policy  was adopted on April 28, 2023.
+    question: When was Hope Medical Center Jury Duty  policy last reviewed and revised?
+  - answer: Hope Medical Center Jury Duty  policy  was adopted on April 28, 2023.
+    question: What is the date of adoption for Hope Medical Center Jury Duty  policy?
 - context: 'Policy:
 
     The facility will make a reasonable effort to accommodate caregivers who have
@@ -39,21 +45,21 @@ seed_examples:
     time missed away from work. Any compensation received from the county/state/federal
     agencies is the caregiver''s to keep'
   questions_and_answers:
-  - question: What will the facility do to accommodate caregivers who have been requested
-      to serve on a jury or subpoenaed as a witness in Hope Medical Center Jury Duty  policy?
-    answer: The facility will make a reasonable effort to accommodate caregivers in
+  - answer: The facility will make a reasonable effort to accommodate caregivers in
       such situations in Hope Medical Center Jury Duty  policy.
-  - question: How will caregivers be paid if they are called during regular working
+    question: What will the facility do to accommodate caregivers who have been requested
+      to serve on a jury or subpoenaed as a witness in Hope Medical Center Jury Duty  policy?
+  - answer: Caregivers will be paid at their regular rate of pay for time missed away
+      from work in Hope Medical Center Jury Duty  policy.
+    question: How will caregivers be paid if they are called during regular working
       hours to serve on jury duty or subpoenaed as a witness in Hope Medical Center
       Jury Duty  policy?
-    answer: Caregivers will be paid at their regular rate of pay for time missed away
-      from work in Hope Medical Center Jury Duty  policy.
-  - question: Who keeps any compensation received from county/state/federal agencies
-      for serving on jury duty or being subpoenaed as a witness  in Hope Medical Center
-      Jury Duty  policy?
-    answer: The caregiver keeps any compensation received from county/state/federal
+  - answer: The caregiver keeps any compensation received from county/state/federal
       agencies for serving on jury duty or being subpoenaed as a witness in Hope Medical
       Center Jury Duty  policy.
+    question: Who keeps any compensation received from county/state/federal agencies
+      for serving on jury duty or being subpoenaed as a witness  in Hope Medical Center
+      Jury Duty  policy?
 - context: 'Procedures:
 
     - Upon receiving a summons for jury duty or subpoena as a witness, the caregiver
@@ -71,18 +77,19 @@ seed_examples:
     In the event of a conflict between this policy and the terms of a collective bargaining
     agreement, the collective bargaining agreement will prevail'
   questions_and_answers:
-  - question: What should caregivers do upon receiving a summons for jury duty or
-      subpoena as a witness in Hope Medical Center Jury Duty  policy?
-    answer: Caregivers may be required to show a copy of the summons to their core
+  - answer: Caregivers may be required to show a copy of the summons to their core
       leader in Hope Medical Center Jury Duty  policy.
-  - question: How are caregivers paid for time missed due to jury duty or being subpoenaed
-      as a witness in Hope Medical Center Jury Duty  policy?
-    answer: Caregivers will be paid for the scheduled time they were unable to work
+    question: What should caregivers do upon receiving a summons for jury duty or
+      subpoena as a witness in Hope Medical Center Jury Duty  policy?
+  - answer: Caregivers will be paid for the scheduled time they were unable to work
       in Hope Medical Center Jury Duty  policy. They will need to code their timecards
       with the Jury Duty pay code for scheduled days of work missed.
-  - question: Is this policy a contract or covenant of employment in Hope Medical
-      Center Jury Duty  policy?
-    answer: No, the statements of this policy document are not to be construed as
+    question: How are caregivers paid for time missed due to jury duty or being subpoenaed
+      as a witness in Hope Medical Center Jury Duty  policy?
+  - answer: No, the statements of this policy document are not to be construed as
       a contract or covenant of employment in Hope Medical Center Jury Duty  policy.
       They are not promises of specific treatment in specific situations and are subject
       to change at the sole discretion of the facility.
+    question: Is this policy a contract or covenant of employment in Hope Medical
+      Center Jury Duty  policy?
+version: 3

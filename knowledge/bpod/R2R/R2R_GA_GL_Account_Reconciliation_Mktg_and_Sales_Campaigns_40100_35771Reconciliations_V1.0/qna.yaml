@@ -1,6 +1,12 @@
-domain: 'BPOD Record to Analyze: R2R_GA_GL Account Reconciliation-Mktg and Sales Campaigns-40100_35771Reconciliations_V1.0.doc'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - R2R_GA_GL_Account_Reconciliation_Mktg_and_Sales_Campaigns_40100_35771Reconciliations_V1.0.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how IBM Delivery Centre will perform monthly reconciliations
   for Entity-40100, Account-35771
+domain: 'BPOD Record to Analyze: R2R_GA_GL Account Reconciliation-Mktg and Sales Campaigns-40100_35771Reconciliations_V1.0.doc'
 seed_examples:
 - context: "## Inputs & Outputs\n\n+----------------------------------+--------------+\n\
     | Input                            | From         |\n+----------------------------------+--------------+\n\
@@ -24,9 +30,7 @@ seed_examples:
     \ the equity reconciliation and statement(s).   Monthly (Before 17^th^ of every\
     \ month)                            Trintech"
   questions_and_answers:
-  - question: What are the inputs and outputs required for marketing campaigns while
-      performing Account Reconciliation?
-    answer: '+----------------------------------+--------------+
+  - answer: '+----------------------------------+--------------+
 
       | Input                            | From         |
 
@@ -46,16 +50,18 @@ seed_examples:
       | > Reconciliations | > Trintech |
 
       +-------------------+------------+'
-  - question: 'What is the description for subprocess activity: 40100_35771 (Marketing
-      & Sales Campaigns Accruals) Reconciliations?'
-    answer: 'The description for subprocess activity: 40100_35771 (Marketing & Sales
+    question: What are the inputs and outputs required for marketing campaigns while
+      performing Account Reconciliation?
+  - answer: 'The description for subprocess activity: 40100_35771 (Marketing & Sales
       Campaigns Accruals) Reconciliations is: Perform the reconciliations on monthly
       basis and certify in Trintech.'
-  - question: What is the risk assertion for control activity Balance sheet reconciliations
-      are performed (Higher level control)?
-    answer: 'The risk assertion for control activity Balance sheet reconciliations
+    question: 'What is the description for subprocess activity: 40100_35771 (Marketing
+      & Sales Campaigns Accruals) Reconciliations?'
+  - answer: 'The risk assertion for control activity Balance sheet reconciliations
       are performed (Higher level control) is: There are errors in the preparation
       of the equity reconciliation and statement(s).'
+    question: What is the risk assertion for control activity Balance sheet reconciliations
+      are performed (Higher level control)?
 - context: '## Process Description
 
 
@@ -146,14 +152,13 @@ seed_examples:
 
     24. Go to PeopleSoft Page\>Click on Inquiry Criteria.'
   questions_and_answers:
-  - question: How to login Into Trintech?
-    answer: 'To login to Trintech: Open Client Home Page>Open the Trintech link>Input
+  - answer: 'To login to Trintech: Open Client Home Page>Open the Trintech link>Input
       the Credentials>Click on Sign In.'
-  - question: Which account number is used to prepare the recon?
-    answer: The account "40100-35771-E0055-30-NULL-NULL- NULL-NULL" is used to prepare
+    question: How to login Into Trintech?
+  - answer: The account "40100-35771-E0055-30-NULL-NULL- NULL-NULL" is used to prepare
       the recon.
-  - question: Where to do Basic Search in Peoplesoft for General Ledger?
-    answer: '1. Once signed into PeopleSoft, the below page will appear
+    question: Which account number is used to prepare the recon?
+  - answer: '1. Once signed into PeopleSoft, the below page will appear
 
       2. Under Menu, Click on General Ledger.
 
@@ -164,6 +169,7 @@ seed_examples:
       5. Then fill the required details under the Unit>Ledger>Account>Under Sum By
       Click on check box>Operating Unit> Under Sum By Click on check box >Subaccount>
       Under Sum By Click on check box >Click on Search.'
+    question: Where to do Basic Search in Peoplesoft for General Ledger?
 - context: "## Process Measurement Reports \n\n> Need to perfrom the 7 reconciliation\
     \ (Marketing and Sales Campaigns Accrual) activites on monthly basis and the cutoff\
     \ time to complete these activities every month is third week of the month.\n\n\
@@ -184,9 +190,7 @@ seed_examples:
     >\n> attach the recon template into Trintech and Certify.\n>\n> Note: The cutoff\
     \ time to complete these activities every month is third week of the month."
   questions_and_answers:
-  - question: What are the 7 reconciliation (Marketing and Sales Campaigns Accrual)
-      activites ?
-    answer: 'The 7 reconciliation (Marketing and Sales Campaigns Accrual) activites
+  - answer: 'The 7 reconciliation (Marketing and Sales Campaigns Accrual) activites
       are:
 
       1. 40100-35771-C0286-30-NULL-NULL- NULL-NULL
@@ -202,15 +206,17 @@ seed_examples:
       6. 40100-35771- NULL-30-NULL-NULL- NULL-XXXXX
 
       7. 40100-35771- NULL-30-NULL-NULL- NULL-PR026'
-  - question: Who is responsible to Perform the reconciliation activity for the listed
-      accounts
-    answer: R2R GA Team is responsible to Perform the reconciliation activity for
+    question: What are the 7 reconciliation (Marketing and Sales Campaigns Accrual)
+      activites ?
+  - answer: R2R GA Team is responsible to Perform the reconciliation activity for
       the listed accounts
-  - question: What is the deadline or cut off time to complete the activities of reconciliation,
+    question: Who is responsible to Perform the reconciliation activity for the listed
+      accounts
+  - answer: The deadline or cut off time to complete the activities is every month
+      by third week of the month.
+    question: What is the deadline or cut off time to complete the activities of reconciliation,
       updating the balance details into Trintech, and attach the recon template into
       Trintech and Certify?
-    answer: The deadline or cut off time to complete the activities is every month
-      by third week of the month.
 - context: "40. Compare and make sure that the GL balance matches with Trintech balance.\n\
     \n41. Update the spreadsheet: Change the date and balance and save the spreadsheet\
     \ to upload in Trintech.\n\n42. Click on Files\\> Then upload the recon template\
@@ -246,15 +252,15 @@ seed_examples:
     \ in this document:\n\n  Term   Definition\n  ------ ----------------\n  GL  \
     \   General Ledger"
   questions_and_answers:
-  - question: What is the full form of acronym GL?
-    answer: GL stands for General Ledger.
-  - question: What is the final step in 40100-35771- NULL-30-NULL-NULL- NULL-PR026
-      reconciliation activity?
-    answer: Final step is to upload the recon template into Trintech>Click on Reconciling
+  - answer: GL stands for General Ledger.
+    question: What is the full form of acronym GL?
+  - answer: Final step is to upload the recon template into Trintech>Click on Reconciling
       items to update the GL balance>Click on Certify>Click on dashboard to go back
       to trintech home page.
-  - question: GL balance should match to which balance?
-    answer: The GL balance should match with Trintech balance.
+    question: What is the final step in 40100-35771- NULL-30-NULL-NULL- NULL-PR026
+      reconciliation activity?
+  - answer: The GL balance should match with Trintech balance.
+    question: GL balance should match to which balance?
 - context: "Overview\n\n## Objective(s)\n\n> The function of performing this reconciliation\
     \ is that some of the Client suppliers will provide funding, which meant to be\
     \ offset the amount to Client spends for marketing related to their products.\n\
@@ -267,13 +273,11 @@ seed_examples:
     \ \n\n> Monthly\n\n### Source: \n\n> Trintech\n\n### System Accesses:\n\n-   Trintech\n\
     \n-   PeopleSoft\n\n-   Microsoft Excel\n\n-   Microsoft Outlook"
   questions_and_answers:
-  - question: Provide some example of the marketing expenses for GA_GL Account Reconciliation
-      marketing campaigns.
-    answer: Examples of marketing purposes for GA_GL Account Reconciliation include
+  - answer: Examples of marketing purposes for GA_GL Account Reconciliation include
       sponsorships of trade shows or customer events.
-  - question: What are the system accesses needed for marketing campaigns while performing
-      Account Reconciliation?
-    answer: 'The system accesses needed for marketing campaigns while performing Account
+    question: Provide some example of the marketing expenses for GA_GL Account Reconciliation
+      marketing campaigns.
+  - answer: 'The system accesses needed for marketing campaigns while performing Account
       Reconciliation are:
 
       1. Trintech
@@ -283,7 +287,10 @@ seed_examples:
       3. Microsoft Excel
 
       4. Microsoft Outlook'
-  - question: What is the source of the marketing campaigns while performing Account
-      Reconciliation?
-    answer: The source for the marketing campaigns while performing Account Reconciliation
+    question: What are the system accesses needed for marketing campaigns while performing
+      Account Reconciliation?
+  - answer: The source for the marketing campaigns while performing Account Reconciliation
       is Trintech
+    question: What is the source of the marketing campaigns while performing Account
+      Reconciliation?
+version: 3

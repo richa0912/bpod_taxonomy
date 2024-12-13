@@ -1,6 +1,12 @@
-domain: 'BPOD order to cash: Fleet UTO Trade Listing'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Fleet_UTO_Trade_Listing.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Explains the steps involved in creating a consolidated file for
   the trades customer makes on new trucks.
+domain: 'BPOD order to cash: Fleet UTO Trade Listing'
 seed_examples:
 - context: "# Control Points\n\n  ***Step No.***   ***Sub process Activity***   ***Control\
     \ Objective(s)***   ***Control Activity***   ***Risk Assertions***   ***Frequency\
@@ -12,16 +18,16 @@ seed_examples:
     \                                                             \n\n## Process Measurement\
     \ Reports \n\n> This activity should be completed on workday 1 before afternoon."
   questions_and_answers:
-  - question: What is the control objective for Fleet UTO Trade Listing?
-    answer: The control objective for Fleet UTO Trade Listing is not explicitly stated.
-  - question: When should the generation of process measurement reports for UTO Trade
-      listing be completed?
-    answer: The generation of process measurement reports for UTO Trade listing should
+  - answer: The control objective for Fleet UTO Trade Listing is not explicitly stated.
+    question: What is the control objective for Fleet UTO Trade Listing?
+  - answer: The generation of process measurement reports for UTO Trade listing should
       be completed on workday 1 before afternoon.
-  - question: What is the frequency of generating process measurement reports for
-      Fleet UTO Trade listing?
-    answer: The frequency of generating process measurement reports for Fleet UTO
+    question: When should the generation of process measurement reports for UTO Trade
+      listing be completed?
+  - answer: The frequency of generating process measurement reports for Fleet UTO
       Trade listing is not explicitly stated.
+    question: What is the frequency of generating process measurement reports for
+      Fleet UTO Trade listing?
 - context: '# Overview
 
 
@@ -63,28 +69,29 @@ seed_examples:
 
     +--------------------------------+---------------------------------------------------+---------------------------------------------------+---------------------------------+--------------------------------+'
   questions_and_answers:
-  - question: What is the objective of Fleet UTO Trade Listing process?
-    answer: The objective of Fleet UTO Trade Listing process is to create a consolidated
+  - answer: The objective of Fleet UTO Trade Listing process is to create a consolidated
       file for all the trades made by customers on new trucks.
-  - question: What is the output of Fleet UTO Trade Listing?
-    answer: An updated consolidated trade file is the output of Fleet UTO Trade Listing.
-  - question: Who is the supplier of the UTO Trade Listing?
-    answer: The supplier in UTO Trade Listing is the Used Truck Administration Team.
+    question: What is the objective of Fleet UTO Trade Listing process?
+  - answer: An updated consolidated trade file is the output of Fleet UTO Trade Listing.
+    question: What is the output of Fleet UTO Trade Listing?
+  - answer: The supplier in UTO Trade Listing is the Used Truck Administration Team.
+    question: Who is the supplier of the UTO Trade Listing?
 - context: "# Roles & Responsibilities\n\n## Description\n\n  **Role**           \
     \              **Responsibility**\n  -------------------------------- ------------------------------------------------------------------\n\
     \  Used Truck Administration team   Provide monthly trades listing file to fleet\
     \ invoicing assistant\n  Fleet Invoicing Assistant        Update the consolidated\
     \ file in O Drive"
   questions_and_answers:
-  - question: What is the responsibility of the Used Truck Administration team?
-    answer: The Used Truck Administration team is responsible for providing the monthly
+  - answer: The Used Truck Administration team is responsible for providing the monthly
       trades listing file to the fleet invoicing assistant.
-  - question: In UTO Trade Listing process, who is responsible for updating the consolidated
-      file in O Drive.
-    answer: In UTO Trade Listing process, The Fleet Invoicing Assistant is responsible
+    question: What is the responsibility of the Used Truck Administration team?
+  - answer: In UTO Trade Listing process, The Fleet Invoicing Assistant is responsible
       for updating the consolidated file in O Drive.
-  - question: What responsibility does Fleet Invoicing Assistant has?
-    answer: The responsibility does Fleet Invoicing Assistant is to update the consolidated file in O Drive
+    question: In UTO Trade Listing process, who is responsible for updating the consolidated
+      file in O Drive.
+  - answer: The responsibility does Fleet Invoicing Assistant is to update the consolidated
+      file in O Drive
+    question: What responsibility does Fleet Invoicing Assistant has?
 - context: '## Overview
 
 
@@ -93,14 +100,14 @@ seed_examples:
     file should be copy pasted into the consolidated file available in O Drive. These
     are the trades, the customer make for new trucks.'
   questions_and_answers:
-  - question: What data is in the monthly file received from the Used Truck Administration
-      team?
-    answer: The monthly file from the Used Truck Administration team contains the
+  - answer: The monthly file from the Used Truck Administration team contains the
       trades that the customer makes for new trucks.
-  - question: ' When should the UTO Trade lists file be updated every month?'
-    answer: ' The UTO Trade lists file should be updated on Workday 1 of every month.'
-  - question: Who sends the monthly UTO trade list file?
-    answer: Used Truck Administration team sends the monthly UTO trade list file.
+    question: What data is in the monthly file received from the Used Truck Administration
+      team?
+  - answer: ' The UTO Trade lists file should be updated on Workday 1 of every month.'
+    question: ' When should the UTO Trade lists file be updated every month?'
+  - answer: Used Truck Administration team sends the monthly UTO trade list file.
+    question: Who sends the monthly UTO trade list file?
 - context: '## Process Description
 
 
@@ -143,8 +150,7 @@ seed_examples:
 
     > The activity concludes here.'
   questions_and_answers:
-  - question: How to create Trade Listing Report?
-    answer: 'Following are the steps to create Trade Listing Report.
+  - answer: 'Following are the steps to create Trade Listing Report.
 
 
       1. Receive email from Used Truck Administration team for the monthly acquisitions
@@ -170,10 +176,12 @@ seed_examples:
 
       8. Scroll towards right on the consolidated file and copy paste the formula
       from column AK to column AN into the new data. Save the consolidated file.'
-  - question: In Fleet UTO trade listing, where to save monthly acquisition file received
-      from Truck Administration team?
-    answer: Save the email in to path 'O:\ ACCOUNTING-CSA\UTO TRADE\2022 MONTHLY RECEIPT
+    question: How to create Trade Listing Report?
+  - answer: Save the email in to path 'O:\ ACCOUNTING-CSA\UTO TRADE\2022 MONTHLY RECEIPT
       FILE'
-  - question: In Fleet UTO trade listing, where is the consolidated file available?
-    answer: In Fleet UTO trade listing, the consolidated file available in 'O:\ACCOUNTING-CSA\UTO
+    question: In Fleet UTO trade listing, where to save monthly acquisition file received
+      from Truck Administration team?
+  - answer: In Fleet UTO trade listing, the consolidated file available in 'O:\ACCOUNTING-CSA\UTO
       TRADE\UTO TRADE RECEIPTS COMPLETE LIST UPDATES'
+    question: In Fleet UTO trade listing, where is the consolidated file available?
+version: 3

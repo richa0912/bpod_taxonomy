@@ -1,6 +1,12 @@
-domain: 'BPOD order to cash: Fleet Invoicing'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Fleet_Invoicing.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Steps involved in Invoicing a Fleet and Bus customer once factory
   invoice is completed, through RASS system.
+domain: 'BPOD order to cash: Fleet Invoicing'
 seed_examples:
 - context: "# Control Points\n\n  ***Step No.***   ***Sub process Activity***    \
     \                ***Control Objective(s)***                                  \
@@ -35,20 +41,20 @@ seed_examples:
     \  Mail sent to NAM for revised paper work\n\n## Process Measurement Reports \n\
     \nFleet invoicing activity should be performed on a daily basis."
   questions_and_answers:
-  - question: What is the frequency of Fleet Invoicing activity?
-    answer: The Fleet Invoicing activity should be performed on a daily basis.
-  - question: Describe the Control points of Fleet Invoicing with their objectives.
-    answer: "The control points in Fleet Invoicing and their objectives are listed\
+  - answer: The Fleet Invoicing activity should be performed on a daily basis.
+    question: What is the frequency of Fleet Invoicing activity?
+  - answer: "The control points in Fleet Invoicing and their objectives are listed\
       \ below.\n1. Credit limit for the customer in PeopleSoft: The credit balance\
       \ in the customer account should not exceed the limit.\n2. Invoice Amount mismatch:\
       \ The invoice amount should match in worksheet summary, PO and factory.\n3.\
       \ Warranty amount mismatch: \tThe warranty amount should match with worksheet\
       \ summary and agreed warranty amount.\n4. SPA Number mismatch: The SPA number\
       \ should match in worksheet summary, PO and factory invoice."
-  - question: What are the risks when any of the control point in Fleet invoicing
-      is not met.
-    answer: If any of the control point in Fleet Invoicing is not met, Invoicing for
+    question: Describe the Control points of Fleet Invoicing with their objectives.
+  - answer: If any of the control point in Fleet Invoicing is not met, Invoicing for
       the cutomer will not happen.
+    question: What are the risks when any of the control point in Fleet invoicing
+      is not met.
 - context: '18. Login to PeopleSoft to identify the credit limit for the customer.
     Go to Accounts Receivable\>Customer Accounts\>Customer Information\>Account Overview.
     On the Balances tab, update SetID as FLEET, Unit as FLTUS and click on the magnifier
@@ -111,8 +117,7 @@ seed_examples:
 
     39. On the PDF Broadgun machine, these factory invoices will get add.'
   questions_and_answers:
-  - question: How to check credit limit of a customer during Fleet Invoicing?
-    answer: '1. Login to PeopleSoft to identify the credit limit for the customer.
+  - answer: '1. Login to PeopleSoft to identify the credit limit for the customer.
       Go to Accounts Receivable>Customer Accounts>Customer Information>Account Overview.
       On the Balances tab, update SetID as FLEET, Unit as FLTUS and click on the magnifier
       glass next to Customer option.
@@ -132,12 +137,11 @@ seed_examples:
       inform NAM about the same
 
       via email.'
-  - question: How should the cutomer credit limit be saved?
-    answer: The custome's credit limit should be saved on the path 'M:\\Sales Invoicing\\NAI\\Paperless
+    question: How to check credit limit of a customer during Fleet Invoicing?
+  - answer: The custome's credit limit should be saved on the path 'M:\\Sales Invoicing\\NAI\\Paperless
       Invoicing\\FY2022\\customer folder\\Month\\Date]' with file name as date.
-  - question: How can the factory invoice be generated when  Truck Invoice Viewer
-      website is not working?
-    answer: "When Truck Invoice website is not working, following steps can be used\
+    question: How should the cutomer credit limit be saved?
+  - answer: "When Truck Invoice website is not working, following steps can be used\
       \ to generate the factory invoice.\n\n1. Scroll down and find and click on Stellent\
       \ Imaging option. \n2. Enter user name and password to login to the page.\n\
       3. Click on Find option. From the drop down menu select 'Document by Saved Search'\n\
@@ -149,6 +153,8 @@ seed_examples:
       \ and click on the Email option.\n8. Fleet invoicing assistant will receive\
       \ the factory invoice as an email attachment. \n9. These factory invoices will\
       \ get added to PDF Broadgun machine."
+    question: How can the factory invoice be generated when  Truck Invoice Viewer
+      website is not working?
 - context: "84. Next go to RAST screen. Update Frieght amount and Surcharge amount\
     \ on this screen from the checklist. To update SALES TAX EXEMPT information follow\
     \ next step.\n85. Open Sals Tax Tables file from path **[M:\\\\Sales Invoicing\\\
@@ -187,19 +193,19 @@ seed_examples:
     \ customers. There are few customers FET calculation is not required. Exclude\
     \ those steps for such cistomers. This concludes the activity."
   questions_and_answers:
-  - question: Where can we get the Sales Tax tables file?
-    answer: Sales Tax tables file is available at 'M:\\Sales Invoicing\\NAI\\DATA\\Excel'.
-  - question: How to check if a customer is sales tax exempt in Fleet billing?
-    answer: 'To check if a customer is sales tax exempt, follow these steps.
+  - answer: Sales Tax tables file is available at 'M:\\Sales Invoicing\\NAI\\DATA\\Excel'.
+    question: Where can we get the Sales Tax tables file?
+  - answer: 'To check if a customer is sales tax exempt, follow these steps.
 
       1. Open Sals Tax Tables file from path ''M:\\Sales Invoicing\\NAI\\DATA\\Excel''
 
       2. In the data, if C1 is mentioned against any state that means sales tax applicable.
       If the column is black and percentage mentioned, sales tax is not applicable
       for those states.'
-  - question: Which column contains the rebate / discount information in the RAPH
+    question: How to check if a customer is sales tax exempt in Fleet billing?
+  - answer: The column 1R CONC in RAPH screen contains rebate / discount information.
+    question: Which column contains the rebate / discount information in the RAPH
       screen in Fleet Invoicing?
-    answer: The column 1R CONC in RAPH screen contains rebate / discount information.
 - context: '> **[Retail Accounting Customer Invoice Maintenance(RACI)]{.ul}** : There
     are three screens to be updated for Customer Invoices (RACI). On the first screen,
     the filed to update is the completion or delivery date. If the customer is based
@@ -232,18 +238,18 @@ seed_examples:
     charge or the P&D cost. If these fields are being shown, the Invoicing Assistant
     must verify that they are correct.'
   questions_and_answers:
-  - question: What is the full form of RACI in Fleet Invoicing?
-    answer: In Fleet Invoicing, RACI stands for 'Retail Accounting Customer Invoice
+  - answer: In Fleet Invoicing, RACI stands for 'Retail Accounting Customer Invoice
       maintenance'
-  - question: What details should be added or update on first RACI screen in Fleet
-      Invoicing?
-    answer: "Following details should be updated on the first RACI screen: \n\n1.\
+    question: What is the full form of RACI in Fleet Invoicing?
+  - answer: "Following details should be updated on the first RACI screen: \n\n1.\
       \  Completion or Delivery Date: \n2. A/R account number\n3. Customer P.O number\n\
       4. Customer ID\n5. Ship To Address"
-  - question: What should be entered in A/R terms field in second RACI screen?
-    answer: In the second RACI screen, if the customer's A/R terms are based upon
+    question: What details should be added or update on first RACI screen in Fleet
+      Invoicing?
+  - answer: In the second RACI screen, if the customer's A/R terms are based upon
       delivery, 'B' must be entered. If the customer's A/R terms are based upon completion,
       then 'A' must be entered.
+    question: What should be entered in A/R terms field in second RACI screen?
 - context: '> **[Retail Accounting Suspense accounts and Other entries(RASO)]{.ul}**
     : This screen is used to book suspense account entries such as extended warranties,
     rebates, overallowance, vendor''s assistance and advanced goods purchased accounts.
@@ -283,17 +289,18 @@ seed_examples:
     for GP is paid before a truck is released, the invoice is given an Advanced GP
     Number. This amount is booked on RASO screen instead of RAGP screen.'
   questions_and_answers:
-  - question: What are the control accounts for vendor assistance in Fleet billing?
-    answer: "The control accounts for vendor assistance are listed below:\n1. Michelin:\
+  - answer: "The control accounts for vendor assistance are listed below:\n1. Michelin:\
       \ 154900773\n2. Cummins: 154900807\n3. Caterpillar: 154900815\n4. Eaton: 154900849\n\
       5. Goodyear: 154900856\n6. Meritor: 154900864\n7: Miscellaneous: 154900872(Accuride,\
       \ Alcoa, Bendix, BorgWarner, Continental, Dana Spicer, Fontaine\u2026\n8. Allison:\
       \ 154900880"
-  - question: What is the meant by RASO?
-    answer: RASO stands for 'Retail Accounting Suspense accounts and Other entries'.
+    question: What are the control accounts for vendor assistance in Fleet billing?
+  - answer: RASO stands for 'Retail Accounting Suspense accounts and Other entries'.
       This screen is used to book suspense account entries such as extended warranties,
       rebates, overallowance, vendor's assistance and advanced goods purchased accounts.
-  - question: Which type of entries are entered on Goods Purchased screen of RASO?
-    answer: When an invoice for GP is paid before a truck is released, the invoice
+    question: What is the meant by RASO?
+  - answer: When an invoice for GP is paid before a truck is released, the invoice
       is given an Advanced GP Number. This amount is booked on the fourth RASO screen
       called 'Goods Purchased'.
+    question: Which type of entries are entered on Goods Purchased screen of RASO?
+version: 3

@@ -2,7 +2,7 @@ created_by: IBM
 document:
   commit: d1fc61f
   patterns:
-  - BPOD_acronym.md
+  - BPOD_acronyms.md
   repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: The document has acronym list and details
 domain: BPOD  acronym

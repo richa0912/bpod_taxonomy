@@ -1,6 +1,12 @@
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - DTP_US_P2P_Vendor_Invoice_Processing_Daily_Production_Reporting_0.1.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
+document_outline: 'Describes the steps to prepare the POP Daily Production Report '
 domain: 'BPOD procure to pay: DTP_US_P2P_Vendor Invoice Processing_Daily Production
   Reporting_0.1'
-document_outline: 'Describes the steps to prepare the POP Daily Production Report '
 seed_examples:
 - context: "# Roles & Responsibilities\n\n## Description\n\n  ------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\
     \  **Role**           **Responsibility**\n  IBM AP Team Lead   To prepare the\
@@ -36,18 +42,18 @@ seed_examples:
     \ application is used to prepare the report in Excel                         \
     \                                                                        |\n+------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n"
   questions_and_answers:
-  - question: Who is responsible for preparing the POP Daily Production Report?
-    answer: The IBM AP Team Lead is responsible for preparing the POP Daily Production
+  - answer: The IBM AP Team Lead is responsible for preparing the POP Daily Production
       Report.
-  - question: 'What is POP Daily Production Report?
-
-      '
-    answer: The POP Daily Production Report is a report that contains details of the
+    question: Who is responsible for preparing the POP Daily Production Report?
+  - answer: The POP Daily Production Report is a report that contains details of the
       number of invoices pending in the production queues, total number of open cases
       in Remedy, and the number of cases in Remedy that are over 5 days old.
-  - question: What applications are used to prepare the POP Daily Production Report?
-    answer: The LoadMaster Workflow application and the Remedy application are used
+    question: 'What is POP Daily Production Report?
+
+      '
+  - answer: The LoadMaster Workflow application and the Remedy application are used
       to prepare the POP Daily Production Report in Excel.
+    question: What applications are used to prepare the POP Daily Production Report?
 - context: '### Description of the Queues
 
 
@@ -179,16 +185,16 @@ seed_examples:
 
     '
   questions_and_answers:
-  - question: What is the Loadmaster Invoice queue used for?
-    answer: 'The Loadmaster Invoice queue is used for daily queues for invoices pending
+  - answer: 'The Loadmaster Invoice queue is used for daily queues for invoices pending
       posting in the Loadmaster.
 
       '
-  - question: What is the purpose of the Q0 queue?
-    answer: The Q0 queue is used for customer service and was used when vendors sent
+    question: What is the Loadmaster Invoice queue used for?
+  - answer: The Q0 queue is used for customer service and was used when vendors sent
       past due invoices to be prioritized and scheduled for auto post.
-  - question: Is the Q40 queue a high priority queue?
-    answer: Yes, the Q40 queue is a high priority queue.
+    question: What is the purpose of the Q0 queue?
+  - answer: Yes, the Q40 queue is a high priority queue.
+    question: Is the Q40 queue a high priority queue?
 - context: 'Step 13: In this example we look for the queue status for Day 28 as the
     queue status for Day 27 is zero.
 
@@ -220,19 +226,19 @@ seed_examples:
 
     '
   questions_and_answers:
-  - question: What should be done if the queue status for a particular day is zero
-      in the LoadMaster Workflow Application?
-    answer: If the queue status for a particular day is zero in the LoadMaster Workflow
+  - answer: If the queue status for a particular day is zero in the LoadMaster Workflow
       Application, the next day's queue status should be looked up and updated in
       the Production Status Report.
-  - question: What is the purpose of the Training Queue Q39 in the Production Status
-      Report?
-    answer: The Training Queue Q39 is used to train a new employee on invoice processing.
+    question: What should be done if the queue status for a particular day is zero
+      in the LoadMaster Workflow Application?
+  - answer: The Training Queue Q39 is used to train a new employee on invoice processing.
       The count in this queue should be zero except for this reason.
-  - question: What is the purpose of the Daily Queue Total in the Production Status
+    question: What is the purpose of the Training Queue Q39 in the Production Status
       Report?
-    answer: The Daily Queue Total in the Production Status Report shows the total
+  - answer: The Daily Queue Total in the Production Status Report shows the total
       number of invoices that need to be posted as on the current day.
+    question: What is the purpose of the Daily Queue Total in the Production Status
+      Report?
 - context: 'Step 1: Open the previous Production Status Report ''POP Workload 121012.xls''
     from the I:\\POP Production Status\\2012\\12 December folder
 
@@ -279,20 +285,20 @@ seed_examples:
 
     Step 12: Number of Pending invoices are displayed at the bottom in "Folders Available".'
   questions_and_answers:
-  - question: What should be done to fill up the data on the Loadmaster Invoice queues
-      in the Production Status Report?
-    answer: To fill up the data on the Loadmaster Invoice queues in the Production
+  - answer: To fill up the data on the Loadmaster Invoice queues in the Production
       Status Report, the LoadMaster Workflow Application should be launched by double-clicking
       on the POP Invoice Queues Icon on the Desktop.
-  - question: Where are the Number of Pending invoices displayed in the LoadMaster
-      Workflow Application?
-    answer: The Number of Pending invoices are displayed at the bottom in "Folders
+    question: What should be done to fill up the data on the Loadmaster Invoice queues
+      in the Production Status Report?
+  - answer: The Number of Pending invoices are displayed at the bottom in "Folders
       Available" in the LoadMaster Workflow Application.
-  - question: What should be done after selecting the 'popdta' database in the LoadMaster
+    question: Where are the Number of Pending invoices displayed in the LoadMaster
       Workflow Application?
-    answer: After selecting the 'popdta' database in the LoadMaster Workflow Application,
+  - answer: After selecting the 'popdta' database in the LoadMaster Workflow Application,
       the notification is displayed in the status bar and the file 'Open' icon is
       enabled.
+    question: What should be done after selecting the 'popdta' database in the LoadMaster
+      Workflow Application?
 - context: 'Step 20: To fill in the Total Open Cases under Remedy Cases, Open the
     Remedy Application
 
@@ -328,8 +334,7 @@ seed_examples:
 
     '
   questions_and_answers:
-  - question: How to find Total Open Cases under Remedy Cases?
-    answer: 'To get the number of Remedy cases, follow these steps:
+  - answer: 'To get the number of Remedy cases, follow these steps:
 
 
       1. Open the Remedy application.
@@ -343,16 +348,18 @@ seed_examples:
       4. Fill in the Production Report spreadsheet with this information.
 
       '
-  - question: How to see all the Remedy Cases that are over 5 days old
-    answer: ' To see all the Remedy Cases that are over 5 days old, open the Reports
+    question: How to find Total Open Cases under Remedy Cases?
+  - answer: ' To see all the Remedy Cases that are over 5 days old, open the Reports
       menu. Click on ''Reports -- USA'' => ''BSC Management Reports'' => ''BSC Production
       Meeting Report''.  ''Over 5 Day Report'' is generated. Scroll down to the POP
       Team section to see the number of remedy cases over 5 days old.
 
       '
-  - question: What is the role of the POP Team in relation to the Production Report
-      spreadsheet?
-    answer: 'The POP Team uses the Production Report spreadsheet to view the current
+    question: How to see all the Remedy Cases that are over 5 days old
+  - answer: 'The POP Team uses the Production Report spreadsheet to view the current
       status of all open cases in the Remedy application, as well as the total number
       of invoices that need to be posted as on the current day, and the number of
       Remedy Cases over 5 days old. '
+    question: What is the role of the POP Team in relation to the Production Report
+      spreadsheet?
+version: 3

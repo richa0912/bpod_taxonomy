@@ -1,7 +1,13 @@
-domain: "BPOD Record to Analyze: SC_Canada_AS400-R2R_-_Journal_Entry-Revaluation\
-  \_&_Allocation-272-CA-TO_BEAllocation - 272 - CA - TO BE"
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - "SC_Canada_AS400-R2R_\u2013_Journal_Entry-Revaluation_and_Allocation_\u2013_272-CA-TO_BE.md"
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how the IBM Delivery Center in Gurgaon will perform operational
   tasks of "Revaluation & Allocation" for Client Son and co.
+domain: "BPOD Record to Analyze: SC_Canada_AS400-R2R_-_Journal_Entry-Revaluation\_\
+  &_Allocation-272-CA-TO_BEAllocation - 272 - CA - TO BE"
 seed_examples:
 - context: '# Control Points
 
@@ -39,16 +45,16 @@ seed_examples:
 
     For information about the SLA refer to the contract between Client and IBM.'
   questions_and_answers:
-  - question: What is the purpose of Control Point R2R-10?
-    answer: The purpose of Control Point R2R-10 is to perform standard reconciliations
+  - answer: The purpose of Control Point R2R-10 is to perform standard reconciliations
       and post necessary journal entries, which are reviewed by an IBM Supervisor
       and approved by the Client Director of Finance.
-  - question: What is the control objective of Control Point R2R-10?
-    answer: The control objective is to ensure that transactions from the sub-ledgers
+    question: What is the purpose of Control Point R2R-10?
+  - answer: The control objective is to ensure that transactions from the sub-ledgers
       are recorded completely and accurately to the general ledger in the proper period.
-  - question: Which process is associated with control point R2R-10?
-    answer: "SC_Canada_AS400-R2R_-_Journal_Entry-Revaluation_&_Allocation-272-CA-TO_BE'\
-      \ process is associate with control point R2R-10."
+    question: What is the control objective of Control Point R2R-10?
+  - answer: SC_Canada_AS400-R2R_-_Journal_Entry-Revaluation_&_Allocation-272-CA-TO_BE'
+      process is associate with control point R2R-10.
+    question: Which process is associated with control point R2R-10?
 - context: "# Document Information\n\n## Procedure Overview\n\n  **Procedure Name**\
     \   Revaluation & Allocation\n  -------------------- ----------------------------------------------------------------------------------------------------\n\
     \  **Objective**        To adjust the foreign exchange and allocate the entries\
@@ -72,31 +78,41 @@ seed_examples:
     \ |                    |                        | **\\<Name and Role\\>**    \
     \      | **\\<Name and Role\\>**                     | **\\<Name and Role\\>**\
     \             |\n+--------------------+--------------------+------------------------+--------------------------------+-------------------------------------------+-----------------------------------+\n\
-    | 0.1                |                    | Draft                  | DAE\
-    \ | RCA | SHA\
-    \ |\n+--------------------+--------------------+------------------------+--------------------------------+-------------------------------------------+-----------------------------------+\n\
+    | 0.1                |                    | Draft                  | DAE | RCA\
+    \ | SHA |\n+--------------------+--------------------+------------------------+--------------------------------+-------------------------------------------+-----------------------------------+\n\
     \n## References\n\nNG- Inventory allocation to branches\n\nNG- Inventory allocation\
     \ from other libraries\n\nNG - A/P Revaluation & Allocation\n\nNG-A/R Revaluation\
     \ & Allocation\n\nNG -- Mill Accrual (Record, Revalue & allocation)\n\nJR 8101\
     \ Accounts Payable allocation-BF Lib\n\nNG-A/R Sales Tax Allocation\n\n"
   questions_and_answers:
-  - question: What is the objective of the Revaluation & Allocation procedure?
-    answer: The objective of the Revaluation & Allocation procedure is to adjust the
+  - answer: The objective of the Revaluation & Allocation procedure is to adjust the
       foreign exchange and allocate the entries for the same.
-  - question: "Who is the intended audience for 'SC Canada (AS400) - R2R - Journal\
-      \ Entry - Revaluation & Allocation - 272 - CA - TO BE' document?"
-    answer: "The intended audience for 'SC Canada (AS400) - R2R - Journal Entry\
-      \ - Revaluation & Allocation - 272 - CA - TO BE' document document includes\
-      \ the IBM General Accounting team and the Client, as well as IBM's areas involved\
-      \ in the execution, supervision, and control of the activities described"
-  - question: "What are the references for 'SC Canada (AS400) - R2R - Journal\
-      \ Entry - Revaluation & Allocation - 272 - CA - TO BE' document?"
-    answer: "The references used in 'SC Canada (AS400) - R2R - Journal Entry\
-      \ - Revaluation & Allocation - 272 - CA - TO BE'' document include:\n\n\
-      *   NG- Inventory allocation to branches\n*   NG- Inventory allocation from\
-      \ other libraries\n*   NG - A/P Revaluation & Allocation\n*   NG-A/R Revaluation\
-      \ & Allocation\n*   NG -- Mill Accrual (Record, Revalue & allocation)\n*   JR\
-      \ 8101 Accounts Payable allocation-BF Lib\n*   NG-A/R Sales Tax Allocation"
+    question: What is the objective of the Revaluation & Allocation procedure?
+  - answer: The intended audience for 'SC Canada (AS400) - R2R - Journal Entry - Revaluation
+      & Allocation - 272 - CA - TO BE' document document includes the IBM General
+      Accounting team and the Client, as well as IBM's areas involved in the execution,
+      supervision, and control of the activities described
+    question: Who is the intended audience for 'SC Canada (AS400) - R2R - Journal
+      Entry - Revaluation & Allocation - 272 - CA - TO BE' document?
+  - answer: 'The references used in ''SC Canada (AS400) - R2R - Journal Entry - Revaluation
+      & Allocation - 272 - CA - TO BE'''' document include:
+
+
+      *   NG- Inventory allocation to branches
+
+      *   NG- Inventory allocation from other libraries
+
+      *   NG - A/P Revaluation & Allocation
+
+      *   NG-A/R Revaluation & Allocation
+
+      *   NG -- Mill Accrual (Record, Revalue & allocation)
+
+      *   JR 8101 Accounts Payable allocation-BF Lib
+
+      *   NG-A/R Sales Tax Allocation'
+    question: What are the references for 'SC Canada (AS400) - R2R - Journal Entry
+      - Revaluation & Allocation - 272 - CA - TO BE' document?
 - context: '# Roles & Responsibilities
 
 
@@ -149,9 +165,7 @@ seed_examples:
     For the SOD assessment on conflicting tasks and accesses, please refer to the
     related Aggregate SOD (A-SOD).'
   questions_and_answers:
-  - question: ' What are the responsibilities of the General Accounting Analyst in
-      Journal Entry Revaluation and Allocation Process?'
-    answer: 'Following are the responsibilities of the General Accounting Analyst
+  - answer: 'Following are the responsibilities of the General Accounting Analyst
       in Journal Entry Revaluation and Allocation Process.
 
       *   Receiving an email from sigma
@@ -161,9 +175,9 @@ seed_examples:
       *   Copying the excel data in the JE template
 
       *   Uploading the JE template on AS400 with the backups'
-  - question: What are the responsibilities of the General Accounting Manager in Journal
-      Entry Revaluation and Allocation Process?
-    answer: 'The responsibilities of the General Accounting Manager in Journal Entry
+    question: ' What are the responsibilities of the General Accounting Analyst in
+      Journal Entry Revaluation and Allocation Process?'
+  - answer: 'The responsibilities of the General Accounting Manager in Journal Entry
       Revaluation and Allocation Process are listed below.
 
       *   Reviewing the JE (Journal Entry)
@@ -171,10 +185,12 @@ seed_examples:
       *   Sending back with rejection comments
 
       *   Confirming approval'
-  - question: In Journal Entry Revaluation and Allocation Process,  who is responsible
-      for reviewing and approving the JE?
-    answer: In Journal Entry Revaluation and Allocation Process, the General Accounting
+    question: What are the responsibilities of the General Accounting Manager in Journal
+      Entry Revaluation and Allocation Process?
+  - answer: In Journal Entry Revaluation and Allocation Process, the General Accounting
       Manager is responsible for reviewing and approving the JE.
+    question: In Journal Entry Revaluation and Allocation Process,  who is responsible
+      for reviewing and approving the JE?
 - context: '## Step Description
 
 
@@ -267,14 +283,14 @@ seed_examples:
 
     Copy and paste the JE upload data in last month''s JE template.'
   questions_and_answers:
-  - question: Who is responsible for preparing the Revaluation and Allocation journal?
-    answer: The IBM - General Accounting Analyst is responsible for preparing the
+  - answer: The IBM - General Accounting Analyst is responsible for preparing the
       Revaluation and Allocation journal.
-  - question: What is the source of the data for the Revaluation and Allocation journal?
-    answer: The source of the data for the Revaluation and Allocation journal is an
+    question: Who is responsible for preparing the Revaluation and Allocation journal?
+  - answer: The source of the data for the Revaluation and Allocation journal is an
       email received from Sigma, which is a monthly auto-scheduled job.
-  - question: How many journals are there in the Revaluation and Allocation process?
-    answer: ' There are 7 journals in the Revaluation and Allocation process'
+    question: What is the source of the data for the Revaluation and Allocation journal?
+  - answer: ' There are 7 journals in the Revaluation and Allocation process'
+    question: How many journals are there in the Revaluation and Allocation process?
 - context: '+----------+---------------------------------------+-------------------------------------------+|
     **Step** | **Description**                       | **Role**                                  |
 
@@ -370,19 +386,20 @@ seed_examples:
 
     **Type of Journal**: Transfer Balances / Reclass Balances'
   questions_and_answers:
-  - question: What is the purpose of "Send back with rejection comments" step in Journal
-      Entry - Revaluation & Allocation process?
-    answer: The purpose of "Send back with rejection comments" step in Journal Entry
+  - answer: The purpose of "Send back with rejection comments" step in Journal Entry
       - Revaluation & Allocation process is to send back the journal with rejection
       comments if the backups and the journal are not corrected to ensure the accuracy
       of the journal.
-  - question: What type of journal is the Revaluation & Allocation Journal?
-    answer: The Revaluation & Allocation Journal is a Transfer Balances / Reclass
+    question: What is the purpose of "Send back with rejection comments" step in Journal
+      Entry - Revaluation & Allocation process?
+  - answer: The Revaluation & Allocation Journal is a Transfer Balances / Reclass
       Balances journal, which will not go for Client's Review or Approval as per the
       JE matrix.
-  - question: What is the role of the IBM General Accounting Manager in "Send back
-      with rejection comments" step in Journal Entry - Revaluation & Allocation process?
-    answer: In "Send back with rejection comments" step in Journal Entry - Revaluation
+    question: What type of journal is the Revaluation & Allocation Journal?
+  - answer: In "Send back with rejection comments" step in Journal Entry - Revaluation
       & Allocation process, the IBM General Accounting Manager is responsible for
       sending an email with rejection comments and requesting the preparation of a
       corrected journal with corrected backups.
+    question: What is the role of the IBM General Accounting Manager in "Send back
+      with rejection comments" step in Journal Entry - Revaluation & Allocation process?
+version: 3

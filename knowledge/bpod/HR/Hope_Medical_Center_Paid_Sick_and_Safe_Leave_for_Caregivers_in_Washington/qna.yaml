@@ -1,9 +1,15 @@
-domain: 'BPOD Human Resource: Hope Medical Center_Paid Sick and Safe Leave for Caregivers
-  in Washington'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Hope_Medical_Center_Paid_Sick_and_Safe_Leave_for_Caregivers_in_Washington.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: The Hope Medical Center_Paid Sick and Safe Leave for Caregivers
   in Washington policy outlines the accrual and usage of paid time off for non-PTO
   eligible caregivers, including qualifying reasons for use, request procedures, tracking
   and payment, and termination and rehire provisions
+domain: 'BPOD Human Resource: Hope Medical Center_Paid Sick and Safe Leave for Caregivers
+  in Washington'
 seed_examples:
 - context: "Hope Medical Center (\"facility\")\nDepartment: Human Resources\nApproved\
     \ by: Chief Human Resources Officer\nDate Last Reviewed: 1/1/2024\nDate Last Revised:\
@@ -22,24 +28,24 @@ seed_examples:
     \ Paid leave programs reserved for eligible caregivers to include PTO, time away,\
     \ vacation, annual leave, sick, etc."
   questions_and_answers:
-  - question: What is the purpose of the Paid Sick and Safe Leave for Caregivers in
-      Washington policy?
-    answer: The purpose of this policy is to provide non-PTO eligible caregivers with
+  - answer: The purpose of this policy is to provide non-PTO eligible caregivers with
       paid time off for their own health condition, the health condition of a family
       member, parental leave, domestic violence, harassment or stalking, or public
       emergency in accordance with applicable law. It also aims to inform PTO-eligible
       caregivers about usage requirements.
-  - question: Who is considered a family member under the Paid Sick and Safe Leave
-      for Caregivers in Washington policy?
-    answer: Under the Paid Sick and Safe Leave for Caregivers in Washington policy,
+    question: What is the purpose of the Paid Sick and Safe Leave for Caregivers in
+      Washington policy?
+  - answer: Under the Paid Sick and Safe Leave for Caregivers in Washington policy,
       a family member includes a child (biological, adopted, foster, step, or child
       of domestic partner), parent or guardian (custodial, non-custodial, adoptive,
       foster, step, parent-in-law, parent of domestic partner, and biological parent),
       spouse, domestic partner, grandparent, grandchild, or sibling.
-  - question: What is considered preventive care under the Paid Sick and Safe Leave
+    question: Who is considered a family member under the Paid Sick and Safe Leave
       for Caregivers in Washington policy?
-    answer: Preventive care under the Paid Sick and Safe Leave for Caregivers in Washington
+  - answer: Preventive care under the Paid Sick and Safe Leave for Caregivers in Washington
       policy includes annual physicals, flu shots, and other similar health measures.
+    question: What is considered preventive care under the Paid Sick and Safe Leave
+      for Caregivers in Washington policy?
 - context: 'Policy: The facility provides non-PTO eligible caregivers accrued paid
     time off for planned and unplanned absences as defined within this document. This
     policy also provides information for PTO-eligible caregivers about usage requirements
@@ -56,27 +62,27 @@ seed_examples:
     be carried over from one calendar year to the next. The facility''s PTO program
     accrual satisfies state paid sick leave requirements for PTO-eligible caregivers'
   questions_and_answers:
-  - question: What type of paid time off does the facility provide for non-PTO eligible
-      caregivers under the Paid Sick and Safe Leave for Caregivers in Washington policy?
-    answer: The facility provides non-PTO eligible caregivers with accrued paid time
+  - answer: The facility provides non-PTO eligible caregivers with accrued paid time
       off for planned and unplanned absences, including Paid Sick and Safe Leave in  the
       Paid Sick and Safe Leave for Caregivers in Washington policy.
-  - question: How does the facility determine the accrual of Paid Sick and Safe Leave
-      for non-PTO eligible caregivers in  the Paid Sick and Safe Leave for Caregivers
-      in Washington policy?
-    answer: For non-PTO eligible caregivers, Paid Sick and Safe Leave begins to accrue
+    question: What type of paid time off does the facility provide for non-PTO eligible
+      caregivers under the Paid Sick and Safe Leave for Caregivers in Washington policy?
+  - answer: For non-PTO eligible caregivers, Paid Sick and Safe Leave begins to accrue
       on the date of hire and is available for use after 90 days of employment in  the
       Paid Sick and Safe Leave for Caregivers in Washington policy. They will accrue
       one hour of Paid Sick and Safe Leave per 40 hours worked (or .025 hours per
       hour worked). Up to 40 hours of unused sick time can be carried over from one
       calendar year to the next.
-  - question: How does the facility's PTO program satisfy state paid sick leave requirements
-      for PTO-eligible caregivers in  the Paid Sick and Safe Leave for Caregivers
+    question: How does the facility determine the accrual of Paid Sick and Safe Leave
+      for non-PTO eligible caregivers in  the Paid Sick and Safe Leave for Caregivers
       in Washington policy?
-    answer: The facility's PTO program accrual satisfies state paid sick leave requirements
+  - answer: The facility's PTO program accrual satisfies state paid sick leave requirements
       for PTO-eligible caregivers in  the Paid Sick and Safe Leave for Caregivers
       in Washington policy. However, the specifics of this accrual are addressed in
       a separate policy applicable to those caregivers.
+    question: How does the facility's PTO program satisfy state paid sick leave requirements
+      for PTO-eligible caregivers in  the Paid Sick and Safe Leave for Caregivers
+      in Washington policy?
 - context: 'Qualifying Reasons to Use Paid Sick and Safe Leave: Caregivers covered
     in this policy may use their available Paid Sick and Safe Leave for the following
     reasons:
@@ -103,34 +109,34 @@ seed_examples:
     member in the community would jeopardize the health of others; or when a law or
     regulation requires us to exclude you from the workplace for health reasons'
   questions_and_answers:
-  - question: What are the qualifying reasons for which a caregiver can use their
-      Paid Sick and Safe Leave for their own health condition under the Paid Sick
-      and Safe Leave for Caregivers in Washington policy?
-    answer: Under the Paid Sick and Safe Leave for Caregivers in Washington policy,
+  - answer: Under the Paid Sick and Safe Leave for Caregivers in Washington policy,
       a caregiver can use their Paid Sick and Safe Leave for their own health condition
       for mental or physical illness, injury, or health condition, or for the need
       for medical diagnosis, care, or preventative care or treatment, including medical,
       dental, or optical appointments
-  - question: What are the qualifying reasons for which a caregiver can use their
-      Paid Sick and Safe Leave for a family member's health condition under the Paid
-      Sick and Safe Leave for Caregivers in Washington policy?
-    answer: A caregiver can use their Paid Sick and Safe Leave for a family member's
+    question: What are the qualifying reasons for which a caregiver can use their
+      Paid Sick and Safe Leave for their own health condition under the Paid Sick
+      and Safe Leave for Caregivers in Washington policy?
+  - answer: A caregiver can use their Paid Sick and Safe Leave for a family member's
       health condition for care of a family member with a mental or physical illness,
       injury, or health condition, or for care of a family member who needs medical
       diagnosis, preventative care, or treatment, including medical, dental, or optical
       appointments under the Paid Sick and Safe Leave for Caregivers in Washington
       policy.
-  - question: What are the qualifying reasons for which a caregiver can use their
-      Paid Sick and Safe Leave for domestic violence, harassment, sexual assault,
-      or stalking under the Paid Sick and Safe Leave for Caregivers in Washington
-      policy?
-    answer: A caregiver can use their Paid Sick and Safe Leave for domestic violence,
+    question: What are the qualifying reasons for which a caregiver can use their
+      Paid Sick and Safe Leave for a family member's health condition under the Paid
+      Sick and Safe Leave for Caregivers in Washington policy?
+  - answer: A caregiver can use their Paid Sick and Safe Leave for domestic violence,
       harassment, sexual assault, or stalking for time away from work to obtain additional
       counseling, seek relocation or shelter, seek assistance from a victim services
       organization, safety planning, take related legal action, including preparation
       for or participation in any related civil or criminal legal proceeding, or assist
       a family member in engaging in any of these activities under  the Paid Sick
       and Safe Leave for Caregivers in Washington policy.
+    question: What are the qualifying reasons for which a caregiver can use their
+      Paid Sick and Safe Leave for domestic violence, harassment, sexual assault,
+      or stalking under the Paid Sick and Safe Leave for Caregivers in Washington
+      policy?
 - context: 'Requesting Paid Sick and Safe Leave: Caregivers requesting time off under
     this policy should provide reasonable notice to the core leader. For foreseeable
     absences (e.g., scheduled medical appointments, scheduled court dates), caregivers
@@ -148,26 +154,26 @@ seed_examples:
     time (there are no minimum increments). Paid Sick and Safe Leave hours will not
     count towards the calculation of overtime.'
   questions_and_answers:
-  - question: How much notice should a caregiver provide for foreseeable absences
-      under the Paid Sick and Safe Leave for Caregivers in Washington policy?
-    answer: For foreseeable absences, such as scheduled medical appointments or scheduled
+  - answer: For foreseeable absences, such as scheduled medical appointments or scheduled
       court dates, caregivers are required to give reasonable advance notice, and
       are generally advised to give at least ten calendar days' notice under the Paid
       Sick and Safe Leave for Caregivers in Washington policy.
-  - question: What happens if a caregiver takes more than three consecutive scheduled
-      workdays of leave under the Paid Sick and Safe Leave for Caregivers in Washington
-      policy?
-    answer: If a caregiver takes more than three consecutive scheduled workdays of
+    question: How much notice should a caregiver provide for foreseeable absences
+      under the Paid Sick and Safe Leave for Caregivers in Washington policy?
+  - answer: If a caregiver takes more than three consecutive scheduled workdays of
       leave, they may be required to provide appropriate documentation in support
       of the leave taken under  the Paid Sick and Safe Leave for Caregivers in Washington
       policy.
-  - question: How will caregivers be paid for Paid Sick and Safe Leave under the Paid
-      Sick and Safe Leave for Caregivers in Washington policy?
-    answer: Caregivers will be paid at their regular rate of pay for Paid Sick and
+    question: What happens if a caregiver takes more than three consecutive scheduled
+      workdays of leave under the Paid Sick and Safe Leave for Caregivers in Washington
+      policy?
+  - answer: Caregivers will be paid at their regular rate of pay for Paid Sick and
       Safe Leave under the Paid Sick and Safe Leave for Caregivers in Washington policy.
       It is the responsibility of the caregiver to code Paid Sick on their time card,
       but if the caregiver is unavailable, the core leader will assume responsibility.
       Paid Sick and Safe Leave hours will not count towards the calculation of overtime.
+    question: How will caregivers be paid for Paid Sick and Safe Leave under the Paid
+      Sick and Safe Leave for Caregivers in Washington policy?
 - context: 'Termination of Employment and Rehires: Paid Sick and Safe Leave will not
     be paid out upon termination of employment, regardless of the reason for separation.
     Caregivers who are rehired within one year (12 months) of separation will have
@@ -198,24 +204,21 @@ seed_examples:
     under this policy before using any other type of paid time off (see examples below)
     for Paid Sick and Safe Leave qualifying purposes.'
   questions_and_answers:
-  - question: What happens to a caregiver's accrued Paid Sick and Safe Leave upon
-      termination of employment under the Paid Sick and Safe Leave for Caregivers
-      in Washington policy?
-    answer: Upon termination of employment, regardless of the reason for separation,
+  - answer: Upon termination of employment, regardless of the reason for separation,
       Paid Sick and Safe Leave will not be paid out under the Paid Sick and Safe Leave
       for Caregivers in Washington policy.
-  - question: What happens to a caregiver's accrued Paid Sick and Safe Leave if they
-      are rehired within one year of separation under the Paid Sick and Safe Leave
-      for Caregivers in Washington policy?
-    answer: If a caregiver is rehired within one year (12 months) of separation, their
+    question: What happens to a caregiver's accrued Paid Sick and Safe Leave upon
+      termination of employment under the Paid Sick and Safe Leave for Caregivers
+      in Washington policy?
+  - answer: If a caregiver is rehired within one year (12 months) of separation, their
       accrued Paid Sick and Safe Leave balance will be restored at the time of rehire,
       and they will not be required to wait another 90 days to use the accrued Paid
       Sick and Safe Leave under the Paid Sick and Safe Leave for Caregivers in Washington
       policy.
-  - question: What happens to a caregiver's Paid Sick and Safe Leave benefits upon
-      a change in eligibility status from non-PTO eligible to PTO eligible under the
-      Paid Sick and Safe Leave for Caregivers in Washington policy?
-    answer: Upon a caregiver's change of status from non-PTO eligible to PTO eligible,
+    question: What happens to a caregiver's accrued Paid Sick and Safe Leave if they
+      are rehired within one year of separation under the Paid Sick and Safe Leave
+      for Caregivers in Washington policy?
+  - answer: Upon a caregiver's change of status from non-PTO eligible to PTO eligible,
       they will maintain their accrued Paid Sick and Safe Leave benefits in their
       Paid Sick and Safe Leave bank under  the Paid Sick and Safe Leave for Caregivers
       in Washington policy but will cease to accrue additional hours in this bank.
@@ -225,3 +228,7 @@ seed_examples:
       Paid Sick and Safe Leave bank accrued under this policy before using any other
       type of paid time off (see examples below) for Paid Sick and Safe Leave qualifying
       purposes.
+    question: What happens to a caregiver's Paid Sick and Safe Leave benefits upon
+      a change in eligibility status from non-PTO eligible to PTO eligible under the
+      Paid Sick and Safe Leave for Caregivers in Washington policy?
+version: 3

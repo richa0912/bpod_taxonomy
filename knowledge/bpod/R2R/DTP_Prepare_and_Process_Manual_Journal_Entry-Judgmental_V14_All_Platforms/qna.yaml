@@ -1,7 +1,13 @@
-domain: 'BPOD record to analyze: DTP Prepare and Process Manual Journal Entry - Judgmental
-  V14 All Platforms'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - DTP_Prepare_and_Process_Manual_Journal_Entry-Judgmental_V14_All_Platforms.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes the process 'DTP Prepare and Process Manual Journal Entry
   -- Judgmental_All Platforms'
+domain: 'BPOD record to analyze: DTP Prepare and Process Manual Journal Entry - Judgmental
+  V14 All Platforms'
 seed_examples:
 - context: "# 5 Roles and Responsibilities \n\n+----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+\n\
     | > **Role**           | **Description**                                     \
@@ -94,24 +100,24 @@ seed_examples:
     \                                                                            \
     \        |\n+----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+"
   questions_and_answers:
-  - question: What is the role of the Country or Supply Chain Company Non-Finance
-      Requestor in Prepare and Process Manual Journal Entry Judgemental process?
-    answer: In Prepare and Process Manual Journal Entry Judgemental process, the Country
+  - answer: In Prepare and Process Manual Journal Entry Judgemental process, the Country
       or Supply Chain Company Non-Finance Requestor is responsible for reviewing financial
       figures to determine the need for a journal entry, analyzing Client's present
       obligations, and collecting journal entry history and data required to prepare
       a Provision Proposal.
-  - question: In Prepare and Process Manual Journal Entry Judgemental process, what
-      is the role of the Non-Finance Requestor in collecting supporting documentation?
-    answer: In Prepare and Process Manual Journal Entry Judgemental process, the Non-Finance
+    question: What is the role of the Country or Supply Chain Company Non-Finance
+      Requestor in Prepare and Process Manual Journal Entry Judgemental process?
+  - answer: In Prepare and Process Manual Journal Entry Judgemental process, the Non-Finance
       Requestor is responsible for collecting the required supporting documentation
       for the journal entry and sharing it with the Finance Requestor.
-  - question: What is the purpose of the Provision Proposal in Prepare and Process
-      Manual Journal Entry Judgemental process?
-    answer: In Prepare and Process Manual Journal Entry Judgemental process, the Provision
+    question: In Prepare and Process Manual Journal Entry Judgemental process, what
+      is the role of the Non-Finance Requestor in collecting supporting documentation?
+  - answer: In Prepare and Process Manual Journal Entry Judgemental process, the Provision
       Proposal is prepared in accordance with the rules set up in the Client Accounting
       Policy Manual, and is used to determine the need for provision based on Client's
       present obligations resulting from past events.
+    question: What is the purpose of the Provision Proposal in Prepare and Process
+      Manual Journal Entry Judgemental process?
 - context: "## Global Enablement \n\n+-------------------+------------------------+--------------------------------------------+------------------+\n\
     | > **System**      | > **Transaction code** | > **Role**                    \
     \             | **Access Type**  |\n+===================+========================+============================================+==================+\n\
@@ -149,20 +155,18 @@ seed_examples:
     \              | > Intercompany Ops Hub                     |                \
     \  |\n+-------------------+------------------------+--------------------------------------------+------------------+"
   questions_and_answers:
-  - question: What are the roles that have access to the Cadency Journal Entry Tool?
-    answer: 'The roles that have access to the Cadency Journal Entry Tool include:
+  - answer: 'The roles that have access to the Cadency Journal Entry Tool include:
 
 
       *   Country or Supply Chain Company Finance Requestor
 
       *   Country or Supply Chain Company Approver'
-  - question: What is the access type for the Country or Supply Chain Company Finance
-      Requestor in the BMC Remedy system?
-    answer: The access type for the Country or Supply Chain Company Finance Requestor
+    question: What are the roles that have access to the Cadency Journal Entry Tool?
+  - answer: The access type for the Country or Supply Chain Company Finance Requestor
       in the BMC Remedy system is Display / Change.
-  - question: In the context of processing Judgemental Manual Journal Entry, what
-      are the roles that have access to the MS Outlook system?
-    answer: 'In the context of processing Judgemental Manual Journal Entry, the roles
+    question: What is the access type for the Country or Supply Chain Company Finance
+      Requestor in the BMC Remedy system?
+  - answer: 'In the context of processing Judgemental Manual Journal Entry, the roles
       that have access to the MS Outlook system include:
 
 
@@ -175,6 +179,8 @@ seed_examples:
       *   Operating Centre Accountant
 
       *   Intercompany Ops Hub'
+    question: In the context of processing Judgemental Manual Journal Entry, what
+      are the roles that have access to the MS Outlook system?
 - context: "### 7.G Prepare Journal Entry (by Country or Supply Chain Company Finance\
     \ Requestor) \n\n> The Country or Supply Chain Company Finance Requestor creates\
     \ the journal in Cadency Journal Entry Tool, based on own calculations or on behalf\
@@ -206,8 +212,7 @@ seed_examples:
     \n    -   VAT Date\n\n    -   Translation Date\n\n    -   Exchange Rate (Leave\
     \ blank if inputting in local currency)\n\n    -   Reversal reason & Date"
   questions_and_answers:
-  - question: What fields need to be filled in when creating a new journal?
-    answer: 'When creating a new journal, the fields that need to be filled in include:
+  - answer: 'When creating a new journal, the fields that need to be filled in include:
 
 
       *   Name
@@ -215,14 +220,15 @@ seed_examples:
       *   Template
 
       *   Period'
-  - question: What should be the document type for non-reveral accruals in Cadency
-      Journal Entry Tool?
-    answer: For non- reversal accruals in Cadency Journal Entry Tool, document type
+    question: What fields need to be filled in when creating a new journal?
+  - answer: For non- reversal accruals in Cadency Journal Entry Tool, document type
       should be SA
-  - question: For which Cadency tool document types for Cordillera is the reversal
-      carried out through SAP?
-    answer: For document types Y1, AR, F2 for Cordilera reversal is carried out through
+    question: What should be the document type for non-reveral accruals in Cadency
+      Journal Entry Tool?
+  - answer: For document types Y1, AR, F2 for Cordilera reversal is carried out through
       SAP.
+    question: For which Cadency tool document types for Cordillera is the reversal
+      carried out through SAP?
 - context: "### 7.H Review Journal Entry (by Country or Supply Chain Company Approver)\
     \ \n\n> The following control is executed within SAP in a manual way based on\
     \ system configuration. The control is inbuilt in the interface. When the approval\
@@ -277,17 +283,17 @@ seed_examples:
     \                                                                            \
     \                                                    |"
   questions_and_answers:
-  - question: What is the purpose of Control RTR C2.20?
-    answer: The purpose of Control RTR C2.20 is to ensure that all journal entries
+  - answer: The purpose of Control RTR C2.20 is to ensure that all journal entries
       are approved or authorized by the client, complete and accurate, and to detect
       manual errors that may occur when the journal entry is entered.
-  - question: How often is Control RTR C2.20 executed?
-    answer: Control RTR C2.20 is executed event-driven, meaning it is triggered by
+    question: What is the purpose of Control RTR C2.20?
+  - answer: Control RTR C2.20 is executed event-driven, meaning it is triggered by
       a specific event, such as the approval of a journal entry.
-  - question: What is the benefit of Control RTR C2.20?
-    answer: The benefit of Control RTR C2.20 is that it **enables the identification
+    question: How often is Control RTR C2.20 executed?
+  - answer: The benefit of Control RTR C2.20 is that it **enables the identification
       of manual errors prior to posting**, ensuring that all journal entries are accurate
       and complete before being processed into SAP.
+    question: What is the benefit of Control RTR C2.20?
 - context: '> **Exception for RUB countries**: All the judgmental entries are to be
     prepared, posted and approved by UL (not PSP). This rule does not apply for RUB
     countries.
@@ -356,16 +362,14 @@ seed_examples:
     These transfers are not typical accrual journals, but the entire TB is being transferred
     from non-SAP to SAP, as there is no direct interface.'
   questions_and_answers:
-  - question: What is the exception for RUB countries in terms of journal preparation
-      and approval?
-    answer: For RUB countries, all judgmental entries are to be prepared, posted,
+  - answer: For RUB countries, all judgmental entries are to be prepared, posted,
       and approved by UL (not PSP).
-  - question: Which tool should be used to process all journals?
-    answer: Cadency Journal Entry Tool (Trintech) tool should be used to process all
+    question: What is the exception for RUB countries in terms of journal preparation
+      and approval?
+  - answer: Cadency Journal Entry Tool (Trintech) tool should be used to process all
       journals.
-  - question: What are the four main templates defined to standardize journal entries
-      posting using the Cadency Journal Entry Tool?
-    answer: 'The four main templates defined to standardize journal entries posting
+    question: Which tool should be used to process all journals?
+  - answer: 'The four main templates defined to standardize journal entries posting
       using the Cadency Journal Entry Tool are:
 
 
@@ -380,3 +384,6 @@ seed_examples:
 
       *   AP/ Vendor Journal: designated to post GL Accounts to Vendor accounts by
       using proper posting keys, which are aligned with SAP'
+    question: What are the four main templates defined to standardize journal entries
+      posting using the Cadency Journal Entry Tool?
+version: 3

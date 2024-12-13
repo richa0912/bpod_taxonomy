@@ -1,6 +1,12 @@
-domain: 'BPOD Human Resource: St Lorenzo Medical_Jury Duty policy'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - St_Lorenzo_Medical_Jury_Duty_policy.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes Jury Duty, Witness Service, Crime Victim and Domestic
   Violence Leave as per St. Lorenzo Medical Center  facility.
+domain: 'BPOD Human Resource: St Lorenzo Medical_Jury Duty policy'
 seed_examples:
 - context: 'Department: Human Resources
 
@@ -26,18 +32,16 @@ seed_examples:
     for jury duty or witness service (though some courts may require jurors to waive
     receipt of court fees if compensated by their employer).'
   questions_and_answers:
-  - question: What is the policy number of Jury Duty, Witness Service, Crime Victim
+  - answer: The policy number of Jury Duty, Witness Service, Crime Victim and Domestic
+      Violence Leave in St. Lorenzo Medical Center facility is HR 510.
+    question: What is the policy number of Jury Duty, Witness Service, Crime Victim
       and Domestic Violence Leave in Jury Duty, Witness Service, Crime Victim and
       Domestic Violence Leave facility?
-    answer: The policy number of Jury Duty, Witness Service, Crime Victim and Domestic
-      Violence Leave in St. Lorenzo Medical Center facility is HR 510.
-  - question: When was the Jury Duty, Witness Service, Crime Victim and Domestic Violence
-      Leave policy adopted in St. Lorenzo Medical Center facility?
-    answer: The Jury Duty, Witness Service, Crime Victim and Domestic Violence Leave
+  - answer: The Jury Duty, Witness Service, Crime Victim and Domestic Violence Leave
       policy is adopted in St. Lorenzo Medical Center facility on 1/2013.
-  - question: Describe in brief the policy Jury Duty, Witness Service, Crime Victim
-      and Domestic Violence Leave in St. Lorenzo Medical Center facility.
-    answer: The facility encourages and supports caregivers in meeting their civic
+    question: When was the Jury Duty, Witness Service, Crime Victim and Domestic Violence
+      Leave policy adopted in St. Lorenzo Medical Center facility?
+  - answer: The facility encourages and supports caregivers in meeting their civic
       responsibilities as jurors and witnesses, by providing paid leave for jury duty,
       and in some instances, to appear as a witness in a court case. This type of
       leave is paid at a caregiver's regular, straight-time rate of pay for any scheduled
@@ -46,6 +50,8 @@ seed_examples:
       is four (4) weeks of absence from scheduled work in a calendar year. Caregivers
       may keep any fees received for jury duty or witness service (though some courts
       may require jurors to waive receipt of court fees if compensated by their employer).
+    question: Describe in brief the policy Jury Duty, Witness Service, Crime Victim
+      and Domestic Violence Leave in St. Lorenzo Medical Center facility.
 - context: "Paid leave for witness service does not apply where:\n-\tThe caregiver\
     \ is a plaintiff, member of a class, or defendant in the legal proceeding, or\n\
     -\tThe caregiver is testifying in the proceeding for a fee, as an expert witness\n\
@@ -60,21 +66,21 @@ seed_examples:
     \ on the amount or scheduling of the leave may apply, in compliance with Oregon\
     \ law."
   questions_and_answers:
-  - question: Where does the Paid leave for witness service not applicable inSt. Lorenzo
-      Medical Center facility?
-    answer: "Paid leave for witness service does not apply where:\n-\tThe caregiver\
+  - answer: "Paid leave for witness service does not apply where:\n-\tThe caregiver\
       \ is a plaintiff, member of a class, or defendant in the legal proceeding, or\n\
       -\tThe caregiver is testifying in the proceeding for a fee, as an expert witness"
-  - question: For what a caregiver who is a crime victim as defined by Oregon law
-      take take time off ?
-    answer: A caregiver who is a crime victim or an immediate family member of a crime
+    question: Where does the Paid leave for witness service not applicable inSt. Lorenzo
+      Medical Center facility?
+  - answer: A caregiver who is a crime victim or an immediate family member of a crime
       victim as defined by Oregon law may also take time off to attend court hearings
       or proceedings related to the crime.
-  - question: What is the eligibility of caregiver for Jury Duty, Witness Service,
-      Crime Victim and Domestic Violence Leaves?
-    answer: Caregivers who have worked an average of 25 hours per week for 180 days
+    question: For what a caregiver who is a crime victim as defined by Oregon law
+      take take time off ?
+  - answer: Caregivers who have worked an average of 25 hours per week for 180 days
       are eligible for Jury Duty, Witness Service, Crime Victim and Domestic Violence
       Leaves.
+    question: What is the eligibility of caregiver for Jury Duty, Witness Service,
+      Crime Victim and Domestic Violence Leaves?
 - context: "Procedures:\n1.\tA caregiver called to jury duty or receiving a subpoena\
     \ to be a witness shows the jury duty summons or subpoena to their core leader\
     \ as soon as possible, so that the core leader can make arrangements to accommodate\
@@ -97,19 +103,20 @@ seed_examples:
     \ core leaders as soon as possible.\n7.\tJury or witness service pay is coded\
     \ using the Jury Duty pay code in the timekeeping system."
   questions_and_answers:
-  - question: What if jury or witness service ends on any day in time to allow four
-      (4) or more hours of work in the caregiver's work schedule?
-    answer: If jury or witness service ends on any day in time to allow four (4) or
+  - answer: If jury or witness service ends on any day in time to allow four (4) or
       more hours of work in the caregiver's work schedule, the caregiver is expected
       to report to work.
-  - question: How is the Jury or witness service pay coded in St. Lorenzo Medical
-      Center facility?
-    answer: Jury or witness service pay is coded using the Jury Duty pay code in the
+    question: What if jury or witness service ends on any day in time to allow four
+      (4) or more hours of work in the caregiver's work schedule?
+  - answer: Jury or witness service pay is coded using the Jury Duty pay code in the
       timekeeping system.
-  - question: When can the caregiver or facility be excused or deferred from jury
-      duty in St. Lorenzo Medical Center facility?
-    answer: Either the facility or the caregiver may request to be excused or deferred
+    question: How is the Jury or witness service pay coded in St. Lorenzo Medical
+      Center facility?
+  - answer: Either the facility or the caregiver may request to be excused or deferred
       from jury duty if in the facility's judgment the caregiver's absence would create
       serious operational difficulties. Caregivers should contact the court to which
       they've been summoned for information about deferring or being excused from
       service.
+    question: When can the caregiver or facility be excused or deferred from jury
+      duty in St. Lorenzo Medical Center facility?
+version: 3

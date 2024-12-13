@@ -1,7 +1,13 @@
-domain: 'BPOD record to analyze: Prepare and Process Manual Journal Entry - 3PSP calculates
-  and 3PSP posts'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Prepare_and_Process_Manual_Journal_Entry-3PSP_calculates_and_3PSP_posts.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes the Preparation and Processing of Manual Journal Entry
   -- 3PSP calculates and 3PSP posts
+domain: 'BPOD record to analyze: Prepare and Process Manual Journal Entry - 3PSP calculates
+  and 3PSP posts'
 seed_examples:
 - context: "## 1.2 Business Context \n\n> The following types of entries are distinguished\
     \ depending on the process of their calculation and preparation:\n\na)  Automated\
@@ -34,33 +40,27 @@ seed_examples:
     \ reviewed by Client (the reviewer must have the proper authorization level as\
     \ per TOA),"
   questions_and_answers:
-  - question: What are the two types of journal entries based on the process of their
+  - answer: 'The two types of journal entries based on the process of their calculation
+      and preparation are: 1.  Automated: recognition, calculation, and posting are
+      initiated by the ERP system. 2.  Manual: recognition, calculation, and posting
+      are initiated by the Service Provider or by Client in the journal workflow tool.'
+    question: What are the two types of journal entries based on the process of their
       calculation and preparation?
-    answer: 'The two types of journal entries based on the process of their calculation
-      and preparation are:
-      1.  Automated: recognition, calculation, and posting are initiated by the ERP
-      system.
-      2.  Manual: recognition, calculation, and posting are initiated by the Service
-      Provider or by Client in the journal workflow tool.'
-  - question: What are the four main templates defined to standardize journal entries
+  - answer: 'The four main templates to standardize journal entries posting process
+      are: 1.  UL calculates and UL posts (Template 1): used for journal entries calculated,
+      prepared, and approved by Client. 2.  UL calculates and 3PSP posts (Template
+      2): used for journal entries calculated by Client, forwarded to Service Provider
+      to prepare the journal in the journal workflow tool, then approved by the initial
+      UL requestor and finally reviewed by Client. 3.  3PSP calculates and 3PSP posts
+      (Template 3): not mentioned in the provided text. 4.  3PSP calculates and UL
+      posts (Template 4): not mentioned in the provided text.'
+    question: What are the four main templates defined to standardize journal entries
       posting process?
-    answer: 'The four main templates to standardize journal entries posting process
-      are:
-      1.  UL calculates and UL posts (Template 1): used for journal entries calculated,
-      prepared, and approved by Client.
-      2.  UL calculates and 3PSP posts (Template 2): used for journal entries calculated
-      by Client, forwarded to Service Provider to prepare the journal in the journal
-      workflow tool, then approved by the initial UL requestor and finally reviewed
-      by Client.
-      3.  3PSP calculates and 3PSP posts (Template 3): not mentioned in the provided
-      text.
-      4.  3PSP calculates and UL posts (Template 4): not mentioned in the provided
-      text.'
-  - question: What is the difference between Judgmental and Non-Judgmental Journals?
-    answer: Judgmental Journals require business knowledge and judgment to ensure
+  - answer: Judgmental Journals require business knowledge and judgment to ensure
       that the amounts involved are correct, while Non-Judgmental Journals do not
       require detailed business knowledge and can be processed repeatedly without
       any judgment involved.
+    question: What is the difference between Judgmental and Non-Judgmental Journals?
 - context: "## 1.3 Organisation \n\n### 1.3.1 Roles and Responsibilities \n\n####\
     \  ORGANIZATION COUNTRY OR SUPPLY OPERATING IC OPS \n\n**CHAIN COMPANY CENTRE\
     \ HUB S^ERVICE^ P^ROVIDER^**\n\n**ROLE** Finance\n\nController Accountant Accountant\
@@ -81,18 +81,18 @@ seed_examples:
     \ knowledge 3 4\n\nAnalytical Skills 3 4\n\nLanguage skills 2 2\n\nLevels: 1:\
     \ Basic, 2: Intermediate, 3: Advanced, 4: Proficiency, 5: Master\n"
   questions_and_answers:
-  - question: What are the responsibilities of the Service Provider Approver in Manual
-      Journal Entry process?
-    answer: In Manual Journal Entry Process, the Service Provider Approver is responsible
+  - answer: In Manual Journal Entry Process, the Service Provider Approver is responsible
       for validating journal entry definition, rejecting journal entry definition,
       reviewing journal entry, and approving journal entry.
-  - question: What competencies are required for the Service Provider Accountant role?
-    answer: The Service Provider Accountant role requires ERP knowledge, computer
+    question: What are the responsibilities of the Service Provider Approver in Manual
+      Journal Entry process?
+  - answer: The Service Provider Accountant role requires ERP knowledge, computer
       skills, accounting knowledge, analytical skills, and language skills.
-  - question: What is the level of proficiency required in accounting knowledge for
-      the Service Provider Approver role?
-    answer: The level of proficiency required in accounting knowledge for the Service
+    question: What competencies are required for the Service Provider Accountant role?
+  - answer: The level of proficiency required in accounting knowledge for the Service
       Provider Approver role is 4 (Proficiency).
+    question: What is the level of proficiency required in accounting knowledge for
+      the Service Provider Approver role?
 - context: "## 1.5 Enablement \n\n### 1.5.1 Applications \n\n+-------------------------+-------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+------------------+\n\
     | > **APPLICATION**       | > **DETAILS**                                    \
     \                                                                 | **ROLE** \
@@ -196,8 +196,7 @@ seed_examples:
     \    | Service Provider Approver                              |              \
     \    |\n+-------------------------+-------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+------------------+"
   questions_and_answers:
-  - question: What applications are used in the manual journal entry process?
-    answer: 'The applications used in the manula journal entry process are:
+  - answer: 'The applications used in the manula journal entry process are:
 
 
       *   SAP: Enterprise Resource Planning
@@ -212,14 +211,15 @@ seed_examples:
 
       *   MS Excel: spreadsheet tool that includes calculation, graphing tools, pivot
       tables, and macro programming functionality'
-  - question: Who has access to the journal workflow tool?
-    answer: The Service Provider Accountant and Service Provider Approver have access
+    question: What applications are used in the manual journal entry process?
+  - answer: The Service Provider Accountant and Service Provider Approver have access
       to the journal workflow tool.
-  - question: ' What is the purpose of MS Excel in the journal entry process?'
-    answer: MS Excel is used as a spreadsheet tool that includes calculation, graphing
+    question: Who has access to the journal workflow tool?
+  - answer: MS Excel is used as a spreadsheet tool that includes calculation, graphing
       tools, pivot tables, and macro programming functionality, and is accessed by
       various stakeholders, including the Country or SCC Finance, Requestor, Country
       or SCC Controller, Service Provider Accountant, and Service Provider Approver.
+    question: ' What is the purpose of MS Excel in the journal entry process?'
 - context: "### 1.2.1 Trigger \n\n+--------------------------------------+----------------------------------------------------------------------------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+\n\
     | **TRIGGER**                          | **FREQUENCY**                       \
     \                                             | **DRIVEN BY**    | **DETAILS**\
@@ -314,16 +314,16 @@ seed_examples:
     \          Service Provider   Electronic   The Country Controller (or a person\
     \ delegated) reviews and confirms journal checklist on monthly basis."
   questions_and_answers:
-  - question: What triggers the process of posting a manual journal entry?
-    answer: The process of posting a manual journal entry is triggered by Period Close
+  - answer: The process of posting a manual journal entry is triggered by Period Close
       entries,  Reconciliations, Tax Reporting,   Variance Analysis etc.
-  - question: Who is responsible for preparing the Non-Judgmental Journal Entry List?
-    answer: ' The Service Provider Approver is responsible for preparing the Non-Judgmental
+    question: What triggers the process of posting a manual journal entry?
+  - answer: ' The Service Provider Approver is responsible for preparing the Non-Judgmental
       Journal Entry List at the beginning of every month.'
-  - question: What is the output of the manual journal entry process?
-    answer: The output of the manual journal entry process is a completed journal
+    question: Who is responsible for preparing the Non-Judgmental Journal Entry List?
+  - answer: The output of the manual journal entry process is a completed journal
       entry, which is posted completely, accurately, and timely in the closed period,
       and in case of accrual, is automatically reversed in the following period.
+    question: What is the output of the manual journal entry process?
 - context: '| 15 | Reverse Accruals in Following Period | No            | All manual
     accruals are posted with the reversal date and reversal reason. All accruals (other
     than VPA and Bonus accruals) need to be reversed in the following period. In the
@@ -385,9 +385,7 @@ seed_examples:
 
     '
   questions_and_answers:
-  - question: How does Service Provide Approver Validates Schedule of Journals for
-      Prepare and Process Manual Journal Entry - 3PSP calculates and 3PSP posts?
-    answer: "The Service Provider Approver maintains and confirms the NJJE list with\
+  - answer: "The Service Provider Approver maintains and confirms the NJJE list with\
       \ the Country and other Service Providers (if applicable) at the beginning of\
       \ each month and sends the completed list to OC for information. \nThe Service\
       \ Provider Approver is responsible for validating the journal and accrual entry\
@@ -398,12 +396,15 @@ seed_examples:
       \ Provider Accountant for corrections if rejected. The request is received,\
       \ validated and approved or rejected through BlackLine tool, which allows documenting\
       \ history tracking and automatic notification of relevant process parties.  "
-  - question: What happens if any adjustments are needed or if some entries were not
-      recorded during the validation of the schedule of journals?
-    answer: If any adjustments are needed or if some entries were not recorded, the
+    question: How does Service Provide Approver Validates Schedule of Journals for
+      Prepare and Process Manual Journal Entry - 3PSP calculates and 3PSP posts?
+  - answer: If any adjustments are needed or if some entries were not recorded, the
       Service Provider Approver sends a notification to the Service Provider Accountant
       with details of the adjustments to re-submit the corrected journal.
-  - question: What is the purpose of reversing accruals in the following period?
-    answer: The purpose of reversing accruals in the following period is to ensure
+    question: What happens if any adjustments are needed or if some entries were not
+      recorded during the validation of the schedule of journals?
+  - answer: The purpose of reversing accruals in the following period is to ensure
       that all accruals are properly reversed and to prevent any errors or discrepancies
       in the financial statements.
+    question: What is the purpose of reversing accruals in the following period?
+version: 3

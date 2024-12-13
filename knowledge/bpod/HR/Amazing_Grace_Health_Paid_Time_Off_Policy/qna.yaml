@@ -1,9 +1,15 @@
-domain: 'BPOD Human Resource: Amazing Grace Health_Paid Time Off Policy'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Amazing_Grace_Health_Paid_Time_Off_Policy.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: The  Amazing Grace Health Paid Time Off (PTO) policy is designed
   for all caregivers of the ministry who work the full-time equivalent of 50% or more
   (0.5 FTE), excluding those with specific time off plans related to their roles.
   The purpose of this policy is to provide paid time off for absences, allowing caregivers
   to maintain an appropriate work-life balance.
+domain: 'BPOD Human Resource: Amazing Grace Health_Paid Time Off Policy'
 seed_examples:
 - context: '**Amazing Grace Health (\"ministry\")**
 
@@ -31,21 +37,21 @@ seed_examples:
     **Purpose:** In keeping with our mission and values, the purpose of this policy
     is to describe the paid time off (PTO) program.'
   questions_and_answers:
-  - question: Who is the Amazing Grace Health Paid Time Off (PTO) Policy  applicable
-      to?
-    answer: Amazing Grace Health_Paid Time Off Policy is applicable to all caregivers
+  - answer: Amazing Grace Health_Paid Time Off Policy is applicable to all caregivers
       of the ministry who work the full-time equivalent of 50% or more (0.5 FTE),
       excluding caregivers covered by a time off plan specific to their role such
       as certain leadership roles, providers, and medical residents.
-  - question: When was the Amazing Grace Health Paid Time Off (PTO) Policy last reviewed
-      and revised?
-    answer: the Amazing Grace Health Paid Time Off (PTO) Policy was last reviewed
+    question: Who is the Amazing Grace Health Paid Time Off (PTO) Policy  applicable
+      to?
+  - answer: the Amazing Grace Health Paid Time Off (PTO) Policy was last reviewed
       and revised on August 25, 2023.
-  - question: What is the purpose of the Amazing Grace Health Paid Time Off (PTO)
-      Policy
-    answer: the purpose of the Amazing Grace Health Paid Time Off (PTO) Policy is
+    question: When was the Amazing Grace Health Paid Time Off (PTO) Policy last reviewed
+      and revised?
+  - answer: the purpose of the Amazing Grace Health Paid Time Off (PTO) Policy is
       to describe the paid time off program in keeping with the ministry's mission
       and values.
+    question: What is the purpose of the Amazing Grace Health Paid Time Off (PTO)
+      Policy
 - context: '**Policy:**
 
 
@@ -57,23 +63,23 @@ seed_examples:
     the need for and request of leave. PTO for absences from work are subject to the
     limits and conditions described below.'
   questions_and_answers:
-  - question: What types of absences from work are covered by the  Amazing Grace Health
-      Paid Time Off (PTO) Policy?
-    answer: The  Amazing Grace Health Paid Time Off (PTO) Policy covers absences from
+  - answer: The  Amazing Grace Health Paid Time Off (PTO) Policy covers absences from
       work for various reasons such as vacation, holidays, personal days, incidental
       sick time, or any other reason required by law.
-  - question: What is the intent of the  Amazing Grace Health Paid Time Off (PTO)
-      Policy at the ministry?
-    answer: The intent of the  Amazing Grace Health Paid Time Off (PTO) Policy is
+    question: What types of absences from work are covered by the  Amazing Grace Health
+      Paid Time Off (PTO) Policy?
+  - answer: The intent of the  Amazing Grace Health Paid Time Off (PTO) Policy is
       to allow caregivers to maintain an appropriate work-life balance by providing
       time off for various reasons such as vacation, holidays, personal days, incidental
       sick time, or any other reason required by law.
-  - question: How does the  Amazing Grace Health Paid Time Off (PTO) Policy apply
-      to communication with core leaders?
-    answer: The  Amazing Grace Health Paid Time Off (PTO) Policy does not replace
+    question: What is the intent of the  Amazing Grace Health Paid Time Off (PTO)
+      Policy at the ministry?
+  - answer: The  Amazing Grace Health Paid Time Off (PTO) Policy does not replace
       the need for caregivers to communicate with their core leaders regarding the
       need for and request of leave. Caregivers must still communicate with their
       core leaders about their absences from work.
+    question: How does the  Amazing Grace Health Paid Time Off (PTO) Policy apply
+      to communication with core leaders?
 - context: '**Requirements -- Paid Time Off (PTO):**
 
 
@@ -99,26 +105,26 @@ seed_examples:
     B.  **Exempt (Salaried) Caregivers.** Exempt full-time and part-time caregivers
     accrue PTO based on their assigned full-time equivalent (FTE).'
   questions_and_answers:
-  - question: How do caregivers accrue PTO hours at the ministry under the Amazing
-      Grace Health Paid Time Off (PTO) Policy?
-    answer: Under the Amazing Grace Health Paid Time Off (PTO) PolicyCaregivers accrue
+  - answer: Under the Amazing Grace Health Paid Time Off (PTO) PolicyCaregivers accrue
       PTO hours each pay period based on their length of service, starting from the
       date of eligibility. The accrual is added to their PTO balance on the last day
       of each pay period, and the balance is reduced each pay period for any PTO hours
       recorded.
-  - question: How is PTO accrual calculated for non-exempt (hourly) caregivers under
-      the Amazing Grace Health Paid Time Off (PTO) Policy?
-    answer: Under the Amazing Grace Health Paid Time Off (PTO) Policy, non-exempt
+    question: How do caregivers accrue PTO hours at the ministry under the Amazing
+      Grace Health Paid Time Off (PTO) Policy?
+  - answer: Under the Amazing Grace Health Paid Time Off (PTO) Policy, non-exempt
       caregivers earn PTO each pay period based on their actual hours worked in the
       previous two weeks. They will not earn PTO on any hours exceeding a 1.0 FTE
       status (40 hours per week).
-  - question: How is PTO accrual calculated for exempt (salaried) caregivers under
+    question: How is PTO accrual calculated for non-exempt (hourly) caregivers under
       the Amazing Grace Health Paid Time Off (PTO) Policy?
-    answer: Under the Amazing Grace Health Paid Time Off (PTO) Policy, exempt full-time
+  - answer: Under the Amazing Grace Health Paid Time Off (PTO) Policy, exempt full-time
       and part-time caregivers accrue PTO based on their assigned full-time equivalent
       (FTE). The specific rate of accrual is not mentioned, but it is mentioned that
       1/26th (or 1/27th if appropriate for the year) of the annual PTO hours is added
       to each caregiver's PTO balance on each subsequent pay period.
+    question: How is PTO accrual calculated for exempt (salaried) caregivers under
+      the Amazing Grace Health Paid Time Off (PTO) Policy?
 - context: '6. Paid Time Off in Connection with Short-Term Disability, Workers'' Compensation
     & Paid Parental Leave. PTO can be used to cover the waiting periods for both short-term
     disability and workers'' compensation leaves. PTO can also be used to supplement
@@ -136,24 +142,24 @@ seed_examples:
     with applicable policy. If accrued PTO is available, it must be used before unpaid
     time can be reported.'
   questions_and_answers:
-  - question: Can PTO be used to cover the waiting periods for short-term disability
+  - answer: Yes, PTO can be used to cover the waiting periods for both short-term
+      disability and workers' compensation leaves.
+    question: Can PTO be used to cover the waiting periods for short-term disability
       and workers' compensation leaves under  the Amazing Grace Health Paid Time Off
       (PTO) Policy ?
-    answer: Yes, PTO can be used to cover the waiting periods for both short-term
-      disability and workers' compensation leaves.
-  - question: Can PTO be used to supplement short-term disability, workers' compensation
-      benefits, or Paid Parental Leave under  the Amazing Grace Health Paid Time Off
-      (PTO) Policy?
-    answer: Yes, PTO can be used to supplement short-term disability, workers' compensation
+  - answer: Yes, PTO can be used to supplement short-term disability, workers' compensation
       benefits, or Paid Parental Leave to 100% of base pay for the life of the claim
       or until PTO is exhausted, but no longer than six months from the first date
       of disability.
-  - question: How does the Reemployment policy affect  the Amazing Grace Health Paid
-      Time Off (PTO) Policy  accrual rates for caregivers who have worked at other
-      ministries?
-    answer: For purposes of  the Amazing Grace Health Paid Time Off (PTO) Policy  accrual
+    question: Can PTO be used to supplement short-term disability, workers' compensation
+      benefits, or Paid Parental Leave under  the Amazing Grace Health Paid Time Off
+      (PTO) Policy?
+  - answer: For purposes of  the Amazing Grace Health Paid Time Off (PTO) Policy  accrual
       rates, caregivers will receive credit for length of service for time worked
       at other ministries in accordance with the Reemployment policy.
+    question: How does the Reemployment policy affect  the Amazing Grace Health Paid
+      Time Off (PTO) Policy  accrual rates for caregivers who have worked at other
+      ministries?
 - context: '> **Paid Time Off Accrual Rates (based on a full-time (1.0 FTE 40-hours
     a week) caregiver):**
 
@@ -256,9 +262,7 @@ seed_examples:
 
     > \*The number of equivalent days is based on an 8-hour shift.'
   questions_and_answers:
-  - question: How does the PTO accrual rate change based on the years of service for
-      non-exempt caregivers under the Amazing Grace Health Paid Time Off (PTO) Policy?
-    answer: Under the Amazing Grace Health Paid Time Off (PTO) Policy, for non-exempt
+  - answer: Under the Amazing Grace Health Paid Time Off (PTO) Policy, for non-exempt
       caregivers, the PTO accrual rate increases as the years of service increase.
       For caregivers with less than 3 years of service, they accrue 200 hours per
       year, which is equivalent to 25 days or 7.69 hours per pay period. For those
@@ -270,9 +274,9 @@ seed_examples:
       10.15 hours per pay period. For those with 15 or more years of service, they
       accrue 280 hours per year, which is equivalent to 35 days or 10.77 hours per
       pay period.
-  - question: How does the PTO accrual rate change based on the years of service for
-      exempt caregivers under the Amazing Grace Health Paid Time Off (PTO) Policy?
-    answer: Under the Amazing Grace Health Paid Time Off (PTO) Policy, for exempt
+    question: How does the PTO accrual rate change based on the years of service for
+      non-exempt caregivers under the Amazing Grace Health Paid Time Off (PTO) Policy?
+  - answer: Under the Amazing Grace Health Paid Time Off (PTO) Policy, for exempt
       caregivers, the PTO accrual rate also increases as the years of service increase.
       For caregivers with less than 3 years of service, they accrue 224 hours per
       year, which is equivalent to 30 days or 9.23 hours per pay period. For those
@@ -284,10 +288,9 @@ seed_examples:
       days or 10.77 hours per pay period. For those with 15 or more years of service,
       they also accrue 280 hours per year, which is equivalent to 35 days or 10.77
       hours per pay period.
-  - question: What is the maximum PTO balance for non-exempt and exempt caregivers
-      with different years of service under the Amazing Grace Health Paid Time Off
-      (PTO) Policy?
-    answer: 'under  the Amazing Grace Health Paid Time Off (PTO) Policy, the maximum
+    question: How does the PTO accrual rate change based on the years of service for
+      exempt caregivers under the Amazing Grace Health Paid Time Off (PTO) Policy?
+  - answer: 'under  the Amazing Grace Health Paid Time Off (PTO) Policy, the maximum
       PTO balance for non-exempt caregivers is 336 hours or 30 days with less than
       3 years of service, 360 hours or 33 days with 3 to less than 5 years of service,
       396 hours or 35 days with 5 to less than 10 years of service, 420 hours or 35
@@ -300,3 +303,7 @@ seed_examples:
       of service, 396 hours or 35 days with 5 to less than 10 years of service, 420
       hours or 35 days with 10 to less than 15 years of service, and 420 hours or
       35 days with 15 or more years of service.'
+    question: What is the maximum PTO balance for non-exempt and exempt caregivers
+      with different years of service under the Amazing Grace Health Paid Time Off
+      (PTO) Policy?
+version: 3

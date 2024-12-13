@@ -1,6 +1,12 @@
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Faith_Health_Paid_Sick_and_Safe_Leave_for_Caregivers_in_New_Mexico_Policy.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
+document_outline: Describes Paid Sick and Safe Leave for Caregivers in New Mexico
 domain: 'BPOD Human Resource: Faith Health_Paid Sick and Safe Leave for Caregivers
   in New Mexico Policy'
-document_outline: Describes Paid Sick and Safe Leave for Caregivers in New Mexico
 seed_examples:
 - context: "2.\tQualifying Reasons to Use Paid Sick and Safe Leave. Eligible caregivers\
     \ may use their available paid sick and safe leave any of for the following reasons:\n\
@@ -31,17 +37,15 @@ seed_examples:
     \ and safe leave benefit for a reason other than a qualifying reason may be subject\
     \ to corrective action, up to and including termination."
   questions_and_answers:
-  - question: What are the Qualifying Reasons to Use Paid Sick and Safe Leave?
-    answer: "Eligible caregivers may use their available paid sick and safe leave\
+  - answer: "Eligible caregivers may use their available paid sick and safe leave\
       \ any of for the following reasons:\nA.\tCaregiver's health condition\nB.\t\
       Covered family member's health condition\nC.\tDomestic abuse, sexual assault\
       \ or stalking\nD.\tParental involvement in school and childcare meetings\nE.\t\
       Any caregiver who uses the paid sick and safe leave benefit for a reason other\
       \ than a qualifying reason may be subject to corrective action, up to and including\
       \ termination."
-  - question: What family members are covered in policy Paid Sick and Safe Leave for
-      Caregivers in New Mexico?
-    answer: "Mental or physical illness, injury, or health condition, need for diagnosis,\
+    question: What are the Qualifying Reasons to Use Paid Sick and Safe Leave?
+  - answer: "Mental or physical illness, injury, or health condition, need for diagnosis,\
       \ care, treatment, or preventative care (such as routine physical examinations,\
       \ screenings, etc.) of a covered family member. Covered family members include:\n\
       1.\tSpouse or domestic partner\n2.\tChild (including any person related to a\
@@ -54,13 +58,15 @@ seed_examples:
       \ partner of a family member)\n7.\tIndividual whose close association with the\
       \ caregiver or the caregiver's spouse or domestic partner is the equivalent\
       \ of a family relationship."
-  - question: Why are the absences needed for Domestic abuse, sexual assault or stalking?
-    answer: "For absences necessary due to domestic abuse, sexual assault, or stalking\
+    question: What family members are covered in policy Paid Sick and Safe Leave for
+      Caregivers in New Mexico?
+  - answer: "For absences necessary due to domestic abuse, sexual assault, or stalking\
       \ suffered by the caregiver or a member of the caregiver's family, to:\n1.\t\
       Obtain medical or psychological treatment or counseling\n2.\tRelocate\n3.\t\
       Prepare for or participate in related civil or criminal legal proceedings 4.\
       \ Obtain shelter or other services from a victim services organization,\n5.\
       \ Assist a family member with any of the above activities."
+    question: Why are the absences needed for Domestic abuse, sexual assault or stalking?
 - context: "3.\tRequesting Paid Sick and Safe Leave: Caregivers requesting time off\
     \ under this policy should provide reasonable notice to their core leader and\
     \ as soon as practicable when use of time off under this policy is not foreseeable.\
@@ -80,19 +86,19 @@ seed_examples:
     \ of caregivers and their core leaders to code paid sick and safe time on caregiver\
     \ time cards, in accordance with current time off request practices."
   questions_and_answers:
-  - question: How much time notice is needed for foreseeable absences while requesting
-      Paid Sick and Safe Leave?
-    answer: For foreseeable absences (e.g., scheduled medical appointments, scheduled
+  - answer: For foreseeable absences (e.g., scheduled medical appointments, scheduled
       court dates), caregivers are required to give reasonable advance notice, and
       are generally advised to give at least ten calendar days' notice.
-  - question: When should the caregiver be required to provide appropriate documentation
-      when Requesting Paid Sick and Safe Leave?
-    answer: A caregiver taking more than three consecutive scheduled workdays of leave
+    question: How much time notice is needed for foreseeable absences while requesting
+      Paid Sick and Safe Leave?
+  - answer: A caregiver taking more than three consecutive scheduled workdays of leave
       may be required to provide appropriate documentation in support of the need
       for leave.
-  - question: Is there any minimum increment for Paid sick and safe leave ?
-    answer: Paid sick and safe leave may be taken any amount of time (there are no
+    question: When should the caregiver be required to provide appropriate documentation
+      when Requesting Paid Sick and Safe Leave?
+  - answer: Paid sick and safe leave may be taken any amount of time (there are no
       minimum increments).
+    question: Is there any minimum increment for Paid sick and safe leave ?
 - context: "5.\tTermination of Employment and Rehires: Paid sick and safe leave will\
     \ not be paid out upon termination of employment, regardless of the reason for\
     \ separation. Caregivers who are rehired within one year (12 months) of separation\
@@ -112,14 +118,12 @@ seed_examples:
     \ its discretion and as permitted or required by law and will attempt to provide\
     \ advance notice to caregivers of such changes."
   questions_and_answers:
-  - question: What is the policy of Paid sick and safe for terminated employee?
-    answer: Paid sick and safe leave will not be paid out upon termination of employment,
+  - answer: Paid sick and safe leave will not be paid out upon termination of employment,
       regardless of the reason for separation. Caregivers who are rehired within one
       year (12 months) of separation will have their accrued paid sick and safe leave
       balance restored.
-  - question: What happens to the paid sick and safe leave benefits  when there is
-      Change in Eligibility Status from non-PTO-eligible to PTO eligible?
-    answer: "Upon a caregiver's change in status from non-PTO-eligible to PTO eligible:\n\
+    question: What is the policy of Paid sick and safe for terminated employee?
+  - answer: "Upon a caregiver's change in status from non-PTO-eligible to PTO eligible:\n\
       A.\tCaregivers will maintain their accrued paid sick and safe leave benefits\
       \ in their paid sick and safe leave bank under this policy but will cease to\
       \ accrue additional hours in this bank.\nB.\tCaregivers who take a benefits-eligible\
@@ -129,10 +133,12 @@ seed_examples:
       \ their paid sick and safe leave bank accrued under this policy before using\
       \ any type of paid time off (see examples below) for paid sick and safe leave\
       \ qualifying purposes."
-  - question: Can there be retaliation against caregivers who request or take paid
-      sick and safe time?
-    answer: Retaliation against caregivers who request or take paid sick and safe
+    question: What happens to the paid sick and safe leave benefits  when there is
+      Change in Eligibility Status from non-PTO-eligible to PTO eligible?
+  - answer: Retaliation against caregivers who request or take paid sick and safe
       time is prohibited.
+    question: Can there be retaliation against caregivers who request or take paid
+      sick and safe time?
 - context: 'Department: Human Resources
 
     Approved by: Chief Human Resources Officer
@@ -154,21 +160,21 @@ seed_examples:
     in accordance with applicable law, and to inform PTO-eligible caregivers about
     usage requirements.'
   questions_and_answers:
-  - question: Who are eligible for Paid Sick and Safe Leave policy in New Mexico?
-    answer: All caregivers are eligible for Paid Sick and Safe Leave policy in New
+  - answer: All caregivers are eligible for Paid Sick and Safe Leave policy in New
       Mexico
-  - question: What is the purpose of the policy Paid Sick and Safe Leave for Caregivers
-      in New Mexico?
-    answer: The purpose is to provide non-PTO-eligible caregivers with paid time off
+    question: Who are eligible for Paid Sick and Safe Leave policy in New Mexico?
+  - answer: The purpose is to provide non-PTO-eligible caregivers with paid time off
       for their own health condition, the health condition of a family member, the
       need to attend school or childcare meeting due a child's health or disability,
       and matters relating to their own or a family member's domestic abuse, sexual
       assault, or stalking, in accordance with applicable law, and to inform PTO-eligible
       caregivers about usage requirements.
-  - question: Is the policy Paid Sick and Safe Leave for Caregivers in New Mexico
-      applicable for non-PTO-eligible caregivers?
-    answer: Yes, the policy Paid Sick and Safe Leave for Caregivers in New Mexico
+    question: What is the purpose of the policy Paid Sick and Safe Leave for Caregivers
+      in New Mexico?
+  - answer: Yes, the policy Paid Sick and Safe Leave for Caregivers in New Mexico
       is applicable for non-PTO-eligible caregivers.
+    question: Is the policy Paid Sick and Safe Leave for Caregivers in New Mexico
+      applicable for non-PTO-eligible caregivers?
 - context: "Policy: Non-PTO eligible caregivers accrue paid time off for either planned\
     \ or unplanned absences that may be used for the qualifying reasons specified\
     \ below. This policy also provides information for PTO-eligible caregivers about\
@@ -183,22 +189,23 @@ seed_examples:
     \ Up to 64 hours of unused sick and safe time can be carried over from one calendar\
     \ year to the next. However, the caregiver can use no more than 64 hours per year."
   questions_and_answers:
-  - question: Briefly descrie the policy Paid Sick and Safe Leave for Caregivers in
-      New Mexico.
-    answer: Non-PTO eligible caregivers accrue paid time off for either planned or
+  - answer: Non-PTO eligible caregivers accrue paid time off for either planned or
       unplanned absences that may be used for the qualifying reasons specified below.
       This policy also provides information for PTO-eligible caregivers about usage
       requirements for the paid sick and safe time they have accrued. Accruals for
       PTO eligible caregivers are addressed in a separate policy applicable to those
       caregivers, which satisfies the state's paid sick leave requirements.
-  - question: What is the timing of Paid Sick and Safe Time Accrual?
-    answer: Non-PTO eligible caregivers begin accruing paid sick and safe leave on
+    question: Briefly descrie the policy Paid Sick and Safe Leave for Caregivers in
+      New Mexico.
+  - answer: Non-PTO eligible caregivers begin accruing paid sick and safe leave on
       the date of hire. Paid sick and safe leave is available for use as soon as it
       is accrued.
-  - question: How much paid sick and safe leave is allowed to the Non-PTO eligible
-      caregivers?
-    answer: Non-PTO eligible caregivers accrue one hour of paid sick and safe leave
+    question: What is the timing of Paid Sick and Safe Time Accrual?
+  - answer: Non-PTO eligible caregivers accrue one hour of paid sick and safe leave
       per 30 hours worked (or .025 hours per hour worked) and may use a maximum of
       64 hours per calendar year. Up to 64 hours of unused sick and safe time can
       be carried over from one calendar year to the next. However, the caregiver can
       use no more than 64 hours per year.
+    question: How much paid sick and safe leave is allowed to the Non-PTO eligible
+      caregivers?
+version: 3

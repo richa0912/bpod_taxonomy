@@ -1,7 +1,13 @@
-domain: 'BPOD Record to Analyze: R2R_GA_Journal Entry Process-Journal TRAX-additional
-  process activities_Transmit Journal TRAXWDx Bx_2022_V1.0.doc'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - R2R_GA_Journal_Entry_Process-Journal_TRAX-Transmit_Journal_TRAXWDx.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how IBM Delivery Centre will prepare Journal  Process
   TRAX_-additional process activities_Transmit Journal
+domain: 'BPOD Record to Analyze: R2R_GA_Journal Entry Process-Journal TRAX-additional
+  process activities_Transmit Journal TRAXWDx Bx_2022_V1.0.doc'
 seed_examples:
 - context: "Control Points\n  **Sub process Activity**       **Sub process Activity\
     \ Description**   **Control Objective(s)**                                   \
@@ -14,16 +20,16 @@ seed_examples:
     \ should be done between 8.15AM-8.30PM EST first three weeks and last weeks of\
     \ the month transmitted after 5.00PM EST Daily Email"
   questions_and_answers:
-  - question: What is the Control Objective for "Journal  TRAX?
-    answer: Control Objective- To post all batches in Journal TRAX and validate the
+  - answer: Control Objective- To post all batches in Journal TRAX and validate the
       total amount
-  - question: What is the Control Activity for "Journal  TRAX?
-    answer: The Control Activity for Journal TRAX is " All batches should transmit
+    question: What is the Control Objective for "Journal  TRAX?
+  - answer: The Control Activity for Journal TRAX is " All batches should transmit
       in Journal TRAX file"
-  - question: What are the Control Risk assertions for Journal TRAX?
-    answer: The Risk assertions for Journal TRAX is as given below:--The transmission
+    question: What is the Control Activity for "Journal  TRAX?
+  - answer: The Risk assertions for Journal TRAX is as given below:--The transmission
       should be done between 8.15AM-8.30PM EST first three weeks and last weeks of
       the month transmitted after 5.00PM EST
+    question: What are the Control Risk assertions for Journal TRAX?
 - context: 'Definitions
 
     The following are definitions of acronyms used in this document:
@@ -34,14 +40,14 @@ seed_examples:
 
     MBS Marketing bypass system EST Eastern Time Zone GL General Ledger'
   questions_and_answers:
-  - question: What is the abbreivation of MBS in Journal TRAX process document?
-    answer: The abbreivation of MBS in Journal TRAX process document means" Marketing
+  - answer: The abbreivation of MBS in Journal TRAX process document means" Marketing
       Bypass System"
-  - question: What is the abbreivation of  EST used in Journal TRAX process document?
-    answer: The abbreivation of EST  in Journal TRAX process document is "Eastern
+    question: What is the abbreivation of MBS in Journal TRAX process document?
+  - answer: The abbreivation of EST  in Journal TRAX process document is "Eastern
       Time Zone"
-  - question: What is the abbreivation of  GL used in Journal TRAX process document?
-    answer: The abbreivation of GL in Journal TRAX process document is General Ledger
+    question: What is the abbreivation of  EST used in Journal TRAX process document?
+  - answer: The abbreivation of GL in Journal TRAX process document is General Ledger
+    question: What is the abbreivation of  GL used in Journal TRAX process document?
 - context: 'Inputs & Outputs
 
     +----------------------+--------------+ | Input | From | +----------------------+--------------+
@@ -51,13 +57,13 @@ seed_examples:
     +--------------------------------+----------------+ | Output | To | +--------------------------------+----------------+
     | > Transmit the Journal Batches | > Journal TRAX | +--------------------------------+----------------+'
   questions_and_answers:
-  - question: What is the input for Journal Process TRAX ?
-    answer: The input for Journal TRAX Journal Process is vide Email notification
-  - question: What is the Output for Journal Process TRAX?
-    answer: The Output of Journal Process TRAX is toTransmit the Journals in batches
-  - question: From which generic email do we receive inputs for Journal Process TRAX
+  - answer: The input for Journal TRAX Journal Process is vide Email notification
+    question: What is the input for Journal Process TRAX ?
+  - answer: The Output of Journal Process TRAX is toTransmit the Journals in batches
+    question: What is the Output for Journal Process TRAX?
+  - answer: The inputs for Journal Process TRAX are received via DL AMS_NFC
+    question: From which generic email do we receive inputs for Journal Process TRAX
       ?
-    answer: The inputs for Journal Process TRAX are received via DL AMS_NFC
 - context: 'Overview
 
     Objective(s)
@@ -86,19 +92,19 @@ seed_examples:
 
     Journal TRAX Access Database'
   questions_and_answers:
-  - question: What is the objective of Journal  Process TRAX?
-    answer: The objective/ purpose of this process is to transmit journal entries
+  - answer: The objective/ purpose of this process is to transmit journal entries
       processed in Journal TRAX
-  - question: What is the frequency of Journal  Process TRAX ?
-    answer: 'The frequency of Journal Process TRAX  is- it is a
+    question: What is the objective of Journal  Process TRAX?
+  - answer: 'The frequency of Journal Process TRAX  is- it is a
 
       Daily Activity- US and CAN journal activity.'
-  - question: Whar are the system accesses required in "Journal  Process TRAX ?
-    answer: 'System accesses required for Journal Process TRAX is as follows-
+    question: What is the frequency of Journal  Process TRAX ?
+  - answer: 'System accesses required for Journal Process TRAX is as follows-
 
       1) Journal TRAX
 
       2) Journal TRAX Access Database'
+    question: Whar are the system accesses required in "Journal  Process TRAX ?
 - context: "Process Description\n\nEmail request will be received to the mailbox from\
     \ DL AMS_NFC (Generic mail ID).\n\nIn case do not receive the confirmation e-mail\
     \ from DL AMS_NFC, Then need to file a Service Desk Ticket. Login to NAC Service\
@@ -139,16 +145,17 @@ seed_examples:
     \ Client Manager (Kimberly Loffler)  to confirm all weeks batches are posted and\
     \ completed."
   questions_and_answers:
-  - question: If confirmation e-mail request for Journal TRAX is not received, where
-      do we need to raise a Helpdesk ticket?
-    answer: In case, if we do not receive the confirmation e-mail from DL AMS_NFC,
+  - answer: In case, if we do not receive the confirmation e-mail from DL AMS_NFC,
       then we need to file a Service Desk Ticket. Login to NAC Service Portai- NAC
       Service portal link.
-  - question: What is the name of the "Generic Email request mailbox" for Journal
+    question: If confirmation e-mail request for Journal TRAX is not received, where
+      do we need to raise a Helpdesk ticket?
+  - answer: The Generic Email request mailbox for Journal TRAX  is DL AMS_NFC
+    question: What is the name of the "Generic Email request mailbox" for Journal
       TRAX?
-    answer: The Generic Email request mailbox for Journal TRAX  is DL AMS_NFC
-  - question: To whom should an email be sent to confirm all Journals TRAX weekly
-      batches are posted and completed?
-    answer: After the last workday  an email to Uttaman Shine and copy General Accounting
+  - answer: After the last workday  an email to Uttaman Shine and copy General Accounting
       Client Manager (Kimberly Loffler)  to confirm all weeks batches are posted and
       completed w.r.t Journal TRAX
+    question: To whom should an email be sent to confirm all Journals TRAX weekly
+      batches are posted and completed?
+version: 3

@@ -1,10 +1,16 @@
-domain: 'BPOD Human Resource: Amazing Grace Health_Jury Duty Witness Duty Policy'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Amazing_Grace_Health_Jury_Duty_Witness_Duty_Policy.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: The jury duty/witness duty policy encourages caregivers to serve
   on a jury or appear as a witness in court when called. Eligible caregivers will
   receive their base rate of pay for scheduled work days missed up to 40 hours per
   week, provided appropriate and timely notification is made. The policy does not
   deduct jury duty or witness duty time off from PTO accrual and records such usage
   in the timekeeping system.
+domain: 'BPOD Human Resource: Amazing Grace Health_Jury Duty Witness Duty Policy'
 seed_examples:
 - context: '> **Amazing Grace Health (\"ministry\")**
 
@@ -36,18 +42,18 @@ seed_examples:
 
     > **Scope:** All benefits-eligible caregivers'
   questions_and_answers:
-  - question: Who is the Amazing Grace Health Jury duty/witness duty policy applicable
-      to?
-    answer: The Amazing Grace Health Jury duty/witness duty policy is applicable to
+  - answer: The Amazing Grace Health Jury duty/witness duty policy is applicable to
       all benefits-eligible caregivers.
-  - question: When was the Amazing Grace Health Jury duty/witness duty policy last
-      reviewed and revised?
-    answer: The Amazing Grace Health Jury duty/witness duty policy was last reviewed
+    question: Who is the Amazing Grace Health Jury duty/witness duty policy applicable
+      to?
+  - answer: The Amazing Grace Health Jury duty/witness duty policy was last reviewed
       and revised on March 8, 2023.
-  - question: When was the the Amazing Grace Health Jury duty/witness duty policy
-      adopted?
-    answer: The the Amazing Grace Health Jury duty/witness duty policy was adopted
+    question: When was the Amazing Grace Health Jury duty/witness duty policy last
+      reviewed and revised?
+  - answer: The the Amazing Grace Health Jury duty/witness duty policy was adopted
       on February 16, 2018.
+    question: When was the the Amazing Grace Health Jury duty/witness duty policy
+      adopted?
 - context: '> **Policy Name:** Jury Duty/Witness Duty
 
     >
@@ -62,24 +68,24 @@ seed_examples:
     or being called as a witness and, as such, provides income replacement to eligible
     caregivers.'
   questions_and_answers:
-  - question: what is the purpose of the Amazing Grace Health Jury duty/witness duty
-      policy
-    answer: The purpose of the Amazing Grace Health Jury duty/witness duty policy
+  - answer: The purpose of the Amazing Grace Health Jury duty/witness duty policy
       is to express the ministry's mission and values by respecting each person as
       an inherently valuable member of the human community and recognizing the importance
       of serving on a jury or being called as a witness. The policy provides income
       replacement to eligible caregivers.
-  - question: What does the Amazing Grace Health Jury Duty/ Witness duty policy provide
-      to eligible caregivers?
-    answer: The Amazing Grace Health Jury Duty/ Witness duty policy provides income
+    question: what is the purpose of the Amazing Grace Health Jury duty/witness duty
+      policy
+  - answer: The Amazing Grace Health Jury Duty/ Witness duty policy provides income
       replacement to eligible caregivers who are serving on a jury or have been called
       as a witness.
-  - question: How does the Amazing Grace Health Jury Duty/ Witness duty policy reflect
-      the ministry's mission and values?
-    answer: The Amazing Grace Health Jury Duty/ Witness duty policy reflects the ministry's
+    question: What does the Amazing Grace Health Jury Duty/ Witness duty policy provide
+      to eligible caregivers?
+  - answer: The Amazing Grace Health Jury Duty/ Witness duty policy reflects the ministry's
       mission and values by respecting each person as an inherently valuable member
       of the human community and recognizing the importance of serving on a jury or
       being called as a witness.
+    question: How does the Amazing Grace Health Jury Duty/ Witness duty policy reflect
+      the ministry's mission and values?
 - context: '> **Policy:**
 
 
@@ -109,16 +115,17 @@ seed_examples:
     or covenant of employment. They are not promises of specific treatment in specific
     situations and are subject to change at the sole discretion of the ministry.'
   questions_and_answers:
-  - question: How much pay will caregivers receive for scheduled work days missed
-      due to Amazing Grace Health Jury Duty/ Witness duty policy?
-    answer: Caregivers will receive their base rate of pay for scheduled work days
+  - answer: Caregivers will receive their base rate of pay for scheduled work days
       missed up to 40 hours per week under Amazing Grace Health Jury Duty/ Witness
       duty policy.
-  - question: How will jury duty or witness duty time off usage be recorded under
-      Amazing Grace Health Jury Duty/ Witness duty policy?
-    answer: Jury duty or witness duty time off usage will be recorded in the timekeeping
+    question: How much pay will caregivers receive for scheduled work days missed
+      due to Amazing Grace Health Jury Duty/ Witness duty policy?
+  - answer: Jury duty or witness duty time off usage will be recorded in the timekeeping
       system under Amazing Grace Health Jury Duty/ Witness duty policy.
-  - question: Will jury duty or witness duty time off be deducted from PTO accrual
-      under Amazing Grace Health Jury Duty/ Witness duty policy?
-    answer: No, jury duty or witness duty time off will not be deducted from PTO accrual
+    question: How will jury duty or witness duty time off usage be recorded under
+      Amazing Grace Health Jury Duty/ Witness duty policy?
+  - answer: No, jury duty or witness duty time off will not be deducted from PTO accrual
       under Amazing Grace Health Jury Duty/ Witness duty policy.
+    question: Will jury duty or witness duty time off be deducted from PTO accrual
+      under Amazing Grace Health Jury Duty/ Witness duty policy?
+version: 3

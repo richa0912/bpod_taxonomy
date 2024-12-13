@@ -1,7 +1,13 @@
-domain: 'BPOD record to analyze: 5.1 GL Client UK Sub Leger close process'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - 5.1_GL_Client_UK_Sub_Leger_close_process.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes the procedure of how to restrict AP and AR team to park
   and post any transaction in Group Module for Ledger, VAT, Bank & Fixed assets in
   ERP.
+domain: 'BPOD record to analyze: 5.1 GL Client UK Sub Leger close process'
 seed_examples:
 - context: "# Control Points\n\n  **Control Point \\#**   **Control Point / Activity**\
     \                                                                            **Control\
@@ -17,21 +23,21 @@ seed_examples:
     \ for the month   If not closed timely can lead to inaccurate booking of the accruals\
     \   \n\n##  {#section .list-paragraph}\n\n## Process Measurements"
   questions_and_answers:
-  - question: What is the purpose of the Email Confirmation control point in GL Client
-      UK Subledger Close Process?
-    answer: The purpose of the Email Confirmation control point in GL Client UK Subledger
+  - answer: The purpose of the Email Confirmation control point in GL Client UK Subledger
       Close Process is to ensure that the sub-ledger is closed and that the accounting
       team can pull out the actuals for calculating the accruals for the month.
-  - question: In GL Client UK Subledger Close Process, what is the control objective
-      of the Email Confirmation control point?
-    answer: In GL Client UK Subledger Close Process, the control objective of the
+    question: What is the purpose of the Email Confirmation control point in GL Client
+      UK Subledger Close Process?
+  - answer: In GL Client UK Subledger Close Process, the control objective of the
       Email Confirmation control point is to confirm that the P2P/O2C team has finished
       making postings in the books.
-  - question: What is the control risk associated with the Email Confirmation control
-      point in GL Client UK Subledger Close Process?
-    answer: The control risk associated with the Email Confirmation control point
+    question: In GL Client UK Subledger Close Process, what is the control objective
+      of the Email Confirmation control point?
+  - answer: The control risk associated with the Email Confirmation control point
       in GL Client UK Subledger Close Proces is that if the sub-ledger is not closed
       timely, it can lead to inaccurate booking of the accruals.
+    question: What is the control risk associated with the Email Confirmation control
+      point in GL Client UK Subledger Close Process?
 - context: "# Document Information\n\n## About this Document\n\nThis document describes\
     \ the procedure of how to restrict AP and AR team to park and post any transaction\
     \ in Group Module for Ledger, VAT, Bank & Fixed assets in ERP. This activity is\
@@ -46,16 +52,13 @@ seed_examples:
     \ ------------- ------------------ --------------------- ------------------\n\
     \  **Version number**   **Effective Date**   **Summary of Changes**   **Author**\
     \    **IBM Reviewer**   **Client Reviewer**   **GPO Approver**\n  1.0        \
-    \          04-07-2016           DTP Creation             N P   R K\
-    \          A K          A F\n  -------------------- --------------------\
-    \ ------------------------ ------------- ------------------ ---------------------\
-    \ ------------------\n\n## References\n\n**Session Name**- Monitor And Closure\
-    \ of Sub Ledgers\n\n**Trainer Name**- A K\n\n**Blue Work Live Link- [https://example.com\\\
-    #bpmn]{.ul}**\n\n"
+    \          04-07-2016           DTP Creation             N P   R K          A\
+    \ K          A F\n  -------------------- -------------------- ------------------------\
+    \ ------------- ------------------ --------------------- ------------------\n\n\
+    ## References\n\n**Session Name**- Monitor And Closure of Sub Ledgers\n\n**Trainer\
+    \ Name**- A K\n\n**Blue Work Live Link- [https://example.com\\#bpmn]{.ul}**\n\n"
   questions_and_answers:
-  - question: What are the legal entities for which GL Client UK Subledger Close process
-      needs to be performed?
-    answer: 'The legal entities for which GL Client UK Subledger Close process needs
+  - answer: 'The legal entities for which GL Client UK Subledger Close process needs
       to be performed are as follows.
 
 
@@ -70,14 +73,16 @@ seed_examples:
       *   GBGC-GTA HOLDCO Ltd
 
       *   GBGH-Client Holdings PLC'
-  - question: What is the deadline for completing GL Client UK Subledger Close process?
-    answer: The deadline for completing GL Client UK Subledger Close process is 10am
+    question: What are the legal entities for which GL Client UK Subledger Close process
+      needs to be performed?
+  - answer: The deadline for completing GL Client UK Subledger Close process is 10am
       in the morning of WD2 (workday 2) EU time, as per the timetable, after AP and
       AR have finished posting.
-  - question: Who is the intended audience for GL Client UK Subledger Close process
-      document?
-    answer: The intended audience for GL Client UK Subledger Close process document
+    question: What is the deadline for completing GL Client UK Subledger Close process?
+  - answer: The intended audience for GL Client UK Subledger Close process document
       are IBM R2R Accountant, CLIENT, and IBM Reviewer.
+    question: Who is the intended audience for GL Client UK Subledger Close process
+      document?
 - context: '# Overview
 
     ## Objectives of the Process
@@ -110,17 +115,17 @@ seed_examples:
 
     +----------------------------------------------------+------------------------+------------------------+'
   questions_and_answers:
-  - question: What is the Objective of GL Client UK Subledger Close Process?
-    answer: 'Objective of GL Client UK Subledger Close Process is to restrict the
+  - answer: 'Objective of GL Client UK Subledger Close Process is to restrict the
       access for AP and AR team to park and post any journal in the group module of
       ledger, VAT, Bank and Fixed assets in ERP. '
-  - question: What is the input required for GL Client UK Subledger Close Process?
-    answer: The input required for GL Client UK Subledger Close Process are the Required
+    question: What is the Objective of GL Client UK Subledger Close Process?
+  - answer: The input required for GL Client UK Subledger Close Process are the Required
       Parameters from AX, which are available on workday 1 (WD 1) End of Day (EOD)
       or WD 2 Morning by 10 AM.
-  - question: What is the output of GL Client UK Subledger Close Process?
-    answer: The output of GL Client UK Subledger Close Process is to restrict AP &
+    question: What is the input required for GL Client UK Subledger Close Process?
+  - answer: The output of GL Client UK Subledger Close Process is to restrict AP &
       AR team to book anything in ERP, which is sent to the IBM R2R Accountant.
+    question: What is the output of GL Client UK Subledger Close Process?
 - context: '## Step Description
 
     +------+---------------------------------------------------------------------------------+
@@ -212,23 +217,23 @@ seed_examples:
     related un-posted journal need to reach out to Lee Miller to get those un-posted
     journal posted or removed.'
   questions_and_answers:
-  - question: How can we identify USER ID of the person who has created the journal
-      in MS AX Dynamics?
-    answer: 'We can identify USER ID of the person who has created this journal by
+  - answer: 'We can identify USER ID of the person who has created this journal by
       veiwing ''Reported as ready by'' option. It shows the user id of the preparer
       of the journal. Also once you put mouse cursor over the user id it will reflect
       you the name of the person who has created the journal. '
-  - question: In MS AX Dynamics, what is the next step after navigating to General
-      Ledger Area under General Ledger Section ?
-    answer: In MS AX Dynamics, the next step after navigating to General Ledger Area
+    question: How can we identify USER ID of the person who has created the journal
+      in MS AX Dynamics?
+  - answer: In MS AX Dynamics, the next step after navigating to General Ledger Area
       under General Ledger Section is to click on 'Periods'.
-  - question: In MS AX Dynamics, how do you check the status of journals to ensure
-      that all AP and AR journals are posted?
-    answer: In MS AX Dynamics, to check the status of journals to ensure that all
+    question: In MS AX Dynamics, what is the next step after navigating to General
+      Ledger Area under General Ledger Section ?
+  - answer: In MS AX Dynamics, to check the status of journals to ensure that all
       AP and AR journals are posted, you need to click on 'General Journal' and then
       check if there are any outstanding journals for the period. If there are any
       outstanding journals, you need to follow up with the relevant parties and chase
       to post or delete.
+    question: In MS AX Dynamics, how do you check the status of journals to ensure
+      that all AP and AR journals are posted?
 - context: '+------+---------------------------------------------------------------------------------+
 
     | Step | Description                                                                     |
@@ -279,17 +284,15 @@ seed_examples:
     **[Note-:]{.ul}** The same procedure is to be followed for other legal entities
     as listed above based on the close calls and approval from local financial controller.'
   questions_and_answers:
-  - question: What is the purpose of Step 3 in GL Client UK Subledger Close process?
-    answer: The purpose of Step 3 in GL Client UK Subledger Close process is to restrict
+  - answer: The purpose of Step 3 in GL Client UK Subledger Close process is to restrict
       GL modules for AR & AP Team in ERP, in order to prevent them from booking anything
       in ERP for the particular period.
-  - question: In GL Client UK Subledger Close process, how do you restrict access
-      for AP and AR teams in the GL for the current month?
-    answer: In GL Client UK Subledger Close process, click on the 'Save' button to
+    question: What is the purpose of Step 3 in GL Client UK Subledger Close process?
+  - answer: In GL Client UK Subledger Close process, click on the 'Save' button to
       restrict AP and AR teams from posting any transactions into the GL.
-  - question: Describe the steps to restrict GL modules for AR & AP Team in ERP  in
-      GL Client UK Subledger Close process?
-    answer: 'The steps to restrict GL modules for AR & AP Team in ERP  in GL Client
+    question: In GL Client UK Subledger Close process, how do you restrict access
+      for AP and AR teams in the GL for the current month?
+  - answer: 'The steps to restrict GL modules for AR & AP Team in ERP  in GL Client
       UK Subledger Close process are listed below.
 
       1. Click on ''Periods'' in MS AX Dynamics. Another screen will open which shows
@@ -303,3 +306,6 @@ seed_examples:
       group Bank, User group Customer, User group Vendor and User group Fixed Assets.
 
       5. Click ''Save''.'
+    question: Describe the steps to restrict GL modules for AR & AP Team in ERP  in
+      GL Client UK Subledger Close process?
+version: 3

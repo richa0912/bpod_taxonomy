@@ -1,5 +1,11 @@
-domain: 'BPOD Human Resource: St Lorenzo Medical_Paid Time Off Policy'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - St_Lorenzo_Medical_Paid_Time_Off_Policy.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes the paid time off (PTO) program.
+domain: 'BPOD Human Resource: St Lorenzo Medical_Paid Time Off Policy'
 seed_examples:
 - context: "1.\tPaid Time Off (PTO) Accrual. Caregivers accrue PTO hours each pay\
     \ period based on length of service starting with the date of eligibility. Time\
@@ -17,18 +23,18 @@ seed_examples:
     \ Caregivers. Exempt full-time and part-time caregivers accrue PTO based on their\
     \ assigned full-time equivalent (FTE)."
   questions_and_answers:
-  - question: How does Non-exempt (Hourly) Caregivers accrue PTO?
-    answer: Non-exempt caregivers will earn PTO each pay period based on their actual
+  - answer: Non-exempt caregivers will earn PTO each pay period based on their actual
       hours worked in the previous two weeks. PTO will not be earned on any hours
       exceeding a 1.0 FTE status (40 hours per week).
-  - question: How does Exempt (Salaried) Caregivers accrue PTO?
-    answer: Exempt full-time and part-time caregivers accrue PTO based on their assigned
+    question: How does Non-exempt (Hourly) Caregivers accrue PTO?
+  - answer: Exempt full-time and part-time caregivers accrue PTO based on their assigned
       full-time equivalent (FTE).
-  - question: When is the PTO hours added to each caregiver's PTO balance?
-    answer: On each subsequent pay period, 1/26th (or 1/27th if appropriate for the
+    question: How does Exempt (Salaried) Caregivers accrue PTO?
+  - answer: On each subsequent pay period, 1/26th (or 1/27th if appropriate for the
       year) of the annual PTO hours, per the accrual schedule, will be added to each
       caregiver's PTO balance. This balance will be reduced each pay period for any
       PTO hours recorded.
+    question: When is the PTO hours added to each caregiver's PTO balance?
 - context: "4.\tPaid Time Off Cash Out. Accrued PTO will not be cashed out, except\
     \ upon termination (subject to Separation of Employment policy) or a status change\
     \ to less than .5 FTE.\n5.\tPaid Time Off Accrual Balances\nA.\tEach caregiver's\
@@ -42,19 +48,19 @@ seed_examples:
     \ stop when the maximum limit is reached. The caregiver's accrual will resume\
     \ when time off has been taken and the balance falls below the maximum."
   questions_and_answers:
-  - question: What is the policy for Paid Time Off Cash Out?
-    answer: Accrued PTO will not be cashed out, except upon termination (subject to
+  - answer: Accrued PTO will not be cashed out, except upon termination (subject to
       Separation of Employment policy) or a status change to less than .5 FTE.
-  - question: Where can caregiver see their cumulative PTO balance amount?
-    answer: Each caregiver's cumulative PTO balance will appear on the caregiver's
+    question: What is the policy for Paid Time Off Cash Out?
+  - answer: Each caregiver's cumulative PTO balance will appear on the caregiver's
       pay statement and is accessible through the timekeeping system. It is the responsibility
       of each caregiver to identify any potential discrepancy in the amount that appears
       on the pay statement and bring this to the attention of the Payroll Department
       as soon as possible.
-  - question: When does the PTO Accruals stop?
-    answer: Accruals will stop when the maximum limit is reached. The caregiver's
+    question: Where can caregiver see their cumulative PTO balance amount?
+  - answer: Accruals will stop when the maximum limit is reached. The caregiver's
       accrual will resume when time off has been taken and the balance falls below
       the maximum.
+    question: When does the PTO Accruals stop?
 - context: "6.\tPaid Time Off in Connection with Short-Term Disability, Workers' Compensation\
     \ & Paid Parental Leave. PTO can be used to cover the waiting periods for both\
     \ short-term disability and workers' compensation leaves. PTO can also be used\
@@ -69,24 +75,24 @@ seed_examples:
     \ applicable policy. If accrued PTO is available, it must be used before unpaid\
     \ time can be reported."
   questions_and_answers:
-  - question: What is the policy for Paid Time Off in Connection with Short-Term Disability,
-      Workers' Compensation & Paid Parental Leave?
-    answer: PTO can be used to cover the waiting periods for both short-term disability
+  - answer: PTO can be used to cover the waiting periods for both short-term disability
       and workers' compensation leaves. PTO can also be used to supplement short-term
       disability, workers' compensation benefits, or Paid Parental Leave to 100% of
       base pay for the life of the claim or until PTO is exhausted, but no longer
       than six months from the first date of disability (any PTO hours remaining will
       be available upon return to work or will be cashed out upon termination per
       policy).
-  - question: Will the caregivers receive credit for length of service for time worked
-      at other ministries?
-    answer: For purposes of PTO accrual rates, caregivers will receive credit for
+    question: What is the policy for Paid Time Off in Connection with Short-Term Disability,
+      Workers' Compensation & Paid Parental Leave?
+  - answer: For purposes of PTO accrual rates, caregivers will receive credit for
       length of service for time worked at other ministries in accordance with the
       Reemployment policy.
-  - question: How to use PTO for holiday observances?
-    answer: Caregivers are required to use PTO for holiday observances in accordance
+    question: Will the caregivers receive credit for length of service for time worked
+      at other ministries?
+  - answer: Caregivers are required to use PTO for holiday observances in accordance
       with applicable policy. If accrued PTO is available, it must be used before
       unpaid time can be reported.
+    question: How to use PTO for holiday observances?
 - context: "Paid Time Off Accrual Rates (based on a full-time (1.0 FTE 40-hours a\
     \ week) caregiver):\n\n+----------------------+------------------------+-------------------+------------------------+-------------------+\
     \ | Years of Service | Non-Exempt | | Exempt | | +======================+========================+===================+========================+===================+\
@@ -111,20 +117,20 @@ seed_examples:
     \ pay period) | | +----------------------+------------------------+-------------------+------------------------+-------------------+\n\
     \n    *The number of equivalent days is based on an 8-hour shift."
   questions_and_answers:
-  - question: What is the Annual PTO for non exempt employees with Less than 3 years
-      of service?
-    answer: The Annual PTO for non exempt employees with Less than 3 years of service
+  - answer: The Annual PTO for non exempt employees with Less than 3 years of service
       are 25 days (The number of equivalent days is based on an 8-hour shift.) or
       200 hours (7.69 per pay period)
-  - question: What is the Maximum PTO Balance for exempt employees with 5 to less
-      than 10 years of service?
-    answer: The Maximum PTO Balance for exempt employees with 5 to less than 10 years
+    question: What is the Annual PTO for non exempt employees with Less than 3 years
+      of service?
+  - answer: The Maximum PTO Balance for exempt employees with 5 to less than 10 years
       of service is 396 hours.
-  - question: How much is the Maximum PTO Balance for Non-Exempt and Exempt employees
-      with 10 to less than 15 years of service?
-    answer: For employees with 10 to less than 15 years of service. the Maximum PTO
+    question: What is the Maximum PTO Balance for exempt employees with 5 to less
+      than 10 years of service?
+  - answer: For employees with 10 to less than 15 years of service. the Maximum PTO
       Balance for Non-Exempt employees is 396 hours and for Exempt exmployees is 420
       hours.
+    question: How much is the Maximum PTO Balance for Non-Exempt and Exempt employees
+      with 10 to less than 15 years of service?
 - context: 'Policy Number: HR 501
 
     Policy Name: Paid Time Off (PTO)
@@ -145,16 +151,17 @@ seed_examples:
     not replace the need for caregivers to communicate with their core leaders regarding
     the need for and request of leave.'
   questions_and_answers:
-  - question: What is the policy number of Paid Time Off (PTO)?
-    answer: The policy number of Paid Time Off (PTO) is HR 501.
-  - question: Who are eligible for  Paid Time Off (PTO) policy?
-    answer: All caregivers of the facility who work the full-time equivalent of 50%
+  - answer: The policy number of Paid Time Off (PTO) is HR 501.
+    question: What is the policy number of Paid Time Off (PTO)?
+  - answer: All caregivers of the facility who work the full-time equivalent of 50%
       or more (0.5 FTE), except for caregivers covered by a time off plan specific
       to their role (such as certain leadership roles, providers and medical residents).
-  - question: What is the intent of PTO?
-    answer: The facility provides eligible caregivers the opportunity to accrue paid
+    question: Who are eligible for  Paid Time Off (PTO) policy?
+  - answer: The facility provides eligible caregivers the opportunity to accrue paid
       time off for absences. The intent of PTO is to allow caregivers to maintain
       appropriate work-life balance by providing time off for vacation, holidays,
       personal days and/or incidental sick time or any other reason required by law.
       The policy does not replace the need for caregivers to communicate with their
       core leaders regarding the need for and request of leave.
+    question: What is the intent of PTO?
+version: 3

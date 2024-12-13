@@ -1,7 +1,13 @@
-domain: 'BPOD order to cash: CC Reconciliation'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - CC_Reconciliation.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes the process involved in automatic (SWIFT) matching of
   incoming payments of consultants in SAP,  including Bank deposits, COD, CHEQUE,
   PAYU, and POS. Also includes processing of unmatched receipts in SAP.
+domain: 'BPOD order to cash: CC Reconciliation'
 seed_examples:
 - context: "# Control Points\n\n  **Control Point \\#**   **Control Point / Activity**\
     \                                                                            \
@@ -68,23 +74,23 @@ seed_examples:
     \ Measurement Reports \n\n> SLA's for Balance Sheet Reconciliation - Data Migration\
     \ will be added per contractual agreement."
   questions_and_answers:
-  - question: What are the control points for CC reconciliation process?
-    answer: "Following are the control points for CC reconciliation process.\n\n1.\
+  - answer: "Following are the control points for CC reconciliation process.\n\n1.\
       \ Ensuring that all bank files pertaining to the date are processed in SAP,\
       \ \n2. Processing all unmatched receipts, \n3. Allocating payments correctly,\
       \ \n4. Downloading the correct bank statement, \n5. Selecting the right movement,\
       \ and \n6. Correcting errors in SAP when performing return payments on demand\
       \ of the consultant."
-  - question: In CC reconciliation process, what is the purpose of allocating payments
-      in SAP?
-    answer: In CC reconciliation process, the purpose of allocating payments in SAP
+    question: What are the control points for CC reconciliation process?
+  - answer: In CC reconciliation process, the purpose of allocating payments in SAP
       is to rightly allocate the payments to the right consultant and to the right
       invoice.
-  - question: What is the risk associated with not downloading the correct bank statement
-      in CC reconciliation process?
-    answer: The risk associated with not downloading the correct bank statement in
+    question: In CC reconciliation process, what is the purpose of allocating payments
+      in SAP?
+  - answer: The risk associated with not downloading the correct bank statement in
       CC reconciliation process is that the data will not be matched and possible
       inaccuracies in the data.
+    question: What is the risk associated with not downloading the correct bank statement
+      in CC reconciliation process?
 - context: "# Document Information\n\n## About this Document\n\nThis document describes\
     \ the process involved in automatic (SWIFT) matching of incoming payments of consultants\
     \ in SAP, it includes --\n\n-   Bank deposits\_\n\n-   COD\n\n-   CHEQUE\n\n-\
@@ -99,15 +105,15 @@ seed_examples:
     \ raised to local finance for the same.\n\n## Who should use this Document?\n\n\
     > IBM OTC Team"
   questions_and_answers:
-  - question: What types of payments are included in the SWIFT matching process?
-    answer: The SWIFT matching process includes bank deposits, COD, cheque, PAY U,
+  - answer: The SWIFT matching process includes bank deposits, COD, cheque, PAY U,
       and POS.
-  - question: What are unmatched receipts in SAP?
-    answer: Unmatched receipts in SAP are transactions where the system is unable
+    question: What types of payments are included in the SWIFT matching process?
+  - answer: Unmatched receipts in SAP are transactions where the system is unable
       to match consultant details, such as consultant number, invoice number, name,
       and amount, with the details available in SAP.
-  - question: Who is the intended user of CC Reconciliation document?
-    answer: IBM OTC Team is the intended user of CC Reconciliation document.
+    question: What are unmatched receipts in SAP?
+  - answer: IBM OTC Team is the intended user of CC Reconciliation document.
+    question: Who is the intended user of CC Reconciliation document?
 - context: "# Overview\n\n## Objective(s)\n\n-   The objective of this process is\
     \ to ensure & check that automatic(SWIFT) matching of incoming payments of consultants\
     \ in SAP is happening & also process unmatched receipts for all SWIFT markets.\
@@ -119,16 +125,16 @@ seed_examples:
     \                          | To      |\n+-------------------------------------------+---------+\n\
     | -   Amount credited in consultant account | -   SAP |\n+-------------------------------------------+---------+"
   questions_and_answers:
-  - question: What is the objective of CC Reconciliation process?
-    answer: The objective of CC Reconciliation process is to ensure and check that
+  - answer: The objective of CC Reconciliation process is to ensure and check that
       automatic (SWIFT) matching of incoming payments of consultants in SAP is happening
       and also process unmatched receipts for all SWIFT markets.
-  - question: What are the inputs for CC Reconciliation process?
-    answer: The input for CC reconciliation process is incoming payment from consultants
+    question: What is the objective of CC Reconciliation process?
+  - answer: The input for CC reconciliation process is incoming payment from consultants
       received in the bank statement.
-  - question: Where are the outputs of CC reconciliation process sent?
-    answer: The outputs of CC reconciliation process, amount credited in consultant
+    question: What are the inputs for CC Reconciliation process?
+  - answer: The outputs of CC reconciliation process, amount credited in consultant
       account, is sent to SAP.
+    question: Where are the outputs of CC reconciliation process sent?
 - context: '# Roles & Responsibilities
 
 
@@ -171,20 +177,20 @@ seed_examples:
     related Aggregate SOD (A-SOD). ***\<SOD Matrix pending IBM GPS internal review
     and approval\>***'
   questions_and_answers:
-  - question: What is the responsibility of the IBM-O2C Accountant in CC reconciliation
-      process?
-    answer: In CC reconciliation process, the IBM-O2C Accountant is responsible for
+  - answer: In CC reconciliation process, the IBM-O2C Accountant is responsible for
       matching incoming payments of consultants in Orisales, processing unmatched
       receipts, and ensuring that incoming payments are duly transferred to Orisales.
-  - question: In CC reconciliation process, who is responsible for reviewing incoming
-      payments in Orisales and ensuring that incoming payments are duly transferred
-      to Orisales?
-    answer: In CC reconciliation process, the Team Lead is responsible for reviewing
+    question: What is the responsibility of the IBM-O2C Accountant in CC reconciliation
+      process?
+  - answer: In CC reconciliation process, the Team Lead is responsible for reviewing
       incoming payments in Orisales and ensuring that incoming payments are duly transferred
       to Orisales.
-  - question: What is the role of Segregation of Duties (SOD) Matrix in o2c process?
-    answer: The Segregation of Duties (SOD) Matrix is used for the SOD assessment
+    question: In CC reconciliation process, who is responsible for reviewing incoming
+      payments in Orisales and ensuring that incoming payments are duly transferred
+      to Orisales?
+  - answer: The Segregation of Duties (SOD) Matrix is used for the SOD assessment
       on conflicting tasks and accesses in the O2C process.
+    question: What is the role of Segregation of Duties (SOD) Matrix in o2c process?
 - context: "## Process Description\n\n+----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+---+\n\
     |                                                                            \
     \                                    | **Account Line Item Display AR View** screen\
@@ -330,19 +336,20 @@ seed_examples:
     \    **Balance Display: AR Accounts For the Ledger 0L** screen is displayed. \
     \   \n  -----------------------------------------------------------------------------\n"
   questions_and_answers:
-  - question: 'Which screen is displayed first in CC reconciliation process?
+  - answer: Account Line Item Display AR View' screen is displayed first in CC reconciliation
+      process.
+    question: 'Which screen is displayed first in CC reconciliation process?
 
       '
-    answer: Account Line Item Display AR View' screen is displayed first in CC reconciliation
-      process.
-  - question: What is the purpose of the "Filter criteria" screen in CC reconciliation
-      process?
-    answer: The purpose of the "Filter criteria" screen in CC reconciliation process
+  - answer: The purpose of the "Filter criteria" screen in CC reconciliation process
       is to set filter control.
-  - question: How can we open the 'Filter Criteria' screen in CC reconciliation process.
-    answer: 'Filter criteria screen in CC reconciliation process can be opened in
+    question: What is the purpose of the "Filter criteria" screen in CC reconciliation
+      process?
+  - answer: 'Filter criteria screen in CC reconciliation process can be opened in
       two ways.
 
       1. Click Set Filter (Ctrl+Shift+F2) on the menu.
 
       2. Press ''s'' key in the keyboard.'
+    question: How can we open the 'Filter Criteria' screen in CC reconciliation process.
+version: 3

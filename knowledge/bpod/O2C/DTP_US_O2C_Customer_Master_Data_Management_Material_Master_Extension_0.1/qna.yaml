@@ -1,7 +1,13 @@
-domain: 'BPOD order to cash: DTP US O2C Customer Master Data Management Material Master
-  Extension 0.1'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - DTP_US_O2C_Customer_Master_Data_Management_Material_Master_Extension_0.1.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: The steps followed for processing daily request received through
   SAP to extend materials to plants other than where it exists.
+domain: 'BPOD order to cash: DTP US O2C Customer Master Data Management Material Master
+  Extension 0.1'
 seed_examples:
 - context: '# Overview
 
@@ -39,15 +45,15 @@ seed_examples:
 
     +------------------------------------------------------+----------------+'
   questions_and_answers:
-  - question: What is the purpose of the material extension process?
-    answer: The objective of the material extension process is to extend an existing
+  - answer: The objective of the material extension process is to extend an existing
       material to a plant other than where it exists.
-  - question: What is the input needed for the material extension process?
-    answer: The input needed for the material extension process is a ZMAT received
+    question: What is the purpose of the material extension process?
+  - answer: The input needed for the material extension process is a ZMAT received
       through SAP with the required details updated on it.
-  - question: What is the expected output of the material extension process?
-    answer: The expected output of the material extension process is the material
+    question: What is the input needed for the material extension process?
+  - answer: The expected output of the material extension process is the material
       attached to a different requested plant, which will be communicated to the requesters.
+    question: What is the expected output of the material extension process?
 - context: '## Step Description for Extension Modifications for DIEN & NLAG
 
 
@@ -126,21 +132,21 @@ seed_examples:
 
     Now hit enter.'
   questions_and_answers:
-  - question: What is the purpose of the Material Master Request screen?
-    answer: The Material Master Request screen is used to check the details of the
+  - answer: The Material Master Request screen is used to check the details of the
       case and copy the Material Number to the plant.
-  - question: What is the significance of the Material Number in the Extension Modification
-      process?
-    answer: The Material Number is significant in the Extension Modification process
+    question: What is the purpose of the Material Master Request screen?
+  - answer: The Material Number is significant in the Extension Modification process
       because it needs to be copied to the plant field and used to populate the Industry
       Sector & Material Type in SAP. The material number also helps to identify the
       age of the material, with numbers starting with '155' indicating that it was
       made recently, while numbers starting with '127' indicate that it was made in
       2006-2007.
-  - question: Which SAP T-Code is used to make an Extension Modification for DIEN
-      & NLAG in SAP?
-    answer: SAP T-Code 'MM01' is used to make an Extension Modification for DIEN &
+    question: What is the significance of the Material Number in the Extension Modification
+      process?
+  - answer: SAP T-Code 'MM01' is used to make an Extension Modification for DIEN &
       NLAG in SAP.
+    question: Which SAP T-Code is used to make an Extension Modification for DIEN
+      & NLAG in SAP?
 - context: '## Step Description for Extension Modifications for HAWA
 
 
@@ -173,16 +179,16 @@ seed_examples:
     ''MRP'' tab, which is between ''Purchasing Order Text'' and ''Forecasting'' tab,
     is not to be selected.'
   questions_and_answers:
-  - question: What is the difference between HAWA and HALB?
-    answer: The main difference between HAWA and HALB is that HAWA does not have the
+  - answer: The main difference between HAWA and HALB is that HAWA does not have the
       tabs for the Costing screens, whereas HALB does.
-  - question: What is the modification step unique to HAWA materials?
-    answer: The modification step unique to HAWA materials is that the 'MRP' tab should
+    question: What is the difference between HAWA and HALB?
+  - answer: The modification step unique to HAWA materials is that the 'MRP' tab should
       not be selected, unlike in HALB materials.
-  - question: Which screen contains the case details in Extension modifications for
-      HAWA?
-    answer: Display Material Master Request' screen contains the case details in Extension
+    question: What is the modification step unique to HAWA materials?
+  - answer: Display Material Master Request' screen contains the case details in Extension
       modifications for HAWA.
+    question: Which screen contains the case details in Extension modifications for
+      HAWA?
 - context: '### Performing the Extension Modification for HIBE in SAP
 
 
@@ -286,19 +292,19 @@ seed_examples:
     Now go to the Decision Step in the Business Workflow. Click on the ''Process the
     Material request Form'' as highlighted below.'
   questions_and_answers:
-  - question: Which T-Code is used for Performing the Extension Modification for HIBE
-      in SAP?
-    answer: T-Code MM01 is used for Performing the Extension Modification for HIBE
+  - answer: T-Code MM01 is used for Performing the Extension Modification for HIBE
       in SAP.
-  - question: What is the purpose of the MRP 1 tab in the extension modification for
-      HIBE process?
-    answer: The MRP 1 tab in the extension modification for HIBE process is used to
+    question: Which T-Code is used for Performing the Extension Modification for HIBE
+      in SAP?
+  - answer: The MRP 1 tab in the extension modification for HIBE process is used to
       enter the MRP group, ABC indicator (only for cement material), and MRP controller
       values.
-  - question: What purchasing group should be selected for pipe plant in extension
-      modification for HIBE process?
-    answer: Purchasing group P01 should be selected for pipe plant in extension modification
+    question: What is the purpose of the MRP 1 tab in the extension modification for
+      HIBE process?
+  - answer: Purchasing group P01 should be selected for pipe plant in extension modification
       for HIBE process.
+    question: What purchasing group should be selected for pipe plant in extension
+      modification for HIBE process?
 - context: '### Performing the Extension Modification for Non-manufactured/manufactured
     HALB in SAP.
 
@@ -394,17 +400,18 @@ seed_examples:
     page as most of the information is set-up by default and there is no need for
     updating that information.'
   questions_and_answers:
-  - question: What is the transaction code to enter in SAP for extension modification
-      for Non-manufactured/manufactured HALB?
-    answer: The transaction code to enter in SAP for extension modification for Non-manufactured/manufactured
+  - answer: The transaction code to enter in SAP for extension modification for Non-manufactured/manufactured
       HALB is MM01.
-  - question: What is the Loading group and Availability check values that should
+    question: What is the transaction code to enter in SAP for extension modification
+      for Non-manufactured/manufactured HALB?
+  - answer: For extension modification for Non-manufactured/manufactured HALB in SAP,
+      the Loading group should be 0001 and Availability check should be 02.
+    question: What is the Loading group and Availability check values that should
       be used for extension modification for Non-manufactured/manufactured HALB in
       SAP?
-    answer: For extension modification for Non-manufactured/manufactured HALB in SAP,
-      the Loading group should be 0001 and Availability check should be 02.
-  - question: 'What values need to be selected in the organizational levels tab during
-      extension modification for Non-manufactured/manufactured HALB in SAP? '
-    answer: Value for both the plants where the material has to be copied to and from
+  - answer: Value for both the plants where the material has to be copied to and from
       in the organizational levels tab during extension modification for Non-manufactured/manufactured
       HALB in SAP.
+    question: 'What values need to be selected in the organizational levels tab during
+      extension modification for Non-manufactured/manufactured HALB in SAP? '
+version: 3

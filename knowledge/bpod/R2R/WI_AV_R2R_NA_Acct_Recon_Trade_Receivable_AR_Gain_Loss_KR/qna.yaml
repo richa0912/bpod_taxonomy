@@ -1,7 +1,13 @@
-domain: 'BPOD Record to Analyze: WI_AV_R2R_NA_Acct Recon_Trade Receivable_AR Gain
-  Loss_KR.docx'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - WI_AV_R2R_NA_Acct_Recon_Trade_Receivable_AR_Gain_Loss_KR.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how IBM Delivery Centre will understand the objective
   of AR gain/loss reconciliation
+domain: 'BPOD Record to Analyze: WI_AV_R2R_NA_Acct Recon_Trade Receivable_AR Gain
+  Loss_KR.docx'
 seed_examples:
 - context: 'ACTIVITIES:
 
@@ -115,14 +121,14 @@ seed_examples:
     24. Next go to BL to complete and submit the reconciliations. The process to prepare
     and submit the reconciliations in BL is covered separately in BL Master DTP.'
   questions_and_answers:
-  - question: What is the system used to submit Reconciliation?
-    answer: Blackline is used to complete and submit the reconciliation
-  - question: How many steps involved in the process of the  Reconciliation of AR
+  - answer: Blackline is used to complete and submit the reconciliation
+    question: What is the system used to submit Reconciliation?
+  - answer: Ther are 24 steps involved to complete and submit the reconciliation.
+    question: How many steps involved in the process of the  Reconciliation of AR
       gain/loss?
-    answer: Ther are 24 steps involved to complete and submit the reconciliation.
-  - question: Which DTP to refer to prepare and submit the reconciliation in BL?
-    answer: The process to prepare and submit the reconciliations in BL is covered
+  - answer: The process to prepare and submit the reconciliations in BL is covered
       separately in BL Master DTP.
+    question: Which DTP to refer to prepare and submit the reconciliation in BL?
 - context: 'REFERENCE:
 
 
@@ -137,23 +143,23 @@ seed_examples:
 
     Work list input:'
   questions_and_answers:
-  - question: What is the list of country code in scope for Reconiliation of AR gain/loss?
-    answer: Refer List of company codes in scope:Entity Name Company Code name Account
+  - answer: Refer List of company codes in scope:Entity Name Company Code name Account
       Group & Description GL Account number System
-  - question: Which GL account number is to consider for Reconciliation of AR Gain/loss?
-    answer: This WI is prepared to reconcile for AR Gain or Loss for GL 11025 and
+    question: What is the list of country code in scope for Reconiliation of AR gain/loss?
+  - answer: This WI is prepared to reconcile for AR Gain or Loss for GL 11025 and
       31816
-  - question: What  Account group and descripion used to those GL for AR Gain/loss?
-    answer: This WI is prepared to reconcile for AR Gain or Loss in GL 11025 and 31816
+    question: Which GL account number is to consider for Reconciliation of AR Gain/loss?
+  - answer: This WI is prepared to reconcile for AR Gain or Loss in GL 11025 and 31816
       of the Account group N1_1060100_11025_31816.
+    question: What  Account group and descripion used to those GL for AR Gain/loss?
 - context: 'TOOLS: Microsoft Excel, Blackline, Bex Analyzer (BW Query)'
   questions_and_answers:
-  - question: How many tools are used for Reconciliation of AR gain/loss
-    answer: There are 3 tools used for teconciliation of AR Gain/Loss
-  - question: What tools are used for Reconciliation of AR gain/loss
-    answer: Microsoft Excel, Blackline, Bex Analyzer (BW Query)
-  - question: What query to execute using BEx Analyzer to analyze data in ERP?
-    answer: BW query is to execute using BEx Analyzer to analyze data in ERP
+  - answer: There are 3 tools used for teconciliation of AR Gain/Loss
+    question: How many tools are used for Reconciliation of AR gain/loss
+  - answer: Microsoft Excel, Blackline, Bex Analyzer (BW Query)
+    question: What tools are used for Reconciliation of AR gain/loss
+  - answer: BW query is to execute using BEx Analyzer to analyze data in ERP
+    question: What query to execute using BEx Analyzer to analyze data in ERP?
 - context: "WHAT: This WI is prepared to reconcile for AR Gain or Loss in GL 11025\
     \ and 31816 of the Account group N1_1060100_11025_31816.\nWHY: This reconciliation\
     \ is prepared to identify any unreconciled differences on the AR Gain Loss for\
@@ -161,23 +167,24 @@ seed_examples:
     \ examined and reported.   \nWHO: This document should be used by IBM R2R Accountant,\
     \ Avnet R2R Accountant and Avnet Manager only"
   questions_and_answers:
-  - question: What is the objective of Reconciliation of AR gain & Loss?
-    answer: This reconciliation is prepared to identify any unreconciled differences
+  - answer: This reconciliation is prepared to identify any unreconciled differences
       on the AR Gain Loss for both local and document currency.
-  - question: What is the approach for addressing discrepancies in this reconciliations.
-    answer: Any unreconciled reconciliation is to be identified, examined and reported.
-  - question: Who will be using this reconciliation document?
-    answer: This document is useful for Ibm and client R2R accountant and client manager
+    question: What is the objective of Reconciliation of AR gain & Loss?
+  - answer: Any unreconciled reconciliation is to be identified, examined and reported.
+    question: What is the approach for addressing discrepancies in this reconciliations.
+  - answer: This document is useful for Ibm and client R2R accountant and client manager
       for decision making
+    question: Who will be using this reconciliation document?
 - context: 'WHEN: Monthly WD+8 to WD+19'
   questions_and_answers:
-  - question: What is the Frequency of reconcilation of AR gain/loss
-    answer: The frequency of reconciliation of AR Gain/loss is monthly
-  - question: What is the start period for the Reconcilation of AR gain/loss activity
-      ?
-    answer: The reconciliation of AR Gain/loss is monthly post close activity start
+  - answer: The frequency of reconciliation of AR Gain/loss is monthly
+    question: What is the Frequency of reconcilation of AR gain/loss
+  - answer: The reconciliation of AR Gain/loss is monthly post close activity start
       from WD +8
-  - question: What is the end  period for the Reconcilation of AR gain/loss activity
+    question: What is the start period for the Reconcilation of AR gain/loss activity
       ?
-    answer: The reconciliation of AR Gain/loss is monthly post close activity end
+  - answer: The reconciliation of AR Gain/loss is monthly post close activity end
       by WD +19
+    question: What is the end  period for the Reconcilation of AR gain/loss activity
+      ?
+version: 3

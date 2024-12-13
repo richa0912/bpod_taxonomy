@@ -1,6 +1,12 @@
-domain: 'BPOD order to cash: Fleet Out of Period'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - Fleet_Out_of_Period.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: The steps to prepare out of period report providing details about
   the trucks delivered in a month and their revenue is recognized in a different month.
+domain: 'BPOD order to cash: Fleet Out of Period'
 seed_examples:
 - context: "# Control Points\n\n  ***Step No.***   ***Sub process Activity***    \
     \           ***Control Objective(s)***                                       \
@@ -18,15 +24,15 @@ seed_examples:
     \ Measurement Reports \n\n> This activity should be performed through WD2 to WD6\
     \ every month."
   questions_and_answers:
-  - question: When should the Fleet Out of Period report creation be done each month?
-    answer: ' Fleet Out of Period report creation be done through WD2 to WD6 of each
+  - answer: ' Fleet Out of Period report creation be done through WD2 to WD6 of each
       month.'
-  - question: Describe the control points in Fleet Out of Period report.
-    answer: The only control point in Fleet Out of Period report is to share the out
+    question: When should the Fleet Out of Period report creation be done each month?
+  - answer: The only control point in Fleet Out of Period report is to share the out
       of period file with R2R team. It's objective is to make sure that the revenue
       is recognized on units delivered in different period.
-  - question: What is the frequency of Fleet Out of Period report.
-    answer: Frequency of Fleet Out of Period report is monthly.
+    question: Describe the control points in Fleet Out of Period report.
+  - answer: Frequency of Fleet Out of Period report is monthly.
+    question: What is the frequency of Fleet Out of Period report.
 - context: '# Overview
 
 
@@ -66,38 +72,37 @@ seed_examples:
 
     +---------------------------+-----------------------------------------+--------------------------------------------------------------------------------------------------+----------------------+--------------+'
   questions_and_answers:
-  - question: What is the objective of the Fleet Out of Period report?
-    answer: The objective of Fleet Out of Period report is to update the reason for
+  - answer: The objective of Fleet Out of Period report is to update the reason for
       the trucks that are delivered but revenue is recognized in a different period.
-  - question: What is meant by SIPOC
-    answer: SIPOC stands for Supplier, Input, Process, Output and Customer
-  - question: Who is the customer in SIPOC for Fleer Out of Period report?
-    answer: Customer in SIPOC for Fleer Out of Period report is the R2R team.
+    question: What is the objective of the Fleet Out of Period report?
+  - answer: SIPOC stands for Supplier, Input, Process, Output and Customer
+    question: What is meant by SIPOC
+  - answer: Customer in SIPOC for Fleer Out of Period report is the R2R team.
+    question: Who is the customer in SIPOC for Fleer Out of Period report?
 - context: "# Roles & Responsibilities\n\n## Description\n\n  **Role**           \
     \         **Responsibility**\n  --------------------------- ---------------------------------------------------------------\n\
     \  Fleet Invoicing Assistant   Prepare out of period report along with comments\
     \ on each unit\n  Knoxville Team              Review and approve the report\n\
-    \  R2R Team                    Book accrual entry based on the report\n\n\
-    \ # Process Detail\n\n## Overview\n\n> An email will received\
-    \ with the out of period fleet inventory units on workday 2 of every month for\
-    \ US and Canada. This report should be saved into the shared folder along with\
-    \ the email. Chassis number details will be available on the report for all the\
-    \ units. These units should be checked on Truck movers website to identify the\
-    \ delivery date. For those units that are delivered on prior month but the revenue\
-    \ recognition happened on the next month, reason should be provided. After the\
-    \ file is prepared, an approval should be taken from the Knoxville retained team.\
-    \ Then the file should be shared to R2R team for booking the accrual entry. The\
-    \ activity will start from workday 2 and performed through out workday 6.\n\n\
-    ## Process Flow\n"
+    \  R2R Team                    Book accrual entry based on the report\n\n # Process\
+    \ Detail\n\n## Overview\n\n> An email will received with the out of period fleet\
+    \ inventory units on workday 2 of every month for US and Canada. This report should\
+    \ be saved into the shared folder along with the email. Chassis number details\
+    \ will be available on the report for all the units. These units should be checked\
+    \ on Truck movers website to identify the delivery date. For those units that\
+    \ are delivered on prior month but the revenue recognition happened on the next\
+    \ month, reason should be provided. After the file is prepared, an approval should\
+    \ be taken from the Knoxville retained team. Then the file should be shared to\
+    \ R2R team for booking the accrual entry. The activity will start from workday\
+    \ 2 and performed through out workday 6.\n\n## Process Flow\n"
   questions_and_answers:
-  - question: What is the reponsibility of R2R team in Fleet Output of Period report?
-    answer: Reponsibility of R2R team in Fleet Output of Period report is to Book
+  - answer: Reponsibility of R2R team in Fleet Output of Period report is to Book
       accrual entry based on the report.
-  - question: What is meant by SOD
-    answer: SOD stands for Segregation of Duties.
-  - question: Who is reponsible to review and approve the Fleet Out of Period report?
-    answer: Knoxville team is reponsible to review and approve the Fleet Out of Period
+    question: What is the reponsibility of R2R team in Fleet Output of Period report?
+  - answer: SOD stands for Segregation of Duties.
+    question: What is meant by SOD
+  - answer: Knoxville team is reponsible to review and approve the Fleet Out of Period
       report.
+    question: Who is reponsible to review and approve the Fleet Out of Period report?
 - context: '## Process Description
 
 
@@ -148,17 +153,17 @@ seed_examples:
     Invoicing Items\\Out of Period Reporting\\FY2022\\ 05May\\WD2]{.ul}** and insert
     two rows.'
   questions_and_answers:
-  - question: From where is the Fleet Out of Period email for Penske received?
-    answer: Fleet Out of Period email for Penske is received from EDW Support Team
+  - answer: Fleet Out of Period email for Penske is received from EDW Support Team
       mailbox.
-  - question: Where should the Fleet Out of Period emails and attachments for Penske
-      be saved?
-    answer: Fleet Out of Period emails and attachments for Penske should be saved
+    question: From where is the Fleet Out of Period email for Penske received?
+  - answer: Fleet Out of Period emails and attachments for Penske should be saved
       in 'M:\\GeneralSales\\Ellen Sales Invoicing Items\\Out of Period Reporting\\
       FY2022\\05May\\WD2'.
-  - question: Where is the Undelivered units for PENKSE file available?
-    answer: Undelivered units for PENKSE file is available at 'M:\\GeneralSales\\Ellen
+    question: Where should the Fleet Out of Period emails and attachments for Penske
+      be saved?
+  - answer: Undelivered units for PENKSE file is available at 'M:\\GeneralSales\\Ellen
       Sales Invoicing Items\\Out of Period Reporting\\FY2022\\ 05May\\WD2'
+    question: Where is the Undelivered units for PENKSE file available?
 - context: '12. Insert workday date into the file with header STATUS and DELIVERY
     DATE.
 
@@ -196,18 +201,16 @@ seed_examples:
     22. Save the file in path **[M:\\GeneralSales\\Ellen Sales Invoicing Items\\Out
     of Period Reporting\\FY2022\\ 05May\\WD2]{.ul}** with file name Truckmovers'
   questions_and_answers:
-  - question: Which format should we save the VIN details for undelivered PENSKE items
-      downloaded from Truck Movers website.
-    answer: VIN details for undelivered PENSKE items downloaded from Truck Movers
+  - answer: VIN details for undelivered PENSKE items downloaded from Truck Movers
       website should be saved in PDF format and Excel formats.
-  - question: Where should we save the files download from Truck Movers website for
-      Undelivered Penske items?
-    answer: Files download from Truck Movers website for Undelivered Penske items
+    question: Which format should we save the VIN details for undelivered PENSKE items
+      downloaded from Truck Movers website.
+  - answer: Files download from Truck Movers website for Undelivered Penske items
       should be saved in 'M:\\GeneralSales\\Ellen Sales Invoicing Items\\Out of Period
       Reporting\\FY2022\\ 05May\\WD2'.
-  - question: What are the steps to download and save VIM details for Undelivered
-      Penske items in Fleet Out of Period report?
-    answer: 'Steps to download and save VIM details for Undelivered Penske items in
+    question: Where should we save the files download from Truck Movers website for
+      Undelivered Penske items?
+  - answer: 'Steps to download and save VIM details for Undelivered Penske items in
       Fleet Out of Period report are listed below.
 
       1. Copy the VIN number from Undelived units for Penske file.
@@ -221,3 +224,6 @@ seed_examples:
 
       5. Save the file in path ''M:\\GeneralSales\\Ellen Sales Invoicing Items\\Out
       of Period Reporting\\FY2022\\ 05May\\WD2'' with file name Truckmovers.'
+    question: What are the steps to download and save VIM details for Undelivered
+      Penske items in Fleet Out of Period report?
+version: 3

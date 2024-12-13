@@ -1,7 +1,13 @@
-domain: 'BPOD Record to Analyze: SC Canada (AS400) - R2R - Journal Entry - AP Supplier
-  Discount - 272 - CA - TO BE'
+created_by: IBM
+document:
+  commit: d1fc61f
+  patterns:
+  - SC_Canada_AS400-R2R-Journal_Entry-AP_Supplier_Discount-272-CA-TO_BE.md
+  repo: https://github.ibm.com/InstructLab-BPOD-Test/IBMCloud-BPOD-docs
 document_outline: Describes how the IBM Delivery Center in Gurgaon will perform operational
   tasks of "AP Supplier Discount" for Client Son and co.
+domain: 'BPOD Record to Analyze: SC Canada (AS400) - R2R - Journal Entry - AP Supplier
+  Discount - 272 - CA - TO BE'
 seed_examples:
 - context: ' Overview
 
@@ -40,9 +46,7 @@ seed_examples:
 
     +-----------------------------------------------+-------------------------------------+'
   questions_and_answers:
-  - question: What inputs are required to perform Journal Entry - AP Supplier Discount
-      Process?
-    answer: 'The following inputs are required to perform the Journal Entry - AP Supplier
+  - answer: 'The following inputs are required to perform the Journal Entry - AP Supplier
       Discount Process:
 
 
@@ -52,15 +56,17 @@ seed_examples:
 
 
       '
-  - question: What systems & applications are accessed in Journal Entry - AP Supplier
-      Discount Process?
-    answer: The systems & applications which are accessed in Journal Entry - AP Supplier
-      Discount Process are Sigma, Email and AS400.
-  - question: What is the main objective of  Journal Entry - AP Supplier Discount
+    question: What inputs are required to perform Journal Entry - AP Supplier Discount
       Process?
-    answer: The main objective of  Journal Entry - AP Supplier Discount Process process
+  - answer: The systems & applications which are accessed in Journal Entry - AP Supplier
+      Discount Process are Sigma, Email and AS400.
+    question: What systems & applications are accessed in Journal Entry - AP Supplier
+      Discount Process?
+  - answer: The main objective of  Journal Entry - AP Supplier Discount Process process
       is to post Supplier Discounts to the correct branch and reallocate balances
       in a GL Account when discounts for other branches are recorded to Branch 10.
+    question: What is the main objective of  Journal Entry - AP Supplier Discount
+      Process?
 - context: "# Document Information\n\n## Procedure Overview\n\n  **Procedure Name**\
     \   AP Supplier Discount\n  -------------------- ----------------------------------------------------------------------------------------------------------------------------------\n\
     \  **Objective**        To reallocate supplier discount balance to the correct\
@@ -85,23 +91,22 @@ seed_examples:
     \   |                    |                        | **\\<Name and Role\\>**  \
     \        | **\\<Name and Role\\>**                     | **\\<Name and Role\\\
     >**              |\n+--------------------+--------------------+------------------------+--------------------------------+-------------------------------------------+------------------------------------+\n\
-    | 0.1                |                    | Draft                  | DAE\
-    \ | RCA | SHA\
-    \ |\n+--------------------+--------------------+------------------------+--------------------------------+-------------------------------------------+------------------------------------+"
+    | 0.1                |                    | Draft                  | DAE | RCA\
+    \ | SHA |\n+--------------------+--------------------+------------------------+--------------------------------+-------------------------------------------+------------------------------------+"
   questions_and_answers:
-  - question: Who is the intended audience for Journal Entry - AP Supplier Discount
-      Process document?
-    answer: "Journal Entry - AP Supplier Discount Process document is intented to\
+  - answer: "Journal Entry - AP Supplier Discount Process document is intented to\
       \ be used by the IBM General accounting\_team and the Client's and IBM's areas\
       \ involved in the execution, supervision and control of the activities described."
-  - question: What is the DTP name for Journal Entry - AP Supplier Discount Process?
-    answer: DTP name for Journal Entry - AP Supplier Discount Process is 'Client -
+    question: Who is the intended audience for Journal Entry - AP Supplier Discount
+      Process document?
+  - answer: DTP name for Journal Entry - AP Supplier Discount Process is 'Client -
       SC Canada (AS400) - R2R -- Journal Entry - AP Supplier Discount -- 272 -- CA
       - TO BE'.
-  - question: What is the latest version of Journal Entry - AP Supplier Discount Process
-      document?
-    answer: The latest version of Journal Entry - AP Supplier Discount Process document
+    question: What is the DTP name for Journal Entry - AP Supplier Discount Process?
+  - answer: The latest version of Journal Entry - AP Supplier Discount Process document
       is 0.1.
+    question: What is the latest version of Journal Entry - AP Supplier Discount Process
+      document?
 - context: "## Step Description\n\n+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+\n\
     | **Step** | **Description**                                                 \
     \                                                                            \
@@ -140,17 +145,17 @@ seed_examples:
     \ the amount that is reported under branch 10 in the report balances to the GL\
     \ is same as AS400."
   questions_and_answers:
-  - question: Who is responsible for running the Supplier Discount Journal report?
-    answer: The IBM's General Accounting Analyst is responsible for running the Supplier
+  - answer: The IBM's General Accounting Analyst is responsible for running the Supplier
       Discount Journal report.
-  - question: Where can the Supplier Discount Journal report be found in Sigma?
-    answer: 'The  Supplier Discount Journal report can be found in Sigma at the following
+    question: Who is responsible for running the Supplier Discount Journal report?
+  - answer: 'The  Supplier Discount Journal report can be found in Sigma at the following
       path: ''Team Content > Administration Folders > 0. Service Centre Canada Accounting
       > 00 - Month end Accounting > SS Library > Accounts Payable''.'
-  - question: What format will the Supplier Discount Journal report be sent in via
-      email from Sigma?
-    answer: The Supplier Discount Journal report will be sent in Excel and PDF format
+    question: Where can the Supplier Discount Journal report be found in Sigma?
+  - answer: The Supplier Discount Journal report will be sent in Excel and PDF format
       via email from Sigma.
+    question: What format will the Supplier Discount Journal report be sent in via
+      email from Sigma?
 - context: '+----------+------------------------------------------------------------+-------------------------------------------+
 
     | **Step** | **Description**                                            | **Role**                                  |
@@ -217,20 +222,20 @@ seed_examples:
     However, in below screenshot the JE since already booked for reallocation hence
     balance is zero in branch 10 or else balance would have been Cr \$2,094.19'
   questions_and_answers:
-  - question: What is the purpose of opening AS400 in Step 2 of Journal Entry - AP
-      Supplier Discount Process?
-    answer: The purpose of opening AS400 in Step 2 of  Journal Entry - AP Supplier
+  - answer: The purpose of opening AS400 in Step 2 of  Journal Entry - AP Supplier
       Discount Process is to check the details for preparing the supplier discount
       Journal, specifically to verify the vouchers, branch code, discounts, and amounts.
-  - question: What information can be retrieved by entering the GL account number
-      in AS400?
-    answer: By entering the GL account number (e.g. 010 683001 55300001), the current
+    question: What is the purpose of opening AS400 in Step 2 of Journal Entry - AP
+      Supplier Discount Process?
+  - answer: By entering the GL account number (e.g. 010 683001 55300001), the current
       as well as previous month's balance  under that account can be retrieved.
-  - question: In Step 2 of Journal Entry - AP Supplier Discount Process, what is the
-      goal of reallocating the supplier discount amount in AS400?
-    answer: In Step 2 of Journal Entry - AP Supplier Discount Process, the goal is
+    question: What information can be retrieved by entering the GL account number
+      in AS400?
+  - answer: In Step 2 of Journal Entry - AP Supplier Discount Process, the goal is
       to ensure that the balance in the branch 10 is 0, by reallocating the entire
       supplier discount amount to correct branches.
+    question: In Step 2 of Journal Entry - AP Supplier Discount Process, what is the
+      goal of reallocating the supplier discount amount in AS400?
 - context: '+----------+------------------------------------------------------------------------------------------+-------------------------------------------+
 
     | **Step** | **Description**                                                                          |
@@ -271,13 +276,14 @@ seed_examples:
 
     For detailed information on JE matrix refer control doc'
   questions_and_answers:
-  - question: What is the purpose of uploading and posting the JE template in Step
-      8 of  Journal Entry - AP Supplier Discount Process?
-    answer: The purpose of uploading and posting the JE template in Step 8 of  Journal
+  - answer: The purpose of uploading and posting the JE template in Step 8 of  Journal
       Entry - AP Supplier Discount Process is to ensure the accuracy of the journal.
-  - question: Does the AP Supplier Discount Journal require client review or approval?
-    answer: No, according to the JE matrix, the AP Supplier Discount Journal does
+    question: What is the purpose of uploading and posting the JE template in Step
+      8 of  Journal Entry - AP Supplier Discount Process?
+  - answer: No, according to the JE matrix, the AP Supplier Discount Journal does
       not require Client review or approval.
-  - question: Whose approval is required before posting the AP Supplier Discount Journal?
-    answer: IBM General Accounting Manager's approval is required before posting the
+    question: Does the AP Supplier Discount Journal require client review or approval?
+  - answer: IBM General Accounting Manager's approval is required before posting the
       AP Supplier Discount Journal.
+    question: Whose approval is required before posting the AP Supplier Discount Journal?
+version: 3
