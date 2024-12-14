@@ -51,43 +51,33 @@ seed_examples:
     question: What is the frequency of creating customer account in RASS and Peoplesoft?
 - context: '## Process Description
 
-
     1.  Receive request from Fleet office for customer set up via email
-
 
     2.  Before updating the customer set up form, check if a suffix is setup for the
     customer. Open UCI Numbers access database for the same from the path **[M:\\Sales
     Invoicing\\NAI\\DATA\\ACCESS]{.ul}**
 
-
     3.  Once the access databse is open, double click on **tbl_UCI_Suffix** option
 
-
     4.  Suffix table will be opened.
-
 
     5.  Filter with AR_LOC. For the below example, the request is received for location
     124. Click OK.
 
-
     6.  In CITY column search with the city name available from the email. Click OK.
-
 
     7.  If no information is pulled, it means the city is not been set uped with a
     suffix
 
-
     8.  A suffix can be set up with two numerical digit (eg: 75) or an alpha numeric
     number with one alphabet and one number (eg: A1). Sort on UCI SUFFIX column from
     A to Z.
-
 
     9.  Scroll down through the column and identify the available suffix. In this
     example suffix identifed is O0.'
   questions_and_answers:
   - answer: 'The steps to verify if the customer suffix is not setup for a customer
       in access datbase are as follows.
-
 
       1. Open UCI Numbers access database from the path ''M:\\Sales Invoicing\\NAI\\DATA\\ACCESS''.
 
@@ -112,29 +102,22 @@ seed_examples:
 - context: '10. Open the customer set up form from path **[M:\\Sales Invoicing\\NAI\\DATA\\EXCEL\\CUSTOMER
     SET-UP FORM.xls]{.ul}**
 
-
     11. The details in the customer set up form is updated based on the acess database.
     CUSTOMER ID \# is picked from UCI NUMBER in access database and SUFFIX, the next
     available option in access database.
 
-
     12. Address will be available on the purchased order received from fleet office
     via email. Update the same into the customer form.
-
 
     13. AR ACCOUNT \#: is the combination of AR_LOC and AR_ACCT column from access
     database.
 
-
     14. As it is a new customer, select Yes. If it is an existing customer select
     No and provide the reasons for the changes.
 
-
     15. Update Requestor Name and Date, send the file to Ellen for approval.
 
-
     Below is the email format.
-
 
     '
   questions_and_answers:
@@ -160,47 +143,35 @@ seed_examples:
 - context: '16. Once the request approved, open IMS and type **/for tg** on the top
     left corner of the screen and press ENTER on the keyboard
 
-
     17. Update CODE as **RANA** and LOC **P,** press ENTER on keyboard
-
 
     18. Update the CUSTID\# and CUST SUFFIX CODE from the customer set up form, press
     ENTER on keyboard
 
-
     19. Update the name, address and account details as per the customer set up form.
     Press ENTER on keyboard
-
 
     20. Once all the details are updated press ENTER on keyboard. Then press F12 on
     keyboard. This will create the new customer account in RASS. A successful message
     will appear on the bottom of the screen as confirmation.
 
-
     21. Once the record is updated successfully into RASS, an overnight batch run
     happens. An automated email will be generated to the inbox with a confirmation
     about the new customer account.
-
 
     > On the attachment, the customer details will be available with a comment No
     Errors Found. If there are any error, go back and check the customer set up form
     and details updated in RASS.
 
-
     22. Open PeopleSoft Finance from Client engane home page
-
 
     23. Click on Customers option.
 
-
     24. Click on Customer Information
-
 
     25. Click on General Information
 
-
     26. Update the below details on Find an Existing value tab
-
 
     > SetID -- Based on business unit (in this example customer is for Fleet)
 
@@ -234,7 +205,6 @@ seed_examples:
   - answer: 'To create a new customer account in RASS  during Fleet customer setup
       in IMS and PeopleSoft, follow these steps.
 
-
       1. Once the customer account creation request is approved, open IMS and type
       ''for tg'' on the top left corner of the screen and press ENTER on the keyboard.
 
@@ -265,14 +235,11 @@ seed_examples:
     with O0, means the customer is not flagged under any of the existing corporate
     customer and it needs to be tagged.
 
-
     28. Update the team code as **124** (location number), keep the Default box as
     checked.
 
-
     29. Go to Bill to Options tab. Update Credit Analyst, Collector and AR Specialist
     options.
-
 
     > Credit Analyst = CRFL01 for US customer with location number lesser than 900
 
@@ -299,29 +266,22 @@ seed_examples:
     D30, means 30 days from the date of delivery. For certain customers it would be
     I30, means 30 days from invoice date.
 
-
     > **For Fleet customers it will be always D30, 30 days from delivery.**
 
-
     Screen looks like below after updating the information
-
 
     31. After updating Payment Terms, select General Info link at the bottom of the
     screen.
 
-
     32. From the drop down menu select 0130 - User Defined
-
 
     33. On the User Defined Fields tab, for Financing Type select from the drop down
     menu. This is selected based on the Payment Terms. If terms are from delivery
     date, select FLT ND-Del. If the terms are from invoice/completion date, select
     FLT DB-Inv. In this example it is FLT ND-Del
 
-
     34. Click on Save button. On the top right corner of the screen a confirmation
     message will appear once completed.
-
 
     35. This concludes the steps to create a new customer in RASS and PeopleSoft.'
   questions_and_answers:

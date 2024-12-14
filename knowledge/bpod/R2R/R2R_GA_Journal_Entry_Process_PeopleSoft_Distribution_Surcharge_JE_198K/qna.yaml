@@ -165,27 +165,21 @@ seed_examples:
 - context: '4.  Go to "Tulsa Intercompany units" tab and update the data from the
     excel received via mail for \$5 scholarship fee.
 
-
     > Values in cell ''''I9'''' and ''''E13'''' would auto-populate.
-
 
     5.  Go to ''Entries tab'', Cell E8 is linked to "OBIEE GL Balance" Tab and Cell
     ''''E9'''' is linked to cell ''''G4''''. The balance in Cell ''''E10'''' is the
     remaining balance in the surcharge account that should be considered as freight.
-
 
     6.  Cell ''''E14'''' is a formula to calculate the \$USD equivalent of the Canadian
     surcharge. Cell ''''E15'''' is linked to cell ''''G5''''. Cell ''''E16'''' is
     a formula to calculate the difference, which is posted to the exchange gain/loss
     account.
 
-
     7.  Attach the mail received to the working sheet in the ''''Entries" tab.
-
 
     8.  Update the email attachments for the current month journal entry as highlighted
     in the above screenshot.
-
 
     9.  Refer Generic PeopleSoft Journal Entry desk procedure - ''''Client_R2R_GA_Peoplesoft
     Journal Entry Posting_2022_V1.0'''' in order to process the journal entry.'

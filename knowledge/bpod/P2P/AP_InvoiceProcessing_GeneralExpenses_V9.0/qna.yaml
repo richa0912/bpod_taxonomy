@@ -67,33 +67,23 @@ seed_examples:
 - context: '**General Expenses** invoices are expenses incurred primarily by Client
     employees across all departments for:
 
-
     -   Repairs and Maintenance
-
 
     -   Office consumables
 
-
     -   Utility (Electricity, Water, Telecom, Gardening, Parking fee, etc.)
-
 
     -   Rent & Lease
 
-
     -   IT
-
 
     -   General Affairs Expenses (Employee Welfare, Insurance, etc.)
 
-
     -   Customer Service Expenses (for Maintenance centers, Call centers, etc.)
-
 
     -   Outsourcing expenses
 
-
     -   Events for company
-
 
     > Refer to tab "Nature of GL code" of ''file " AP Invoice Processing_General Expenses
     Checklist_V.03" as below for details:
@@ -107,42 +97,29 @@ seed_examples:
     BL instead of TV**)**; all other document types **Out of Scope** for **IBM BPO
     AP** are:
 
-
     -   Sales Deductions - C2
-
 
     -   Fixed Assets -- AA
 
-
     -   Custom Duty -- KE
-
 
     -   Logistics -- LE
 
-
     -   Repair Cost -- LP
-
 
     -   Service Compensation -- UZ
 
-
     -   Inter Company (Non Trade) -- BN
-
 
     -   Manual Invoice -- VV
 
-
     -   Credit Notes -- VG
-
 
     -   Inter Company (Trade Invoice) -- MO
 
-
     -   Inter Company (Direct Shipment) -- MS
 
-
     -   Inventory Procurement (3rd Party) -- MA.
-
 
     > These invoices are accounted against a **General Ledger Account Code (GL)**
     as per the nature of the expense, **Cost Center (CC)** based on the requestor
@@ -166,9 +143,7 @@ seed_examples:
 
     > Invoices are received in the form of:
 
-
     -   Hard Copy -- Via Post
-
 
     -   E-Invoice -- Invoice that sent as a link via email. Each e-invoice has e-signature
     which was authorized and a bar-code to validate it is a valid invoice. List of
@@ -238,7 +213,6 @@ seed_examples:
 - context: 'IBM BPO AP team has to perform the following checks before processing
     an Invoice for General Expenses:
 
-
     -   IBM BPO AP team verifies the documents received for its completeness and correctness.
 
     -   Upon receipt of invoices IBM BPO AP team to contact requestor/HR-General Affairs/GWP
@@ -286,23 +260,19 @@ seed_examples:
     queue. When the reprocessing/modification was done, the SR shall come back to
     IBM PIC queue.
 
-
     a)  If the invoice was scanned too blurrily to view, IBM PIC must click on button
     "rescan" and request scanning center to scan the document package again. IBM PIC
     need follow up closedly due to TAT still running, it will causes TAT overrun if
     rescan long time didn''t come back.
-
 
     b)  If the invoice was issued incorrectly, IBM PICs need make sure that SUBs PIC
     confirmation either attach in GSSC Comment side bar or received email via GSSC
     before clicking on button "reject", note down the rejection reason and send out
     an email to Client PIC, carbon copy teamleader to notify the SR has been rejected.
 
-
     c)  For reject cases, IBM PIC also must send email to CROWN \~ CAD Networks to
     request sending back the hard-copy to vendor if there is hard-copy sent through
     CROWN\~CAD Networks.
-
 
     After validating the invoice, filling in the blank fields in the left window,
     to save the data partially confirmed and input, click on button "Save" at the

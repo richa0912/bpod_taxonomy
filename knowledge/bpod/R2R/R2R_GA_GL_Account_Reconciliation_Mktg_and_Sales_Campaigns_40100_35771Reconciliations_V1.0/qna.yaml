@@ -40,7 +40,6 @@ seed_examples:
 
       +----------------------------------+--------------+
 
-
       +-------------------+------------+
 
       | Output            | To         |
@@ -64,91 +63,66 @@ seed_examples:
       are performed (Higher level control)?
 - context: '## Process Description
 
-
     1.  Login to Trintech: Open Client Home Page\>Open the Trintech link\>Input the
     Credentials\>Click on Sign In.
-
 
     2.  After login Into Trintech, Click on Effective Date\>Click on Not Started as
     shown below.
 
-
     3.  Navigate to Trintech & if required select on Page Size drop down option to
     increase or decrease the Page Size.
-
 
     4.  Navigate to find the account "40100-35771-E0055-30-NULL-NULL- NULL-NULL" to
     prepare the recon.
 
-
     5.  Click on Reconcile option to open the required account.
-
 
     6.  Then click on Compare button. The compare button allows to look at the months
     previous balance.
 
-
     7.  Then Click on Files.
-
 
     8.  Then Click on link under view file to download the recon template which was
     loaded for month prior to effective date.
 
-
     9.  Then Click on Open.
 
-
     10. This is what the recon template looks like.
-
 
     11. After this, Navigate to Client browser page\>Click on PeopleSoft link\>Use
     credentials and click on Sign In
 
-
     12. Once signed into PeopleSoft, the below page will appear
-
 
     13. Under Menu, Click on General Ledger.
 
-
     14. Under Review Financial Information \>Click on Ledger.
 
-
     15. Click on Basic Search.
-
 
     16. Then fill the required details under the Unit\>Ledger\>Account\>Under Sum
     By Click on check box\>Operating Unit\> Under Sum By Click on check box \>Subaccount\>
     Under Sum By Click on check box \>Click on Search.
 
-
     > Note: 40100(Unit/Entity)-35771(Account)-E0055(Subaccount)-30(Operating Unit)-NULL-NULL-
     NULL-NULL
 
-
     17. Compare and make sure that the GL balance matches with Trintech balance.
-
 
     18. Update the spreadsheet: Change the date and save the spreadsheet to upload
     in Trintech.
 
-
     19. Click on Files and upload the recon template.
-
 
     20. Once Uploaded\>Click on Home button.
 
-
     21. The amount should be updated as shown below and Click on Certify.
-
 
     22. Go Back to Trintech home page\>Click on Effective Date\>Click on Not Started\>Navigate
     to find the account "40100-35771-NULL-30-NULL-NULL- NULL-PR018"\>Click on view.
 
-
     23. Click on Files\>Under View Files Click on the link to download the recon template
     which was loaded for month prior to effective date.
-
 
     24. Go to PeopleSoft Page\>Click on Inquiry Criteria.'
   questions_and_answers:

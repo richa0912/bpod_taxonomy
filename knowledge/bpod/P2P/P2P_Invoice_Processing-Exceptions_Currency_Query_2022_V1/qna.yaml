@@ -100,9 +100,7 @@ seed_examples:
     question: What should be updated in the "Comments" field in Query spreadsheet?
 - context: '**Scenario 3.**
 
-
     1.  Wire Test payments currency issue.
-
 
     > Invoice location- "M1"
 
@@ -126,71 +124,54 @@ seed_examples:
 
     > Invoice No- WIRETEST1R.
 
-
     2.  Copy the vendor number from the Currency query spread sheet. Go to Peoplesoft
     Main Menu-\> Reporting Tools-\> Query-\> Query Viewer. Click on the Query"ZI_AP_VENDOR_LISTING_BY_VDR_FT".
     Update Vendor number and click on "View Results"
 
-
     3.  Go to Oracle, click on "Saved Searches", update the "Invoice Number" and Click
     on Enter.
 
-
     4.  It displays the invoice copy, click on number "1" as shown below to open invoice
     copy.
-
 
     5.  Open the Invoice copy and check currency on the Invoice. In this case Invoice
     copy mentioned as ''''USD''''. This currency type needs to be changed as ''''
     M1 '''' in Peoplesoft.
 
-
     6.  Go back to Currecny Query spreadsheet and update the research comments.
 
-
     **Scenario:4 Currency issues with Freight Vendor:**
-
 
     1.  If the invoices are part of Vendor "MANITOULIN TRANSPORT INC" Location "AX".
     In this case, check the Invoice Origin in Peoplesoft.
 
-
     2.  Go to Peoplesoft. Main Menu-\> Accounts Payable-\>Vouchers-\> Add/Update-\>
     Regular Entry. Click on "Find and Existing Value" and enter the "Business Unit
     and Voucher ID" and click on "Search".
-
 
     3.  Once clicked on "Search" button. Go to summary tab and check the "Origin"-
     D2L (Data Two logistic). In this case Origin is showing as D2L, they are part
     of Freight locations, no need to change currency type and remove them from query
     spreadsheet.
 
-
     4.  Once all Currency query issues are researched and updated the currency changes
     comments in the spreadsheet, these line items should be sent to Jessica French
     A / Nelson C Dock for approval.
 
-
     5.  Below is the example email sent to Jessica French for Approval.
 
-
     6.  Below is the approval email received.
-
 
     7.  Once approved by Jessica French. Go to Peoplesoft. Main Menu-\> Accounts Payable-\>Vouchers-\>
     Add/Update-\> Regular Entry-\> Payments.
 
-
     > Click on Location search icon, then "Look Up Location" screen will pop up, click
     on "M1" Vendor Location.
 
-
     8.  Next screen will open, click on "Save".
-
 
     9.  If the currency is changed to "M1" and clicked on "Save" as mentioned above.
     Click on "Holiday/Currency Options" to view correct currency is updated or not.
-
 
     10. It will show Payment Currency type updated as ''USD'' and click on "OK".'
   questions_and_answers:
@@ -250,11 +231,9 @@ seed_examples:
     question: Which invoices are not available in Oracle but in AP- Mexico Mailbox?
 - context: 'Scenario: 2 EURO Currency Issue:
 
-
     1.  If the Invoice currency shows as "USD" and Payment currency updated as "EURO".
     This needs to be checked in Oracle. See below currency issue details, which is
     highlighted as follows.
-
 
     > Invoice location- "AX"
 
@@ -278,41 +257,32 @@ seed_examples:
 
     > Invoice No- 7067834336.
 
-
     2.  Login to Oracle, click on "Saved Searches". Copy the invoice number from the
     query spreadsheet and paste into "Invoice Number" and hit Enter.
-
 
     3.  It displays the invoice copy. Click on number "1" as shown below to open invoice
     copy.
 
-
     > **Note:** If the invoices are not available in Oracle, Invoice copies needs
     to be requested from "CEP Customer Service" team.
-
 
     4.  Open the invoice copy and check the currency type. In this case invoice has
     USD currency but vendor is setup as Euro currency. Further to confirm. check in
     Peoplesoft - Vendor setup.
 
-
     5.  Go to Peoplesoft Main Menu-\> Reporting Tools-\> Query-\> Query Viewer. Click
     on the Query "ZI_AP_VENDOR_LISTING_BY_VDR_FT".
-
 
     6.  Once clicked on the PS Query, it will go to next screen. Update the vendor
     number and click on "View Results".
 
-
     7.  Verify the location mentioned in PS Query. In this case AX suffix is updated/created
     for EURO only.
-
 
     8.  In this case, send an email to "CEP Customer Service" team to determine if
     the invoice is closed and reissued in Euro currency and Vendor master shows AX
     suffix is set up to pay in Euro Only. Delete the Euro currency line from Currency
     spreadsheet.
-
 
     > **Note:** If CEP team has not taken any action and it keeps repeating in the
     Euro currency file. Send a follow up email to clear the line item.'

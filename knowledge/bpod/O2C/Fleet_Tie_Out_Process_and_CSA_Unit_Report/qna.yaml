@@ -82,19 +82,15 @@ seed_examples:
       invoicing assistants and CSA Team in a timely manner?
 - context: '### CSA UNIT REPORT
 
-
     1.  From WD1 INVENTORY MAY 2022 file, copy Fleet Inventory WD1 tab and Busfleet
     Inventory WD1 tab to a new excel file. Delete the calculation and Vlookup formula
     from both the tab.
-
 
     2.  Save the file in the path **[M:\\GeneralSales\\Ellen Sales Invoicing Items\\Workday
     1 and 2 Inventory\\FY 2022\\04 April\\WD1]{.ul}** with file name **MONTH END INVENTORY
     052022.**
 
-
     3.  Send the report to CSA(Central Sales Administration) team
-
 
     The activity concludes here.'
   questions_and_answers:
@@ -151,7 +147,6 @@ seed_examples:
   - answer: 'Following are the steps to download data from Truck movers website for
       Tie out Process : Last Workday of the month.
 
-
       1. Copy VIN number from the fleet inventory file.
 
       2. Open Truck Movers webiste using link ''https://example.com'' and click on
@@ -165,33 +160,26 @@ seed_examples:
 - context: '14. Follow steps 1.7 to 1.13 for all customers that has Term TM Delivery
     to update into the file. The same should be followed for Bus Inventory tab also.
 
-
     15. On the customer tab, sort column N(Status) from A to Z and insert a new column
     after ETA Date (column P). Name it as COMMENT.
 
-
     16. Insert INVOICE on the comment column for all delivered units. This means all
     these units can be invoiced.
-
 
     17. For customer 320 Star, filter in column H(Model) to see if there are any medium
     units are available. Model starts with M are medium trucks. For these units a
     3rd party completion confirmation is required. Update REQUIRES 3RD PARTY COMPLETION
     as comment for these units.
 
-
     18. For Heavy units, take confirmation from NAM before upadting the comment on
     the excel file. For confirmation sent an email to **Carey Crystal M**. Once confirmation
     received update the comment as INVOICE on the excel file.
 
-
     19. Once the comment is updated for all the customer sent the file for approval
     and receive confirmation
 
-
     20. Approved email along withthe excel file should be shared with fleet invoicing
     assistants.
-
 
     21. Save and close the excel file LAST WORKDAY INVENTORY MONTH YEAR in the path
     **[M:\\Download\\GeneralSales\\Ellen Sales Invoicing Items\\Workday 1 and 2 Inventory\\
@@ -215,7 +203,6 @@ seed_examples:
 - context: '7.  Paste the copied formula into the current month working file. Update
     details as follows.
 
-
     > Total count on Wd1 Fleet = Total count in Fleet Inventory WD1 tab + Total count
     in Busfleet Inventory WD1 tab
 
@@ -233,9 +220,7 @@ seed_examples:
 
     > New Inventory = Follow step 2.8
 
-
     Below is the screen shot of BACKLOG tab that shows the count.
-
 
     8.  To update the volume for New Inventory, in Fleet Inventory WD1 tab and Busfleet
     inventory WD1 tab put filter in Create Date(column K) and select only current
@@ -243,34 +228,27 @@ seed_examples:
     inventory. Highlight these items with a color, this is going to feed the data
     for CSA Unit Report.
 
-
     9.  Update the total count into New Inventory column. This should bring the difference
     amount down to zero. But in this case still there is a difference of 130 units.
     If such scenario comes, follow the next step. If not directly move to step 2.13.
 
-
     10. Compare Fleet Inventory WD1 and last WD tabs. Perform a Vlookup on these tabs
     to pull the matching VIN numbers.
 
-
     11. Perform the above step for busfleet inventory tab as well.
-
 
     12. Calculate the total of matched VIN numbers from both the tabs. Update the
     New Inventory column with this new count. This will bring the difference to zero
     value.
-
 
     13. Go to BACKLOG tab, for customers those have units on hold during the month
     end a supporting should be attached. This supporting will be the email follow
     ups done for those units. Attach the email in column N (Backup Documentation)
     as back up.
 
-
     14. Save the file in the path **[M:\\GeneralSales\\Ellen Sales Invoicing Items\\Workday
     1 and 2 Inventory\\FY 2022\\04 April\\WD1]{.ul}** with file name as **WD1 INVENTORY
     MONTH YEAR.**(in this scenario it is WD1 INVENTORY MAY 2022)
-
 
     15. Once file is completed send to Ellen for approval.'
   questions_and_answers:

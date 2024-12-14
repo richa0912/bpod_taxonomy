@@ -10,9 +10,7 @@ domain: 'BPOD procure to pay: CZ_P2P_IR_Record Invoice Received_v1.0'
 seed_examples:
 - context: '## Step Description
 
-
     ### Define methods of delivering AP documents
-
 
     +------------------------------------+
 
@@ -36,18 +34,13 @@ seed_examples:
 
     +------------------------------------+
 
-
     There are 2 ways for suppliers to send invoices:
-
 
     Hard copy (paper invoice) submission -- go to step 3.
 
-
     PDF submission -- refer to step 7.
 
-
     ### Send AP document for scanning to defined PO Box
-
 
     +-------------------------------------+
 
@@ -71,9 +64,7 @@ seed_examples:
 
     +-------------------------------------+
 
-
     ### Receive paper document
-
 
     +-----------------------------------------+
 
@@ -97,9 +88,7 @@ seed_examples:
 
     +-----------------------------------------+
 
-
     ### Open envelop and pre-sort document
-
 
     +-----------------------------------+
 
@@ -134,7 +123,6 @@ seed_examples:
     question: When should the methods of delivering AP documents be defined?
 - context: '### Complete data and trigger workflow
 
-
     +------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
     | Description                                                                                                                                                      |
@@ -159,10 +147,8 @@ seed_examples:
 
     +------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
     If any of the data was not captured by the OCR or was recognized incorrectly,
     please perform proper corrections, as described below:
-
 
     **Recipient number (*Kod Spolecnosti*)** -- this is the address of CLIENT company,
     for which the invoice was issued. Please check if the address on the invoice is
@@ -174,7 +160,6 @@ seed_examples:
     -- always choose company code based on legal name of the entity. If you are not
     able to find the proper recipient number, please put "1" in total value field
     and delete tax amount to forward this invoice for manual verification.
-
 
     **Sender number (*Cislo dodavatele*)** -- the data in this field should exactly
     match the invoice image. In case of mismatch, please check the dropdown list if
@@ -201,58 +186,45 @@ seed_examples:
 - context: '**VAT Rate (*Sazba DPH*)** -- based on the tax code or percentage on the
     invoice.
 
-
     **Note:** If there are multiple VAT rates mentioned on the invoice, please remove
     the value from VAT rate field. This will block the invoice from being processed
     automatically and allow the accountants to process it manually.
 
-
     If you are unsure which tax code to use, please remove the total amount as well
     and put "1" instead to move the invoice for manual processing.
 
-
     **Currency (*Mena*) --** it should always be clearly mentioned on the invoice:
-
 
     **Note:** If the invoice is issued by vendor from Czech Republic, but currency
     is different than Czech Crowns (CZK), except just putting 1 in the amount, you
     should also put a tax details (tax code, tax rate) but without putting the tax
     amount in -- see screenshot below:
 
-
     **Tax code --** each VAT rate has its respective tax code. To determine the correct
     tax code, please refer to attached file **"Cheat-sheet".**
-
 
     **Note:** If the tax amount is zero but there is no text provided on the invoice
     as mentioned in the Tax Decision Tree (*dan'' uvede zakaznik* or *neni platce
     dane*). And the vendor is from Czech Republic, you can put a zero in tax amount
     and in percentage amount and in Tax code put N0 -- see screenshot below:
 
-
     **Note:** for non-PO invoices, the there is only the VAT Rate field, tax code
     does not exist:
-
 
     **Purchase order number (*Cislo objednavky*) (for PO invoices only)** -- it should
     be read automatically; if it was not read and it''s not to be easily found on
     the invoice, this field can be left blank.
 
-
     PO numbers may have various formats. We can use PO numbers starting with **450...,
     451..., 55..., 1000...**
 
-
     We **cannot** use PO numbers starting with **51..., 460..., 458..., 2000...**
-
 
     In case you see a PO starting with above mentioned numbers, please follow the
     same logic as for any other errors or missing data to ensure the invoice will
     be forwarded for manual check.
 
-
     Next, you should check the PO number in SAP.
-
 
     **Exception:** You don''t have to do this for PO number starting with 1000....'
   questions_and_answers:
@@ -274,31 +246,25 @@ seed_examples:
     amount and delete tax amount, to ensure the invoice will be forwarded to accountants
     for manual verification and not processed automatically.
 
-
     For instance, there should be always one invoice scanned in one PDF. If during
     validation in the displayed original you found that two or more invoices are scanned
     in one PDF file, please proceed as follows:
-
 
     Login to SAP (procedure described in step [5.2.17 Complete data and trigger workflow](#complete-data-and-trigger-workflow)).
     Go to transaction "/OTX/PF03_WP -- Business Center Workplace", select the desired
     file by registration number and save the displayed document with multiple invoices
     as a PDF to your PC.
 
-
     Sends this document by email to **\"xxx\@Client.com\"** with the note to "unlink
     and rescan".
 
-
     Returns to validation tool and deletes the displayed document with multiple invoices
     from the system. (See step [5.2.16 Reject the document from the system)](#reject-the-document-from-the-system)
-
 
     First, check if the received document is a valid invoice or any other document
     that should not be processed in SAP Workflow. If you recognize a document which
     is not an invoice (reminder, advertisement etc.) or the invoice is illegible,
     please move to step 5.2.16.
-
 
     If it''s a valid invoice, please check if all following fields were read correctly
     by the OCR system:
@@ -333,7 +299,6 @@ seed_examples:
   - answer: 'If during validation in the displayed original you found that two or
       more invoices are scanned in one PDF file, please proceed as follows:
 
-
       1. Login to SAP. Go to transaction "/OTX/PF03_WP -- Business Center Workplace".
       Select the desired file by registration number. Save the displayed document
       with multiple invoices as a PDF to PC.
@@ -358,78 +323,58 @@ seed_examples:
     To do it, please login to SAP (described in step [5.2.17 Complete data and trigger
     workflow](#complete-data-and-trigger-workflow)) and follow the below steps.
 
-
     1.  **Error verification:**
-
 
     Open transaction **/n/OTX/PF03_WP** -- it shows all documents that were scanned
     and are prepared for validation:
 
-
     Choose option "Error" in the left-hand menu.
-
 
     **Note:** You will see errors for all company codes and countries, so you need
     to sort the records by country based on document type:
 
-
     Select all the lines for Czech Republic by highlighting them:
-
 
     Click on "choose Bulk Action":
 
-
     Use "change status" option:
 
-
     Change it for 71 by double clicking on the line:
-
 
     After selecting the new status, a confirmation will be shown:\
 
     This action wil trigger a request to the sender to resubmit the errorous items
     once again for scanning/OCR.
 
-
     **NOTE!** After sixth attempt to restart the document in the system it must be
     rejected and scanned one more time -- in this case please send an e-mail to xxx@Client.com
     mentioning the Reg ID.
-
 
     **NOTE!** If you find a document in status **75** (not error but document is frozen
     in the system) -- see "Status" column - you can change the status to 74 istead
     of 71.
 
-
     2.  **Rejections**
 
-
     In transaction **/n/OTX/PF03_WP** switch to "Rejected":
-
 
     Filter Czech items only, by clicking on funnel button and selecting two following
     criteria from the Column Set: (Document type and Date of Registration).
 
-
     Next, click on "Define Values":
-
 
     Put the "**\*CZ\***" as document type and date range between current date and
     date of previous verification (excluding that date) to avoid overlapping the date
     ranges. For example: if previous check was done for date range 03.04.2023-10.04.2023,
     the next time you should pick 11.04.2023 as starting date.
 
-
     Confirm with tick button:
 
-
     Sort the generated list of documents by document type:
-
 
     For each line, you need to check the description in the Detail Pane: (In case
     you don''t see the item details, please use the button "show detail pane" in the
     upper menu.)
-
 
     If the status is "**78**" and description is "**Rejected by administrator**" you
     should not process these items further and move on to the next document.

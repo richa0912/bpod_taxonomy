@@ -67,7 +67,6 @@ seed_examples:
   - answer: 'In Reconcile Intercompany Balances process, the Service Provider Intercompany
       Hub Accountant is responsible for:
 
-
       *   Generating Intercompany General Ledger
 
       *   Posting non-judgmental accrual journals to ensure V105 match
@@ -243,7 +242,6 @@ seed_examples:
   - answer: 'The general assumptions or the Reconcile Intercompany Balances process
       are:
 
-
       *   Parallel automated posting of intercompany invoices for finished goods in
       the books of the issuing and the receiving company is made by the Service Provider
       (Intercompany Team).
@@ -254,7 +252,6 @@ seed_examples:
     question: What are the general assumptions for the Reconcile Intercompany Balances
       process?
   - answer: 'The deadlines for intercompany billing are:
-
 
       *   Cut-off date for finished goods billing is the last working day of the period.
 
@@ -267,70 +264,55 @@ seed_examples:
 - context: '> **This Portion of the document explains how to generate line level reconciliation
     report:**
 
-
     -   Country & Platform Line Level Macro - Provides the supporting for simplified
     reconciliation at Line Level.
 
-
     -   Summary Version Macro - Provides the supporting at summary level at TP''s
     and in comparison, with V105 reported balances.
-
 
     -   Summary Version of macro to be used for posting the adjustments - These summary
     reports are circulated based on the Global Calendar timelines shared with OCs
     or Countries by 3PSP accountant a week prior to closing.
 
-
     > Line level information on WD-2 and WD-1 are shared with OC\''s for reference
     and assurance purpose, Country''s/OC\''s to provide the GL/CC to be used for simplified/line
     level recon & agree in advance with 3PSP accountant.
-
 
     -   IC Hub accountant to post entries basis simplified recon and pre agreed ways
     of GL/CC postings with OCs or Countries. Entries should resolve the mismatches
     in V105 during closing as per GCAD defined guidelines and timelines.
 
-
     -   For Non SAP entities manual reconciliation to be performed basis the statement
     of accounts or V105 balances updated by counter party.
-
 
     > **Simplified Recon -- Line Item Level Macro**
 
     -   Replace_StringQutoes :- This button enables the formatting of SAP raw data
     by replacing the special characters.
 
-
     -   Recon Files Generate :- This button enables the formatting of data and updating
     the BCS Code, Country, Platform and Classifying the document types into Sundry,
     Prodcut & General Ledger.
 
-
     -   Cash Report :- This button enables to highlight the line items which are paid
     on AP side but cash application is not made on AR side due to cash in transit
 
-
     > **a. Report Generation**
-
 
     > Platform & Country wise report will be generated using "Platform -- Countries"
     button, this button enables the line level reconciliation information for each
     country in that particular platform
 
-
     > For How to run the Macro for Simplified Line level refer to the Local DTP shared
     in below link.
-
 
     > Note : - Stock in Transit output for UAPL & UASCC is done through additional
     macro tool. This requirement is local and country specific to strengthen the controls
     in process & to ensure the Stock in Transit is identified and booked at respective
     BU''s and confirmation is taken from respective OC''s for recording during closing.
 
-
     > 3PSP to maintain the copy of macro. In case of macro failure, the copy can be
     used for further processing.
-
 
     > 34\. Master data maintenance
 

@@ -13,50 +13,36 @@ seed_examples:
 
     ## Exception case
 
-
     17. There is an example for match request received via email to Indirect Exceptions
     mailbox as shown below in the screenshot.
 
-
     18. Enter the Business Unit and Voucher ID and click on search button.
-
 
     19. The match status "Exception" under summary screen.
 
-
     20. Click on voucher attributes and go to match action.
 
-
     21. Select the Status as "Overridden"
-
 
     22. Click on Override reason and write comments as " Removing the receipts required
     for voucher" and click OK
 
-
     23. Go back to the voucher Attribute tab and copy the Vucher ID and click on "Return
     to search".
 
-
     24. Paste the voucher ID and save it and click on "Run"
-
 
     25. Click "Ok"
 
-
     26. Next screen is match request screen, click on "Process monitor"
-
 
     27. Now will get "View Process Request For" screen, check the Run status is "Queued",
     click on "Refresh" to refresh the page.
 
-
     28. Until the Run Status matched/reflect as "Success" click on refresh as shown
     below.
 
-
     29. Enter the BU and Voucher ID
-
 
     30. Go to summary screen to check the Match status - Now the status is matched.
     End of the process.'
@@ -163,9 +149,7 @@ seed_examples:
     question: How often should the PS voucher matching process be performed?
 - context: '# Process Detail
 
-
     ## Overview
-
 
     > Peoplesoft Vouchers are processed by the Invoice processing team, if the vouchers
     are not auto matched in Peoplesoft, it will get into exception queue via Peoplesoft

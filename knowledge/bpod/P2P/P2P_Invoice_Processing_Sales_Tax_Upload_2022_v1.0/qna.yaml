@@ -78,72 +78,52 @@ seed_examples:
     question: What is the output of the Sales Tax Upload process?
 - context: '### Process for State Client Tax.
 
-
     1.  The email for Client tax upload is sent in Knoxville upload mailbox from General
     Accounting team**.**
 
-
     2.  The email would look like the below
 
-
     3.  The email is received with the subject as ''State Tax Paymwnt File Created''.
-
 
     4.  To continue with the process, open M\>AP Voucher Upload and open StateTaxPayment.xlsx
     Excel Report
 
-
     5.  After opening the excel, type GN1 In the top left corner box to include all
     the additional lines.
 
-
     6.  Then select and copy the data
-
 
     7.  After copying the data, open the file from path: M dirive\> APinvoice upload
     \> CE Wire 10\>Exceluploadfor voucher_ClientTax.xlsm sheet
 
-
     **Note: The Sale tax/Fed tax and the state Client tax goes into this particular
     tamplate (Exceluploadfor voucher_ClientTax.xlsm sheet).**
-
 
     8.  Paste the details with special value pasting option 123 in Exceluploadforvoucher_Client
     tax sheet.
 
-
     Note; After pasting the data cross varify the data with both the file, all the
     data must match.
-
 
     9.  Click on **Generate XML and Post** option tab, enter the User ID and Password
     and click on Ok to upload.
 
-
     10. After uploading the data
-
 
     11. Open PeopleSoft to verify upload was successful.
 
-
     12. Select Reporting Tools
-
 
     13. Select Query
 
-
     14. Select Query Viewer
-
 
     15. Search for Staged Vouchers query: ZI_AP_STAGED_VOUCHERS
 
-
     16. Enter KUP and select View Results and copy the data
-
 
     17. Copy the data from people soft and with the same copy, reply all to the original
     email that the upload has been completed with confirmation file.
-
 
     **Note;** If the data has been uploaded at 2pm central time, voucher billing happens,
     it is not going to get picked until the 5pm. If the data has been uploaded at
@@ -181,47 +161,34 @@ seed_examples:
     happens, it is not going to get picked until the 5pm. If the data has been uploaded
     at 5pm central it will get picked up on the next day.
 
-
     ### Process for Client Tax/Fed Client Tax
-
 
     1.  The email is received in knoxville upload mail box subjecting as Client Tax
     Payment File Created.
 
-
     2.  Opne the ''M'' drive \>Ap voucher uopload \> Client tax payment.
 
-
     3.  Open the report and Copy all the data with GN1
-
 
     4.  After copying the data, open the file from path: M dirive\> APinvoice upload
     \> CE Wire 10\>Exceluploadfor voucher_ClientTax.xlsm sheet
 
-
     18. Paste the details with special value pasting option 123 in Exceluploadforvoucher_Client
     tax sheet.
-
 
     Note; After pasting the data cross, verify the data with both the files, all the
     data must match.
 
-
     19. Clik on **Generate XML and Post** option tab, enter the User ID and Password
     and click on Ok to upload.
 
-
     20. After uploading the data
-
 
     21. Open PeopleSoft to verify upload was successful.
 
-
     22. Select Reporting Tools
 
-
     23. Select Query
-
 
     24. Select Query Viewer'
   questions_and_answers:

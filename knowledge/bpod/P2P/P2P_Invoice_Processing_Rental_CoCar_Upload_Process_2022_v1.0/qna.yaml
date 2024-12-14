@@ -87,61 +87,43 @@ seed_examples:
     question: What is the risk associated with CLIENT Rental-Company Vehicle Upload?
 - context: '## Process Description
 
-
     An email will be sent by Travel requesting upload for Company Car.
 
-
     1.  Open Outlook.
-
 
     2.  Under Knoxville Uploads select the email with subject Rental/Company Vehecial
     PS Upload.
 
-
     3.  We will receive emails from two people - Susan miller and Delfina Rodriguez.
-
 
     4.  Open the Email.
 
-
     5.  Click on the link in the email to open the file you want to upload.
-
 
     6.  Once you click on the link the below Excel sheet will Clientpear.
 
-
     7.  From the upper left search box enter **gn1** in the search option.
-
 
     8.  Hit Enter.
 
-
     9.  Once we search with the GN1 the below screen will Clientpear.
 
-
     10. There are multiple line item in one upload
-
 
     11. Select all the records beginning at row 2, scroll down till the last record,
     and then select copy.
 
-
     12. Check for the amounts in columns R, DF, GU, open the file explorer to continue
     the process.
-
 
     13. Open M: Drive\> CLIENT Voucher Upload\> CE Win 10\> select company car allocation
     excel file.
 
-
     14. OpenExcelUploadforVoucher_CoCarAlloc.xlsm.
-
 
     15. The below screenshot is the specified template.
 
-
     16. Select line 4, right-click and select Paste Special Values.
-
 
     **NOTE:** If Paste Special Values is not working, then return to the original
     file and copy again. If Paste Special Values is not used, then the file will not
@@ -165,23 +147,17 @@ seed_examples:
     question: How to Check amounts in Rental/Company Vehical PS Upload process?
 - context: '28. Select Generate XML and Post. Enter your User ID and Password, OK.
 
-
     29. A list of the Upload programs will Clientpear.
 
-
     30. Create a Destination file in M:\\CLIENTVoucherUpload\\CE
-
 
     **NOTE:** If a DEST.XML already exists, then it **must** be moved to **M:\\CLIENTVoucherUpload\\Archive**
     before creating a new one. Change DEST.XML file name to last upload name plus
     MMDDYYYY and save.
 
-
     31. In file name enter, DEST.XML., Select Save
 
-
     32. Select OK
-
 
     **NOTE:** If there is an error with the upload, the box will say an error has
     occurred. Start the entire process again. If the error continues, then you may
@@ -189,43 +165,31 @@ seed_examples:
     to the far right in the original file. If that still does not resolve the issue
     on the next attempt, then contact local System Support to assist.
 
-
     33. Open PeopleSoft to verify upload was successful.
-
 
     34. Select Reporting Tools
 
-
     35. Select Query Viewer
-
 
     36. Select Excel for the ZI_CLIENT_STAGED_VOUCHERS query
 
-
     37. Enter KUP for Origin
-
 
     38. Select View Results
 
-
     39. Select Open
-
 
     40. Select Enable Editing
 
-
     41. Delete line 1
-
 
     42. Select Find and enter one of the invoice numbers from the spreadsheet. If
     you find even one of the invoice numbers, it means all the invoices are loaded.
-
 
     43. If the query did not return any records, then continue to run the query periodically
     over the next hour. If the records still are not showing, then an email must be
     sent to the.DL PeopleSoft FSCM Support Team to review. Copy IT Service Desk as
     well for tracking issues. Please see an example of an email.
-
 
     44. In some cases, a job has timed out ahead of the upload and once that is cleared,
     the upload will feed into PeopleSoft. There are other times when the file has

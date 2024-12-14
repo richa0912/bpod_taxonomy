@@ -65,34 +65,25 @@ seed_examples:
 
     ## Overview
 
-
     This activity refers to uploading the Client invoices into people soft by referring
     link received from AR and Collections team through Knoxville mailbox.
 
-
     ## Process Description
-
 
     1.  An Email is sent to the Knoxville uploads mailbox from Sharon Clark (AR and
     Collections) with a link to the Client file.
 
-
     2.  Click on the link provided in the email and open
-
 
     3.  When you click on the link it directs you to the spreadsheet of the folder
 
-
     4.  Type ''GN1'' in CS box, it has all those additional lines
-
 
     5.  Column GK consists of the number of records and column GL has its additional
     lines
 
-
     > **Note**: if any data is missing in the excel or incorrect, we would reply to
     the email and ask for the correct data and information.
-
 
     6.  Change column" M" to the User ID of the person who is uploading the file.
     If the User ID is not the sender''s Or the person who is uploading the file, change
@@ -100,26 +91,20 @@ seed_examples:
     but the user ID is neither of those users, correct the user ID to the uploader''s
     user ID)
 
-
     7.  Follow the path **M:\> AP voucher upload\> CE Win10** to open the **ExcelUploadForvoucher_Client.Xlsm**
     file to upload the data
 
-
     8.  Highlight the row 4 & paste the copied data using the special value option.
-
 
     > Note: If pasting special value is not an option, then return to the original
     file and copy again. If paste special value is not used, then the file will not
     upload to PeopleSoft
 
-
     9.  If there is an error with the upload, the box will say an error has occurred.
     Review by running the PeopleSoft Staging process to ensure the file was not uploaded.
 
-
     If the file does not exist in staging table, then you will need to start the entire
     process again. If the error continues, then you may have bad data in the file.
-
 
     In the original file, delete any blank rows at the bottom or blank columns to
     the far right. If that still does not resolve the issue on the next attempt, then
@@ -142,34 +127,25 @@ seed_examples:
     question: What to do if there is an error with the upload in peoplesoft?
 - context: '10. Open PeopleSoft to verify upload was successful.
 
-
     11. Select Reporting Tools
-
 
     12. Select Query Viewer
 
-
     13. Search for Staged Vouchers query: ZI_AP_STAGED_VOUCHERS
-
 
     14. Select Run to Excel
 
-
     15. Enter KUP in the Origin box and select view results.
-
 
     16. Select Open, then Enable Editing.
 
-
     17. Verify invoices are in the Staging table. Scroll through the file to see if
     it matches the original file. In this case, the upload was successful.
-
 
     If the query did not return any records, then continue to run the query periodically
     over the next hour. If the records still are not showing, then an email must be
     sent to the. DL PeopleSoft FSCM Support Team to review. Copy IT Service Desk as
     well for tracking issues. Please see an example of an email.
-
 
     In some cases, a job has timed out ahead of the upload and once that is cleared,
     the upload will feed into PeopleSoft. There are other times when the file must
@@ -178,7 +154,6 @@ seed_examples:
     again. If the file is duplicated, then follow the Desk Procedures for Pre-Edit
     and Recycle to clear. If it is a large volume, then refer the File Maintenance
     Desk Procedures for Mass Deletion.
-
 
     If the support team says the file has been uploaded, but it does not show in Staged
     Vouchers, then enough time may have passed where the voucher has been created

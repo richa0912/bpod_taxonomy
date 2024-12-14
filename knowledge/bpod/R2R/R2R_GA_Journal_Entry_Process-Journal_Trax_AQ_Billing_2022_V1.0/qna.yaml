@@ -47,7 +47,6 @@ seed_examples:
 
     ## Overview
 
-
     > Around 25th of every month AQ Billing spreadsheet will be saved in the GA SharePoint
     by Client business partner/associate. Within WD-1 Journal should be prepared and
     processed in Journal TRAX for US and Canadian Dealers. AQ Billing journal is posted
@@ -92,7 +91,6 @@ seed_examples:
       Trax_AQ Billing ?
 - context: '## Inputs & Outputs
 
-
     +-----------------+---------------------------------------------------+
 
     | Input           | From                                              |
@@ -102,7 +100,6 @@ seed_examples:
     | > GA SharePoint | > Electrical Integration Engineer (Bill Pawelko). |
 
     +-----------------+---------------------------------------------------+
-
 
     +----------------------------------------+---------------------------------------------+
 
@@ -129,7 +126,6 @@ seed_examples:
     question: What is the expected Output in Journal Process TRAX_AQ Billing?
 - context: '## Objective(s)
 
-
     > To charge/credit dealers for AQ Advanced DLB programming completed on VIN
 
     >
@@ -138,21 +134,15 @@ seed_examples:
     is custom software for cab and chassis electrical systems generated to provide
     requested functionality for customers.
 
-
     ### Frequency:
-
 
     > Once a Month (WD-1)
 
-
     ### Source:
-
 
     > Spreadsheet from AQ billing folder in GA SharePoint
 
-
     ### System Accesses:
-
 
     >  GA SharePoint Site
 
@@ -168,9 +158,7 @@ seed_examples:
 
     >  Journal Trax
 
-
     -   CanTax access database
-
 
     >  Echo sign/Adobe sign
 

@@ -57,9 +57,7 @@ seed_examples:
     question: What is the current version of Fleet Miami Engine document?
 - context: '# Overview
 
-
     ## Objective(s)
-
 
     > To account the invoice manually generated for Miami engines into PeopleSoft
     a seperate process needs to be followed. These invoices will not be generated
@@ -67,9 +65,7 @@ seed_examples:
     customer. At the same time, the manual invoice will be forwarded to fleet invoicing
     assistant to account the same in PeopleSoft.
 
-
     ## SIPOC
-
 
     +--------------+-------------------------------------+--------------------------------------------------------+------------------------------------------+-----------------------+
 
@@ -117,50 +113,37 @@ seed_examples:
       What is the output of Fleet Miami Engine process?'
 - context: '## Process Description
 
-
     1.  Receive request from Brazil Team with Proforma invoice and Mahindra invoice
     as attachment.
-
 
     2.  Save the invoice copies and email to path **[M:\\General Sales\\Miami Engine\\Parts\\Create
     folder for current invoices]{.ul}**.
 
-
     3.  Open the invoice.
-
 
     > Below is the invoice.
 
-
     4.  Login to PeopleSoft, go to Billing \> Maintain Bills \> Standard Billing
-
 
     5.  Click on Add a new value tab, enter Business Unit as 40148 and Invoice as
     NEXT.
 
-
     6.  Click on magnifier option next to Bill Type Identfier, select Service option
     from the list.
 
-
     7.  Click on magnifier option next to Bill Source, select Order Management option
     from the list.
-
 
     8.  Click on magnifier option next to Customer, check in the proforma invoice
     received to identify the customer. In this scenario customer name is ALMACENES
     JUAN JURI CIA LTD. Select the customer from the list.
 
-
     9.  After selecting all the options and click on Add.
-
 
     10. On the next screen under tab Header - Info 1, update the date. Date should
     be current date (date on which upload is processed).
 
-
     11. On Line info - 1 tab, update the details as below.
-
 
     > Table - ID PS/billing Charge ID
 
@@ -180,43 +163,32 @@ seed_examples:
 
     > Unit price - According to Proforma invoice received(in this case \$2943)
 
-
     After updating the required details, click on SAVE option.
-
 
     12. Go back to Header -- Info 1 tab, change the Status option from NEW to RDY
     (Ready to Invoice). Click on Save option. Make a not of the Invoice number from
     the screen (in this case ME00013639)
 
-
     13. Go to Billing \> Generate Invoices \> Non-Consolidated \> Single Action Invoice
-
 
     14. Click on screen, under Find an Existing Value tab click on Search option.
     This will bring up a list of control ID''s. Select ME_SINGLE_ACTION option from
     the list.
 
-
     15. To create a new ID, click on Add a New value option and enter the Run Contril
     ID. Then click on Add option. This will create a new ID.
-
 
     16. Enter From Invoice and To Invoice and click on save. Then click on Bill to
     be processed option to check the status on the upload.
 
-
     17. Corss verify the details on the screen and click on Return option to get back
     to the pervious page.
 
-
     18. Click on RUN option.
-
 
     19. Select MIAMI_Engine\_ BL Print option from the list and click OK.
 
-
     20. Click on Process Monitor option.
-
 
     21. Check the Run Status. Wait until it turns to Sccuess.'
   questions_and_answers:
@@ -236,74 +208,53 @@ seed_examples:
 - context: '22. Once the posting is success, go to Main menu \> Accounts Receivable
     \> Receivables Update \> Request Receivable Update
 
-
     23. On the Find an Existing Value tab, click on Search option. From the list select
     ARUpdate option.
-
 
     24. Enter Group Unit as 40148, Accounting Date From and Accounting Date To. Click
     on Save option. Then click on Run option.
 
-
     25. Select PS/AR Receivable Update and click OK.
-
 
     26. Click on Process Monitor option
 
-
     27. Make sure Run Status is Posted.
-
 
     28. Open Proforma invoice from the saved folder. Update Client details, Date and
     Inv Number.
 
-
     29. Print the invoice in Broadgun PDF Machine.
-
 
     30. Save the invoice in path **[M:\\General Sales\\Miami Engine\\Parts\\current
     folder]{.ul}**
-
 
     31. Open Mahindra invoice. Change exporter information to Client details, Invoice
     number and date, take out all the formulas, delete buyer details and works payment
     terms.
 
-
     32. Print the invoice into Broadgun PDF Machine.
-
 
     33. Save the file in path **[M:\\General Sales\\Miami Engine\\Parts\\current folder]{.ul}**
 
-
     34. On Mahindra Invoice, go to Custom Invoice tab. Update the below details.
-
 
     Add ME number ( this is from PeopleSoft)
 
-
     Business unit -- 40148
-
 
     Vendor - 50534AX(this is will be updated by Barzil team)
 
-
     Account number -- 401484074880 (this will be updated by Brazil team)
 
-
     35. Print the invoice to Broadgun PDF Machine.
-
 
     36. Save the file in folder **[M:\\General Sales\\Miami Engine\\Parts\\Current
     folder]{.ul}**
 
-
     37. Send the PDF files created for invoicing and packing list back to Brazil team.
-
 
     38. Send Packing list invoice copy to Accounts Payable team(xxx\@Client.com).
     Save the signed invoice on the folder
-
 
     The activity concludes here.'
   questions_and_answers:

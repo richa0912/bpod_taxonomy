@@ -64,7 +64,6 @@ seed_examples:
     tables and they will be able to be viewed in Regular Entry since the voucher has
     already been created.
 
-
     Once the records have been verified in Staged Vouchers, save the file as email
     subject line (example: Client Client Global Invoices 3-17-19) PS Confirmation
     MMDDYYYY on the your OneDrive, then select Save.
@@ -91,9 +90,7 @@ seed_examples:
 
     Definitions
 
-
     Term Definition
-
 
     PS PeopleSoft'
   questions_and_answers:

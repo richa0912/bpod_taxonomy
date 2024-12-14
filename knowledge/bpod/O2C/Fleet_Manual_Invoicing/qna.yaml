@@ -48,9 +48,7 @@ seed_examples:
     question: What is the full form of TASS in fleet manual invoicing?
 - context: '# Overview
 
-
     ## Objective(s)
-
 
     Manual invoicing assists in updating the invoices details manually in Manual invoicing
     form and updating in Final submission form to key the invoice information in IMS
@@ -59,9 +57,7 @@ seed_examples:
     to key the information in IMS only when the Age of the truck is more than 6 months
     sitting in the Dealer location while transferring to Fleet location.
 
-
     ## SIPOC
-
 
     +----------------------+-----------------------------------+---------------------------------------------------------------------------------------+-------------------------------------------------------------------------+-----------------+
 
@@ -104,7 +100,6 @@ seed_examples:
   questions_and_answers:
   - answer: 'Based on the provided context, the SIPOC (Supplier, Input, Process, Output,
       Customer) for Fleet Manual Invoicing is:
-
 
       1. Supplier: Fleet office and Nam
 

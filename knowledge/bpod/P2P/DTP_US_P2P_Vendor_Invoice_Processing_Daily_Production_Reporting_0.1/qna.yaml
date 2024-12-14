@@ -56,7 +56,6 @@ seed_examples:
     question: What applications are used to prepare the POP Daily Production Report?
 - context: '### Description of the Queues
 
-
     +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 
     | **Queue**                  | **Description**                                                                                                                                 |
@@ -198,28 +197,22 @@ seed_examples:
 - context: 'Step 13: In this example we look for the queue status for Day 28 as the
     queue status for Day 27 is zero.
 
-
     Step 14: Update the production status report for Day 28 to 267 items. Delete the
     Day 27 because the queue is clear and add Day 7. Look up each day in the LoadMaster
     Workflow application and populate Day 29, 30, 3, 4, 5, 6 and 7.
-
 
     Step 15: Once the Daily Queue information is updated, the Daily Queue Total in
     the spreadsheet shows the total number of invoices that need to be posted as on
     Day 11.
 
-
     Step 16: Repeat the process for ERS Queues and fill in all the details for the
     ERS Daily Queues.
 
-
     Step 17: Next, look up Q0 for customer service queue and enter in the spreadsheet
-
 
     Step 18: Look up the Training Queue Q39 and fill in the pending invoices in the
     queue (This queue is only used to train a new employee on invoice processing.
     Count should be zero except for this reason).
-
 
     Step 19: The process is same for the Speciality Queues. Look up the Queue number
     and fill in the cell with the number of invoices in the queue.
@@ -242,46 +235,35 @@ seed_examples:
 - context: 'Step 1: Open the previous Production Status Report ''POP Workload 121012.xls''
     from the I:\\POP Production Status\\2012\\12 December folder
 
-
     Step 2: Change the Report dates to the current date and save the file as ''POP
     Workload 121112.xls'' to the same folder.
 
-
     Step 3: The cells in yellow containing previous data will have to be deleted and
     populated with number of items in each queue today.
-
 
     Step 4: To fill up the data on the Loadmaster Invoice queues, launch the LoadMaster
     Workflow Application by double-clicking on the POP Invoice Queues Icon on the
     Desktop
 
-
     Step 5: Enter your Login ID and password. Click on the Login button to launch
     the application.
-
 
     Step 6: Close the Workflow Viewer window as it is not used in the preparation
     of this report.
 
-
     Step 7: Maximize the POP Workflow Excel file so that it is alongside and easy
     to work with.
-
 
     Step 8: Click on the Database menu in the LoadMaster Workflow Application and
     select the database ''popdta''
 
-
     Step 9: Once the ''popdta'' database is selected, the notification is displayed
     in the status bar and the file ''Open'' icon is enabled.
 
-
     Step 10: Click on the File Open icon to launch the Queue Selection window.
-
 
     Step 11: To look for the LoadMaster Invoice Queue for Day 27, ''Click on the Day
     27 Queue'' in the Queue Selection window and click OK.
-
 
     Step 12: Number of Pending invoices are displayed at the bottom in "Folders Available".'
   questions_and_answers:
@@ -302,32 +284,24 @@ seed_examples:
 - context: 'Step 20: To fill in the Total Open Cases under Remedy Cases, Open the
     Remedy Application
 
-
     Step 21: Click on ''BSC In-Box" =\> POP In-Box =\> Open Help Desk Cases =\> All
     Open Cases
-
 
     Step 22: At the bottom of the Remedy In-box screen, the total number of open items
     is displayed.
 
-
     Step 23: Fill-in the Production Report spreadsheet with this information
-
 
     Step 24: To see all the Remedy Cases that are over 5 days old, open the Reports
     menu. Click on ''Reports -- USA'' =\> ''BSC Management Reports'' =\> ''BSC Production
     Meeting Report''.
 
-
     Step 25: ''Over 5 Day Report'' is generated.
-
 
     Step 26: Scroll down to the POP Team section to see the number of remedy cases
     over 5 days old.
 
-
     Step 27: Enter this number in the Production Report spreadsheet.
-
 
     Step 28: Once all the information is obtained and updated, save the file. It can
     now be sent to the POP Team.
@@ -335,7 +309,6 @@ seed_examples:
     '
   questions_and_answers:
   - answer: 'To get the number of Remedy cases, follow these steps:
-
 
       1. Open the Remedy application.
 

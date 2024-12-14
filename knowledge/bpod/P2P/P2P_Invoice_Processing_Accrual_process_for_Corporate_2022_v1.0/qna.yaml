@@ -14,119 +14,86 @@ seed_examples:
     ##### If there any Code PO it should be Deleted because UTC don''t use the Code
     PO. (If the PO is like Regular Corporate Purchase Order it will be of 15 digits).
 
-
     -   If the Purchase Order is incorrect then it means that we shouldn''t assume
     that the coding is correct. (Coding should be verified carefully).
-
 
     -   If the PO is incorrect, the New PO supposed to be Provided and it will have
     completely different Coding and Delete the Incorrect PO.
 
-
     ##### Go to plant Invoice and Filter the UTC.
-
 
     (UTC is the only Exception which is Excluded because it has the same line of coding
     for every single entry, so it''s safe to save with the Current Coding and it always
     going same number).
 
-
     ##### Double check and Verify the Coding by using Filter (Blank) to find if anything
     is missing.
 
-
     ##### To update the missing coding, Go to Peoplesoft Purchase Order Inquiry.
 
-
     (Main Menu\>Purchasing\>Purchase Orders\>Review PO Information\>Purchase Orders).
-
 
     ##### Enter the Business Unit and PO ID from the Excel Spreadsheet and Click on
     Search.
 
-
     ##### Purchase Order page will populate.
-
 
     ##### Go to 1^st^ line in the Purchase Order Page to get the coding.
 
-
     ##### Schedules page will populate Select the line again.
-
 
     ##### Enter the Purchase Order number, GL Unit, Operating Unit, General Account,
     Department, PC Business unit, Project, Activity in the Excel Spreadsheet from
     the Purchase Order Inquiry Page.
 
-
     ##### Go to GL Business Unit, click on Filter, and Select All (Selecting all Business
     units).
 
-
     ##### All the Business Units Data will be populated.
-
 
     ##### Go to Prior month Spreadsheet and Perform VLOOKUP.
 
-
     Enter ''Yes'' in AX Column.
-
 
     ##### Select the 1^st^ cell in May (AV) in April Spreadsheet.
 
-
     ##### Click on Insert function, a dialogue box will populate.
-
 
     ##### Select the Function as Vlookup.
 
-
     ##### A Dialogue box will populate.
-
 
     ##### Select the column D (Invoice number) for performing VLookUp and Index number
     as 1 and Range lookup as False and click on OK.
 
-
     ##### Vlookup value will populate in AV column (May column 1^st^ cell), Drag down
     the cursor till the End of May column where all the Vlookup values will be populated.
 
-
     ##### Select Sort in Column ''AV'', Sorted Vlookup data will be populated.
-
 
     ##### Filter the Sorted Data with NA and click on OK, The Data with ''NA'' will
     be populated.
 
-
     ##### Change the Data from ''NA'' to ''NO''.
-
 
     ##### Select column ''AV'', Filter all the Invoice numbers by excluding ''NO''
     and click on OK.
 
-
     ##### All the Invoice numbers will be populated and Change the Invoice numbers
     with ''Yes''.
 
-
     ##### Sort the Invoices with ''NO''.
-
 
     ##### Select the Column B (Supplier Data) and click on Copy Sheet and Paste the
     Data.
 
-
     ##### Copy the Invoice number and Invoice Date from April Spreadsheet and Paste
     it in Copy sheet.
-
 
     ##### Copy the AD column (Invoice Reference Amount) from last month Spreadsheet
     and Paste it in the Copy sheet which is in same file.
 
-
     ##### Open M:/apcs/data/access/vendorinquirybump
-
 
     ##### Bump menu will open.'
   questions_and_answers:
@@ -153,9 +120,7 @@ seed_examples:
       the data?
 - context: '# Process Detail
 
-
     ## Overview
-
 
     The accounts payable accrual process is used to provide Corporate a listing of
     supplier invoices for expenditures incurred as of the date of the balance sheet
@@ -163,12 +128,10 @@ seed_examples:
     listing of the invoice detail (invoice date, number, PO, dollar amount, etc.)
     is extracted from the Verification database.
 
-
     Report will be Run to see if everything opens on verification in the Newletter
     and then it will send to General accounting (General Accounting Team Knoxville)
     Knoxville Team will Package, sort and Book Accruals based on that and or they
     will send it off to other departments in Client so they can book Accruals.
-
 
     For Corporate, we don''t know that there will Accruals booked, we won''t be doing
     the Accruing, so we need to make sure all the data we give them is complete and
@@ -190,116 +153,86 @@ seed_examples:
       dollar amount, etc.) extracted for the accounts payable accrual process?
 - context: '### Example 1:
 
-
     ##### Copy Invoice number and business unit from Accrual spreadsheet.
-
 
     ##### Enter Invoice number and business unit in people soft regular entry and
     click on search.
 
-
     Since it is not processed, no matching values were found.
-
 
     ##### Go back to newletter database, Double click on the invoice number field
     and enter the invoice number from excel sheet and click on OK.
-
 
     ##### Message was added to the Invoice as sales tax added, copy vendor code /
     supplier code to paste in people soft regular entry & remove invoice number and
     click on search to get invoice details.
 
-
     ##### Click on invoice number & invoice date in people soft.
-
 
     ##### Invoice details shows up. As invoice is processed in people soft and status
     is showing as closed. Newletter database bumps with people soft so if it is processed
     in people soft it will automatically close. We don''t pay if status is closed.
 
-
     ##### Highlight the voucher in excel sheet to perform the match work bench.
-
 
     ##### Match Workbench query: Go to Main menu \> Reporting tools \> Query \> Query
     viewer.
 
-
     ##### Enter query begins with and select the query "ZI_AP_MATCH_EXCEP_FT" and
     extract the result in excel format.
-
 
     ##### Enter percentage symbol (%) in all fields for all records and click on view
     results.
 
-
     ##### Enter the following formula in cell AS2:
-
 
     > a\. VLOOKUP - The highlighted section will change each month, to what the working
     copy used for the research template is named.
 
-
     b.  Click on the cell and drag the formula through the remainder of the column.
-
 
     c.  Keeping the column highlighted, right-click to select copy and paste special
     values.
-
 
     ##### Paste the copied invoice amount column from the accrual excel sheet to match
     the workbench query excel sheet in a separate spreadsheet. Apply the VLOOKUP formula
     to check invoice numbers from the accrual excel sheet and match the workbench
     query excel sheet.
 
-
     ##### Values of VLOOKUP formula will be populated on screen. You will get the
     paid invoice details and filter the unpaid invoices and stat with research.
 
-
     ### Example 2:
-
 
     ##### Copy Invoice number and Business unit from accrual excel sheet to paste
     in newletter database.
 
-
     ##### Open Newletter database & double click on Invoice number field, to paste
     copied Invoice number and hit enter to get Invoice details and message.
-
 
     ##### Here, the message is this has already been Invoiced and the vendor has been
     paid. Please clear.
 
-
     ##### Copy the message and paste in comment column of accrual spreadsheet.
-
 
     ##### Go to People soft \> regular entry and enter business unit & vendor code
     to get vendor details and click on search.
 
-
     ##### Invoice details will be populated and copy the voucher ID number to paste
     into Accrual spreadsheet voucher column and Newletter database message field.
-
 
     ##### Paste the copied voucher ID number in message field of Newletter database
     for future reference.
 
-
     ##### Paste the copied voucher ID number in voucher column of Accrual spreadsheet.
-
 
     ##### As it is already paid invoice so, paste reference number and payment date
     in Accrual spreadsheet by opening people soft \\ payments tab.
 
-
     ##### Copy reference number and payment date.
-
 
     ##### Paste the copied reference number and payment date in respective columns
     of accrual spreadsheet.
-
 
     ##### Hide the columns Letter Type, Plant Name, Purchase Order, Part Number, GL
     BL, Operating Unit, Account Number, Sub Account Number, Dept, Program, Affiliate,
@@ -307,24 +240,19 @@ seed_examples:
     Exception, AP Contact, Responding User in Accrual spreadsheet as we need only
     basic Information.
 
-
     ### Example 3:
-
 
     #### Copy the Invoice number and vendor code from the Accrual spreadsheet and
     paste them into people soft regular entry. {#copy-the-invoice-number-and-vendor-code-from-the-accrual-spreadsheet-and-paste-them-into-people-soft-regular-entry.
     .unnumbered}
-
 
     #### Since, we didn''t find the Invoice in people soft with the date mentioned
     in Accrual spreadsheet. Go back to the Newletter database to view the message.
     {#since-we-didnt-find-the-invoice-in-people-soft-with-the-date-mentioned-in-accrual-spreadsheet.-go-back-to-the-newletter-database-to-view-the-message.
     .unnumbered}
 
-
     #### Here, the message is PO has been in received status since 1/19/22. {#here-the-message-is-po-has-been-in-received-status-since-11922.
     .unnumbered}
-
 
     #### Highlight the row in Accrual spreadsheet as we didn''t find the invoice in
     people soft. {#highlight-the-row-in-accrual-spreadsheet-as-we-didnt-find-the-invoice-in-people-soft.
@@ -354,90 +282,65 @@ seed_examples:
       and paid, and what steps are taken to update the Accrual spreadsheet?
 - context: '##### Bump menu will open.
 
-
     ##### Click on F11 to get the Open Research Template and delete all old records.
 
-
     ##### Research Template will populate.
-
 
     ##### Copy all the data from Copy sheet the and Paste in the Research Template
     and click Yes on dialog box.
 
-
     ##### Go to Queries and select QRY_CDS_Paid,.
-
 
     ##### A dialogue box will populate click on Yes and another dialogue box will
     populate showing to confirm the updating Records then Click on Yes.
 
-
     ##### CDS Paid details are voucher ID, Cheque Number, Cheque Date will be populated
     by running a Query.
 
-
     ##### Now select qry_CDS_Open in Queries to find payments which is open.
-
 
     ##### A dialogue box will populate then click on Yes and Another dialogue box
     will populate showing to confirm to update Records then Click on Yes.
 
-
     ##### CDS_Open details will be populated.
-
 
     ##### Copy the Voucher ID, Cheque Number and Cheque Date columns from the data
     base.
 
-
     ##### Paste the data in to copy sheet.
-
 
     ##### Select the Voucher Column and Click on Sort A to Z, Voucher Id details will
     be Sorted.
 
-
     ##### Now Filter the Blanks in the Voucher ID columns. Blank columns will be populated.
-
 
     ##### In Blank Voucher ID''s Select an Invoice number.
 
-
     ##### Open the Access Database and Select Edit Existing Letters.
-
 
     ##### A dialogue box will populate Enter the Invoice number from Spreadsheet in
     the fields and Click on OK.
 
-
     ##### Invoice Information will populate.
-
 
     ##### Select Messages tab from Invoice Information.
 
-
     ##### Message details will populate.
-
 
     ##### In the message details it is given as New PO, so it needs to be verified
     in the People Soft whether its processed with the New PO.
 
-
     ##### Open Peoplesoft\\ Main menu \\ Accounts Payable\\Vouchers \\ Add/Update
     \\ Regular entry.
-
 
     ##### Enter Business unit, Invoice number from Accrual spreadsheet sheet and click
     on search.
 
-
     ##### Match status of this voucher is an exception and we don''t have due date.
     Will have the scheduled date in payments tab.
 
-
     ##### Since it is past scheduled date, no need to consider. Hence, copy Voucher
     ID from people soft and paste in Excel sheet.
-
 
     ##### Enter the comment in comment column as it is an exception in match status.'
   questions_and_answers:
@@ -464,88 +367,63 @@ seed_examples:
     be doing the Accruing, so we need to make sure all the data we give them is complete
     and comprehensive
 
-
     ## Definitions
-
 
     ##### Open Windows Explorer to [M:\\PAYSHARE\\DATA\\EXCEL\\Accruals](file:///M:/PAYSHARE/DATA/EXCEL/Accruals)\\Corporate
     1\\FY2022
 
-
     ##### Select the previous month file and open it.
 
-
     ##### Excel sheet will open as below.
-
 
     ##### Copy the columns AU,AV,AW ( March, April and Comments) from the oldest month
     from spreadsheet.
 
-
     ##### Paste it in last month Spreadsheet.
-
 
     ##### Delete the oldest month''s worksheet.
 
-
     ##### Rename the March spreadsheet as May.
-
 
     ##### Go to Access and Select New Letters.
 
-
     ##### NewLetter Main Menu Page will populate.
-
 
     ##### Select Accrual Reports.
 
-
     ##### Accrual Reports Page populates and Select the Corporate.
-
 
     ##### Corporate database will Populate.
 
-
     ##### Copy the Entire data in the database.
-
 
     ##### Paste the Data in current month spreadsheet in the Excel which has been
     already opened.
 
-
     ##### Click on Wrap Text" twice. Data will be populated in a format.
-
 
     ##### Select Filter in Sort and Filter.
 
-
     ##### Deleting the Data which isn''t needed. UTC invoices are included in corporate.
-
 
     This is the Corporate Accrual the Plant BU aren''t needed, To Delete the Plant
     Business units, Filter the Purchase Order number and Sort with A to Z.
 
-
     ##### Select the Plant Business units and delete them. (Such as 00200,01400,01500,02900,03700).
-
 
     ##### Delete the Data of Client Defense because it has separate process that is
     performed on Workday -2.
 
-
     ##### Will not action for coding invoices and the business units are 41400,40400,40200.
     Hence delete these BU.
-
 
     ##### In Exception codes IP10 is not approved for Corporate, (Because it means
     Purchase order is in complete status and the vendor has no authority to claim
     the money because the Purchase Order is already used, If any additional funds
     are needed they should get new Purchase Order).
 
-
     If any IP10 are found it need to be Deleted from the Report. To Delete the IP10
     Sort and filter the Exceptions and select the IP10.
-
 
     **Note:** If any Credits (Negative amounts) found, it needs to be Deleted from
     the Report.'

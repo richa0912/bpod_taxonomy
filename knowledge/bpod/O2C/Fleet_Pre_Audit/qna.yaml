@@ -83,9 +83,7 @@ seed_examples:
       all the paperwork and calculation with reference to the invoicing checklist"?
 - context: '# Overview
 
-
     ## Objective(s)
-
 
     To review and make sure all paperworks created for a particular truck/unit are
     aligned with the checklist and the amount are matched with the factory invoice,
@@ -97,9 +95,7 @@ seed_examples:
     revenue, Special Prep & Delivery, Rebates and Warranty, FET calculations and backup
     emails with reference to the invoicing checklist.
 
-
     ## SIPOC
-
 
     +----------------------------+--------------------+---------------------------------------------------------+-------------------------------------------------------+-----------------+
 
@@ -141,7 +137,6 @@ seed_examples:
     question: What is the output of the pre-audit process?
 - context: '## Overview
 
-
     > Pre Audit activity is performed to check all the paperwork before sending for
     invoicing to make sure the details are matched and corrected. To review and make
     sure all paperworks created for a particular truck/unit are aligned with the checklist
@@ -174,24 +169,19 @@ seed_examples:
       during pre-audit?
 - context: '## Process Description
 
-
     1.  Download the current fleet backlog file from Teams (in this scenario, it is
     10th May 2022 file). In Fleet backlog file, multiple tabs are created for each
     fleet invoicing assistants for updating the details of the units for which paperworks
     are created.
 
-
     2.  To wal through the steps Ryder customer under Location 424 is used.
-
 
     3.  Open the paperwork for Ryder US, Order number **576632** from the path **[M:\\Sales
     Invoicing\\NAI\\Paperless Invoicing\\FY2022\\Ryder\\424\\05 May\\05.10.2022\\Order
     576632.]{.ul}**
 
-
     4.  First page of paperwork will be **R-100 Checklist** template. This should
     be attached with all the paperwork created for any customer.
-
 
     5.  Next will be a manual **Invoicing checklist** which will be prepared by the
     fleet invoicing assistant. This document will have all the details that are going
@@ -200,43 +190,33 @@ seed_examples:
     its a Completion customer(A) or Delivery customer(B). The details updated in the
     document are from the consolidated paperwork.
 
-
     6.  Next document will be the **Factory Invoice,** which provides information
     such as Order number, Customer PO, SPA number and amount. Make sure to match these
     information with invoice checklist and worksheet summary.
-
 
     7.  Continuing on the second page of **Factory Invoice,** shows Warranty code,
     Frieght charges, Raw material Surcharges and any other surcharges if available.
     Match this amount with invoicing checklist.
 
-
     8.  **Factory Invoice** also shows details of engine code. This information will
     be required while identifying the vendor assistance amount.
-
 
     9.  Next document is **Worksheet summary,** which provides complete information
     aboutthe pricing of the truck.
 
-
     10. Next will be Special P&D paperwork for any additional specifiaction added
     to the truck. Make sure the amount is matching with the invoicing checklist.
 
-
     Below is a detailed break up document and calculation.
-
 
     11. Check W**arranty** paperwork is attached and the amount and contract number
     is matching with worksheet summary and checklist.
 
-
     12. Next check for the **SPA** supporting documents. The document should be dated
     with current date
 
-
     13. **Rebate** can be identified from SPA document. Make sure to match the amount
     with invoicing checklist.
-
 
     14. Check if engine specification on factory invoice is available on SPA document.
     If the same specification are available, the customer is eligible for vendor assistance.
@@ -261,17 +241,13 @@ seed_examples:
 - context: '15. If customer is eligible for rebate, make sure the rebate program approved
     file is available as a supporting document.
 
-
     16. If any additional approvals are taken on SPA, the approved email should be
     attached as supporting document.
-
 
     17. Next check for the credit line supporting downloaded from PeopleSoft. Make
     sure the customer credit limit is not crossed.
 
-
     18. Make sure Delivery confirmation supporting is attached.
-
 
     19. Once all supporting documents are checked, compared and verified with invoicing
     checklist, go back to backlog file and update initial under the PRE-AUDIT (column
@@ -280,39 +256,29 @@ seed_examples:
     unit so that the invoicing assitant could go back and make corrections on the
     supporting document.
 
-
     20. For Penske customer under Location 132, on the Financial summary sheet check
     for Special P&D.
-
 
     21. A Sales Tax Exemption Form should be attached as supporting document for the
     PENSKE customer
 
-
     22. FET Exemption certificate should be attached as supporting document
 
-
     23. FET calculation working sheet should be available for review
-
 
     24. If any variance on the FET calculation, an approved variance letter should
     be attached as supporting document
 
-
     25. For PENSKE, SPA includes two different Rebate programmes for Medium and Heavy
     units. Check in the invoicing checklist if the correct model is considered.
-
 
     26. Once all the units are pre audited, open FY2022 NAI SALES Files from Teams
     folder.
 
-
     27. Update the file with the details of units that are pre audited.
-
 
     28. Match the total count on **FY2022 NAI Sales** file with **Backlog file.**
     This should be matching.
-
 
     The pre audit activity concludes here.'
   questions_and_answers:

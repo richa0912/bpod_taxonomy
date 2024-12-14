@@ -55,47 +55,35 @@ seed_examples:
     question: What is the control objective of the Custom Brokerage Fee invoice processing?
 - context: '## Overview:
 
-
     This activity explains about the Custom Brokerage file for Brokerage Fees is sent
     as needed to the Knoxville Uploads Mailbox from Client Business Services associate
     for upload. The email will contain an Excel spreadsheet for upload as well as
     a PDF with signature approval.
 
-
     If there are issues with the original file sent or invoices hit the recycle file
     reach out to
 
-
     ## Process Flow
 
-
     ## Process Description
-
 
     1.  Open **Outlook** Knoxville Uploads folder to review for new requests. Click
     on **Custom Brokerage Fees.**
 
-
     2.  **Open** the spreadsheet attachment from Outlook.
 
-
     3.  **Copy** the details from the spreadsheet.
-
 
     4.  In the upper left box of the spreadsheet, enter GN1. which allows you to see
     all lines for each invoice entry.
 
-
     5.  **Copy** all the line items from the spreadsheet.
-
 
     6.  Go to **CE Win 10** and open the **ExcelUploadorVoucher_Corporate.xlsm.(**
     it will have the additional information which has to be uploaded in people soft).
 
-
     7.  The file opens to a blank excel template. **Paste** the details in the new
     file.
-
 
     **Note: If Paste Special Values is not an option, then return to the original
     file and copy again. If Paste Special Values is not used, then the file will not
@@ -163,24 +151,18 @@ seed_examples:
 - context: '8.  Once the file has been pasted, compare columns DF and GU to ensure
     they sum to the same \$ amount.
 
-
     9.  Click on **Generate XML** and post.
-
 
     10. Enter **User ID** and **Password** (Client credentials), then select **OK.**
 
-
     11. Create a Destination file in M:\\APVoucherUpload\\CE, for the **file name**
     enter **DEST.XML**, then select **Save**.
-
 
     > **Note: If a DEST.XML already exists, then it must be renamed (always include
     date in naming) and moved to M:\\APVoucherUpload\\Archive before creating a new
     one.**
 
-
     12. Select **Ok.**
-
 
     > **Note: If there is an error with the upload, the box will say an error has
     occurred. Review by running the PeopleSoft Staging process to ensure the file
@@ -190,41 +172,31 @@ seed_examples:
     blank columns to the far right. If that still does not resolve the issue on the
     next attempt, then contact local System Support (.dl Knox system support) to assist.**
 
-
     13. Return to **Outlook mailbox** Knoxville Uploads and select the email for the
     file uploaded. Select **Reply** **All**, then select Attach file (from OneDrive
     personal file).
 
-
     14. Enter response**- Process has been completed and attached is PS Confirmation
     file**, then select **Send.**
-
 
     15. Wait for confirmation email to show in the mailbox. **Move** the oiginal and
     confirmation emails to **Knoxville Uploads, Knoxville Uploads Archive, Saved Emails,
     Custom Brokerage Fees completed folder.**
 
-
     16. Return to to **M:\\APVoucherUpload\\CE Win 10 on DEST.XML**, right click and
     rename to Custom Brokerage Fees Invoice mmddyy (date uploaded).
-
 
     17. **Move** Custom Brokerage Fees Invoice mm/dd/yy file from the **CE** folder
     to **M:\\APVoucherUpload\\Archive\\CE DEST**
 
-
     18. Log into \"M:\\PAYSHARE\\DATA\\EXCEL\\BACKLOG REPORT\\Knox Uploads Log.xlsx\"
     and enter any uploads you processed to PeopleSoft.
 
-
     19. Open **PeopleSoft** via Internet Explorer to verify upload was successful.
-
 
     20. **Copy** the **Invoice number** from the spreadsheet.
 
-
     21. **Paste** the **Invoice number** in the invoice number column in Peoplesoft.
-
 
     22. From the highlighted details we can understand whether the invoices are uploaded
     or not.'
@@ -248,31 +220,22 @@ seed_examples:
     question: What should be done if there is an error with the upload of DEST.XML?
 - context: 'As per the DTP Procedure verifying uploading is as per following.
 
-
     1.  Open **PeopleSoft** via Internet Explorer to verify upload was successful.
-
 
     2.  Under Client Applications, use the drop-down box and select **PeopleSoft Finance**.
     Select the Green arrow to advance.
 
-
     3.  In the **Menu**, Select **Reporting Tools.**
-
 
     4.  Open **Query Viewer**, then ''**Search By''** the Query Name. Enter **ZI_AP_STAGED_VOUCHERS**.
 
-
     5.  Select Run to Excel.
-
 
     6.  Enter Origin **KUP** (Knoxville Upload), then select **View Results**.
 
-
     7.  Select **Open.**
 
-
     8.  Select **Enable Editing**, Delete row 1, by right clicking, select **Delete.**
-
 
     9.  Scroll through the file to see if it matches the original file. In this case
     it does and the upload was successful. If other transactions are showing in the

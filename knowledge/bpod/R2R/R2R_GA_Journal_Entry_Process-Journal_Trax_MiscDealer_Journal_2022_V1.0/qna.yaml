@@ -117,7 +117,6 @@ seed_examples:
       Dealer Journal?
 - context: '4.  Process journal entry:
 
-
     > Process US Dealer Journals using GenericJournal2.xls & GenericJournalsModified.accdb
 
     >
@@ -144,7 +143,6 @@ seed_examples:
       Entry Process-Journal Trax_MiscDealer Journal?
   - answer: 'The Journal Trax_Misc Dealer JE processed as 2 pdf files and saved in
       ''M'' drive.
-
 
       Path details as shared is : M'' drive > GA > Spreadsheet control > Financial
       Statement Close > Ksenia Buchanan > Truck Group Dealer Invoices.'

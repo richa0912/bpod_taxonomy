@@ -10,12 +10,9 @@ domain: 'BPOD procure to pay: DTP_US_P2P_Vendor Invoice Processing_Auto Posting 
 seed_examples:
 - context: '## Objectives of the Process
 
-
     To verify the auto posted invoices in SAP for more than \$10K.
 
-
     ## Inputs & Outputs
-
 
     +--------------+-------------+
 
@@ -26,7 +23,6 @@ seed_examples:
     | -   Invoices | -   Vendors |
 
     +--------------+-------------+
-
 
     +--------------------------------+-------------------------+
 
@@ -90,37 +86,26 @@ seed_examples:
       value?
 - context: 'Open the file in Excel.
 
-
     Click on "Fixed with" and press on "Next" button.
-
 
     See the below screen which is formated one.
 
-
     Click on "Finish" button.
-
 
     Save the Excel file and formate as required.
 
-
     Login to load master imaging tool.
-
 
     Enter the login id and passwod and press on "Login" button.
 
-
     Press "DataBase" and Press on "popdta"
 
-
     Press "File" menu and Press on "POP Vendor Invoices"
-
 
     Click on "Query" button and fill the document no with adding the company code
     from the excel sheet.
 
-
     Click on "Exec" button.
-
 
     All the information are given below about the particular document.'
   questions_and_answers:
@@ -162,39 +147,27 @@ seed_examples:
     SAP Automatically, Check the Invoices for more than \$10K value and validate with
     invoice copy.
 
-
     Login to SAP and click on t-code "SP01 Output Controller"
-
 
     Enter the below information and click on "F8 - Execute" button.
 
-
     Find the "CSR_BATCH" which is completed and put tick mark on the same.
-
 
     Click on "glass" icon to view the details of posted entries.
 
-
     Check for the Title for recent file. (ZINVAUTO)
-
 
     Details shown as below.
 
-
     Check the "Job Statistics"
-
 
     Click on "Save to local file" icon
 
-
     Select the "Spreadsheet" and click on "Green check" button.
-
 
     Select the path and fill the File Name as mentioned below.
 
-
     Click on "Generate" option.
-
 
     Path : I:\\POP\\POP Invoice Interface\\
 

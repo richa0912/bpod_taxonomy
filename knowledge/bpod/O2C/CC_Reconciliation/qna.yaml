@@ -137,9 +137,7 @@ seed_examples:
     question: Where are the outputs of CC reconciliation process sent?
 - context: '# Roles & Responsibilities
 
-
     ## Description
-
 
     +--------------------------+---------------------------------------------------------------------------------------------------------------+
 
@@ -166,12 +164,9 @@ seed_examples:
 
     +--------------------------+---------------------------------------------------------------------------------------------------------------+
 
-
     ##  {#section .list-paragraph}
 
-
     ## Segregation of Duties (SOD) Matrix
-
 
     > For the SOD assessment on conflicting tasks and accesses, please refer to the
     related Aggregate SOD (A-SOD). ***\<SOD Matrix pending IBM GPS internal review

@@ -58,7 +58,6 @@ seed_examples:
   - answer: 'The document Revision/Approval History Table for Fixed Asset Maintenance
       Asset updates & Information upload process is provided in the table below.
 
-
       | Version Number | Effective Date | Summary of Changes | Author | Reviewer |
       Approver |
 
@@ -117,35 +116,25 @@ seed_examples:
     question: What is the responsibility of the IBM R2R_Fixed Assets Team?
 - context: '## Process Description
 
-
     1.  Receive an E-mail from Tooling Manager. To update asset, need to base on the
     request details as shown on the below example:
 
-
     2.  Login to PeopleSoft with credentials to get the Asset update.
-
 
     3.  Navigate to Main Menu Asset Management Search for an Asset.
 
-
     -   Unit : 09900
-
 
     -   Asset ID : Copy from E-mail ( 000000056512)
 
-
     -   Click on Search
-
 
     -   Drill-Down To : Select Asset Information
 
-
     -   Click on GO
-
 
     4.  After selecting ''GO'', Below screen appears. Click on Additional Asset information
     tab
-
 
     > Delivered Part Produced : 3450272R91 (based on E-mail request need to add Rack
     Number to Asset i,e Delivered Part Produced)
@@ -154,20 +143,16 @@ seed_examples:
 
     > Click on SAVE.
 
-
     > **Note :**
-
 
     -   If Tooling Manager sends an E-mail to Asset update for Description or Tag
     Number in PS
-
 
     > Main Menu Asset Management Search for an Asset Basic Add
 
     >
 
     > Selete Asset Information, Make necessary changes and Click on SAVE.
-
 
     -   Need to Change Location Code, Program, PO Business Unit, PO Number and Delivered
     part produced, Select Additional Information make necessary changes and Click

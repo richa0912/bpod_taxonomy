@@ -157,7 +157,6 @@ seed_examples:
   questions_and_answers:
   - answer: 'The roles that have access to the Cadency Journal Entry Tool include:
 
-
       *   Country or Supply Chain Company Finance Requestor
 
       *   Country or Supply Chain Company Approver'
@@ -168,7 +167,6 @@ seed_examples:
       Requestor in the BMC Remedy system?
   - answer: 'In the context of processing Judgemental Manual Journal Entry, the roles
       that have access to the MS Outlook system include:
-
 
       *   Country or Supply Chain Company Finance Requestor
 
@@ -213,7 +211,6 @@ seed_examples:
     \ blank if inputting in local currency)\n\n    -   Reversal reason & Date"
   questions_and_answers:
   - answer: 'When creating a new journal, the fields that need to be filled in include:
-
 
       *   Name
 
@@ -312,50 +309,38 @@ seed_examples:
     > There are following accounting areas which may result in a need for Manual Journal
     Entry/Accrual posting:
 
-
     -   All Record and Account entries: Fixed Assets, Capital Project, Cost Accounting,
     Inventory Accounting, Sales Accounting, Treasury payments
 
-
     -   Pre-defined or not Period Close Entries: journals, prepayments, provisions,
     accruals, foreign exchange adjustments, tax reporting
-
 
     -   Reconciliations: Trial Balance Reconciliations (incl. reconciliations of Sub-Ledgers
     to General Ledger), Bank Reconciliations, Third Party Reconciliations, Intercompany
     Reconciliations
 
-
     -   Adjustment entries following P&L and Balance Sheet Reviews
-
 
     -   P&L analysis: Fixed/Variable costs variance analysis
 
-
     -   Working Capital Analysis: Account Receivables ageing Analysis, Days Payable
     Outstanding analysis, WIP ageing analysis
-
 
     > As a rule all journals should be processed in Cadency Journal Entry Tool (Trintech).
     There are four main templates defined to standardize journal entries posting using
     Cadency Journal Entry Tool:
 
-
     a)  Judgmental/Non Judgmental Accrual -- for posting Accrual entries including
     a reversal date and a reversal reason, which are reversed in the following period
-
 
     b)  Judgmental/Non Judgmental Non-Accrual -- designated to post Non-Accrual entries
     which do not need any reversal at period ends
 
-
     c)  AR/ Customer Journal- designated to post GL Accounts to Customer accounts
     by using proper posting keys, which are aligned with SAP
 
-
     d)  AP/ Vendor Journal -- designated to post GL Accounts to Vendor accounts by
     using proper posting keys, which are aligned with SAP
-
 
     **Note**: All TB transfers from one ERP to another, that are performed in the
     form of journal entry, can be treated as an exception from the reversing journals.
@@ -371,7 +356,6 @@ seed_examples:
     question: Which tool should be used to process all journals?
   - answer: 'The four main templates defined to standardize journal entries posting
       using the Cadency Journal Entry Tool are:
-
 
       *   Judgmental/Non Judgmental Accrual: for posting Accrual entries including
       a reversal date and a reversal reason, which are reversed in the following period

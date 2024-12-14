@@ -151,7 +151,6 @@ seed_examples:
   - answer: 'The steps to update the SBT PCCACR Master excel file and prepare the
       journal entry are:
 
-
       1.  Update the WD1 line item** in the ZI_SBT_PAC_AM_STATUS_NOT_DIST tab.
 
       2.  Update the line item details into the JE template accordingly.  Debit 32110
@@ -168,9 +167,7 @@ seed_examples:
       running the PeopleSoft query?
 - context: '6.  []{#6_Definitions .anchor} **Definitions**
 
-
     > The following are definitions of acronyms used in this document:
-
 
     +----------+-----------------------------------------+
 

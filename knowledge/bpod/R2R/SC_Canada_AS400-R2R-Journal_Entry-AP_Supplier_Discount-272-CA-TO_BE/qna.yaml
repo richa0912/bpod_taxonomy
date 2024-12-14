@@ -11,17 +11,13 @@ domain: 'BPOD Record to Analyze: SC Canada (AS400) - R2R - Journal Entry - AP Su
 seed_examples:
 - context: ' Overview
 
-
     ## Objectives of the Process
-
 
     Supplier Discount to be posted to correct branch, need to reallocate balance in
     a GL Account to the correct branch, when some discounts for other Branches get
     recorded to Branch 10.
 
-
     ## Inputs & Outputs
-
 
     +-----------------------------------------------+-------------------------------------+
 
@@ -49,11 +45,9 @@ seed_examples:
   - answer: 'The following inputs are required to perform the Journal Entry - AP Supplier
       Discount Process:
 
-
       1. Supplier Discount Report from Sigma
 
       2. Branch code from AS 400
-
 
       '
     question: What inputs are required to perform Journal Entry - AP Supplier Discount
@@ -179,45 +173,33 @@ seed_examples:
 
     +----------+------------------------------------------------------------+-------------------------------------------+
 
-
     After sigma job, open AS400 to check the detailed vouchers, branch code, discounts
     and amounts.
-
 
     From the below screenshot of AS400, can see GL (general ledger comes under 17
     ) i.e serial order is 17.
 
-
     Select General Ledger (highlighted yellow in below screenshot)
-
 
     Enter 17
 
-
     Select G/L transaction inquiry :
-
 
     Or put 5 in enter option:
 
-
     Type the GL account i.e 010 683001 55300001.
 
-
     This will show the current months balance under this account.
-
 
     Press 5 to display the details and check the previous months data as well by clicking
     5.
 
-
     Scroll the screen \>\> go to the bottom \>\> check the supplier discount amount
     .
-
 
     In below screen, Supplier discount amount is \$2,094.19 which need to be reallocated.
     Need to ensure the balance in this account is 0, hence all the balance needs to
     be reallocated.
-
 
     However, in below screenshot the JE since already booked for reallocation hence
     balance is zero in branch 10 or else balance would have been Cr \$2,094.19'
@@ -261,18 +243,14 @@ seed_examples:
 
     +----------+------------------------------------------------------------------------------------------+-------------------------------------------+
 
-
     After confirmation received from IBM General Accounting Manager, the journal is
     ready to post.
-
 
     This entry will not go for any approval as this is a reallocation from one branch
     to another branch.
 
-
     As per the JE matrix, AP Supplier Discount Journal will not go for Client''s Review
     or Approval.
-
 
     For detailed information on JE matrix refer control doc'
   questions_and_answers:

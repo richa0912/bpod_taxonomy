@@ -34,9 +34,7 @@ seed_examples:
 
     The following are definitions of acronyms used in this document:
 
-
     Term Definition
-
 
     MBS Marketing bypass system EST Eastern Time Zone GL General Ledger'
   questions_and_answers:
@@ -52,7 +50,6 @@ seed_examples:
 
     +----------------------+--------------+ | Input | From | +----------------------+--------------+
     | > Email Notification | > DL AMS_NFC | +----------------------+--------------+
-
 
     +--------------------------------+----------------+ | Output | To | +--------------------------------+----------------+
     | > Transmit the Journal Batches | > Journal TRAX | +--------------------------------+----------------+'
@@ -74,21 +71,17 @@ seed_examples:
     is through the transmissions each day. If the entries do not transmit every day,
     no charges would be posted to the GL for the monthly activity.
 
-
     Frequency:
 
     Daily-Contains US and CAN journal activity.
-
 
     Source:
 
     Email
 
-
     System Accesses:
 
     Journal TRAX
-
 
     Journal TRAX Access Database'
   questions_and_answers:

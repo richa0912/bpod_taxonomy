@@ -43,7 +43,6 @@ seed_examples:
     question: What is the Global R2R Client Process Model?
   - answer: 'he benefits of the Global Standard Desktop Procedures are that they:
 
-
       *  Simplify and harmonise the end-to-end R2R processes globally.
 
       *  Exploit technology to be faster and more cost-effective.
@@ -98,7 +97,6 @@ seed_examples:
   - answer: 'The two types of journals based on their ownership and approval methodology
       are:
 
-
       *   Judgmental Journals: require business knowledge and judgment to ensure that
       the amounts involved are correct.
 
@@ -109,7 +107,6 @@ seed_examples:
       methodology?
   - answer: 'Examples of Non-Judgmental Journals include:
 
-
       *   Journals prepared and posted entirely by the 3rd Party Service Provider.
 
       *   Journals input extracted by the Country and sent to the 3rd Party Service
@@ -119,7 +116,6 @@ seed_examples:
       understands and is able to validate their correctness.'
     question: What are some examples of Non-Judgmental Journals?
   - answer: 'Some accounting areas that may result in a need for accrual posting include:
-
 
       *   All Record and Account entries: Fixed Assets, Capital Project, Cost Accounting,
       Inventory Accounting, Sales Accounting, Treasury payments.

@@ -114,9 +114,7 @@ seed_examples:
     question: What is the control activity for the Future Dated Invoice Processing
 - context: '# Overview
 
-
     ## Objective(s)
-
 
     > This process main objective is to capture the invoices which was processed with
     future dates in PeopleSoft. It should happens during the keying process or in
@@ -124,22 +122,16 @@ seed_examples:
     needs to run the query on weekly basis and research Invoice dates and correct
     them post approval from Jessica French/ Nelson C Dock.
 
-
     ### Frequency:
-
 
     Weekly Every Wednesday- In case Wednesday is holiday it will be pulled next following
     day.
 
-
     ### Source:
-
 
     Peoplesoft ,Oracle Image Viewer
 
-
     ### System Accesses:
-
 
     Peoplesoft, Oracle Image Viewer and Outlook.'
   questions_and_answers:
@@ -217,10 +209,8 @@ seed_examples:
     question: provide the steps for fixing the future dates in Peoplesoft
 - context: '> No invoice copy is available in Oracle image search as shown below.
 
-
     In case no Invoice copy available in Oracle, reach out to Service Parts Customer
     Service department for requesting invoice copy as per the Business unit.
-
 
     > Update the comments in Future dated file as "emailed to SP for Invoice copy"
 
@@ -243,10 +233,8 @@ seed_examples:
     > Open the invoice copy to verify the Invoice Date. In this case Invoice date
     is upated incorrecly. It should be 11/07/2021.
 
-
     Update the comment in the Future dated working file as "should be 11/07/21" and
     save the file.
-
 
     > **[Example2:]{.underline}**
 
@@ -300,10 +288,8 @@ seed_examples:
 
     > In the same attachment there is one more note mentioned as highlighted below.
 
-
     Update the comment in the Future dated invoice file against to the line item and
     save the file.
-
 
     > **[Example 3:]{.underline}**
 
@@ -322,10 +308,8 @@ seed_examples:
     > Credit Invoice copy shows the date as "11/02/2021. This is the accurate invoice
     date to update.
 
-
     Update the comment in the Future dated invoice file against the line item and
     save the file.
-
 
     > **Note:** All the Future dated invoices search process to be followed as mentioned
     in the above examples. Also, Invoice copy requests which are sent to other department

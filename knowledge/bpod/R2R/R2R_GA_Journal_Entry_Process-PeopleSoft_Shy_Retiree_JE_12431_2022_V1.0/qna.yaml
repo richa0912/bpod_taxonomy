@@ -44,39 +44,27 @@ seed_examples:
       PeopleSoft Shy Retiree (JE 12431)
 - context: '# Overview
 
-
     ## Objective(s)
-
 
     > The purpose of this activity is to record the transfers for the Shy Retiree.
 
-
     ### Frequency:
-
 
     > Monthly
 
-
     ### Due date:
-
 
     > WD -5
 
-
     ### Source:
-
 
     -   Medical Benefits email from Cheryl Seaton (Accounting Asst)
 
-
     -   Citi Bank Reports (IBM would be notified how the reports would be received)
-
 
     ### System Accesses:
 
-
     -   PeopleSoft
-
 
     -   JRNL1'
   questions_and_answers:
@@ -167,36 +155,27 @@ seed_examples:
       Retiree (JE 12431) ?
 - context: '> Note: IBM would be updated how the Citibank report would be received.
 
-
     7.  Open the JRNL1 template and verify the journal date, effective date, BU, description
     and the journal ID.
-
 
     8.  Verify the account details in 12431 JE excel file with the account number
     in the JRNL1 template and update the amounts. Then upload the entry into PS.
 
-
     9.  Login to PS to process the entry. Main menu \> General ledger \>Journals \>
     Journal Entry \> Create/update Journal Entries.
-
 
     10. Enter the Journal details.BU- 40100, Journal ID -- 12431 and then click on
     search.
 
-
     11. From the Search Results click on the uploaded JE.
-
 
     12. Under the Header tab verify the description and the entry has to be Reversal:
     Do Not Generate Reversal. Below is an example
 
-
     13. Click on the Lines tab, verify the amounts. Select Process as Edit Journal
     and click on Process.
 
-
     14. Click on Supporting documents and upload the spreadsheet.
-
 
     15. Go back to Lines tab, change the Process status to Submit Journal and click
     on Process.'

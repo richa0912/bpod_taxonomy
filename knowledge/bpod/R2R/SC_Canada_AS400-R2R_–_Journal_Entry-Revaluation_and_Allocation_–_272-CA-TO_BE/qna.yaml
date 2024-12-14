@@ -11,7 +11,6 @@ domain: "BPOD Record to Analyze: SC_Canada_AS400-R2R_-_Journal_Entry-Revaluation
 seed_examples:
 - context: '# Control Points
 
-
     +----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+----------------------------------------------------------------------+
 
     | **Control Point \#** | **Control Point / Activity**                                                                                                                                                                                                                           |
@@ -36,12 +35,9 @@ seed_examples:
 
     +----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+----------------------------------------------------------------------+
 
-
     For detailed information on control points refer control doc saved on below link.
 
-
     ## Process Measurements
-
 
     For information about the SLA refer to the contract between Client and IBM.'
   questions_and_answers:
@@ -97,7 +93,6 @@ seed_examples:
   - answer: 'The references used in ''SC Canada (AS400) - R2R - Journal Entry - Revaluation
       & Allocation - 272 - CA - TO BE'''' document include:
 
-
       *   NG- Inventory allocation to branches
 
       *   NG- Inventory allocation from other libraries
@@ -115,9 +110,7 @@ seed_examples:
       - Revaluation & Allocation - 272 - CA - TO BE' document?
 - context: '# Roles & Responsibilities
 
-
     ## Description
-
 
     +--------------------------------+------------------+-------------------------------------------------------+
 
@@ -158,9 +151,7 @@ seed_examples:
 
     +--------------------------------+------------------+-------------------------------------------------------+
 
-
     ## SOD Matrix
-
 
     For the SOD assessment on conflicting tasks and accesses, please refer to the
     related Aggregate SOD (A-SOD).'
@@ -193,7 +184,6 @@ seed_examples:
       for reviewing and approving the JE?
 - context: '## Step Description
 
-
     +----------+-------------------------------------------------------------------------------+-------------------------------------------+
 
     | **Step** | **Description**                                                               |
@@ -219,34 +209,27 @@ seed_examples:
 
     +----------+-------------------------------------------------------------------------------+-------------------------------------------+
 
-
     In Revaluation and Allocation, there are 7 journals.
-
 
     This DTP covers the process of preparation of one those journals "NG-A/R Revaluation
     & Allocation" from the below list However process is same for all the journals
     listed below
-
 
     Email received from Sigma in generic mailbox. These are monthly auto scheduled
     jobs from Sigma -- which will auto run and send the reports to "Email -- Finance
     SS". The preparer would need to have access to this email box to access the reports
     from Sigma.
 
-
     For Accounts payable allocation Journal (highlighted in green in above screenshot),
     process is same. However, this needs to be booked in BF library. So, whosoever
     is booking the AP allocation in BF library, they are also supposed to book offset
     entries in the SS library.so that there is no intercompany difference.
 
-
     The below email screenshot is for journal "Inventory Allocation to branches-SS
     Library"
 
-
     Likewise, different emails will be received with data required for journals with
     respective subject lines of particular journals
-
 
     +----------+----------------------------------------------------------------------+-------------------------------------------+
 
@@ -273,13 +256,10 @@ seed_examples:
 
     +----------+----------------------------------------------------------------------+-------------------------------------------+
 
-
     Open the excel sheet attached in email.
-
 
     In other tab of excel report, there must be a backups of the JE uploads. Backups
     of JE report data.
-
 
     Copy and paste the JE upload data in last month''s JE template.'
   questions_and_answers:
@@ -313,13 +293,10 @@ seed_examples:
 
     +----------+---------------------------------------+-------------------------------------------+
 
-
     If the backups and the journal is not corrected.
-
 
     IBM General Accounting manager will send an email with rejection comments and
     need to prepare the correct journal with corrected backups.
-
 
     +----------+---------------------------------------+-------------------------------------------+
 
@@ -344,13 +321,10 @@ seed_examples:
 
     +----------+---------------------------------------+-------------------------------------------+
 
-
     If all the backup data and the journals are accurate.
-
 
     IBM General Accounting manager will send an email with confirmation of posting
     the journal.
-
 
     +----------+----------------------------------------+-------------------------------------------+
 
@@ -375,14 +349,11 @@ seed_examples:
 
     +----------+----------------------------------------+-------------------------------------------+
 
-
     After confirmation received from IBM General Accounting Manager, the journal is
     ready to post.
 
-
     As per the JE matrix, Revaluation & Allocation Journal will not go for Client''s
     Review or Approval.
-
 
     **Type of Journal**: Transfer Balances / Reclass Balances'
   questions_and_answers:

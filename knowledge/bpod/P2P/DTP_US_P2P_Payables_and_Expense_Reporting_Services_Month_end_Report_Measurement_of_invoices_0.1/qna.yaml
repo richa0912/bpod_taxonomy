@@ -43,34 +43,24 @@ seed_examples:
 - context: 'In Tab CY 12 Conforming LOB, update the data in Actual Nov-12 which will
     automatically update the chart for CY 12 Conforming LOB
 
-
     Update the data in the Non Conforming Invoices Tab. This will be the total of
     Columns MM IR & Total (as shown in the screen shot below)
 
-
     Update the chart data for this report as well.
-
 
     The chart we need to publish would be the CY 12 Non Conforming PO vs. FI.
 
-
     Update the data in CY 12 Non Conforming PO vs. FI tab as shown below.
-
 
     Update the chart data for this report as well.
 
-
     Print and publish the charts.
-
 
     End of Process
 
-
     # Definitions
 
-
     The following are definitions of some terms commonly used in the Payment Process
-
 
     +----------------------------------------------------------------------------------------------------+------------------+
 
@@ -100,53 +90,37 @@ seed_examples:
     question: What is the definition of P2P?
 - context: 'Log in to SAP.
 
-
     Enter User Name & Password
-
 
     Select T. Code ''Z9016_POPSSO- POP Menu- SSO transactions''
 
-
     Open ''ZPMU-POP Measurement'', shows total of invoices processed.
-
 
     Open the "Variant"
 
-
     Click / excute the Varient directory
 
-
     Click on ''TOATL MONTH'' to get the report of invoices processed in a month.
-
 
     It automatically updates the Company code, enter ''Posting Begin date'' and ''Posting
     End date''.
 
-
     Execute the report.
-
 
     Note: It may take a long time to execute and open the report.
 
-
     Click on Program=\> Execute in Background to execute the report
-
 
     For getting the print out of report click on green check
 
-
     Click on ''Immediate and save it
-
 
     To check the status of report go to T-code SM37
 
-
     Click on "Execute" to go to the Job Overview screen
-
 
     In the this screen, we can generate the list of invoices if the status of report
     shows as "Finished"
-
 
     Check mark the box at the left on the Job name and click on Spool to generate
     the report (as shown in the screen shot below)'
@@ -165,39 +139,27 @@ seed_examples:
       the report shows as 'Finished'?
 - context: 'To generate the list of invoices, follow the steps below
 
-
     Below is the list of different types of invoices processed in a month
-
 
     Follow the steps below to save the file:
 
-
     Click on =\> System =\> List =\> Save =\> Local File
-
 
     Save it as "Spreadsheet"
 
-
     Enter the path in directory to save the file and generate the report.
-
 
     Now, open the generated report which is in excel format as below:
 
-
     Delete the Coloumn A.
-
 
     Also delete the below highlighted rows:
 
-
     Delete the second row:
-
 
     Again delete the Coloumn A
 
-
     Add the data in row "TSA Divested Operations" to data in "Non integrated row'':
-
 
     After adding delete the row "TSA Divested Operations"'
   questions_and_answers:
@@ -212,35 +174,26 @@ seed_examples:
 - context: 'Under the Number Tab selcect the Number and Decimal place. Should be zero
     as below shown:
 
-
     Insert a column after I to create a break between electronic and manual invoices.
     Fill in Coloumn J with the color black after ''Electronic payment because it shows
     electronic invoices and manual invoices in different parts.
 
-
     Add the below given headings
-
 
     Then add the borders and total of the invoices.
 
-
     Caluclate the percentage of invoices for column against Total invoices.
-
 
     Example: \$ 87,555 / \$ 180,143 = 0.486027
 
-
     Excel report should be in below format:
-
 
     Using this data, we need to update the charts which are published on the client
     Intranet.
 
-
     To update the charts, open the file CY12 Pop Invoice Measurements which is located
     in *[I:\\POP\\POP Measurements\\CY12 POP Measurements\\CY2012 Invoice Data & Wall
     Charts]{.ul}* Folder
-
 
     Update the chart data by selecting the correct column and row numbers from the
     "Conforming verses Non Confirming" tab.'

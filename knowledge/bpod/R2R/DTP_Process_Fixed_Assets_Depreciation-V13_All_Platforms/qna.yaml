@@ -52,7 +52,6 @@ seed_examples:
   questions_and_answers:
   - answer: 'The three independent depreciation areas are:
 
-
       *   Book (local) depreciation area: used to record Fixed Asset values as per
       local regulations.
 
@@ -292,7 +291,6 @@ seed_examples:
     \ month."
   questions_and_answers:
   - answer: 'Some common errors found during depreciation run are:
-
 
       *   Accounting period to which the depreciation is to be posted, has already
       been closed.

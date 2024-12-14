@@ -131,7 +131,6 @@ seed_examples:
     question: Which DTP to refer to prepare and submit the reconciliation in BL?
 - context: 'REFERENCE:
 
-
     List of company codes in scope:
 
     Entity Name Company Code name Account Group & Description GL Account number System
@@ -139,7 +138,6 @@ seed_examples:
     Avnet Inc US10 N1_1060100_11025_31816 11025 BW, BL Avnet Inc US10 N1_1060100_11025_31816
     31816 BW, BL Avnet Inc CA10 N1_1060100_11025_31816 11025 BW, BL Avnet Inc CA10
     N1_1060100_11025_31816 31816 BW, BL
-
 
     Work list input:'
   questions_and_answers:

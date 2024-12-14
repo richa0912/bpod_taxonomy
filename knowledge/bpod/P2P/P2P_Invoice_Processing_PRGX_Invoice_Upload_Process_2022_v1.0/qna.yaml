@@ -14,56 +14,41 @@ seed_examples:
     ### Copy all the Attachments in the Email and Paste in the KOFAX folder in the
     following Path i.e., M:\>allshare\>XEROX_Scan\>KOFAX\>Knoxville Uploads.
 
-
     ### Select the CLIENT file and Delete the File. (Only Pdf files need to be Pasted
     in the KOFAX folder, so here we are removing CLIENT Excel file).
-
 
     ### Captures is the Utility and Capsys is the taking Images and placing them in
     Oracle Imaging.
 
-
     ### Open Capsys product. Client link and Login with the Credentials.
-
 
     ### Home Page will Populate.
 
-
     ### Select Capture in Capsys home Page.
-
 
     ### Select CP-MX Prefix Payable in the dropdown for Profile Column and Click on
     Scan/Import.
 
-
     ### A dialogue box will populate showing Scan Type as Corporate, Click on OK.
-
 
     ### Go to M:\>allshare\>XEROX_Scan\>KOFAX\>Knoxville Uploads and Select the PDF
     files (Only 4 at Once) and Click on Open.
 
-
     ### PDF files will be Imported in the Capture page.
 
-
     ### Select the Batch and Click on Release.
-
 
     ### A Dialogue box will populate showing to conform the Release then Click on
     OK.
 
-
     ### Select the Index tab and Click on Release if the Batch is Populated.
-
 
     ### Open the Outlook and Select the Knoxville Uploads CLIENT Email and move it
     to the CLIENT Completed Folder.
 
-
     ### Open the CLIENT Email and Copy the Subject and Go to M:\>AP VoucherUpload\>CE
     Win 10\>Select the Destination file (DEST) and Rename with the Subject of PRGX
     email with Current Date (MMDDYY).
-
 
     ### Select and Move the Renamed File to CE DEST folder from CE Win 10 folder.'
   questions_and_answers:
@@ -117,62 +102,45 @@ seed_examples:
     question: Who should use this document the CLIENT Invoice Upload Process?
 - context: '## Process Description
 
-
     ### Open Outlook Knoxville Uploads folder to review for new requests.
 
-
     ### Open the Excel file.
-
 
     ### Select Enable Editing. In the invoice number heading there is invoice number
     is populated and we need to correct the header and place the invoices number correctly.
     So, we need to cross check whether the invoices are exactly matching with there
     data available in the spreadsheet.
 
-
     ### Open the Invoice copy from the email and cross check the CLIENT Claim number,
     Invoice Number, and chargeback Amount.
 
-
     ### Select F row from the Column 3 to 12 and click on Insert.
 
-
     ### Select Shift cells down and click on OK.
-
 
     ### A blank cell will appear, and we need to enter Invoice Number in the Blank
     cell.
 
-
     ### Check the Gross Invoice amount is matching with the Merchandised Amt. If it
     is matching means we can be ready to copy the data from the spreadsheet.
 
-
     ### Copy all line items scroll to far right to make sure all lines items are selected.
-
 
     ### Go to M drive\>APVoucherUpload\>CE Win 10\>ExcelUploadforVoucher_InvUpload.xlsm
     and open the file.
 
-
     ### Click on Row 4, right-click and select Paste Special Values.
 
-
     Note: If Paste Special Values is not used, then the file will not upload to PeopleSoft.
-
 
     ### Cross check the Merchandised Amt in the DF row with the Merchandised Amt in
     the GU row. If it is matching, we can upload it in the Peoplesoft.
 
-
     ### Enter User ID and Password. Select OK.
-
 
     ### Create a Destination file and the file name should be DEST.XML. Click on Save.
 
-
     M drive\>APVoucherUploads\>CE Win 10
-
 
     Note:If a DEST.XML already exists, then it must be moved to M:\\APVoucherUpload\\Archive
     prior to creating a new one. Change DEST.XML file name to the Upload that was
@@ -189,17 +157,13 @@ seed_examples:
 - context: '### Create a Destination file and the file name should be DEST.XML. Click
     on Save.
 
-
     M drive\>APVoucherUploads\>CE Win 10
-
 
     Note:If a DEST.XML already exists, then it must be moved to M:\\APVoucherUpload\\Archive
     prior to creating a new one. Change DEST.XML file name to the Upload that was
     previously done, MMDDYYYY and save.
 
-
     ### Select OK and the file is saved.
-
 
     Note: If there is an error with the upload, the box will say an error has occurred.
     Start the entire process again. If the error continues, then you may have bad
@@ -207,44 +171,32 @@ seed_examples:
     blank columns to the far right. If that still does not resolve the issue on the
     next attempt, then contact local System Support to assist.
 
-
     ### Open PeopleSoft to verify upload was successful.
 
-
     ### Select Reporting Tools. Click on Query and select Query Viewer.
-
 
     ### Search for Staged Vouchers query: ZI_AP_STAGED_VOUCHERS and select Run to
     Excel.
 
-
     ### Enter Origin KUP (Knoxville Upload) and click on View Result.
-
 
     ### Click on Open to open the pdf file.
 
-
     ### Click on Enable editing to make the necessary changes.
-
 
     ### Scroll through file to see if it matches the original file. In this case there
     have been other files uploaded Delete those data from the spreadsheet.
 
-
     ### Click on File and select Save as to save the file in the drive.
-
 
     ### Save the file by the name CLIENT Batch m-dd-yy PS Confirmation mmddyy. Click
     on Save and the file is saved in the onedrive.
 
-
     ### Rename the File as ''CLIENT Batch MMDDYY (Received Date) PS Conformation MMDDYY
     (Current Date)'' and Save the File in the One Drive.
 
-
     ### Send Email to Audit Team Lead and Knoxville Uploads ''saying Process has been
     Completed and attached PS Conformation File''.
-
 
     ### Go to Outlook and Open the Email from Audit Team Lead, click on excel folder
     and right click and Click on select All.'

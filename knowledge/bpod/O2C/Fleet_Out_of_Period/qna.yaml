@@ -35,41 +35,29 @@ seed_examples:
     question: What is the frequency of Fleet Out of Period report.
 - context: '# Overview
 
-
     ## Objective(s)
-
 
     > To update the reason for the trucks that are delivered but revenue is recognized
     on a different period(eg: truck delivered on April but revenue recoginzed in May)
     this report is used. Based on the report, an accrual will be booked by R2R team
     during the month end.
 
-
     ## SIPOC
 
-
     +---------------------------+-----------------------------------------+--------------------------------------------------------------------------------------------------+----------------------+--------------+
-
     | **SUPPLIER**              | **INPUT**                               | **PROCESS**                                                                                      |
     **OUTPUT**           | **CUSTOMER** |
-
     +===========================+=========================================+==================================================================================================+======================+==============+
-
     | Fleet Invoicing Assistant | \- Out of Period fleet inventory report | \- Receive
     an email with list Out of period fleet inventory                                      |
     Out of Period report | R2R team     |
-
     |                           |                                         |                                                                                                  |                      |              |
-
     |                           | \- Undelivered PENKSE units             | \- Update
     the comments for truck that are delivered but revenue recognized on a different
     period |                      |              |
-
     |                           |                                         |                                                                                                  |                      |              |
-
     |                           |                                         | \- Send
     the report to R2R team                                                                   |                      |              |
-
     +---------------------------+-----------------------------------------+--------------------------------------------------------------------------------------------------+----------------------+--------------+'
   questions_and_answers:
   - answer: The objective of Fleet Out of Period report is to update the reason for
@@ -105,49 +93,37 @@ seed_examples:
     question: Who is reponsible to review and approve the Fleet Out of Period report?
 - context: '## Process Description
 
-
     1.  Receive an email from **.DL IT CA Supt Invoicing** mailbox to fleet inventory
     generic mailbox for US and CANADA.
-
 
     2.  Receive an email from EDW Support Team mailbox to fleet inventory generic
     mailbox for PENSKE
 
-
     3.  Save the above emails and the attched file for PENSKE into **[M:\\GeneralSales\\Ellen
     Sales Invoicing Items\\Out of Period Reporting\\ FY2022\\05May\\WD2]{.ul}**
 
-
     4.  Open attached **FLTUSA** file from Out of Period Fleet Invoicing Report email.
-
 
     5.  Select the blank lines from the report and delete it.
 
-
     > The file looks like below after deleting
-
 
     6.  Perform step 1.4 and 1.5 for Canada side as well and consolidate both US and
     Canada file into one.
 
-
     7.  Sort the data for column A(**INV_LOC)** from smallest to largest for Fleet-US
     and Fleet-CANADA tabs.
 
-
     8.  Insert a new column after **INV_DATE** and update the header as COMMENTS for
     both Fleet-US and Fleet-CANADA tabs.
-
 
     9.  Based on the daily updates by fleet invoicing assistant against each units
     that are on hold, update the comment into the out of period file against the delivered
     units for US and Canada. Below are the example of comments updated.
 
-
     10. Save the file in path **[M:\\GeneralSales\\Ellen Sales Invoicing Items\\Out
     of Period Reporting\\FY2022\\ 05May\\WD2]{.ul}** with name Out of Period with
     current date
-
 
     11. Open Undelivered units for PENKSE file from **[M:\\GeneralSales\\Ellen Sales
     Invoicing Items\\Out of Period Reporting\\FY2022\\ 05May\\WD2]{.ul}** and insert
@@ -167,36 +143,25 @@ seed_examples:
 - context: '12. Insert workday date into the file with header STATUS and DELIVERY
     DATE.
 
-
     13. Copy the VIN number from the file (column A)
-
-
     14. Open Truck movers website and click on Serial \#
-
 
     15. Paste the copied VIN number from undelivered PENSKE file and click on Search
     option.
 
-
     16. This will display the details on the screen
 
-
     17. Right click on the screen to print the page to PDF format
-
 
     18. Save the file in path **[M:\\GeneralSales\\Ellen Sales Invoicing Items\\Out
     of Period Reporting\\FY2022\\ 05May\\WD2]{.ul}** with file name Truckmovers
 
-
     19. Click on Export option on the Truck movers website
-
 
     20. Click on Click here to download the file option, excel file will be downloaded.
     Click on the file to open.
 
-
     21. Click on Enable Editing option
-
 
     22. Save the file in path **[M:\\GeneralSales\\Ellen Sales Invoicing Items\\Out
     of Period Reporting\\FY2022\\ 05May\\WD2]{.ul}** with file name Truckmovers'
@@ -212,16 +177,11 @@ seed_examples:
       Undelivered Penske items?
   - answer: 'Steps to download and save VIM details for Undelivered Penske items in
       Fleet Out of Period report are listed below.
-
       1. Copy the VIN number from Undelived units for Penske file.
-
       2. Open Truck movers website and click on ''Serial#''.
-
       3. Paste the copied VIN number from undelivered PENSKE file and click on Search
       option. This will display the details on the screen.
-
       4. Right click on the screen to print the page to PDF format
-
       5. Save the file in path ''M:\\GeneralSales\\Ellen Sales Invoicing Items\\Out
       of Period Reporting\\FY2022\\ 05May\\WD2'' with file name Truckmovers.'
     question: What are the steps to download and save VIM details for Undelivered

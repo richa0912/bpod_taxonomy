@@ -61,7 +61,6 @@ seed_examples:
   - answer: 'The legal entities for which GL Client UK Subledger Close process needs
       to be performed are as follows.
 
-
       *   GBGD- Donvand Limited (AU)
 
       *   GBGE- GTA Retails Limited
@@ -157,7 +156,6 @@ seed_examples:
 
     **[Note-:]{.ul}** Deadline to close AP and AR periods is WD2 10 AM AU time. After
     that only GL team can perform this activity
-
 
     Login MS AX with your credentials, click and open Microsoft Dynamics AX as per
     highlighted below-
@@ -260,7 +258,6 @@ seed_examples:
     |      | How: By restricting group GL modules in ERP                                     |
 
     +------+---------------------------------------------------------------------------------+
-
 
     Click on "Periods", Below screen will come up- Refer Step 1
 

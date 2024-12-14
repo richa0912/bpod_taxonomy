@@ -38,7 +38,6 @@ seed_examples:
   - answer: 'Input and output for new vendor creation process in CAVI system are in
       the following tables:
 
-
       +---------------------------------------------------------------+---------------------------------------+
 
       | **Input**                                                     | **From**                              |
@@ -55,7 +54,6 @@ seed_examples:
 
       +---------------------------------------------------------------+---------------------------------------+
 
-
       +----------------------------+----------------+
 
       | **Output**                 | **To**         |
@@ -70,7 +68,6 @@ seed_examples:
   - answer: 'The responsibilities of IBM VMD Team in new vendor creation process are
       as following:
 
-
       1. Validate and perform the creation of vendor account as per request raised
       by Client Business Requestor / Buyer.
 
@@ -82,7 +79,6 @@ seed_examples:
       creation in ERP system.
     question: Who initiates the request for new vendor creation in ERP system?
 - context: '### Provide comment and reject request
-
 
     +-----------------------------------------------------------------------+
 
@@ -106,9 +102,7 @@ seed_examples:
 
     +-----------------------------------------------------------------------+
 
-
     ### Approver accepts the request, the onboarding registration starts
-
 
     +-------------------------------------------------------------------+
 
@@ -132,9 +126,7 @@ seed_examples:
 
     +-------------------------------------------------------------------+
 
-
     ### An invitation is sent to the supplier
-
 
     +-----------------------------------------------------------------------+
 
@@ -158,9 +150,7 @@ seed_examples:
 
     +-----------------------------------------------------------------------+
 
-
     ### Supplier fills in the data and upload documentation
-
 
     +-------------------------------------------------------+
 
@@ -184,9 +174,7 @@ seed_examples:
 
     +-------------------------------------------------------+
 
-
     ### Automated verification process
-
 
     +----------------------------------------------------------------------------------------------------------+
 
@@ -211,9 +199,7 @@ seed_examples:
 
     +----------------------------------------------------------------------------------------------------------+
 
-
     ### Receive the ticket and check if supplier already exists.
-
 
     +-------------------------------+
 
@@ -237,7 +223,6 @@ seed_examples:
 
     +-------------------------------+
 
-
     On daily basis, IBM VMD team should login to CAVI to check if there are any requests
     pending action.'
   questions_and_answers:
@@ -254,90 +239,66 @@ seed_examples:
       do with the ticket?
 - context: '1.  **Check against the DPL and embargoed countries list**
 
-
     As per internal policies, IBM VMD team is not allowed to process any requests
     that might come from suppliers included in the Denied Party List or are subject
     of US embargo and sanctions program.
-
 
     The list of embargoed/sanctioned countries are **Cuba, Iran, North Korea, Syria,
     Russia, Afghanistan and the Crimea, Donetsk, Luhansk, Kherson and Zaporizhia (Zaporizhzhia)**
     regions of **Ukraine.**
 
-
     The full list of US embargo and sanctions programs is available in the IBM w3
     environment.
-
 
     You should check if the vendor is not located in any of mentioned countries/regions.
     If yes, please move to step [5.2.14 Provide comment and reject request](#provide-comment-and-reject-request-1)
 
-
     If vendor is not located in one of the embargoed/sanctioned countries, please
     perform the check against DPL database.
-
 
     DPL is a webpage available in the IBM w3 environment and contains a list of parties
     that IBM is not allowed to conduct business with, updated on regular basis.
 
-
     You should login to the page (if prompted) with your w3 credentials (IBM email
     and related password).
 
-
     Next, provide vendor name or address and press "Submit" to confirm.
 
-
     The results are presented below:
-
 
     If there''s a match (vendor name or address matches the search result) please
     move to step [5.2.14 Provide comment and reject request](#provide-comment-and-reject-request-1)
 
-
     If there is no exact search result it means the vendor is not in the DPL and request
     can be processed further in CAVI.
-
 
     Please also download the screening result as PDF, by clicking the "PDF" button
     and save it to your PC. After vendor is created in SAP, it should be attached
     in XK03 as a proof for the check done.
 
-
     This is how the generated file should look like:
 
-
     To attach the document in SAP, please go to transaction XK03:
-
 
     Select vendor number, company code in which the vendor has been created and purchase
     organization (always CZPO), select all fields and confirm with enter:
 
-
     Address data will be displayed:
-
 
     Next, please select the "Services for object" button:
 
-
     A pop-up will appear -- click on "Create":
-
 
     Choose "Create Attachment":
 
-
     Select the file destination and the file itself and confirm with "Open":
-
 
     After upload, a confirmation will be shown:
 
-
     2.  **Check the vendor in ARES/VIES database.**
-
 
     The next step is to validate the vendor against government website to confirm
     the data provided by vendor/requestor.
-
 
     In case of any mismatches during any of the validations, please move to step [5.2.14
     Provide comment and reject request](#provide-comment-and-reject-request-1).'
@@ -356,15 +317,12 @@ seed_examples:
     question: What is DPL?
 - context: 'Once completed, please click on Submit:
 
-
     **Note:** It may happen that the notification sent by CAVI can be tricked by vendor''s
     email client as span or even blocked, so to be sure that the action on vendors
     side is taken properly after our action in CAVI is completed, you can inform supplier
     via email (as reply to the email received).
 
-
     ### Provide comment and reject request
-
 
     +------------------------------------------------------+
 
@@ -388,48 +346,36 @@ seed_examples:
 
     +------------------------------------------------------+
 
-
     In case a vendor was found in DPL and/or embargo and sanctions list, please send
     following notification to the requester and close (delete) the request in CAVI:
-
 
     **"Dear Requestor, thank you for your email/ Unfortunately, your request cannot
     be processed by IBM VMD team because the supplier country is on IBM embargo list.
     Sorry for the inconvenience caused."**
 
-
     In case of any other mismatches/discrepancies found during the validation, that
     require action on requestor and/or vendor side, please describe the issue in the
     "Notes" option and then reject the request.
 
-
     Use option "**Private**" to notify **requestor only** and option "**Public**"
     to notify **requestor and supplier.**
-
 
     Use option "**Request More Information -- Yes**" to generate an **email notification**
     in addition to note sent in CAVI.
 
-
     **Please always set Note Type as Public and Request More Information as Yes to
     ensure that an email will be generated as well.**
-
 
     **Note:** In case of requests created via Proxy, notifications and emails will
     only be sent to requestor.
 
-
     Below you can find an example of how the email generated by CAVI looks like:
-
 
     Once notification has been sent, please reject the request in CAVI:
 
-
     Provide proper rejection reason and confirm with "Submit":
 
-
     ### Perform correction and re-submit request
-
 
     +--------------------------------------------------+
 
@@ -465,11 +411,9 @@ seed_examples:
       please send following notification to the requester and close (delete) the request
       in CAVI:
 
-
       "Dear Requestor, thank you for your email/ Unfortunately, your request cannot
       be processed by IBM VMD team because the supplier country is on IBM embargo
       list. Sorry for the inconvenience caused."
-
 
       In case of any other mismatches/discrepancies found during the validation, that
       require action on requestor and/or vendor side, please describe the issue in
@@ -478,102 +422,74 @@ seed_examples:
       embargo/sanctions list?
 - context: 'To login to CAVI, please follow the below steps.
 
-
     First, login to Client environment, please connect the GlobalProcect VPN.
-
 
     **Note:** If you are connected to Cisco Any Connect (IBM VPN) you need to disconnect
     first.
 
-
     Open a web browser and go to following address:
-
 
     You will be prompted to login using your Client credentials. You can choose previously
     used account or if you are logging in for the first time, you need to provide
     your Client email address.
 
-
     Then, you will be prompted to provide password. There is no separate password
     creation for CAVI, so you should use the same credentials as for logging to other
     Client environment, like Citrix for example.
-
 
     Then, you will be automatically moved to the two-factor authentication. Please
     follow the method that was established during Client account setup. In this example,
     it''s Microsoft Authenticator application.
 
-
     Once login is successful, following screen appears:
-
 
     Please choose the role "BSO DM Associate" and confirm with "Continue"
 
-
     Then, please select the "Ready to approve" queue in CAVI:
-
 
     If there are any open requests pending actions, you will see a list at the bottom
     of the screen:
 
-
     Records pending action on IBM VMD teams side should always have status "GES DM
     Review", like on the screenshot above.
 
-
     To open a particular line please click on "X" icon
 
-
     A list of checks done automatically by CAVI tool will pop up:
-
 
     If there''s any point that is not marked with green tick, you should pay special
     attention to this area.
 
-
     Independently of the indicators, the first action to take is to check if the supplier
     does already exist in SAP.
 
-
     To do that, please login to SAP as described below.
-
 
     First, go to following address: <http://xxx/CLIENTUSMXWeb/> and login using your
     CLIENTID and password, choose region EMEA:
 
-
     Switch to APPS:
 
-
     Choose following icon: (SAP Logon IT-ServideDelivery-GTS):
-
 
     Choose SRP system and login with your SAP ID (same as CLIENTID but with "0" instead
     of "-"). Client should be "500":
 
-
     Open transaction XK03:
-
 
     Next, copy the vendor Tax ID Number:
 
-
     In SAP, click on the lookup button:
-
 
     Move to tab "Vendors by Tax Information"
 
-
     Paste the VAT ID number into the "Tax Number 1" field:
 
-
     Confirm with "tick":
-
 
     If there are no entries found in XK03 this means you can process the request further.'
   questions_and_answers:
   - answer: 'To login to CAVI, please follow the below steps:
-
 
       First, login to Client environment, please connect the GlobalProcect VPN.
 

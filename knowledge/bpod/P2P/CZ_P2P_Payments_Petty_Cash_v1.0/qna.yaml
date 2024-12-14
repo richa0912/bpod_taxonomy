@@ -67,50 +67,38 @@ seed_examples:
     note, that the cost centers ending with **...4010** are assigned to materials
     and those ending with **...4030** are assigned to transport for the same plant.
 
-
     **- VAT code --** based on tax amount and tax rate on the receipt and the attached
     file "Supporting data". If receipt has two VAT codes, it must be split into two
     lines with two tax codes, as described above in case of incorrect GL number.
-
 
     **Note:** If you are not able to determine one of the values, you can refer to
     previous posting visible in FBCJ -- please compare the type of expense, description
     etc. and copy the values accordingly.
 
-
     Once all required data has been provided, you can move to step [5.2.19 Post the
     petty cash](#post-the-petty-cash)
-
 
     **Note**: There''s a special kind of posting done on a regular basis, based on
     a services PO invoice received into the petty cash mailbox that was already paid
     directly by the cashier. Example of such invoice is attached below.
 
-
     In such case, the invoice should be posted against vendor as a regular PO invoice.
     To check how to post this kind of invoice, please refer to the following DTP:
     Client CZ_P2P_IP_Process Invoice - PO Invoice.
 
-
     There will also be an open position in the FBCJ -- cash register. This open position
     should be processed the same way as described above.
 
-
     Below you can see how this kind of entry looks like in FBCJ transaction:
-
 
     Next, the invoice posted against vendor account and the record in cash register
     should be manually cleared in F-44 transaction -- please see instruction below.
 
-
     Open F-44 transaction
-
 
     Fill in the vendor number and company code and confirm with enter:
 
-
     List of all open items will be displayed:
-
 
     Select the lines you want to clear by double clicking on "CZK Gross" cell (as
     stated on the screenshot below). You can search based on amount, assignment, or
@@ -135,35 +123,27 @@ seed_examples:
       cannot be determined?
 - context: '**Bank transfer**
 
-
     Documents indicating transfer of cash to the bank are usually confirmations from
     post office or banks -- see example below. In such case, please follow the below
     steps.
-
 
     Check if amounts are matching between received documents and SAP. Please note
     that for bank transfers, the "Business transaction" description in SAP also changes,
     same as description:
 
-
     To be able to post this kind of entry in SAP, please check and if necessary, fill
     in or correct the following data:
-
 
     -   **Business area** -- it should be always **1003** for company code 4300 and
     **1004** for company code 4311
 
-
     -   **Profit center** -- based on the attached file "Supporting data"
-
 
     If you are not able to determine one of the values, you can refer to previous
     posting visible in FBCJ -- please compare the type of expense, description etc.
     and copy the values accordingly.
 
-
     **Transfer of petty cash between two cash boxes**
-
 
     For this kind of transaction there is a specific kind of document received via
     email (see screenshots below) but this is not obligatory. If there will be no
@@ -174,15 +154,12 @@ seed_examples:
     between two cash boxes, please reach out to specific cash box administrator via
     email.
 
-
     1.  Open the cash journal mentioned in the text field (*Napajedla* in this example)
     in new SAP window.
-
 
     2.  In the mentioned cash journal (*Napajedla)*, please go to the tab "Cash receipts"
     and verify if the amounts match between both cash journals. If yes, post the open
     item in Cash Payments tab as described above.
-
 
     3.  If there is a difference in amount between cash journals or the transfer was
     not found as open item in mentioned cash journal, tab "Cash receipts", please
@@ -197,7 +174,6 @@ seed_examples:
   - answer: The Business area for company code 4300 for bank transfers is 1003.
     question: What is the Business area for company code 4300 for bank transfers?
   - answer: 'If there will be no supporting documents, follow the below steps:
-
 
       1. Open the cash journal mentioned in the text field in new SAP window.
 
@@ -219,17 +195,13 @@ seed_examples:
     -- please remember, that for cash journal to which the transfer took place, you
     should post the open item in tab "Cash receipts".
 
-
     The status will change to green indicator (completed):
-
 
     Once an entry is posted in SAP, please move the respective email to "Done_NAME"
     folder in mailbox. Please create this kind of folder for each new processor. **Do
     not delete any emails!**
 
-
     ### Verification of the interface
-
 
     +------------------------------------------+
 
@@ -253,36 +225,26 @@ seed_examples:
 
     +------------------------------------------+
 
-
     1.  Open transaction Y433E_CASH_Report
-
 
     2.  Fill in the required data: plant number and dates (since the beginning of
     the current fiscal year till current date)
 
-
     **Note:** There are variants created in SAP for both company codes to view errors
     only, so you can use following variants:
-
 
     "PRENOS 4300/A" and "PRENOS 4300/B" for company code 4300 and "PRENOS 4311/A"
     for company code 4311; see screenshot:
 
-
     3.  Confirm with the "Clock" icon
-
 
     The list of errors for given period and company code will be generated:
 
-
     Please mark those items by clicking the tick in the left-hand column:
-
 
     Next, please post those items by clicking "Post" button:
 
-
     ### Perform Periodic Petty Cash Reconciliation
-
 
     +----------------------------------------------+
 
@@ -306,12 +268,10 @@ seed_examples:
 
     +----------------------------------------------+
 
-
     On a monthly basis, we receive from Client a request for balance confirmation
     for all cash journals and company codes via email. (see examples below). You need
     to compare the cash journals and current cash level as per attached documents
     with SAP records -- details described below.
-
 
     You should track, if each month, for each cash register and company code this
     kind of confirmation has been received. If there is no confirmation request received
@@ -335,46 +295,35 @@ seed_examples:
     costs, services, and others. To identify the kind of expense and assign the correct
     GL account, please refer to file "Supporting data" in the section [Reference](#_Reference).
 
-
     Apart from cash payments made to the suppliers, there are two other kind of transactions
     handled by IBM -- transfers of cash to the bank and transfer between two petty
     cash boxes. Each kind of transaction is described in detail below.
 
-
     #### **Login to mailbox and check received documents.**
-
 
     To login to mailbox, please connect the GlobalProcect VPN and go to following
     address: <https://outlook.office.com/mail/>.
 
-
     **Note:** If you are connected to Cisco Any Connect (IBM VPN) you need to disconnect
     first.
-
 
     To process the mails related to petty cash process, you need to have access to
     following mailbox: [xxx.IBMCZ\@client.com](xxx.IBMCZ@cemex.com). To request access
     to this mailbox, please first get email approval from Client PTP Manager and once
     obtained, send a request to [gsc.europe\@client.com](mailto:gsc.europe@cemex.com).
 
-
     Once access is granted, please add the shared mailbox to your account, as follows:
 
-
     Right click on the "Folders" menu and choose option "Add shared folder or mailbox":
-
 
     Paste the address [xxx.IBMCZ\@client.com](mailto:xxx.IBMCZ@cemex.com) into the
     pop-up windows and confirm the choice by clicking the suggested entry and click
     "Add"
 
-
     The shared mailbox will appear below your standard folder:
-
 
     Go to Inbox and pick the open emails starting with the oldest. Open one email
     and open the attachment:
-
 
     There are two possible kind of documents that can be attached -- receipts as a
     confirmation of payments made to the suppliers and confirmation of transfer of
@@ -382,26 +331,19 @@ seed_examples:
     is slightly different -- both cases will be described separately in the following
     section: [5.2.19 Post the petty cash](#post-the-petty-cash)
 
-
     Prior steps are the same for all type of transactions.
 
-
     #### **Login to SAP**
-
 
     To login to SAP, go to following address: [http://xxxxx/CLIENTUSMXWeb/](http://xxxxx/CEMEXUSMXWeb/)
     and login using your CLIENTID and password, choose region EMEA:
 
-
     Switch to APPS:
-
 
     Choose following icon: (SAP Logon IT-ServideDelivery-GTS):
 
-
     Choose SRP system and login with your SAP ID (same as CLIENTID but with "0" instead
     of "-"). Client should be "500":
-
 
     #### **Open transaction FBCJ -- Cash Journal**00":'
   questions_and_answers:

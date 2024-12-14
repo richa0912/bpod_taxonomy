@@ -180,104 +180,75 @@ seed_examples:
     part on each invoice. MERITOR is still creating more than one invoice related
     to the same ASN though.
 
-
     -   To process the Invoices,
 
     A report will run in POR Achievar for Line 1 and Line 2 Locations and report will
     be pulled for Indirect and Direct Client Invoices and Save in the Excel Sheet.
 
-
     -   Review the Shipment ID / Packing ID and organize invoices by ASN number
-
 
     **5.3.1 Continental Invoices:**
 
-
     In Continental 2 (Two) Invoices have 1 (One) ASN number.
-
 
     When the invoices share the same Packing ID, then there will be multiple invoices
     associated with only one receipt.
 
-
     1.  Open Client Report Excel.
 
-
     2.  Open the Mexican portal and Login to the Mexican Portal:
-
 
     Click on the dropdown menu beside Menu de aplicaciones.\>Recepcion fe\> Facturas
     Recibidas\> Recepcion Facturas CPP.
 
-
     3.  After Selecting Recepcion Facturas CPP, a new tab will be opened.
-
 
     4.  Open the Client Excel Sheet and Copy the Portal ID and Paste in the Factura
     and Click on Filtar, Invoice Information will Populate.
 
-
     5.  Select PDF a dialogue box will populate then Click on Open then an Invoice
     will Open.
-
 
     6.  Open PeopleSoft and Go to Receipts. (Main Menu\>Purchasing\>Receipts\>Review
     Receipt Information\>Receipts).
 
-
     The following Page will Populate.
-
 
     7.  Enter the Business Unit.
 
-
     8.  Select the Dropdown and change begins with to **Contains** for ASN.
-
 
     9.  Enter ASN number (Last 5 digits) from the Invoice.
 
-
     10. Enter Vendor ID from the Invoice and Click on Search.
 
-
     11. Select the Receipt number from Search Results.
-
 
     12. Receipts of the Invoice will populate, Select the Line Item according to the
     Invoice.
 
-
     13. Go to PeopleSoft Regular Entry Page.
-
 
     Enter Business Unit and Vendor ID, the Short Vendor Name, Address Sequence number
     and Vendor Location will Auto-Populate.
 
-
     14. Vendor Location will populate as ''AX'', change it to ''EX''. Enter the Invoice
     Number, Invoice Date and Click on Add.
 
-
     15. Invoice Information page will populate.
-
 
     Enter the Total Amount and Tax Amount (Extended Amount) from the Invoice.
 
-
     16. Enter the GL Unit, Operating Unit and Account Number in the respected fields.
-
 
     17. Enter the PO Unit and Select PO Receipt from the dropdown of Worksheet Copy
     Option.
 
-
     18. Copy Worksheet Page will populate. Enter Receipt Unit and Receipt number from
     Receipts Page and Click on Search.
 
-
     19. Select Receiver Lines Data will populate then Click on View All to see all
     Receipt Lines.
-
 
     20. Match and Select the Line Item according to the Invoice and Click on Copy
     Selected Lines.'

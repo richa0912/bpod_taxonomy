@@ -198,7 +198,6 @@ seed_examples:
   questions_and_answers:
   - answer: 'The applications used in the manula journal entry process are:
 
-
       *   SAP: Enterprise Resource Planning
 
       *   Journal workflow tool: for preparing journal entry, approval workflow, and
